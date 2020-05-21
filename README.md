@@ -1,0 +1,1 @@
+# sc-plugin-vmware-vsphere
