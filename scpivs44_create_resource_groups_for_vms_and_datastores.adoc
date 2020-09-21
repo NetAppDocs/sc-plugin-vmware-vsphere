@@ -114,7 +114,7 @@ image:scpivs44_image17.png[Error: Missing Graphic Image]
 +
 When you click *Next*, the system first checks that SnapCenter manages and is compatible with the storage on which the selected VMs or datastores are located.
 +
-If the message `Selected virtual machine is not SnapCenter compatible or Selected datastore is not SnapCenter compatible` is displayed, then a selected VM or datastore is not compatible with SnapCenter.  See <<Manage Compatibility Check Failures>> for more information.
+If the message `Selected virtual machine is not SnapCenter compatible or Selected datastore is not SnapCenter compatible` is displayed, then a selected VM or datastore is not compatible with SnapCenter.  See <<Manage compatibility check failures>> for more information.
 
 . On the *Spanning disks* page, select an option for VMs with multiple VMDKs across multiple datastores:
 +
