@@ -1,0 +1,94 @@
+---
+sidebar: sidebar
+permalink: scpivs44_migrate_to_the_linux-based_snapcenter_plug-in_for_vmware_vsphere_overview.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:28.925485
+//
+
+[.lead]
+You use the SnapCenter Windows PowerShell cmdlets to migrate SnapCenter Plug-in for VMware vSphere metadata from the Windows-based SnapCenter Server to the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance.
+
+There are two migration options:
+
+* Migrating from SnapCenter
++
+You must migrate metadata for the following from Windows-based SnapCenter:
+
+** VM-consistent backups performed by the SnapCenter Plug-in for VMware vSphere when the plug-in was running as a Windows-based component of SnapCenter.
+** Application-consistent data protection metadata of virtualized databases or file systems performed by a SnapCenter application-based plug-in with support from the SnapCenter Plug-in for VMware vSphere when the plug-in was running as a Windows-based component of SnapCenter.
++
+To migrate, you use the Windows SnapCenter PowerShell cmdlet `invoke-SCVOVAMigration.`
++
+You can only migrate metadata from SnapCenter 4.0 or later.
+
+* Migrating from VSC
++
+You can migrate VSC 6.2.x (SMVI) metadata for backup jobs that are not integrated with SnapCenter.
++
+To migrate, you use the NetApp ToolChest: NetApp Import Utility for SnapCenter and Virtual Storage Console.  Make sure to select the VSC to SnapCenter migration option.
++
+You can only migrate metadata for existing backups. For example, if you do not have existing backups, then you cannot migrate policies only.
+
+=== Supported migration paths
+
+See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2863453[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade and migration paths.
+
+=== Migration overview
+
+* The migration command migrates metadata from SnapCenter 4.0, 4.1, and 4.1.1 only. If you are using an earlier version of SnapCenter then you must first upgrade before you can migrate.
+** What is migrated:
++
+SnapCenter metadata, which includes storage systems, customized throttles, and email settings in the SnapCenter configuration file, policies, resource groups, backup metadata, and mounts. (the migration fails when it encounters prescripts or postscripts)
+
+** What is not migrated:
++
+Pre- and post-scripts that are configured for resource groups
++
+Active guest file restore sessions, guest file restore credentials, and proxy VMs
++
+If you begin migration when a guest file restore session is active, the session is deleted and the attached disk is not unmounted. You might have to delete the attached disk manually.
++
+`scbr.override` configuration file
++
+Snapshots that are deleted from ONTAP BURT 1271910
+
+* To ensure migration success, the migration command suspends all hosts that are registered with SnapCenter. After the migration process finishes successfully, SnapCenter hosts are resumed.
+* You must use the Windows Powershell cmdlet `invoke-SCVOVAMigration` for each instance of the SnapCenter VMware plug-in that is registered with SnapCenter. The cmdlet does the following:
+** Suspends all schedules to prevent job failures during the migration. After a successful migration, schedules are automatically re-enabled.
+** Migrates storage connections and metadata.
+** Creates backup schedules for post-migration backups.
+** Uninstalls the existing SnapCenter Plug-in for VMware vSphere from the Windows host.
++
+If the SnapCenter VMware plug-in is installed on the SnapCenter Server host and protection is configured for the SnapCenter repository, then the migration process also uninstalls the Windows-based plug-in package that contains the SnapCenter Plug-in for VMware vSphere and the SnapCenter Plug-in for Windows, and then reinstalls the latest version of SnapCenter Plug-in for Windows to support the repository protection. The host type in the SnapCenter GUI changes from “vsphere” to “Windows”.
+
+** Removes the vSphere host and resource groups from the Windows SnapCenter Server.
+** Activates the backup jobs on the Linux-based SnapCenter VMware plug-in.
+** Registers the vSphere host for the SnapCenter VMware plug-in `with SnapCenter to support application-based backups of virtualized databases and file systems (application over VMDK backups).
+* Metadata for application-based VMDK backups is stored in the SnapCenter Server repository. Metadata for VM and datastore backups is stored in the SnapCenter VMware plug-in MySQL repository.
+
+=== Prerequisites for migration
+
+* You must be running SnapCenter Server 4.2 or later.
+* You must use Admin credentials.
+* The SnapCenter Plug-in for VMware vSphere virtual appliance must be deployed with the SnapCenter VMware plug-in enabled and registered on vCenter.
+* On the SnapCenter VMware plug-in dashboard, the status for SnapCenter Plug-in for VMware vSphere must be “connected.”
+* You must have created a Linux type Run As credential using the account that was specified during the deployment of the SnapCenter VMware plug-in.
+* All guest file restore sessions must be deleted.
+* SnapCenter hosts must be configured with IP addresses, not fully qualified domain names (FQDN).
++
+In a Linked Mode environment, you must migrate all linked nodes together.
+
+* Names for storage VMs must resolve to management LIFs.If you added `etc` host entries for storage VM names in SnapCenter, you must verify that they are also resolvable from the virtual appliance.

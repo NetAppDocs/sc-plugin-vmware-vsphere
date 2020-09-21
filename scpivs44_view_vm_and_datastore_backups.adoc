@@ -1,0 +1,34 @@
+---
+sidebar: sidebar
+permalink: scpivs44_view_vm_and_datastore_backups.html
+keywords:
+summary:
+---
+
+= View VM and datastore backups
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:22.715833
+//
+
+[.lead]
+When you are preparing to back up or restore a VM or datastore, you might want to see all the backups that are available for that resource and view details of those backups.
+
+.About this task
+
+Browsing large file folders, for example 10k file folders, might take one or more minutes the first time. Subsequent browsing sessions take less time.
+
+.Steps
+
+. Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere section*.
++
+image:scpivs44_image14.png[Error: Missing Graphic Image]
+
+. Click the backup that you want to view.

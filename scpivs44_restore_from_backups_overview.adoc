@@ -1,0 +1,66 @@
+---
+sidebar: sidebar
+permalink: scpivs44_restore_from_backups_overview.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:24.060765
+//
+
+[.lead]
+You can restore VMs, VMDKs, files, and folders from primary or secondary backups. VMs are always restored to the original host and datastore; VMDKs can be restored to either the original or an alternate datastore. You cannot use the SnapCenter Plug-in for VMware vSphere to restore a datastore, only the individual VMs in the datastore. You can also restore individual files and folders in a guest file restore session, which attaches a backup copy of a virtual disk and then restores the selected files or folders.
+
+You cannot restore backups of storage VMs that have been removed. For example, if you add a storage VM using the management LIF and then create a backup, and then you remove that storage VM and add a cluster that contains that same storage VM, the restore operation for the backup will fail.
+
+=== How restore operations are performed
+
+For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. The following table lists how restore operations are performed.
+
+|===
+|Restore Operations |NFS Environments |VMFS Environments
+
+|
+|Performed using ONTAP SFSR
+|Performed using clone and mount with Storage VMotion
+|Performed using clone and mount with Storage VMotion
+|Restoring VMs and VMDKs from primary backups
+|Yes
+|
+|Yes
+|Restoring VMs and VMDKs from secondary backups
+|Yes
+|
+|Yes
+|Restoring deleted VMs and VMDKs from primary backups
+|Yes
+|
+|Yes
+|Restoring deleted VMs and VMDKs from secondary backups
+|
+|Yes
+|Yes
+|Restoring VMs and VMDKs from VM-consistent primary backups
+|Yes
+|
+|Yes
+|Restoring VMs and VMDKs from VM-consistent secondary backups
+|
+|Yes
+|Yes
+|===
+
+Guest file restore operations are performed using clone and mount operations (not Storage VMotion) in both NFS and VMFS environments.
+
+[IMPORTANT]
+During a restore operation, you might encounter the error “Host unresolved volumes is null” or “Exception while calling pre-restore on SCV….Error mounting cloned LUN as datastore…” This occurs when the SnapCenter VMware plug-in attempts to resignature the clone. Due to VMware restrictions, the SnapCenter VMware plug-in cannot control the automatic resignature value in advanced ESXi configurations. See the https://kb.netapp.com/@api/deki/files/83736/1086826_-_SCV_clone_or_restores_fail_with_error_%27Host_Unresolved_volumes_is_null%27.pdf[KB article: SCV clone or restores fail with error 'Host Unresolved volumes is null^].

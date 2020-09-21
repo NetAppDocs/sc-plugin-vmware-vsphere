@@ -1,0 +1,77 @@
+---
+sidebar: sidebar
+permalink: scpivs44_rest_api_workflows__mount_and_unmount_datastores.html
+keywords:
+summary:
+---
+
+= REST API workflows: mount and unmount datastores
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:28.764362
+//
+
+[.lead]
+To perform mount and unmount operations for datastore backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
+
+For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
+
+To mount datastores, follow this workflow:
+
+|===
+|Step |REST API |Comments
+
+|1
+|Go to http://<vCenter-IP>/mob
+|Find the datastore moref from the VMware Managed Objects URL.
+Note the moref for the datastore that you want to mount.
+|2
+|/4.1/datastores/{moref}/
+backups
+|Get the list of backups for a datastore gets a list of backups for the specified datastore.
+Pass the moref from Step 1.
+Note the backupId that you want to mount.
+|3
+|/4.1/datastores/backups/
+{backupId}/snapshotlocators
+|Get the list of Snapshot Locations gets details about the location of the specified backup.
+Pass the backupId from Step 2.
+Note the datastore and the location from the snapshotLocationsList list.
+|4
+|/4.1/datastores/{moref}/
+availableEsxHosts
+|Get the list of Available Esxi Hosts gets the list of ESXi hosts that are available for mount operations.
+Pass the moref from Step 1.
+Note the availableEsxHostsList information.
+|5
+|/4.1/datastores/backups/
+{backupId}/mount
+|Mount datastores for a backup mounts the specified datastore backup.
+Pass the backupId from Step 2.
+In the datastore and location attributes, pass the information from snapshotLocationsList in Step 3.
+In the esxHostName attribute, pass the information from availableEsxHostsList in Step 4.
+|===
+
+To unmount datastores, follow this workflow:
+
+|===
+|Step |REST API |Comments
+
+|1
+|/4.1/datastores/backups/
+{backupId}/mounted
+|Get the list of mounted datastores.
+Note the datastore moref(s) that you want to unmount.
+|2
+|/4.1/datastores/unmount
+
+|UnMount datastores for a backup unmounts the specified datastore backup.
+Pass the datastore moref(s) from Step 1.
+|===

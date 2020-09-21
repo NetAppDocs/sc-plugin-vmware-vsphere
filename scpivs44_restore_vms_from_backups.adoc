@@ -1,0 +1,81 @@
+---
+sidebar: sidebar
+permalink: scpivs44_restore_vms_from_backups.html
+keywords:
+summary:
+---
+
+= Restore VMs from backups
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:24.166876
+//
+
+[.lead]
+When you restore a VM, you overwrite the existing content with the backup copy that you select. You can restore VMs from either a primary or secondary backup to the same ESXi server.
+
+[NOTE]
+Restore operations cannot finish successfully if there are Snapshot copies of the VM that were performed by software other than the SnapCenter Plug-in for VMware vSphere.
+
+The following restore workflow is not supported:
+
+Add a storage VM, then perform a backup of that VM, then delete the storage VM and add a cluster that includes that same storage VM, and then attempt to restore the original backup.
+
+.Before you begin
+
+* A backup must exist.
++
+You must have created a backup of the VM using the SnapCenter VMware plug-in before you can restore the VM.
+
+* The VM must not be in transit.
++
+The VM that you want to restore must not be in a state of vMotion or Storage vMotion.
+
+.About this task
+
+* VM is unregistered and registered again
++
+The restore operation for VMs unregisters the original VM, restores the VM from a backup Snapshot copy, and registers the restored VM with the same name and configuration on the same ESXi server. You must manually add the VMs to resource groups after the restore.
+
+* Restoring datastores
++
+You cannot restore a datastore, but you can restore any VM in the datastore.
+
+* VMware consistency snapshot failures for a VM
++
+Even if a VMware consistency snapshot for a VM fails, the VM is nevertheless backed up. You can view the entities contained in the backup copy in the Restore wizard and use it for restore operations.
+
+* A restore operation might fail if the storage tier of the FabricPool where the VM is located is unavailable.
+
+.Steps
+
+. In the VMware vSphere web client GUI, click *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
++
+[NOTE]
+If you are restoring a deleted VM, the storage VM credentials that were added to the SnapCenter VMware plug-in must be `vsadmin` or a user account that has all the same privileges as `vsadmin`. The host must be on a storage system that is running ONTAP 8.2.2 or later.
+
+. In the left Navigator pane, right-click a VM, then select *NetApp SnapCenter* in the drop-down list, and then select *Restore* in the secondary drop-down list to start the wizard.
+. In the *Restore* wizard, on the *Select Backup* page, select the backup Snapshot copy that you want to restore.
++
+You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and the location.  Click *OK* to return to the wizard.
+
+. On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field and then select the ESXi host where the backup should be mounted.
++
+The restore destination is the same ESXi host where the VM was originally registered.
+
+. On the *Select Location* page, select the destination for the restored datastore.
+. Review the Summary page and then click *Finish*.
+. Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the screen.
++
+Refresh the screen to display updated information.
+
+.After you Finish
+
+Although the VMs are restored, they are not automatically added to their former resource groups. Therefore, you must manually add the restored VMs to the appropriate resource groups.

@@ -1,0 +1,125 @@
+---
+sidebar: sidebar
+permalink: scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html
+keywords:
+summary:
+---
+
+= Deploy SnapCenter Plug-in for VMware vSphere
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:21.007767
+//
+
+[.lead]
+To use SnapCenter features to protect VMs, datastores, and application-consistent databases on virtualized machines, you must deploy SnapCenter Plug-in for VMware vSphere.
+
+.Before you begin
+
+* You must have read the deployment requirements.
++
+The deployment wizard does not verify the space requirement. If you do not have enough space on the host, the deployment might look successful, but the virtual appliance will not boot up.
+
+* You must be running a supported version of vCenter Server.
+* You must have configured and set up your vCenter Server environment.
+* You must have set up an ESXi host for the SnapCenter VMware plug-in VM.
+* You must have downloaded the SnapCenter Plug-in for VMware vSphere .ova file.
+* You must have the login credentials for your vCenter Server instance.
+* You must have logged out of and closed all browser sessions of vSphere Web Client and deleted the browser cache to avoid any browser cache issue during the deployment of the SnapCenter VMware plug-in.
+* You must have enabled Transport Layer Security (TLS) in vCenter. Refer to the VMware documentation.
+* You can deploy the SnapCenter VMware plug-in in the same vCenter as the virtual appliance for VSC 7.x and later.
+* If you plan to perform backups in vCenters other than the one in which the SnapCenter VMware plug-in is deployed, then the ESXi server, the SnapCenter VMware plug-in, and each vCenter must be synchronized to the same time.
+
+Deploy the SnapCenter VMware plug-in in the same time zone as the vCenter. Backup schedules are executed in the time zone in which the SnapCenter VMware plug-in is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter VMware plug-in and vCenter are in different time zones, data in the SnapCenter VMware plug-in Dashboard might not be the same as the data in the reports.
+
+.Steps
+
+. In your browser, navigate to VMware vSphere vCenter.
+. On the VMware screen, click *vSphere Web Client (HTML5)*.
+. Log in to the *VMware vCenter Single Sign-On* page.
+. On the Navigator pane, right-click any inventory object that is a valid parent object of a virtual machine, such as a datacenter, folder, cluster, or host, and select *Deploy OVF Template* to start the VMware deploy wizard.
+. On the *Select an OVF template* page, specify the location of the `.ova` file (as shown in the following table) and click *Next*.
++
+|===
+|If You Downloaded the .ova File to… |Do This…
+
+|An internet location
+|Enter the URL. Supported URL sources are HTTP and HTTPS.
+|A local file
+|Click *Choose Files* and navigate to the .ova file.
+|===
+
+. On the *Select a name and folder* page, enter a unique name for the VM or vApp, and select a deployment location, and then click *Next*.
++
+This step specifies where to import the `.ova` file into vCenter. The default name for the VM is the same as the name of the selected `.ova` file. If you change the default name, choose a name that is unique within each vCenter Server VM folder.
++
+The default deployment location for the VM is the inventory object where you started the wizard.
++
+. On the *Select a resource* page, select the resource where you want to run the deployed VM template, and click *Next*.
+. On the *Review details* page, verify the `.ova` template details and click *Next*.
+. On the *License agreements* page, select the checkbox for *I accept all license agreements*.
+. On the *Select storage* page, define where and how to store the files for the deployed OVF template.
+.. Select the disk format for the VMDKs.
+.. Select a VM Storage Policy.
++
+This option is available only if storage policies are enabled on the destination resource.
+
+.. Select a datastore to store the deployed OVA template.
++
+The configuration file and virtual disk files are stored on the datastore.
++
+Select a datastore large enough to accommodate the virtual machine or vApp and all associated virtual disk files.
+
+. On the *Select networks* page, select a source network,  and map it to a destination network, and then click *Next*.
++
+The Source Network column lists all networks that are defined in the OVA template.
++
+SnapCenter Plug-in for VMware vSphere supports one network interface. If you need multiple network adapters, you must set that up manually. See the https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_set_up_multiple_network_adapters[KB article: How to set up multiple network adapters^].
++
+On the *Customize template* page, do the following:
+
+.. In *Register to existing vCenter*, enter the vCenter virtual appliance credentials.
+.. In *Create SnapCenter Plug-in for VMware vSphere credentials*, enter the credentials.
++
+[IMPORTANT]
+Make a note of the username and password that you specify. You need to use these credentials if you want to modify the SnapCenter VMware plug-in configuration later.
++
+.. In *Setup Network Properties*, enter the network information.
++
+Select the IPv4 or IPv6 fields, or both, if appropriate. If you are using both IPv4 and IPv6, then you need to specify the Primary DNS for only one of them.
++
+.. In *Setup Date and Time*, select the time zone where the vCenter is located.
+
+. On the *Ready to complete* page, review the page and click *Finish*.
++
+All hosts must be configured with IP addresses (FQDN hostnames are not supported). The deploy operation does not validate your input before deploying.
++
+You can view the progress of the deployment from the Recent Tasks window while you wait for the OVF import and deployment tasks to finish.
++
+When the SnapCenter VMware plug-in is successfully deployed, it is deployed as a Linux VM, registered with vCenter, and a VMware vSphere web client is installed.
+
+. Navigate to the VM where the SnapCenter VMware plug-in was deployed, then click the *Summary* tab, and then click the *Power On* box to start the virtual appliance.
+. While the SnapCenter VMware plug-in is powering on, right-click the deployed SnapCenter VMware plug-in and then click *Install VMware* tools.
++
+The VMware Tools is installed on the VM where the SnapCenter VMware plug-in is deployed. For more information on installing VMware Tools, see the VMware documentation.
++
+The deployment might take a few minutes to complete. A successful deployment is indicated when the SnapCenter VMware plug-in is powered on, the VMware tools are installed, and the screen prompts you to log in to the SnapCenter VMware plug-in.
++
+The screen displays the IP address where the SnapCenter VMware plug-in is deployed. Make a note of that location. You need to log in to the SnapCenter VMware plug-in management GUI if you want to make changes to the SnapCenter VMware plug-in configuration.
+
+. Log in to the SnapCenter VMware plug-in management GUI using the IP address displayed on the deployment screen and the credentials that you provided in the deployment wizard, then verify on the Dashboard that the SnapCenter VMware plug-in is successfully connected to vCenter and is enabled.
++
+Use the format `https://<appliance-IP-address>:8080` to access the management GUI.
++
+By default, the maintenance console username is set to “maint” and the password is set to “admin123”.
++
+.After you finish
++
+You should complete the required post deployment operations.

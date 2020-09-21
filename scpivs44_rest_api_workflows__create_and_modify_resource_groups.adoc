@@ -1,0 +1,61 @@
+---
+sidebar: sidebar
+permalink: scpivs44_rest_api_workflows__create_and_modify_resource_groups.html
+keywords:
+summary:
+---
+
+= REST API workflows: create and modify resource groups
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:28.691841
+//
+
+[.lead]
+To perform create and modify resource group operations using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
+
+For each REST API, add `https://<server>:<port> `at the front of the REST API to form a complete endpoint.
+
+To create resource groups, follow this workflow:
+
+|===
+|Step |REST API |Comments
+
+|1
+|/4.1/policies
+|Get Policies gets the list of VMware vSphere web client policies.
+Note the *policyId* that you want to use when creating the resource group and the policy *frequency*.
+If no policies are listed, then use the Create Policy REST API to create a new policy.
+|2
+|/4.1/resource-groups
+|Create a Resource Group creates a resource group with the specified policy.
+Pass the *policyId* from Step 1 and enter the policy *frequency* details in addition to all other required attributes.
+|===
+
+To modify resource groups, follow this workflow:
+
+|===
+|Step |REST API |Comments
+
+|1
+|/4.1/resource-groups
+|Get List of Resource Groups gets the list of VMware vSphere web client resource groups.
+Note the *resourceGroupId* that you want to modify.
+|2
+|/4.1/policies
+|If you want to modify the assigned policies, Get Policies gets the list of VMware vSphere web client policies.
+Note the *policyId* that you want to use when modifying the resource group and the policy *frequency*.
+|3
+|/4.1/resource-groups/
+{resouceGroupId}
+|Update a Resource Group modifies the specified resource group.
+Pass the *resourceGroupId* from Step 1.
+Optionally, pass the *policyId* from Step 2 and enter the *frequency* details in addition to all other required attributes.
+|===

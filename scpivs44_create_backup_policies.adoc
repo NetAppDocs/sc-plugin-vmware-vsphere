@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: scpivs44_create_backup_policies.html
+keywords:
+summary:
+---
+
+= Create backup policies
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:22.064213
+//
+
+. In the left Navigator pane of the VMware vSphere web client, click *Policies*, and then click *New Policy*.
+. On the *New Backup Policy* page, enter the policy configuration information, and then click *Add*.
++
+If the policy will be used for mirror-vault relationships, then in the Replication field,  select *Update SnapVault after backup*.

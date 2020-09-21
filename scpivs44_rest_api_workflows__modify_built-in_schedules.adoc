@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html
+keywords:
+summary:
+---
+
+= REST API workflows: modify built-in schedules
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+//
+
+[.lead]
+To modify built-in schedules for VMware vSphere web client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
+
+Built-in schedules are the schedules that are provided as part of the product; for example, the MySQL database dump schedule.
+
+For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
+
+|===
+|Step |REST API |Comments
+
+|1
+|/4.1/schedules
+|Get all built-in schedules gets a list of the job schedules that were originally provided in the product.
+Note the schedule name that you want to modify and the associated cron expression.
+|2
+|/4.1/schedules
+|Modify any built-in schedule changes the named schedule.
+Pass the schedule name from Step 1 and create a new cron expression for the schedule.
+|===

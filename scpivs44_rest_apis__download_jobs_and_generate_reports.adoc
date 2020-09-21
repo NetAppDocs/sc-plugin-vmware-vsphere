@@ -1,0 +1,56 @@
+---
+sidebar: sidebar
+permalink: scpivs44_rest_apis__download_jobs_and_generate_reports.html
+keywords:
+summary:
+---
+
+= REST APIs: download jobs and generate reports
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:28.778899
+//
+
+[.lead]
+To generate reports and download logs for VMware vSphere web client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere.
+
+For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
+
+Use the following REST APIs in the Jobs section to get detailed information on jobs:
+
+|===
+|REST API |Comments
+
+|/4.1/jobs
+|Get all jobs gets the job details for multiple jobs. You can narrow the scope of the request by specifying a job type, such as backup, mountBackup, or restore.
+|/4.1/jobs/{id}
+|Get job details gets detailed information for the specified job.
+|===
+
+Use the following REST API in the Jobs section to download job logs:
+
+|===
+|REST API |Comments
+
+|/4.1/jobs/{id}/logs
+|getJobLogsById downloads the logs for the specified job.
+|===
+
+Use the following REST APIs in the Reports section to generate reports:
+
+|===
+|REST API |Comments
+
+|4.1/reports/protectedVM
+|Get Protected VM List gets a list of the protected VMs during the last seven days.
+|/4.1/reports/
+unProtectedVM
+|Get Unprotected VM List gets a list of the unprotected VMs during the last seven days.
+|===

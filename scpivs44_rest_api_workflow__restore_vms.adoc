@@ -1,0 +1,56 @@
+---
+sidebar: sidebar
+permalink: scpivs44_rest_api_workflow__restore_vms.html
+keywords:
+summary:
+---
+
+= REST API workflow: restore VMs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:28.714997
+//
+
+[.lead]
+To perform restore operations for VM backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls shown in the following table.
+
+For each REST API, add `https://<server>:<port> `at the front of the REST API to form a complete endpoint.
+
+|===
+|Step |REST API |Comments
+
+|1
+|Go to http://<vCenter-IP>/mob
+|Find the VM moref from the VMware Managed Objects URL.
+Note the *moref* for the VM that you want to restore.
+|2
+|/4.1/vm/{moref}/backups
+|Get VM Backups gets a list of backups for the specified VM.
+Pass the moref from Step 1.
+Note the backupId of the backup you want to restore.
+|3
+|/4.1/vm/backups/{backupId}/
+snapshotlocations
+|Get snapshot locations gets the location of the Snapshot copy for the specified backup.
+Pass the backupId from Step 2.
+Note the snapshotLocationsList information.
+|4
+|/4.1/vm/{moref}/backups/
+availableesxhosts
+|Get available ESX Hosts gets the information for the host on which the backup is stored.
+Note the availableEsxHostsList information.
+|5
+|/4.1/vm/{moref}/backups/
+{backupId}/restore
+|Restore a VM from a backup restores the specified backup.
+Pass the information from Steps 3 and 4 in the restoreLocations attribute.
+If the VM backup is a partial backup, set the restartVM parameter to "false".
+You cannot restore a VM that is a template.
+|===

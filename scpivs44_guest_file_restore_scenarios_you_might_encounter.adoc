@@ -1,0 +1,46 @@
+---
+sidebar: sidebar
+permalink: scpivs44_guest_file_restore_scenarios_you_might_encounter.html
+keywords:
+summary:
+---
+
+= Guest file restore scenarios you might encounter
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:26.242804
+//
+
+[.lead]
+When attempting to restore a guest file, you might encounter any of the following scenarios.
+
+* Guest file restore session is blank
++
+This issue occurs when you create a guest file restore session and while that session was active, the guest operating system is rebooted. When this occurs, VMDKs in the guest OS might remain offline. Therefore, when you try to browse the guest file restore session, the list is blank.
++
+To correct the issue, manually put the VMDKs back online in the guest OS. When the VMDKs are online, the guest file restore session will display the correct contents.
+
+* Guest file restore attach disk operation fails
++
+This issue occurs when you start a guest file restore operation,  but the attach disk operation fails even though VMware Tools is running and the Guest OS credentials are correct. If this occurs, the following error is returned:
++
+`Error while validating guest credentials, failed to access guest system using specified credentials: Verify VMWare tools is running properly on system and account used is Administrator account, Error is SystemError vix error codes = (3016, 0).`
++
+To correct the issue, restart the VMware Tools Windows service on the Guest OS, and then retry the guest file restore operation.
+
+* Guest email shows ?????? for the file name
++
+This issue occurs when you use the guest file restore feature to restore files or folders with non-English characters in the names and the email notification displays "??????" for the restored file names. The email attachment correctly lists the names of the restored files and folders.
+
+* Backups are not detached after guest file restore session is discontinued
++
+This issue occurs when you perform a guest file restore operation from a VM-consistent backup. While the guest file restore session is active, another VM-consistent backup is performed for the same VM. When the guest file restore session is disconnected, either manually or automatically after 24 hours, the backups for the session are not detached.
++
+To correct the issue, manually detach the VMDKs that were attached from the active guest file restore session.

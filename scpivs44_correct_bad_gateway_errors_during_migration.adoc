@@ -1,0 +1,34 @@
+---
+sidebar: sidebar
+permalink: scpivs44_correct_“bad_gateway”_errors_during_migration.html
+keywords:
+summary:
+---
+
+= Correct “Bad Gateway” errors during migration
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:29.005544
+//
+
+[.lead]
+There are several reasons why you might encounter a “Bad Gateway” error.
+
+=== Scenario 1
+
+You manually added files or other content to the SnapCenter Plug-in for VMware vSphere and then tried to migrate. In this scenario, there is not enough space in the appliance for the migration process.
+
+To correct this error, remove any manually added files.
+
+=== Scenario 2
+
+The SnapCenter Plug-in for VMware vSphere connection was stopped, or the service was stopped during the migration.
+
+The SnapCenter Plug-in for VMware vSphere connection status must be “connected” during the migration process. You can also manually update the time out configuration in the virtual appliance.

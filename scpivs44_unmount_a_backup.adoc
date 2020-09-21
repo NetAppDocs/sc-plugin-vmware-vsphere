@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: scpivs44_unmount_a_backup.html
+keywords:
+summary:
+---
+
+= Unmount a backup
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:23.957557
+//
+
+[.lead]
+You can unmount a backup when you no longer need to access the files in the datastore.
+
+If a backup is listed as mounted in the VMware vSphere web client GUI, but it is not listed in the unmount backup screen, then you need to use the REST API `"/backup/{backup-Id}/cleanup` to clean up the out-of-bound datastores and then try the unmount procedure again.
+
+If you attempt to mount a backup copy of an NFS datastore on a storage VM (SVM) with the root volume in a load-sharing mirror relationship and you might encounter the error `You may have reached the maximum number of NFS volumes configured in the vCenter. Check the vSphere Client for any error messages.`” To prevent this problem, change the maximum volumes setting by navigating to *ESX* > *Manage* > *Settings* > *Advance System Settings* and changing the NFS.MaxVolumes value. Maximum value is 256.
+
+.Steps
+
+. In the VMware vSphere web client, click *Menu* in the toolbar, and then select *Storage* from the drop-down list.
+. In the left Navigator pane, right-click a datastore, then select *NetApp SnapCenter* in the drop-down list, and then select Unmount in the secondary drop-down list.
++
+[IMPORTANT]
+Make sure that you select the correct datastore to unmount. Otherwise, you might cause an impact on production work.
+
+. In the *Unmount Cloned Datastore* dialog box, select a datastore, select the *Unmount the cloned datastore* checkbox, and then click *Unmount*.

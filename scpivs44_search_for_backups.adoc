@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+permalink: scpivs44_search_for_backups.html
+keywords:
+summary:
+---
+
+= Search for backups
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:24.100021
+//
+
+[.lead]
+You can search for and find a specific backup of a VM or datastore using the Restore wizard. After you locate a backup, you can then restore it.
+
+.Steps
+
+. In the VMware vSphere web client GUI, click *Menu* in the toolbar, and then do one of the following:
++
+|===
+|To View Backups For… |Do the Following…
+
+|VMs
+|Click the *Hosts and Clusters* menu option, then select a VM, then click the *Configure* tab, and then click Backups in the SnapCenter Plug-in for VMware vSphere section.
+|Datastores
+|Click the *Storage* menu option, then select a datastore, then click the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
+|===
+
+. In the left Navigator pane, expand the datacenter that contains the VM or datastore.
+. Optional: Right-click a VM or datastore, then select *NetApp SnapCenter* in the drop-down list, and then select *Restore* in the secondary drop-down list.
+. In the *Restore* wizard enter a search name and click *Search*.
++
+You can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and the location. Click *OK*.

@@ -1,0 +1,56 @@
+---
+sidebar: sidebar
+permalink: scpivs44_rest_apis_overview.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:28.645167
+//
+
+=== Overview of REST APIs
+
+You can use the SnapCenter Plug-in for VMware vSphere REST APIs to perform common data protection operations. The plug-in has different Swagger web pages from the Windows SnapCenter Swagger web pages.
+
+* REST API workflows are documented for the following operations on VMs and datastores using the REST APIs for VMware vSphere:
+** Add and modify storage VMs and clusters
+** Create and modify resource groups
+** Backup VMs, scheduled and on-demand
+** Restore VMs and deleted VMs
+** Restore VMDKs
+** Mount and unmount datastores
+* Operations that are not supported by the REST APIs for VMware vSphere
+** Guest file restore
+** Installation and configuration of the SnapCenter VMware plug-in
+** Assign RBAC roles or access to users
+* `uri` parameter
++
+The `uri` parameter always returns a "null" value.
+
+* Login timeout
++
+The default timeout is 120 minutes (2 hours). You can configure a different timeout value in the vCenter settings.
+
+* Token management
++
+For security, REST APIs use a mandatory token that is passed with each request and is used in all API calls for client validation. The REST APIs for VMware vSphere use the VMware authentication API to obtain the token. VMware provides the token management.
++
+To obtain the token, use `/4.1/auth/login` REST API and provide the vCenter credentials.
+
+* API version designations
++
+Each REST API name includes the SnapCenter version number in which the REST API was first released. For example, the REST API `/4.1/datastores/{moref}/backups` was first released in SnapCenter 4.1.
++
+REST APIs in future releases will usually be backward compatible and will be modified to accommodate new features as needed.
+
+
