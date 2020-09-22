@@ -24,7 +24,8 @@ You can use the maintenance console to restore a specific backup of the MySQL da
 .Steps
 
 . Open a maintenance console window.
-+ link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maintenance-console[Access the Maintenance Console].
++
+link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maintenance-console[Access the Maintenance Console].
 . From the Main Menu, enter option *1) Application Configuration*.
 . From the Application Configuration Menu, enter option *6) MySQL backup and restore*.
 . From the MySQL Backup and Restore Configuration Menu, enter option *2)* *List MySQL backups,* and then make a note of the backup you want to restore.
