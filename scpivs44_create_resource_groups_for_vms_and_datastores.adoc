@@ -72,7 +72,7 @@ This is the easiest way to create a resource group. However, you can also create
 . On the *General Info & Notification* page in the wizard, do the following:
 +
 |===
-|For This Field… |Do This…
+|For this field… |Do this…
 
 |vCenter Server
 |Select a vCenter server.
@@ -127,7 +127,7 @@ Manually select the spanning datastores to be included
 . On the *Policies* page, select or create one or more backup policies, as shown in the following table:
 +
 |===
-|To Use… |Do This…
+|To use… |Do this…
 
 |An existing policy
 |Select one or more policies from the list.

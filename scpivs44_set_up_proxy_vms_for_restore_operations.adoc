@@ -27,7 +27,7 @@ If you want to use a proxy VM for attaching a virtual disk for guest file restor
 . In the *Run As Credentials* section, do one of the following:
 +
 |===
-|To Do This… |Do This…
+|To do this… |Do this…
 
 |Use existing credentials
 |Select any of the configured credentials.

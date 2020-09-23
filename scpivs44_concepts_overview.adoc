@@ -81,7 +81,7 @@ There is also a management GUI to perform administrative operations on the SnapC
 The following table shows the operations performed by each SnapCenter GUI.
 
 |===
-|Use This GUI… |To Perform These Operations... |And to Access These Backups...
+|Use this GUI… |To perform these operations... |And to access these backups...
 
 |SnapCenter vSphere web client GUI
 |VM and datastore backup

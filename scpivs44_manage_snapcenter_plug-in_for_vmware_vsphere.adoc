@@ -56,7 +56,7 @@ image:scpivs44_image11.png[Error: Missing Graphic Image]
 . You can access the following maintenance console options:
 +
 |===
-|Category |Available Maintenance Options
+|Category |Available maintenance options
 
 |1) Application Configuration
 |Display virtual appliance summary

@@ -48,7 +48,7 @@ You can search for a specific backup name or a partial backup name, or you can f
 . On the *Select Scope* page, select the restore destination by clicking *Particular virtual disk* in the *Restore scope* field, and choose the relevant options shown in the following table.
 +
 |===
-|To… |Specify the Restore Destination…
+|To… |Specify the restore destination…
 
 |Restore to the original datastore
 |Use the default, parent, datastore that is displayed.

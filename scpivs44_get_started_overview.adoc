@@ -88,7 +88,7 @@ Restoring a complete VM when one or more VMDKs are on a VMFS datastore.
 ==== License requirements
 
 |===
-|You Must Provide Licenses For… |License Requirement
+|You must provide licenses for… |license requirement
 
 |ONTAP
 |One of these: SnapMirror or SnapVault (for secondary data protection regardless of the type of relationship)
@@ -111,7 +111,7 @@ FlexClone: used for mount and attach operations
 ==== Software support
 
 |===
-|Item |Supported Versions
+|Item |Supported versions
 
 |vCenter vSphere
 |HTML5 client: 6.5U2d/U3, 6.7x, 7.0, 7.0U1
@@ -154,7 +154,7 @@ Recommended: 16 GB
 ==== Connection and port requirements
 
 |===
-|Type of Port |Preconfigured Port
+|Type of port |Preconfigured port
 
 |SnapCenter Plug-in for VMware vSphere port
 |8144 (HTTPS), bidirectional
@@ -178,7 +178,7 @@ image:scpivs44_image4.png[Error: Missing Graphic Image]
 The vCenter administrator account must have the required vCenter privileges, as listed in the following table.
 
 |===
-|To Do This Operation… |You Must Have These vCenter Privileges…
+|To do this operation… |You must have these vCenter privileges…
 
 |Deploy and register the SnapCenter Plug-in for VMware vSphere in vCenter
 |Extension: Register extension

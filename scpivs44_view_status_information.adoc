@@ -30,7 +30,7 @@ image:scpivs44_image7.png[Error: Missing Graphic Image]
 . View overview status information or click a link for more details, as listed in the following table.
 +
 |===
-|This Dashboard Tile… |Displays the Following Information…
+|This dashboard tile… |Displays the following information…
 
 |Recent job activities
 |The three to five most recent backup, restore, and mount jobs.

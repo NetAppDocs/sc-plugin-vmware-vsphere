@@ -28,12 +28,8 @@ You cannot restore backups of storage VMs that have been removed. For example, i
 For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. The following table lists how restore operations are performed.
 
 |===
-|Restore Operations |NFS Environments |VMFS Environments
+|Restore operations |NFS environments performed using ONTAP SFSR |NFS environments performed using clone and mount with Storage VMotion  | VMFS environments performed using clone and mount with Storage VMotion
 
-|
-|Performed using ONTAP SFSR
-|Performed using clone and mount with Storage VMotion
-|Performed using clone and mount with Storage VMotion
 |Restoring VMs and VMDKs from primary backups
 |Yes
 |

@@ -45,7 +45,7 @@ The guest restore feature allows you to view and restore system and hidden files
 .. Choose where to attach the virtual disk:
 +
 |===
-|Select this Option… |If…
+|Select this option… |If…
 
 |Use Guest VM
 |You want to attach the virtual disk to the VM that you right-clicked
@@ -87,7 +87,7 @@ When you double click a folder to browse and select individual files, there migh
 For easier browsing, you can use filters in your search string. The filters are case-sensitive, Perl expressions without spaces. The default search string is `.`*. The following table shows some example Perl search expressions.
 +
 |===
-|This Expression… |Searches For…
+|This expression… |Searches for…
 
 |.
 |Any character except a newline character.

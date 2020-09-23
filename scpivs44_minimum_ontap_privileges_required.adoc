@@ -24,7 +24,7 @@ The minimum ONTAP privileges that are required vary according to the SnapCenter 
 All SnapCenter plug-ins require the following minimum privileges, except where noted in the information following these tables.
 
 |===
-|All-Access Commands: Minimum Privileges Required for ONTAP 8.3 and Later
+|All-access commands: Minimum privileges required for ONTAP 8.3 and later
 
 |event generate-autosupport-log
 |job history show

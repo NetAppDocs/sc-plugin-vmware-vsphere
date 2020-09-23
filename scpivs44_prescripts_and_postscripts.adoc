@@ -62,7 +62,7 @@ If a postscript fails, the backup completes successfully, and a warning message 
 You can use the environment variables shown in the following table in scripts.
 
 |===
-|Environment Variable |Description
+|Environment variable |Description
 
 |BACKUP_NAME
 |Name of the backup.

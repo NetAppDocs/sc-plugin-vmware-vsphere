@@ -51,7 +51,7 @@ image:scpivs44_image12.png[Error: Missing Graphic Image]
 . In the *Add Storage System* wizard, enter the basic storage VM or cluster information as listed in the following table:
 +
 |===
-|For This Field… |Do This…
+|For this field… |Do this…
 
 |Storage system
 |Enter the FQDN or IP address of a storage cluster, storage VM.

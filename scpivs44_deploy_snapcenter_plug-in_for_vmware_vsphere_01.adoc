@@ -24,7 +24,7 @@ summary:
 . On the *Select an OVF template* page, specify the location of the `.ova` file (as listed in the following table) and click *Next*.
 +
 |===
-|On This Wizard Page… |Do This…
+|On this wizard page… |Do this…
 
 |Select a name and folder
 |Enter a unique name for the VM or vApp and select a deployment location.

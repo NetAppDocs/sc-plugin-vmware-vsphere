@@ -73,7 +73,7 @@ The policy specifies the backup frequency only. The specific protection schedule
 . In the *Replication *fields, specify the type of replication to secondary storage,  as shown in the following table:
 +
 |===
-|For This Field… |Do This…
+|For this field… |Do this…
 
 |Update SnapMirror after backup
 
@@ -94,7 +94,7 @@ Note: A maximum of 31 characters is allowed for Snapshot copy labels.
 . Optional: In the *Advanced *fields, select the fields that are needed. The Advanced field details are listed in the following table.
 +
 |===
-|For This Field… |Do This…
+|For this field… |Do this…
 
 |VM consistency
 |Check this box to quiesce the VMs and create a VMware snapshot each time the backup job runs.

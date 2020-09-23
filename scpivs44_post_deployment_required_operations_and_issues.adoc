@@ -77,7 +77,7 @@ If you are a SnapCenter customer and have VM consistent or VM crash-consistent b
 . Enter the credential information as listed in the following table:
 
 |===
-|For This Field… |Do This…
+|For this field… |Do this…
 
 |Credential name
 |Enter a name for the credentials.
@@ -118,7 +118,7 @@ You can register multiple instances of SnapCenter Plug-in for VMware vSphere on 
 . On the *Add Hosts* dialog box, specify the host you want to add to the SnapCenter Server as listed in the following table:
 +
 |===
-|For This Field… |Do This…
+|For this field… |Do this…
 
 |Host Type
 |Select “vSphere” as the type of host.

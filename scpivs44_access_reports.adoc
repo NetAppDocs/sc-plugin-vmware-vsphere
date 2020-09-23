@@ -49,7 +49,7 @@ Backup schedules are executed in the time zone in which the SnapCenter VMware pl
 The Dashboard displays information on migrated backups only after backups are performed after the migration.
 
 |===
-|Report Type |Description
+|Report type |Description
 
 |Backup Report
 |Displays overview data about backup jobs. Click a section/status on the graphic to see a list of jobs with that status on the Reports tab.

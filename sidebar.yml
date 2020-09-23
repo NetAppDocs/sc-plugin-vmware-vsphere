@@ -1,15 +1,15 @@
 entries:
   - title: NDAC contents
     url: /index.html
-  - title: SnapCenter Plug-in for vSphere 44
+  - title: SnapCenter Plug-in for VMware vSphere
     entries:
       - title: Concepts
         entries:
           - title: Overview
             url: /scpivs44_concepts_overview.html
-          - title: How to Configure ONTAP RBAC for SnapCenter Plug-in for VMware vSphere
+          - title: How to configure ONTAP RBAC for SnapCenter Plug-in for VMware vSphere
             url: /scpivs44_how_to_configure_ontap_rbac_for_snapcenter_plug-in_for_vmware_vsphere.html
-      - title: Get Started
+      - title: Get started
         entries:
           - title: Overview
             url: /scpivs44_get_started_overview.html
@@ -17,9 +17,9 @@ entries:
             url: /scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_@open_virtual_appliance@.html
           - title: Deploy SnapCenter Plug-in for VMware vSphere
             url: /scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html
-          - title: Post Deployment Required Operations and Issues
+          - title: Post deployment required operations and issues
             url: /scpivs44_post_deployment_required_operations_and_issues.html
-          - title: Log In to the SnapCenter VMware vSphere Web Client
+          - title: Log in to the SnapCenter VMware vSphere web client
             url: /scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html
       - title: Quick Start
         entries:
@@ -29,155 +29,155 @@ entries:
             url: /scpivs44_download_the_ova_@open_virtual_appliance@.html
           - title: Deploy SnapCenter Plug-in for VMware vSphere
             url: /scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html
-          - title: Add Storage
+          - title: Add storage
             url: /scpivs44_add_storage.html
-          - title: Create Backup Policies
+          - title: Create backup policies
             url: /scpivs44_create_backup_policies.html
-          - title: Create Resource Groups
+          - title: Create resource groups
             url: /scpivs44_create_resource_groups.html
-      - title: Monitor and Report
+      - title: Monitor and report
         entries:
-          - title: View Status Information
+          - title: View status information
             url: /scpivs44_view_status_information.html
-          - title: Monitor Jobs
+          - title: Monitor jobs
             url: /scpivs44_monitor_jobs.html
-          - title: Download Job Logs
+          - title: Download job logs
             url: /scpivs44_download_job_logs.html
-          - title: Access Reports
+          - title: Access reports
             url: /scpivs44_access_reports.html
-          - title: Generate a Support Bundle from the SnapCenter Plug-in for VMware vSphere GUI
+          - title: Generate a support bundle from the SnapCenter Plug-in for VMware vSphere GUI
             url: /scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html
-          - title: Generate a Support Bundle from the Maintenance Console
+          - title: Generate a support bundle from the maintenance console
             url: /scpivs44_generate_a_support_bundle_from_the_maintenance_console.html
-      - title: Add Storage
+      - title: Add storage
         url: /scpivs44_add_storage_01.html
-      - title: Protect Data
+      - title: Protect data
         entries:
           - title: Overview
             url: /scpivs44_protect_data_overview.html
-          - title: View VM and Datastore Backups
+          - title: View VM and datastore backups
             url: /scpivs44_view_vm_and_datastore_backups.html
-          - title: Create Backup Policies for VMs and Datastores
+          - title: Create backup policies for VMs and datastores
             url: /scpivs44_create_backup_policies_for_vms_and_datastores.html
-          - title: Prescripts and Postscripts
+          - title: Prescripts and postscripts
             url: /scpivs44_prescripts_and_postscripts.html
-          - title: Create Resource Groups for VMs and Datastores
+          - title: Create resource groups for VMs and datastores
             url: /scpivs44_create_resource_groups_for_vms_and_datastores.html
-          - title: Add a Single VM or Datastore to a Resource Group
+          - title: Add a single VM or datastore to a resource group
             url: /scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html
-          - title: Add Multiple VMs and Datastores to a Resource Group
+          - title: Add multiple VMs and datastores to a resource group
             url: /scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html
-          - title: Back Up Resource Groups on Demand
+          - title: Back up resource groups on demand
             url: /scpivs44_back_up_resource_groups_on_demand.html
-          - title: Back Up the SnapCenter Plug-in for VMware vSphere MySQL Database
+          - title: Back up the SnapCenter Plug-in for VMware vSphere MySQL database
             url: /scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html
-      - title: Mount and Unmount Datastores
+      - title: Mount and unmount datastores
         entries:
           - title: Overview
             url: /scpivs44_mount_and_unmount_datastores_overview.html
-          - title: Mount a Backup
+          - title: Mount a backup
             url: /scpivs44_mount_a_backup.html
-          - title: Unmount a Backup
+          - title: Unmount a backup
             url: /scpivs44_unmount_a_backup.html
-      - title: Restore from Backups
+      - title: Restore from backups
         entries:
           - title: Overview
             url: /scpivs44_restore_from_backups_overview.html
-          - title: Search for Backups
+          - title: Search for backups
             url: /scpivs44_search_for_backups.html
-          - title: Restore VMs from Backups
+          - title: Restore VMs from backups
             url: /scpivs44_restore_vms_from_backups.html
-          - title: Restore Deleted VMs from Backups
+          - title: Restore deleted VMs from backups
             url: /scpivs44_restore_deleted_vms_from_backups.html
-          - title: Restore VMDKs from Backups
+          - title: Restore VMDKs from backups
             url: /scpivs44_restore_vmdks_from_backups.html
-          - title: Restore the Most Recent Backup of the MySQL Database
+          - title: Restore the most recent backup of the MySQL database
             url: /scpivs44_restore_the_most_recent_backup_of_the_mysql_database.html
-          - title: Restore a Specific Backup of the MySQL Database
+          - title: Restore a specific backup of the MySQL database
             url: /scpivs44_restore_a_specific_backup_of_the_mysql_database.html
           - title: Attach VMDKs to a VM
             url: /scpivs44_attach_vmdks_to_a_vm.html
-          - title: Detach a Virtual Disk
+          - title: Detach a virtual disk
             url: /scpivs44_detach_a_virtual_disk.html
-      - title: Restore Guest Files and Folders
+      - title: Restore guest files and folders
         entries:
           - title: Overview
             url: /scpivs44_restore_guest_files_and_folders_overview.html
-          - title: Restore Guest Files and Folders from VMDKs
+          - title: Restore guest files and folders from VMDKs
             url: /scpivs44_restore_guest_files_and_folders_from_vmdks.html
-          - title: Set Up Proxy VMs for Restore Operations
+          - title: Set up proxy VMs for restore operations
             url: /scpivs44_set_up_proxy_vms_for_restore_operations.html
-          - title: Configure Credentials for VM Guest File Restores
+          - title: Configure credentials for VM guest file restores
             url: /scpivs44_configure_credentials_for_vm_guest_file_restores.html
-          - title: Extend the Time of a Guest File Restore Session
+          - title: Extend the time of a guest file restore session
             url: /scpivs44_extend_the_time_of_a_guest_file_restore_session.html
-          - title: Guest File Restore Scenarios You Might Encounter
+          - title: Guest file restore scenarios you might encounter
             url: /scpivs44_guest_file_restore_scenarios_you_might_encounter.html
       - title: Administer SnapCenter Plug-in for VMware vSphere
         entries:
-          - title: Restart the VMware vSphere Web Client Service
+          - title: Restart the VMware vSphere web client service
             url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html
-          - title: Manage Resource Groups
+          - title: Manage resource groups
             url: /scpivs44_manage_resource_groups.html
-          - title: Manage Policies
+          - title: Manage policies
             url: /scpivs44_manage_policies.html
-          - title: Manage Backups
+          - title: Manage backups
             url: /scpivs44_manage_backups.html
-          - title: Manage Storage Systems
+          - title: Manage storage systems
             url: /scpivs44_manage_storage_systems.html
           - title: Manage SnapCenter Plug-in for VMware vSphere
             url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html
-          - title: Manage the VMware vSphere Web Client Service
+          - title: Manage the VMware vSphere web client service
             url: /scpivs44_manage_the_vmware_vsphere_web_client_service.html
-          - title: Customize your Configuration
+          - title: Customize your configuration
             url: /scpivs44_customize_your_configuration.html
-          - title: Minimum ONTAP Privileges Required
+          - title: Minimum ONTAP privileges required
             url: /scpivs44_minimum_ontap_privileges_required.html
       - title: REST APIs
         entries:
           - title: Overview
             url: /scpivs44_rest_apis_overview.html
-          - title: Access REST APIs Using the Swagger API Web Page
+          - title: Access REST APIs using the Swagger API web page
             url: /scpivs44_access_rest_apis_using_the_swagger_api_web_page.html
-          - title: REST API Workflows  Add and Modify Storage VMs
+          - title: REST API workflows  add and modify storage VMs
             url: /scpivs44_rest_api_workflows__add_and_modify_storage_vms.html
-          - title: REST API Workflows  Create and Modify Resource Groups
+          - title: REST API workflows  create and modify resource groups
             url: /scpivs44_rest_api_workflows__create_and_modify_resource_groups.html
-          - title: REST API Workflow  Back Up on Demand
+          - title: REST API workflow  back up on demand
             url: /scpivs44_rest_api_workflow__back_up_on_demand.html
-          - title: REST API Workflow  Restore VMs
+          - title: REST API workflow  restore VMs
             url: /scpivs44_rest_api_workflow__restore_vms.html
-          - title: REST API Workflow  Restore Deleted VMs
+          - title: REST API workflow  restore deleted VMs
             url: /scpivs44_rest_api_workflow__restore_deleted_vms.html
-          - title: REST API Workflow  Restore VMDKs
+          - title: REST API workflow  restore VMDKs
             url: /scpivs44_rest_api_workflow__restore_vmdks.html
-          - title: REST API Workflows  Attach and Detach VMDKs
+          - title: REST API workflows  attach and detach VMDKs
             url: /scpivs44_rest_api_workflows__attach_and_detach_vmdks.html
-          - title: REST API Workflows  Mount and Unmount Datastores
+          - title: REST API workflows  mount and unmount datastores
             url: /scpivs44_rest_api_workflows__mount_and_unmount_datastores.html
-          - title: REST APIs  Download Jobs and Generate Reports
+          - title: REST APIs  download jobs and generate reports
             url: /scpivs44_rest_apis__download_jobs_and_generate_reports.html
-          - title: REST APIs Workflows modify built-in schedules
+          - title: REST APIs workflows modify built-in schedules
             url: /scpivs44_rest_api_workflows__modify_built-in_schedules.html
       - title: Upgrade
         entries:
           - title: Overview
             url: /scpivs44_upgrade_overview.html
-          - title: Upgrade from Windows-Based SnapCenter Plug-in for VMware vSphere
+          - title: Upgrade from Windows-based SnapCenter Plug-in for VMware vSphere
             url: /scpivs44_upgrade_from_windows-based_snapcenter_plug-in_for_vmware_vsphere.html
           - title: Upgrade from NetApp Data Broker
             url: /scpivs44_upgrade_from_netapp_data_broker.html
-          - title: Information Not Displayed After Upgrading to a New Patch of the Same Release
+          - title: Information not displayed after upgrading to a new patch of the same release
             url: /scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html
       - title: Migrate to the Linux-based SnapCenter Plug-in for VMware vSphere
         entries:
           - title: Overview
             url: /scpivs44_migrate_to_the_linux-based_snapcenter_plug-in_for_vmware_vsphere_overview.html
-          - title: Migrate from SnapCenter Backup Metadata to the Virtual Appliance
+          - title: Migrate from SnapCenter backup metadata to the virtual appliance
             url: /scpivs44_migrate_from_snapcenter_backup_metadata_to_the_virtual_appliance.html
-          - title: Post-Migration
+          - title: Post-migration
             url: /scpivs44_post-migration.html
-          - title: Correct Bad Gateway Errors During Migration
+          - title: Correct bad gateway errors during migration
             url: /scpivs44_correct_bad_gateway_errors_during_migration.html
-          - title: Manage Authentication Errors
+          - title: Manage authentication errors
             url: /scpivs44_manage_authentication_errors.html
