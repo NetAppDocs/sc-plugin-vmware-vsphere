@@ -88,7 +88,7 @@ Restoring a complete VM when one or more VMDKs are on a VMFS datastore.
 ==== License requirements
 
 |===
-|You must provide licenses for… |license requirement
+|You must provide licenses for… |License requirement
 
 |ONTAP
 |One of these: SnapMirror or SnapVault (for secondary data protection regardless of the type of relationship)
