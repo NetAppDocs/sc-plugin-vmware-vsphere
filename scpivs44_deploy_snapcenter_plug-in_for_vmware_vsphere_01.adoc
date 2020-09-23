@@ -42,10 +42,10 @@ summary:
 |In *Register to existing vCenter*, enter the vCenter credentials.
 In *Create SnapCenter Plug-in for VMware vSphere credentials*, enter the SnapCenter Plug-in for VMware vSphere credentials.
 *Attention:* Make a note of the username and password that you specify. You need to use these credentials if you want to modify the SnapCenter Plug-In for VMware vSphere configuration at a later time.
-In Setup Network Properties, enter the network information.
-In Setup Date and Time, select the time zone where the vCenter is located.
+In *Setup Network Properties*, enter the network information.
+In *Setup Date and Time*, select the time zone where the vCenter is located.
 |Ready to complete
-|Review the page and click Finish.
+|Review the page and click *Finish*.
 |===
 +
 All hosts must be configured with IP addresses (FQDN hostnames are not supported). The deploy operation does not validate your input before deploying.

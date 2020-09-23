@@ -143,7 +143,7 @@ In Linked Mode, the list includes policies in all the linked vCenters. You must 
 image:scpivs44_image18.png[Error: Missing Graphic Image]
 +
 You must fill in each field. The SnapCenter VMware plug-in creates schedules in the time zone in which the SnapCenter VMware plug-in is deployed. You can modify the time zone by using the SnapCenter Plug-in for VMware vSphere GUI.
-
++
 link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-time-zone-for-backups[Modify the Time Zone for Backups].
 
 . Review the summary, and then click *Finish*.
