@@ -45,17 +45,17 @@ To modify resource groups, follow this workflow:
 |Step |REST API |Comments
 
 |1
-|/4.1/resource-groups
-|Get List of Resource Groups gets the list of VMware vSphere web client resource groups.
+|`/4.1/resource-groups`
+|`Get List of Resource Groups` gets the list of VMware vSphere web client resource groups.
 Note the *resourceGroupId* that you want to modify.
 |2
-|/4.1/policies
-|If you want to modify the assigned policies, Get Policies gets the list of VMware vSphere web client policies.
+|`/4.1/policies`
+|If you want to modify the assigned policies, `Get Policies` gets the list of VMware vSphere web client policies.
 Note the *policyId* that you want to use when modifying the resource group and the policy *frequency*.
 |3
-|/4.1/resource-groups/
-{resouceGroupId}
-|Update a Resource Group modifies the specified resource group.
+|`/4.1/resource-groups/
+{resouceGroupId}`
+|`Update a Resource Group` modifies the specified resource group.
 Pass the *resourceGroupId* from Step 1.
 Optionally, pass the *policyId* from Step 2 and enter the *frequency* details in addition to all other required attributes.
 |===
