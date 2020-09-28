@@ -23,7 +23,7 @@ You need to use the SnapCenter Plug-in for VMware vSphere management GUI to upda
 
 === Access the maintenance console
 
-You can manage your application, system, and network configurations by using the maintenance console for SnapCenter Plug-in for VMware vSphere. You can change your administrator password and maintenance password by using the maintenance console. You can also generate support bundles and start remote diagnostics by using the maintenance console.
+You can manage your application, system, and network configurations by using the maintenance console for SnapCenter Plug-in for VMware vSphere. You can change your administrator password, maintenance password, generate support bundles, and start remote diagnostics.
 
 .Before you begin
 
@@ -33,8 +33,7 @@ Before stopping and restarting the SnapCenter Plug-in for VMware vSphere service
 
 * The defaults are “maint” as the username and “admin123” as the password to log in to the maintenance console for SnapCenter Plug-in for VMware vSphere.
 +
-[Tip]
-After deployment, modify the default login credentials.
+TIP: After deployment, modify the default login credentials.
 
 * You must set a password for the “diag” user while enabling remote diagnostics.
 +

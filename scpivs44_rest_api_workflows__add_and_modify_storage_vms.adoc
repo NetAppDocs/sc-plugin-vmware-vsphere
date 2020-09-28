@@ -29,8 +29,8 @@ To add storage VM operations, follow this workflow:
 |Step |REST API |Comments
 
 |1
-|/4.1/storage-system
-|Add Storage System adds the specified storage VM to SnapCenter Plug-in for VMware vSphere.
+|`/4.1/storage-system`
+|`Add Storage System` adds the specified storage VM to SnapCenter Plug-in for VMware vSphere.
 |===
 
 To modify storage VM operations, follow this workflow:
@@ -39,12 +39,11 @@ To modify storage VM operations, follow this workflow:
 |Step |REST API |Comments
 
 |1
-|/4.1/storage-system
-|getSvmAll gets the list of all available storage VMs.
+|`/4.1/storage-system`
+|`getSvmAll` gets the list of all available storage VMs.
 Note the *name* of the storage VM that you want to modify.
 |2
-|/4.1/storage-system
-
-|Modify Storage System modifies the specified storage VM.
+|`/4.1/storage-system`
+|`Modify Storage System` modifies the specified storage VM.
 Pass the *name* from Step 1 in addition to all the other required attributes.
 |===

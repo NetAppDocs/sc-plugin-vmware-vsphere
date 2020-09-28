@@ -59,4 +59,4 @@ link:scpivs44_post_deployment_required_operations_and_issues.html[Post deploymen
 
 . Migrate the Windows-based VMware backup metadata.
 +
-See the migration section in the https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63240[Data Protection Guide for SnapCenter Plug-in for VMware vSphere^].
+link:scpivs44_migrate_to_the_linux-based_snapcenter_plug-in_for_vmware_vsphere_overview.html[Migration overview]

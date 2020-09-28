@@ -28,7 +28,10 @@ You can use the SnapCenter Plug-in for VMware vSphere REST APIs to perform commo
 ** Backup VMs, scheduled and on-demand
 ** Restore VMs and deleted VMs
 ** Restore VMDKs
+** Attach and detach VMDKs
 ** Mount and unmount datastores
+** Download jobs and generate reports
+** Modify built-in schedules
 * Operations that are not supported by the REST APIs for VMware vSphere
 ** Guest file restore
 ** Installation and configuration of the SnapCenter VMware plug-in
@@ -52,5 +55,3 @@ To obtain the token, use `/4.1/auth/login` REST API and provide the vCenter cred
 Each REST API name includes the SnapCenter version number in which the REST API was first released. For example, the REST API `/4.1/datastores/{moref}/backups` was first released in SnapCenter 4.1.
 +
 REST APIs in future releases will usually be backward compatible and will be modified to accommodate new features as needed.
-
-

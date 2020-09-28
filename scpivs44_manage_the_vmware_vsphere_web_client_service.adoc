@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Manage the VMware vSphere web client service
+= Restart the VMware vSphere web client service
 :hardbreaks:
 :nofooter:
 :icons: font

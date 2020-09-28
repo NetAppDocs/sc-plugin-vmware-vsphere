@@ -26,11 +26,11 @@ For each REST API, add `https://<server>:<port>` at the front of the REST API to
 |Step |REST API |Comments
 
 |1
-|/4.1/schedules
-|Get all built-in schedules gets a list of the job schedules that were originally provided in the product.
+|`/4.1/schedules`
+|`Get all built-in` schedules gets a list of the job schedules that were originally provided in the product.
 Note the schedule name that you want to modify and the associated cron expression.
 |2
-|/4.1/schedules
+|`/4.1/schedules`
 |Modify any built-in schedule changes the named schedule.
 Pass the schedule name from Step 1 and create a new cron expression for the schedule.
 |===

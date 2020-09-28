@@ -78,7 +78,7 @@ Wait for the message `Completed Stop service request`.
 
 .. Delete all plug-in folders with the following name:
 +
-`com.netapp.scvm.webclient-<version_number>.`
+`com.netapp.scvm.webclient-<version_number>`
 
 . Restart the web client service by using the following HTML5 command:
 +

@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Overview
+= Supported upgrade paths
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,7 +17,5 @@ summary:
 //
 // 2020-09-09 12:24:28.800577
 //
-
-=== Supported upgrade paths
 
 See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2863453[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade and migration paths.

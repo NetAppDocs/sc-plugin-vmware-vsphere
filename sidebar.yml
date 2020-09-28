@@ -101,7 +101,7 @@ entries:
             url: /scpivs44_detach_a_virtual_disk.html
       - title: Restore guest files and folders
         entries:
-          - title: Overview
+          - title: Workflow, prerequisites, and limitations
             url: /scpivs44_restore_guest_files_and_folders_overview.html
           - title: Restore guest files and folders from VMDKs
             url: /scpivs44_restore_guest_files_and_folders_from_vmdks.html
@@ -127,7 +127,7 @@ entries:
             url: /scpivs44_manage_storage_systems.html
           - title: Manage SnapCenter Plug-in for VMware vSphere
             url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html
-          - title: Manage the VMware vSphere web client service
+          - title: Restart the VMware vSphere web client service
             url: /scpivs44_manage_the_vmware_vsphere_web_client_service.html
           - title: Customize your configuration
             url: /scpivs44_customize_your_configuration.html
@@ -161,7 +161,7 @@ entries:
             url: /scpivs44_rest_api_workflows__modify_built-in_schedules.html
       - title: Upgrade
         entries:
-          - title: Overview
+          - title: Supported upgrade paths
             url: /scpivs44_upgrade_overview.html
           - title: Upgrade from Windows-based SnapCenter Plug-in for VMware vSphere
             url: /scpivs44_upgrade_from_windows-based_snapcenter_plug-in_for_vmware_vsphere.html

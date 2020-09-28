@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Overview
+= Workflow, prerequisites, and limitations
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -22,8 +22,6 @@ summary:
 You can restore files or folders from a virtual machine disk (VMDK) on a Windows guest OS.
 
 === Guest restore workflow
-
-Guest OS restore operations require multiple steps.
 
 Guest OS restore operations include the following steps:
 
@@ -59,7 +57,7 @@ SnapCenter uses information from VMware Tools to establish a connection to the V
 +
 For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
 
-* The credentials for the target VM must specify the built-in domain administrator account or the built-in local administrator account. The username must be "Administrator." Before starting the restore operation, the credentials must be configured for the VM to which you want to attach the virtual disk. The credentials are required for both the attach operation and the subsequent restore operation. Workgroup users can use the built-in local administrator account.
+* Credentials for the target VM must specify the built-in domain administrator account or the built-in local administrator account. The username must be "Administrator." Before starting the restore operation, the credentials must be configured for the VM to which you want to attach the virtual disk. The credentials are required for both the attach operation and the subsequent restore operation. Workgroup users can use the built-in local administrator account.
 +
 [IMPORTANT]
 If you must use an account that is not the built-in administrator account, but has administrative privileges within the VM, you must disable UAC on the guest VM.

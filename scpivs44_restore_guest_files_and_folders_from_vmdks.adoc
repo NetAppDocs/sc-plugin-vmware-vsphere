@@ -50,7 +50,8 @@ The guest restore feature allows you to view and restore system and hidden files
 |Use Guest VM
 |You want to attach the virtual disk to the VM that you right-clicked
 before you started the wizard, and then select the credential for the VM.
-Credentials must already be created for the VM.
+*notified;
+*Note:* Credentials must already be created for the VM.
 |Use Guest File Restore proxy VM
 |You want to attach the virtual disk to a proxy VM, and then select the proxy VM.
 The proxy VM must be configured before the attach and restore operation begins.
@@ -60,7 +61,8 @@ The proxy VM must be configured before the attach and restore operation begins.
 +
 This option is required if you want to be notified when the attach operation finishes,  and the virtual disk is available. The notification email includes the virtual disk name, the VM name, and the newly assigned drive letter for the VMDK.
 +
-*Tip*: Enable this option because a guest file restore is an asynchronous operation and there might be a time latency to establish a guest session for you.
+[Tip]
+Enable this option because a guest file restore is an asynchronous operation and there might be a time latency to establish a guest session for you.
 +
 This option uses the email settings that are configured when you set up the VMware vSphere web client in vCenter.
 
@@ -97,7 +99,7 @@ For easier browsing, you can use filters in your search string. The filters are 
 |The character a.
 |ab
 |The string ab.
-|a|b
+|a [vertical bar] b
 |The character a or b.
 |a*
 |Zero or more instances of the character a.
@@ -133,7 +135,7 @@ For example: \\10.60.136.65\c$
 |If original file(s)
 exist
 |Select the action to be taken if the file or folder to be restored already exists on the restore destination: Always overwrite or Always skip.
-If the folder already exists, then the contents of the folder are merged with the existing folder.
+*Note:* If the folder already exists, then the contents of the folder are merged with the existing folder.
 |Disconnect Guest
 Session after
 successful restore
@@ -142,8 +144,6 @@ successful restore
 
 . Click *Restore*.
 +
-You can view the progress of the restore operation in the Guest File Restore page, or in
-+
-the Dashboard job monitor, or you can wait for the email notification. The time it takes for the email notification to be sent depends upon the length of time of the restore operation.
+You can view the progress of the restore operation in the Guest File Restore page, or in the Dashboard job monitor, or you can wait for the email notification. The time it takes for the email notification to be sent depends upon the length of time of the restore operation.
 +
 The notification email contains an attachment with the output from the restore operation. If the restore operation fails, open the attachment for additional information.

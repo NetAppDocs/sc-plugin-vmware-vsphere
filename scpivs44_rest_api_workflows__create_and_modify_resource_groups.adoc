@@ -21,7 +21,7 @@ summary:
 [.lead]
 To perform create and modify resource group operations using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
 
-For each REST API, add `https://<server>:<port> `at the front of the REST API to form a complete endpoint.
+For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 
 To create resource groups, follow this workflow:
 
@@ -29,13 +29,13 @@ To create resource groups, follow this workflow:
 |Step |REST API |Comments
 
 |1
-|/4.1/policies
-|Get Policies gets the list of VMware vSphere web client policies.
+|`/4.1/policies`
+|`Get Policies` gets the list of VMware vSphere web client policies.
 Note the *policyId* that you want to use when creating the resource group and the policy *frequency*.
-If no policies are listed, then use the Create Policy REST API to create a new policy.
+If no policies are listed, then use the `Create Policy` REST API to create a new policy.
 |2
-|/4.1/resource-groups
-|Create a Resource Group creates a resource group with the specified policy.
+|`/4.1/resource-groups`
+|`Create a Resource Group` creates a resource group with the specified policy.
 Pass the *policyId* from Step 1 and enter the policy *frequency* details in addition to all other required attributes.
 |===
 

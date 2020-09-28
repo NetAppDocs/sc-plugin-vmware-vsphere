@@ -63,7 +63,9 @@ To modify a SnapCenter VMware plug-in policy schedule, you must modify the sched
 
 . In the left Navigator pane of the VMware vSphere web client, click *Policies*, then select a policy and click *Edit*.
 . Modify the policy fields.
-. When you are finished, click *Update*.The changes take effect when the next scheduled backup is performed.
+. When you are finished, click *Update*.
+
+The changes take effect when the next scheduled backup is performed.
 
 === Delete policies
 
