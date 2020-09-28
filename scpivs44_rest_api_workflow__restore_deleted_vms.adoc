@@ -44,7 +44,7 @@ Note the *snapshotLocationsList* information.
 |4
 |`/4.1/vm/{moref}/backups/
 availableesxhosts`
-|`Get available ESX Hosts ` gets the information for the host on which the backup is stored.
+|`Get available ESX Hosts` gets the information for the host on which the backup is stored.
 Note the *availableEsxHostsList* information.
 |5
 |`/4.1/vm/{uuid}/backups/
