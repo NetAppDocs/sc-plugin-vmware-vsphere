@@ -35,7 +35,7 @@ Note the *policyId* that you want to use when creating the resource group and th
 If no policies are listed, then use the `Create Policy` REST API to create a new policy.
 |2
 |`/4.1/resource-groups`
-|`Create a Resource Group` creates a resource group with the specified policy.
+|`Create a Resource Group`creates a resource group with the specified policy.
 Pass the *policyId* from Step 1 and enter the policy *frequency* details in addition to all other required attributes.
 |===
 
