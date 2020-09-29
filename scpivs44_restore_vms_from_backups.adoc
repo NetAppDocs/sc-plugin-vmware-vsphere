@@ -76,6 +76,6 @@ The restore destination is the same ESXi host where the VM was originally regist
 +
 Refresh the screen to display updated information.
 
-.After you Finish
+.After you finish
 
 Although the VMs are restored, they are not automatically added to their former resource groups. Therefore, you must manually add the restored VMs to the appropriate resource groups.

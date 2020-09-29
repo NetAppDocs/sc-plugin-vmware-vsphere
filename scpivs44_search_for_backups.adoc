@@ -29,7 +29,7 @@ You can search for and find a specific backup of a VM or datastore using the Res
 |To view backups for… |Do the following…
 
 |VMs
-|Click the *Hosts and Clusters* menu option, then select a VM, then click the *Configure* tab, and then click Backups in the SnapCenter Plug-in for VMware vSphere section.
+|Click the *Hosts and Clusters* menu option, then select a VM, then click the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere section*.
 |Datastores
 |Click the *Storage* menu option, then select a datastore, then click the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
 |===
