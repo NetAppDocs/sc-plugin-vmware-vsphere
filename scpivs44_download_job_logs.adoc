@@ -38,7 +38,7 @@ You might need to scroll to the right to see the icon.
 +
 You can also double-click a job to access the Job Details window and then click *Download Job Logs*.
 
-.Results
+.Result
 
 Job logs are located on the Linux VM host where the SnapCenter VMware plug-in is deployed. The default job log location is `/var/log/netapp`.
 

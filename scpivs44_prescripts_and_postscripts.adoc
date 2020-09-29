@@ -39,7 +39,7 @@ When you create a backup policy, the wizards in some plug-ins provide separate f
 
 To specify multiple scripts, press *Enter* after each script path to list each script on a separate line. Semicolons (;) are not allowed. You can specify multiple prescripts and multiple postscripts. A single script can be coded as both a prescript and a postscript and can call other scripts.
 
-.When scripts are executed.
+.When scripts are executed
 
 Scripts are executed according to the value set for BACKUP_PHASE.
 
@@ -64,35 +64,35 @@ You can use the environment variables shown in the following table in scripts.
 |===
 |Environment variable |Description
 
-|BACKUP_NAME
+|`BACKUP_NAME`
 |Name of the backup.
 Variable passed in postscripts only.
-|BACKUP_DATE
-|Date of the backup, in the format yyyymmdd
+|`BACKUP_DATE`
+|Date of the backup, in the format `yyyymmdd`
 Variable passed in postscripts only.
-|BACKUP_TIME
-|Time of the backup, in the format hhmmss
+|`BACKUP_TIME`
+|Time of the backup, in the format `hhmmss`
 Variable passed in postscripts only.
-|BACKUP_PHASE
+|`BACKUP_PHASE`
 |The phase of the backup in which you want the script to run.
-Valid values are: PRE_BACKUP, POST_BACKUP, and FAILED_BACKUP.
+Valid values are: `PRE_BACKUP, POST_BACKUP, and FAILED_BACKUP`.
 Variable passed in prescripts and postscripts.
-|STORAGE_SNAPSHOTS
+|`STORAGE_SNAPSHOTS`
 |The number of storage snapshots in the backup.
 Variable passed in postscripts only.
-|STORAGE_SNAPSHOT.#
+|`STORAGE_SNAPSHOT.#`
 |One of the defined storage snapshots, in the following format:
-<filer>:/vol/<volume>:<ONTAP-snapshot-name>
+`<filer>:/vol/<volume>:<ONTAP-snapshot-name>  `
 Variable passed in postscripts only.
-|VIRTUAL_MACHINES
+|`VIRTUAL_MACHINES`
 |The number of VMs in the backup.
 Variable passed in prescripts and postscripts.
-|VIRTUAL_MACHINE.#
+|`VIRTUAL_MACHINE.#`
 |One of the defined virtual machines, in the following format:
-<VM name>|<VM UUID>|<power-state>|<VM snapshot>|<ip-addresses>
+`<VM name>|<VM UUID>|<power-state>|<VM snapshot>|<ip-addresses>
 <power-state> has the values POWERED_ON, POWERED_OFF, or
-SUSPENDED
-<VM snapshot> has the values true or false
+SUSPENDED`
+`<VM snapshot>` has the values `true` or `false`
 Variable passed in prescripts and postscripts.
 |===
 

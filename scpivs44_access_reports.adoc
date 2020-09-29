@@ -59,12 +59,12 @@ Deleted backups are not included in the report.
 |Mount Report
 |Displays overview data about mount jobs. Click a section/status on the graphic to see a list of jobs with that status on the Reports tab.
 For each job, the report lists the job ID, job status, job name, and job start and end times. The job name includes the Snapshot copy name.
-For example: Mount Backup <snapshot-copy-name>.
+For example: `Mount Backup <snapshot-copy-name>`
 You can download the Report table in HTML or CSV format.
 You can also download the Job Monitor job logs for all the jobs (not just the jobs in the report).
 |Restore Report
 |Displays overview status information about restore jobs. Click a section/ status on the graphic to see a list of jobs with that status on the Reports tab.
-For each job, the report lists the job ID, job status, job name, and job start and end times. The job name includes the Snapshot copy name. For example: Restore Backup <snapshot-copy-name>.
+For each job, the report lists the job ID, job status, job name, and job start and end times. The job name includes the Snapshot copy name. For example: `Restore Backup <snapshot-copy-name>`
 You can download the Report table in HTML or CSV format. You can also download the Job Monitor job logs for all the jobs (not just the jobs in the report).
 |Last Protection Status of
 VMs or Datastores Report

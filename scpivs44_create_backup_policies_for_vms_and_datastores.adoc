@@ -70,7 +70,7 @@ The maximum retention value is 1018 backups for resources on ONTAP 9.4 or later,
 +
 The policy specifies the backup frequency only. The specific protection schedule for backing up is defined in the resource group. Therefore, two or more resource groups can share the same policy and backup frequency but have different backup schedules.
 
-. In the *Replication *fields, specify the type of replication to secondary storage,  as shown in the following table:
+. In the *Replication* fields, specify the type of replication to secondary storage,  as shown in the following table:
 +
 |===
 |For this field… |Do this…
@@ -79,16 +79,16 @@ The policy specifies the backup frequency only. The specific protection schedule
 
 |Select this option to create mirror copies of backup sets on another volume that has a SnapMirror relationship to the primary backup volume.
 If a volume is configured with a mirror-vault relationship, you must select only the *Update SnapVault after backup* option if you want backups copied to the mirror-vault destinations.
-Note: This option is not supported for datastores in FlexGroup volumes.
+*Note:* This option is not supported for datastores in FlexGroup volumes.
 |Update SnapVault after backup
 
 |Select this option to perform disk-to-disk backup replication on another volume that has a SnapVault relationship to the primary backup volume.
 *Important:* If a volume is configured with a mirror-vault relationship, you must select only this option if you want backups copied to the mirror-vault destinations.
-Note: This option is not supported for datastores in FlexGroup volumes.
+*Note:* This option is not supported for datastores in FlexGroup volumes.
 |Snapshot label
 |Enter an optional, custom label to be added to SnapVault and SnapMirror Snapshot copies created with this policy.
 The Snapshot label helps to distinguish Snapshots created with this policy from other Snapshots on the secondary storage system.
-Note: A maximum of 31 characters is allowed for Snapshot copy labels.
+*Note:* A maximum of 31 characters is allowed for Snapshot copy labels.
 |===
 
 . Optional: In the *Advanced* fields, select the fields that are needed. The Advanced field details are listed in the following table.

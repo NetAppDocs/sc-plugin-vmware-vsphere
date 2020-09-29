@@ -85,7 +85,7 @@ If you are a SnapCenter customer and have VM consistent or VM crash-consistent b
 |Password
 |Enter the password specified when SnapCenter Plug-in for VMware vSphere was deployed.
 |Authentication
-|Select Linux.
+|Select *Linux*.
 |===
 
 === Register SnapCenter Plug-in for VMware vSphere with SnapCenter Server
@@ -120,7 +120,7 @@ You can register multiple instances of SnapCenter Plug-in for VMware vSphere on 
 |For this field… |Do this…
 
 |Host Type
-|Select “vSphere” as the type of host.
+|Select *vSphere* as the type of host.
 |Host name
 |Verify the IP address of the virtual appliance.
 |Credential
@@ -131,7 +131,7 @@ You can register multiple instances of SnapCenter Plug-in for VMware vSphere on 
 +
 When the VM host is successfully added, it is displayed on the Managed Hosts tab.
 
-. In the left navigation pane, click *Settings*, then click the *Credential* tab, and then click *Add* to add credentials for the virtual appliance.
+. In the left navigation pane, click *Settings*, then click the *Credential* tab, and then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Add* to add credentials for the virtual appliance.
 . Provide the credential information that was specified during the deployment of SnapCenter Plug-in for VMware vSphere.
 +
 [NOTE]
