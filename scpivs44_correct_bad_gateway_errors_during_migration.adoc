@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: scpivs44_correct_“bad_gateway”_errors_during_migration.html
+permalink: scpivs44_correct_bad_gateway_errors_during_migration.html
 keywords:
 summary:
 ---
