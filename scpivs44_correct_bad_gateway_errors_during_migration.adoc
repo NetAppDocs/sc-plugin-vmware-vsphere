@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Correct Bad Gateway errors during migration
+= Correct "Bad Gateway" errors during migration
 :hardbreaks:
 :nofooter:
 :icons: font
