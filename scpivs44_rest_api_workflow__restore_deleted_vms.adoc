@@ -28,7 +28,7 @@ For each REST API, add `https://<server>:<port>` at the front of the REST API to
 
 |1
 |Go to
-'http://<vCenter-IP>/mob'
+`http://<vCenter-IP>/mob`
 |Find the VM UUID from the VMware Managed Objects URL.
 Note the *uuid* for the VM that you want to restore.
 |2
