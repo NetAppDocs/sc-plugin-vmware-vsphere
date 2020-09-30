@@ -177,7 +177,5 @@ entries:
             url: /scpivs44_migrate_from_snapcenter_backup_metadata_to_the_virtual_appliance.html
           - title: Post-migration
             url: /scpivs44_post-migration.html
-          - title: Correct Bad Gateway errors during migration
-            url: /scpivs44_correct_bad_gateway_errors_during_migration.html
           - title: Manage authentication errors
             url: /scpivs44_manage_authentication_errors.html

@@ -34,7 +34,7 @@ link:scpivs44_manage_authentication_errors.html[Manage authentication errors]
 
 * Backup names
 +
-Backup names before migration have the format RGName`_HostName_Timestamp`. For example, `-NAS_DS_RG_perf1server_07-05-2019_02.11.59.9338`.
+Backup names before migration have the format RGName `_HostName_Timestamp`. For example, `-NAS_DS_RG_perf1server_07-05-2019_02.11.59.9338`.
 +
 Backup names after migration have the format `RGName_Timestamp`.
 +
