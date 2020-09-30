@@ -31,6 +31,6 @@ For each REST API, add `https://<server>:<port>` at the front of the REST API to
 Note the schedule name that you want to modify and the associated cron expression.
 |2
 |`/4.1/schedules`
-|Modify any built-in schedule changes the named schedule.
+|'Modify any built-in schedule' changes the named schedule.
 Pass the schedule name from Step 1 and create a new cron expression for the schedule.
 |===
