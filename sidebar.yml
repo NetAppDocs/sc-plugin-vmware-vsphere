@@ -103,6 +103,13 @@ entries:
         entries:
           - title: Workflow, prerequisites, and limitations
             url: /scpivs44_restore_guest_files_and_folders_overview.html
+            entries:
+              - title: Guest restore workflow
+                url: /scpivs44_restore_guest_files_and_folders_overview.html#guest-restore-workflow
+              - title: Prerequisites for restoring guest files and folders
+                url: /scpivs44_restore_guest_files_and_folders_overview.html#prerequisites-for-restoring-guest-files-and-folders
+              - title: Guest file restore limitations
+                url: /scpivs44_restore_guest_files_and_folders_overview.html#guest-file-restore-limitations
           - title: Restore guest files and folders from VMDKs
             url: /scpivs44_restore_guest_files_and_folders_from_vmdks.html
           - title: Set up proxy VMs for restore operations
@@ -120,20 +127,84 @@ entries:
             entries:
              - title: Restart the VMware vSphere web client service in a Linux vCenter
                url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-linux-vcenter
+             - title: Restart the VMware vSphere web client service in a Windows vCenter
+               url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-windows-vcenter
           - title: Manage resource groups
             url: /scpivs44_manage_resource_groups.html
+            entries:
+              - title: Suspend and resume operations on resource groups
+                url: /scpivs44_manage_resource_groups.html#suspend-and-resume-operations-on-resource-groups
+              - title: Modify resource groups
+                url: /scpivs44_manage_resource_groups.html#modify-resource-groups
+              - title: Delete resource groups
+                url: /scpivs44_manage_resource_groups.html#delete-resource-groups
           - title: Manage policies
             url: /scpivs44_manage_policies.html
+            entries:
+              - title: Detach policies
+                url: /scpivs44_manage_policies.html#detach-policies
+              - title: Modify policies
+                url: /scpivs44_manage_policies.html#modify-policies
+              - title: Delete policies
+                url: /scpivs44_manage_policies.html#delete-policies
           - title: Manage backups
             url: /scpivs44_manage_backups.html
+            entries:
+              - title: Rename backups
+                url: /scpivs44_manage_backups.html#rename-backups
+              - title: Delete backups
+                url: /scpivs44_manage_backups.html#delete-backups
           - title: Manage storage systems
             url: /scpivs44_manage_storage_systems.html
+            entries:
+              - title: Modify storage VMs
+                url: /scpivs44_manage_storage_systems.html#modify-storage-vms
+              - title: Rename storage VMs
+                url: /scpivs44_manage_storage_systems.html#rename-storage-vms
+              - title: Modify the configured storage timeout
+                url: /scpivs44_manage_storage_systems.html#modify-the-configured-storage-timeout
+              - title: Remove storage VMs
+                url: /scpivs44_manage_storage_systems.html#remove-storage-vms
           - title: Manage SnapCenter Plug-in for VMware vSphere
             url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html
+            entries:
+              - title: Access the maintenance console
+                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maintenance-console
+              - title: Modify the time zones for backups
+                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-time-zone-for-backups
+              - title: Modify the logon credentials for SnapCenter Plug-in for VMware vSphere
+                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-logon-credentials-for-snapcenter-plug-in-for-vmware-vsphere
+              - title: Modify the SnapCenter VMware Plug-in password from the maintenance console
+                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-snapcenter-vmware-plug-in-password-from-the-maintenance-console
+              - title: Modify the vCenter logon credentials in SnapCenter Plug-in for VMware vSphere
+                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-vcenter-logon-credentials-in-snapcenter-plug-in-for-vmware-vsphere
+              - title: Modify the network settings
+                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-network-settings
+              - title: Enable SSH for SnapCenter Plug-in for VMware vSphere
+                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#enable-ssh-for-snapcenter-plug-in-for-vmware-vsphere
+              - title: Create and import certificates
+                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#create-and-import-certificates
+              - title: Stop SnapCenter Plug-in for VMware vSphere when in linked mode
+                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#stop-snapcenter-plug-in-for-vmware-vsphere-when-in-linked-mode
+              - title: Disable and enable SnapCenter Plug-in for VMware vSphere
+                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#disable-and-enable-snapcenter-plug-in-for-vmware-vsphere
+              - title: Remove SnapCenter Plug-in for VMware vSphere
+                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#remove-snapcenter-plug-in-for-vmware-vsphere
           - title: Restart the VMware vSphere web client service
             url: /scpivs44_manage_the_vmware_vsphere_web_client_service.html
+            entries:
+             - title: Restart the VMware vSphere web client service in a Linux vCenter
+               url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-linux-vcenter
+             - title: Restart the VMware vSphere web client service in a Windows vCenter
+               url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-windows-vcenter
           - title: Customize your configuration
             url: /scpivs44_customize_your_configuration.html
+            entries:
+              - title: Create the scbr.override configuration File
+                url: /scpivs44_customize_your_configuration.html#create-the-scbr-override-configuration-file
+              - title: Properties you can override
+                url: /scpivs44_customize_your_configuration.html#properties-you-can-override
+
           - title: Minimum ONTAP privileges required
             url: /scpivs44_minimum_ontap_privileges_required.html
       - title: REST APIs
