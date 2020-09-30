@@ -117,6 +117,8 @@ entries:
         entries:
           - title: Restart the VMware vSphere web client service
             url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html
+              - title: Restart the VMware vSphere web client service in a Linux vCenter
+                url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-linux-vcenter
           - title: Manage resource groups
             url: /scpivs44_manage_resource_groups.html
           - title: Manage policies
