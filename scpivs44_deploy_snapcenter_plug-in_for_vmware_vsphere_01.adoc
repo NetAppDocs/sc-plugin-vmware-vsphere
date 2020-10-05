@@ -31,7 +31,7 @@ summary:
 |Select a resource
 |Select a resource where you want to run the deployed VM template.
 |Review details
-|Verify the .ova template details.
+|Verify the `.ova` template details.
 |License agreements
 |Select the checkbox for *I accept all license agreements*.
 |Select storage
@@ -48,6 +48,7 @@ In *Setup Date and Time*, select the time zone where the vCenter is located.
 |Review the page and click *Finish*.
 |===
 +
+[NOTE]
 All hosts must be configured with IP addresses (FQDN hostnames are not supported). The deploy operation does not validate your input before deploying.
 
 . Navigate to the VM where SnapCenter Plug-in for VMware vSphere was deployed, then click the *Summary* tab, and then click the *Power On* box to start the SnapCenter VMware plug-in.

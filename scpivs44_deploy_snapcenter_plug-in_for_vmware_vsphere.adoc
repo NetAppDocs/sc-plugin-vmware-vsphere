@@ -48,7 +48,7 @@ Deploy the SnapCenter VMware plug-in in the same time zone as the vCenter. Backu
 . On the *Select an OVF template* page, specify the location of the `.ova` file (as shown in the following table) and click *Next*.
 +
 |===
-|If you downloaded the .ova file to… |Do this…
+|If you downloaded the `.ova` file to… |Do this…
 
 |An internet location
 |Enter the URL. Supported URL sources are HTTP and HTTPS.
