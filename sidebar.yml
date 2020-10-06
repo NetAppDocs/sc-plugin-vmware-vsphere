@@ -244,7 +244,7 @@ entries:
             url: /scpivs44_rest_api_workflows__mount_and_unmount_datastores.html
           - title: REST APIs download jobs and generate reports
             url: /scpivs44_rest_apis__download_jobs_and_generate_reports.html
-          - title: REST APIs workflows: modify built-in schedules
+          - title: REST APIs workflows modify built-in schedules
             url: /scpivs44_rest_api_workflows__modify_built-in_schedules.html
       - title: Upgrade
         entries:
