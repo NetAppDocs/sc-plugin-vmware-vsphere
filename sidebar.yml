@@ -226,7 +226,6 @@ entries:
             url: /scpivs44_rest_apis_overview.html
           - title: Access REST APIs using the Swagger API web page
             url: /scpivs44_access_rest_apis_using_the_swagger_api_web_page.html
-<<<<<<< HEAD
           - title: REST API workflows add and modify storage VMs
             url: /scpivs44_rest_api_workflows__add_and_modify_storage_vms.html
           - title: REST API workflows create and modify resource groups
@@ -242,23 +241,6 @@ entries:
           - title: REST API workflows attach and detach VMDKs
             url: /scpivs44_rest_api_workflows__attach_and_detach_vmdks.html
           - title: REST API workflows mount and unmount datastores
-=======
-          - title: REST API workflows: add and modify storage VMs
-            url: /scpivs44_rest_api_workflows__add_and_modify_storage_vms.html
-          - title: REST API workflows: create and modify resource groups
-            url: /scpivs44_rest_api_workflows__create_and_modify_resource_groups.html
-          - title: REST API workflow: back up on demand
-            url: /scpivs44_rest_api_workflow__back_up_on_demand.html
-          - title: REST API workflow: restore VMs
-            url: /scpivs44_rest_api_workflow__restore_vms.html
-          - title: REST API workflow: restore deleted VMs
-            url: /scpivs44_rest_api_workflow__restore_deleted_vms.html
-          - title: REST API workflow: restore VMDKs
-            url: /scpivs44_rest_api_workflow__restore_vmdks.html
-          - title: REST API workflows: attach and detach VMDKs
-            url: /scpivs44_rest_api_workflows__attach_and_detach_vmdks.html
-          - title: REST API workflows: mount and unmount datastores
->>>>>>> 977a177825f9d322a39e8d4ef80ef096760af12d
             url: /scpivs44_rest_api_workflows__mount_and_unmount_datastores.html
           - title: REST APIs download jobs and generate reports
             url: /scpivs44_rest_apis__download_jobs_and_generate_reports.html
