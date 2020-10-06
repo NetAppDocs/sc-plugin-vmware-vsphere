@@ -52,7 +52,7 @@ You can search for a specific backup name or a partial backup name, or you can f
 
 |Restore to the original datastore
 |Use the default, parent, datastore that is displayed.
-|Restore to an alternate datastore on the same SXi host
+|Restore to an alternate datastore on the same ESXi host
 |Click the destination datastore and select a different datastore from the list.
 |===
 +

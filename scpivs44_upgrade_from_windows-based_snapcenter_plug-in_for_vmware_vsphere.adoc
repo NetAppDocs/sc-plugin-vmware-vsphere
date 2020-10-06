@@ -42,7 +42,7 @@ This step is performed only if you are upgrading from Windows-based SnapCenter V
 .Steps
 
 . Download the upgrade .`iso` file.
-.. Log in to the NetApp Support Site ( https://mysupport.netapp.com/products/index.html[https://mysupport.netapp.com/products/index.html^]).
+.. Log in to the NetApp Support Site (https://mysupport.netapp.com/products/index.html[https://mysupport.netapp.com/products/index.html^]).
 .. From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *DOWNLOAD LATEST RELEASE* button.
 .. Download the SnapCenter Plug-in for VMware vSphere upgrade .`iso` file to any VM.
 . Suspend backup jobs.
@@ -55,7 +55,7 @@ Because this is a new installation of the Linux-based SnapCenter VMware plug-in,
 +
 link:scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html[Deploy SnapCenter Plug-in for VMware vSphere]
 +
-link:scpivs44_post_deployment_required_operations_and_issues.html[Post deployment issues and required operations]
+link:scpivs44_post_deployment_required_operations_and_issues.html[Post deployment required operations and issues]
 
 . Migrate the Windows-based VMware backup metadata.
 +

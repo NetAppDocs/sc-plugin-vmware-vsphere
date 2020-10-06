@@ -27,7 +27,7 @@ You can add SAN and NAS datastores but not VSAN or VVOL datastores.
 
 .Steps
 
-. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then select a resource group, and then click *Edit Resource Group* to start the wizard.
+. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then select a resource group, and then click image:scpivs44_image39.png[Error: Missing Graphic Image] *Edit Resource Group* to start the wizard.
 . On the *Resource* page, in the Available entities list, select a VM or datastore you want to add to the resource group, then click *>* to move your selection to the Selected entities list. You can move all the available entities by clicking *>>*.
 +
 image:scpivs44_image19.png[Error: Missing Graphic Image]

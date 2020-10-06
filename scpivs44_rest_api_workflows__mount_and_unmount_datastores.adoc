@@ -67,7 +67,7 @@ To unmount datastores, follow this workflow:
 |1
 |`/4.1/datastores/backups/
 {backupId}/mounted`
-|Get the list of mounted datastores.
+|`Get the list of mounted datastores`.
 Note the datastore *moref*(s) that you want to unmount.
 |2
 |`/4.1/datastores/unmount`

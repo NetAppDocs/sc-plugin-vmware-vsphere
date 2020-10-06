@@ -21,7 +21,7 @@ summary:
 [.lead]
 A resource group is the container for one or more VMs or datastores that you want to protect.
 
-Resource groups can contain any combination of VMs and datastores. Beginning with SnapCenter Plug-in for VMware vSphere 4.4, resource group can also contain one FlexGroup volume or one or more FlexVol volumes, but not both.
+Resource groups can contain any combination of VMs and datastores. Beginning with SnapCenter Plug-in for VMware vSphere 4.4, a resource group can also contain one FlexGroup volume or one or more FlexVol volumes, but not both.
 
 [NOTE]
 For spanning VMs, using FlexGroup and FlexVol together is not supported.
@@ -55,19 +55,19 @@ Do not add VMs that are in an inaccessible state. Although you can create a reso
 * Compatibility checks
 +
 SnapCenter performs compatibility checks when you create a resource group.
-
++
 <<Manage compatibility check failures>>
 
 .Steps
 
-. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then click *Create* to start the wizard.
+. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create* to start the wizard.
 +
 image:scpivs44_image16.png[Error: Missing Graphic Image]
 +
 This is the easiest way to create a resource group. However, you can also create a resource group with one resource by performing one of the following:
 +
-** To create a resource group for one VM, click *Menu* > *Hosts and Clusters*, then right-click a VM, then select NetApp SnapCenter, and then click  Create Resource Group.
-** To create a resource group for one datastore, click *Menu* > *Hosts and Clusters*, then right-click a datastore, then select *NetApp SnapCenter*, and then click *Create Resource Group*.
+** To create a resource group for one VM, click *Menu* > *Hosts and Clusters*, then right-click a VM, then select NetApp SnapCenter, and then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create Resource Group*.
+** To create a resource group for one datastore, click *Menu* > *Hosts and Clusters*, then right-click a datastore, then select *NetApp SnapCenter*, and then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create Resource Group*.
 
 . On the *General Info & Notification* page in the wizard, do the following:
 +
@@ -132,7 +132,7 @@ Manually select the spanning datastores to be included
 |An existing policy
 |Select one or more policies from the list.
 |A new policy
-|1.Click *Create*.
+|1.Click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create*.
 2. Complete the New Backup Policy wizard to return to the Create Resource Group wizard.
 |===
 +
@@ -144,7 +144,7 @@ image:scpivs44_image18.png[Error: Missing Graphic Image]
 +
 You must fill in each field. The SnapCenter VMware plug-in creates schedules in the time zone in which the SnapCenter VMware plug-in is deployed. You can modify the time zone by using the SnapCenter Plug-in for VMware vSphere GUI.
 +
-link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-time-zone-for-backups[Modify the Time Zone for Backups].
+link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-time-zone-for-backups[Modify the time zone for backups].
 
 . Review the summary, and then click *Finish*.
 +

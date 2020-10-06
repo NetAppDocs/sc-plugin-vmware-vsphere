@@ -30,10 +30,10 @@ You can add SAN and NAS datastores but not VSAN or VVOL datastores.
 . In the VMware vSphere web client GUI, click *Menu* in the toolbar, and navigate to the VM or datastore that you want to add.
 . In the left Navigator pane, right-click on the VM or datastore, select *NetApp SnapCenter* from the drop-down list, and then select *Add To Resource Group* from the secondary drop-down list.
 +
-The system first checks that SnapCenter manages and is compatible with the storage system on which the selected VM is located and then displays the *Add to Resource Group* page. If the message `SnapCenter Compatibility Error `is displayed, then the selected VM is not compatible with SnapCenter and you must first add the appropriate storage VM to SnapCenter.
+The system first checks that SnapCenter manages and is compatible with the storage system on which the selected VM is located and then displays the *Add to Resource Group* page. If the message `SnapCenter Compatibility Error` is displayed, then the selected VM is not compatible with SnapCenter and you must first add the appropriate storage VM to SnapCenter.
 
 . In the *Add To Resource Group* page, select a resource group, and then click *OK*.
 +
 When you click *OK*, the system first checks that SnapCenter manages and is compatible with the storage on which the selected VMs or datastores are located.
 +
-If the message `Selected virtual machine is not SnapCenter compatible `or `Selected datastore is not SnapCenter compatible `is displayed, then a selected VM or datastore is not compatible with SnapCenter.  See link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures[Manage Compatibility Check Failures] for more information.
+If the message `Selected virtual machine is not SnapCenter compatible` or `Selected datastore is not SnapCenter compatible` is displayed, then a selected VM or datastore is not compatible with SnapCenter.  See link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures[Manage Compatibility Check Failures] for more information.
