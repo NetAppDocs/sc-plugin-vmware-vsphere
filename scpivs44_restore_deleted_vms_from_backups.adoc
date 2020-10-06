@@ -23,7 +23,7 @@ You can restore a deleted VM from a datastore primary or secondary backup to an 
 
 .Before you begin
 
-* The user account for the storage system, on the Storage Systems page in the VMware vSphere web client, must have the minimum ONTAP privileges required for ONTAP operations, as listed in the SnapCenter Concepts Guide and the http://docs.netapp.com/ocsc-43/index.jsp[SnapCenter Installation and Setup Guide^].
+* The user account for the storage system, on the Storage Systems page in the VMware vSphere web client, must have the link:scpivs44_minimum_ontap_privileges_required.html[Minimum ONTAP privileges required for ONTAP].
 * A backup must exist.
 +
 You must have created a backup of the VM using the SnapCenter Plug-in for VMware vSphere before you can restore the VMDKs on that VM.

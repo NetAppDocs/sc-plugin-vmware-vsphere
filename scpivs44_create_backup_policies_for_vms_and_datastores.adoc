@@ -42,7 +42,7 @@ Most of the fields on these wizard pages are self-explanatory. The following inf
 .Steps
 
 . In the left Navigator pane of the VMware vSphere web client, click *Policies*.
-. On the *Policies* page, click *Create* to start the wizard.
+. On the *Policies* page, click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create* to start the wizard.
 +
 image:scpivs44_image15.png[Error: Missing Graphic Image]
 
@@ -104,11 +104,10 @@ The Snapshot label helps to distinguish Snapshots created with this policy from 
 independent disks
 |Check this box to include in the backup any datastores with independent disks that contain temporary data.
 |Scripts
-|Enter the fully qualified path of the prescript or postscript that you want the SnapCenter VMware plug-in to run before or after backup operations. For example, you can run a script to update SNMP traps, automate alerts, and send logs.
+|Enter the fully qualified path of the prescript or postscript that you want the SnapCenter VMware plug-in to run before or after backup operations. For example, you can run a script to update SNMP traps, automate alerts, and send logs. The script path is validated at the time the script is executed.
 *Note:* Prescripts and postscripts must be located on the virtual appliance VM.
 To enter multiple scripts, press Enter after each script path to list
 each script on a separate line. The character ";" is not allowed.
-The script path is validated at the time the script is executed.
 |===
 
 . Click *Add.*

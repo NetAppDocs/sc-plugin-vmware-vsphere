@@ -50,7 +50,6 @@ The guest restore feature allows you to view and restore system and hidden files
 |Use Guest VM
 |You want to attach the virtual disk to the VM that you right-clicked
 before you started the wizard, and then select the credential for the VM.
-*notified;
 *Note:* Credentials must already be created for the VM.
 |Use Guest File Restore proxy VM
 |You want to attach the virtual disk to a proxy VM, and then select the proxy VM.
@@ -61,7 +60,7 @@ The proxy VM must be configured before the attach and restore operation begins.
 +
 This option is required if you want to be notified when the attach operation finishes,  and the virtual disk is available. The notification email includes the virtual disk name, the VM name, and the newly assigned drive letter for the VMDK.
 +
-[Tip]
+[TIP]
 Enable this option because a guest file restore is an asynchronous operation and there might be a time latency to establish a guest session for you.
 +
 This option uses the email settings that are configured when you set up the VMware vSphere web client in vCenter.
@@ -112,8 +111,7 @@ For easier browsing, you can use filters in your search string. The filters are 
 |a{x,}
 |At least x number of instances of the character a.
 |a{x,y}
-|At least x number of instances of the character a ,and, at most, y
-number.
+|At least x number of instances of the character a ,and, at most, y number.
 |\
 |Escapes a special character.
 |===

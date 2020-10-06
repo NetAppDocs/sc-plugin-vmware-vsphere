@@ -37,7 +37,7 @@ Double-click any job to generate a detailed report for that job.
 
 . Optional: On the Reports tab, click *Download* and select the format (HTML or CSV).
 +
-You can also click the download icon to download plug-in logs.
+You can also click the image:scpivs44_image37.png[Error: Missing Graphic Image] download icon to download plug-in logs.
 
 === Types of reports from the VMware vSphere Web Client
 

@@ -32,7 +32,7 @@ Jobs and job messages are retained for 90 days. Job logs that are older than the
 +
 image:scpivs44_image9.png[Error: Missing Graphic Image]
 
-. Click the download icon in the Job Monitor title bar.
+. Click the image:scpivs44_image37.png[Error: Missing Graphic Image] download icon in the Job Monitor title bar.
 +
 You might need to scroll to the right to see the icon.
 +

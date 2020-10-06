@@ -33,7 +33,7 @@ If you want to use a proxy VM for attaching a virtual disk for guest file restor
 |Select any of the configured credentials.
 |Add new credentials
 |1. Click *Add*.
-2.
+2. In the *Run As Credentials* dialog box, enter the credentials.
 3. Click *Select VM*, then select a VM in the *Proxy VM* dialog box. Click *Save* to return to the *Run As Credentials* dialog box.
 4. Enter the credentials.
 For Username, you must enter “Administrator”.

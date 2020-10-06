@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Overview
+= Data protection workflow
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,7 +18,6 @@ summary:
 // 2020-09-09 12:24:22.670306
 //
 
-=== Data protection workflow
 
 Use the SnapCenter vSphere web client to perform data protection operations for VMs, VMDKs, and datastores. All backup operations are performed on resource groups, which can contain any combination of one or more VMs and datastores. You can back up on demand or according to a defined protection schedule.
 
@@ -29,11 +28,10 @@ Backup and restore operations cannot be performed simultaneously on the same res
 You should review the information on what the SnapCenter VMware plug-in does and does not support.
 link:scpivs44_get_started_overview.html#deployment-planning-and-requirements[Deployment planning and requirements]
 
-In MetroCluster configurations, the SnapCenter VMware plug-in might not be able to detect a protection relationship after a failover. See https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover[KB article: Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover^].
+In MetroCluster configurations:
+* The SnapCenter VMware plug-in might not be able to detect a protection relationship after a failover. See https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover[KB article: Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover^].
+* If backups fail with the error `Unable to discover resources on SCV: <xxx>…` for NFS and VMFS VMs after switchover/switch back, restart the SnapCenter VMware services from the maintenance console.
 
 The workflow in the following figure shows the sequence in which you must perform the backup operations:
 
 image:scpivs44_image13.png[Error: Missing Graphic Image]
-
-[NOTE]
-In MetroCluster configurations, if backups fail with the error `Unable to discover resources on SCV: <xxx>…` for NFS and VMFS VMs after switchover/switch back, restart the SnapCenter VMware services from the maintenance console.

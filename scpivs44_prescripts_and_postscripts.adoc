@@ -82,14 +82,14 @@ Variable passed in prescripts and postscripts.
 Variable passed in postscripts only.
 |`STORAGE_SNAPSHOT.#`
 |One of the defined storage snapshots, in the following format:
-`<filer>:/vol/<volume>:<ONTAP-snapshot-name>  `
+`<filer>:/vol/<volume>:<ONTAP-snapshot-name>`
 Variable passed in postscripts only.
 |`VIRTUAL_MACHINES`
 |The number of VMs in the backup.
 Variable passed in prescripts and postscripts.
 |`VIRTUAL_MACHINE.#`
 |One of the defined virtual machines, in the following format:
-`<VM name>|<VM UUID>|<power-state>|<VM snapshot>|<ip-addresses>
+`<VM name>[vertical bar]<VM UUID>[vertical bar]<power-state>[vertical bar]<VM snapshot>[vertical bar]<ip-addresses>
 <power-state> has the values POWERED_ON, POWERED_OFF, or
 SUSPENDED`
 `<VM snapshot>` has the values `true` or `false`
