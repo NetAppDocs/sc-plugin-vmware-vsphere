@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= REST API workflows: attach and detach VMDKs
+= REST API workflows to attach and detach VMDKs
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= REST API workflow: restore VMDKs
+= REST API workflow to restore VMDKs
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= REST API workflows: modify built-in schedules
+= REST API workflows to modify built-in schedules
 :hardbreaks:
 :nofooter:
 :icons: font

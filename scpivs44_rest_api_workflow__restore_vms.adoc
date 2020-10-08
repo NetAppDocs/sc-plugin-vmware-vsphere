@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= REST API workflow: restore VMs
+= REST API workflow to restore VMs
 :hardbreaks:
 :nofooter:
 :icons: font

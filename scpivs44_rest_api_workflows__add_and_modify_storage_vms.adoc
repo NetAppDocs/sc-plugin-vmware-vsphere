@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= REST API workflows: add and modify storage VMs
+= REST API workflows to add and modify storage VMs
 :hardbreaks:
 :nofooter:
 :icons: font

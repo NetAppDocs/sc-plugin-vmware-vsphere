@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= REST API workflows: mount and unmount datastores
+= REST API workflows to mount and unmount datastores
 :hardbreaks:
 :nofooter:
 :icons: font

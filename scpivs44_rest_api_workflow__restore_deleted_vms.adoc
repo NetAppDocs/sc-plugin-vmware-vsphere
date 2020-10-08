@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= REST API workflow: restore deleted VMs
+= REST API workflow to restore deleted VMs
 :hardbreaks:
 :nofooter:
 :icons: font

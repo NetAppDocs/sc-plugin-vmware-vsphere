@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= REST API workflows: create and modify resource groups
+= REST API workflows to create and modify resource groups
 :hardbreaks:
 :nofooter:
 :icons: font
