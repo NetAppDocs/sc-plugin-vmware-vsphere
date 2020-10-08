@@ -65,7 +65,7 @@ entries:
         url: /scpivs44_add_storage_01.html
       - title: Protect data
         entries:
-          - title: Overview
+          - title: Data protection workflow
             url: /scpivs44_protect_data_overview.html
           - title: View VM and datastore backups
             url: /scpivs44_view_vm_and_datastore_backups.html

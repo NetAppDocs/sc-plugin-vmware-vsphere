@@ -106,7 +106,7 @@ independent disks
 |Scripts
 |Enter the fully qualified path of the prescript or postscript that you want the SnapCenter VMware plug-in to run before or after backup operations. For example, you can run a script to update SNMP traps, automate alerts, and send logs. The script path is validated at the time the script is executed.
 *Note:* Prescripts and postscripts must be located on the virtual appliance VM.
-To enter multiple scripts, press Enter after each script path to list
+To enter multiple scripts, press *Enter* after each script path to list
 each script on a separate line. The character ";" is not allowed.
 |===
 

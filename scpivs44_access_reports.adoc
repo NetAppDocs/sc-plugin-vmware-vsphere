@@ -29,7 +29,7 @@ The Reports tab contains information on the jobs that are selected on the Jobs p
 . For Backup Reports, you can do the following:
 .. Modify the report
 +
-Click the filter icon to modify the time range, job status type, resource groups, and policies to be included in the report.
+Click the image:scpivs44_image41.png[Error: Missing Graphic Image] filter icon to modify the time range, job status type, resource groups, and policies to be included in the report.
 
 .. Generate a detailed report
 +

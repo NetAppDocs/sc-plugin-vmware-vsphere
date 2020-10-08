@@ -80,7 +80,7 @@ This is the easiest way to create a resource group. However, you can also create
 |Enter a name for the resource group.
 Do not use the following special characters in VM, datastore, policy,
 backup, or resource group names:
-% & * $ # @ ! \ / : * ? " < > - [vertical bar] ; ' , . An underscore character (_) is allowed. VM or datastore names with special characters are truncated, which makes it difficult to search for a specific backup.
+% & * $ # @ ! \ / : * ? " < > - `|` ; ' , . An underscore character (_) is allowed. VM or datastore names with special characters are truncated, which makes it difficult to search for a specific backup.
 In linked mode, each vCenter has a separate SnapCenter VMware plug-in repository. Therefore, you can use duplicate names across vCenters.
 |Description
 |Enter a description of the resource group.

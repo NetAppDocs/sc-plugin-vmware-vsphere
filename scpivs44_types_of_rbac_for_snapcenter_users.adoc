@@ -51,5 +51,5 @@ Use the following workflow to set up ONTAP and SnapCenter RBAC:
 . Then the SnapCenter administrator assigns roles to SnapCenter users.
 
 The following figure provides an overview of the validation workflow for RBAC privileges (both vCenter and ONTAP):
-+
+
 image:scpivs44_image1.png[Error: Missing Graphic Image]
