@@ -38,4 +38,4 @@ You can search for and find a specific backup of a VM or datastore using the Res
 . Optional: Right-click a VM or datastore, then select *NetApp SnapCenter* in the drop-down list, and then select *Restore* in the secondary drop-down list.
 . In the *Restore* wizard enter a search name and click *Search*.
 +
-You can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and the location. Click *OK*.
+You can filter the backup list by clicking the image:scpivs44_image41.png[Error: Missing Graphic Image] filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and the location. Click *OK*.

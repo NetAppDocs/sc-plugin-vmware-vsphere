@@ -47,7 +47,7 @@ image:scpivs44_image22.png[Error: Missing Graphic Image]
 
 . On the *Attach Virtual Disk* window, in the *Backup* section, select a backup.
 +
-You can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshot copies, whether you want mounted backups, and the location. Click *OK*.
+You can filter the backup list by clicking the image:scpivs44_image41.png[Error: Missing Graphic Image] filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshot copies, whether you want mounted backups, and the location. Click *OK*.
 
 . In the *Select Disks* section, select one or more disks you want to attach and the location you want to attach from (primary or secondary).
 +

@@ -36,4 +36,4 @@ The system first checks that SnapCenter manages and is compatible with the stora
 +
 When you click *OK*, the system first checks that SnapCenter manages and is compatible with the storage on which the selected VMs or datastores are located.
 +
-If the message `Selected virtual machine is not SnapCenter compatible` or `Selected datastore is not SnapCenter compatible` is displayed, then a selected VM or datastore is not compatible with SnapCenter.  See link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures[Manage Compatibility Check Failures] for more information.
+If the message `Selected virtual machine is not SnapCenter compatible` or `Selected datastore is not SnapCenter compatible` is displayed, then a selected VM or datastore is not compatible with SnapCenter.  See link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures[Manage compatibility check failures] for more information.
