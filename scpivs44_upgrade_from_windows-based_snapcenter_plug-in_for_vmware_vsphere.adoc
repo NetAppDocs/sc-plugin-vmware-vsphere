@@ -49,7 +49,7 @@ This step is performed only if you are upgrading from Windows-based SnapCenter V
 +
 In the SnapCenter GUI, suspend all jobs for the Windows-based SnapCenter Plug-in for VMware vSphere.
 
-. Deploy the SnapCenter Plug-in for VMware vSphere OVA
+. Deploy the SnapCenter Plug-in for VMware vSphere OVA.
 +
 Because this is a new installation of the Linux-based SnapCenter VMware plug-in, follow the steps for deploying the OVA.
 +
