@@ -34,7 +34,7 @@ In earlier releases of Virtual Storage Console (VSC), you could perform an on-de
 
 .Steps
 
-. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then select a resource group, and then click *Run Now* to start the backup.
+. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then select a resource group, and then click image:scpivs44_image38.png[Error: Missing Graphic Image] *Run Now* to start the backup.
 +
 image:scpivs44_image20.png[Error: Missing Graphic Image]
 
