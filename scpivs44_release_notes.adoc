@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: scpivs44_release_notes.html
+keywords:
+summary:
+---
+
+= Release notes
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0
+//
+//
+//
+
+For more information on the SnapCenter VMware plug-in features, limitations, and so on, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2863453[SnapCenter Plug-in for VMware vSphere Release Notes^].

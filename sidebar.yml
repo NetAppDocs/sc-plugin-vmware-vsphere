@@ -1,6 +1,8 @@
 entries:
-  - title: NDAC contents
+  - title: SnapCenter plug-in for VMware vSphere documentation
     url: /index.html
+  - title: Release Notes
+    url: /scpivs44_release_notes.html
   - title: SnapCenter Plug-in for VMware vSphere
     entries:
       - title: Concepts
