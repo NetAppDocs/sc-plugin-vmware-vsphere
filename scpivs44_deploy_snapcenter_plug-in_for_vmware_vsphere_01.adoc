@@ -1,0 +1,67 @@
+---
+sidebar: sidebar
+permalink: scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html
+keywords:
+summary:
+---
+
+= Deploy SnapCenter Plug-in for VMware vSphere
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:21.912414
+//
+
+. In your browser, navigate to VMware vSphere vCenter.
+. On the VMware screen, click *vSphere Web Client (HTML5)* and then log in to the *VMware vCenter Single Sign-On page*.
+. Right-click any inventory object that is a valid parent object of a virtual machine, such as a datacenter, folder, cluster, or host, and select *Deploy OVF Template* to start the wizard.
+. On the *Select an OVF template* page, specify the location of the `.ova` file (as listed in the following table) and click *Next*.
++
+|===
+|On this wizard page… |Do this…
+
+|Select a name and folder
+|Enter a unique name for the VM or vApp and select a deployment location.
+|Select a resource
+|Select a resource where you want to run the deployed VM template.
+|Review details
+|Verify the `.ova` template details.
+|License agreements
+|Select the checkbox for *I accept all license agreements*.
+|Select storage
+|Define where and how to store the files for the deployed OVF template.
+|Select networks
+|Select a source network and map it to a destination network.
+|Customize template
+|In *Register to existing vCenter*, enter the vCenter credentials.
+In *Create SnapCenter Plug-in for VMware vSphere credentials*, enter the SnapCenter Plug-in for VMware vSphere credentials.
+*Attention:* Make a note of the username and password that you specify. You need to use these credentials if you want to modify the SnapCenter Plug-In for VMware vSphere configuration at a later time.
+In *Setup Network Properties*, enter the network information.
+In *Setup Date and Time*, select the time zone where the vCenter is located.
+|Ready to complete
+|Review the page and click *Finish*.
+|===
++
+[NOTE]
+All hosts must be configured with IP addresses (FQDN hostnames are not supported). The deploy operation does not validate your input before deploying.
+
+. Navigate to the VM where SnapCenter Plug-in for VMware vSphere was deployed, then click the *Summary* tab, and then click the *Power On* box to start the SnapCenter VMware plug-in.
+. While the SnapCenter VMware plug-in is powering on, right-click the deployed SnapCenter VMware plug-in and then click *Install VMware tools*.
++
+The deployment might take a few minutes to complete. A successful deployment is indicated when the SnapCenter VMware plug-in is powered on, the VMware tools are installed, and the screen prompts you to log in to the SnapCenter VMware plug-in.
++
+The screen displays the IP address where the SnapCenter VMware plug-in is deployed. Make a note of that location. You need to log in to the SnapCenter VMware plug-in management GUI if you want to make changes to the SnapCenter VMware plug-in configuration.
+
+. Log in to the SnapCenter VMware plug-in management GUI using the IP address displayed on the deployment screen using the credentials that you provided in the deployment wizard, then verify on the Dashboard that the SnapCenter VMware plug-in is successfully connected to vCenter and is enabled..
++
+Use the format `https://<appliance-IP-address>:8080` to access the management GUI.
++
+By default, the maintenance console user name is set to “maint” and the password is set to “admin123”.
+
+. Log in to vCenter (HTML5 client), then click *Menu* in the toolbar, and then select *SnapCenter Plug-in for VMware vSphere*

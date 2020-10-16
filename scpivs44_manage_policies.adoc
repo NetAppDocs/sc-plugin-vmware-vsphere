@@ -1,0 +1,81 @@
+---
+sidebar: sidebar
+permalink: scpivs44_manage_policies.html
+keywords:
+summary:
+---
+
+= Manage policies
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:26.677804
+//
+
+[.lead]
+You can create, modify, view, detach, and delete backup policies for SnapCenter Plug-in for VMware vSphere. Policies are required to perform data protection operations.
+
+=== Detach policies
+
+You can detach policies from a SnapCenter VMware plug-in resource group when you no longer want those policies to govern data protection for the resources. You must detach a policy before you can remove it or before you modify the schedule frequency.
+
+.About this task
+
+The guidelines for detaching policies from the SnapCenter VMware plug-in resource groups differ from the guidelines for SnapCenter resource groups. For a VMware vSphere web client resource group, it is possible to detach all policies, which leaves the resource group with no policy. However, to perform any data protection operations on that resource group, you must attach at least one policy.
+
+.Steps
+
+. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then select a resource group and click *Edit*.
+. On the *Policies* page of the *Edit Resource Group* wizard, clear the check mark next to the policies you want to detach.
++
+You can also add a policy to the resource group by checking the policy.
+
+. Make any additional modifications to the resource group in the rest of the wizard, and then click *Finish*.
+
+=== Modify policies
+
+You can modify policies for a SnapCenter Plug-in for VMware vSphere resource group.  You can modify the frequency, replication options, Snapshot copy retention settings, or scripts information while a policy is attached to a resource group.
+
+.About this task
+
+Modifying SnapCenter VMware plug-in backup policies differs from modifying backup policies for SnapCenter application-based plug-ins. You do not need to detach policies from resource groups when you modify the plug-in policies.
+
+Before you modify the replication or retention settings, you should consider the possible consequences.
+
+* Increasing replication or retention settings
++
+Backups continue to accumulate until they reach the new setting.
+
+* Decreasing replication or retention settings
++
+Backups in excess of the new setting are deleted when the next backup is performed.
+
+[NOTE]
+To modify a SnapCenter VMware plug-in policy schedule, you must modify the schedule in the plug-in resource group.
+
+.Steps
+
+. In the left Navigator pane of the VMware vSphere web client, click *Policies*, then select a policy and click *Edit*.
+. Modify the policy fields.
+. When you are finished, click *Update*.
+
+The changes take effect when the next scheduled backup is performed.
+
+=== Delete policies
+
+If you no longer require a configured backup policy for SnapCenter Plug-in for VMware vSphere, you might want to delete it.
+
+.Before you begin
+
+You must have detached the policy from all resource groups in the virtual appliance for SnapCenter before you can delete it.
+
+.Steps
+
+. In the left Navigator pane of the VMware vSphere web client, click *Policies*, then select a policy and click *Remove*.
+. In the confirmation dialog box click *Yes*.

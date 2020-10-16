@@ -1,0 +1,47 @@
+---
+sidebar: sidebar
+permalink: scpivs44_back_up_resource_groups_on_demand.html
+keywords:
+summary:
+---
+
+= Back up resource groups on demand
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:23.636097
+//
+
+[.lead]
+Backup operations are performed on all the resources defined in a resource group. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.
+
+.Before you begin
+
+You must have created a resource group with a policy attached.
+
+[IMPORTANT]
+Do not start an on-demand backup job when a job to back up the SnapCenter VMware plug-in MySQL database is already running.
+
+.About this task
+
+In earlier releases of Virtual Storage Console (VSC), you could perform an on-demand backup without having a backup job configured for a VM or datastore. However, for the SnapCenter VMware plug-in, VMs and datastores must be in a resource group before you can perform backups.
+
+.Steps
+
+. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then select a resource group, and then click image:scpivs44_image38.png[Error: Missing Graphic Image] *Run Now* to start the backup.
++
+image:scpivs44_image20.png[Error: Missing Graphic Image]
+
+. If the resource group has multiple policies configured, then in the *Backup Now* dialog box, select the policy you want to use for this backup operation, and then click *Yes*.
+. Click *OK* to start the backup.
+. Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the window or on the dashboard *Job Monitor* for more detail.
+
+.Result
+
+If the quiesce operation fails for any of the VMs in the backup, then the backup is marked as not VM consistent even if the policy selected has VM consistency selected. In this case, it is possible that some of the VMs were successfully quiesced.

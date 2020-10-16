@@ -1,0 +1,147 @@
+---
+sidebar: sidebar
+permalink: scpivs44_restore_guest_files_and_folders_from_vmdks.html
+keywords:
+summary:
+---
+
+= Restore guest files and folders from VMDKs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:25.789328
+//
+
+[.lead]
+You can restore one or more files or folders from a VMDK on a Windows guest OS.
+
+.About this task
+
+By default, the attached virtual disk is available for 24 hours and then it is automatically detached. You can choose in the wizard to have the session automatically deleted when the restore operation completes, or you can manually delete the Guest File Restore session at any time, or you can extend the time in the *Guest Configuration* page.
+
+Guest file or folder restore performance depends upon two factors: the size of the files or folders being restored; and the number of files or folders being restored. Restoring a large number of small-sized files might take a longer time than anticipated compared to restoring a small number of large-sized files, if the data set to be restored is of same size.
+
+[IMPORTANT]
+Only one attach or restore operation can run at the same time on a VM. You cannot run parallel attach or restore operations on the same VM.
+
+[IMPORTANT]
+The guest restore feature allows you to view and restore system and hidden files and to view encrypted files. Do not attempt to overwrite an existing system file or to restore encrypted files to an encrypted folder. During the restore operation, the hidden, system, and encrypted attributes of guest files are not retained in the restored file. Viewing or browsing reserved partitions might cause an error.
+
+.Steps
+
+. Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select *NetApp SnapCenter*, and then click *Guest File Restore*.
+. In the VMware vSphere web client, click *Guest File Restore* from the secondary drop-down list to start the wizard.
+. On the *Restore Scope* page, specify the backup that contains the virtual disk you want to attach by doing the following:
+.. In the *Backup Name* table, select the backup that contains the virtual disk that you want attach.
+.. In the *VMDK* table, select the virtual disk that contains the files or folders you want to restore.
+.. In the *Locations* table, select the location, primary or secondary, of the virtual disk that you want to attach.
+. On the *Guest Details* page, do the following.
+.. Choose where to attach the virtual disk:
++
+|===
+|Select this option… |If…
+
+|Use Guest VM
+|You want to attach the virtual disk to the VM that you right-clicked
+before you started the wizard, and then select the credential for the VM.
+*Note:* Credentials must already be created for the VM.
+|Use Guest File Restore proxy VM
+|You want to attach the virtual disk to a proxy VM, and then select the proxy VM.
+The proxy VM must be configured before the attach and restore operation begins.
+|===
++
+.. Select the *Send email notification* option.
++
+This option is required if you want to be notified when the attach operation finishes,  and the virtual disk is available. The notification email includes the virtual disk name, the VM name, and the newly assigned drive letter for the VMDK.
++
+[TIP]
+Enable this option because a guest file restore is an asynchronous operation and there might be a time latency to establish a guest session for you.
++
+This option uses the email settings that are configured when you set up the VMware vSphere web client in vCenter.
+
+. Review the summary, and then click *Finish*.
++
+Before you click *Finish*, you can go back to any page in the wizard and change the information.
+
+. Wait until the attach operation completes.
++
+You can view the progress of the attach operation in the Guest File Restore page, or in the Dashboard job monitor, or you can wait for the email notification.
+
+. To find the files that you want to restore from the attached virtual disk, click *Menu > SnapCenter Plug-in for VMware vSphere*, then in the left Navigator pane click *Guest File Restore* and select the *Guest Configuration* tab.
++
+In the Guest Session Monitor table, you can display additional information about a session by clicking *... *in the right column.
+
+. Select the guest file restore session for the virtual disk that was listed in the notification email.
++
+All partitions are assigned a drive letter, including system reserved partitions. If a VMDK has multiple partitions, you can select a specific drive by selecting the drive in the drop-down list in the drive field at the top of the Guest File Browse page.
+
+. Click the *Browse Files* icon to view a list of files and folders on the virtual disk.
++
+When you double click a folder to browse and select individual files, there might be a time latency while fetching the list of files because the fetch operation is performed at run time.
++
+For easier browsing, you can use filters in your search string. The filters are case-sensitive, Perl expressions without spaces. The default search string is `.`*. The following table shows some example Perl search expressions.
++
+|===
+|This expression… |Searches for…
+
+|.
+|Any character except a newline character.
+|.*
+|Any string. This is the default.
+|a
+|The character a.
+|ab
+|The string ab.
+|a [vertical bar] b
+|The character a or b.
+|a*
+|Zero or more instances of the character a.
+|a+
+|One or more instances of the character a.
+|a?
+|Zero or one instance of the character a.
+|a{x}
+|Exactly x number of instances of the character a.
+|a{x,}
+|At least x number of instances of the character a.
+|a{x,y}
+|At least x number of instances of the character a ,and, at most, y number.
+|\
+|Escapes a special character.
+|===
++
+The Guest File Browse page displays all hidden files and folders in addition to all other files and folders.
+
+. Select one or more files or folders that you want to restore, and then click *Select Restore Location*.
++
+The files and folders to be restored are listed in the Selected File(s) table.
+
+. In the *Select Restore Location* page, specify the following:
++
+|===
+|Option |Description
+
+|Restore to path
+|Enter the UNC share path to the guest where the selected files will be restored.
+For example: \\10.60.136.65\c$
+|If original file(s)
+exist
+|Select the action to be taken if the file or folder to be restored already exists on the restore destination: Always overwrite or Always skip.
+*Note:* If the folder already exists, then the contents of the folder are merged with the existing folder.
+|Disconnect Guest
+Session after
+successful restore
+|Select this option if you want the guest file restore session to be deleted when the restore operation completes.
+|===
+
+. Click *Restore*.
++
+You can view the progress of the restore operation in the Guest File Restore page, or in the Dashboard job monitor, or you can wait for the email notification. The time it takes for the email notification to be sent depends upon the length of time of the restore operation.
++
+The notification email contains an attachment with the output from the restore operation. If the restore operation fails, open the attachment for additional information.

@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: scpivs44_detach_a_virtual_disk.html
+keywords:
+summary:
+---
+
+= Detach a virtual disk
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:25.202536
+//
+
+[.lead]
+After you have attached a virtual disk to restore individual files, you can detach the virtual disk from the parent VM.
+
+.Steps
+
+. In the VMware vSphere web client GUI, click *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
+. Optional: In the left Navigator pane, select a VM.
+. In the left navigation pane, right-click the VM, then select *NetApp SnapCenter* in the drop-down list, and then select *Detach virtual disk* in the secondary drop-down list.
+. On the *Detach Virtual Disk* screen, select one or more disks you want to detach, then click the *Detach the selected disk(s)* button, and then click *Confirm*.
++
+[IMPORTANT]
+Make sure that you select the correct virtual disk. Selecting the wrong disk might affect production work.
+
+. Optional: Monitor the operation progress in the *Recent Tasks* section.
++
+Refresh the screen to display updated information.
+
+. Verify that the virtual disk is detached by performing the following:
+.. Click *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
+.. In the left Navigator pane, right-click a VM, then select *Edit settings* in the drop-down list.
+.. In the *Edit Settings* window, expand the list for each hard disk to see the list of disk files.
++
+The Edit Settings page lists the disks on the VM. You can expand the details for each hard disk to see the list of attached virtual disks.

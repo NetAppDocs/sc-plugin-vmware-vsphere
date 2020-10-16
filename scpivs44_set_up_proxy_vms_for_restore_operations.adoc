@@ -1,0 +1,47 @@
+---
+sidebar: sidebar
+permalink: scpivs44_set_up_proxy_vms_for_restore_operations.html
+keywords:
+summary:
+---
+
+= Set up proxy VMs for restore operations
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:26.073077
+//
+
+[.lead]
+If you want to use a proxy VM for attaching a virtual disk for guest file restore operations, you must set up the proxy VM before you begin the restore operation. Although you can set up a proxy VM at any time, it might be more convenient to set it up immediately after the plug-in deployment completes.
+
+.Steps
+
+. In the VMware vSphere web client, click *Guest File Restore*.
+. In the *Run As Credentials* section, do one of the following:
++
+|===
+|To do this… |Do this…
+
+|Use existing credentials
+|Select any of the configured credentials.
+|Add new credentials
+|1. Click image:scpivs44_image6.png[Error: Missing Graphic Image] *Add*.
+2. In the *Run As Credentials* dialog box, enter the credentials.
+3. Click *Select VM*, then select a VM in the *Proxy VM* dialog box. Click *Save* to return to the *Run As Credentials* dialog box.
+4. Enter the credentials.
+For Username, you must enter “Administrator”.
+|===
++
+The SnapCenter VMware plug-in uses the selected credentials to log into the selected proxy VM.
++
+The Run As credentials must be the default domain administrator that is provided by Windows or the built-in local administrator. Workgroup users can use the built-in local administrator account.
+
+. In the *Proxy Credentials* section, click *Add* to add a VM to use as a proxy.
+. In the *Proxy VM* dialog box, complete the information, and then click *Save*.

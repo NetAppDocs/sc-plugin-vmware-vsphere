@@ -1,0 +1,79 @@
+---
+sidebar: sidebar
+permalink: scpivs44_rest_api_workflows__attach_and_detach_vmdks.html
+keywords:
+summary:
+---
+
+= REST API workflows to attach and detach VMDKs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:28.749477
+//
+
+[.lead]
+To perform attach and detach operations for VMDKs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
+
+For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
+
+To attach VMDKs, follow this workflow:
+
+|===
+|Step |REST API |Comments
+
+|1
+|Go to `http://<vCenter-IP>/mob`
+|Find the VM moref from the VMware Managed Objects URL.
+Note the *moref* for the VM to which you want to attach a VMDK.
+|2
+|`/4.1/vm/{moref}/backups`
+|`Get VM Backups` gets a list of backups for the specified VM.
+Pass the *moref* from Step 1.
+Note the *backupId* of the backup you want to restore.
+|3
+|`/4.1/vm/{moref}/backups/
+{backupId}/vmdklocations`
+|`Get VMDK Locations` gets a list of VMDKs for the specified VM.
+Pass the *backupId* from Step 2 and the *moref* from Step 1.
+Note the *vmdkLocationsList* information.
+|4
+|`/4.1/vm/{moref}/attachvmdks`
+|`Attach VMDKs` attaches the specified VMDK to the original VM.
+Pass the *backupId* from Step 2 and the *moref* from Step 1.
+Pass the *vmdkLocationsList* from Step 3 to the *vmdkLocations* attribute.
+*Note:* To attach a VMDK to a different VM, pass the moref of the target VM in the alternateVmMoref attribute.
+|===
+
+To detach VMDKs, follow this workflow:
+
+|===
+|Step |REST API |Comments
+
+|1
+|Go to `http://<vCenter-IP>/mob`
+|Find the VM moref from the VMware Managed Objects URL.
+Note the *moref* for the VM on which you want to detach a VMDK.
+|2
+|`/4.1/vm/{moref}/backups`
+|`Get VM Backups` gets a list of backups for the specified VM.
+Pass the *moref* from Step 1.
+Note the *backupId* of the backup you want to restore.
+|3
+|`/4.1/vm/{moref}/backups/
+{backupId}/vmdklocations`
+|`Get VMDK Locations` gets a list of VMDKs for the specified VM.
+Pass the *backupId* from Step 2 and the *moref* from Step 1.
+Note the *vmdkLocationsList* information.
+|4
+|`/4.1/vm/{moref}/detachvmdks`
+|`Detach VMDKs` detaches the specified VMDK.
+Pass the *moref* from Step 1.
+Pass the VMDK *vmdkLocationsList* details from Step 3 to the *vmdksToDetach* attribute.
+|===

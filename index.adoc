@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+permalink: index.html
+keywords:
+summary:
+---
+
+= SnapCenter Plug-in for VMware vSphere
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+//
+//
+//
+//

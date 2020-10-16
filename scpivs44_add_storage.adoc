@@ -1,0 +1,22 @@
+---
+sidebar: sidebar
+permalink: scpivs44_add_storage.html
+keywords:
+summary:
+---
+
+= Add storage
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:22.030883
+//
+
+. In the left Navigator pane of the VMware vSphere web client, click *Storage Systems* and then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Add*.
+. On the Add Storage System dialog box, enter the basic SVM or cluster information, and then click *Add*.

@@ -1,0 +1,85 @@
+---
+sidebar: sidebar
+permalink: scpivs44_add_storage_01.html
+keywords:
+summary:
+---
+
+= Add storage
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:22.556795
+//
+
+[.lead]
+Before you can backup or restore VMs, you must add storage clusters or storage VMs by using the VMware vSphere web client. Adding storage enables the SnapCenter Plug-in for VMware vSphere to recognize and manage backup and restore operations in vCenter.
+
+.Before you begin
+
+The ESXi server, the SnapCenter VMware plug-in, and each vCenter must be synchronized to the same time. If you try to add storage but the time settings for your vCenters are not synchronized, the operation might fail with a Java certificate error.
+
+.About this task
+
+The SnapCenter VMware plug-in performs backup and restore operations on directly connected storage VMs and on storage VMs in a storage cluster.
+
+[NOTE]
+If you are using the SnapCenter VMware plug-in to support application-based backups on VMDKs, then you must use the SnapCenter GUI to enter storage credentials and register storage systems.
+
+* For vCenters in linked mode, you must separately add storage systems to each vCenter.
+* Names for storage VMs must resolve to management LIFs.
++
+If you added etc host entries for storage VM names in SnapCenter, you must verify that they are also resolvable from the virtual appliance.
++
+If you add a storage VM with a name that cannot resolve to the management LIF, then scheduled backup jobs fail because the plug-in is unable to discover any datastores or volumes on that storage VM. If this occurs, either add the storage VM to SnapCenter and specify the management LIF or add a cluster that contains the storage VM and specify the cluster management LIF.
+
+* Storage credentials are not shared between multiple instances of the SnapCenter VMware plug-in or between Windows SnapCenter Server and the SnapCenter plug-in on vCenter.
+
+.Steps
+
+. In the left Navigator pane of the vSphere web client, click *Storage Systems*.
+. On the Storage Systems page, click image:scpivs44_image6.png[Error: Missing Graphic Image] *Add*.
++
+image:scpivs44_image12.png[Error: Missing Graphic Image]
+
+. In the *Add Storage System* wizard, enter the basic storage VM or cluster information as listed in the following table:
++
+|===
+|For this field… |Do this…
+
+|Storage system
+|Enter the FQDN or IP address of a storage cluster, storage VM.
+The SnapCenter VMware plug-in does not support multiple storage systems with the same name on different clusters. Each storage system that is supported by SnapCenter must have a unique data LIF IP address.
+|Platform
+|Select the platform.
+|Username
+|Enter the ONTAP username that is used to log on to the storage VM.
+|Password
+|Enter the storage VM logon password.
+|Protocol
+|Select storage protocol.
+|Port
+|Select port 443 (the default) or port 80 to communicate with vCenter.
+|Timeout
+|Enter the number of seconds vCenter should wait before timing out the operation. The default is 60 seconds.
+|Preferred IP
+|If the storage VM has more than one IP address, check this box and enter the IP address that you want SnapCenter to use.
+*Note:* Do not use square brackets ([]) when entering the IP address.
+|Log SnapCenter Server events
+to syslog
+|Check the box to log events for the SnapCenter Vmware plug-in.
+|Send AutoSupport Notification for
+failed operation to storage system
+|Check the box if you want AutoSupport notification for failed data protection jobs.
+You must also enable AutoSupport on the storage VM and configure the AutoSupport email settings.
+|===
+
+. Click *Add*.
++
+If you added a storage cluster, all storage VMs in that cluster are automatically added. Automatically added storage VMs (sometimes called “implicit” storage VMs) are displayed on the cluster summary page with a hyphen (-) instead of a username. Usernames are displayed only for explicit storage entities.

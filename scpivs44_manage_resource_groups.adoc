@@ -1,0 +1,90 @@
+---
+sidebar: sidebar
+permalink: scpivs44_manage_resource_groups.html
+keywords:
+summary:
+---
+
+= Manage resource groups
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:26.480882
+//
+
+[.lead]
+You can create, modify, and delete backup resource groups, and perform backup operations on resource groups.
+
+You can perform the following tasks on resource groups for VMs and datastores:
+
+* Suspend and resume scheduled operations on the resource group
+* Create a resource group
+* Add VMs or datastores to a resource group
+* Delete VMs or datastores from a resource group
+* Modify a resource group
+* Create a backup using the resource group
+* Delete a resource group
+
+[NOTE]
+Resource groups are called backup jobs in Virtual Storage Console (VSC).
+
+=== Suspend and resume operations on resource groups
+
+You can temporarily disable scheduled operations from starting on a resource group. Later when you want, you can enable those operations.
+
+.Steps
+
+. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then right-click a resource group and click *Suspend *(or click *Resume*).
++
+image:scpivs44_image24.png[Error: Missing Graphic Image]
+
+. In the confirmation box, click *Yes* to confirm.
+
+.After you finish
+
+On the Resource Groups page, the job status for the suspended resource is `Under_Maintenance`. You might need to scroll to the right of the table to see the Job Status column.
+
+After backup operations are resumed, the Job Status changes to `Production`.
+
+=== Modify resource groups
+
+You can remove or add resources in resource groups in vCenter, detach or attach policies, modify schedules, or modify any other resource group option.
+
+.About this task
+
+If you want to modify the name of a resource group, do not use the following special characters in VM, datastore, policy, backup, or resource group names:
+
+% & * $ # @ ! \ / : * ? " < > - | ; ' , .
+
+An underscore character (_) is allowed.
+
+.Steps
+
+. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then select a resource group and click *Edit*.
+. On the left list in the *Edit Resource Group* wizard, click the category that you want to modify and enter your changes.
++
+You can make changes in multiple categories.
+
+. Click *Next* until you see the Summary page, and then click *Finish*.
+
+=== Delete resource groups
+
+You can delete a resource group in vCenter if you no longer need to protect the resources in the resource group. You must ensure that all resource groups are deleted before you remove SnapCenter Plug-in for VMware vSphere from vCenter.
+
+.About this task
+
+All resource group delete operations are performed as force deletes. The delete operation detaches all policies from the vCenter resource group, removes the resource group from SnapCenter Plug-in for VMware vSphere, and deletes all backups and Snapshot copies of the resource group.
+
+[NOTE]
+In a SnapVault relationship, the last Snapshot copy cannot be deleted; therefore, the resource group cannot be deleted. Before deleting a resource group that is part of a SnapVault relationship,  you must use either OnCommand System Manager or use the ONTAP CLI to remove the SnapVault relationship, and then you must delete the last Snapshot copy.
+
+.Steps
+
+. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then select a resource group and click *Delete*.
+. In the *Delete resource group* confirmation box, click *Yes* to confirm.

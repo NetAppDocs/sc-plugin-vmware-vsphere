@@ -1,0 +1,33 @@
+---
+sidebar: sidebar
+permalink: scpivs44_extend_the_time_of_a_guest_file_restore_session.html
+keywords:
+summary:
+---
+
+= Extend the time of a guest file restore session
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:26.188002
+//
+
+[.lead]
+By default, an attached Guest File Restore VMDK is available for 24 hours and then it is automatically detached. You can extend the time in the *Guest Configuration* page.
+
+.About this task
+
+You might want to extend a guest file restore session if you want to restore additional files or folders from the attached VMDK at a later time. However, because guest file restore sessions use a lot of resources, extending the session time should be performed only occasionally.
+
+.Steps
+
+. In the VMware vSphere web client, click *Guest File Restore*.
+. Select a guest file restore session and then click the Extend Selected Guest Session icon in the Guest Session Monitor title bar.
++
+The session is extended for another 24 hours.
