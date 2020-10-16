@@ -17,7 +17,6 @@ summary:
 //
 // 2020-09-09 12:24:20.763592
 //
-=== Deployment planning and requirements
 
 You should be aware of the deployment requirements before you deploy the virtual appliance.  The deployment requirements are listed in the following four tables.
 
