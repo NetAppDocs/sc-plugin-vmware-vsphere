@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: scpivs44_deployment_workflow_for_new_users.html
+keywords:
+summary:
+---
+
+= Deployment workflow for new users
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:20.763592
+//
+
+If you have not used SnapCenter before and do not have any SnapCenter backups, then use the following workflow to get started.
+
+image:scpivs44_image2.png[Error: Missing Graphic Image]

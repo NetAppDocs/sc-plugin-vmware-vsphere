@@ -25,8 +25,14 @@ entries:
             url: /scpivs44_how_to_configure_ontap_rbac_for_snapcenter_plug-in_for_vmware_vsphere.html
       - title: Get started
         entries:
-          - title: Overview
+          - title: Deployment Overview
             url: /scpivs44_get_started_overview.html
+          - title: Deployment workflow for new users
+            url: scpivs44_deployment_workflow_for_new_users.html
+          - title: Deployment workflow for existing users
+            url: /scpivs44_deployment_workflow_for_existing_users.html
+          - title: Deployment planning and requirements
+            url: /scpivs44_deployment_planning_and_requirements.html
           - title: Download the SnapCenter Plug-in for VMware vSphere OVA (Open Virtual Appliance)
             url: /scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_@open_virtual_appliance@.html
           - title: Deploy SnapCenter Plug-in for VMware vSphere
