@@ -19,4 +19,4 @@ summary:
 //
 
 [.lead]
-Before you begin, see link:scpivs44_get_started_overview.html#deployment-planning-and-requirements[Deployment planning and requirements].
+Before you begin, see link:scpivs44_deployment_planning_and_requirements.html[Deployment planning and requirements].

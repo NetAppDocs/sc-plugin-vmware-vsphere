@@ -26,7 +26,7 @@ When you back up a datastore, you are backing up all the VMs in that datastore.
 Backup and restore operations cannot be performed simultaneously on the same resource group.
 
 You should review the information on what the SnapCenter VMware plug-in does and does not support.
-link:scpivs44_get_started_overview.html#deployment-planning-and-requirements[Deployment planning and requirements]
+link:scpivs44_deployment_planning_and_requirements.html[Deployment planning and requirements]
 
 In MetroCluster configurations:
 
