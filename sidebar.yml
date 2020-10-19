@@ -45,7 +45,7 @@ entries:
               - title: Create credentials for migrating backups
                 url: /scpivs44_post_deployment_required_operations_and_issues.html#create-credentials-for-migrating-backups
               - title: Register SnapCenter Plug-in for VMware vSphere with SnapCenter Server
-                url: /scpivs44_post_deployment_required_operations_and_issues.html#register-snapcenter-plug--in-for-vmware-vpshere-with-snapcenter-server
+                url: /scpivs44_register_snapcenter_plugin_vmware_vsphere_with_snapcenter_server.html
           - title: Log in to the SnapCenter VMware vSphere web client
             url: /scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html
       - title: Quick Start
