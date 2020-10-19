@@ -274,7 +274,7 @@ entries:
       - title: Migrate to the Linux-based SnapCenter Plug-in for VMware vSphere
         entries:
           - title: Overview
-            url: /scpivs44_migrate_to_the_linux-based_snapcenter_plug-in_for_vmware_vsphere_overview.html
+            url: /scpivs44_migrate_to_the_linux-based_snapcenter_plugin_for_vmware_vsphere_overview.html
           - tile: Supported migration paths
             url: /scpivs44_supported_migration_paths.html
           - title: Migration overview
