@@ -18,7 +18,6 @@ summary:
 // 2020-09-09 12:24:28.645167
 //
 
-=== Overview of REST APIs
 
 You can use the SnapCenter Plug-in for VMware vSphere REST APIs to perform common data protection operations. The plug-in has different Swagger web pages from the Windows SnapCenter Swagger web pages.
 

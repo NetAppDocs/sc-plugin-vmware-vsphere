@@ -17,3 +17,4 @@ summary:
 //
 //
 //
+Describes how to deploy, update, and remove the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format). It also describes how to use the SnapCenter vSphere web client in vCenter to perform VM-consistent and crash-consistent backup and restore operations for VMs, datastores, and VMDKs, and how to register the plug-in with SnapCenter Server to support application-consistent backup and restore operations.
