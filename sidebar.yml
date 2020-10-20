@@ -3,289 +3,287 @@ entries:
     url: /index.html
   - title: Release notes
     url: /scpivs44_release_notes.html
-  - title: SnapCenter Plug-in for VMware vSphere docs
+  - title: Concepts
     entries:
-      - title: Concepts
-        entries:
-          - title: Product overview
-            url: /scpivs44_concepts_overview.html
-          - title: Overview of the different SnapCenter GUIs
-            url: /scpivs44_overview_of_different_snapcenter_guis.html
-          - title: Licensing
-            url: /scpivs44_licensing.html
-          - title: Role-Based Access Control (RBAC)
-            url: /scpivs44_role_based_access_control.html
-          - title: Types of RBAC for SnapCenter Plug-in for VMware vSphere users
-            url: /scpivs44_types_of_rbac_for_snapcenter_users.html
-          - title: ONTAP RBAC features in SnapCenter Plug-in for VMware vSphere
-            url: /scpivs44_ontap_rbac_features_in_snapcenter.html
-          - title: Predefined roles packaged with SnapCenter Plug-in for VMware vSphere
-            url: /scpivs44_predefined_roles_packaged_with_snapcenter.html
-          - title: How to configure ONTAP RBAC for SnapCenter Plug-in for VMware vSphere
-            url: /scpivs44_how_to_configure_ontap_rbac_for_snapcenter_plug-in_for_vmware_vsphere.html
-      - title: Get started
-        entries:
-          - title: Deployment Overview
-            url: /scpivs44_get_started_overview.html
-          - title: Deployment workflow for new users
-            url: scpivs44_deployment_workflow_for_new_users.html
-          - title: Deployment workflow for existing users
-            url: /scpivs44_deployment_workflow_for_existing_users.html
-          - title: Deployment planning and requirements
-            url: /scpivs44_deployment_planning_and_requirements.html
-          - title: Download the SnapCenter Plug-in for VMware vSphere OVA (Open Virtual Appliance)
-            url: /scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_@open_virtual_appliance@.html
-          - title: Deploy SnapCenter Plug-in for VMware vSphere
-            url: /scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html
-          - title: Post deployment required operations and issues
-            url: /scpivs44_post_deployment_required_operations_and_issues.html
-            entries:
-              - title: Manage authentication errors
-                url: /scpivs44_post_deployment_required_operations_and_issues.html#manage-authentication-errors
-              - title: Create credentials for migrating backups
-                url: /scpivs44_post_deployment_required_operations_and_issues.html#create-credentials-for-migrating-backups
-              - title: Register SnapCenter Plug-in for VMware vSphere with SnapCenter Server
-                url: /scpivs44_register_snapcenter_plugin_vmware_vsphere_with_snapcenter_server.html
-          - title: Log in to the SnapCenter VMware vSphere web client
-            url: /scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html
-      - title: Quick Start
-        entries:
-          - title: Overview
-            url: /scpivs44_quick_start_overview.html
-          - title: Download the OVA (Open Virtual Appliance)
-            url: /scpivs44_download_the_ova_@open_virtual_appliance@.html
-          - title: Deploy SnapCenter Plug-in for VMware vSphere
-            url: /scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html
-          - title: Add storage
-            url: /scpivs44_add_storage.html
-          - title: Create backup policies
-            url: /scpivs44_create_backup_policies.html
-          - title: Create resource groups
-            url: /scpivs44_create_resource_groups.html
-      - title: Monitor and report
-        entries:
-          - title: View status information
-            url: /scpivs44_view_status_information.html
-          - title: Monitor jobs
-            url: /scpivs44_monitor_jobs.html
-          - title: Download job logs
-            url: /scpivs44_download_job_logs.html
-          - title: Access reports
-            url: /scpivs44_access_reports.html
-          - title: Generate a support bundle from the SnapCenter Plug-in for VMware vSphere GUI
-            url: /scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html
-          - title: Generate a support bundle from the maintenance console
-            url: /scpivs44_generate_a_support_bundle_from_the_maintenance_console.html
-      - title: Add storage
-        url: /scpivs44_add_storage_01.html
-      - title: Protect data
-        entries:
-          - title: Data protection workflow
-            url: /scpivs44_protect_data_overview.html
-          - title: View VM and datastore backups
-            url: /scpivs44_view_vm_and_datastore_backups.html
-          - title: Create backup policies for VMs and datastores
-            url: /scpivs44_create_backup_policies_for_vms_and_datastores.html
-          - title: Prescripts and postscripts
-            url: /scpivs44_prescripts_and_postscripts.html
-          - title: Create resource groups for VMs and datastores
-            url: /scpivs44_create_resource_groups_for_vms_and_datastores.html
-          - title: Add a single VM or datastore to a resource group
-            url: /scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html
-          - title: Add multiple VMs and datastores to a resource group
-            url: /scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html
-          - title: Back up resource groups on demand
-            url: /scpivs44_back_up_resource_groups_on_demand.html
-          - title: Back up the SnapCenter Plug-in for VMware vSphere MySQL database
-            url: /scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html
-      - title: Mount and unmount datastores
-        entries:
-          - title: Overview
-            url: /scpivs44_mount_and_unmount_datastores_overview.html
-          - title: Mount a backup
-            url: /scpivs44_mount_a_backup.html
-          - title: Unmount a backup
-            url: /scpivs44_unmount_a_backup.html
-      - title: Restore from backups
-        entries:
-          - title: Overview
-            url: /scpivs44_restore_from_backups_overview.html
-          - title: How restore operations are performed
-            url: /scpivs44_how_restore_operations_are_performed.html
-          - title: Search for backups
-            url: /scpivs44_search_for_backups.html
-          - title: Restore VMs from backups
-            url: /scpivs44_restore_vms_from_backups.html
-          - title: Restore deleted VMs from backups
-            url: /scpivs44_restore_deleted_vms_from_backups.html
-          - title: Restore VMDKs from backups
-            url: /scpivs44_restore_vmdks_from_backups.html
-          - title: Restore the most recent backup of the MySQL database
-            url: /scpivs44_restore_the_most_recent_backup_of_the_mysql_database.html
-          - title: Restore a specific backup of the MySQL database
-            url: /scpivs44_restore_a_specific_backup_of_the_mysql_database.html
-          - title: Attach VMDKs to a VM
-            url: /scpivs44_attach_vmdks_to_a_vm.html
-          - title: Detach a virtual disk
-            url: /scpivs44_detach_a_virtual_disk.html
-      - title: Restore guest files and folders
-        entries:
-          - title: Workflow, prerequisites, and limitations
-            url: /scpivs44_restore_guest_files_and_folders_overview.html
-            entries:
-              - title: Guest restore workflow
-                url: /scpivs44_restore_guest_files_and_folders_overview.html#guest-restore-workflow
-              - title: Prerequisites for restoring guest files and folders
-                url: /scpivs44_restore_guest_files_and_folders_overview.html#prerequisites-for-restoring-guest-files-and-folders
-              - title: Guest file restore limitations
-                url: /scpivs44_restore_guest_files_and_folders_overview.html#guest-file-restore-limitations
-          - title: Restore guest files and folders from VMDKs
-            url: /scpivs44_restore_guest_files_and_folders_from_vmdks.html
-          - title: Set up proxy VMs for restore operations
-            url: /scpivs44_set_up_proxy_vms_for_restore_operations.html
-          - title: Configure credentials for VM guest file restores
-            url: /scpivs44_configure_credentials_for_vm_guest_file_restores.html
-          - title: Extend the time of a guest file restore session
-            url: /scpivs44_extend_the_time_of_a_guest_file_restore_session.html
-          - title: Guest file restore scenarios you might encounter
-            url: /scpivs44_guest_file_restore_scenarios_you_might_encounter.html
-      - title: Administer SnapCenter Plug-in for VMware vSphere
-        entries:
-          - title: Restart the VMware vSphere web client service
-            url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html
-            entries:
-             - title: Restart the VMware vSphere web client service in a Linux vCenter
-               url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-linux-vcenter
-             - title: Restart the VMware vSphere web client service in a Windows vCenter
-               url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-windows-vcenter
-          - title: Manage resource groups
-            url: /scpivs44_manage_resource_groups.html
-            entries:
-              - title: Suspend and resume operations on resource groups
-                url: /scpivs44_manage_resource_groups.html#suspend-and-resume-operations-on-resource-groups
-              - title: Modify resource groups
-                url: /scpivs44_manage_resource_groups.html#modify-resource-groups
-              - title: Delete resource groups
-                url: /scpivs44_manage_resource_groups.html#delete-resource-groups
-          - title: Manage policies
-            url: /scpivs44_manage_policies.html
-            entries:
-              - title: Detach policies
-                url: /scpivs44_manage_policies.html#detach-policies
-              - title: Modify policies
-                url: /scpivs44_manage_policies.html#modify-policies
-              - title: Delete policies
-                url: /scpivs44_manage_policies.html#delete-policies
-          - title: Manage backups
-            url: /scpivs44_manage_backups.html
-            entries:
-              - title: Rename backups
-                url: /scpivs44_manage_backups.html#rename-backups
-              - title: Delete backups
-                url: /scpivs44_manage_backups.html#delete-backups
-          - title: Manage storage systems
-            url: /scpivs44_manage_storage_systems.html
-            entries:
-              - title: Modify storage VMs
-                url: /scpivs44_manage_storage_systems.html#modify-storage-vms
-              - title: Rename storage VMs
-                url: /scpivs44_manage_storage_systems.html#rename-storage-vms
-              - title: Modify the configured storage timeout
-                url: /scpivs44_manage_storage_systems.html#modify-the-configured-storage-timeout
-              - title: Remove storage VMs
-                url: /scpivs44_manage_storage_systems.html#remove-storage-vms
-          - title: Manage SnapCenter Plug-in for VMware vSphere
-            url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html
-            entries:
-              - title: Access the maintenance console
-                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maintenance-console
-              - title: Modify the time zones for backups
-                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-time-zone-for-backups
-              - title: Modify the logon credentials for SnapCenter Plug-in for VMware vSphere
-                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-logon-credentials-for-snapcenter-plug-in-for-vmware-vsphere
-              - title: Modify the SnapCenter VMware Plug-in password from the maintenance console
-                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-snapcenter-vmware-plug-in-password-from-the-maintenance-console
-              - title: Modify the vCenter logon credentials in SnapCenter Plug-in for VMware vSphere
-                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-vcenter-logon-credentials-in-snapcenter-plug-in-for-vmware-vsphere
-              - title: Modify the network settings
-                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-network-settings
-              - title: Enable SSH for SnapCenter Plug-in for VMware vSphere
-                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#enable-ssh-for-snapcenter-plug-in-for-vmware-vsphere
-              - title: Create and import certificates
-                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#create-and-import-certificates
-              - title: Stop SnapCenter Plug-in for VMware vSphere when in linked mode
-                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#stop-snapcenter-plug-in-for-vmware-vsphere-when-in-linked-mode
-              - title: Disable and enable SnapCenter Plug-in for VMware vSphere
-                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#disable-and-enable-snapcenter-plug-in-for-vmware-vsphere
-              - title: Remove SnapCenter Plug-in for VMware vSphere
-                url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#remove-snapcenter-plug-in-for-vmware-vsphere
-          - title: Restart the VMware vSphere web client service
-            url: /scpivs44_manage_the_vmware_vsphere_web_client_service.html
-            entries:
-             - title: Restart the VMware vSphere web client service in a Linux vCenter
-               url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-linux-vcenter
-             - title: Restart the VMware vSphere web client service in a Windows vCenter
-               url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-windows-vcenter
-          - title: Customize your configuration
-            url: /scpivs44_customize_your_configuration.html
-            entries:
-              - title: Create the scbr.override configuration File
-                url: /scpivs44_customize_your_configuration.html#create-the-scbr-override-configuration-file
-              - title: Properties you can override
-                url: /scpivs44_customize_your_configuration.html#properties-you-can-override
-          - title: Minimum ONTAP privileges required
-            url: /scpivs44_minimum_ontap_privileges_required.html
-      - title: REST APIs
-        entries:
-          - title: Overview
-            url: /scpivs44_rest_apis_overview.html
-          - title: Access REST APIs using the Swagger API web page
-            url: /scpivs44_access_rest_apis_using_the_swagger_api_web_page.html
-          - title: REST API workflows to add and modify storage VMs
-            url: /scpivs44_rest_api_workflows__add_and_modify_storage_vms.html
-          - title: REST API workflows to create and modify resource groups
-            url: /scpivs44_rest_api_workflows__create_and_modify_resource_groups.html
-          - title: REST API workflow to back up on demand
-            url: /scpivs44_rest_api_workflow__back_up_on_demand.html
-          - title: REST API workflow to restore VMs
-            url: /scpivs44_rest_api_workflow__restore_vms.html
-          - title: REST API workflow to restore deleted VMs
-            url: /scpivs44_rest_api_workflow__restore_deleted_vms.html
-          - title: REST API workflow to restore VMDKs
-            url: /scpivs44_rest_api_workflow__restore_vmdks.html
-          - title: REST API workflows to attach and detach VMDKs
-            url: /scpivs44_rest_api_workflows__attach_and_detach_vmdks.html
-          - title: REST API workflows to mount and unmount datastores
-            url: /scpivs44_rest_api_workflows__mount_and_unmount_datastores.html
-          - title: REST APIs to download jobs and generate reports
-            url: /scpivs44_rest_apis__download_jobs_and_generate_reports.html
-          - title: REST APIs workflows to modify built-in schedules
-            url: /scpivs44_rest_api_workflows__modify_built-in_schedules.html
-      - title: Upgrade
-        entries:
-          - title: Supported upgrade paths
-            url: /scpivs44_upgrade_overview.html
-          - title: Upgrade from Windows-based SnapCenter Plug-in for VMware vSphere
-            url: /scpivs44_upgrade_from_windows-based_snapcenter_plug-in_for_vmware_vsphere.html
-          - title: Upgrade from NetApp Data Broker
-            url: /scpivs44_upgrade_from_netapp_data_broker.html
-          - title: Information not displayed after upgrading to a new patch of the same release
-            url: /scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html
-      - title: Migrate to the Linux-based SnapCenter Plug-in for VMware vSphere
-        entries:
-          - title: Overview
-            url: /scpivs44_migrate_to_the_linux-based_snapcenter_plug-in_for_vmware_vsphere_overview.html
-          - title: Supported migration paths
-            url: /scpivs44_supported_migration_paths.html
-          - title: Migration overview
-            url: /scpivs44_migration_overview.html
-          - title: Prerequisites for migration
-            url: /scpivs44_prerequisites_for_migration.html
-          - title: Migrate from SnapCenter backup metadata to the virtual appliance
-            url: /scpivs44_migrate_from_snapcenter_backup_metadata_to_the_virtual_appliance.html
-          - title: Post-migration
-            url: /scpivs44_post-migration.html
-          - title: Correct bad gateway errors during migration
-            url: /scpivs44_correct_bad_gateway_errors_during_migration.html
-          - title: Manage authentication errors
-            url: /scpivs44_manage_authentication_errors.html
+      - title: Product overview
+        url: /scpivs44_concepts_overview.html
+      - title: Overview of the different SnapCenter GUIs
+        url: /scpivs44_overview_of_different_snapcenter_guis.html
+      - title: Licensing
+        url: /scpivs44_licensing.html
+      - title: Role-Based Access Control (RBAC)
+        url: /scpivs44_role_based_access_control.html
+      - title: Types of RBAC for SnapCenter Plug-in for VMware vSphere users
+        url: /scpivs44_types_of_rbac_for_snapcenter_users.html
+      - title: ONTAP RBAC features in SnapCenter Plug-in for VMware vSphere
+        url: /scpivs44_ontap_rbac_features_in_snapcenter.html
+      - title: Predefined roles packaged with SnapCenter Plug-in for VMware vSphere
+        url: /scpivs44_predefined_roles_packaged_with_snapcenter.html
+      - title: How to configure ONTAP RBAC for SnapCenter Plug-in for VMware vSphere
+        url: /scpivs44_how_to_configure_ontap_rbac_for_snapcenter_plug-in_for_vmware_vsphere.html
+    - title: Get started
+      entries:
+        - title: Deployment Overview
+          url: /scpivs44_get_started_overview.html
+        - title: Deployment workflow for new users
+          url: scpivs44_deployment_workflow_for_new_users.html
+        - title: Deployment workflow for existing users
+          url: /scpivs44_deployment_workflow_for_existing_users.html
+        - title: Deployment planning and requirements
+          url: /scpivs44_deployment_planning_and_requirements.html
+        - title: Download the SnapCenter Plug-in for VMware vSphere OVA (Open Virtual Appliance)
+          url: /scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_@open_virtual_appliance@.html
+        - title: Deploy SnapCenter Plug-in for VMware vSphere
+          url: /scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html
+        - title: Post deployment required operations and issues
+          url: /scpivs44_post_deployment_required_operations_and_issues.html
+          entries:
+            - title: Manage authentication errors
+              url: /scpivs44_post_deployment_required_operations_and_issues.html#manage-authentication-errors
+            - title: Create credentials for migrating backups
+              url: /scpivs44_post_deployment_required_operations_and_issues.html#create-credentials-for-migrating-backups
+            - title: Register SnapCenter Plug-in for VMware vSphere with SnapCenter Server
+              url: /scpivs44_register_snapcenter_plugin_vmware_vsphere_with_snapcenter_server.html
+        - title: Log in to the SnapCenter VMware vSphere web client
+          url: /scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html
+    - title: Quick Start
+      entries:
+        - title: Overview
+          url: /scpivs44_quick_start_overview.html
+        - title: Download the OVA (Open Virtual Appliance)
+          url: /scpivs44_download_the_ova_@open_virtual_appliance@.html
+        - title: Deploy SnapCenter Plug-in for VMware vSphere
+          url: /scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html
+        - title: Add storage
+          url: /scpivs44_add_storage.html
+        - title: Create backup policies
+          url: /scpivs44_create_backup_policies.html
+        - title: Create resource groups
+          url: /scpivs44_create_resource_groups.html
+    - title: Monitor and report
+      entries:
+        - title: View status information
+          url: /scpivs44_view_status_information.html
+        - title: Monitor jobs
+          url: /scpivs44_monitor_jobs.html
+        - title: Download job logs
+          url: /scpivs44_download_job_logs.html
+        - title: Access reports
+          url: /scpivs44_access_reports.html
+        - title: Generate a support bundle from the SnapCenter Plug-in for VMware vSphere GUI
+          url: /scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html
+        - title: Generate a support bundle from the maintenance console
+          url: /scpivs44_generate_a_support_bundle_from_the_maintenance_console.html
+    - title: Add storage
+      url: /scpivs44_add_storage_01.html
+    - title: Protect data
+      entries:
+        - title: Data protection workflow
+          url: /scpivs44_protect_data_overview.html
+        - title: View VM and datastore backups
+          url: /scpivs44_view_vm_and_datastore_backups.html
+        - title: Create backup policies for VMs and datastores
+          url: /scpivs44_create_backup_policies_for_vms_and_datastores.html
+        - title: Prescripts and postscripts
+          url: /scpivs44_prescripts_and_postscripts.html
+        - title: Create resource groups for VMs and datastores
+          url: /scpivs44_create_resource_groups_for_vms_and_datastores.html
+        - title: Add a single VM or datastore to a resource group
+          url: /scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html
+        - title: Add multiple VMs and datastores to a resource group
+          url: /scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html
+        - title: Back up resource groups on demand
+          url: /scpivs44_back_up_resource_groups_on_demand.html
+        - title: Back up the SnapCenter Plug-in for VMware vSphere MySQL database
+          url: /scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html
+    - title: Mount and unmount datastores
+      entries:
+        - title: Overview
+          url: /scpivs44_mount_and_unmount_datastores_overview.html
+        - title: Mount a backup
+          url: /scpivs44_mount_a_backup.html
+        - title: Unmount a backup
+          url: /scpivs44_unmount_a_backup.html
+    - title: Restore from backups
+      entries:
+        - title: Overview
+          url: /scpivs44_restore_from_backups_overview.html
+        - title: How restore operations are performed
+          url: /scpivs44_how_restore_operations_are_performed.html
+        - title: Search for backups
+          url: /scpivs44_search_for_backups.html
+        - title: Restore VMs from backups
+          url: /scpivs44_restore_vms_from_backups.html
+        - title: Restore deleted VMs from backups
+          url: /scpivs44_restore_deleted_vms_from_backups.html
+        - title: Restore VMDKs from backups
+          url: /scpivs44_restore_vmdks_from_backups.html
+        - title: Restore the most recent backup of the MySQL database
+          url: /scpivs44_restore_the_most_recent_backup_of_the_mysql_database.html
+        - title: Restore a specific backup of the MySQL database
+          url: /scpivs44_restore_a_specific_backup_of_the_mysql_database.html
+        - title: Attach VMDKs to a VM
+          url: /scpivs44_attach_vmdks_to_a_vm.html
+        - title: Detach a virtual disk
+          url: /scpivs44_detach_a_virtual_disk.html
+    - title: Restore guest files and folders
+      entries:
+        - title: Workflow, prerequisites, and limitations
+          url: /scpivs44_restore_guest_files_and_folders_overview.html
+          entries:
+            - title: Guest restore workflow
+              url: /scpivs44_restore_guest_files_and_folders_overview.html#guest-restore-workflow
+            - title: Prerequisites for restoring guest files and folders
+              url: /scpivs44_restore_guest_files_and_folders_overview.html#prerequisites-for-restoring-guest-files-and-folders
+            - title: Guest file restore limitations
+              url: /scpivs44_restore_guest_files_and_folders_overview.html#guest-file-restore-limitations
+        - title: Restore guest files and folders from VMDKs
+          url: /scpivs44_restore_guest_files_and_folders_from_vmdks.html
+        - title: Set up proxy VMs for restore operations
+          url: /scpivs44_set_up_proxy_vms_for_restore_operations.html
+        - title: Configure credentials for VM guest file restores
+          url: /scpivs44_configure_credentials_for_vm_guest_file_restores.html
+        - title: Extend the time of a guest file restore session
+          url: /scpivs44_extend_the_time_of_a_guest_file_restore_session.html
+        - title: Guest file restore scenarios you might encounter
+          url: /scpivs44_guest_file_restore_scenarios_you_might_encounter.html
+    - title: Administer SnapCenter Plug-in for VMware vSphere
+      entries:
+        - title: Restart the VMware vSphere web client service
+          url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html
+          entries:
+            - title: Restart the VMware vSphere web client service in a Linux vCenter
+              url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-linux-vcenter
+            - title: Restart the VMware vSphere web client service in a Windows vCenter
+              url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-windows-vcenter
+        - title: Manage resource groups
+          url: /scpivs44_manage_resource_groups.html
+          entries:
+            - title: Suspend and resume operations on resource groups
+              url: /scpivs44_manage_resource_groups.html#suspend-and-resume-operations-on-resource-groups
+            - title: Modify resource groups
+              url: /scpivs44_manage_resource_groups.html#modify-resource-groups
+            - title: Delete resource groups
+              url: /scpivs44_manage_resource_groups.html#delete-resource-groups
+        - title: Manage policies
+          url: /scpivs44_manage_policies.html
+          entries:
+            - title: Detach policies
+              url: /scpivs44_manage_policies.html#detach-policies
+            - title: Modify policies
+              url: /scpivs44_manage_policies.html#modify-policies
+            - title: Delete policies
+              url: /scpivs44_manage_policies.html#delete-policies
+        - title: Manage backups
+          url: /scpivs44_manage_backups.html
+          entries:
+            - title: Rename backups
+              url: /scpivs44_manage_backups.html#rename-backups
+            - title: Delete backups
+              url: /scpivs44_manage_backups.html#delete-backups
+        - title: Manage storage systems
+          url: /scpivs44_manage_storage_systems.html
+          entries:
+            - title: Modify storage VMs
+              url: /scpivs44_manage_storage_systems.html#modify-storage-vms
+            - title: Rename storage VMs
+              url: /scpivs44_manage_storage_systems.html#rename-storage-vms
+            - title: Modify the configured storage timeout
+              url: /scpivs44_manage_storage_systems.html#modify-the-configured-storage-timeout
+            - title: Remove storage VMs
+              url: /scpivs44_manage_storage_systems.html#remove-storage-vms
+        - title: Manage SnapCenter Plug-in for VMware vSphere
+          url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html
+          entries:
+            - title: Access the maintenance console
+              url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maintenance-console
+            - title: Modify the time zones for backups
+              url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-time-zone-for-backups
+            - title: Modify the logon credentials for SnapCenter Plug-in for VMware vSphere
+              url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-logon-credentials-for-snapcenter-plug-in-for-vmware-vsphere
+            - title: Modify the SnapCenter VMware Plug-in password from the maintenance console
+              url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-snapcenter-vmware-plug-in-password-from-the-maintenance-console
+            - title: Modify the vCenter logon credentials in SnapCenter Plug-in for VMware vSphere
+              url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-vcenter-logon-credentials-in-snapcenter-plug-in-for-vmware-vsphere
+            - title: Modify the network settings
+              url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-network-settings
+            - title: Enable SSH for SnapCenter Plug-in for VMware vSphere
+              url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#enable-ssh-for-snapcenter-plug-in-for-vmware-vsphere
+            - title: Create and import certificates
+              url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#create-and-import-certificates
+            - title: Stop SnapCenter Plug-in for VMware vSphere when in linked mode
+              url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#stop-snapcenter-plug-in-for-vmware-vsphere-when-in-linked-mode
+            - title: Disable and enable SnapCenter Plug-in for VMware vSphere
+              url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#disable-and-enable-snapcenter-plug-in-for-vmware-vsphere
+            - title: Remove SnapCenter Plug-in for VMware vSphere
+              url: /scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#remove-snapcenter-plug-in-for-vmware-vsphere
+        - title: Restart the VMware vSphere web client service
+          url: /scpivs44_manage_the_vmware_vsphere_web_client_service.html
+          entries:
+            - title: Restart the VMware vSphere web client service in a Linux vCenter
+              url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-linux-vcenter
+            - title: Restart the VMware vSphere web client service in a Windows vCenter
+              url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html#restart-the-vmware-vsphere-web-client-service-in-a-windows-vcenter
+        - title: Customize your configuration
+          url: /scpivs44_customize_your_configuration.html
+          entries:
+            - title: Create the scbr.override configuration File
+              url: /scpivs44_customize_your_configuration.html#create-the-scbr-override-configuration-file
+            - title: Properties you can override
+              url: /scpivs44_customize_your_configuration.html#properties-you-can-override
+        - title: Minimum ONTAP privileges required
+          url: /scpivs44_minimum_ontap_privileges_required.html
+    - title: REST APIs
+      entries:
+        - title: Overview
+          url: /scpivs44_rest_apis_overview.html
+        - title: Access REST APIs using the Swagger API web page
+          url: /scpivs44_access_rest_apis_using_the_swagger_api_web_page.html
+        - title: REST API workflows to add and modify storage VMs
+          url: /scpivs44_rest_api_workflows__add_and_modify_storage_vms.html
+        - title: REST API workflows to create and modify resource groups
+          url: /scpivs44_rest_api_workflows__create_and_modify_resource_groups.html
+        - title: REST API workflow to back up on demand
+          url: /scpivs44_rest_api_workflow__back_up_on_demand.html
+        - title: REST API workflow to restore VMs
+          url: /scpivs44_rest_api_workflow__restore_vms.html
+        - title: REST API workflow to restore deleted VMs
+          url: /scpivs44_rest_api_workflow__restore_deleted_vms.html
+        - title: REST API workflow to restore VMDKs
+          url: /scpivs44_rest_api_workflow__restore_vmdks.html
+        - title: REST API workflows to attach and detach VMDKs
+          url: /scpivs44_rest_api_workflows__attach_and_detach_vmdks.html
+        - title: REST API workflows to mount and unmount datastores
+          url: /scpivs44_rest_api_workflows__mount_and_unmount_datastores.html
+        - title: REST APIs to download jobs and generate reports
+          url: /scpivs44_rest_apis__download_jobs_and_generate_reports.html
+        - title: REST APIs workflows to modify built-in schedules
+          url: /scpivs44_rest_api_workflows__modify_built-in_schedules.html
+    - title: Upgrade
+      entries:
+        - title: Supported upgrade paths
+          url: /scpivs44_upgrade_overview.html
+        - title: Upgrade from Windows-based SnapCenter Plug-in for VMware vSphere
+          url: /scpivs44_upgrade_from_windows-based_snapcenter_plug-in_for_vmware_vsphere.html
+        - title: Upgrade from NetApp Data Broker
+          url: /scpivs44_upgrade_from_netapp_data_broker.html
+        - title: Information not displayed after upgrading to a new patch of the same release
+          url: /scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html
+    - title: Migrate to the Linux-based SnapCenter Plug-in for VMware vSphere
+      entries:
+        - title: Overview
+          url: /scpivs44_migrate_to_the_linux-based_snapcenter_plug-in_for_vmware_vsphere_overview.html
+        - title: Supported migration paths
+          url: /scpivs44_supported_migration_paths.html
+        - title: Migration overview
+          url: /scpivs44_migration_overview.html
+        - title: Prerequisites for migration
+          url: /scpivs44_prerequisites_for_migration.html
+        - title: Migrate from SnapCenter backup metadata to the virtual appliance
+          url: /scpivs44_migrate_from_snapcenter_backup_metadata_to_the_virtual_appliance.html
+        - title: Post-migration
+          url: /scpivs44_post-migration.html
+        - title: Correct bad gateway errors during migration
+          url: /scpivs44_correct_bad_gateway_errors_during_migration.html
+        - title: Manage authentication errors
+          url: /scpivs44_manage_authentication_errors.html
