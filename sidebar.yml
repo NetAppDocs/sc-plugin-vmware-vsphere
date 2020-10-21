@@ -265,8 +265,6 @@ entries:
         url: /scpivs44_upgrade_overview.html
       - title: Upgrade from Windows-based SnapCenter Plug-in for VMware vSphere
         url: /scpivs44_upgrade_from_windows-based_snapcenter_plug-in_for_vmware_vsphere.html
-      - title: Upgrade from NetApp Data Broker
-        url: /scpivs44_upgrade_from_netapp_data_broker.html
       - title: Information not displayed after upgrading to a new patch of the same release
         url: /scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html
   - title: Migrate to the Linux-based SnapCenter Plug-in for VMware vSphere
