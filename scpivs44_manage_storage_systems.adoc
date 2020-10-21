@@ -85,4 +85,4 @@ If a resource group has backups that reside on a storage VM that you remove, the
 . In the *Remove Storage System* confirmation box, check the box for *Delete storage system(s)* and then click *Yes* to confirm.
 . If the removed storage VM was managed by an ESXi 6.7 Server, then you must restart the web client service.
 +
-link:scpivs44_manage_the_vmware_vsphere_web_client_service.html[Manage the VMware vSphere Web Client Service].
+link:scpivs44_manage_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere web client service].
