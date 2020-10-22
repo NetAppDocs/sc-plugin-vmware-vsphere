@@ -1,0 +1,53 @@
+---
+sidebar: sidebar
+permalink: scpivs44_restore_deleted_vms_from_backups.html
+keywords:
+summary:
+---
+
+= Restore deleted VMs from backups
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:24.349823
+//
+
+[.lead]
+You can restore a deleted VM from a datastore primary or secondary backup to an ESXi host that you select.
+
+.Before you begin
+
+* The user account for the storage system, on the Storage Systems page in the VMware vSphere web client, must have the link:scpivs44_minimum_ontap_privileges_required.html[Minimum ONTAP privileges required for ONTAP].
+* A backup must exist.
++
+You must have created a backup of the VM using the SnapCenter Plug-in for VMware vSphere before you can restore the VMDKs on that VM.
+
+.About this task
+
+You cannot restore a datastore, but you can restore any VM in the datastore.
+
+A restore operation might fail if the storage tier of the FabricPool where the VM is located is unavailable.
+
+.Steps
+
+. Click *Menu* and select the *Storage* menu option, then select a datastore, then select the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
+. Double-click on a backup to see a list of all VMs that are included in the backup.
+. Select the deleted VM from the backup list and click *Restore*.
+. In the *Restore* wizard, on the *Select Backup* page, select the backup copy that you want to restore from.
++
+You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and the location. Click *OK* to return to the wizard.
+
+. On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field and then select the Destination ESXi host name.
++
+The restore destination can be any ESXi host that has been added to SnapCenter. This option restores the contents of the last datastore in which the VM resided from a Snapshot copy with the specified time and date. The *Restart VM* check box is checked if you select this option.
++
+If you are restoring a VM in an NFS datastore onto an alternate ESXi host that is in an ESXi cluster, then after the VM is restored, it is registered on the alternate host.
+
+. On the *Select Location* page, select the location of the datastore that you want to restore from.
+. Review the Summary page and then click *Finish*.

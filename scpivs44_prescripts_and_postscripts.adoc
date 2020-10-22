@@ -1,0 +1,101 @@
+---
+sidebar: sidebar
+permalink: scpivs44_prescripts_and_postscripts.html
+keywords:
+summary:
+---
+
+= Prescripts and postscripts
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:22.969077
+//
+
+[.lead]
+You can use custom prescripts and postscripts as part of your data protection operations. These scripts enable automation either before your data protection job or after. For example, you might include a script that automatically notifies you of data protection job failures or warnings. Before you set up your prescripts and postscripts, you should understand some of the requirements for creating these scripts.
+
+.Supported script types
+
+Only Perl scripts are supported.
+
+.Script path location
+
+Prescripts and postscripts are run by the SnapCenter Plug-in for VMware vSphere. Therefore, the scripts must be located on the SnapCenter VMware plug-in VM.
+
+The script path is validated at the time the script is executed.
+
+.Where to specify scripts
+
+Scripts are specified in backup policies. When a backup job is started, the policy automatically associates the script with the resources being backed up.
+
+When you create a backup policy, the wizards in some plug-ins provide separate fields to specify prescripts and postscripts. Other wizards only provide a single field for both.
+
+To specify multiple scripts, press *Enter* after each script path to list each script on a separate line. Semicolons (;) are not allowed. You can specify multiple prescripts and multiple postscripts. A single script can be coded as both a prescript and a postscript and can call other scripts.
+
+.When scripts are executed
+
+Scripts are executed according to the value set for BACKUP_PHASE.
+
+* BACKUP_PHASE=PRE_BACKUP
++
+Prescripts are executed in the PRE_BACKUP phase of the operation.
+
+[NOTE]
+If a prescript fails, the backup also fails.
+
+* BACKUP_PHASE=POST_BACKUP or BACKUP_PHASE=FAILED_BACKUP
++
+Postscripts are executed in the POST_BACKUP phase of the operation after the backup completes successfully or in the FAILED_BACKUP phase if the backup does not complete successfully.
+
+[NOTE]
+If a postscript fails, the backup completes successfully, and a warning message is sent.
+
+.Environment variables passed to scripts
+
+You can use the environment variables shown in the following table in scripts.
+
+|===
+|Environment variable |Description
+
+|`BACKUP_NAME`
+|Name of the backup.
+Variable passed in postscripts only.
+|`BACKUP_DATE`
+|Date of the backup, in the format `yyyymmdd`
+Variable passed in postscripts only.
+|`BACKUP_TIME`
+|Time of the backup, in the format `hhmmss`
+Variable passed in postscripts only.
+|`BACKUP_PHASE`
+|The phase of the backup in which you want the script to run.
+Valid values are: `PRE_BACKUP, POST_BACKUP, and FAILED_BACKUP`.
+Variable passed in prescripts and postscripts.
+|`STORAGE_SNAPSHOTS`
+|The number of storage snapshots in the backup.
+Variable passed in postscripts only.
+|`STORAGE_SNAPSHOT.#`
+|One of the defined storage snapshots, in the following format:
+`<filer>:/vol/<volume>:<ONTAP-snapshot-name>`
+Variable passed in postscripts only.
+|`VIRTUAL_MACHINES`
+|The number of VMs in the backup.
+Variable passed in prescripts and postscripts.
+|`VIRTUAL_MACHINE.#`
+|One of the defined virtual machines, in the following format:
+`<VM name>[vertical bar]<VM UUID>[vertical bar]<power-state>[vertical bar]<VM snapshot>[vertical bar]<ip-addresses>
+<power-state> has the values POWERED_ON, POWERED_OFF, or
+SUSPENDED`
+`<VM snapshot>` has the values `true` or `false`
+Variable passed in prescripts and postscripts.
+|===
+
+.Script timeouts
+
+The timeout for backup scripts is 15 minutes and cannot be modified.

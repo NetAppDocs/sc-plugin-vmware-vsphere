@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: scpivs44_get_started_overview.html
+keywords:
+summary:
+---
+
+= Deployment Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:20.763592
+//
+
+To use SnapCenter features to protect VMs, datastores, and application-consistent databases on virtualized machines, you must deploy SnapCenter Plug-in for VMware vSphere.
+
+Existing SnapCenter users must use a different deployment workflow from new SnapCenter users.

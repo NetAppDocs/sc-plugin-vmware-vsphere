@@ -1,0 +1,50 @@
+---
+sidebar: sidebar
+permalink: scpivs44_access_rest_apis_using_the_swagger_api_web_page.html
+keywords:
+summary:
+---
+
+= Access REST APIs using the Swagger API web page
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:28.668084
+//
+
+[.lead]
+REST APIs are exposed through the Swagger web page. You can access the Swagger web page to display the SnapCenter Server or SnapCenter Plug-in for VMware vSphere REST APIs, as well as to manually issue an API call. You can use SnapCenter Plug-in for VMware vSphere REST APIs to perform protection operations on VMs and datastores.
+
+The plug-in has different Swagger web pages from the Windows SnapCenter Swagger web pages.
+
+.Before you begin
+
+For SnapCenter Plug-in for VMware vSphere REST APIs, you must know either the IP address or the host name of the SnapCenter VMware plug-in.
+
+[NOTE]
+The plug-in only supports REST APIs for the purpose of integrating with third party applications and does not support PowerShell cmdlets or a CLI.
+
+.Steps
+
+. From a browser, enter the URL to access the plug-in Swagger web page:
++
+`https://<appliance_IP_address_or_host_name>:8144/api/swagger-ui.html#`
++
+[IMPORTANT]
+Do not use the following characters in the REST API URL: +, . , %, and &.
++
+.Example
++
+Access the SnapCenter VMware plug-in REST APIs:
++
+`https://192.0.2.82:8144/api/swagger-ui.html#https://OVAhost:8144/api/swagger-ui.html#`
++
+Log ins use the vCenter authentication mechanism to generate the token.
+
+. Click an API resource type to display the APIs in that resource type.

@@ -1,0 +1,64 @@
+---
+sidebar: sidebar
+permalink: scpivs44_restore_vmdks_from_backups.html
+keywords:
+summary:
+---
+
+= Restore VMDKs from backups
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:24.476237
+//
+
+[.lead]
+You can restore one or more virtual machine disks (VMDKs) on a VM to the same datastore. You can restore existing VMDKs, or deleted or detached VMDKs from either a primary a secondary backup.
+
+.Before you begin
+
+* A backup must exist.
++
+You must have created a backup of the VM using the SnapCenter Plug-in for VMware vSphere.
+
+* The VM must not be in transit.
++
+The VM that you want to restore must not be in a state of vMotion or Storage vMotion.
+
+.About this task
+
+* If the VMDK is deleted or detached from the VM, then the restore operation attaches the VMDK to the VM.
+* A restore operation might fail if the storage tier of the FabricPool where the VM is located is unavailable.
+* Attach and restore operations connect VMDKs using the default SCSi controller. VMDKs that are attached to a VM with a NVME controller are backed up, but for attach and restore operations they are connected back using a SCSi controller.
+
+.Steps
+
+. In the VMware vSphere web client GUI, click *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
+. In the left Navigator pane, right-click a VM, then select *NetApp SnapCenter* in the drop-down list, and then select *Restore* in the secondary drop-down list.
+. In the *Restore* wizard, on the Select Backup page, select the backup copy that you want to restore from.
++
+You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and primary or secondary location. Click *OK* to return to the wizard.
+
+. On the *Select Scope* page, select the restore destination by clicking *Particular virtual disk* in the *Restore scope* field, and choose the relevant options shown in the following table.
++
+|===
+|To… |Specify the restore destination…
+
+|Restore to the original datastore
+|Use the default, parent, datastore that is displayed.
+|Restore to an alternate datastore on the same ESXi host
+|Click the destination datastore and select a different datastore from the list.
+|===
++
+You can unselect any datastores that contain VMDKs that you do not want to restore.
+
+. On the *Select Location* page, select the Snapshot copy that you want to restore (primary or secondary).
+. Review the Summary page and then click *Finish*.
+. Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the screen.
+. Refresh the screen to display updated information.

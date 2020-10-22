@@ -1,0 +1,182 @@
+---
+sidebar: sidebar
+permalink: scpivs44_deployment_planning_and_requirements.html
+keywords:
+summary:
+---
+
+= Deployment planning and requirements
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:20.763592
+//
+
+You should be aware of the deployment requirements before you deploy the virtual appliance.  The deployment requirements are listed in the following four tables.
+
+==== Host requirements
+
+Before you begin deployment of SnapCenter Plug-in for VMware vSphere, you should be familiar with the host requirements.
+
+* You must deploy the SnapCenter VMware plug-in as a Linux VM.
++
+The SnapCenter VMware plug-in is deployed as a Linux VM regardless of whether you use the plug-in to protect data on Windows systems or Linux systems.
+
+* You should deploy the SnapCenter VMware plug-in on the vCenter Server.
++
+Backup schedules are executed in the time zone in which the SnapCenter VMware plug-in is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter VMware plug-in and vCenter are in different time zones, data in the SnapCenter VMware plug-in Dashboard might not be the same as the data in the reports.
+
+* You must not deploy the SnapCenter VMware plug-in in a folder that has a name with special characters.
++
+The folder name should not contain the following special characters: $!@#%^&()_+{}';.,*?"<>|
+
+* You must deploy and register a separate, unique instance of the SnapCenter VMware plug-in for each vCenter Server.
+** Each vCenter Server, whether or not it is in Linked Mode, must be paired with a separate instance of the SnapCenter VMware plug-in.
+** Each instance of the SnapCenter VMware plug-in must be deployed as a separate Linux VM.
++
+For example, if you want to perform backups from six different instances of the vCenter Server, then you must deploy the SnapCenter VMware plug-in on six hosts and each vCenter Server must be paired with a unique instance of the SnapCenter VMware plug-in.
+
+* The SnapCenter VMware plug-in provides limited support of shared PCI or PCIe devices (for example, NVIDIA Grid GPU) due to a limitation of the virtual machines in supporting Storage vMotion. For more information, see the vendor's document Deployment Guide for VMware.
+** What is supported:
++
+Creating resource groups
++
+Creating backups without VM consistency
++
+Restoring a complete VM when all the VMDKs are on an NFS datastore and the plug-in does not need to use Storage vMotion
++
+Attaching and detaching VMDKs
++
+Mounting and unmounting datastores
++
+Guest file restores
+
+** What is not supported:
++
+Creating backups with VM consistency
++
+Restoring a complete VM when one or more VMDKs are on a VMFS datastore.
+
+* For a detailed list of the SnapCenter VMware plug-in limitations, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes^].
+
+==== License requirements
+
+|===
+|You must provide licenses for… |License requirement
+
+|ONTAP
+|One of these: SnapMirror or SnapVault (for secondary data protection regardless of the type of relationship)
+|Additional products
+|vSphere Standard, Enterprise, or Enterprise Plus
+A vSphere license is required to perform restore operations, which use Storage vMotion. vSphere Essentials or Essentials Plus licenses do not include Storage vMotion.
+|Primary destinations
+|To perform application-based protection over VMware
+SnapCenter Standard
+To perform protection of VMware VMs and datastores only
+SnapRestore: used for restore operations
+FlexClone: used for mount and attach operations
+|Secondary destinations
+|To perform application-based protection over VMware
+SnapCenter Standard: used for failover operations
+To perform protection of VMware VMs and datastores only
+FlexClone: used for mount and attach operations
+|===
+
+==== Software support
+
+|===
+|Item |Supported versions
+
+|vCenter vSphere
+|HTML5 client: 6.5U2d/U3, 6.7x, 7.0, 7.0U1
+Flex client is not supported.
+|ESXi
+|5.5, 6.0 or later
+|IP addresses
+|IPv4, IPv6
+|Java
+|8
+|.Net Core
+|2.1
+|SnapCenter Plug-in for VMware vSphere MySQL database
+|MySQL 8.0.16
+|VMware TLS
+|1.2
+|TLS on the SnapCenter Server
+|TLSv1.1 and later
+The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-in for application over VMDK data protection operations.
+|===
+
+For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+
+==== Space and sizing requirements
+
+|===
+|Item |Requirements
+
+|Operating system
+|Linux
+|Minimum CPU count
+|4 cores
+|Minimum RAM
+|Minimum: 12 GB
+Recommended: 16 GB
+|Minimum hard drive space for the SnapCenter Plug-in for VMware vSphere, logs, and MySQL database
+|100 GB
+|===
+
+==== Connection and port requirements
+
+|===
+|Type of port |Preconfigured port
+
+|SnapCenter Plug-in for VMware vSphere port
+|8144 (HTTPS), bidirectional
+The port is used for communications from the VMware vSphere web client and from the SnapCenter Server.
+8080 bidirectional
+This port is used to manage the virtual appliance.
+Note: You cannot modify the port configuration.
+|VMware vSphere vCenter Server port
+|443 (HTTPS), bidirectional
+The port is used for communication between the storage VM host for SnapCenter Plug-in for VMware vSphere and vCenter.
+|===
+
+==== Configurations supported
+
+Each plug-in instance supports only one vCenter Server. vCenters in linked mode are supported. Multiple plug-in instances can support the same SnapCenter Server as shown in the following figure.
+
+image:scpivs44_image4.png[Error: Missing Graphic Image]
+
+==== RBAC privileges required
+
+The vCenter administrator account must have the required vCenter privileges, as listed in the following table.
+
+|===
+|To do this operation… |You must have these vCenter privileges…
+
+|Deploy and register the SnapCenter Plug-in for VMware vSphere in vCenter
+|Extension: Register extension
+|Upgrade or remove the SnapCenter Plug-in for VMware vSphere
+|Extension
+* Update extension
+* Unregister extension
+|Allow the vCenter Credential user account registered in SnapCenter to validate user access to the SnapCenter Plug-in for VMware vSphere
+|sessions.validate.session
+|Allow users to access the SnapCenter Plug-in for VMware vSphere
+|SCV Administrator
+SCV Backup
+SCV Guest File Restore
+SCV Restore
+SCV View
+The privilege must be assigned at the vCenter root.
+|===
+
+==== AutoSupport
+
+The SnapCenter Plug-in for VMware vSphere provides a minimum of information for tracking its usage, including the plug-in URL. AutoSupport includes a table of installed plug-ins that is displayed by the AutoSupport viewer.

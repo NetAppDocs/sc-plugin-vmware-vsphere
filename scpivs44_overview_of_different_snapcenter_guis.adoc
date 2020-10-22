@@ -1,0 +1,61 @@
+---
+sidebar: sidebar
+permalink: scpivs44_overview_of_different_snapcenter_guis.html
+keywords:
+summary:
+---
+
+= Overview of the different SnapCenter GUIs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:20.235275
+//
+
+In your SnapCenter environment, you must use the appropriate GUI to perform data protection and management operations, as shown in the following table.
+
+The SnapCenter Plug-in for VMware vSphere is a standalone plug-in that is different from other SnapCenter plug-ins. You must use the VMware vSphere web client GUI in vCenter for all backup and restore operations for VMs, VMDKs, and datastores. You also use the web client GUI Dashboard to monitor the list of protected and unprotected VMs. For all other SnapCenter plug-ins (application-based plug-ins), you use the SnapCenter GUI for backup and restore operations and job monitoring.
+
+The SnapCenter VMware plug-in supports HTML5 vSphere web clients. It does not support vCenter Flex or thick clients.
+
+To protect VMs and datastores, you use the VMware vSphere web client interface. The web client GUI integrates with NetApp Snapshot copy technology on the storage system. This enables you to back up VMs and datastores in seconds and restore VMs without taking an ESXi host offline.
+
+There is also a management GUI to perform administrative operations on the SnapCenter VMware plug- in.
+
+The following table shows the operations performed by each SnapCenter GUI.
+
+|===
+|Use this GUI… |To perform these operations... |And to access these backups...
+
+|SnapCenter vSphere web client GUI
+|VM and datastore backup
+VMDK attach and detach
+Datastore mount and unmount
+VM and VMDK restore
+Guest file and folder restore
+|Backups of VMs and datastores that were performed by using the VMware vSphere web client GUI.
+|SnapCenter GUI
+|Backup and restore of databases and applications on VMs, including protecting databases for Microsoft SQL Server, Microsoft Exchange, SAP HANA, and Oracle.
+Database clone
+|Backups performed by using the SnapCenter GUI.
+|SnapCenter Plug-in for VMware vSphere management GUI
+|Modify the network configuration
+Generate a support bundle
+Modify NTP server settings
+Disable/enable the plug-in
+|N.A.
+|vCenter GUI
+|Add SCV roles to vCenter Active Directory users
+Add resource access to users or groups
+|N.A.
+|===
+
+For VM-consistent backup and restore operations, you must use the VMware vSphere web client GUI. Although it is possible to perform some operations using VMware tools, for example, mounting or renaming a datastore, those operations will not be registered in the SnapCenter repository and are not recognized.
+
+SnapCenter does not support single Snapshot copies of databases and VMs together. Backups for VMs and databases must be scheduled and run independently, which creates separate Snapshot copies even if the databases and VMs are hosted in the same volume. Application-based backups must be scheduled by using the SnapCenter GUI; VM-consistent backups must be scheduled by using the VMware vSphere web client GUI.

@@ -1,0 +1,62 @@
+---
+sidebar: sidebar
+permalink: scpivs44_upgrade_from_windows-based_snapcenter_plug-in_for_vmware_vsphere.html
+keywords:
+summary:
+---
+
+= Upgrade from Windows-based SnapCenter Plug-in for VMware vSphere
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:28.817396
+//
+
+[.lead]
+If you are using the Windows-based SnapCenter VMware plug-in and want to use the new features provided by the SnapCenter Plug-in for VMware vSphere virtual appliance, you must upgrade.
+
+.Before you begin
+
+If your backups of virtualized databases and filesystems are integrated with SnapCenter:
+
+* If the SnapCenter server is a VM, then it is a best practice to take a VMware-based snapshot before upgrading.
+* Make sure the SnapCenter server is upgraded. See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade paths.
+
+.About this task
+
+There are three basic upgrade steps:
+
+. Download the upgrade .`iso` file.
+. Suspend backup jobs for the Windows-based SnapCenter VMware plug-in.
+. Deploy the SnapCenter Plug-in for VMware vSphere OVA.
+. Migrate the Windows-based VMware backup metadata.
++
+This step is performed only if you are upgrading from Windows-based SnapCenter VMware plug-in to the SnapCenter Plug-in for VMware vSphere virtual appliance.
+
+.Steps
+
+. Download the upgrade .`iso` file.
+.. Log in to the NetApp Support Site (https://mysupport.netapp.com/products/index.html[https://mysupport.netapp.com/products/index.html^]).
+.. From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *DOWNLOAD LATEST RELEASE* button.
+.. Download the SnapCenter Plug-in for VMware vSphere upgrade .`iso` file to any VM.
+. Suspend backup jobs.
++
+In the SnapCenter GUI, suspend all jobs for the Windows-based SnapCenter Plug-in for VMware vSphere.
+
+. Deploy the SnapCenter Plug-in for VMware vSphere OVA.
++
+Because this is a new installation of the Linux-based SnapCenter VMware plug-in, follow the steps for deploying the OVA.
++
+link:scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html[Deploy SnapCenter Plug-in for VMware vSphere]
++
+link:scpivs44_post_deployment_required_operations_and_issues.html[Post deployment required operations and issues]
+
+. Migrate the Windows-based VMware backup metadata.
++
+link:scpivs44_migrate_to_the_linux-based_snapcenter_plug-in_for_vmware_vsphere_overview.html[Migration overview]

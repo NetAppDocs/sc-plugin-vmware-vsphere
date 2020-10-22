@@ -1,0 +1,37 @@
+---
+sidebar: sidebar
+permalink: scpivs44_generate_a_support_bundle_from_the_maintenance_console.html
+keywords:
+summary:
+---
+
+= Generate a support bundle from the maintenance console
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:22.487422
+//
+
+[.lead]
+
+.Steps
+
+. From the VMware vSphere web client, select the VM where the SnapCenter VMware plug-in is located.
+. Right-click the VM, then on the *Summary* tab of the virtual appliance click *Launch Remote Console or Launch Web Console* to open a maintenance console window.
++
+The logon defaults for the SnapCenter VMware plug-in maintenance console are as follows:
++
+Username: `maint`
++
+Password: `admin123`
++
+image:scpivs44_image11.png[Error: Missing Graphic Image]
+
+. From the Main Menu, enter option *4) Support and Diagnostics*.
+. From the Support and Diagnostics Menu, enter option *1) Generate support bundle*.

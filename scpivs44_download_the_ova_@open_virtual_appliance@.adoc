@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: scpivs44_download_the_ova_@open_virtual_appliance@.html
+keywords:
+summary:
+---
+
+= Download the OVA (Open Virtual Appliance)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:21.861206
+//
+
+[.lead]
+The `.ova` file includes a set of microservices for VM and datastore data protection, which are performed by SnapCenter Plug-in for VMware vSphere
+
+[IMPORTANT]
+The download process does not check for an existing `scv.ova` file. Therefore, before downloading you must make sure no other `scv.ova` file exists on the vCenter.
+
+. Log in to the NetApp Support Site ( https://mysupport.netapp.com/products/index.html[https://mysupport.netapp.com/products/index.html^]).
+. From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *DOWNLOAD LATEST RELEASE* button.
+. Download the SnapCenter Plug-in for VMware vSphere `.ova` file to any location.

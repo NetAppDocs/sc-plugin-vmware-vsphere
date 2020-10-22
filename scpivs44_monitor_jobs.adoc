@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: scpivs44_monitor_jobs.html
+keywords:
+summary:
+---
+
+= Monitor jobs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:22.211322
+//
+
+[.lead]
+After performing any data protection operation using the VMware vSphere web client, you can monitor the job status from the Job Monitor tab in the Dashboard and view job details.
+
+.Steps
+
+. In the left Navigator pane of the vSphere web client, click *Dashboard*, select a vCenter Server, and then click the *Job Monitor* tab.
++
+image:scpivs44_image8.png[Error: Missing Graphic Image]
++
+The Job Monitor tab lists each job and its status, start time, and end time. If the job names are long, you might need to scroll to the right to view the start and end times. The display is refreshed every 30 seconds.
++
+* Click the image:scpivs44_image36.png[Error: Missing Graphic Image] refresh icon in the toolbar to refresh the display on-demand.
+* Click the image:scpivs44_image41.png[Error: Missing Graphic Image] filter icon to select the time range, type, and status of jobs you want displayed.
+* Click the image:scpivs44_image36.png[Error: Missing Graphic Image] refresh icon in the Job Details window to refresh the display while the job is running.
+
+If the Dashboard does not display job information, see the https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs[KB article: SnapCenter vSphere web client dashboard does not display jobs^].

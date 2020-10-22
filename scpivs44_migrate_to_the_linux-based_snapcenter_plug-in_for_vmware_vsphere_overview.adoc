@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: scpivs44_migrate_to_the_linux-based_snapcenter_plug-in_for_vmware_vsphere_overview.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:28.925485
+//
+
+[.lead]
+You use the SnapCenter Windows PowerShell cmdlets to migrate SnapCenter Plug-in for VMware vSphere metadata from the Windows-based SnapCenter Server to the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance.
+
+There are two migration options:
+
+* Migrating from SnapCenter
++
+You must migrate metadata for the following from Windows-based SnapCenter:
+
+** VM-consistent backups performed by the SnapCenter Plug-in for VMware vSphere when the plug-in was running as a Windows-based component of SnapCenter.
+** Application-consistent data protection metadata of virtualized databases or file systems performed by a SnapCenter application-based plug-in with support from the SnapCenter Plug-in for VMware vSphere when the plug-in was running as a Windows-based component of SnapCenter.
++
+To migrate, you use the Windows SnapCenter PowerShell cmdlet `invoke-SCVOVAMigration.`
++
+You can only migrate metadata from SnapCenter 4.0 or later.
+
+* Migrating from VSC
++
+You can migrate VSC 6.2.x (SMVI) metadata for backup jobs that are not integrated with SnapCenter.
++
+To migrate, you use the NetApp ToolChest: NetApp Import Utility for SnapCenter and Virtual Storage Console.  Make sure to select the VSC to SnapCenter migration option.
++
+You can only migrate metadata for existing backups. For example, if you do not have existing backups, then you cannot migrate policies only.

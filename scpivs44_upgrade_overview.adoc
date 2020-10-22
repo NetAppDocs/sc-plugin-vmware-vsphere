@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: scpivs44_upgrade_overview.html
+keywords:
+summary:
+---
+
+= Supported upgrade paths
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:28.800577
+//
+
+See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade and migration paths.

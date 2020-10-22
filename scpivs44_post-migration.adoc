@@ -1,0 +1,63 @@
+---
+sidebar: sidebar
+permalink: scpivs44_post-migration.html
+keywords:
+summary:
+---
+
+= Post-migration
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:28.981089
+//
+
+* Migration log bundle
++
+Download the migration log bundle from the `App_Data/MigrationLog` directory in the SnapCenter installation folder. Keep the migration log bundle until you are sure that the migration was successful.
+
+* Job details on the Dashboard
++
+Information on the migrated backups is listed in the VMware vSphere web client recent jobs pane but detailed information is not displayed in the Dashboard until backups are performed after the migration.
+
+* Authentication errors
++
+If you do not use Admin credentials, you might encounter an authentication error.
++
+link:scpivs44_manage_authentication_errors.html[Manage authentication errors]
+
+* Backup names
++
+Backup names before migration have the format RGName `_HostName_Timestamp`. For example, `-NAS_DS_RG_perf1server_07-05-2019_02.11.59.9338`.
++
+Backup names after migration have the format `RGName_Timestamp`.
++
+For example, `-NAS_VM_RG_07-07-2019_21.20.00.0609`.
+
+* Pre- and post-scripts
++
+Scripts that are configured for resource groups are not migrated. Because scripts written for Windows systems might not run on the Linux-based virtual appliance, you might need to recreate all or part of the scripts and add those scripts after migration.  For example, file paths in Windows do not exist in Linux, and an invoke for a .bat batch file does not work in Linux.
++
+One solution is to put an existing Windows-based script on the Linux-based virtual appliance and test whether the script works with no changes. If it does not work correctly, then replace each Windows-based command in the script with a corresponding Linux compatible command.
+
+* Guest file restore credentials
++
+Guest file restore credentials are not migrated. Therefore, you must create new guest file credentials after the migration.
+
+* `scbr.override` configuration file
++
+If you have customized settings in the `scbr.override` configuration file, then you must move that file to the SnapCenter VMware plug-in virtual appliance and restart the web client service.
+
+* Upgrade SnapCenter application-based plug-ins
++
+If you use the SnapCenter VMware plug-in to support other SnapCenter plug-ins, then you must update those plug-ins to 4.2 or later.
+
+* Uninstall SnapCenter Server
++
+If you use SnapCenter only for VM-consistent or crash-consistent data protection, then after all VM backups are migrated to the SnapCenter VMware plug-in, you can uninstall SnapCenter Server on the Windows host

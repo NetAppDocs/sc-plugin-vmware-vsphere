@@ -1,0 +1,26 @@
+---
+sidebar: sidebar
+permalink: scpivs44_create_resource_groups.html
+keywords:
+summary:
+---
+
+= Create resource groups
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:22.112639
+//
+
+. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, and then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create*.
+. Enter the required information on each page of the Create Resource Group wizard, select VMs and datastores to be included in the resource group, and then select the backup policies to be applied to the resource group and specify the backup schedule.
+
+Backups are performed as specified in the backup policies that are configured for the resource group.
+
+You can perform a backup on demand from the *Resource Groups* page by clicking image:scpivs44_image38.png[Error: Missing Graphic Image] *Run Now*.

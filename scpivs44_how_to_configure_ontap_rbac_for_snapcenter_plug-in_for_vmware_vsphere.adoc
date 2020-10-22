@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: scpivs44_how_to_configure_ontap_rbac_for_snapcenter_plug-in_for_vmware_vsphere.html
+keywords:
+summary:
+---
+
+= How to configure ONTAP RBAC for SnapCenter Plug-in for VMware vSphere
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-09-09 12:24:20.703882
+//
+
+[.lead]
+ONTAP RBAC applies only to SnapCenter Server application-consistent (application over VMDK) jobs.
+
+You must configure ONTAP RBAC on the storage system if you want to use it with the SnapCenter VMware plug-in. From within ONTAP, you must perform the following tasks:
+
+* Create a single role.
++
+http://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-adm-auth-rbac%2Fhome.html[ONTAP 9 Administrator Authentication and RBAC Power Guide^]
+
+*  Create a username and password (storage system credentials) in ONTAP for the role.
++
+This storage system credential is needed to allow you to configure the storage systems for the SnapCenter VMware plug-in. You do this by entering the credentials in the plug-in. Each time you log in to a storage system using these credentials, you are presented with the set of SnapCenter functions that you set up in ONTAP when you created the credentials.
+
+You can use the administrator or root login to access all the SnapCenter tasks; however, it is a good practice to use the RBAC feature provided by ONTAP to create one or more custom accounts with limited access privileges.
+
+For more information, see link:scpivs44_minimum_ontap_privileges_required.html[Minimum ONTAP privileges required^].
