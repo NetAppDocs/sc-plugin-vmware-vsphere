@@ -42,6 +42,9 @@ Deploy the SnapCenter VMware plug-in in the same time zone as the vCenter. Backu
 .Steps
 
 . In your browser, navigate to VMware vSphere vCenter.
++
+[NOTE]
+For IPv6 HTML web clients, you must use either Chrome or Firefox.
 . On the VMware screen, click *vSphere Web Client (HTML5)*.
 . Log in to the *VMware vCenter Single Sign-On* page.
 . On the Navigator pane, right-click any inventory object that is a valid parent object of a virtual machine, such as a datacenter, folder, cluster, or host, and select *Deploy OVF Template* to start the VMware deploy wizard.
