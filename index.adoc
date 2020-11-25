@@ -39,5 +39,4 @@ Although the virtual appliance must be installed as a Linux VM, the SnapCenter V
 == Support
 
 https://www.netapp.com/data-protection/backup-recovery/snapcenter-backup-management/documentation/[Resources^]
-
 https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[Supported versions^]
