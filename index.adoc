@@ -32,10 +32,12 @@ For application-consistent backup and restore operations of Oracle, MS-SQL, or E
 
 * *SnapCenter VMware plug-in is deployed as a virtual appliance in a Linux VM*
 +
-Although the virtual appliance must be installed as a Linux VM, the SnapCenter VMware plug-in supports both Windows-based and Linux-based vCenters. SnapCenter natively uses this plug-in without user intervention to communicate with your vCenter to support SnapCenter application-based plug-ins that perform data protection operations on Windows and Linux virtualized applications.
+Although the virtual appliance must be installed as a Linux VM, the SnapCenter VMware plug-in supports both Windows-based and Linux-based vCenters.
 
 * *SnapCenter Plug-in for VMware vSphere supports iSCSI, Fibre Channel, FCoE, VMDK over NFS 3.0 and 4.1, and VMDK over VMFS 5.0 and 6.0*
 
 == Support
 
 https://www.netapp.com/data-protection/backup-recovery/snapcenter-backup-management/documentation/[Resources^]
+
+https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[Supported versions^]
