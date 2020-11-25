@@ -17,4 +17,25 @@ summary:
 //
 //
 //
-Describes how to deploy, update, and remove the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance (Open Virtual Appliance format). It also describes how to use the SnapCenter vSphere web client in vCenter to perform VM-consistent and crash-consistent backup and restore operations for VMs, datastores, and VMDKs, and how to register the plug-in with SnapCenter Server to support application-consistent backup and restore operations.
+
+SnapCenter Plug-in for VMware vSphere (SCV) provides fast, space-efficient, crash-consistent, and VM-consistent backup and restore operations for VMs, Datastores, and VMDKs. SCV removes the SnapCenter Server dependency with its 4.2.x release and is packaged as a Linux-based Virtual Appliance (Open Virtual Appliance format).
+
+== Features
+
+* VM-consistent and crash-consistent data protection operations
++
+For Crash-consistent or VM-consistent backup and restore operations of VMware VMs and Datastores, use this appliance through the plug-in's web client GUI in vCenter. There is no need to deploy SnapCenter Server in this case.
+
+* Application-consistent (application over VMDK/RDM) data protection operations
++
+For application-consistent backup and restore operations of Oracle, MS-SQL, or Exchange workloads on VMware, you need to use the SnapCenter Server GUI and the appropriate application plug-in in conjunction with SnapCenter Plug-in for VMware vSphere.
+
+* The SnapCenter VMware plug-in is deployed as a virtual appliance in a Linux VM
++
+Although the virtual appliance must be installed as a Linux VM, the SnapCenter VMware plug-in supports both Windows-based and Linux-based vCenters. SnapCenter natively uses this plug-in without user intervention to communicate with your vCenter to support SnapCenter application-based plug-ins that perform data protection operations on Windows and Linux virtualized applications.
+
+* SnapCenter Plug-in for VMware vSphere provides support for iSCSI, Fibre Channel, FCoE, VMDK over NFS 3.0 and 4.1, and VMDK over VMFS 5.0 and 6.0.
+
+== Support
+
+https://www.netapp.com/data-protection/backup-recovery/snapcenter-backup-management/documentation/[Resources^]
