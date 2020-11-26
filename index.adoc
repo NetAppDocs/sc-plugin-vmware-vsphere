@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= SnapCenter Plug-in for VMware vSphere
+= SnapCenter Plug-in for VMware vSphere documentation
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -35,6 +35,15 @@ For application-consistent backup and restore operations of Oracle, MS-SQL, or E
 Although the virtual appliance must be installed as a Linux VM, the SnapCenter VMware plug-in supports both Windows-based and Linux-based vCenters.
 
 * *SnapCenter Plug-in for VMware vSphere supports iSCSI, Fibre Channel, FCoE, VMDK over NFS 3.0 and 4.1, and VMDK over VMFS 5.0 and 6.0*
+
+== Quick links
+
+* link:scpivs44_get_started_overview.html[Get started]
+* link:scpivs44_quick_start_overview.html[Quick start]
+* link:scpivs44_protect_data_overview.html[Protect Data]
+* link:scpivs44_rest_apis_overview.html[REST APIs]
+* link:scpivs44_upgrade_overview.html[Upgrade]
+* link:scpivs44_migrate_to_the_linux-based_snapcenter_plug-in_for_vmware_vsphere_overview.html[Migrate]
 
 == Support
 
