@@ -50,8 +50,3 @@ Although the virtual appliance must be installed as a Linux VM, the SnapCenter V
 * For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] (IMT).
 * For information about SnapCenter data protection, see the Data Protection Guide for your SnapCenter plug-in in the http://docs.netapp.com/ocsc-43/index.jsp[SnapCenter Documentation Center^].
 * For information about supported upgrade and migration paths, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes^].
-
-== Support
-
-https://www.netapp.com/data-protection/backup-recovery/snapcenter-backup-management/documentation/[Resources^]
-https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[Supported versions^]
