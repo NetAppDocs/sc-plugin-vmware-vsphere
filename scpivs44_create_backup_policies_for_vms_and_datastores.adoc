@@ -79,12 +79,12 @@ The policy specifies the backup frequency only. The specific protection schedule
 
 |Select this option to create mirror copies of backup sets on another volume that has a SnapMirror relationship to the primary backup volume.
 If a volume is configured with a mirror-vault relationship, you must select only the *Update SnapVault after backup* option if you want backups copied to the mirror-vault destinations.
-*Note:* This option is not supported for datastores in FlexGroup volumes.
+#*Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.#
 |Update SnapVault after backup
 
 |Select this option to perform disk-to-disk backup replication on another volume that has a SnapVault relationship to the primary backup volume.
 *Important:* If a volume is configured with a mirror-vault relationship, you must select only this option if you want backups copied to the mirror-vault destinations.
-*Note:* This option is not supported for datastores in FlexGroup volumes.
+#*Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.#
 |Snapshot label
 |Enter an optional, custom label to be added to SnapVault and SnapMirror Snapshot copies created with this policy.
 The Snapshot label helps to distinguish Snapshots created with this policy from other Snapshots on the secondary storage system.

@@ -19,6 +19,20 @@ summary:
 //
 
 [.lead]
-You can restore VMs, VMDKs, files, and folders from primary or secondary backups. VMs are always restored to the original host and datastore; VMDKs can be restored to either the original or an alternate datastore. You cannot use the SnapCenter Plug-in for VMware vSphere to restore a datastore, only the individual VMs in the datastore. You can also restore individual files and folders in a guest file restore session, which attaches a backup copy of a virtual disk and then restores the selected files or folders.
+You can restore VMs, VMDKs, files, and folders from primary or secondary backups.
+
+* #VM restore destinations#
++
+#In SnapCenter Plug-in for VMware vSphere 4.4 and earlier, you can restore VMs only to the original host and datastore.#
++
+#Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore VMs to the original host or to an alternate host in the same ESXi or in an alternate ESXi host managed by the same vCenter in linked mode.#
+
+* #VMDK restore destinations#
++
+#You can restore VMDKs to either the original or to an alternate datastore.#
+
+You can also restore individual files and folders in a guest file restore session, which attaches a backup copy of a virtual disk and then restores the selected files or folders.
+
+You cannot use the SnapCenter Plug-in for VMware vSphere to restore a datastore, only the individual VMs in the datastore.
 
 You cannot restore backups of storage VMs that have been removed. For example, if you add a storage VM using the management LIF and then create a backup, and then you remove that storage VM and add a cluster that contains that same storage VM, the restore operation for the backup will fail.
