@@ -32,3 +32,4 @@ link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maint
 . At the prompt “Restore using the most recent backup,” enter *y*, and then press *Enter*.
 +
 The backup MySQL database is restored to its original location.
+#*REVIEWERS: Is there any reason a customer might want to restore to an alternate location?*#
