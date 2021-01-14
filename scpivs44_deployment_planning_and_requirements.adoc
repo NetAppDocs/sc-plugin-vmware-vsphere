@@ -20,7 +20,7 @@ summary:
 
 You should be aware of the deployment requirements before you deploy the virtual appliance.  The deployment requirements are listed in the following four tables.
 
-==== Host requirements
+== Host requirements
 
 Before you begin deployment of SnapCenter Plug-in for VMware vSphere, you should be familiar with the host requirements.
 
@@ -65,7 +65,7 @@ Restoring a complete VM when one or more VMDKs are on a VMFS datastore.
 
 * For a detailed list of the SnapCenter VMware plug-in limitations, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes^].
 
-==== License requirements
+== License requirements
 
 |===
 |You must provide licenses for… |License requirement
@@ -88,7 +88,7 @@ To perform protection of VMware VMs and datastores only
 FlexClone: used for mount and attach operations
 |===
 
-==== Software support
+== Software support
 
 |===
 |Item |Supported versions
@@ -115,7 +115,7 @@ The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-i
 
 For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
-==== Space and sizing requirements
+== Space and sizing requirements
 
 |===
 |Item |Requirements
@@ -131,7 +131,7 @@ Recommended: 16 GB
 |100 GB
 |===
 
-==== Connection and port requirements
+== Connection and port requirements
 
 |===
 |Type of port |Preconfigured port
@@ -147,13 +147,13 @@ Note: You cannot modify the port configuration.
 The port is used for communication between the SnapCenter Plug-in for VMware vSphere and vCenter.
 |===
 
-==== Configurations supported
+== Configurations supported
 
 Each plug-in instance supports only one vCenter Server. vCenters in linked mode are supported. Multiple plug-in instances can support the same SnapCenter Server as shown in the following figure.
 
 image:scpivs44_image4.png[Error: Missing Graphic Image]
 
-==== RBAC privileges required
+== RBAC privileges required
 
 The vCenter administrator account must have the required vCenter privileges, as listed in the following table.
 
@@ -177,6 +177,6 @@ SCV View
 The privilege must be assigned at the vCenter root.
 |===
 
-==== AutoSupport
+== AutoSupport
 
 The SnapCenter Plug-in for VMware vSphere provides a minimum of information for tracking its usage, including the plug-in URL. AutoSupport includes a table of installed plug-ins that is displayed by the AutoSupport viewer.
