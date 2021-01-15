@@ -81,7 +81,7 @@ entries:
     entries:
       - title: Add storage
         url: /scpivs44_add_storage_01.html
-      - title: Manage storage VM - modify, rename, remove
+      - title: Manage storage VMs - modify, rename, remove
         url: /scpivs44_manage_storage_systems.html
         entries:
           - title: Modify storage VMs
