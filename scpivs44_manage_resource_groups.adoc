@@ -34,7 +34,7 @@ You can perform the following tasks on resource groups for VMs and datastores:
 [NOTE]
 Resource groups are called backup jobs in Virtual Storage Console (VSC).
 
-=== Suspend and resume operations on resource groups
+== Suspend and resume operations on resource groups
 
 You can temporarily disable scheduled operations from starting on a resource group. Later when you want, you can enable those operations.
 
@@ -52,7 +52,7 @@ On the Resource Groups page, the job status for the suspended resource is `Under
 
 After backup operations are resumed, the Job Status changes to `Production`.
 
-=== Modify resource groups
+== Modify resource groups
 
 You can remove or add resources in resource groups in vCenter, detach or attach policies, modify schedules, or modify any other resource group option.
 
@@ -73,7 +73,7 @@ You can make changes in multiple categories.
 
 . Click *Next* until you see the Summary page, and then click *Finish*.
 
-=== Delete resource groups
+== Delete resource groups
 
 You can delete a resource group in vCenter if you no longer need to protect the resources in the resource group. You must ensure that all resource groups are deleted before you remove SnapCenter Plug-in for VMware vSphere from vCenter.
 

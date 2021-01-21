@@ -85,59 +85,7 @@ Ping a host
 Access diagnostic shell
 Enable remote diagnostic access
 Generate core dump bundle
-|===
-
-=== Modify the time zone for backups
-
-When you configure a backup schedule for a SnapCenter Plug-in for VMware vSphere resource group, the schedule is automatically set for the time zone in which SnapCenter VMware plug-in is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management GUI.
-
-.Before you begin
-
-You must know the IP address and the log in credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
-
-* The IP address was displayed when the SnapCenter VMware plug-in was deployed.
-* Use the log in credentials provided during the deployment of the SnapCenter VMware plug-in or as later modified.
-
-.Steps
-
-. Log in to the SnapCenter VMware plug-in management GUI.
-+
-Use the format `https://<appliance-IP-address>:8080`
-
-. Click the Settings icon in the top toolbar.
-+
-image:scpivs44_image28.jpg[Error: Missing Graphic Image]
-
-. On the *Settings* page, in the *Date and Time* section, click *Edit*.
-. Select the new time zone and click *Save*.
-+
-The new time zone will be used for all backups performed by the SnapCenter VMware plug-in.
-
-=== Modify the logon credentials for SnapCenter Plug-in for VMware vSphere
-
-You can modify the logon credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
-
-.Before you begin
-
-You must know the IP address and the log on credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
-
-* The IP address was displayed when the SnapCenter VMware plug-in was deployed.
-* Use the log in credentials provided during the deployment of the SnapCenter VMware plug-in or as later modified.
-
-.Steps
-
-. Log in to the SnapCenter VMware plug-in management GUI.
-+
-Use the format `https://<appliance-IP-address>:8080`
-
-. Click the Settings icon in the top toolbar.
-+
-image:scpivs44_image28.jpg[Error: Missing Graphic Image]
-
-. On the *Settings* page, in the *User* section, click *Edit*.
-. Enter the new username or password and click *Save*.
-+
-It might take several minutes before all the services come back up.
+ ===
 
 === Modify the SnapCenter VMware Plug-in password from the maintenance console
 
@@ -169,86 +117,6 @@ image:scpivs44_image29.jpg[Error: Missing Graphic Image]
 . Enter the new password.
 +
 The SnapCenter VMware virtual appliance service is stopped and restarted.
-
-=== Modify the vCenter logon credentials in SnapCenter Plug-in for VMware vSphere
-
-You can modify the vCenter logon credentials that are configured in SnapCenter Plug-in for VMware vSphere. These settings are used by the plug-in to access vCenter.
-
-.Before you begin
-
-You must know the IP address and the log on credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
-
-* The IP address was displayed when the SnapCenter VMware plug-in was deployed.
-* Use the log in credentials provided during the deployment of the SnapCenter VMware plug-in or as later modified.
-
-.Steps
-
-. Log in to the SnapCenter VMware plug-in management GUI.
-+
-Use the format `https://<appliance-IP-address>:8080`
-
-. In the left navigation pane, click *Configuration*.
-+
-image:scpivs44_image30.png[Error: Missing Graphic Image]
-
-. On the *Configuration* page, in the *vCenter* section, click *Edit*.
-. Enter the new username or password and then click *Save*.
-+
-Do not modify the port number.
-
-=== Modify the network settings
-
-You can modify the network settings that are configured in SnapCenter Plug-in for VMware vSphere. These settings are used by the plug-in to access vCenter.
-
-.Before you begin
-
-You must know the IP address and the log on credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
-
-* The IP address was displayed when the SnapCenter VMware plug-in was deployed.
-* Use the log in credentials provided during the deployment of the SnapCenter VMware plug-in or as later modified.
-
-.Steps
-
-. Log in to the SnapCenter VMware plug-in management GUI.
-+
-Use the format `https://<appliance-IP-address>:8080`
-
-. Click the Settings icon in the top toolbar.
-+
-image:scpivs44_image31.png[Error: Missing Graphic Image]
-
-. On the *Settings* page, in the *Network Settings* section, click *IPv4* or *IPv6*, and then click *Edit*.
-+
-Enter the new information and click *Save*.
-
-. If you are removing a network setting, do the following:
-+
-** IPv4: In the *IP Address* field, enter `0.0.0.0` and then click *Save*.
-** IPv6: In the *IP Address* field: enter `: :0`  and then click *Save*.
-
-[NOTE]
-If you are using both IPv4 and IPv6, you cannot remove both network settings. The remaining network must specify the DNS Servers and Search Domains fields.
-
-=== Enable SSH for SnapCenter Plug-in for VMware vSphere
-
-When the SnapCenter VMware plug-in is deployed, SSH is disabled by default.
-
-.Steps
-
-. From the VMware vSphere web client, select the VM where the SnapCenter VMware plug-in is located.
-. Right-click the VM, then on the *Summary* tab of the virtual appliance click *Launch Remote Console* to open a maintenance console window.
-+
-The logon defaults for the SnapCenter VMware plug-in maintenance console are as follows:
-+
-Username: `maint`
-+
-Password: `admin123`
-+
-image:scpivs44_image11.png[Error: Missing Graphic Image]
-
-. From the Main Menu, select menu option *2) System Configuration*.
-. From the System Configuration Menu, select menu option *6) Enable SSH access* and then enter “*y*” at the confirmation prompt.
-. Wait for the message “Enabling SSH Access…” then press *Enter* to continue, and then enter *X* at the prompt to exit Maintenance Mode.
 
 === Create and import certificates
 
@@ -338,3 +206,135 @@ The IP of the SnapCenter VMware plug-in is displayed when you deploy the plug-in
 The virtual appliance is still deployed but the SnapCenter VMware plug-in is removed.
 
 After removing the host VM for the SnapCenter VMware plug-in, the plug-in might remain listed in vCenter until the local vCenter cache is refreshed. However, because the plug-in was removed, no SnapCenter VMware vSphere operations can be performed on that host. If you want to refresh the local vCenter cache, first make sure the appliance is in a Disabled state on the SnapCenter VMware plug-in Configuration page, and then restart the vCenter web client service.
+
+=== Modify the time zone for backups
+
+When you configure a backup schedule for a SnapCenter Plug-in for VMware vSphere resource group, the schedule is automatically set for the time zone in which SnapCenter VMware plug-in is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management GUI.
+
+.Before you begin
+
+You must know the IP address and the log in credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
+
+* The IP address was displayed when the SnapCenter VMware plug-in was deployed.
+* Use the log in credentials provided during the deployment of the SnapCenter VMware plug-in or as later modified.
+
+.Steps
+
+. Log in to the SnapCenter VMware plug-in management GUI.
++
+Use the format `https://<appliance-IP-address>:8080`
+
+. Click the Settings icon in the top toolbar.
++
+image:scpivs44_image28.jpg[Error: Missing Graphic Image]
+
+. On the *Settings* page, in the *Date and Time* section, click *Edit*.
+. Select the new time zone and click *Save*.
++
+The new time zone will be used for all backups performed by the SnapCenter VMware plug-in.
+
+=== Modify the logon credentials for SnapCenter Plug-in for VMware vSphere
+
+You can modify the logon credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
+
+.Before you begin
+
+You must know the IP address and the log on credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
+
+* The IP address was displayed when the SnapCenter VMware plug-in was deployed.
+* Use the log in credentials provided during the deployment of the SnapCenter VMware plug-in or as later modified.
+
+.Steps
+
+. Log in to the SnapCenter VMware plug-in management GUI.
++
+Use the format `https://<appliance-IP-address>:8080`
+
+. Click the Settings icon in the top toolbar.
++
+image:scpivs44_image28.jpg[Error: Missing Graphic Image]
+
+. On the *Settings* page, in the *User* section, click *Edit*.
+. Enter the new username or password and click *Save*.
++
+It might take several minutes before all the services come back up.
+
+=== Modify the vCenter logon credentials in SnapCenter Plug-in for VMware vSphere
+
+You can modify the vCenter logon credentials that are configured in SnapCenter Plug-in for VMware vSphere. These settings are used by the plug-in to access vCenter.
+
+.Before you begin
+
+You must know the IP address and the log on credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
+
+* The IP address was displayed when the SnapCenter VMware plug-in was deployed.
+* Use the log in credentials provided during the deployment of the SnapCenter VMware plug-in or as later modified.
+
+.Steps
+
+. Log in to the SnapCenter VMware plug-in management GUI.
++
+Use the format `https://<appliance-IP-address>:8080`
+
+. In the left navigation pane, click *Configuration*.
++
+image:scpivs44_image30.png[Error: Missing Graphic Image]
+
+. On the *Configuration* page, in the *vCenter* section, click *Edit*.
+. Enter the new username or password and then click *Save*.
++
+Do not modify the port number.
+
+=== Modify the network settings
+
+You can modify the network settings that are configured in SnapCenter Plug-in for VMware vSphere. These settings are used by the plug-in to access vCenter.
+
+.Before you begin
+
+You must know the IP address and the log on credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
+
+* The IP address was displayed when the SnapCenter VMware plug-in was deployed.
+* Use the log in credentials provided during the deployment of the SnapCenter VMware plug-in or as later modified.
+
+.Steps
+
+. Log in to the SnapCenter VMware plug-in management GUI.
++
+Use the format `https://<appliance-IP-address>:8080`
+
+. Click the Settings icon in the top toolbar.
++
+image:scpivs44_image31.png[Error: Missing Graphic Image]
+
+. On the *Settings* page, in the *Network Settings* section, click *IPv4* or *IPv6*, and then click *Edit*.
++
+Enter the new information and click *Save*.
+
+. If you are removing a network setting, do the following:
++
+** IPv4: In the *IP Address* field, enter `0.0.0.0` and then click *Save*.
+** IPv6: In the *IP Address* field: enter `: :0`  and then click *Save*.
+
+[NOTE]
+If you are using both IPv4 and IPv6, you cannot remove both network settings. The remaining network must specify the DNS Servers and Search Domains fields.
+
+=== Enable SSH for SnapCenter Plug-in for VMware vSphere
+
+When the SnapCenter VMware plug-in is deployed, SSH is disabled by default.
+
+.Steps
+
+. From the VMware vSphere web client, select the VM where the SnapCenter VMware plug-in is located.
+. Right-click the VM, then on the *Summary* tab of the virtual appliance click *Launch Remote Console* to open a maintenance console window.
++
+The logon defaults for the SnapCenter VMware plug-in maintenance console are as follows:
++
+Username: `maint`
++
+Password: `admin123`
++
+image:scpivs44_image11.png[Error: Missing Graphic Image]
+
+. From the Main Menu, select menu option *2) System Configuration*.
+. From the System Configuration Menu, select menu option *6) Enable SSH access* and then enter “*y*” at the confirmation prompt.
+. Wait for the message “Enabling SSH Access…” then press *Enter* to continue, and then enter *X* at the prompt to exit Maintenance Mode.
