@@ -21,17 +21,17 @@ summary:
 [.lead]
 You can use custom prescripts and postscripts as part of your data protection operations. These scripts enable automation either before your data protection job or after. For example, you might include a script that automatically notifies you of data protection job failures or warnings. Before you set up your prescripts and postscripts, you should understand some of the requirements for creating these scripts.
 
-.Supported script types
+== Supported script types
 
 Only Perl scripts are supported.
 
-.Script path location
+== Script path location
 
 Prescripts and postscripts are run by the SnapCenter Plug-in for VMware vSphere. Therefore, the scripts must be located on the SnapCenter VMware plug-in VM.
 
 The script path is validated at the time the script is executed.
 
-.Where to specify scripts
+== Where to specify scripts
 
 Scripts are specified in backup policies. When a backup job is started, the policy automatically associates the script with the resources being backed up.
 
@@ -39,7 +39,7 @@ When you create a backup policy, the wizards in some plug-ins provide separate f
 
 To specify multiple scripts, press *Enter* after each script path to list each script on a separate line. Semicolons (;) are not allowed. You can specify multiple prescripts and multiple postscripts. A single script can be coded as both a prescript and a postscript and can call other scripts.
 
-.When scripts are executed
+== When scripts are executed
 
 Scripts are executed according to the value set for BACKUP_PHASE.
 
@@ -57,7 +57,7 @@ Postscripts are executed in the POST_BACKUP phase of the operation after the bac
 [NOTE]
 If a postscript fails, the backup completes successfully, and a warning message is sent.
 
-.Environment variables passed to scripts
+== Environment variables passed to scripts
 
 You can use the environment variables shown in the following table in scripts.
 
@@ -96,6 +96,6 @@ SUSPENDED`
 Variable passed in prescripts and postscripts.
 |===
 
-.Script timeouts
+== Script timeouts
 
 The timeout for backup scripts is 15 minutes and cannot be modified.
