@@ -82,7 +82,9 @@ You can search for a specific backup name or a partial backup name, or you can f
 +
 #In the *VM name after restore* field, the default name is `<vm_name>_<counter>`.#
 
-. On the *Select Location* page, select the #location for the restored datastore: primary or secondary storage.#
+. On the *Select Location* page, select the location for the restored datastore.
++
+#In SnapCenter Plug-in for VMware vSphere 4.5 and later, you can select primary or secondary storage.#
 
 . Review the Summary page and then click *Finish*.
 . Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the screen.
