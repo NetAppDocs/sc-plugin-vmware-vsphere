@@ -213,13 +213,13 @@ entries:
   - title: Manage your configuration
     entries:
       - title: Modify the time zones for backups
-        url: /scpivs44_manage_your_configuration
+        url: /scpivs44_manage_your_configuration.html
       - title: Modify the logon credentials for SnapCenter Plug-in for VMware vSphere
-        url: /scpivs44_manage_your_configuration#modify_the_logon_credentials_in_ snapcenter_plug-in_for_vmware_vsphere
+        url: /scpivs44_manage_your_configuration.html#modify_the_logon_credentials_in_ snapcenter_plug-in_for_vmware_vsphere
       - title: Modify the vCenter logon credentials in SnapCenter Plug-in for VMware vSphere
-        url: /scpivs44_manage_your_configuration#modify-the-vcenter-logon-credentials-in-snapcenter-plug-in-for-vmware-vsphere
+        url: /scpivs44_manage_your_configuration.html#modify-the-vcenter-logon-credentials-in-snapcenter-plug-in-for-vmware-vsphere
       - title: Modify the network settings
-        url: /scpivs44_manage_your_configuration#modify_the_network_settings
+        url: /scpivs44_manage_your_configuration.html#modify_the_network_settings
       - title: Modify configuration default values
         url: /scpivs44_customize_your_configuration.html
         entries:
@@ -228,7 +228,7 @@ entries:
           - title: Properties you can override
             url: /scpivs44_customize_your_configuration.html#properties-you-can-override
       - title: Enable SSH for SnapCenter Plug-in for VMware vSphere
-        url: /scpivs44_manage_your_configuration#enable_ssh_for_snapcenter_plug-in_for_vmware_vsphere
+        url: /scpivs44_manage_your_configuration.html#enable_ssh_for_snapcenter_plug-in_for_vmware_vsphere
   - title: REST APIs
     entries:
       - title: Overview
