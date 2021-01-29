@@ -85,7 +85,7 @@ Ping a host
 Access diagnostic shell
 Enable remote diagnostic access
 Generate core dump bundle
- ===
+| ===
 
 === Modify the SnapCenter VMware Plug-in password from the maintenance console
 
