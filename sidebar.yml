@@ -215,7 +215,7 @@ entries:
       - title: Modify the time zones for backups
         url: /scpivs44_manage_your_configuration.html
       - title: Modify the logon credentials for SnapCenter Plug-in for VMware vSphere
-        url: /scpivs44_manage_your_configuration.html#modify_the_logon_credentials_in_ snapcenter_plug-in_for_vmware_vsphere
+        url: /scpivs44_manage_your_configuration.html#modify_the_logon_credentials_for_snapcenter_plug-in_for_vmware_vsphere
       - title: Modify the vCenter logon credentials in SnapCenter Plug-in for VMware vSphere
         url: /scpivs44_manage_your_configuration.html#modify-the-vcenter-logon-credentials-in-snapcenter-plug-in-for-vmware-vsphere
       - title: Modify the network settings
