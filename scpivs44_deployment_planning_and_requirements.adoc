@@ -105,7 +105,7 @@ Flex client is not supported.
 |.Net Core
 |2.1
 |SnapCenter Plug-in for VMware vSphere MySQL database
-| #MySQL 8.0.22#
+| MySQL 8.0.16
 |VMware TLS
 |1.2
 |TLS on the SnapCenter Server
