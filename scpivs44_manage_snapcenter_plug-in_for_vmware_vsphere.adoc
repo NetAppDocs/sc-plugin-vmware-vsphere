@@ -87,10 +87,6 @@ Generate support bundle
 Access diagnostic shell
 Enable remote diagnostic access
 Generate core dump bundle
-<<<<<<< HEAD
-=======
-| ===
->>>>>>> 3622ecb03162910d6af232e02367eb173a76737f
 
 == Modify the SnapCenter VMware Plug-in password from the maintenance console
 
