@@ -48,7 +48,7 @@ Scripts are executed according to the value set for BACKUP_PHASE.
 Prescripts are executed in the PRE_BACKUP phase of the operation.
 
 [NOTE]
-If a prescript fails, the backup also fails.
+If a prescript fails, the backup completes successfully, and a warning message is sent.
 
 * BACKUP_PHASE=POST_BACKUP or BACKUP_PHASE=FAILED_BACKUP
 +
