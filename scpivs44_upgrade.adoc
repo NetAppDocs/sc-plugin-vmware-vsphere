@@ -1,0 +1,60 @@
+---
+sidebar: sidebar
+permalink: scpivs44_upgrade.html
+keywords:
+summary:
+---
+
+= Upgrade
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+#If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.#
+
+== #Supported upgrade paths#
+
+#See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade and migration paths.#
+
+== #Upgrade from an earlier release of SnapCenter Plug-in for VMware vSphere#
+
+#If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.#
+
+.#Steps#
+
+. #Prepare for the upgrade by disabling SnapCenter Plug-in for VMware vSphere.#
+.. #Log in to the SnapCenter Plug-in for VMware vSphere management GUI.#
+#The IP is displayed when you deploy the SnapCenter VMware plug-in.#
+.. #Click *Configuration* in the left navigation pane, and then click the *Service* option in the Plug-in Details section to disable the plug-in.#
+
+. #Download the upgrade `.iso` file.#
+
+.. #Log in to the NetApp Support Site (https://mysupport.netapp.com/products/index.html).#
+.. #From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *DOWNLOAD LATEST RELEASE* button.#
+.. #Download the SnapCenter Plug-in for VMware vSphere upgrade `.iso` file to any location.#
+
+. #Install the upgrade.#
+
+.. #In your browser, navigate to the VMware vSphere vCenter.#
+.. #On the vCenter GUI, click *vSphere Web Client (HTML)*.#
+.. #Log in to the *VMware vCenter Single Sign-On* page.#
+.. #On the Navigator pane, click the VM that you want to upgrade and then click the *Summary* tab.#
+.. #On the *Related Objects* pane, click on any datastore in the list and then click the *Summary* tab.#
+.. #On the *Files* tab for the selected datastore, click on any folder in the list, and then click the storage icon (*Upload a file to the Datastore*).#
+.. #On the upload pop-up screen, navigate to the location where you downloaded the `.iso` file, then click on the `.iso` file image, and then click *Open*.#
+#The file is uploaded to the datastore.#
+.. #Navigate back to VM that you want to upgrade, and click the *Summary* tab.#
+#In the *VM Hardware* pane, in the CD/DVD field, the value should be “Disconnected”.#
+.. #Click the connection icon in the CD/DVD field and select *Connect to CD/DVD image on a datastore*.#
++
+image:scpivs44_image42.jpg[Error: Missing Graphic Image]
+.. #In the wizard, do the following:#
+... #In the Datastores column, select the datastore where you uploaded the `.iso` file.#
+... #In the Contents column, navigate to the `.iso` file you uploaded, make sure “ISO image” is selected in the File Type field, and then click *OK*.#
+#Wait until the field shows the “Connected” status.#
+.. #Log onto the Maintenance console by accessing the *Summary* tab of the virtual appliance and then click the green run arrow to start the maintenance console.#
+.. #Enter *2* for System Configuration, then enter *8* for Upgrade.#
+.. #Enter *y* to continue and start the upgrade.#

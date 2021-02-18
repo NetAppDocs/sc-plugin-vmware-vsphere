@@ -18,12 +18,15 @@ summary:
 // 2020-09-09 12:24:28.925485
 //
 
-* The migration command migrates metadata from SnapCenter 4.0, 4.1, and 4.1.1 only. If you are using an earlier version of SnapCenter then you must first upgrade before you can migrate.
-** What is migrated:
+[.lead]
+The migration command migrates metadata from #SnapCenter 4.0 and later only#. If you are using an earlier version of SnapCenter then you must first upgrade before you can migrate.
+
+* What migrated includes
+** What is migrated
 +
 SnapCenter metadata, which includes storage systems, customized throttles, and email settings in the SnapCenter configuration file, policies, resource groups, backup metadata, and mounts. (the migration fails when it encounters prescripts or postscripts)
 
-** What is not migrated:
+** What is not migrated
 +
 Pre- and post-scripts that are configured for resource groups
 +
@@ -35,8 +38,15 @@ If you begin migration when a guest file restore session is active, the session 
 +
 // Snapshots that are deleted from ONTAP BURT 1271910
 
-* To ensure migration success, the migration command suspends all hosts that are registered with SnapCenter. After the migration process finishes successfully, SnapCenter hosts are resumed.
-* You must use the Windows Powershell cmdlet `invoke-SCVOVAMigration` for each instance of the SnapCenter VMware plug-in that is registered with SnapCenter. The cmdlet does the following:
+* SnapCenter hosts are suspended
++
+To ensure migration success, the migration command suspends all hosts that are registered with SnapCenter. After the migration process finishes successfully, SnapCenter hosts are resumed.
+* Migration cmdlet process
++
+You must use the Windows Powershell cmdlet `invoke-SCVOVAMigration` for each instance of the SnapCenter VMware plug-in that is registered with SnapCenter.
++
+The cmdlet does the following:
++
 ** Suspends all schedules to prevent job failures during the migration. After a successful migration, schedules are automatically re-enabled.
 ** Migrates storage connections and metadata.
 ** Creates backup schedules for post-migration backups.
@@ -47,4 +57,6 @@ If the SnapCenter VMware plug-in is installed on the SnapCenter Server host and 
 ** Removes the vSphere host and resource groups from the Windows SnapCenter Server.
 ** Activates the backup jobs on the Linux-based SnapCenter VMware plug-in.
 ** Registers the vSphere host for the SnapCenter VMware plug-in `with SnapCenter to support application-based backups of virtualized databases and file systems (application over VMDK backups).
-* Metadata for application-based VMDK backups is stored in the SnapCenter Server repository. Metadata for VM and datastore backups is stored in the SnapCenter VMware plug-in MySQL repository.
+* Where metadata is stored
++
+Metadata for application-based VMDK backups is stored in the SnapCenter Server repository. Metadata for VM and datastore backups is stored in the SnapCenter VMware plug-in MySQL repository.

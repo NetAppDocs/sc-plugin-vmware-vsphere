@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: scpivs44_migrate_to_the_linux-based_snapcenter_plug-in_for_vmware_vsphere_overview.html
+permalink: scpivs44_migrate.html
 keywords:
 summary:
 ---
 
-= Overview
+= Migration options
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -41,3 +41,7 @@ You can migrate VSC 6.2.x (SMVI) metadata for backup jobs that are not integrate
 To migrate, you use the NetApp ToolChest: NetApp Import Utility for SnapCenter and Virtual Storage Console.  Make sure to select the VSC to SnapCenter migration option.
 +
 You can only migrate metadata for existing backups. For example, if you do not have existing backups, then you cannot migrate policies only.
+
+= Supported migration paths
+
+See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade and migration paths.

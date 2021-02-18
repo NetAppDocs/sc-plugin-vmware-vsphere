@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Post-migration
+= Post migration
 :hardbreaks:
 :nofooter:
 :icons: font

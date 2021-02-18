@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Migrate from SnapCenter backup metadata to the virtual appliance
+= Migrate Windows-based SnapCenter VMware backup metadata
 :hardbreaks:
 :nofooter:
 :icons: font
