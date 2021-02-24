@@ -277,9 +277,9 @@ entries:
       - title: Prerequisites for migration
         url: /scpivs44_prerequisites_for_migration.html
       - title: Migrate from Windows-based SnapCenter Plug-in for VMware vSphere
-        url: /scpivs44_upgrade_from_windows-based_snapcenter_plug-in_for_vmware_vsphere.html
+        url: /scpivs44_migrate_from_windows-based_snapcenter_plug-in_for_vmware_ vsphere.html
       - title: Migrate Windows-based SnapCenter VMware backup metadata
-        url: /scpivs44_migrate_from_snapcenter_backup_metadata_to_the_virtual_appliance.html  
+        url: /scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html  
       - title: Post-migration
         url: /scpivs44_post-migration.html
       - title: Correct bad gateway errors during migration
