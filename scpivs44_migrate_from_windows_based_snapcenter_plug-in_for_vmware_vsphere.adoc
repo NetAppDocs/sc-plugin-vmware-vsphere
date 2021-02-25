@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: scpivs44_migrate_from_windows-based_snapcenter_plug-in_for_vmware_vsphere.html
+permalink: scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html
 keywords:
 summary:
 ---
