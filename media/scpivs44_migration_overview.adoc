@@ -19,12 +19,12 @@ summary:
 //
 
 [.lead]
-The migration command migrates backup metadata from SnapCenter 4.0 and later only. If you are using an earlier version of SnapCenter then you must first upgrade before you can migrate.
+The migration command migrates metadata from #SnapCenter 4.0 and later only#. If you are using an earlier version of SnapCenter then you must first upgrade before you can migrate.
 
-* What migration includes
+* What migrated includes
 ** What is migrated
 +
-SnapCenter metadata, which includes storage systems, customized throttles, and email settings in the SnapCenter configuration file, policies, resource groups, backup metadata, and mounts.
+SnapCenter metadata, which includes storage systems, customized throttles, and email settings in the SnapCenter configuration file, policies, resource groups, backup metadata, and mounts. (the migration fails when it encounters prescripts or postscripts)
 
 ** What is not migrated
 +
@@ -41,7 +41,6 @@ If you begin migration when a guest file restore session is active, the session 
 * SnapCenter hosts are suspended
 +
 To ensure migration success, the migration command suspends all hosts that are registered with SnapCenter. After the migration process finishes successfully, SnapCenter hosts are resumed.
-
 * Migration cmdlet process
 +
 You must use the Windows Powershell cmdlet `invoke-SCVOVAMigration` for each instance of the SnapCenter VMware plug-in that is registered with SnapCenter.
@@ -60,6 +59,4 @@ If the SnapCenter VMware plug-in is installed on the SnapCenter Server host and 
 ** Registers the vSphere host for the SnapCenter VMware plug-in `with SnapCenter to support application-based backups of virtualized databases and file systems (application over VMDK backups).
 * Where metadata is stored
 +
-Metadata for application-based VMDK backups is stored in the SnapCenter Server repository.
-+
-Metadata for VM and datastore backups is stored in the SnapCenter VMware plug-in MySQL repository.
+Metadata for application-based VMDK backups is stored in the SnapCenter Server repository. Metadata for VM and datastore backups is stored in the SnapCenter VMware plug-in MySQL repository.
