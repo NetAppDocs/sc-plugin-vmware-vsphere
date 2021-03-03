@@ -257,28 +257,32 @@ entries:
       - title: REST APIs workflows to modify built-in schedules
         url: /scpivs44_rest_api_workflows__modify_built-in_schedules.html
   - title: Upgrade
+    url: /scpivs44_upgrade.html
     entries:
       - title: Supported upgrade paths
-        url: /scpivs44_upgrade_overview.html
-      - title: Upgrade from Windows-based SnapCenter Plug-in for VMware vSphere
-        url: /scpivs44_upgrade_from_windows-based_snapcenter_plug-in_for_vmware_vsphere.html
+        url: /scpivs44_upgrade.html#supported-upgrade-paths
+      - title: Upgrade from an earlier release of SnapCenter Plug-in for VMware vSphere
+        url: /scpivs44_upgrade.html#upgrade-from-an-earlier-release-of-snapcenter-plugin-for-vmware-vsphere
       - title: Information not displayed after upgrading to a new patch of the same release
         url: /scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html
-  - title: Migrate to the Linux-based SnapCenter Plug-in for VMware vSphere
+  - title: Migrate
+    url: /scpivs44_migrate.html
     entries:
-      - title: Overview
-        url: /scpivs44_migrate_to_the_linux-based_snapcenter_plug-in_for_vmware_vsphere_overview.html
+      - title: Migration options
+        url: /scpivs44_migrate.html#migration-options
       - title: Supported migration paths
-        url: /scpivs44_supported_migration_paths.html
+        url: /scpivs44_migrate.html#supported-migration-paths
       - title: Migration overview
         url: /scpivs44_migration_overview.html
       - title: Prerequisites for migration
         url: /scpivs44_prerequisites_for_migration.html
-      - title: Migrate from SnapCenter backup metadata to the virtual appliance
-        url: /scpivs44_migrate_from_snapcenter_backup_metadata_to_the_virtual_appliance.html
+      - title: Migrate from Windows-based SnapCenter Plug-in for VMware vSphere
+        url: /scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html
+      - title: Migrate Windows-based SnapCenter VMware backup metadata
+        url: /scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html
       - title: Post-migration
         url: /scpivs44_post-migration.html
       - title: Correct bad gateway errors during migration
         url: /scpivs44_correct_bad_gateway_errors_during_migration.html
       - title: Manage authentication errors
-        url: /scpivs44_manage_authentication_errors.html
+        url: /scpivs44_manage_authentication_errors.html 
