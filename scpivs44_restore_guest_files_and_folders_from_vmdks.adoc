@@ -48,12 +48,11 @@ The guest restore feature allows you to view and restore system and hidden files
 |Select this option… |If…
 
 |Use Guest VM
-|You want to attach the virtual disk to the VM that you right-clicked
-before you started the wizard, and then select the credential for the VM.
+|You want to attach the virtual disk to the VM that you right-clicked before you started the wizard, and then select the credential for the VM.
 *Note:* Credentials must already be created for the VM.
 |Use Guest File Restore proxy VM
 |You want to attach the virtual disk to a proxy VM, and then select the proxy VM.
-The proxy VM must be configured before the attach and restore operation begins.
+*Note:* The proxy VM must be configured before the attach and restore operation begins.
 |===
 +
 .. Select the *Send email notification* option.
@@ -111,7 +110,7 @@ For easier browsing, you can use filters in your search string. The filters are 
 |a{x,}
 |At least x number of instances of the character a.
 |a{x,y}
-|At least x number of instances of the character a ,and, at most, y number.
+|At least x number of instances of the character a and at most y number.
 |\
 |Escapes a special character.
 |===

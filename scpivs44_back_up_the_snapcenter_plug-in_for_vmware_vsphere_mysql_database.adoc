@@ -36,7 +36,6 @@ Do not start a job to back up the MySQL database when an on-demand backup job is
 The logon defaults for the SnapCenter VMware plug-in maintenance console are as follows:
 +
 Username: `maint`
-+
 Password: `admin123`
 +
 image:scpivs44_image21.png[Error: Missing Graphic Image]

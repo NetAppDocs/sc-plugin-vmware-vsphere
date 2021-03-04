@@ -5,21 +5,38 @@ keywords:
 summary:
 ---
 
-= Upgrade from Windows-based SnapCenter Plug-in for VMware vSphere
+= Upgrade
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:28.817396
-//
-
 [.lead]
-If you are using the Windows-based SnapCenter VMware plug-in and want to use the new features provided by the SnapCenter Plug-in for VMware vSphere virtual appliance, you must upgrade.
+#If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.#
+
+#If you are using the Windows-based SnapCenter VMware plug-in and want to use the new features provided by the SnapCenter Plug-in for VMware vSphere virtual appliance, you must deploy the virtual appliance and migrate your backup metadata.#
+
+== #Upgrade from an earlier release of SnapCenter Plug-in for VMware vSphere#
+
+#If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.#
+
+.#Steps#
+
+. #Download the upgrade .`iso` file.#
+.. #Log in to the NetApp Support Site (https://mysupport.netapp.com/products/index.html[https://mysupport.netapp.com/products/index.html^]).#
+.. #From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *DOWNLOAD LATEST RELEASE* button.#
+.. #Download the SnapCenter Plug-in for VMware vSphere upgrade .`iso` file to any VM.#
+. #Suspend backup jobs.#
+.. #In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then right-click a resource group and click *Suspend *(or click *Resume*).#
++
+#image:scpivs44_image24.png[Error: Missing Graphic Image]#
+.. #In the confirmation box, click *Yes* to confirm.#
+. #Then what???#
+
+== Migrate from Windows-based SnapCenter Plug-in for VMware vSphere
+
+#If you are using the Windows-based SnapCenter VMware plug-in and want to use the new features provided by the SnapCenter Plug-in for VMware vSphere virtual appliance, you must deploy the virtual appliance and migrate your backup metadata.#
 
 .Before you begin
 
@@ -30,14 +47,12 @@ If your backups of virtualized databases and filesystems are integrated with Sna
 
 .About this task
 
-There are three basic upgrade steps:
+There are four basic steps:
 
 . Download the upgrade .`iso` file.
 . Suspend backup jobs for the Windows-based SnapCenter VMware plug-in.
 . Deploy the SnapCenter Plug-in for VMware vSphere OVA.
 . Migrate the Windows-based VMware backup metadata.
-+
-This step is performed only if you are upgrading from Windows-based SnapCenter VMware plug-in to the SnapCenter Plug-in for VMware vSphere virtual appliance.
 
 .Steps
 

@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Post-migration
+= Post migration
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -42,7 +42,7 @@ For example, `-NAS_VM_RG_07-07-2019_21.20.00.0609`.
 
 * Pre- and post-scripts
 +
-Scripts that are configured for resource groups are not migrated. Because scripts written for Windows systems might not run on the Linux-based virtual appliance, you might need to recreate all or part of the scripts and add those scripts after migration.  For example, file paths in Windows do not exist in Linux, and an invoke for a .bat batch file does not work in Linux.
+Scripts that are configured for resource groups are not migrated. Because scripts written for Windows systems might not run on the Linux-based virtual appliance, you might need to recreate all or part of the scripts and add those scripts after migration.  For example, file paths in Windows do not exist in Linux, and an invoke for a `.bat` batch file does not work in Linux.
 +
 One solution is to put an existing Windows-based script on the Linux-based virtual appliance and test whether the script works with no changes. If it does not work correctly, then replace each Windows-based command in the script with a corresponding Linux compatible command.
 
