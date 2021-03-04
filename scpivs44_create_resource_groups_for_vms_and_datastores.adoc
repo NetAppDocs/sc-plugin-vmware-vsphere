@@ -161,9 +161,7 @@ SnapCenter performs compatibility checks when you attempt to create a resource g
 
 Reasons for incompatibility might be:
 
-* VMDKs are on unsupported storage; for example, on an ONTAP system running in
-+
-7-Mode or on a non-ONTAP device.
+* VMDKs are on unsupported storage; for example, on an ONTAP system running in 7-Mode or on a non-ONTAP device.
 
 * A datastore is on NetApp storage running Clustered Data ONTAP 8.2.1 or earlier.
 +
