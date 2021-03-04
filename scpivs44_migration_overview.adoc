@@ -21,7 +21,7 @@ summary:
 [.lead]
 The migration command migrates metadata from #SnapCenter 4.0 and later only#. If you are using an earlier version of SnapCenter then you must first upgrade before you can migrate.
 
-* What migrated includes
+* What migration includes
 ** What is migrated
 +
 SnapCenter metadata, which includes storage systems, customized throttles, and email settings in the SnapCenter configuration file, policies, resource groups, backup metadata, and mounts. (the migration fails when it encounters prescripts or postscripts)
@@ -32,9 +32,9 @@ Pre- and post-scripts that are configured for resource groups
 +
 Active guest file restore sessions, guest file restore credentials, and proxy VMs
 +
-If you begin migration when a guest file restore session is active, the session is deleted and the attached disk is not unmounted. You might have to delete the attached disk manually.
-+
 `scbr.override` configuration file
++
+If you begin migration when a guest file restore session is active, the session is deleted and the attached disk is not unmounted. You might have to delete the attached disk manually.
 +
 // Snapshots that are deleted from ONTAP BURT 1271910
 
