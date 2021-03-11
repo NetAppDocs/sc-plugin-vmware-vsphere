@@ -17,11 +17,48 @@ summary:
 
 == #Supported upgrade paths#
 
-#See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade and migration paths.#
+#See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes] for information on supported upgrade and migration paths.#
 
 == #Upgrade from an earlier release of SnapCenter Plug-in for VMware vSphere#
 
 #If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.#
+
+.Before you begin
+
+If you are upgrading to a new patch of the same release, you must clear the SnapCenter Plug-in for VMware vSphere cache on the vCenter Web Server and restart the server before the upgrade or registration.
+
+If the plug-in cache is not cleared, then recent jobs are not displayed in the Dashboard and job monitor in the following scenarios:
+
+* SnapCenter Plug-in for VMware vSphere was deployed using vCenter, and then later upgraded to a patch in the same release.
+* The SnapCenter VMware virtual appliance was deployed in vCenter 1. Later, this SnapCenter VMware plug-in was registered to a new vCenter2. A new instance of the SnapCenter VMware plug-in is created with a patch and registered to vCenter1. However, because vCenter1 still has the cached plug-in from the first SnapCenter VMware plug-in without the patch, the cache needs to be cleared.
+
+The cache is in the following locations, based on the type of server operating system:
+
+* vCenter Server for Windows
++
+`C:\ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity\ `
+
+* vCenter Server Linux Appliance
++
+`/etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity/ `
+
+* Windows OS
++
+`%PROGRAMFILES%/VMware/vSphere Web Client/vc-packages/vsphere-client-serenity/ `
+
+* Mac OS
++
+`/var/lib/vmware/vsphere-client/vsphere-client/vc-packages/vsphere-client-serenity/ `
+
+Steps for clearing the cache:
+
+. Locate the `vsphere-client-serenity` folder, then locate the `com.netapp.scvm.webclient-4.2.0` folder and delete it.
++
+The folder name changes for each release.
+
+. Restart the vCenter Server.
++
+You can then upgrade the SnapCenter VMware plug-in.
 
 .#Steps#
 
