@@ -27,7 +27,8 @@ Only Perl scripts are supported.
 
 == Script path location
 
-Prescripts and postscripts are run by the SnapCenter Plug-in for VMware vSphere. Therefore, the scripts must be located on the SnapCenter VMware plug-in VM.
+Prescripts and postscripts are run by the SnapCenter Plug-in for VMware vSphere.
+Therefore, the scripts must be located in the SnapCenter Plug-in for VMware vSphere OVA, with executable permissions.
 
 The script path is validated at the time the script is executed.
 

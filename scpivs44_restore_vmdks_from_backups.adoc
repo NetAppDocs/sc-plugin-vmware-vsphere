@@ -19,9 +19,9 @@ summary:
 //
 
 [.lead]
-You can restore existing VMDKs, or deleted or detached VMDKs, from either a primary a secondary backup.
+You can restore existing VMDKs, or deleted or detached VMDKs from either a primary or secondary backup.
 
-#You can restore one or more virtual machine disks (VMDKs) on a VM to the same datastore. Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore to the original datastore or to an alternate datastore.#
+You can restore one or more virtual machine disks (VMDKs) on a VM to the same datastore.
 
 .Before you begin
 
@@ -54,7 +54,7 @@ You can search for a specific backup name or a partial backup name, or you can f
 
 |Restore to the original datastore
 |Use the default, parent, datastore that is displayed.
-|Restore to an alternate datastore on the same ESXi host #or, beginning in SnapCenter Plug-in VMware vSphere 4.5, to an alternate ESXi host managed by the same vCenter in linked mode#
+|Restore to an alternate datastore on the same ESXi host.
 |Click the destination datastore and select a different datastore from the list.
 |===
 +

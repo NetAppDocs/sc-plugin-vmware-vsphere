@@ -40,7 +40,7 @@ image:scpivs44_image20.png[Error: Missing Graphic Image]
 
 . If the resource group has multiple policies configured, then in the *Backup Now* dialog box, select the policy you want to use for this backup operation, and then click *Yes*.
 . Click *OK* to start the backup.
-. Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the window or on the dashboard *Job Monitor* for more detail.
+. Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the window or on the dashboard Job Monitor for more details.
 
 .Result
 
