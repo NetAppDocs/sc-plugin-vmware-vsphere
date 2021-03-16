@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-#If you are using the Windows-based SnapCenter VMware plug-in and want to use the features provided by the SnapCenter Plug-in for VMware vSphere virtual appliance, you must deploy the virtual appliance and migrate your backup metadata.#
+If you are using the Windows-based SnapCenter VMware plug-in and want to use the features provided by the SnapCenter Plug-in for VMware vSphere virtual appliance, you must deploy the virtual appliance and migrate your backup metadata.
 
 .Before you begin
 

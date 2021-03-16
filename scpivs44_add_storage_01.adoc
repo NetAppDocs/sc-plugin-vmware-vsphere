@@ -54,7 +54,7 @@ image:scpivs44_image12.png[Error: Missing Graphic Image]
 |For this field… |Do this…
 
 |Storage system
-|Enter the FQDN or IP address of a storage cluster, storage VM.
+|Enter the FQDN or IP address of a storage cluster or storage VM.
 The SnapCenter VMware plug-in does not support multiple storage systems with the same name on different clusters. Each storage system that is supported by SnapCenter must have a unique data LIF IP address.
 |Platform
 |Select the platform.
@@ -69,7 +69,7 @@ The SnapCenter VMware plug-in does not support multiple storage systems with the
 |Timeout
 |Enter the number of seconds vCenter should wait before timing out the operation. The default is 60 seconds.
 |Preferred IP
-|If the storage VM has more than one IP address, check this box and enter the IP address that you want SnapCenter to use.
+|If the storage VM has more than one management IP address, check this box and enter the IP address that you want SnapCenter to use.
 *Note:* Do not use square brackets ([]) when entering the IP address.
 |Log SnapCenter Server events
 to syslog

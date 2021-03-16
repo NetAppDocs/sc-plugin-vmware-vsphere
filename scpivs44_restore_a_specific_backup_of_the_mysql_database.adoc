@@ -35,4 +35,3 @@ backups*, and then make a note of the backup you want to restore.
 . At the prompt “Backup to restore from,” enter the backup name, and then press *Enter*.
 +
 The selected backup MySQL database is restored to its original location.
-#*REVIEWERS: Is there any reason a customer might want to restore to an alternate location?*#
