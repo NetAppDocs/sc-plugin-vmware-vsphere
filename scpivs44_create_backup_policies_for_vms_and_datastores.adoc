@@ -52,7 +52,7 @@ image:scpivs44_image15.png[Error: Missing Graphic Image]
 +
 In linked mode, each vCenter has a separate virtual appliance. Therefore, you can use duplicate names across vCenters. However, you must create the policy in the same vCenter as the resource group.
 
-* Supported characters
+* Unsupported characters
 +
 Do not use the following special characters in VM, datastore, cluster, policy, backup, or resource group names: % & * $ # @ ! \ / : * ? " < > - | ; ' , .
 +
@@ -61,7 +61,7 @@ An underscore character (_) is allowed.
 . Specify the retention settings.
 +
 [IMPORTANT]
-You should set the retention count to 2 backups or higher if you plan to enable SnapVault replication. If you set the replication count to 1 backup to keep, the retention operation can fail. This is because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until the newer Snapshot copy is replicated to the target.
+You should set the retention count to 2 backups or higher if you plan to enable SnapVault replication. If you set the retention count to 1 backup to keep, the retention operation can fail. This is because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until the newer Snapshot copy is replicated to the target.
 +
 [NOTE]
 The maximum retention value is 1018 backups for resources on ONTAP 9.4 or later, and 254 backups for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports. This is also true for spanning datastores. If a spanning datastore includes resources on both ONTAP 9.3 and earlier and on ONTAP 9.4 and later, make sure you set the retention value below 254.
@@ -79,12 +79,9 @@ The policy specifies the backup frequency only. The specific protection schedule
 
 |Select this option to create mirror copies of backup sets on another volume that has a SnapMirror relationship to the primary backup volume.
 If a volume is configured with a mirror-vault relationship, you must select only the *Update SnapVault after backup* option if you want backups copied to the mirror-vault destinations.
-#*Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.#
 |Update SnapVault after backup
-
 |Select this option to perform disk-to-disk backup replication on another volume that has a SnapVault relationship to the primary backup volume.
 *Important:* If a volume is configured with a mirror-vault relationship, you must select only this option if you want backups copied to the mirror-vault destinations.
-#*Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.#
 |Snapshot label
 |Enter an optional, custom label to be added to SnapVault and SnapMirror Snapshot copies created with this policy.
 The Snapshot label helps to distinguish Snapshots created with this policy from other Snapshots on the secondary storage system.

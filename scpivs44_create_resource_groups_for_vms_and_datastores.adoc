@@ -40,7 +40,7 @@ To back up multiple resources, you must create a resource group that contains mu
 
 * Optimizing Snapshot copies
 +
-To optimize Snapshot copies, you should group into one resource group the VMs and datastores that are associated with the same volume.
+To optimize Snapshot copies, you should group the VMs and datastores that are associated with the same volume into one resource group.
 
 * Backup policies
 +

@@ -22,10 +22,10 @@ summary:
 You can use the SnapCenter Plug-in for VMware vSphere REST APIs to perform common data protection operations. The plug-in has different Swagger web pages from the Windows SnapCenter Swagger web pages.
 
 * REST API workflows are documented for the following operations on VMs and datastores using the REST APIs for VMware vSphere:
-** Add and modify storage VMs and clusters
-** Create and modify resource groups
+** Add, modify, and delete storage VMs and clusters
+** Create, modify, and delete resource groups
 ** Backup VMs, scheduled and on-demand
-** Restore VMs and deleted VMs
+** Restore existing VMs and deleted VMs
 ** Restore VMDKs
 ** Attach and detach VMDKs
 ** Mount and unmount datastores

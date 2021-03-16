@@ -63,7 +63,7 @@ Use the format `https://<appliance-IP-address>:8080`
 image:scpivs44_image28.jpg[Error: Missing Graphic Image]
 
 . On the *Settings* page, in the *User* section, click *Edit*.
-. Enter the new username or password and click *Save*.
+. Enter the new password and click *Save*.
 +
 It might take several minutes before all the services come back up.
 

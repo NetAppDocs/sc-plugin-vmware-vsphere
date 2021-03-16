@@ -19,21 +19,9 @@ summary:
 //
 
 [.lead]
-#When you restore a VM, you can overwrite the existing content with the backup copy that you select or you can make a copy of the VM.#
+When you restore a VM, you can overwrite the existing content with the backup copy that you select or you can make a copy of the VM.
 
-#In SnapCenter Plug-in for VMware vSphere 4.4 and earlier, you can  restore VMs only to the original host and datastore.#
-
-#Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore VMs to the following locations:#
-
-** #To the original datastore mounted on the original ESXi host (this makes a copy of the VM)#
-+
-** #To a different datastore mounted on the original ESXi host#
-+
-** #To the original datastore mounted on a different ESXi host that is managed by the same vCenter#
-+
-** #To a different datastore mounted on a different ESXi host that is managed by the same vCenter#
-+
-** #To a different datastore mounted on a different ESXi host that is managed by a different vCenter in linked mode#
+You can restore VMs only to the original host and datastore.
 
 [NOTE]
 Restore operations cannot finish successfully if there are Snapshot copies of the VM that were performed by software other than the SnapCenter Plug-in for VMware vSphere.
@@ -78,14 +66,11 @@ If you are restoring a deleted VM, the storage VM credentials that were added to
 +
 You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and the location.  Click *OK* to return to the wizard.
 
-. On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field, #then select the restore location, and then enter the destination information where the backup should be mounted.#
+. On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field, then select the restore location, and then enter the destination information where the backup should be mounted.
 +
-#In the *VM name after restore* field, the default name is `<vm_name>_<counter>`.#
+In the *VM name after restore* field, the default name is `<vm_name>_<counter>`.
 
 . On the *Select Location* page, select the location for the restored datastore.
-+
-#In SnapCenter Plug-in for VMware vSphere 4.5 and later, you can select primary or secondary storage.#
-
 . Review the Summary page and then click *Finish*.
 . Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the screen.
 +

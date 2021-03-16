@@ -25,7 +25,7 @@ To use SnapCenter features to protect VMs, datastores, and application-consisten
 
 * You must have read the deployment requirements.
 +
-The deployment wizard does not verify the space requirement. If you do not have enough space on the host, the deployment might look successful, but the virtual appliance will not boot up.
+The deployment wizard does not verify the space requirement. If you do not have enough space on the datastore, the deployment might look successful, but the virtual appliance will not boot up.
 
 * You must be running a supported version of vCenter Server.
 * You must have configured and set up your vCenter Server environment.

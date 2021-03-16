@@ -25,7 +25,7 @@ The `scbr.override` configuration file is used by the SnapCenter Plug-in for VMw
 
 === Create the scbr.override configuration file
 
-. Go to `\opt\netapp\scvservice\standalone_aegis\etc\scbr\scbr.override-template`.
+. Go to `/opt/netapp/scvservice/standalone_aegis/etc/scbr/scbr.override-template`.
 . Copy the `scbr.override-template` file to a new file called `scbr.override` in the `\opt\netapp\scvservice\standalone_aegis\etc\scbr` directory.
 
 === Properties you can override

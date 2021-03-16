@@ -34,7 +34,7 @@ Active guest file restore sessions, guest file restore credentials, and proxy VM
 +
 If you begin migration when a guest file restore session is active, the session is deleted and the attached disk is not unmounted. You might have to delete the attached disk manually.
 +
-`scbr.override` configuration file
+customized configuration settings in the scbr.override configuration file
 +
 // Snapshots that are deleted from ONTAP BURT 1271910
 
