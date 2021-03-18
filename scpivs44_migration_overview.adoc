@@ -32,7 +32,7 @@ Pre- and post-scripts that are configured for resource groups
 +
 Active guest file restore sessions, guest file restore credentials, and proxy VMs
 +
-`scbr.override` configuration file
+Customized configuration settings in the `scbr.override` configuration file
 +
 If you begin migration when a guest file restore session is active, the session is deleted and the attached disk is not unmounted. You might have to delete the attached disk manually.
 +
