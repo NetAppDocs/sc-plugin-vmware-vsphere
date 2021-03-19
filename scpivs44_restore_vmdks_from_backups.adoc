@@ -53,12 +53,13 @@ You can search for a specific backup name or a partial backup name, or you can f
 |To… |Specify the restore destination…
 
 |Restore to the original datastore
-|Use the default, parent, datastore that is displayed.
+|Use the default datastore.
+// Updated this step for BURT 1378132
 |Restore to an alternate datastore on the same ESXi host.
 |Click the destination datastore and select a different datastore from the list.
 |===
 +
-You can unselect any datastores that contain VMDKs that you do not want to restore.
+You can unselect datastores that contain VMDKs that you do not want to restore.
 
 . On the *Select Location* page, select the Snapshot copy that you want to restore (primary or secondary).
 . Review the Summary page and then click *Finish*.

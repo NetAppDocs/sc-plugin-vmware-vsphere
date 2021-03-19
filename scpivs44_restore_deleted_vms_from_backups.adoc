@@ -49,5 +49,6 @@ The restore destination can be any ESXi host that has been added to SnapCenter. 
 +
 If you are restoring a VM in an NFS datastore onto an alternate ESXi host that is in an ESXi cluster, then after the VM is restored, it is registered on the alternate host.
 
-. On the *Select Location* page, select the location of the datastore that you want to restore from.
+. On the *Select Location* page, select the location of the backup (primary or secondary) that you want to restore from.
+// Updated for BURT 1378132
 . Review the Summary page and then click *Finish*.
