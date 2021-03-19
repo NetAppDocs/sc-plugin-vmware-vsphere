@@ -29,14 +29,13 @@ Only Perl scripts are supported.
 
 Prescripts and postscripts are run by the SnapCenter Plug-in for VMware vSphere.
 Therefore, the scripts must be located in the SnapCenter Plug-in for VMware vSphere OVA, with executable permissions.
+// Updated for BURT 1378132
 
 The script path is validated at the time the script is executed.
 
 == Where to specify scripts
 
 Scripts are specified in backup policies. When a backup job is started, the policy automatically associates the script with the resources being backed up.
-
-When you create a backup policy, the wizards in some plug-ins provide separate fields to specify prescripts and postscripts. Other wizards only provide a single field for both.
 
 To specify multiple scripts, press *Enter* after each script path to list each script on a separate line. Semicolons (;) are not allowed. You can specify multiple prescripts and multiple postscripts. A single script can be coded as both a prescript and a postscript and can call other scripts.
 
