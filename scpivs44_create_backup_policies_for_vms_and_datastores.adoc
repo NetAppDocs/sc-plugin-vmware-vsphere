@@ -26,7 +26,8 @@ You must create backup policies before you use the SnapCenter Plug-in for VMware
 * You must have read the prerequisites.
 * You must have secondary storage relationships configured.
 ** If you are replicating Snapshot copies to a mirror or vault secondary storage, the relationships must be configured and the SnapCenter administrator must have assigned the storage VMs to you for both the source and destination volumes.
-** To successfully transfer Snapshot copies to secondary storage for Version-FlexibleMirror relationships on an NFS datastore, make sure that the SnapMirror policy type is Asynchronous Mirror and that the "all_source_snapshots" option is checked.
+** To successfully transfer Snapshot copies to secondary storage for Version-FlexibleMirror relationships on an NFS or VMFS datastore, make sure that the SnapMirror policy type is Asynchronous Mirror and that the "all_source_snapshots" option is checked.
+// Updated for BURT 1378132 (Added VMFS datastore)
 ** When the number of Snapshot copies on the secondary storage (mirror-vault) reaches the maximum limit, the activity to register backup and apply retention in the backup operation fails with the following error: `This Snapshot copy is currently used as a reference Snapshot copy by one or more SnapMirror relationships. Deleting the Snapshot copy can cause future SnapMirror operations to fail.`
 +
 To correct this issue, configure the SnapMirror retention policy for the secondary storage to avoid reaching the maximum limit of Snapshot copies.

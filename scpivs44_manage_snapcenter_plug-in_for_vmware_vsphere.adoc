@@ -170,6 +170,8 @@ The plug-in is disabled, and no further action is required.
 The plug-in is disabled and further cleanup is required.
 
 .. Log in to VMware vSphere.
+.. Power down the VM and then delete the VM.
+// Updated for BURT 1378132
 .. In the left navigator screen, right-click the instance of the SnapCenter VMware plug-in (the name of the `.ova` file` `that was used when the virtual appliance was deployed) and select *Delete from Disk*.
 .. Log in to SnapCenter and remove the vSphere host.
 
@@ -191,7 +193,8 @@ The IP of the SnapCenter VMware plug-in is displayed when you deploy the plug-in
 . Click *Configuration* in the left navigation pane, and then unselect the Service option in the *Plug-in Details* section to disable the plug-in.
 . Log in to VMware vSphere.
 . In the left navigator screen, right-click the instance of the SnapCenter VMware plug-in (the name of the `.ova` file that was used when the virtual appliance was deployed) and select *Delete from Disk*.
-. Manually delete the following files in the pickup folder of the vCenter server:
+. Manually delete the following files in `/etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/com.netapp.scvm.webclient-4.5.0.5942045/plugins` folder of the vCenter server:
+// Updated for BURT 1378132
 +
 `vsc-httpclient3-security.jar`
 `scv-api-model.jar`
