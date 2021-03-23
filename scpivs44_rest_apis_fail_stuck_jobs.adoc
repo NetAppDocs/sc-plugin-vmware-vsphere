@@ -1,0 +1,27 @@
+---
+sidebar: sidebar
+permalink: scpivs44_rest_apis_fail_stuck_jobs.html
+keywords:
+summary:
+---
+
+= #REST API to mark stuck jobs as failed#
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+#To find job IDs for VMware vSphere web client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere. These REST APIs were added in SnapCenter Plug-in for VMware vSphere 4.4.#
+
+For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
+
+#Beginning with SnapCenter Plug-in for VMware vSphere 4.5, use the following REST API in the Jobs section to mark as failed jobs that are stuck in a running state:#
+
+|===
+|REST API |Comments
+
+|#`/4.1/jobs/{id}/failJobs`#
+|#When you pass the IDs of jobs that are stuck in a running state, `failJobs` marks those jobs as failed. To identify jobs that are stuck in a running state, use the job monitor GUI to see the state of every job and the job ID.#
+|===

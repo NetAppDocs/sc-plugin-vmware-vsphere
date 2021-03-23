@@ -28,6 +28,12 @@ You can restore a deleted VM from a datastore primary or secondary backup to an 
 +
 You must have created a backup of the VM using the SnapCenter Plug-in for VMware vSphere before you can restore the VMDKs on that VM.
 
+[TIP]
+#For improved performance of restore operations, enable the VMware application vStorage API for Array Integration (VAAI).#
+//
+//Burt 1377556 Mar2021 Ronya
+//
+
 .About this task
 
 You cannot restore a datastore, but you can restore any VM in the datastore.
@@ -48,6 +54,7 @@ You can search for a specific backup name or a partial backup name, or you can f
 The restore destination can be any ESXi host that has been added to SnapCenter. This option restores the contents of the last #backup# in which the VM resided from a Snapshot copy with the specified time and date. The *Restart VM* check box is checked if you select this option.
 +
 If you are restoring a VM in an NFS datastore onto an alternate ESXi host that is in an ESXi cluster, then after the VM is restored, it is registered on the alternate host.
+
 
 . On the *Select Location* page, select the location of the datastore that you want to restore from.
 . Review the Summary page and then click *Finish*.

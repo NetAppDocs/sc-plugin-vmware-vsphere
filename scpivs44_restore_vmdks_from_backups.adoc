@@ -23,6 +23,19 @@ You can restore existing VMDKs, or deleted or detached VMDKs, from either a prim
 
 #You can restore one or more virtual machine disks (VMDKs) on a VM to the same datastore. Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore to the original datastore or to an alternate datastore.#
 
+
+[NOTE]
+#SnapCenter Plug-in for VMware vSphere must be running in the destination VM of a restore operation.#
+//
+//Burt 1382316 March 2021 Ronya
+//
+
+[TIP]
+#For improved performance of restore operations, enable the VMware application vStorage API for Array Integration (VAAI).#
+//
+//Burt 1377556 Mar2021 Ronya
+//
+
 .Before you begin
 
 * A backup must exist.
@@ -59,6 +72,7 @@ You can search for a specific backup name or a partial backup name, or you can f
 |===
 +
 You can unselect any datastores that contain VMDKs that you do not want to restore.
+
 
 . On the *Select Location* page, select the Snapshot copy that you want to restore (primary or secondary).
 . Review the Summary page and then click *Finish*.

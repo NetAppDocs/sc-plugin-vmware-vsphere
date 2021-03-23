@@ -36,9 +36,21 @@ summary:
 ** #To a different datastore mounted on a different ESXi host that is managed by a different vCenter in linked mode#
 
 [NOTE]
+#SnapCenter Plug-in for VMware vSphere must be running in the destination VM of a restore operation.#
+//
+//Burt 1382316 March 2021 Ronya
+//
+
+[NOTE]
 Restore operations cannot finish successfully if there are Snapshot copies of the VM that were performed by software other than the SnapCenter Plug-in for VMware vSphere.
 [NOTE]
 The following restore workflow is not supported: Add a storage VM, then perform a backup of that VM, then delete the storage VM and add a cluster that includes that same storage VM, and then attempt to restore the original backup.
+
+[TIP]
+#For improved performance of restore operations, enable the VMware application vStorage API for Array Integration (VAAI).#
+//
+//Burt 1377556 Mar2021 Ronya
+//
 
 .Before you begin
 
@@ -81,10 +93,16 @@ You can search for a specific backup name or a partial backup name, or you can f
 . On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field, #then select the restore location, and then enter the destination information where the backup should be mounted.#
 +
 #In the *VM name after restore* field, the default name is `<vm_name>_<counter>`.#
++
+#When restoring partial backups, the restore operation skips the *Select Scope* page.#
+//
+//Burt 1371420 March 2021  Ronya
+//
 
 . On the *Select Location* page, select the location for the restored datastore.
 +
 #In SnapCenter Plug-in for VMware vSphere 4.5 and later, you can select primary or secondary storage.#
+
 
 . Review the Summary page and then click *Finish*.
 . Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the screen.
