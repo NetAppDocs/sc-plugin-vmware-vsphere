@@ -1,4 +1,4 @@
-  ---
+---
 sidebar: sidebar
 permalink: scpivs44_detach_a_virtual_disk.html
 keywords:
@@ -27,7 +27,7 @@ After you have attached a virtual disk to restore individual files, you can deta
 . In the left Navigator pane, select a VM.
 . In the left navigation pane, right-click the VM, then select *NetApp SnapCenter* in the drop-down list, and then select *Detach virtual disk* in the secondary drop-down list.
 . On the *Detach Virtual Disk* screen, select one or more disks you want to detach, then click the *Detach the selected disk(s)* button, and then click *DETACH*.
-// Updated for BURT 1378132 (Changed confirm to DETACH)
+// Updated for BURT 1378132 observation 38 (Changed confirm to DETACH)
 +
 [IMPORTANT]
 Make sure that you select the correct virtual disk. Selecting the wrong disk might affect production work.
@@ -41,4 +41,4 @@ Refresh the screen to display updated information.
 .. In the left Navigator pane, right-click a VM, then select *Edit settings* in the drop-down list.
 .. In the *Edit Settings* window, expand the list for each hard disk to see the list of disk files.
 +
-The Edit Settings page lists the disks on the VM. You can expand the details for each hard disk to see the list of attached virtual disks.
+The *Edit Settings* page lists the disks on the VM. You can expand the details for each hard disk to see the list of attached virtual disks.

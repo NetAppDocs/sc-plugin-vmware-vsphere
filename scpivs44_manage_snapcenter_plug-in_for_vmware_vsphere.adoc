@@ -122,7 +122,8 @@ The SnapCenter VMware virtual appliance service is stopped and restarted.
 
 The SnapCenter VMware plug-in employs SSL encryption for secure communication with the client browser. While this does enable encrypted data across the wire, creating a new self-signed certificate, or using your own Certificate Authority (CA) infrastructure or a third party CA ensures that the certificate is unique for your environment. See the https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere_(SCV)[KB article: How to create and/or import an SSL certificate to VMware plug-in for SnapCenter^].
 
-== Stop SnapCenter Plug-in for VMware vSphere when in linked mode
+== Unregister SnapCenter Plug-in for VMware vSphere from vCenter
+//Updated for BURT 1378132, March 2021 Madhulika (Changed the title)
 
 If you stop the SnapCenter VMware plug-in service in a vCenter that is in Linked Mode, resource groups are not available in all the linked vCenters, even when the SnapCenter VMware plug-in service is running in the other linked vCenters.
 
