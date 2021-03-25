@@ -36,7 +36,8 @@ A mount operation might fail if the storage tier of the FabricPool where the dat
 
 . In the VMware vSphere web client, click *Menu* in the toolbar, and then select *Storage* from the drop-down list.
 . Right-click a datastore and select *NetApp SnapCenter* in the drop-down list, and then select *Mount Backup* in the secondary drop-down list.
-. On the *Mount Datastore* page, select a backup and a backup location, and then click *Finish*.
+. On the *Mount Datastore* page, select a backup and a backup location (primary or secondary), and then click *Finish*.
+//Updated for BURT 1378132 observation 29, March 2021 Madhulika
 . Optional: To verify that the datastore is mounted, perform the following:
 .. Click *Menu* in the toolbar, and then select *Storage* from the drop-down list.
 .. The left Navigator pane displays the datastore you mounted at the top of the list.
