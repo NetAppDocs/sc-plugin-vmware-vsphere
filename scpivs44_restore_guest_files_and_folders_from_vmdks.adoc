@@ -33,6 +33,12 @@ Only one attach or restore operation can run at the same time on a VM. You canno
 [IMPORTANT]
 The guest restore feature allows you to view and restore system and hidden files and to view encrypted files. Do not attempt to overwrite an existing system file or to restore encrypted files to an encrypted folder. During the restore operation, the hidden, system, and encrypted attributes of guest files are not retained in the restored file. Viewing or browsing reserved partitions might cause an error.
 
+[TIP]
+#For improved performance of restore operations, enable the VMware application vStorage API for Array Integration (VAAI).#
+//
+//Burt 1377556 Mar2021 Ronya
+//
+
 .Steps
 
 . Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select *NetApp SnapCenter*, and then click *Guest File Restore*.

@@ -86,10 +86,16 @@ The Source Network column lists all networks that are defined in the OVA templat
 +
 SnapCenter Plug-in for VMware vSphere supports one network interface. If you need multiple network adapters, you must set that up manually. See the https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_set_up_multiple_network_adapters[KB article: How to set up multiple network adapters^].
 +
-On the *Customize template* page, do the following:
+. On the *Customize template* page, do the following:
 
 .. In *Register to existing vCenter*, enter the vCenter virtual appliance credentials.
-.. In *Create SnapCenter Plug-in for VMware vSphere credentials*, enter the credentials.
+.. #In *Create SnapCenter Plug-in for VMware vSphere credentials*, enter the local credentials.#
++
+#In the *Username* field, enter the local username in the format `domain\username.local`.#
+#In the *Password* field, special characters are not supported.#
+//
+// Burt 1366351 Mar 2021 Ronya
+//
 +
 [IMPORTANT]
 Make a note of the username and password that you specify. You need to use these credentials if you want to modify the SnapCenter VMware plug-in configuration later.

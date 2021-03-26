@@ -26,6 +26,8 @@ Resource groups can contain any combination of VMs and datastores. Beginning wit
 [NOTE]
 For spanning VMs, using FlexGroup and FlexVol together is not supported.
 
+#SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 64 TB on ASA aggregates. For large LUNs, SnapCenter uses only thick provisioned LUNs to avoid latency.#
+
 .About this task
 
 You can add or remove VMs and datastores from a resource group at any time.
