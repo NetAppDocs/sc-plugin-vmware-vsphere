@@ -256,6 +256,8 @@ entries:
         url: /scpivs44_rest_apis__download_jobs_and_generate_reports.html
       - title: REST APIs workflows to modify built-in schedules
         url: /scpivs44_rest_api_workflows__modify_built-in_schedules.html
+      - title: REST API to mark stuck jobs as failed
+        url: /scpivs44_rest_apis_fail_stuck_jobs.html
   - title: Upgrade
     url: /scpivs44_upgrade.html
     entries:
