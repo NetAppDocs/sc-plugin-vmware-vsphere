@@ -40,7 +40,7 @@ You can temporarily disable scheduled operations from starting on a resource gro
 
 .Steps
 
-. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then right-click a resource group and click *Suspend *(or click *Resume*).
+. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then right-click a resource group and click *Suspend* (or click *Resume*).
 +
 image:scpivs44_image24.png[Error: Missing Graphic Image]
 
