@@ -40,12 +40,13 @@ You can temporarily disable scheduled operations from starting on a resource gro
 
 .Steps
 
-. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then right-click a resource group and click *Suspend *(or click *Resume*).
+. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then right-click a resource group and click *Suspend* (or click *Resume*).
 +
 image:scpivs44_image24.png[Error: Missing Graphic Image]
 
 . In the confirmation box, click *OK* to confirm.
 // Updated for BURT 1378132 (Changed Yes to OK)
+
 .After you finish
 
 On the Resource Groups page, the job status for the suspended resource is `Under_Maintenance`. You might need to scroll to the right of the table to see the Job Status column.
