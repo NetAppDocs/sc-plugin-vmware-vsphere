@@ -63,7 +63,8 @@ You must be running vCenter 6.5 or later.
 
 .Steps
 
-. Stop the web client service by using the following HTML5 command:
+. Navigate to `C:\Program Files\VMware\vCenter Server\bin` then run the following command to stop the web client service:
+// BURT 1378132 observation 43, March 2021 Ronya
 +
 `service-control --stop vsphere-ui`
 +

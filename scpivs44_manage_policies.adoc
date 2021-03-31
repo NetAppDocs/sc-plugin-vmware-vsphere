@@ -78,4 +78,5 @@ You must have detached the policy from all resource groups in the virtual applia
 .Steps
 
 . In the left Navigator pane of the VMware vSphere web client, click *Policies*, then select a policy and click *Remove*.
-. In the confirmation dialog box click *Yes*.
+. In the confirmation dialog box click *OK*.
+// BURT 1378132 observation 47, March 2021 Ronya

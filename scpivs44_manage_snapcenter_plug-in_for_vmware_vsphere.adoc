@@ -122,8 +122,8 @@ The SnapCenter VMware virtual appliance service is stopped and restarted.
 
 The SnapCenter VMware plug-in employs SSL encryption for secure communication with the client browser. While this does enable encrypted data across the wire, creating a new self-signed certificate, or using your own Certificate Authority (CA) infrastructure or a third party CA ensures that the certificate is unique for your environment. See the https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere_(SCV)[KB article: How to create and/or import an SSL certificate to VMware plug-in for SnapCenter^].
 
-== Stop SnapCenter Plug-in for VMware vSphere when in linked mode
-
+== Unregister SnapCenter Plug-in for VMware vSphere from vCenter
+// BURT 1378132 observation 58, March 2021 Ronya
 If you stop the SnapCenter VMware plug-in service in a vCenter that is in Linked Mode, resource groups are not available in all the linked vCenters, even when the SnapCenter VMware plug-in service is running in the other linked vCenters.
 
 You must unregister the SnapCenter VMware plug-in extensions manually.
@@ -191,7 +191,8 @@ The IP of the SnapCenter VMware plug-in is displayed when you deploy the plug-in
 . Click *Configuration* in the left navigation pane, and then unselect the Service option in the *Plug-in Details* section to disable the plug-in.
 . Log in to VMware vSphere.
 . In the left navigator screen, right-click the instance of the SnapCenter VMware plug-in (the name of the `.ova` file that was used when the virtual appliance was deployed) and select *Delete from Disk*.
-. Manually delete the following files in the pickup folder of the vCenter server:
+. #Navigate to `/etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/com.netapp.scvm.webclient-4.5.0.5942045/plugins` and manually delete the following files in the pickup folder of the vCenter server:#
+// BURT 1378132 observation 61, March 2021 Ronya
 +
 `vsc-httpclient3-security.jar`
 `scv-api-model.jar`

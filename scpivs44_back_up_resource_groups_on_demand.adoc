@@ -27,10 +27,7 @@ You must have created a resource group with a policy attached.
 
 [IMPORTANT]
 Do not start an on-demand backup job when a job to back up the SnapCenter VMware plug-in MySQL database is already running. #Use the maintenance console to see the configured backup schedule for the MySQL database.#
-//
 // Burt 1378132, observation 81, March 2021 Ronya
-//
-
 
 .About this task
 

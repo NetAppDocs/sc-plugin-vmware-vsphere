@@ -36,7 +36,7 @@ summary:
 ** #To a different datastore mounted on a different ESXi host that is managed by a different vCenter in linked mode#
 
 [NOTE]
-#SnapCenter Plug-in for VMware vSphere must be running in the destination VM of a restore operation.#
+#When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the linked vCenter that is the destination for the restore operation.#
 //
 //Burt 1382316 March 2021 Ronya
 //

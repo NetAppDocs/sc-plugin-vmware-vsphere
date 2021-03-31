@@ -25,8 +25,8 @@ To use SnapCenter features to protect VMs, datastores, and application-consisten
 
 * You must have read the deployment requirements.
 +
-The deployment wizard does not verify the space requirement. If you do not have enough space on the host, the deployment might look successful, but the virtual appliance will not boot up.
-
+The deployment wizard does not verify the space requirement. If you do not have enough space on the datastore, the deployment might look successful, but the virtual appliance will not boot up.
+// BURT 1378132 observation 9, March 2021 Ronya
 * You must be running a supported version of vCenter Server.
 * You must have configured and set up your vCenter Server environment.
 * You must have set up an ESXi host for the SnapCenter VMware plug-in VM.
@@ -93,9 +93,7 @@ SnapCenter Plug-in for VMware vSphere supports one network interface. If you nee
 +
 #In the *Username* field, enter the local username in the format `domain\username.local`.#
 #In the *Password* field, special characters are not supported.#
-//
 // Burt 1366351 Mar 2021 Ronya
-//
 +
 [IMPORTANT]
 Make a note of the username and password that you specify. You need to use these credentials if you want to modify the SnapCenter VMware plug-in configuration later.
@@ -115,19 +113,23 @@ You can view the progress of the deployment from the Recent Tasks window while y
 When the SnapCenter VMware plug-in is successfully deployed, it is deployed as a Linux VM, registered with vCenter, and a VMware vSphere web client is installed.
 
 . Navigate to the VM where the SnapCenter VMware plug-in was deployed, then click the *Summary* tab, and then click the *Power On* box to start the virtual appliance.
-. While the SnapCenter VMware plug-in is powering on, right-click the deployed SnapCenter VMware plug-in and then click *Install VMware* tools.
+. While the SnapCenter VMware plug-in is powering on, right-click the deployed SnapCenter VMware plug-in, select *Guest OS*, and then click *Install VMware tools*.
+// BURT 1378132 observation 1, March 2021 Ronya
 +
 The VMware Tools is installed on the VM where the SnapCenter VMware plug-in is deployed. For more information on installing VMware Tools, see the VMware documentation.
 +
 The deployment might take a few minutes to complete. A successful deployment is indicated when the SnapCenter VMware plug-in is powered on, the VMware tools are installed, and the screen prompts you to log in to the SnapCenter VMware plug-in.
 +
-The screen displays the IP address where the SnapCenter VMware plug-in is deployed. Make a note of that location. You need to log in to the SnapCenter VMware plug-in management GUI if you want to make changes to the SnapCenter VMware plug-in configuration.
-
-. Log in to the SnapCenter VMware plug-in management GUI using the IP address displayed on the deployment screen and the credentials that you provided in the deployment wizard, then verify on the Dashboard that the SnapCenter VMware plug-in is successfully connected to vCenter and is enabled.
+The screen displays the IP address where the SnapCenter VMware plug-in is deployed. Make a note of the IP address. You need to log in to the SnapCenter VMware plug-in management GUI if you want to make changes to the SnapCenter VMware plug-in configuration.
+// BURT 1378132 observation 2, March 2021 Ronya
+. Log in to the SnapCenter VMware plug-in management GUI using the IP address displayed on the deployment screen and using the credentials that you provided in the deployment wizard, then verify on the Dashboard that the SnapCenter VMware plug-in is successfully connected to vCenter and is enabled.
 +
 Use the format `https://<appliance-IP-address>:8080` to access the management GUI.
 +
 By default, the maintenance console username is set to “maint” and the password is set to “admin123”.
++
+If the SnapCenter VMware plug-in is not enabled, then see link:scpivs44_restart_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere web client service].
+// BURT 1378132 observation 10, March 2021 Ronya
 +
 .After you finish
 +

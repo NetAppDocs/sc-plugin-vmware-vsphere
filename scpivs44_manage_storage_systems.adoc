@@ -25,7 +25,8 @@ Before you can back up or restore VMs or datastores using the VMware vSphere web
 
 You can use the VMware vSphere web client to modify the configurations of clusters and storage VMs that are registered in SnapCenter Plug-in for VMware vSphere and used for VM data protection operations.
 
-If you modify a storage VM that was automatically added as part of a cluster (sometimes called an implicit storage VM), then that storage VM changes to an explicit storage VM and can be separately deleted without changing the rest of the storage VMs in that cluster. On the Storage Systems page, the username is blank for implicit storage VMs; usernames are displayed only for explicit storage VMs in the cluster list and have the ExplicitSVM flag set to true. All storage VMs are always listed under the associated cluster.
+If you modify a storage VM that was automatically added as part of a cluster (sometimes called an implicit storage VM), then that storage VM changes to an explicit storage VM and can be separately deleted without changing the rest of the storage VMs in that cluster. On the Storage Systems page, the username is displayed as "-" for implicit storage VMs; usernames are displayed only for explicit storage VMs in the cluster list and have the ExplicitSVM flag set to true. All storage VMs are always listed under the associated cluster.
+// BURT 1378132 observation 50, March 2021 Ronya
 
 [IMPORTANT]
 If you added storage VMs for application-based data protection operations using the SnapCenter GUI, you must use the same GUI to modify those storage VMs.

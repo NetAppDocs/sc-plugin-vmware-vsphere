@@ -35,9 +35,7 @@ The guest restore feature allows you to view and restore system and hidden files
 
 [TIP]
 #For improved performance of restore operations, enable the VMware application vStorage API for Array Integration (VAAI).#
-//
 //Burt 1377556 Mar2021 Ronya
-//
 
 .Steps
 
@@ -54,7 +52,8 @@ The guest restore feature allows you to view and restore system and hidden files
 |Select this option… |If…
 
 |Use Guest VM
-|You want to attach the virtual disk to the VM that you right-clicked before you started the wizard, and then select the credential for the VM.
+|You want to attach the virtual disk to the VM that you right-clicked before you started the wizard, and then select the credential for the VM that you right-clicked.
+// BURT 1378132 observation 39, March 2021 Ronya
 *Note:* Credentials must already be created for the VM.
 |Use Guest File Restore proxy VM
 |You want to attach the virtual disk to a proxy VM, and then select the proxy VM.
@@ -76,7 +75,8 @@ Before you click *Finish*, you can go back to any page in the wizard and change 
 
 . Wait until the attach operation completes.
 +
-You can view the progress of the attach operation in the Guest File Restore page, or in the Dashboard job monitor, or you can wait for the email notification.
+You can view the progress of the operation in the Dashboard job monitor, or you can wait for the email notification.
+// BURT 1378132 observation 51, March 2021 Ronya
 
 . To find the files that you want to restore from the attached virtual disk, click *Menu > SnapCenter Plug-in for VMware vSphere*, then in the left Navigator pane click *Guest File Restore* and select the *Guest Configuration* tab.
 +
@@ -147,6 +147,7 @@ successful restore
 
 . Click *Restore*.
 +
-You can view the progress of the restore operation in the Guest File Restore page, or in the Dashboard job monitor, or you can wait for the email notification. The time it takes for the email notification to be sent depends upon the length of time of the restore operation.
+You can view the progress of the restore operation in the Dashboard job monitor, or you can wait for the email notification. The time it takes for the email notification to be sent depends upon the length of time the restore operation takes to complete.
+// BURT 1378132 observation 51 & 52, March 2021 Ronya
 +
 The notification email contains an attachment with the output from the restore operation. If the restore operation fails, open the attachment for additional information.

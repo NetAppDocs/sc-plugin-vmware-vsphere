@@ -89,7 +89,8 @@ Use the format `https://<appliance-IP-address>:8080`
 image:scpivs44_image30.png[Error: Missing Graphic Image]
 
 . On the *Configuration* page, in the *vCenter* section, click *Edit*.
-. Enter the new username or password and then click *Save*.
+. Enter the new password and then click *Save*.
+// BURT 1378132 observation 56, March 2021 Ronya
 +
 Do not modify the port number.
 

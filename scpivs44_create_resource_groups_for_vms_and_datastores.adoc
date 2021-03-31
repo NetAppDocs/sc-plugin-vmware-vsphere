@@ -12,11 +12,8 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
 // This file was created with NDAC Version 2.0 (August 17, 2020)
-//
 // 2020-09-09 12:24:23.074388
-//
 
 [.lead]
 A resource group is the container for one or more VMs or datastores that you want to protect.
@@ -43,13 +40,11 @@ To back up multiple resources, you must create a resource group that contains mu
 * #Resource groups in MetroCluster environments#
 +
 #After a switchover, you must restart the SnapCenter VMware plug-in service and resynchronize the SnapMirror relationships before you backup  resource groups in MetroCluster environments.#
-//
 // Burt 1367521  Feb 2021  SCV 4.5  Ronya
-//
 * Optimizing Snapshot copies
 +
-To optimize Snapshot copies, you should group into one resource group the VMs and datastores that are associated with the same volume.
-
+To optimize Snapshot copies, you should group the VMs and datastores that are associated with the same volume into one resource group.
+// BURT 1378132 observation 25, March 2021 Ronya
 * Backup policies
 +
 Although it is possible to create a resource group without a backup policy, you can only perform scheduled data protection operations when at least one policy is attached to the resource group. You can use an existing policy, or you can create a new policy while creating a resource group.
@@ -112,9 +107,7 @@ Never: Do not send notification
 * The default Snapshot copy names use the format `<ResourceGroup>_<HostName>_<Date-TimeStamp>`
 However, you can specify a custom format using the variables $ResourceGroup, $Policy, $HostName, $ScheduleType, and $CustomText. Use the drop-down list in the custom name field to select which variables you want to use and the order in which they are used.
 #If you select $CustomText, the name format is `<CustomName>_<Date-TimeStamp>`. Enter the custom text in the additional box that is provided. NOTE: If you also select the “_recent” suffix, you must make sure that the custom Snapshot names will be unique in the datastore.#
-//
 // Burt 1371168  Feb 2021 Ronya
-//
 * Special characters
 For special characters in names, follow the same guidelines given for the Name field.
 |===

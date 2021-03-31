@@ -44,7 +44,8 @@ This step adds the credentials that SnapCenter Server uses to access the virtual
 +
 `Open-SmConnection`
 +
-`invoke-SCVOVAMigration -SourceSCVHost old-SCV-host-IP -DestinationSCVOVAHost new-appliance-IP -OVACredential appliance-credentials -ByPassValidationCheck -Overwrite -ContinueMigrationOnStorageError -ScheduleOffsetTime time-offset`
+`invoke-SCVOVAMigration -SourceSCVHost <old-SCV-host-IP> -DestinationSCVOVAHost <new-appliance-IP> -OVACredential <appliance-credentials> -ByPassValidationCheck -Overwrite -ContinueMigrationOnStorageError -ScheduleOffsetTime <time-offset>`
+// BURT 1378132 observation 71, March 2021 Ronya
 +
 The migration command suspends job schedules before migrating metadata and registers the virtual appliance with SnapCenter Server.
 +
