@@ -84,7 +84,7 @@ Select a datastore large enough to accommodate the virtual machine or vApp and a
 +
 The Source Network column lists all networks that are defined in the OVA template.
 +
-SnapCenter Plug-in for VMware vSphere supports one network interface. If you need multiple network adapters, you must set that up manually. See the https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_set_up_multiple_network_adapters[KB article: How to set up multiple network adapters^].
+SnapCenter Plug-in for VMware vSphere supports one network interface. If you need multiple network adapters, you must set that up manually. See the https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3[KB article: How to create additional network adapters^].
 +
 . On the *Customize template* page, do the following:
 

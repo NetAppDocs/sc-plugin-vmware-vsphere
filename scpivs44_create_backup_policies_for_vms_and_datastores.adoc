@@ -32,7 +32,7 @@ You must create backup policies before you use the SnapCenter Plug-in for VMware
 +
 To correct this issue, configure the SnapMirror retention policy for the secondary storage to avoid reaching the maximum limit of Snapshot copies.
 +
-For information about how administrators assign resources to users, see the http://docs.netapp.com/ocsc-43/index.jsp[SnapCenter Administration Guide^].
+For information about how administrators assign resources to users, see the http://docs.netapp.com/ocsc-44/index.jsp[SnapCenter information on using role-based access control^].
 
 * If you want VM consistent backups, you must have VMware Tools installed and running. VMware Tools is needed to quiesce VMs.
 
@@ -83,12 +83,12 @@ The policy specifies the backup frequency only. The specific protection schedule
 |Select this option to create mirror copies of backup sets on another volume that has a SnapMirror relationship to the primary backup volume.
 If a volume is configured with a mirror-vault relationship, you must select only the *Update SnapVault after backup* option if you want backups copied to the mirror-vault destinations.
 // BURT 1378132 observation 3, March 2021 Ronya
-#*Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.#
+*Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.
 |Update SnapVault after backup
 
 |Select this option to perform disk-to-disk backup replication on another volume that has a SnapVault relationship to the primary backup volume.
 *Important:* If a volume is configured with a mirror-vault relationship, you must select only this option if you want backups copied to the mirror-vault destinations.
-#*Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.#
+*Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.
 |Snapshot label
 |Enter an optional, custom label to be added to SnapVault and SnapMirror Snapshot copies created with this policy.
 The Snapshot label helps to distinguish Snapshots created with this policy from other Snapshots on the secondary storage system.
@@ -104,6 +104,8 @@ The Snapshot label helps to distinguish Snapshots created with this policy from 
 |Check this box to quiesce the VMs and create a VMware snapshot each time the backup job runs.
 *Important:* You must have VMware Tools running on the VM to perform VM consistent backups. If VMware Tools is not running, a crash-consistent backup is performed instead.
 *Note:* When you check the VM consistency box, backup operations might take longer and require more storage space. In this scenario, the VMs are first quiesced, then VMware performs a VM consistent snapshot, then SnapCenter performs its backup operation, and then VM operations are resumed.
+VM guest memory is not included in VM consistency Snapshots.
+// Ranjith Kumar email 1April2021  Ronya
 |Include datastores with
 independent disks
 |Check this box to include in the backup any datastores with independent disks that contain temporary data.

@@ -19,9 +19,15 @@ summary:
 //
 
 [.lead]
-Before you can backup or restore VMs, you must add storage clusters or storage VMs by using the VMware vSphere web client. Adding storage enables the SnapCenter Plug-in for VMware vSphere to recognize and manage backup and restore operations in vCenter.
+Before you can backup or restore VMs, you must add storage clusters or storage VMs. Adding storage enables the SnapCenter Plug-in for VMware vSphere to recognize and manage backup and restore operations in vCenter.
 
-#SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 64 TB on ASA aggregates. For large LUNs, SnapCenter uses only thick provisioned LUNs to avoid latency.#
+* Which GUI to use
++
+Use the VMware vSphere web client to add storage.
+
+* Large LUNs
++
+SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 64 TB on ASA aggregates. For large LUNs, SnapCenter only supports thick provisioned LUNs to avoid latency.
 
 .Before you begin
 

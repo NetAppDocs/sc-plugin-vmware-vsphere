@@ -13,85 +13,48 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-#If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.#
+If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.
 
-== #Supported upgrade paths#
+== Supported upgrade paths
 
-#See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes] for information on supported upgrade and migration paths.#
+See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes] for information on supported upgrade and migration paths.
 
-== #Upgrade from an earlier release of SnapCenter Plug-in for VMware vSphere#
+== Upgrade from an earlier release of SnapCenter Plug-in for VMware vSphere
 
-#If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.#
+TIP: Backup the SnapCenter Plug-in for VMware vSphere OVA before starting an upgrade.
 
-.Before you begin
+.Steps
 
-If you are upgrading to a new patch of the same release, you must clear the SnapCenter Plug-in for VMware vSphere cache on the vCenter Web Server and restart the server before the upgrade or registration.
+. Prepare for the upgrade by disabling SnapCenter Plug-in for VMware vSphere.
+.. Log in to the SnapCenter Plug-in for VMware vSphere management GUI.
+The IP is displayed when you deploy the SnapCenter VMware plug-in.
+.. Click *Configuration* in the left navigation pane, and then click the *Service* option in the Plug-in Details section to disable the plug-in.
 
-If the plug-in cache is not cleared, then recent jobs are not displayed in the Dashboard and job monitor in the following scenarios:
+. Download the upgrade `.iso` file.
 
-* SnapCenter Plug-in for VMware vSphere was deployed using vCenter, and then later upgraded to a patch in the same release.
-* The SnapCenter VMware virtual appliance was deployed in vCenter 1. Later, this SnapCenter VMware plug-in was registered to a new vCenter2. A new instance of the SnapCenter VMware plug-in is created with a patch and registered to vCenter1. However, because vCenter1 still has the cached plug-in from the first SnapCenter VMware plug-in without the patch, the cache needs to be cleared.
+.. Log in to the NetApp Support Site (https://mysupport.netapp.com/products/index.html).
+.. From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *DOWNLOAD LATEST RELEASE* button.
+.. Download the SnapCenter Plug-in for VMware vSphere upgrade `.iso` file to any location.
 
-The cache is in the following locations, based on the type of server operating system:
+. Install the upgrade.
 
-* vCenter Server for Windows
-+
-`C:\ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity\ `
-
-* vCenter Server Linux Appliance
-+
-`/etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity/ `
-
-* Windows OS
-+
-`%PROGRAMFILES%/VMware/vSphere Web Client/vc-packages/vsphere-client-serenity/ `
-
-* Mac OS
-+
-`/var/lib/vmware/vsphere-client/vsphere-client/vc-packages/vsphere-client-serenity/ `
-
-Steps for clearing the cache:
-
-. Locate the `vsphere-client-serenity` folder, then locate the `com.netapp.scvm.webclient-4.2.0` folder and delete it.
-+
-The folder name changes for each release.
-
-. Restart the vCenter Server.
-+
-You can then upgrade the SnapCenter VMware plug-in.
-
-.#Steps#
-
-. #Prepare for the upgrade by disabling SnapCenter Plug-in for VMware vSphere.#
-.. #Log in to the SnapCenter Plug-in for VMware vSphere management GUI.#
-#The IP is displayed when you deploy the SnapCenter VMware plug-in.#
-.. #Click *Configuration* in the left navigation pane, and then click the *Service* option in the Plug-in Details section to disable the plug-in.#
-
-. #Download the upgrade `.iso` file.#
-
-.. #Log in to the NetApp Support Site (https://mysupport.netapp.com/products/index.html).#
-.. #From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *DOWNLOAD LATEST RELEASE* button.#
-.. #Download the SnapCenter Plug-in for VMware vSphere upgrade `.iso` file to any location.#
-
-. #Install the upgrade.#
-
-.. #In your browser, navigate to the VMware vSphere vCenter.#
-.. #On the vCenter GUI, click *vSphere Web Client (HTML)*.#
-.. #Log in to the *VMware vCenter Single Sign-On* page.#
-.. #On the Navigator pane, click the VM that you want to upgrade and then click the *Summary* tab.#
-.. #On the *Related Objects* pane, click on any datastore in the list and then click the *Summary* tab.#
-.. #On the *Files* tab for the selected datastore, click on any folder in the list, and then click the storage icon (*Upload a file to the Datastore*).#
-.. #On the upload pop-up screen, navigate to the location where you downloaded the `.iso` file, then click on the `.iso` file image, and then click *Open*.#
-#The file is uploaded to the datastore.#
-.. #Navigate back to VM that you want to upgrade, and click the *Summary* tab.#
-#In the *VM Hardware* pane, in the CD/DVD field, the value should be “Disconnected”.#
-.. #Click the connection icon in the CD/DVD field and select *Connect to CD/DVD image on a datastore*.#
+.. In your browser, navigate to the VMware vSphere vCenter.
+.. On the vCenter GUI, click *vSphere Web Client (HTML)*.
+.. Log in to the *VMware vCenter Single Sign-On* page.
+.. On the Navigator pane, click the VM that you want to upgrade and then click the *Summary* tab.
+.. On the *Related Objects* pane, click on any datastore in the list and then click the *Summary* tab.
+.. On the *Files* tab for the selected datastore, click on any folder in the list, and then click the storage icon (*Upload a file to the Datastore*).
+.. On the upload pop-up screen, navigate to the location where you downloaded the `.iso` file, then click on the `.iso` file image, and then click *Open*.
+The file is uploaded to the datastore.
+.. Navigate back to VM that you want to upgrade, and click the *Summary* tab.
+In the *VM Hardware* pane, in the CD/DVD field, the value should be “Disconnected”.
+.. Click the connection icon in the CD/DVD field and select *Connect to CD/DVD image on a datastore*.
 +
 image:scpivs44_image42.png[Error: Missing Graphic Image]
-.. #In the wizard, do the following:#
-... #In the Datastores column, select the datastore where you uploaded the `.iso` file.#
-... #In the Contents column, navigate to the `.iso` file you uploaded, make sure “ISO image” is selected in the File Type field, and then click *OK*.#
-#Wait until the field shows the “Connected” status.#
-.. #Log onto the Maintenance console by accessing the *Summary* tab of the virtual appliance and then click the green run arrow to start the maintenance console.#
-.. #Enter *2* for System Configuration, then enter *8* for Upgrade.#
-.. #Enter *y* to continue and start the upgrade.#
+.. In the wizard, do the following:
+... In the Datastores column, select the datastore where you uploaded the `.iso` file.
+... In the Contents column, navigate to the `.iso` file you uploaded, make sure “ISO image” is selected in the File Type field, and then click *OK*.
+Wait until the field shows the “Connected” status.
+.. Log onto the Maintenance console by accessing the *Summary* tab of the virtual appliance and then click the green run arrow to start the maintenance console.
+.. Enter *2* for System Configuration, then enter *8* for Upgrade.
+.. Enter *y* to continue and start the upgrade.

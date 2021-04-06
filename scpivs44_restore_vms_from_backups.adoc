@@ -19,24 +19,24 @@ summary:
 //
 
 [.lead]
-#When you restore a VM, you can overwrite the existing content with the backup copy that you select or you can make a copy of the VM.#
+When you restore a VM, you can overwrite the existing content with the backup copy that you select or you can make a copy of the VM.
 
-#In SnapCenter Plug-in for VMware vSphere 4.4 and earlier, you can  restore VMs only to the original host and datastore.#
+In SnapCenter Plug-in for VMware vSphere 4.4 and earlier, you can  restore VMs only to the original host and datastore.
 
-#Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore VMs to the following locations:#
+Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore VMs to the following locations:
 
-** #To the original datastore mounted on the original ESXi host (this makes a copy of the VM)#
+** To the original datastore mounted on the original ESXi host (this overwrites the original VM)
 +
-** #To a different datastore mounted on the original ESXi host#
+** To a different datastore mounted on the original ESXi host
 +
-** #To the original datastore mounted on a different ESXi host that is managed by the same vCenter#
+** To the original datastore mounted on a different ESXi host that is managed by the same vCenter
 +
-** #To a different datastore mounted on a different ESXi host that is managed by the same vCenter#
+** To a different datastore mounted on a different ESXi host that is managed by the same vCenter
 +
-** #To a different datastore mounted on a different ESXi host that is managed by a different vCenter in linked mode#
+** To a different datastore mounted on a different ESXi host that is managed by a different vCenter in linked mode
 
 [NOTE]
-#When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the linked vCenter that is the destination for the restore operation.#
+When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the vCenter that is the destination for the restore operation. The destination datastore must have sufficient space.
 //
 //Burt 1382316 March 2021 Ronya
 //
@@ -47,7 +47,7 @@ Restore operations cannot finish successfully if there are Snapshot copies of th
 The following restore workflow is not supported: Add a storage VM, then perform a backup of that VM, then delete the storage VM and add a cluster that includes that same storage VM, and then attempt to restore the original backup.
 
 [TIP]
-#For improved performance of restore operations, enable the VMware application vStorage API for Array Integration (VAAI).#
+For improved performance of restore operations, enable the VMware application vStorage API for Array Integration (VAAI).
 //
 //Burt 1377556 Mar2021 Ronya
 //
@@ -90,18 +90,19 @@ If you are restoring a deleted VM, the storage VM credentials that were added to
 +
 You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and the location.  Click *OK* to return to the wizard.
 
-. On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field, #then select the restore location, and then enter the destination information where the backup should be mounted.#
+. On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field, then select the restore location, and then enter the destination information where the backup should be mounted.
 +
-#In the *VM name after restore* field, the default name is `<vm_name>_<counter>`.#
+In the *VM name* field, if the same VM name exists, then the new VM name format is `<vm_name>_<timestamp>`.
+// Review comments from QA  Arpil2021  Ronya
 +
-#When restoring partial backups, the restore operation skips the *Select Scope* page.#
+When restoring partial backups, the restore operation skips the *Select Scope* page.
 //
 //Burt 1371420 March 2021  Ronya
 //
 
 . On the *Select Location* page, select the location for the restored datastore.
 +
-#In SnapCenter Plug-in for VMware vSphere 4.5 and later, you can select primary or secondary storage.#
+In SnapCenter Plug-in for VMware vSphere 4.5 and later, you can select primary or secondary storage.
 
 
 . Review the Summary page and then click *Finish*.

@@ -23,12 +23,14 @@ You can use custom prescripts and postscripts as part of your data protection op
 
 == Supported script types
 
-Only Perl scripts are supported.
+Perl and shell scripts are supported.
+Shell scripts must start with `#!/bin/bash`. (`#!/bin/sh` is not supported.)
+// Burt 1389777 April2021 Ronya
 
 == Script path location
 
-Prescripts and postscripts are run by the SnapCenter Plug-in for VMware vSphere. Therefore, the scripts must be located on the SnapCenter VMware plug-in VM.
-
+Prescripts and postscripts are run by the SnapCenter Plug-in for VMware vSphere. Therefore, the scripts must be located in the SnapCenter Plug-in for VMware vSphere OVA, with executable permissions.
+// BURT 1378132 observation 80, March 2021 Ronya
 The script path is validated at the time the script is executed.
 
 == Where to specify scripts

@@ -26,7 +26,7 @@ Backup operations are performed on all the resources defined in a resource group
 You must have created a resource group with a policy attached.
 
 [IMPORTANT]
-Do not start an on-demand backup job when a job to back up the SnapCenter VMware plug-in MySQL database is already running. #Use the maintenance console to see the configured backup schedule for the MySQL database.#
+Do not start an on-demand backup job when a job to back up the SnapCenter VMware plug-in MySQL database is already running. Use the maintenance console to see the configured backup schedule for the MySQL database.
 // Burt 1378132, observation 81, March 2021 Ronya
 
 .About this task
@@ -46,4 +46,4 @@ image:scpivs44_image20.png[Error: Missing Graphic Image]
 //Updated for BURT 1378132 observation 28, March 2021 Madhulika
 .Result
 
-If the quiesce operation fails for any of the VMs in the backup, then the backup is marked as not VM consistent even if the selected policy has VM consistency selected. In this case, it is possible that some of the VMs were successfully quiesced. #In the job monitor, the failed VM details will show the quiesce as failed.#
+If the quiesce operation fails for any of the VMs in the backup, then the backup completes with a warning and is marked as not VM consistent even if the selected policy has VM consistency selected. In this case, it is possible that some of the VMs were successfully quiesced. In the job monitor, the failed VM details will show the quiesce as failed.

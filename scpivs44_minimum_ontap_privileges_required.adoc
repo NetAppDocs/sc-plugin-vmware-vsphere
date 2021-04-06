@@ -21,7 +21,7 @@ summary:
 [.lead]
 The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.
 
-All SnapCenter plug-ins require the following minimum privileges, except where noted in the information following these tables.
+All SnapCenter plug-ins require the following minimum privileges.
 
 |===
 |All-access commands: Minimum privileges required for ONTAP 8.3 and later

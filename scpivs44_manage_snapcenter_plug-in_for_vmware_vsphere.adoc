@@ -55,12 +55,12 @@ image:scpivs44_image11.png[Error: Missing Graphic Image]
 +
 * Option 1: Application Configuration
 +
+Display a summary of SnapCenter VMware plug-in
 Start or stop SnapCenter VMware plug-in service
-Change login username or password
+Change login username or password for SnapCenter VMware plug-in
 Change MySQL password
-Configure MySQL backup
-List MySQL backups
-Restore MySQL backup
+Backup and restore MySQL
+// BURT 1378132 observation 54, March 2021 Ronya
 +
 * Option 2: System Configuration
 +
@@ -131,7 +131,7 @@ You must unregister the SnapCenter VMware plug-in extensions manually.
 .Steps
 
 . On the linked vCenter that has the SnapCenter VMware plug-in service stopped, navigate to the Managed Object Reference (MOB) manager.
-. In the Properties option, select Extension Manager to display a list of the registered extensions.
+. In the Properties option, select *content* in the Value column, then in the next screen select *ExtensionManager* in the Value column to display a list of the registered extensions.
 . Unregister the extensions `com.netapp.scvm.webclient` and `com.netapp.aegis`.
 
 == Disable and enable SnapCenter Plug-in for VMware vSphere
@@ -170,7 +170,11 @@ The plug-in is disabled, and no further action is required.
 The plug-in is disabled and further cleanup is required.
 
 .. Log in to VMware vSphere.
-.. In the left navigator screen, right-click the instance of the SnapCenter VMware plug-in (the name of the `.ova` file` `that was used when the virtual appliance was deployed) and select *Delete from Disk*.
+
+.. Power down the VM.
+
+.. In the left navigator screen, right-click the instance of the SnapCenter VMware plug-in (the name of the `.ova` file that was used when the virtual appliance was deployed) and select *Delete from Disk*.
+
 .. Log in to SnapCenter and remove the vSphere host.
 
 == Remove SnapCenter Plug-in for VMware vSphere
@@ -191,7 +195,7 @@ The IP of the SnapCenter VMware plug-in is displayed when you deploy the plug-in
 . Click *Configuration* in the left navigation pane, and then unselect the Service option in the *Plug-in Details* section to disable the plug-in.
 . Log in to VMware vSphere.
 . In the left navigator screen, right-click the instance of the SnapCenter VMware plug-in (the name of the `.ova` file that was used when the virtual appliance was deployed) and select *Delete from Disk*.
-. #Navigate to `/etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/com.netapp.scvm.webclient-4.5.0.5942045/plugins` and manually delete the following files in the pickup folder of the vCenter server:#
+. Navigate to `/etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/com.netapp.scvm.webclient-4.5.0.5942045/plugins` and manually delete the following files in the pickup folder of the vCenter server:
 // BURT 1378132 observation 61, March 2021 Ronya
 +
 `vsc-httpclient3-security.jar`

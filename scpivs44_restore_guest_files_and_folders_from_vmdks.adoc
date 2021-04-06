@@ -33,9 +33,7 @@ Only one attach or restore operation can run at the same time on a VM. You canno
 [IMPORTANT]
 The guest restore feature allows you to view and restore system and hidden files and to view encrypted files. Do not attempt to overwrite an existing system file or to restore encrypted files to an encrypted folder. During the restore operation, the hidden, system, and encrypted attributes of guest files are not retained in the restored file. Viewing or browsing reserved partitions might cause an error.
 
-[TIP]
-#For improved performance of restore operations, enable the VMware application vStorage API for Array Integration (VAAI).#
-//Burt 1377556 Mar2021 Ronya
+//Enabling VAAI does not apply to guest file restore. Vrishali
 
 .Steps
 
@@ -134,7 +132,8 @@ The files and folders to be restored are listed in the Selected File(s) table.
 
 |Restore to path
 |Enter the UNC share path to the guest where the selected files will be restored.
-For example: \\10.60.136.65\c$
+IPv4 example: \\10.60.136.65\c$
+IPv6 example: \\fd20-8b1e-b255-832e--61.ipv6-literal.net\C\restore
 |If original file(s)
 exist
 |Select the action to be taken if the file or folder to be restored already exists on the restore destination: Always overwrite or Always skip.

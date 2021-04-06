@@ -56,7 +56,7 @@ If the SnapCenter VMware plug-in is installed on the SnapCenter Server host and 
 
 ** Removes the vSphere host and resource groups from the Windows SnapCenter Server.
 ** Activates the backup jobs on the Linux-based SnapCenter VMware plug-in.
-** Registers the vSphere host for the SnapCenter VMware plug-in `with SnapCenter to support application-based backups of virtualized databases and file systems (application over VMDK backups).
+** Registers the vSphere host for the SnapCenter VMware plug-in with SnapCenter to support application-based backups of virtualized databases and file systems (application over VMDK backups).
 * Where metadata is stored
 +
 Metadata for application-based VMDK backups is stored in the SnapCenter Server repository. Metadata for VM and datastore backups is stored in the SnapCenter VMware plug-in MySQL repository.

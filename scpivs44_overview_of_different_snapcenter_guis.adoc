@@ -41,7 +41,8 @@ VM and VMDK restore
 Guest file and folder restore
 |Backups of VMs and datastores that were performed by using the VMware vSphere web client GUI.
 |SnapCenter GUI
-|Backup and restore of databases and applications on VMs, including protecting databases for Microsoft SQL Server, Microsoft Exchange, SAP HANA, and Oracle.
+|Backup and restore of databases and applications on VMs, including protecting databases for Microsoft SQL Server, Microsoft Exchange, and Oracle.
+// BURT 1378132 observation 78, March 2021 Ronya
 Database clone
 |Backups performed by using the SnapCenter GUI.
 |SnapCenter Plug-in for VMware vSphere management GUI
