@@ -139,8 +139,6 @@ entries:
             url: /scpivs44_manage_backups.html#delete-backups
   - title: Mount and unmount datastores
     entries:
-      - title: Overview
-        url: /scpivs44_mount_and_unmount_datastores_overview.html
       - title: Mount a backup
         url: /scpivs44_mount_a_backup.html
       - title: Unmount a backup
@@ -265,6 +263,8 @@ entries:
         url: /scpivs44_upgrade.html#supported-upgrade-paths
       - title: Upgrade from an earlier release of SnapCenter Plug-in for VMware vSphere
         url: /scpivs44_upgrade.html#upgrade-from-an-earlier-release-of-snapcenter-plugin-for-vmware-vsphere
+      - title: Upgrade to a new patch of the same release
+        url: /scpivs44_upgrade_to_a_new_patch.html
       - title: Information not displayed after upgrading to a new patch of the same release
         url: /scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html
   - title: Migrate
