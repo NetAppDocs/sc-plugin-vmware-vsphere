@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= #REST API to mark stuck jobs as failed#
+= REST API to mark stuck jobs as failed
 :hardbreaks:
 :nofooter:
 :icons: font

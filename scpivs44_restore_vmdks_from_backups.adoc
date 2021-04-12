@@ -24,7 +24,7 @@ You can restore existing VMDKs, or deleted or detached VMDKs, from either a prim
 You can restore one or more virtual machine disks (VMDKs) on a VM to the same datastore.
 
 [TIP]
-For improved performance of restore operations, enable the VMware application vStorage API for Array Integration (VAAI).
+For improved performance of restore operations in NFS environments, enable the VMware application vStorage API for Array Integration (VAAI).
 //Burt 1377556 Mar2021 Ronya
 
 .Before you begin
@@ -51,20 +51,19 @@ The VM that you want to restore must not be in a state of vMotion or Storage vMo
 +
 You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and primary or secondary location. Click *OK* to return to the wizard.
 
-. On the *Select Scope* page, select the restore destination by clicking *Particular disk* in the *Restore scope* field drop-down list and then click *Next*.
+. On the *Select Scope* page, select the restore destination.
 +
 |===
-|To… |Specify the restore destination…
+|To restore to… |Specify the restore destination…
 
-|Restore to the original datastore
-|Use the default datastore.
+|The original datastore
+|Select *Particular disk* from the drop-down list and then click *Next*.
+In the Datastore selection table, you can select or unselect any VMDKs.
 // BURT 1378132 observation 34, March 2021 Ronya
-|Restore to an alternate datastore on the same ESXi host or, beginning in SnapCenter Plug-in VMware vSphere 4.5, to an alternate ESXi host managed by the same vCenter in linked mode.
+|An alternate datastore in an alternate location
 // BURT 1378132 observation 35, March 2021 Ronya
 |Click the destination datastore and select a different datastore from the list.
 |===
-+
-In the Datastore selection table, you can select or unselect any VMDKs.
 // BURT 1378132 observation 36, March 2021 Ronya
 
 . On the *Select Location* page, select the Snapshot copy that you want to restore (primary or secondary).

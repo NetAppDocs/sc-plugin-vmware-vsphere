@@ -18,7 +18,6 @@ summary:
 // 2020-09-09 12:24:20.235275
 //
 
-
 SnapCenter Plug-in for VMware vSphere is a standalone virtual appliance (Open Virtual Appliance format) that provides data protection services for VMs and datastores, and supports data protection services for SnapCenter application-based plug-ins. This document describes how to deploy and use SnapCenter Plug-in for VMware vSphere and includes quick start information.
 
 SnapCenter Plug-in for VMware vSphere is deployed as a Linux-based virtual appliance.
@@ -61,6 +60,6 @@ For the latest information about supported versions, see the https://mysupport.n
 
 For information about NFS protocols and ESXi, see the vSphere Storage documentation that is provided by VMware.
 
-For information about SnapCenter data protection, see the data protection information for your SnapCenter plug-in in the http://docs.netapp.com/ocsc-44/index.jsp[SnapCenter Documentation Center^].
+For information about SnapCenter data protection, see the data protection information for your SnapCenter plug-in in the http://docs.netapp.com/snapcenter/index.jsp[SnapCenter Documentation^].
 
 For information about supported upgrade and migration paths, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes^].

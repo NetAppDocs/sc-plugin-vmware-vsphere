@@ -47,7 +47,7 @@ Restore operations cannot finish successfully if there are Snapshot copies of th
 The following restore workflow is not supported: Add a storage VM, then perform a backup of that VM, then delete the storage VM and add a cluster that includes that same storage VM, and then attempt to restore the original backup.
 
 [TIP]
-For improved performance of restore operations, enable the VMware application vStorage API for Array Integration (VAAI).
+For improved performance of restore operations in NFS environments, enable the VMware application vStorage API for Array Integration (VAAI).
 //
 //Burt 1377556 Mar2021 Ronya
 //

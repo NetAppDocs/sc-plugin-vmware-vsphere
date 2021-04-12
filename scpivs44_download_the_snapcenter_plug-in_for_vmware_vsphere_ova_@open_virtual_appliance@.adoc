@@ -26,5 +26,5 @@ The `.ova` file includes a set of microservices for VM and datastore data protec
 .Steps
 
 . Log in to the NetApp Support Site ( https://mysupport.netapp.com/products/index.html[https://mysupport.netapp.com/products/index.html^]).
-. From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *DOWNLOAD LATEST RELEASE* button.
+. From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *Download Latest Release* button.
 . Download the SnapCenter Plug-in for VMware vSphere `.ova` file to any location.

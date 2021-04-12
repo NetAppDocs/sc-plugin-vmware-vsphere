@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-The migration command migrates metadata from #SnapCenter 4.0 and later only#. If you are using an earlier version of SnapCenter then you must first upgrade before you can migrate.
+The migration command migrates metadata from SnapCenter 4.0 and later only. If you are using an earlier version of SnapCenter then you must first upgrade before you can migrate.
 
 * What migration includes
 ** What is migrated

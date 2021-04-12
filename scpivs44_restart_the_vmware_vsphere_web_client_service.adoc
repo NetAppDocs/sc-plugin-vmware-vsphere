@@ -40,7 +40,7 @@ You must be running vCenter 6.5 or later.
 +
 `service-control --stop vsphere-ui`
 
-. Delete all stale HTML5 scvm packages on vCenter by using the following HTML5 command:
+. Delete all stale HTML5 scvm packages on vCenter by using the following shell command:
 +
 `etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/`
 +

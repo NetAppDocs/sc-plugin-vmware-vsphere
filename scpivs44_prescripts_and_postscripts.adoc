@@ -24,7 +24,7 @@ You can use custom prescripts and postscripts as part of your data protection op
 == Supported script types
 
 Perl and shell scripts are supported.
-Shell scripts must start with `#!/bin/bash`. (`#!/bin/sh` is not supported.)
+Shell scripts must start with `!/bin/bash`. (`!/bin/sh` is not supported.)
 // Burt 1389777 April2021 Ronya
 
 == Script path location

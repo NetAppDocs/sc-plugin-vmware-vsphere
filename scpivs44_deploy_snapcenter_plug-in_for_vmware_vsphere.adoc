@@ -88,12 +88,13 @@ SnapCenter Plug-in for VMware vSphere supports one network interface. If you nee
 +
 . On the *Customize template* page, do the following:
 
-.. In *Register to existing vCenter*, enter the vCenter virtual appliance credentials.
-.. #In *Create SnapCenter Plug-in for VMware vSphere credentials*, enter the local credentials.#
+.. In the *Register to existing vCenter* section, enter the vCenter virtual appliance credentials.
 +
-#In the *Username* field, enter the local username in the format `domain\username.local`.#
-#In the *Password* field, special characters are not supported.#
-// Burt 1366351 Mar 2021 Ronya
+In the *vCenter username* field, enter the username in the format `domain\username.local`.
+
+.. In the *Create SCV credentials* section, enter the local credentials.
++
+In the *Username* field, enter the local username; do not include the domain details.
 +
 [IMPORTANT]
 Make a note of the username and password that you specify. You need to use these credentials if you want to modify the SnapCenter VMware plug-in configuration later.

@@ -25,7 +25,6 @@ You should also back up the repository before performing migrations or upgrades.
 
 .Before you begin
 
-[IMPORTANT]
 Do not start a job to back up the MySQL database when an on-demand backup job is already running.
 
 .Steps

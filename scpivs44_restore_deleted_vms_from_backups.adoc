@@ -49,7 +49,7 @@ When restoring to a different location, SnapCenter Plug-in for VMware vSphere mu
 You must have created a backup of the VM using the SnapCenter Plug-in for VMware vSphere before you can restore the VMDKs on that VM.
 
 [TIP]
-For improved performance of restore operations, enable the VMware application vStorage API for Array Integration (VAAI).
+For improved performance of restore operations in NFS environments, enable the VMware application vStorage API for Array Integration (VAAI).
 //Burt 1377556 Mar2021 Ronya
 
 .About this task
