@@ -41,12 +41,12 @@ You can also click the image:scpivs44_image37.png[Error: Missing Graphic Image] 
 
 === Types of reports from the VMware vSphere Web Client
 
-The VMware vSphere web client for SnapCenter provides customizable report options that provide you with details about your data protection jobs and plug-in resource status.  The types of reports are listed in the following table.
+The VMware vSphere web client for SnapCenter provides customizable report options that provide you with details about your data protection jobs and plug-in resource status. You can generate reports for primary protection only.
 
 [NOTE]
 Backup schedules are executed in the time zone in which the SnapCenter VMware plug-in is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter VMware plug-in and the vCenter are in different time zones, data in the VMware vSphere web client Dashboard might not be the same as the data in the reports.
 
-The Dashboard displays information on migrated backups only after backups are performed after the migration.
+The Dashboard displays information on migrated backups only after backups post-migration are performed.
 
 |===
 |Report type |Description

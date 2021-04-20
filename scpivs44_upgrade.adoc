@@ -43,7 +43,7 @@ The IP is displayed when you deploy the SnapCenter VMware plug-in.
 .. Log in to the *VMware vCenter Single Sign-On* page.
 .. On the Navigator pane, click the VM that you want to upgrade and then click the *Summary* tab.
 .. On the *Related Objects* pane, click on any datastore in the list and then click the *Summary* tab.
-.. On the *Files* tab for the selected datastore, click on any folder in the list, and then click the storage icon (*Upload a file to the Datastore*).
+.. On the *Files* tab for the selected datastore, click on any folder in the list, and then click *Upload files*.
 .. On the upload pop-up screen, navigate to the location where you downloaded the `.iso` file, then click on the `.iso` file image, and then click *Open*.
 The file is uploaded to the datastore.
 .. Navigate back to VM that you want to upgrade, and click the *Summary* tab.
