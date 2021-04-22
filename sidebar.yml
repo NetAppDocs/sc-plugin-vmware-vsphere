@@ -276,6 +276,8 @@ entries:
         url: /scpivs44_migrate.html#supported-migration-paths
       - title: Migration overview
         url: /scpivs44_migration_overview.html
+      - title: Migration workflow
+        url: /scpivs44_migration_overview.html#migration-workflow
       - title: Prerequisites for migration
         url: /scpivs44_prerequisites_for_migration.html
       - title: Migrate from Windows-based SnapCenter Plug-in for VMware vSphere
