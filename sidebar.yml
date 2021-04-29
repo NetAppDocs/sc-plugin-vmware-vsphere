@@ -290,3 +290,5 @@ entries:
         url: /scpivs44_correct_bad_gateway_errors_during_migration.html
       - title: Manage authentication errors
         url: /scpivs44_manage_authentication_errors.html
+  - title: Legal notices
+     url: /netapp_legal_notices.html
