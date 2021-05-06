@@ -21,7 +21,7 @@ summary:
 [.lead]
 Before you can back up or restore VMs or datastores using the VMware vSphere web client, you must add the storage.
 
-=== Modify storage VMs
+== Modify storage VMs
 
 You can use the VMware vSphere web client to modify the configurations of clusters and storage VMs that are registered in SnapCenter Plug-in for VMware vSphere and used for VM data protection operations.
 
@@ -39,7 +39,7 @@ If you added storage VMs for application-based data protection operations using 
 +
 image:scpivs44_image26.png[Error: Missing Graphic Image]
 
-=== Rename storage VMs
+== Rename storage VMs
 
 If you rename a VM after you added it to a resource group, the new name might not be displayed on the Resources page because the SnapCenter Plug-in for VMware vSphere acts on the VM UUID, not the name.
 
@@ -49,22 +49,7 @@ To make sure new VM names are displayed on the Resources page, do the following.
 . Rename the VM.
 . Re-add the VM to the resource group.
 
-=== Modify the configured storage timeout
-
-Even though backups have run successfully in the past, they might start failing when the time that the SnapCenter Plug-in for VMware vSphere must wait for the storage system exceeds the configured timeout period. If this condition occurs, you can increase the configured timeout.
-
-You might encounter the error `Unable to discover resources on SCV: Unable to get storage details for datastore <xxx>…`
-
-.Steps
-
-. In the VMware vSphere web client, click *Storage Systems*.
-. On the Storage Systems page, select the storage system to be modified and click *Edit*.
-. In the Timeout field, increase the number of seconds.
-+
-[TIP]
-180 seconds is recommended for large environments.
-
-=== Remove storage VMs
+== Remove storage VMs
 
 You can use the VMware vSphere web client to remove storage VMs from the inventory in vCenter.
 

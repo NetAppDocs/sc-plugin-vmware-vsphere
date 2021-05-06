@@ -134,4 +134,4 @@ If the SnapCenter VMware plug-in is not enabled, then see link:scpivs44_restart_
 +
 .After you finish
 +
-You should complete the required post deployment operations.
+You should complete the required scpivs44_post_deployment_required_operations_and_issues.html[post deployment operations] post deployment operations.

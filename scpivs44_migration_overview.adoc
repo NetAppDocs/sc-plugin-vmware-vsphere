@@ -21,30 +21,27 @@ summary:
 [.lead]
 The migration command migrates metadata from SnapCenter 4.0 and later only. If you are using an earlier version of SnapCenter then you must first upgrade before you can migrate.
 
-* What is migrated
-+
+== What is migrated
+
 SnapCenter metadata, which includes storage systems, customized throttles, and email settings in the SnapCenter configuration file, policies, resource groups, backup metadata, and mounts. (the migration fails when it encounters prescripts or postscripts)
 
-* What is not migrated
-+
-Pre- and post-scripts that are configured for resource groups
-+
-Active guest file restore sessions, guest file restore credentials, and proxy VMs
-+
-Customized configuration settings in the `scbr.override` configuration file
-+
-If you begin migration when a guest file restore session is active, the session is deleted and the attached disk is not unmounted. You might have to delete the attached disk manually.
+== What is not migrated
+
+* Pre- and post-scripts that are configured for resource groups
+* Active guest file restore sessions, guest file restore credentials, and proxy VMs
+* Customized configuration settings in the `scbr.override` configuration file
+* If you begin migration when a guest file restore session is active, the session is deleted and the attached disk is not unmounted. You might have to delete the attached disk manually.
 // Snapshots that are deleted from ONTAP BURT 1271910
 
-* SnapCenter hosts are suspended
-+
+== SnapCenter hosts are suspended
+
 To ensure migration success, the migration command suspends all hosts that are registered with SnapCenter. After the migration process finishes successfully, SnapCenter hosts are resumed.
 
-* Where metadata is stored
-+
+== Where metadata is stored
+
 Metadata for application-based VMDK backups is stored in the SnapCenter Server repository. Metadata for VM and datastore backups is stored in the SnapCenter VMware plug-in MySQL repository.
 
-= Migration workflow
+== Migration workflow
 
 You must use the Windows Powershell cmdlet `invoke-SCVOVAMigration` for each instance of the SnapCenter VMware plug-in that is registered with SnapCenter.
 

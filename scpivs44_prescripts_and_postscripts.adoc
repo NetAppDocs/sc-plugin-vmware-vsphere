@@ -31,6 +31,11 @@ Shell scripts must start with `!/bin/bash`. (`!/bin/sh` is not supported.)
 
 Prescripts and postscripts are run by the SnapCenter Plug-in for VMware vSphere. Therefore, the scripts must be located in the SnapCenter Plug-in for VMware vSphere OVA, with executable permissions.
 // BURT 1378132 observation 80, March 2021 Ronya
+
+For example:
+* A PERL script path might be `/support/support/script.pl`
+* A shell script path might be `/support/support/script.sh`
+
 The script path is validated at the time the script is executed.
 
 == Where to specify scripts
@@ -57,6 +62,10 @@ Postscripts are executed in the POST_BACKUP phase of the operation after the bac
 
 [NOTE]
 If a postscript fails, the backup completes successfully, and a warning message is sent.
+
+Check the following to verify that the script values are populated:
+* For PERL scripts: `/support/support/log_env.log`
+* For shell scripts: `/support/support/log_file.log`
 
 == Environment variables passed to scripts
 
@@ -100,3 +109,54 @@ Variable passed in prescripts and postscripts.
 == Script timeouts
 
 The timeout for backup scripts is 15 minutes and cannot be modified.
+
+== Example PERL script #1
+
+The following example PERL script prints the environmental variables when a backup is run.
+
+`#!/usr/bin/perl`
+`use warnings;`
+`use strict;`
+`my $argnum;`
+`my $logfile = '/support/support/log_env.log';`
+`open (FH, '>>', $logfile) or die $!;`
+`foreach (sort keys %ENV) {`
+`print FH "$_ = $ENV{$_}\n";`
+`}`
+`print FH "=========\n";`
+`close (FH);`
+
+== Example PERL script #2
+
+The following example prints information about the backup.
+
+`#!/usr/bin/perl`
+`use warnings;`
+`use strict;`
+
+`my $argnum;`
+`my $logfile = '/support/support/log_env.log';`
+`open (FH, '>>', $logfile) or die $!;`
+
+`print FH "BACKUP_PHASE is $ENV{'BACKUP_PHASE'}\n";`
+`print FH "Backup name  $ENV{'BACKUP_NAME'}\n";`
+`print FH "Virtual Machine  $ENV{'VIRTUAL_MACHINES'}\n";`
+`print FH "VIRTUAL_MACHINE # is $ENV{'VIRTUAL_MACHINE.1'}\n";`
+`print FH "BACKUP_DATE is $ENV{'BACKUP_DATE'}\n";`
+`print FH "BACKUP_TIME is $ENV{'BACKUP_TIME'}\n";`
+`print FH "STORAGE_SNAPSHOTS is $ENV{'STORAGE_SNAPSHOTS'}\n";`
+`print FH "STORAGE_SNAPSHOT # is $ENV{'STORAGE_SNAPSHOT.1'}\n";`
+
+`print FH "PWD is $ENV{'PWD'}\n";`
+`print FH "INVOCATION_ID is $ENV{'INVOCATION_ID'}\n";`
+
+`print FH "=========\n";`
+`close (FH);`
+
+== Example shell script
+
+`===============================================`
+`#!/bin/bash`
+`echo Stage $BACKUP_NAME >> /support/support/log_file.log`
+`env >> /support/support/log_file.log`
+`===============================================`

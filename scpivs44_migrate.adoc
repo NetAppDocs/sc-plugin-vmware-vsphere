@@ -21,27 +21,26 @@ summary:
 [.lead]
 You use the SnapCenter Windows PowerShell cmdlets to migrate SnapCenter Plug-in for VMware vSphere metadata from the Windows-based SnapCenter Server to the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance.
 
-There are two migration options:
 
-* Migrating from SnapCenter
-+
+== Migrating from SnapCenter
+
 You must migrate metadata for the following from Windows-based SnapCenter:
 
-** VM-consistent backups performed by the SnapCenter Plug-in for VMware vSphere when the plug-in was running as a Windows-based component of SnapCenter.
-** Application-consistent data protection metadata of virtualized databases or file systems performed by a SnapCenter application-based plug-in with support from the SnapCenter Plug-in for VMware vSphere when the plug-in was running as a Windows-based component of SnapCenter.
+* VM-consistent backups performed by the SnapCenter Plug-in for VMware vSphere when the plug-in was running as a Windows-based component of SnapCenter.
+* Application-consistent data protection metadata of virtualized databases or file systems performed by a SnapCenter application-based plug-in with support from the SnapCenter Plug-in for VMware vSphere when the plug-in was running as a Windows-based component of SnapCenter.
 +
 To migrate, you use the Windows SnapCenter PowerShell cmdlet `invoke-SCVOVAMigration.`
 +
 You can only migrate metadata from SnapCenter 4.0 or later.
 
-* Migrating from VSC
-+
+== Migrating from VSC
+
 You can migrate VSC 6.2.x (SMVI) metadata for backup jobs that are not integrated with SnapCenter.
-+
+
 To migrate, you use the NetApp ToolChest: NetApp Import Utility for SnapCenter and Virtual Storage Console.  Make sure to select the VSC to SnapCenter migration option.
-+
+
 You can only migrate metadata for existing backups. For example, if you do not have existing backups, then you cannot migrate policies only.
 
-= Supported migration paths
+== Supported migration paths
 
 See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade and migration paths.

@@ -1,0 +1,47 @@
+---
+sidebar: sidebar
+permalink: scpivs44_remove_plugin.html
+keywords:
+summary:
+---
+
+= Remove SnapCenter Plug-in for VMware vSphere
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+If you no longer need to use the SnapCenter data protection features, you must disable the SnapCenter VMware plug-in to unregister it from vCenter, then remove the SnapCenter VMware plug-in from vCenter, and then manually delete leftover files.
+
+.Before you begin
+
+* You must have administrator privileges.
+* Make sure that no SnapCenter jobs are running.
+
+.Steps
+
+. Log in to the SnapCenter VMware plug-in management GUI using the format `https://<OVA-IP-address>:8080`.
++
+The IP of the SnapCenter VMware plug-in is displayed when you deploy the plug-in.
+
+. Click *Configuration* in the left navigation pane, and then unselect the Service option in the *Plug-in Details* section to disable the plug-in.
+. Log in to VMware vSphere.
+. In the left navigator screen, right-click the instance of the SnapCenter VMware plug-in (the name of the `.ova` file that was used when the virtual appliance was deployed) and select *Delete from Disk*.
+. Navigate to `/etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/com.netapp.scvm.webclient-4.5.0.5942045/plugins` and manually delete the following files in the pickup folder of the vCenter server:
+// BURT 1378132 observation 61, March 2021 Ronya
++
+`vsc-httpclient3-security.jar`
+`scv-api-model.jar`
+`scvm_webui_service.jar`
+`scvm_webui_ui.war`
+`gson-2.5.jar`
+
+. If you used the SnapCenter VMware plug-in to support other SnapCenter plug-ins for application-consistent backups, log in to SnapCenter and remove the vSphere host.
+
+.After you finish
+
+The virtual appliance is still deployed but the SnapCenter VMware plug-in is removed.
+
+After removing the host VM for the SnapCenter VMware plug-in, the plug-in might remain listed in vCenter until the local vCenter cache is refreshed. However, because the plug-in was removed, no SnapCenter VMware vSphere operations can be performed on that host. If you want to refresh the local vCenter cache, first make sure the appliance is in a Disabled state on the SnapCenter VMware plug-in Configuration page, and then restart the vCenter web client service.

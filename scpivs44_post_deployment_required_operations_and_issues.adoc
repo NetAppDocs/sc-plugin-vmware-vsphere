@@ -18,13 +18,17 @@ summary:
 // 2020-09-09 12:24:21.465086
 //
 
-[.lead]
-After deploying SnapCenter Plug-in for VMware vSphere, you should complete the required operations.
+== Required operations after deployment
 
-* If you are a new SnapCenter user, you must add storage VMs to SnapCenter before you can perform any data protection operations. When adding storage VMs, specify the management LIF. You can also add a cluster and specify the cluster management LIF. For information about adding storage, see link:scpivs44_add_storage_01.html[Add storage^].
-* If you are an existing SnapCenter user, you must migrate your existing SnapCenter VM and datastore backups and metadata. For information about migrating, see link:scpivs44_migrate.html#migration-options.html[Migration options^].
+* New SnapCenter user
++
+If you are a new SnapCenter user, you must add storage VMs to SnapCenter before you can perform any data protection operations. When adding storage VMs, specify the management LIF. You can also add a cluster and specify the cluster management LIF. For information about adding storage, see link:scpivs44_add_storage_01.html[Add storage^].
 
-Your deployment might encounter the following issues:
+* Existing SnapCenter user
++
+If you are an existing SnapCenter user, you must migrate your existing SnapCenter VM and datastore backups and metadata. For information about migrating, see link:scpivs44_migrate.html#migration-options.html[Migration options^].
+
+== Deployment issues you might encounter
 
 * After deploying the virtual appliance, the *Backup Jobs* tab on the Dashboard might not load in the following scenarios:
 ** You are running IPv4 and have two IP addresses for the SnapCenter VMware vSphere host. As a result, the job request is sent to an IP address that is not recognized by the SnapCenter Server. To prevent this issue, add the IP address that you want to use, as follows:
