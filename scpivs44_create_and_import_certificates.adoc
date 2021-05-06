@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: create_and_import_certificates.html
+permalink: scpivs44_create_and_import_certificates.html
 keywords:
 summary:
 ---
