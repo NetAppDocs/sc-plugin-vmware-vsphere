@@ -77,13 +77,6 @@ entries:
         url: /scpivs44_add_storage_01.html
       - title: Manage storage VMs - modify, rename, remove
         url: /scpivs44_manage_storage_systems.html
-        entries:
-          - title: Modify storage VMs
-            url: /scpivs44_manage_storage_systems.html#modify-storage-vms
-          - title: Rename storage VMs
-            url: /scpivs44_manage_storage_systems.html#rename-storage-vms
-          - title: Remove storage VMs
-            url: /scpivs44_manage_storage_systems.html#remove-storage-vms
       - title: Modify the configured storage timeout
         url: /scpivs44_modify_storage_timeout.html
   - title: Protect data
