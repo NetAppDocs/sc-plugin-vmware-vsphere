@@ -70,7 +70,7 @@ You must be running vCenter 6.5 or later.
 +
 Wait for the message `Completed Stop service request`.
 
-. Delete all stale #HTML5# scvm packages on vCenter by performing the following:
+. Delete all stale HTML5 scvm packages on vCenter by performing the following:
 .. Navigate to the vCenter vsphere-client-serenity/ folder:
 +
 `C:\ProgramData\VMware\vCenterServer\cfg\vsphere-ui\`
