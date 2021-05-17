@@ -137,13 +137,6 @@ entries:
     entries:
       - title: Workflow, prerequisites, and limitations
         url: /scpivs44_restore_guest_files_and_folders_overview.html
-        entries:
-          - title: Guest restore workflow
-            url: /scpivs44_restore_guest_files_and_folders_overview.html#guest-restore-workflow
-          - title: Prerequisites for restoring guest files and folders
-            url: /scpivs44_restore_guest_files_and_folders_overview.html#prerequisites-for-restoring-guest-files-and-folders
-          - title: Guest file restore limitations
-            url: /scpivs44_restore_guest_files_and_folders_overview.html#guest-file-restore-limitations
       - title: Restore guest files and folders from VMDKs
         url: /scpivs44_restore_guest_files_and_folders_from_vmdks.html
       - title: Set up proxy VMs for restore operations
