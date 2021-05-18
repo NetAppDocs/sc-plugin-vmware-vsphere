@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-When you restore a VM, you can overwrite the existing content with the backup copy that you select or you can make a copy of the VM.
+When you restore a VM, you can overwrite the existing content with the backup copy that you select.
 
 You can restore VMs only to the original host and datastore.
 
