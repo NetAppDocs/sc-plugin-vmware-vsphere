@@ -39,6 +39,7 @@ The vSphere administrator sets up vCenter Server RBAC by doing the following:
 +
 At a minimum, all users must be able to view vCenter objects. Without this privilege, users cannot access the VMware vSphere web client GUI.
 
+
 == ONTAP RBAC
 
 This security mechanism applies only to SnapCenter Server application-consistent (application over VMDK) jobs. This level restricts the ability of SnapCenter to perform specific storage operations, such as backing up storage for datastores, on a specific storage system.
@@ -49,6 +50,9 @@ Use the following workflow to set up ONTAP and SnapCenter RBAC:
 . Then the storage administrator assigns the role to a storage user.
 . The SnapCenter administrator adds the storage VM to the SnapCenter Server, using that storage username.
 . Then the SnapCenter administrator assigns roles to SnapCenter users.
+
+
+== Validation workflow for RBAC privileges
 
 The following figure provides an overview of the validation workflow for RBAC privileges (both vCenter and ONTAP):
 

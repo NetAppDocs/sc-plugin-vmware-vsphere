@@ -55,7 +55,7 @@ image:scpivs44_image5.png[Error: Missing Graphic Image]
 
 . Log in to vCenter, then click *Menu* in the toolbar, and then select *SnapCenter Plug-in for VMware vSphere*.
 
-=== Manage authentication errors
+== Manage authentication errors
 
 If you do not use the Admin credentials, you might receive an authentication error after deploying SnapCenter Plug-in for VMware vSphere or after migrating. If you encounter an authentication error, you must restart the service.
 
@@ -64,7 +64,7 @@ If you do not use the Admin credentials, you might receive an authentication err
 . Log on to the SnapCenter VMware plug-in management GUI using the format `https://<appliance-IP-address>:8080`.
 . Restart the service.
 
-=== Create credentials for migrating backups
+== Create credentials for migrating backups
 
 If you are a SnapCenter customer and have VM consistent or VM crash-consistent backups, or application-consistent backups of virtualized data, you must migrate those backups to SnapCenter Plug-in for VMware vSphere. Before migrating, you must add the SnapCenter VMware plug-in credentials to SnapCenter Server.
 
@@ -92,7 +92,7 @@ If you are a SnapCenter customer and have VM consistent or VM crash-consistent b
 |Select *Linux*.
 |===
 
-=== Register SnapCenter Plug-in for VMware vSphere with SnapCenter Server
+== Register SnapCenter Plug-in for VMware vSphere with SnapCenter Server
 
 If you want to perform application-over-VMDK workflows in SnapCenter (application-based protection workflows for virtualized databases and file systems), you must register SnapCenter Plug-in for VMware vSphere with the SnapCenter Server.
 

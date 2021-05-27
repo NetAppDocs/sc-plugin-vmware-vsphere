@@ -33,6 +33,12 @@ You can restore VMDKs to either the original or to an alternate datastore.
 
 You can also restore individual files and folders in a guest file restore session, which attaches a backup copy of a virtual disk and then restores the selected files or folders.
 
+You cannot restore the following:
+
+* Datastores
++
 You cannot use the SnapCenter Plug-in for VMware vSphere to restore a datastore, only the individual VMs in the datastore.
 
+* Backups of removed VMs
++
 You cannot restore backups of storage VMs that have been removed. For example, if you add a storage VM using the management LIF and then create a backup, and then you remove that storage VM and add a cluster that contains that same storage VM, the restore operation for the backup will fail.

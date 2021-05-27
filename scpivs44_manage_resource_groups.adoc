@@ -21,16 +21,6 @@ summary:
 [.lead]
 You can create, modify, and delete backup resource groups, and perform backup operations on resource groups.
 
-You can perform the following tasks on resource groups for VMs and datastores:
-
-* Suspend and resume scheduled operations on the resource group
-* Create a resource group
-* Add VMs or datastores to a resource group
-* Delete VMs or datastores from a resource group
-* Modify a resource group
-* Create a backup using the resource group
-* Delete a resource group
-
 [NOTE]
 Resource groups are called backup jobs in Virtual Storage Console (VSC).
 

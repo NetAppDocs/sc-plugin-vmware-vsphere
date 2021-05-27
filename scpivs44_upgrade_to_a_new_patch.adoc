@@ -38,7 +38,8 @@ The cache is in the following locations, based on the type of server operating s
 +
 `/var/lib/vmware/vsphere-client/vsphere-client/vc-packages/vsphere-client-serenity/ `
 
-=== Steps for clearing the cache:
+
+=== Steps for clearing the cache
 
 . Locate the `vsphere-client-serenity` folder, then locate the `com.netapp.scvm.webclient-4.2.0` folder and delete it.
 +

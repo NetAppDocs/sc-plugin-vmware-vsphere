@@ -44,6 +44,7 @@ The cache is in the following locations, based on the type of server operating s
 // BURT 1378132 observation 75, March 2021 Ronya
 // Removed Mac OS bullet
 
+
 === Workaround if you already upgraded before clearing the cache
 
 . Log in to the SnapCenter VMware plug-in management GUI.
