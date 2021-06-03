@@ -107,8 +107,8 @@ Never: Do not send notification
 * By default, this feature is disabled.
 * The default Snapshot copy names use the format `<ResourceGroup>_<Date-TimeStamp>`
 However, you can specify a custom format using the variables $ResourceGroup, $Policy, $HostName, $ScheduleType, and $CustomText. Use the drop-down list in the custom name field to select which variables you want to use and the order in which they are used.
-If you select $CustomText, the name format is `<CustomName>_<Date-TimeStamp>`. Enter the custom text in the additional box that is provided. NOTE: If you also select the “_recent” suffix, you must make sure that the custom Snapshot names will be unique in the datastore.
-// Burt 1371168  Feb 2021 Ronya
+If you select $CustomText, the name format is `<CustomName>_<Date-TimeStamp>`. Enter the custom text in the additional box that is provided. NOTE: If you also select the “_recent” suffix, you must make sure that the custom Snapshot names will be unique in the datastore, therefore, you should add the $ResourceGroup and $Policy variables to the name.
+// Burt 1371168  June 2021 Ronya
 * Special characters
 For special characters in names, follow the same guidelines given for the Name field.
 |===
@@ -146,6 +146,8 @@ In Linked Mode, the list includes policies in all the linked vCenters. You must 
 . On the *Schedules* page, configure the backup schedule for each selected policy.
 +
 image:scpivs44_image18.png[Error: Missing Graphic Image]
++
+In the starting hour field, enter a time other than zero.
 +
 You must fill in each field. The SnapCenter VMware plug-in creates schedules in the time zone in which the SnapCenter VMware plug-in is deployed. You can modify the time zone by using the SnapCenter Plug-in for VMware vSphere GUI.
 +
