@@ -132,6 +132,8 @@ By default, the maintenance console username is set to “maint” and the passw
 If the SnapCenter VMware plug-in is not enabled, then see link:scpivs44_restart_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere web client service].
 // BURT 1378132 observation 10, March 2021 Ronya
 +
+If the host name is 'UnifiedVSC/SCV, then restart the appliance. If restarting the appliance does not change the host name to the specified host name, then you must reinstall the appliance.
+
 .After you finish
 +
-You should complete the required scpivs44_post_deployment_required_operations_and_issues.html[post deployment operations] post deployment operations.
+You should complete the required link:scpivs44_post_deployment_required_operations_and_issues.html[post deployment operations] post deployment operations.
