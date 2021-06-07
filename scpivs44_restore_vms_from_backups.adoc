@@ -62,7 +62,7 @@ You must have created a backup of the VM using the SnapCenter VMware plug-in bef
 +
 The VM that you want to restore must not be in a state of vMotion or Storage vMotion.
 
-* Ensure there are no HA configuration errors before restoring backups to a different location.
+* Ensure there are no HA configuration errors displayed on the vCenter screen before restoring backups to a different location.
 
 .About this task
 
