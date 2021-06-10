@@ -12,21 +12,27 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
 // This file was created with NDAC Version 2.0 (August 17, 2020)
-//
 // 2020-09-09 12:24:23.855703
-//
 
 [.lead]
 You can mount a datastore from a backup if you want to access files in the backup. You can either mount the backup to the same ESXi host where the backup was created or to an alternate ESXi host that has the same type of VM and host configurations. You can mount a datastore multiple times on a host.
 
 .Before you begin
 
-* If you want to mount to an alternate ESXi host, you must ensure that the alternate ESXi host can connect to the storage and has the following:
+* Ensure alternate ESXi host can connect to the storage
++
+If you want to mount to an alternate ESXi host, you must ensure that the alternate ESXi host can connect to the storage and has the following:
 ** Same UID and GID as that of the original host
 ** Same virtual appliance for SnapCenter Plug-in for VMware vSphere version as that of original host
-* Because the ESXi can only discover one unique LUN per datastore, the operation will fail if it finds more than one. This can occur if you start a mount operation before a previous mount operation has finished, or if you manually clone LUNs, or if clones are not deleted from storage during an unmount operation. To avoid discovery of multiple clones, you should clean up all stale LUNs on the storage.
+
+* Map storage initiators to ESXi
++
+Ensure that the initiators for the storage system are mapped to the ESXi.
+
+* Clean up stale LUNs
++
+Because the ESXi can only discover one unique LUN per datastore, the operation will fail if it finds more than one. This can occur if you start a mount operation before a previous mount operation has finished, or if you manually clone LUNs, or if clones are not deleted from storage during an unmount operation. To avoid discovery of multiple clones, you should clean up all stale LUNs on the storage.
 
 .About this task
 

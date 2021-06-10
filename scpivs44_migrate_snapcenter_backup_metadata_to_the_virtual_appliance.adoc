@@ -52,6 +52,8 @@ For an overview of the migration workflow, see link:scpivs44_migration_overview.
 [IMPORTANT]
 The optional `-Overwrite` parameter enables faster migration for large environments. This parameter overwrites data in the MySQL database on the SnapCenter Plug-in for VMware vSphere host.
 Do not use the `-Overwrite` parameter more than once. If your migration was a partial migration, using the `-Overwrite` parameter again might overwrite existing migrated data.
+If you run `invoke-SCVOVAMigration` more than once without the `-Overwrite` parameter, previously migrated data will be duplicated.
+// BURT 1401267 June 2021 Ronya
 +
 [NOTE]
 Use the ScheduleOffsetTime parameter if the source SnapCenter host and the destination SnapCenter VMware virtual appliance host are in different time zones. The value can be a positive or negative time offset to adjust scheduled backup run times. Specify the time difference in the format hh: mm:ss; for example, 06:00:00, or -06:00:00 for a negative value.

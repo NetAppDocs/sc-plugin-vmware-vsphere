@@ -36,33 +36,33 @@ Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore VMs to t
 ** To a different datastore mounted on a different ESXi host that is managed by a different vCenter in linked mode
 
 [NOTE]
-When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the vCenter that is the destination for the restore operation. The destination datastore must have sufficient space.
-//
-//Burt 1382316 March 2021 Ronya
-//
-
-[NOTE]
-Restore operations cannot finish successfully if there are Snapshot copies of the VM that were performed by software other than the SnapCenter Plug-in for VMware vSphere.
-[NOTE]
 The following restore workflow is not supported: Add a storage VM, then perform a backup of that VM, then delete the storage VM and add a cluster that includes that same storage VM, and then attempt to restore the original backup.
 
 [TIP]
 For improved performance of restore operations in NFS environments, enable the VMware application vStorage API for Array Integration (VAAI).
-//
 //Burt 1377556 Mar2021 Ronya
-//
 
 .Before you begin
 
 * A backup must exist.
 +
 You must have created a backup of the VM using the SnapCenter VMware plug-in before you can restore the VM.
++
+[NOTE]
+Restore operations cannot finish successfully if there are Snapshot copies of the VM that were performed by software other than the SnapCenter Plug-in for VMware vSphere.
 
 * The VM must not be in transit.
 +
 The VM that you want to restore must not be in a state of vMotion or Storage vMotion.
 
-* Ensure there are no HA configuration errors displayed on the vCenter ESXi Host Summary screen before restoring backups to a different location.
+* HA configuration errors
++
+Ensure there are no HA configuration errors displayed on the vCenter ESXi Host Summary screen before restoring backups to a different location.
+
+* Restoring to a different locations
++
+When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the vCenter that is the destination for the restore operation. The destination datastore must have sufficient space.
+//Burt 1382316 March 2021 Ronya
 
 .About this task
 
@@ -114,4 +114,10 @@ Refresh the screen to display updated information.
 
 .After you finish
 
+* Change IP address
++
+If you restored to a different location, then you must change the IP address of the newly created VM to avoid an IP address conflict when static IP addresses are configured.
+
+* Add restored VMs to resource groups
++
 Although the VMs are restored, they are not automatically added to their former resource groups. Therefore, you must manually add the restored VMs to the appropriate resource groups.
