@@ -33,16 +33,13 @@ There are four basic steps:
 
 .Steps
 
-. Download the upgrade .`iso` file.
+. Download the SnapCenter Plug-in for VMware vSphere `.ova` file.
 .. Log in to the NetApp Support Site (https://mysupport.netapp.com/products/index.html[https://mysupport.netapp.com/products/index.html^]).
 .. From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *DOWNLOAD LATEST RELEASE* button.
-.. Download the SnapCenter Plug-in for VMware vSphere upgrade .`iso` file to any VM.
+.. Download the `.ova` file to any VM.
 . Suspend backup jobs.
 +
-In the SnapCenter GUI, suspend all jobs for the Windows-based SnapCenter Plug-in for VMware vSphere.
-+
-link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#disable-and-enable-snapcenter-plug-in-for-vmware-vsphere[Disable and enable SnapCenter Plug-in for VMware vSphere]
-
+Make sure that no backup jobs are running in the Windows-based SnapCenter Plug-in for VMware vSphere.
 . Deploy the SnapCenter Plug-in for VMware vSphere OVA.
 +
 Because this is a new installation of the Linux-based SnapCenter VMware plug-in, follow the steps for deploying the OVA.

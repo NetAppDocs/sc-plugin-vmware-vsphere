@@ -27,7 +27,7 @@ Use the VMware vSphere web client to add storage.
 
 * Large LUNs
 +
-SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 64 TB on ASA aggregates. For large LUNs, SnapCenter only supports thick provisioned LUNs to avoid latency.
+SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter only supports thick provisioned LUNs to avoid latency.
 
 .Before you begin
 

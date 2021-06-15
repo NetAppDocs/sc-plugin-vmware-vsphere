@@ -25,14 +25,14 @@ In SnapCenter Plug-in for VMware vSphere 4.4 and earlier, you can  restore VMs o
 
 Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore VMs to the following locations:
 
+* Restore to original location
+
 ** To the original datastore mounted on the original ESXi host (this overwrites the original VM)
-+
-** To a different datastore mounted on the original ESXi host
-+
+
+* Restore to alternate location
 ** To the original datastore mounted on a different ESXi host that is managed by the same vCenter
-+
+** To a different datastore mounted on the original ESXi host
 ** To a different datastore mounted on a different ESXi host that is managed by the same vCenter
-+
 ** To a different datastore mounted on a different ESXi host that is managed by a different vCenter in linked mode
 
 [NOTE]
@@ -104,7 +104,7 @@ When restoring partial backups, the restore operation skips the *Select Scope* p
 
 . On the *Select Location* page, select the location for the restored datastore.
 +
-In SnapCenter Plug-in for VMware vSphere 4.5 and later, you can select primary or secondary storage.
+In SnapCenter Plug-in for VMware vSphere 4.5 and later, you can select secondary storage for FlexGroup volumes.
 
 
 . Review the Summary page and then click *Finish*.
