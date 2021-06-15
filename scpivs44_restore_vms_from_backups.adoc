@@ -41,10 +41,6 @@ running in the linked vCenter that is the destination for the restore operation.
 datastore must have sufficient space.
 
 [NOTE]
-Restore operations cannot finish successfully if there are Snapshot copies of the VM that
-were performed by software other than the SnapCenter Plug-in for VMware vSphere.
-
-[NOTE]
 The following restore workflow is not supported: Add a storage VM, then perform a backup of that VM, then delete the storage VM and add a cluster that includes that same storage VM, and then attempt to restore the original backup.
 
 [TIP]
