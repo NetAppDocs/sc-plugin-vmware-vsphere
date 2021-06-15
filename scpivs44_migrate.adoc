@@ -45,4 +45,4 @@ You can only migrate metadata for existing backups. For example, if you do not h
 
 == Supported migration paths
 
-See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade and migration paths.
+See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877232[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade and migration paths.

@@ -17,7 +17,7 @@ If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, yo
 
 == Supported upgrade paths
 
-See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes] for information on supported upgrade and migration paths.
+See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877232[SnapCenter Plug-in for VMware vSphere Release Notes] for information on supported upgrade and migration paths.
 
 == Upgrade from an earlier release of SnapCenter Plug-in for VMware vSphere
 

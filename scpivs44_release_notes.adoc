@@ -22,4 +22,4 @@ Release notes provides important information about this release of SnapCenter Pl
 For more information, see:
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere 4.4 Release Notes^]
-* SnapCenter Plug-in for VMware vSphere 4.5 Release Notes
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2877232[SnapCenter Plug-in for VMware vSphere 4.5 Release Notes^]
