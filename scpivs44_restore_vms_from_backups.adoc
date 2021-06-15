@@ -36,9 +36,7 @@ Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore VMs to t
 ** To a different datastore mounted on a different ESXi host that is managed by a different vCenter in linked mode
 
 [NOTE]
-When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be
-running in the linked vCenter that is the destination for the restore operation. The destination
-datastore must have sufficient space.
+When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the linked vCenter that is the destination for the restore operation. The destination datastore must have sufficient space.
 
 [NOTE]
 The following restore workflow is not supported: Add a storage VM, then perform a backup of that VM, then delete the storage VM and add a cluster that includes that same storage VM, and then attempt to restore the original backup.
