@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_@open_virtual_appliance@.html
+permalink: scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html
 keywords:
 summary:
 ---
