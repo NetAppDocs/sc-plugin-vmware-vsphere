@@ -48,7 +48,7 @@ entries:
       - title: Overview
         url: /scpivs44_quick_start_overview.html
       - title: Download the OVA (Open Virtual Appliance)
-        url: /scpivs44_download_the_ova_@open_virtual_appliance@.html
+        url: /scpivs44_download_the_ova_open_virtual_appliance.html
       - title: Deploy SnapCenter Plug-in for VMware vSphere
         url: /scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html
       - title: Add storage
