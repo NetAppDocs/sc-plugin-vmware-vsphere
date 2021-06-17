@@ -32,7 +32,7 @@ You must create backup policies before you use the SnapCenter Plug-in for VMware
 +
 To correct this issue, configure the SnapMirror retention policy for the secondary storage to avoid reaching the maximum limit of Snapshot copies.
 +
-For information about how administrators assign resources to users, see the http://docs.netapp.com/ocsc-44/index.jsp[SnapCenter information on using role-based access control^].
+For information about how administrators assign resources to users, see the https://docs.netapp.com/us-en/snapcenter_sc45_releasebranch/concept/concept_snapcenter_role_based_access_control_rbac.html[SnapCenter information on using role-based access control^].
 
 * If you want VM consistent backups, you must have VMware Tools installed and running. VMware Tools is needed to quiesce VMs.
 
