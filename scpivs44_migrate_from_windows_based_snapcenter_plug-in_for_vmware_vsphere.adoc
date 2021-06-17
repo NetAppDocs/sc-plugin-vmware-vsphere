@@ -26,7 +26,7 @@ If you are using the Windows-based SnapCenter VMware plug-in and want to use the
 
 There are four basic steps:
 
-. Download the upgrade .`iso` file.
+. Download the SnapCenter Plug-in for VMware vSphere `.ova` file.
 . Suspend backup jobs for the Windows-based SnapCenter VMware plug-in.
 . Deploy the SnapCenter Plug-in for VMware vSphere OVA.
 . Migrate the Windows-based VMware backup metadata.

@@ -39,10 +39,9 @@ To back up multiple resources, you must create a resource group that contains mu
 
 * Resource groups that contain FlexGroup volumes in MetroCluster environments
 +
-After a switchover, you must restart the SnapCenter VMware plug-in service and resynchronize the SnapMirror relationships before you backup resource groups in MetroCluster environments.
+If you are running on ONTAP 9.8 or ONTAP 9.9, then after a switchover or switchback, you must restart the SnapCenter VMware plug-in service and resynchronize the SnapMirror relationships before you back up resource groups in MetroCluster environments.
 +
-If you are running ONTAP 9.8, then after a switchback, you must restart the SnapCenter VMware plug-in service and resynchronize the SnapMirror relationships before you backup resource groups in MetroCluster environments. This issue is fixed in ONTAP 9.9.
-// Burt 1367521  Feb 2021  SCV 4.5  and Vrishali comment Ronya
+In ONTAP 9.8, the backups hang after the switchback, this issue is fixed in ONTAP 9.9
 * Optimizing Snapshot copies
 +
 To optimize Snapshot copies, you should group the VMs and datastores that are associated with the same volume into one resource group.

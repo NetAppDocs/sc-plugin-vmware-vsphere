@@ -30,8 +30,8 @@ Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore VMs to t
 ** To the original datastore mounted on the original ESXi host (this overwrites the original VM)
 
 * Restore to alternate location
-** To the original datastore mounted on a different ESXi host that is managed by the same vCenter
 ** To a different datastore mounted on the original ESXi host
+** To the original datastore mounted on a different ESXi host that is managed by the same vCenter
 ** To a different datastore mounted on a different ESXi host that is managed by the same vCenter
 ** To a different datastore mounted on a different ESXi host that is managed by a different vCenter in linked mode
 
