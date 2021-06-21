@@ -5,20 +5,23 @@ keywords:
 summary:
 ---
 
-= REST API workflows to modify built-in schedules
+= REST API workflow to modify built-in schedules
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-//
-
 [.lead]
 To modify built-in schedules for VMware vSphere web client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
 
-Built-in schedules are the schedules that are provided as part of the product; for example, the MySQL database dump schedule.
+Built-in schedules are the schedules that are provided as part of the product; for example, the MySQL database dump schedule. You can modify the following schedules:
+`Schedule-DatabaseDump`
+`Schedule-PurgeBackups`
+`Schedule-AsupDataCollection`
+`Schedule-ComputeStorageSaving`
+`Schedule-PurgeJobs`
+// BURT 1337715, April 2021 Ronya
 
 For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 

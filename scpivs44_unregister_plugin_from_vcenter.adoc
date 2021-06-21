@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: scpivs44_unregister_plugin_from_vcenter.html
+keywords:
+summary:
+---
+
+= Unregister SnapCenter Plug-in for VMware vSphere from vCenter
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+// BURT 1378132 observation 58, March 2021 Ronya
+If you stop the SnapCenter VMware plug-in service in a vCenter that is in Linked Mode, resource groups are not available in all the linked vCenters, even when the SnapCenter VMware plug-in service is running in the other linked vCenters.
+
+You must unregister the SnapCenter VMware plug-in extensions manually.
+
+.Steps
+
+. On the linked vCenter that has the SnapCenter VMware plug-in service stopped, navigate to the Managed Object Reference (MOB) manager.
+. In the Properties option, select *content* in the Value column, then in the next screen select *ExtensionManager* in the Value column to display a list of the registered extensions.
+. Unregister the extensions `com.netapp.scvm.webclient` and `com.netapp.aegis`.

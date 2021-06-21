@@ -32,7 +32,7 @@ You must create backup policies before you use the SnapCenter Plug-in for VMware
 +
 To correct this issue, configure the SnapMirror retention policy for the secondary storage to avoid reaching the maximum limit of Snapshot copies.
 +
-For information about how administrators assign resources to users, see the http://docs.netapp.com/ocsc-43/index.jsp[SnapCenter Administration Guide^].
+For information about how administrators assign resources to users, see the https://docs.netapp.com/us-en/snapcenter_sc45_releasebranch/concept/concept_snapcenter_role_based_access_control_rbac.html[SnapCenter information on using role-based access control^].
 
 * If you want VM consistent backups, you must have VMware Tools installed and running. VMware Tools is needed to quiesce VMs.
 
@@ -54,6 +54,7 @@ image:scpivs44_image15.png[Error: Missing Graphic Image]
 In linked mode, each vCenter has a separate virtual appliance. Therefore, you can use duplicate names across vCenters. However, you must create the policy in the same vCenter as the resource group.
 
 * Unsupported characters
+//Updated for BURT 1378132 observation 22, March 2021 Madhulika
 +
 Do not use the following special characters in VM, datastore, cluster, policy, backup, or resource group names: % & * $ # @ ! \ / : * ? " < > - | ; ' , .
 +
@@ -63,6 +64,8 @@ An underscore character (_) is allowed.
 +
 [IMPORTANT]
 You should set the retention count to 2 backups or higher if you plan to enable SnapVault replication. If you set the retention count to 1 backup to keep, the retention operation can fail. This is because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until the newer Snapshot copy is replicated to the target.
+
+//Updated for BURT 1378132 observation 23, March 2021 Madhulika
 +
 [NOTE]
 The maximum retention value is 1018 backups for resources on ONTAP 9.4 or later, and 254 backups for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports. This is also true for spanning datastores. If a spanning datastore includes resources on both ONTAP 9.3 and earlier and on ONTAP 9.4 and later, make sure you set the retention value below 254.
@@ -80,9 +83,12 @@ The policy specifies the backup frequency only. The specific protection schedule
 
 |Select this option to create mirror copies of backup sets on another volume that has a SnapMirror relationship to the primary backup volume.
 If a volume is configured with a mirror-vault relationship, you must select only the *Update SnapVault after backup* option if you want backups copied to the mirror-vault destinations.
+// BURT 1378132 observation 3, March 2021 Ronya
+*Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.
 |Update SnapVault after backup
 |Select this option to perform disk-to-disk backup replication on another volume that has a SnapVault relationship to the primary backup volume.
 *Important:* If a volume is configured with a mirror-vault relationship, you must select only this option if you want backups copied to the mirror-vault destinations.
+*Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.
 |Snapshot label
 |Enter an optional, custom label to be added to SnapVault and SnapMirror Snapshot copies created with this policy.
 The Snapshot label helps to distinguish Snapshots created with this policy from other Snapshots on the secondary storage system.
@@ -98,6 +104,8 @@ The Snapshot label helps to distinguish Snapshots created with this policy from 
 |Check this box to quiesce the VMs and create a VMware snapshot each time the backup job runs.
 *Important:* You must have VMware Tools running on the VM to perform VM consistent backups. If VMware Tools is not running, a crash-consistent backup is performed instead.
 *Note:* When you check the VM consistency box, backup operations might take longer and require more storage space. In this scenario, the VMs are first quiesced, then VMware performs a VM consistent snapshot, then SnapCenter performs its backup operation, and then VM operations are resumed.
+VM guest memory is not included in VM consistency Snapshots.
+// Ranjith Kumar email 1April2021  Ronya
 |Include datastores with
 independent disks
 |Check this box to include in the backup any datastores with independent disks that contain temporary data.

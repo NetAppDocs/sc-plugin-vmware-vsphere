@@ -63,7 +63,7 @@ Creating backups with VM consistency
 +
 Restoring a complete VM when one or more VMDKs are on a VMFS datastore.
 
-* For a detailed list of the SnapCenter VMware plug-in limitations, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358[SnapCenter Plug-in for VMware vSphere Release Notes^].
+* For a detailed list of the SnapCenter VMware plug-in limitations, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877232[SnapCenter Plug-in for VMware vSphere Release Notes^].
 
 == License requirements
 
@@ -94,10 +94,10 @@ FlexClone: used for mount and attach operations
 |Item |Supported versions
 
 |vCenter vSphere
-|HTML5 client: 6.5U2d/U3, 6.7x, 7.0, 7.0U1
+|HTML5 client: 6.5U2/U3, 6.7x, 7.0, 7.0U1, 7.0U2
 Flex client is not supported.
 |ESXi
-|5.5, 6.0 or later
+|6.0U1 or later
 |IP addresses
 |IPv4, IPv6
 |Java
@@ -105,12 +105,15 @@ Flex client is not supported.
 |.Net Core
 |2.1
 |SnapCenter Plug-in for VMware vSphere MySQL database
-| MySQL 8.0.16
+| MySQL 8.0.23
 |VMware TLS
 |1.2
 |TLS on the SnapCenter Server
 |TLSv1.1 and later
 The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-in for application over VMDK data protection operations.
+|VMware application vStorage API for Array Integration (VAAI)
+|SnapCenter Plug-in for VMware vSphere uses this to improve performance for restore operations. It also improves performance in NFS environments.
+// Vrishali review comments  April2021 Ronya
 |===
 
 For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].

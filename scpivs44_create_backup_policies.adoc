@@ -22,3 +22,4 @@ summary:
 . On the *New Backup Policy* page, enter the policy configuration information, and then click *Add*.
 +
 If the policy will be used for mirror-vault relationships, then in the Replication field, you must select only the *Update SnapVault after backup* option if you want backups copied to the mirror-vault destinations.
+//Updated for BURT 1378132 observation 3, March 2021 Madhulika

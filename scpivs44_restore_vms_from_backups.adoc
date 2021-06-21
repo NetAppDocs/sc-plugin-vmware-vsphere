@@ -21,22 +21,51 @@ summary:
 [.lead]
 When you restore a VM, you can overwrite the existing content with the backup copy that you select or you can make a copy of the VM.
 
-You can restore VMs only to the original host and datastore.
+In SnapCenter Plug-in for VMware vSphere 4.4 and earlier, you can  restore VMs only to the original host and datastore.
+
+Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore VMs to the following locations:
+
+* Restore to original location
+
+** To the original datastore mounted on the original ESXi host (this overwrites the original VM)
+
+* Restore to alternate location
+** To a different datastore mounted on the original ESXi host
+** To the original datastore mounted on a different ESXi host that is managed by the same vCenter
+** To a different datastore mounted on a different ESXi host that is managed by the same vCenter
+** To a different datastore mounted on a different ESXi host that is managed by a different vCenter in linked mode
 
 [NOTE]
-Restore operations cannot finish successfully if there are Snapshot copies of the VM that were performed by software other than the SnapCenter Plug-in for VMware vSphere.
+When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the linked vCenter that is the destination for the restore operation. The destination datastore must have sufficient space.
+
 [NOTE]
 The following restore workflow is not supported: Add a storage VM, then perform a backup of that VM, then delete the storage VM and add a cluster that includes that same storage VM, and then attempt to restore the original backup.
+
+[TIP]
+For improved performance of restore operations in NFS environments, enable the VMware application vStorage API for Array Integration (VAAI).
+//Burt 1377556 Mar2021 Ronya
 
 .Before you begin
 
 * A backup must exist.
 +
 You must have created a backup of the VM using the SnapCenter VMware plug-in before you can restore the VM.
++
+[NOTE]
+Restore operations cannot finish successfully if there are Snapshot copies of the VM that were performed by software other than the SnapCenter Plug-in for VMware vSphere.
 
 * The VM must not be in transit.
 +
 The VM that you want to restore must not be in a state of vMotion or Storage vMotion.
+
+* HA configuration errors
++
+Ensure there are no HA configuration errors displayed on the vCenter ESXi Host Summary screen before restoring backups to a different location.
+
+* Restoring to a different locations
++
+When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the vCenter that is the destination for the restore operation. The destination datastore must have sufficient space.
+//Burt 1382316 March 2021 Ronya
 
 .About this task
 
@@ -68,9 +97,19 @@ You can search for a specific backup name or a partial backup name, or you can f
 
 . On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field, then select the restore location, and then enter the destination information where the backup should be mounted.
 +
-In the *VM name after restore* field, the default name is `<vm_name>_<counter>`.
+In the *VM name* field, if the same VM name exists, then the new VM name format is `<vm_name>_<timestamp>`.
+// Review comments from QA  Arpil2021  Ronya
++
+When restoring partial backups, the restore operation skips the *Select Scope* page.
+//
+//Burt 1371420 March 2021  Ronya
+//
 
 . On the *Select Location* page, select the location for the restored datastore.
++
+In SnapCenter Plug-in for VMware vSphere 4.5 and later, you can select secondary storage for FlexGroup volumes.
+
+
 . Review the Summary page and then click *Finish*.
 . Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the screen.
 +
@@ -78,4 +117,10 @@ Refresh the screen to display updated information.
 
 .After you finish
 
+* Change IP address
++
+If you restored to a different location, then you must change the IP address of the newly created VM to avoid an IP address conflict when static IP addresses are configured.
+
+* Add restored VMs to resource groups
++
 Although the VMs are restored, they are not automatically added to their former resource groups. Therefore, you must manually add the restored VMs to the appropriate resource groups.
