@@ -26,13 +26,8 @@ You must create backup policies before you use the SnapCenter Plug-in for VMware
 * You must have read the prerequisites.
 * You must have secondary storage relationships configured.
 ** If you are replicating Snapshot copies to a mirror or vault secondary storage, the relationships must be configured and the SnapCenter administrator must have assigned the storage VMs to you for both the source and destination volumes.
-<<<<<<< HEAD
 ** To successfully transfer Snapshot copies to secondary storage for Version-FlexibleMirror relationships on a NFS or VMFS datastore, make sure that the SnapMirror policy type is Asynchronous Mirror and that the "all_source_snapshots" option is checked.
 //Updated for BURT 1378132 observation 21, March 2021 Madhulika
-=======
-** To successfully transfer Snapshot copies to secondary storage for Version-FlexibleMirror relationships on an NFS or VMFS datastore, make sure that the SnapMirror policy type is Asynchronous Mirror and that the "all_source_snapshots" option is checked.
-// Updated for BURT 1378132 (Added VMFS datastore)
->>>>>>> main
 ** When the number of Snapshot copies on the secondary storage (mirror-vault) reaches the maximum limit, the activity to register backup and apply retention in the backup operation fails with the following error: `This Snapshot copy is currently used as a reference Snapshot copy by one or more SnapMirror relationships. Deleting the Snapshot copy can cause future SnapMirror operations to fail.`
 +
 To correct this issue, configure the SnapMirror retention policy for the secondary storage to avoid reaching the maximum limit of Snapshot copies.
@@ -69,10 +64,6 @@ An underscore character (_) is allowed.
 +
 [IMPORTANT]
 You should set the retention count to 2 backups or higher if you plan to enable SnapVault replication. If you set the retention count to 1 backup to keep, the retention operation can fail. This is because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until the newer Snapshot copy is replicated to the target.
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 //Updated for BURT 1378132 observation 23, March 2021 Madhulika
 +
 [NOTE]
@@ -94,6 +85,7 @@ If a volume is configured with a mirror-vault relationship, you must select only
 // BURT 1378132 observation 3, March 2021 Ronya
 *Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.
 |Update SnapVault after backup
+
 |Select this option to perform disk-to-disk backup replication on another volume that has a SnapVault relationship to the primary backup volume.
 *Important:* If a volume is configured with a mirror-vault relationship, you must select only this option if you want backups copied to the mirror-vault destinations.
 *Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.
