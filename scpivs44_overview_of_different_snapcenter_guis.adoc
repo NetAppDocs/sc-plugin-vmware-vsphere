@@ -59,4 +59,5 @@ Add resource access to users or groups
 
 For VM-consistent backup and restore operations, you must use the VMware vSphere web client GUI. Although it is possible to perform some operations using VMware tools, for example, mounting or renaming a datastore, those operations will not be registered in the SnapCenter repository and are not recognized.
 
+
 SnapCenter does not support single Snapshot copies of databases and VMs together. Backups for VMs and databases must be scheduled and run independently, which creates separate Snapshot copies even if the databases and VMs are hosted in the same volume. Application-based backups must be scheduled by using the SnapCenter GUI; VM-consistent backups must be scheduled by using the VMware vSphere web client GUI.
