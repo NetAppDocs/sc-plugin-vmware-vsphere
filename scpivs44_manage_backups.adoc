@@ -47,7 +47,7 @@ You cannot delete backups that are mounted. You must unmount a backup before you
 .About this task
 
 Snapshot copies on secondary storage are managed by your ONTAP retention settings, not by the SnapCenter VMware plug-in. Therefore, when you use the SnapCenter VMware plug-in to delete a backup, Snapshot copies on primary storage are deleted but Snapshot copies on secondary storage are not deleted. If a Snapshot copy still exists on secondary storage, the SnapCenter VMware plug-in retains the metadata associated with the backup to support restore requests. When the ONTAP retention process deletes the secondary Snapshot copy, then the SnapCenter VMware plug-in deletes the metadata using a purge job, which is executed at regular intervals.
-// Updated for BURT 1378132 (Updated the last sentence)
+// BURT 1378132 observation 48, March 2021 Ronya
 
 . Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
 +
@@ -58,5 +58,5 @@ image:scpivs44_image14.png[Error: Missing Graphic Image]
 You can select a maximum of 40 backups to delete.
 
 . Click *OK* to confirm the delete operation.
-// Updated for BURT 1378132 (Changed Yes to OK)
+// BURT 1378132 observation 49, March 2021 Ronya
 . Refresh the backup list by clicking the refresh icon on the left vSphere menu bar.

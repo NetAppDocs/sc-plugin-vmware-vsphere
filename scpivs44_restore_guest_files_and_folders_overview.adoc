@@ -21,7 +21,7 @@ summary:
 [.lead]
 You can restore files or folders from a virtual machine disk (VMDK) on a Windows guest OS.
 
-=== Guest restore workflow
+== Guest restore workflow
 
 Guest OS restore operations include the following steps:
 
@@ -45,7 +45,7 @@ Browse the VMDK in the Guest File Restore session and select one or more files o
 +
 Restore the selected files or folders to a specified location.
 
-=== Prerequisites for restoring guest files and folders
+== Prerequisites for restoring guest files and folders
 
 Before you restore one or more files or folders from a VMDK on a Windows guest OS, you must be aware of all the requirements.
 
@@ -82,7 +82,7 @@ You can restore files with non-alphabetic names, such as Japanese Kanji, by rest
 +
 You cannot restore files and folders from a VM that is running Linux guest OS. However, you can attach a VMDK and then manually restore the files and folders. For the latest information on supported guest OS, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
 
-=== Guest file restore limitations
+== Guest file restore limitations
 
 Before you restore a file or folder from a guest OS, you should be aware of what the feature does not support.
 

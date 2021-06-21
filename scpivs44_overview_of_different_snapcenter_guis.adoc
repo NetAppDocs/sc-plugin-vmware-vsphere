@@ -42,6 +42,7 @@ Guest file and folder restore
 |Backups of VMs and datastores that were performed by using the VMware vSphere web client GUI.
 |SnapCenter GUI
 |Backup and restore of databases and applications on VMs, including protecting databases for Microsoft SQL Server, Microsoft Exchange, and Oracle.
+// BURT 1378132 observation 78, March 2021 Ronya
 Database clone
 |Backups performed by using the SnapCenter GUI.
 |SnapCenter Plug-in for VMware vSphere management GUI
@@ -57,5 +58,6 @@ Add resource access to users or groups
 |===
 
 For VM-consistent backup and restore operations, you must use the VMware vSphere web client GUI. Although it is possible to perform some operations using VMware tools, for example, mounting or renaming a datastore, those operations will not be registered in the SnapCenter repository and are not recognized.
+
 
 SnapCenter does not support single Snapshot copies of databases and VMs together. Backups for VMs and databases must be scheduled and run independently, which creates separate Snapshot copies even if the databases and VMs are hosted in the same volume. Application-based backups must be scheduled by using the SnapCenter GUI; VM-consistent backups must be scheduled by using the VMware vSphere web client GUI.

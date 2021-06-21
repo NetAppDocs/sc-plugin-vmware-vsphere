@@ -26,7 +26,8 @@ Backup operations are performed on all the resources defined in a resource group
 You must have created a resource group with a policy attached.
 
 [IMPORTANT]
-Do not start an on-demand backup job when a job to back up the SnapCenter VMware plug-in MySQL database is already running.
+Do not start an on-demand backup job when a job to back up the SnapCenter VMware plug-in MySQL database is already running. Use the maintenance console to see the configured backup schedule for the MySQL database.
+// Burt 1378132, observation 81, March 2021 Ronya
 
 .About this task
 
@@ -38,10 +39,11 @@ In earlier releases of Virtual Storage Console (VSC), you could perform an on-de
 +
 image:scpivs44_image20.png[Error: Missing Graphic Image]
 
-. If the resource group has multiple policies configured, then in the *Backup Now* dialog box, select the policy you want to use for this backup operation, and then click *Yes*.
+. If the resource group has multiple policies configured, then in the *Backup Now* dialog box, select the policy you want to use for this backup operation.
+//Updated for BURT 1378132 observation 27, March 2021 Madhulika
 . Click *OK* to start the backup.
-. Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the window or on the dashboard Job Monitor for more details.
-
+. Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the window or on the dashboard *Job Monitor* for more details.
+//Updated for BURT 1378132 observation 28, March 2021 Madhulika
 .Result
 
-If the quiesce operation fails for any of the VMs in the backup, then the backup is marked as not VM consistent even if the policy selected has VM consistency selected. In this case, it is possible that some of the VMs were successfully quiesced.
+If the quiesce operation fails for any of the VMs in the backup, then the backup completes with a warning and is marked as not VM consistent even if the selected policy has VM consistency selected. In this case, it is possible that some of the VMs were successfully quiesced. In the job monitor, the failed VM details will show the quiesce as failed.

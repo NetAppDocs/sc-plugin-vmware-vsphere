@@ -33,6 +33,8 @@ Only one attach or restore operation can run at the same time on a VM. You canno
 [IMPORTANT]
 The guest restore feature allows you to view and restore system and hidden files and to view encrypted files. Do not attempt to overwrite an existing system file or to restore encrypted files to an encrypted folder. During the restore operation, the hidden, system, and encrypted attributes of guest files are not retained in the restored file. Viewing or browsing reserved partitions might cause an error.
 
+//Enabling VAAI does not apply to guest file restore. Vrishali
+
 .Steps
 
 . Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select *NetApp SnapCenter*, and then click *Guest File Restore*.
@@ -49,6 +51,7 @@ The guest restore feature allows you to view and restore system and hidden files
 
 |Use Guest VM
 |You want to attach the virtual disk to the VM that you right-clicked before you started the wizard, and then select the credential for the VM that you right-clicked.
+// BURT 1378132 observation 39, March 2021 Ronya
 *Note:* Credentials must already be created for the VM.
 |Use Guest File Restore proxy VM
 |You want to attach the virtual disk to a proxy VM, and then select the proxy VM.
@@ -70,7 +73,8 @@ Before you click *Finish*, you can go back to any page in the wizard and change 
 
 . Wait until the attach operation completes.
 +
-You can view the progress of the attach operation in the Guest File Restore page, or in the Dashboard job monitor, or you can wait for the email notification.
+You can view the progress of the operation in the Dashboard job monitor, or you can wait for the email notification.
+// BURT 1378132 observation 51, March 2021 Ronya
 
 . To find the files that you want to restore from the attached virtual disk, click *Menu > SnapCenter Plug-in for VMware vSphere*, then in the left Navigator pane click *Guest File Restore* and select the *Guest Configuration* tab.
 +
@@ -128,7 +132,8 @@ The files and folders to be restored are listed in the Selected File(s) table.
 
 |Restore to path
 |Enter the UNC share path to the guest where the selected files will be restored.
-For example: \\10.60.136.65\c$
+IPv4 example: `\\10.60.136.65\c$`
+IPv6 example: `\\fd20-8b1e-b255-832e--61.ipv6-literal.net\C\restore`
 |If original file(s)
 exist
 |Select the action to be taken if the file or folder to be restored already exists on the restore destination: Always overwrite or Always skip.
@@ -141,6 +146,7 @@ successful restore
 
 . Click *Restore*.
 +
-You can view the progress of the restore operation in the Dashboard job monitor or you can wait for the email notification. The time it takes for the email notification to be sent depends upon the length of time the restore operation takes to complete.
+You can view the progress of the restore operation in the Dashboard job monitor, or you can wait for the email notification. The time it takes for the email notification to be sent depends upon the length of time the restore operation takes to complete.
+// BURT 1378132 observation 51 & 52, March 2021 Ronya
 +
 The notification email contains an attachment with the output from the restore operation. If the restore operation fails, open the attachment for additional information.

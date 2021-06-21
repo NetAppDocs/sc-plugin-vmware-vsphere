@@ -19,9 +19,17 @@ summary:
 //
 
 [.lead]
-You can restore existing VMDKs, or deleted or detached VMDKs from either a primary or secondary backup.
+You can restore existing VMDKs, or deleted or detached VMDKs, from either a primary or secondary backup.
 
 You can restore one or more virtual machine disks (VMDKs) on a VM to the same datastore.
+
+[TIP]
+For improved performance of restore operations in NFS environments, enable the VMware application vStorage API for Array Integration (VAAI).
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
+//Burt 1377556 Mar2021 Ronya
 
 .Before you begin
 
@@ -47,19 +55,20 @@ The VM that you want to restore must not be in a state of vMotion or Storage vMo
 +
 You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and primary or secondary location. Click *OK* to return to the wizard.
 
-. On the *Select Scope* page, select the restore destination by clicking *Particular virtual disk* in the *Restore scope* field, and choose the relevant options shown in the following table.
+. On the *Select Scope* page, select the restore destination.
 +
 |===
-|To… |Specify the restore destination…
+|To restore to… |Specify the restore destination…
 
-|Restore to the original datastore
-|Use the default datastore.
-// Updated this step for BURT 1378132
-|Restore to an alternate datastore on the same ESXi host.
+|The original datastore
+|Select *Particular disk* from the drop-down list and then click *Next*.
+In the Datastore selection table, you can select or unselect any VMDKs.
+// BURT 1378132 observation 34, March 2021 Ronya
+|An alternate datastore in an alternate location
+// BURT 1378132 observation 35, March 2021 Ronya
 |Click the destination datastore and select a different datastore from the list.
 |===
-+
-You can unselect datastores that contain VMDKs that you do not want to restore.
+// BURT 1378132 observation 36, March 2021 Ronya
 
 . On the *Select Location* page, select the Snapshot copy that you want to restore (primary or secondary).
 . Review the Summary page and then click *Finish*.
