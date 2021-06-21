@@ -1,26 +1,18 @@
 ---
 sidebar: sidebar
-permalink: scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html
+permalink: scpivs44_upgrade_to_a_new_patch.html
 keywords:
 summary:
 ---
 
-= Information not displayed after upgrading to a new patch of the same release
+= Upgrade to a new patch of the same release of SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:28.887293
-//
-
 [.lead]
-After upgrading SnapCenter Plug-in for VMware vSphere to a new patch of the same release, recent jobs or other information might not be displayed in the Dashboard and job monitor.
-
 If you are upgrading to a new patch of the same release, you must clear the SnapCenter Plug-in for VMware vSphere cache on the vCenter Web Server and restart the server before the upgrade or registration.
 
 If the plug-in cache is not cleared, then recent jobs are not displayed in the Dashboard and job monitor in the following scenarios:
@@ -41,27 +33,18 @@ The cache is in the following locations, based on the type of server operating s
 * Windows OS
 +
 `%PROGRAMFILES%/VMware/vSphere Web Client/vc-packages/vsphere-client-serenity/ `
-// BURT 1378132 observation 75, March 2021 Ronya
-// Removed Mac OS bullet
 
-
-=== Workaround if you already upgraded before clearing the cache
-
-. Log in to the SnapCenter VMware plug-in management GUI.
+* Mac OS
 +
-The IP is displayed when you deploy the SnapCenter VMware plug-in.
+`/var/lib/vmware/vsphere-client/vsphere-client/vc-packages/vsphere-client-serenity/ `
 
-. Click *Configuration* in the left navigation pane, and then click the Service option in the *Plug-in Details* section to disable the plug-in.
-+
-The SnapCenter VMware plug-in service is disabled, and the extension is unregistered in vCenter.
+
+=== Steps for clearing the cache
 
 . Locate the `vsphere-client-serenity` folder, then locate the `com.netapp.scvm.webclient-4.2.0` folder and delete it.
 +
 The folder name changes for each release.
 
 . Restart the vCenter Server.
-
-. Log in to VMware vSphere web client.
-. Click *Configuration* in the left navigation pane, and then click the Service option in the *Plug-in Details* section to enable the plug-in.
 +
-The SnapCenter VMware plug-in service is enabled, and the extension is registered in vCenter.
+You can then upgrade the SnapCenter VMware plug-in.

@@ -40,7 +40,7 @@ You must be running vCenter 6.5 or later.
 +
 `service-control --stop vsphere-ui`
 
-. Delete all stale scvm packages on vCenter by using the following HTML5 command:
+. Delete all stale HTML5 scvm packages on vCenter by using the following shell command:
 +
 `etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/`
 +
@@ -63,14 +63,14 @@ You must be running vCenter 6.5 or later.
 
 .Steps
 
-. Navigate to `C:\Program Files\VMware\vCenter Server\bin` and run the following command to stop the web client service:
-// Updated this step for BURT 1378132
+. Navigate to `C:\Program Files\VMware\vCenter Server\bin` then run the following command to stop the web client service:
+// BURT 1378132 observation 43, March 2021 Ronya
 +
 `service-control --stop vsphere-ui`
 +
 Wait for the message `Completed Stop service request`.
 
-. Delete all stale scvm packages on vCenter by performing the following:
+. Delete all stale HTML5 scvm packages on vCenter by performing the following:
 .. Navigate to the vCenter vsphere-client-serenity/ folder:
 +
 `C:\ProgramData\VMware\vCenterServer\cfg\vsphere-ui\`

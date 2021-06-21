@@ -28,10 +28,11 @@ summary:
 The logon defaults for the SnapCenter VMware plug-in maintenance console are as follows:
 +
 Username: `maint`
-+
 Password: `admin123`
 +
 image:scpivs44_image11.png[Error: Missing Graphic Image]
 
 . From the Main Menu, enter option *4) Support and Diagnostics*.
 . From the Support and Diagnostics Menu, enter option *1) Generate support bundle*.
+
+To access the support bundle, on the Support and Diagnostics Menu enter option *2) Access Diagnostic Shell*. In the console, navigate to `/support/support/<bundle_name>.tar.gz`.

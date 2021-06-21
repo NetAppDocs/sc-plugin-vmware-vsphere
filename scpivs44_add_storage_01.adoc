@@ -19,7 +19,15 @@ summary:
 //
 
 [.lead]
-Before you can backup or restore VMs, you must add storage clusters or storage VMs by using the VMware vSphere web client. Adding storage enables the SnapCenter Plug-in for VMware vSphere to recognize and manage backup and restore operations in vCenter.
+Before you can backup or restore VMs, you must add storage clusters or storage VMs. Adding storage enables the SnapCenter Plug-in for VMware vSphere to recognize and manage backup and restore operations in vCenter.
+
+* Which GUI to use
++
+Use the VMware vSphere web client to add storage.
+
+* Large LUNs
++
+SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter only supports thick provisioned LUNs to avoid latency.
 
 .Before you begin
 
@@ -55,6 +63,7 @@ image:scpivs44_image12.png[Error: Missing Graphic Image]
 
 |Storage system
 |Enter the FQDN or IP address of a storage cluster or storage VM.
+//Updated for BURT 1378132 observation 19, March 2021 Madhulika
 The SnapCenter VMware plug-in does not support multiple storage systems with the same name on different clusters. Each storage system that is supported by SnapCenter must have a unique data LIF IP address.
 |Platform
 |Select the platform.
@@ -70,6 +79,7 @@ The SnapCenter VMware plug-in does not support multiple storage systems with the
 |Enter the number of seconds vCenter should wait before timing out the operation. The default is 60 seconds.
 |Preferred IP
 |If the storage VM has more than one management IP address, check this box and enter the IP address that you want SnapCenter to use.
+//Updated for BURT 1378132 observation 20, March 2021 Madhulika
 *Note:* Do not use square brackets ([]) when entering the IP address.
 |Log SnapCenter Server events
 to syslog

@@ -18,13 +18,17 @@ summary:
 // 2020-09-09 12:24:21.465086
 //
 
-[.lead]
-After deploying SnapCenter Plug-in for VMware vSphere, you should complete the required operations.
+== Required operations after deployment
 
-* If you are a new SnapCenter user, you must add storage VMs to SnapCenter before you can perform any data protection operations. When adding storage VMs, specify the management LIF. You can also add a cluster and specify the cluster management LIF. For information about adding storage, see link:scpivs44_add_storage_01.html[Adding storage^].
-* If you are an existing SnapCenter user, you must migrate your existing SnapCenter VM and datastore backups and metadata. For information about migrating, see link:scpivs44_migration_overview.html[Migration overview^].
+* New SnapCenter user
++
+If you are a new SnapCenter user, you must add storage VMs to SnapCenter before you can perform any data protection operations. When adding storage VMs, specify the management LIF. You can also add a cluster and specify the cluster management LIF. For information about adding storage, see link:scpivs44_add_storage_01.html[Add storage^].
 
-Your deployment might encounter the following issues:
+* Existing SnapCenter user
++
+If you are an existing SnapCenter user, you must migrate your existing SnapCenter VM and datastore backups and metadata. For information about migrating, see link:scpivs44_migrate.html#migration-options.html[Migration options^].
+
+== Deployment issues you might encounter
 
 * After deploying the virtual appliance, the *Backup Jobs* tab on the Dashboard might not load in the following scenarios:
 ** You are running IPv4 and have two IP addresses for the SnapCenter VMware vSphere host. As a result, the job request is sent to an IP address that is not recognized by the SnapCenter Server. To prevent this issue, add the IP address that you want to use, as follows:
@@ -51,7 +55,7 @@ image:scpivs44_image5.png[Error: Missing Graphic Image]
 
 . Log in to vCenter, then click *Menu* in the toolbar, and then select *SnapCenter Plug-in for VMware vSphere*.
 
-=== Manage authentication errors
+== Manage authentication errors
 
 If you do not use the Admin credentials, you might receive an authentication error after deploying SnapCenter Plug-in for VMware vSphere or after migrating. If you encounter an authentication error, you must restart the service.
 
@@ -60,7 +64,7 @@ If you do not use the Admin credentials, you might receive an authentication err
 . Log on to the SnapCenter VMware plug-in management GUI using the format `https://<appliance-IP-address>:8080`.
 . Restart the service.
 
-=== Create credentials for migrating backups
+== Create credentials for migrating backups
 
 If you are a SnapCenter customer and have VM consistent or VM crash-consistent backups, or application-consistent backups of virtualized data, you must migrate those backups to SnapCenter Plug-in for VMware vSphere. Before migrating, you must add the SnapCenter VMware plug-in credentials to SnapCenter Server.
 
@@ -88,7 +92,7 @@ If you are a SnapCenter customer and have VM consistent or VM crash-consistent b
 |Select *Linux*.
 |===
 
-=== Register SnapCenter Plug-in for VMware vSphere with SnapCenter Server
+== Register SnapCenter Plug-in for VMware vSphere with SnapCenter Server
 
 If you want to perform application-over-VMDK workflows in SnapCenter (application-based protection workflows for virtualized databases and file systems), you must register SnapCenter Plug-in for VMware vSphere with the SnapCenter Server.
 

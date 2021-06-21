@@ -12,11 +12,8 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
 // This file was created with NDAC Version 2.0 (August 17, 2020)
-//
 // 2020-09-09 12:24:23.074388
-//
 
 [.lead]
 A resource group is the container for one or more VMs or datastores that you want to protect.
@@ -25,6 +22,8 @@ Resource groups can contain any combination of VMs and datastores. Beginning wit
 
 [NOTE]
 For spanning VMs, using FlexGroup and FlexVol together is not supported.
+
+SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter uses only thick provisioned LUNs to avoid latency.
 
 .About this task
 
@@ -38,10 +37,15 @@ To back up a single resource (for example, a single VM), you must create a resou
 +
 To back up multiple resources, you must create a resource group that contains multiple resources.
 
+* Resource groups that contain FlexGroup volumes in MetroCluster environments
++
+If you are running on ONTAP 9.8 or ONTAP 9.9, then after a switchover or switchback, you must restart the SnapCenter VMware plug-in service and resynchronize the SnapMirror relationships before you back up resource groups in MetroCluster environments.
++
+In ONTAP 9.8, the backups hang after the switchback. This issue is fixed in ONTAP 9.9.
 * Optimizing Snapshot copies
 +
 To optimize Snapshot copies, you should group the VMs and datastores that are associated with the same volume into one resource group.
-
+// BURT 1378132 observation 25, March 2021 Ronya
 * Backup policies
 +
 Although it is possible to create a resource group without a backup policy, you can only perform scheduled data protection operations when at least one policy is attached to the resource group. You can use an existing policy, or you can create a new policy while creating a resource group.
@@ -97,13 +101,15 @@ Never: Do not send notification
 |Email subject
 |Enter the subject you want for the notification emails.
 |Latest Snapshot name
-|Beginning with SnapCenter Plug-in for VMware vSphere 4.4, if you want the suffix “_recent” added to the latest Snapshot copy, then check this box.
+|Beginning with SnapCenter Plug-in for VMware vSphere 4.4, if you want the suffix “_recent” added to the latest Snapshot copy, then check this box. The “_recent” suffix replaces the date and timestamp.
+*NOTE:* A `-recent` backup is created for each policy that is attached to a resource group. Therefore, a resource group with multiple policies will have multiple `-recent` backups.
 |Custom Snapshot format
 |If you want to use a custom format for the Snapshot copy names, then check this box and enter the name format.
 * By default, this feature is disabled.
-* The default Snapshot copy names use the format
-`<ResourceGroup>_<HostName>_<TimeStamp>`
-However, you can specify a custom format using the variables $ResourceGroup, $Policy, $HostName, $ScheduleType, and $CustomText. Use the drop-down list in the custom name field to select which variables you want to use and the order in which they are used. If you select $CustomText, enter the custom text in the additional box that is provided. A timestamp is automatically added to the end of the custom name format you specify.
+* The default Snapshot copy names use the format `<ResourceGroup>_<Date-TimeStamp>`
+However, you can specify a custom format using the variables $ResourceGroup, $Policy, $HostName, $ScheduleType, and $CustomText. Use the drop-down list in the custom name field to select which variables you want to use and the order in which they are used.
+If you select $CustomText, the name format is `<CustomName>_<Date-TimeStamp>`. Enter the custom text in the additional box that is provided. NOTE: If you also select the “_recent” suffix, you must make sure that the custom Snapshot names will be unique in the datastore, therefore, you should add the $ResourceGroup and $Policy variables to the name.
+// Burt 1371168  June 2021 Ronya
 * Special characters
 For special characters in names, follow the same guidelines given for the Name field.
 |===
@@ -142,9 +148,12 @@ In Linked Mode, the list includes policies in all the linked vCenters. You must 
 +
 image:scpivs44_image18.png[Error: Missing Graphic Image]
 +
+In the starting hour field, enter a time other than zero.
+// BURT 1280281 June 2021 Ronya
++
 You must fill in each field. The SnapCenter VMware plug-in creates schedules in the time zone in which the SnapCenter VMware plug-in is deployed. You can modify the time zone by using the SnapCenter Plug-in for VMware vSphere GUI.
 +
-link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#modify-the-time-zone-for-backups[Modify the time zone for backups].
+link:scpivs44_manage_your_configuration.html#modify-the-time-zones-for-backups[Modify the time zones for backups].
 
 . Review the summary, and then click *Finish*.
 +
