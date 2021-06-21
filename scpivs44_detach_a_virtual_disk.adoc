@@ -42,4 +42,4 @@ Refresh the screen to display updated information.
 .. In the left Navigator pane, right-click a VM, then select *Edit settings* in the drop-down list.
 .. In the *Edit Settings* window, expand the list for each hard disk to see the list of disk files.
 +
-The Edit Settings page lists the disks on the VM. You can expand the details for each hard disk to see the list of attached virtual disks.
+The *Edit Settings* page lists the disks on the VM. You can expand the details for each hard disk to see the list of attached virtual disks.

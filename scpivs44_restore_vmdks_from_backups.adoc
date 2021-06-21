@@ -25,6 +25,10 @@ You can restore one or more virtual machine disks (VMDKs) on a VM to the same da
 
 [TIP]
 For improved performance of restore operations in NFS environments, enable the VMware application vStorage API for Array Integration (VAAI).
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 //Burt 1377556 Mar2021 Ronya
 
 .Before you begin
