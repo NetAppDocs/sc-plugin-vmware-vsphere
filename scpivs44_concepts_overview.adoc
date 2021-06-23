@@ -62,4 +62,4 @@ For information about NFS protocols and ESXi, see the vSphere Storage documentat
 
 For information about SnapCenter data protection, see the data protection information for your SnapCenter plug-in in the http://docs.netapp.com/us-en/snapcenter/index.html[SnapCenter Documentation^].
 
-For information about supported upgrade and migration paths, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877232[SnapCenter Plug-in for VMware vSphere Release Notes^].
+For information about supported upgrade and migration paths, see the link:scpivs44_release_notes.html[SnapCenter Plug-in for VMware vSphere Release Notes^].
