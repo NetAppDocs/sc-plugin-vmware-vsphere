@@ -226,7 +226,7 @@ sidebar:
       url: /netapp_legal_notices.html
 
 homepage:
-	tiles:
+  tiles:
    - title: Get started
      links:
        - title: Release Notes
