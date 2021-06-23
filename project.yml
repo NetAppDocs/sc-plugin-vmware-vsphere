@@ -227,37 +227,37 @@ sidebar:
 
 homepage:
   tiles:
-   - title: Get started
-     links:
-       - title: Release Notes
-         url: /scpivs44_release_notes.html
-       - title: Learn about SCV
-         url: /scpivs44_concepts_overview.html
-       - title: Deployment requirements
-         url: /scpivs44_deployment_planning_and_requirements.html
-       - title: Quick start
-         url: /scpivs44_download_the_ova_open_virtual_appliance.html
-   - title: Protect VMs, VMDKs, and datastores
-     links:
-       - title: Protect your data
-         url: /scpivs44_protect_data_overview.html
-       - title: Restore from backups
-         url: /scpivs44_restore_from_backups_overview.html
-       - title: Use REST APIs
-         url: /scpivs44_rest_apis_overview.html
-       - title: Migrate from Windows-based SCV
-         url: /scpivs44_migrate.html
-   - title: More resources
-     links:
-       - title: SnapCenter Software documentation
-         url: https://docs.netapp.com/us-en/snapcenter/index.html
-       - title: Documentation for earlier versions
-         url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63240
-       - title: NetApp Knowledge Base SCV
-         url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter
-    - title: Blogs & community
+    - title: Get started
       links:
-        - title: NetApp blog SCV
-          url: https://blog.netapp.com/tag/snapcenter/
-        - title: NetApp community SCV
-          url: https://community.netapp.com/t5/forums/filteredbylabelpage/board-id/backup-and-restore-discussions/label-name/snapcenter
+        - title: Release Notes
+          url: /scpivs44_release_notes.html
+        - title: Learn about SCV
+          url: /scpivs44_concepts_overview.html
+        - title: Deployment requirements
+          url: /scpivs44_deployment_planning_and_requirements.html
+        - title: Quick start
+          url: /scpivs44_download_the_ova_open_virtual_appliance.html
+    - title: Protect VMs, VMDKs, and datastores
+      links:
+        - title: Protect your data
+          url: /scpivs44_protect_data_overview.html
+        - title: Restore from backups
+          url: /scpivs44_restore_from_backups_overview.html
+        - title: Use REST APIs
+          url: /scpivs44_rest_apis_overview.html
+        - title: Migrate from Windows-based SCV
+          url: /scpivs44_migrate.html
+    - title: More resources
+      links:
+        - title: SnapCenter Software documentation
+          url: https://docs.netapp.com/us-en/snapcenter/index.html
+        - title: Documentation for earlier versions
+          url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63240
+        - title: NetApp Knowledge Base SCV
+          url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter
+     - title: Blogs & community
+       links:
+         - title: NetApp blog SCV
+           url: https://blog.netapp.com/tag/snapcenter/
+         - title: NetApp community SCV
+           url: https://community.netapp.com/t5/forums/filteredbylabelpage/board-id/backup-and-restore-discussions/label-name/snapcenter
