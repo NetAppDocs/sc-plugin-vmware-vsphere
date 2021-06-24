@@ -32,15 +32,15 @@ The cache is in the following locations, based on the type of server operating s
 
 * vCenter Server for Windows
 +
-`C:\ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity\ `
+`C:\ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity\`
 
 * vCenter Server Linux Appliance
 +
-`/etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity/ `
+`/etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity/`
 
 * Windows OS
 +
-`%PROGRAMFILES%/VMware/vSphere Web Client/vc-packages/vsphere-client-serenity/ `
+`%PROGRAMFILES%/VMware/vSphere Web Client/vc-packages/vsphere-client-serenity/`
 // BURT 1378132 observation 75, March 2021 Ronya
 // Removed Mac OS bullet
 
