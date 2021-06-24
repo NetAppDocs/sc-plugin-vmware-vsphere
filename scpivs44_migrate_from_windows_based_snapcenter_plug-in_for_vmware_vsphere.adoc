@@ -20,7 +20,7 @@ If you are using the Windows-based SnapCenter VMware plug-in and want to use the
 * Your backups of virtualized databases and filesystems must be integrated with SnapCenter.
 
 * If the SnapCenter server is a VM, then it is a best practice to take a VMware-based snapshot before upgrading.
-* Make sure the SnapCenter server is upgraded. See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877232[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade paths.
+* Make sure the SnapCenter server is upgraded. See the link:scpivs44_release_notes.html[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade paths.
 
 .About this task
 

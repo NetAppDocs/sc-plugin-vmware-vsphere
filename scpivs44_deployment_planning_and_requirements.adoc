@@ -63,7 +63,7 @@ Creating backups with VM consistency
 +
 Restoring a complete VM when one or more VMDKs are on a VMFS datastore.
 
-* For a detailed list of the SnapCenter VMware plug-in limitations, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2877232[SnapCenter Plug-in for VMware vSphere Release Notes^].
+* For a detailed list of the SnapCenter VMware plug-in limitations, see the link:scpivs44_release_notes.html[SnapCenter Plug-in for VMware vSphere Release Notes^].
 
 == License requirements
 
