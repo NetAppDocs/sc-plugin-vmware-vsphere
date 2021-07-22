@@ -1,3 +1,4 @@
+---
 sidebar: sidebar
 permalink: scpivs44_attach_vmdks_to_a_vm.html
 keywords:
@@ -18,11 +19,7 @@ summary:
 //
 
 [.lead]
-<<<<<<< HEAD
-You can attach one or more VMDKs from a backup to the parent VM, or to an alternate VM on the same ESXi host, or to an alternate VM on an alternate ESXi host managed by the same vCenter or a different vCenter in linked mode. 
-=======
 You can attach one or more VMDKs from a backup to the parent VM, or to an alternate VM on the same ESXi host, or to an alternate VM on an alternate ESXi host managed by the same vCenter or a different vCenter in linked mode.
->>>>>>> main
 
 This makes it easier to restore one or more individual files from a drive instead of restoring the entire drive. You can detach the VMDK after you have restored or accessed the files you need.
 
