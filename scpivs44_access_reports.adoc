@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_access_reports.html
 keywords:
-summary:
+summary: 'You can request reports for one or more jobs from the dashboard.'
 ---
 
 = Access reports
