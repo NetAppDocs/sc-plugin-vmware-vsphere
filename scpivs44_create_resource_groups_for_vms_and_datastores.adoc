@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_create_resource_groups_for_vms_and_datastores.html
 keywords:
-summary:
+summary: 'A resource group is the container for one or more VMs or datastores that you want to protect.'
 ---
 
 = Create resource groups for VMs and datastores

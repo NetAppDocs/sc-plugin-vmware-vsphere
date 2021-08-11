@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_add_storage_01.html
 keywords:
-summary:
+summary: 'Adding storage enables the SnapCenter Plug-in for VMware vSphere to recognize and manage backup and restore operations in vCenter.'
 ---
 
 = Add storage

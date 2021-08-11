@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_customize_your_configuration.html
 keywords:
-summary:
+summary: 'To improve operational efficiency, you can modify the scbr.override configuration file to change default values. These values control settings such as the number of VMware snapshots that are created or deleted during a backup or the amount of time before a backup script stops running.'
 ---
 
 = Customize your configuration

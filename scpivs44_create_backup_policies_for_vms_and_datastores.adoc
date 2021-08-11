@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_create_backup_policies_for_vms_and_datastores.html
 keywords:
-summary:
+summary: 'You must create backup policies before you use the SnapCenter Plug-in for VMware vSphere to back up VMs and datastores.'
 ---
 
 = Create backup policies for VMs and datastores

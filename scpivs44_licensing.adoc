@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_licensing.html
 keywords:
-summary:
+summary: 'This section provides licensing information for SnapCenter Plug-in for VMware vSphere.'
 ---
 
 = Licensing

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_generate_a_support_bundle_from_the_maintenance_console.html
 keywords:
-summary:
+summary: 'You can generate a support bundle from the maintenance console.'
 ---
 
 = Generate a support bundle from the maintenance console

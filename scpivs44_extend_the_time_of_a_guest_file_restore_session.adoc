@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_extend_the_time_of_a_guest_file_restore_session.html
 keywords:
-summary:
+summary: 'By default, an attached Guest File Restore VMDK is available for 24 hours and then it is automatically detached. You can extend the time in the Guest Configuration page.'
 ---
 
 = Extend the time of a guest file restore session

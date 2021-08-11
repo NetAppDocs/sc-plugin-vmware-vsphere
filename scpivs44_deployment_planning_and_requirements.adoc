@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_deployment_planning_and_requirements.html
 keywords:
-summary:
+summary: 'You should be aware of the deployment requirements before you deploy the virtual appliance.'
 ---
 
 = Deployment planning and requirements
@@ -18,7 +18,8 @@ summary:
 // 2020-09-09 12:24:20.763592
 //
 
-You should be aware of the deployment requirements before you deploy the virtual appliance.  The deployment requirements are listed in the following four tables.
+[.lead]
+You should be aware of the deployment requirements before you deploy the virtual appliance. The deployment requirements are listed in the following four tables.
 
 == Host requirements
 
