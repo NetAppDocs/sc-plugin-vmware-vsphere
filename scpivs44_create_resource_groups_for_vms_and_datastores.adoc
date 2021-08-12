@@ -101,15 +101,20 @@ Never: Do not send notification
 |Email subject
 |Enter the subject you want for the notification emails.
 |Latest Snapshot name
-|Beginning with SnapCenter Plug-in for VMware vSphere 4.4, if you want the suffix “_recent” added to the latest Snapshot copy, then check this box. The “_recent” suffix replaces the date and timestamp.
-*NOTE:* A `-recent` backup is created for each policy that is attached to a resource group. Therefore, a resource group with multiple policies will have multiple `-recent` backups.
+a| Beginning with SnapCenter Plug-in for VMware vSphere 4.4, if you want the suffix “_recent” added to the latest Snapshot copy, then check this box. The “_recent” suffix replaces the date and timestamp.
+
+[NOTE]
+A `-recent` backup is created for each policy that is attached to a resource group. Therefore, a resource group with multiple policies will have multiple `-recent` backups.
+
 |Custom Snapshot format
-|If you want to use a custom format for the Snapshot copy names, then check this box and enter the name format.
+a| If you want to use a custom format for the Snapshot copy names, then check this box and enter the name format.
+
 * By default, this feature is disabled.
 * The default Snapshot copy names use the format `<ResourceGroup>_<Date-TimeStamp>`
 However, you can specify a custom format using the variables $ResourceGroup, $Policy, $HostName, $ScheduleType, and $CustomText. Use the drop-down list in the custom name field to select which variables you want to use and the order in which they are used.
 If you select $CustomText, the name format is `<CustomName>_<Date-TimeStamp>`. Enter the custom text in the additional box that is provided. NOTE: If you also select the “_recent” suffix, you must make sure that the custom Snapshot names will be unique in the datastore, therefore, you should add the $ResourceGroup and $Policy variables to the name.
 // Burt 1371168  June 2021 Ronya
+
 * Special characters
 For special characters in names, follow the same guidelines given for the Name field.
 |===
@@ -138,8 +143,9 @@ Manually select the spanning datastores to be included
 |An existing policy
 |Select one or more policies from the list.
 |A new policy
-|1.Click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create*.
-2. Complete the New Backup Policy wizard to return to the Create Resource Group wizard.
+a|
+. Click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create*.
+. Complete the New Backup Policy wizard to return to the Create Resource Group wizard.
 |===
 +
 In Linked Mode, the list includes policies in all the linked vCenters. You must select a policy that is on the same vCenter as the resource group.

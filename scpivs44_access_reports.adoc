@@ -52,29 +52,39 @@ The Dashboard displays information on migrated backups only after backups post-m
 |Report type |Description
 
 |Backup Report
-|Displays overview data about backup jobs. Click a section/status on the graph to see a list of jobs with that status on the Reports tab.
+|Displays overview data about backup jobs. Click a section/status on the graph to see a list of jobs with that status on the *Reports* tab.
 //Updated for BURT 1378132 observation 12, March 2021 Madhulika
+
 For each job, the report lists the job ID, corresponding resource group, backup policy, start time and duration, status, and job details which includes the job name (Snapshot copy name) if the job completed, and any warning or error messages.
+
 You can download the Report table in HTML or CSV format. You can also download the Job Monitor job logs for all the jobs (not just the jobs in the report).
 Deleted backups are not included in the report.
 |Mount Report
 |Displays overview data about mount jobs. Click a section/status on the graph to see a list of jobs with that status on the Reports tab.
 //Updated for BURT 1378132 observation 12, March 2021 Madhulika
+
 For each job, the report lists the job ID, job status, job name, and job start and end times. The job name includes the Snapshot copy name.
+
 For example: `Mount Backup <snapshot-copy-name>`
+
 You can download the Report table in HTML or CSV format.
+
 You can also download the Job Monitor job logs for all the jobs (not just the jobs in the report).
 |Restore Report
 |Displays overview status information about restore jobs. Click a section/status on the graph to see a list of jobs with that status on the Reports tab.
 For each job, the report lists the job ID, job status, job name, and job start and end times. The job name includes the Snapshot copy name. For example: `Restore Backup <snapshot-copy-name>`
+
 You can download the Report table in HTML or CSV format. You can also download the Job Monitor job logs for all the jobs (not just the jobs in the report).
 |Last Protection Status of
 VMs or Datastores Report
 |Displays overview information about the protection status, during the configured number of days, for VMs and datastores managed by the SnapCenter VMware plug-in. The default is 7 days. To modify the value in the properties file, see link:scpivs44_manage_your_configuration.html#modify-configuration-default-values[Modify configuration default values].
-Click a section/status on the primary protection chart to see a list of VMs or datastores with that status on the Reports tab.
+
+Click a section/status on the primary protection chart to see a list of VMs or datastores with that status on the *Reports* tab.
 //Updated for BURT 1378132 observation 13 and 14, March 2021 Madhulika
+
 The VM or Datastores Protection Status Report for protected VMs and datastores displays the names of VMs or datastores that have been backed up during the configured number of days, the latest Snapshot copy name, and the start and end times for the latest backup run.
+
 The VM or Datastores Protection Status Report for unprotected VMs or datastores displays the names of VMs or datastores that do not have any successful backups during the configured number of days.
-You can download the Report table in HTML or CSV format. You can also download the Job Monitor job logs for all the jobs (not just the jobs in the report).
-This report is refreshed every hour when the plug-in cache is refreshed. Therefore, the report might not display VMs or datastores that were recently backed up.
+
+You can download the Report table in HTML or CSV format. You can also download the Job Monitor job logs for all the jobs (not just the jobs in the report). This report is refreshed every hour when the plug-in cache is refreshed. Therefore, the report might not display VMs or datastores that were recently backed up.
 |===

@@ -167,7 +167,8 @@ The vCenter administrator account must have the required vCenter privileges, as 
 |Deploy and register the SnapCenter Plug-in for VMware vSphere in vCenter
 |Extension: Register extension
 |Upgrade or remove the SnapCenter Plug-in for VMware vSphere
-|Extension
+a| Extension
+
 * Update extension
 * Unregister extension
 |Allow the vCenter Credential user account registered in SnapCenter to validate user access to the SnapCenter Plug-in for VMware vSphere
