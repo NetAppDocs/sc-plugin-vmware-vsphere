@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_restore_vmdks_from_backups.html
 keywords:
-summary:
+summary: 'You can restore existing VMDKs, or deleted or detached VMDKs, from either a primary or secondary backup.'
 ---
 
 = Restore VMDKs from backups

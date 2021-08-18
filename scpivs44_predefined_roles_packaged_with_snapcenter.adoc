@@ -2,14 +2,14 @@
 sidebar: sidebar
 permalink: scpivs44_predefined_roles_packaged_with_snapcenter.html
 keywords:
-summary:
+summary: 'To simplify working with vCenter Server RBAC, the SnapCenter VMware plug-in provides a set of predefined roles that enable users to perform SnapCenter tasks. There is also a read-only role that allows users to view SnapCenter information, but not perform any tasks.'
 ---
 
 = Predefined roles packaged with SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font
-:linkattrs:
+:linkattrs: 
 :imagesdir: ./media/
 
 //
@@ -18,7 +18,7 @@ summary:
 // 2020-09-09 12:24:20.235275
 //
 
-
+[.lead]
 To simplify working with vCenter Server RBAC, the SnapCenter VMware plug-in provides a set of predefined roles that enable users to perform SnapCenter tasks. There is also a read-only role that allows users to view SnapCenter information, but not perform any tasks.
 
 The predefined roles have both the required SnapCenter-specific privileges and the native vCenter Server privileges to ensure that tasks complete correctly. In addition, the roles are set up to have the necessary privileges across all supported versions of vCenter Server.

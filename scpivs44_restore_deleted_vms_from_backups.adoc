@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_restore_deleted_vms_from_backups.html
 keywords:
-summary:
+summary: 'You can restore a deleted VM from a datastore primary or secondary backup to an ESXi host that you select.'
 ---
 
 = Restore deleted VMs from backups

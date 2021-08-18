@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_restore_guest_files_and_folders_from_vmdks.html
 keywords:
-summary:
+summary: 'You can restore one or more files or folders from a VMDK on a Windows guest OS.'
 ---
 
 = Restore guest files and folders from VMDKs

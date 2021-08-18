@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_migration_overview.html
 keywords:
-summary:
+summary: 'The migration command migrates metadata from SnapCenter 4.0 and later only. If you are using an earlier version of SnapCenter then you must first upgrade before you can migrate.'
 ---
 
 = Migration overview
