@@ -45,10 +45,12 @@ Pass the *backupId* from Step 2 and the *moref* from Step 1.
 Note the *vmdkLocationsList* information.
 |4
 |`/4.1/vm/{moref}/attachvmdks`
-|`Attach VMDKs` attaches the specified VMDK to the original VM.
+a|`Attach VMDKs` attaches the specified VMDK to the original VM.
 Pass the *backupId* from Step 2 and the *moref* from Step 1.
 Pass the *vmdkLocationsList* from Step 3 to the *vmdkLocations* attribute.
-*Note:* To attach a VMDK to a different VM, pass the moref of the target VM in the alternateVmMoref attribute.
+
+[NOTE] 
+To attach a VMDK to a different VM, pass the moref of the target VM in the alternateVmMoref attribute.
 |===
 
 To detach VMDKs, follow this workflow:

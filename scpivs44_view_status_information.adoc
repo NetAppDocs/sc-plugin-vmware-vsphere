@@ -33,14 +33,15 @@ image:scpivs44_image7.png[Error: Missing Graphic Image]
 
 a|Recent job activities
 a|The three to five most recent backup, restore, and mount jobs.
+
 * Click on a job ID to see more details about that job.
 * Click *See all* to go to the Job Monitor tab for more details on all jobs.
 a|Jobs
 a|A count of each job type (backup, restore, and mount) performed within the selected time window.
 Hover the cursor over a section of the chart to see more details for that category.
 a|Latest Protection Summary
-a|
-Summaries of the data protection status of primary and secondary VMs or datastores within the selected time window.
+a|Summaries of the data protection status of primary and secondary VMs or datastores within the selected time window.
+
 * Click the drop-down menu to select *VMs* or *Datastores*.
 * For secondary storage, select *SnapVault* or *SnapMirror*.
 * Hover the cursor over a section of a chart to see the count of VMs or Datastores in that category. In the Successful category, the most recent backup is listed for each resource.
@@ -55,6 +56,7 @@ a|The total number of each type of object managed by the SnapCenter Plug-in for 
 a|Storage
 a|The total number of Snapshot copies, SnapVault, and SnapMirror Snapshot copies, generated and the amount of storage used for primary and secondary Snapshot copies. The line graph separately plots primary and secondary storage consumption on a day-by-day basis over a rolling 90-day period. Storage information is updated once every 24 hours at 12:00 A.M.
 Storage Savings is the ratio of logical capacity (Snapshot copy savings plus storage consumed) to the physical capacity of primary storage. The bar chart illustrates the storage savings.
-* Hover the cursor over a line on the chart to see detailed day-by-day results.
+
+Hover the cursor over a line on the chart to see detailed day-by-day results.
 //Updated for BURT 1378132 observation 8, March 2021 Madhulika
 |===

@@ -64,9 +64,10 @@ Note the *availableEsxHostsList* information.
 |7
 |`/4.1/vm/{moref}/backups/
 {backupId}/restorevmdks`
-|`Restore a VMDK from a backup` restores the specified VMDK from the specified backup.
+a|`Restore a VMDK from a backup` restores the specified VMDK from the specified backup.
 In the *esxHost* attribute, pass the information from *availableEsxHostsList* in Step 6.
 Pass the information from Steps 3 through 5 to the *vmdkRestoreLocations* attribute:
+
 *  In the restoreFromLocation attribute, pass the information from snapshotLocationsList in Step 3.
 *  In the vmdkToRestore attribute, pass the information from vmdkLocationsList in Step 4.
 *  In the restoreToDatastore attribute, pass the information from DatastoreNameList in Step 5.

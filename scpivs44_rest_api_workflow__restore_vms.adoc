@@ -49,8 +49,12 @@ Note the *availableEsxHostsList* information.
 |5
 |`/4.1/vm/{moref}/backups/
 {backupId}/restore`
-|`Restore a VM from a backup` restores the specified backup.
+a|`Restore a VM from a backup` restores the specified backup.
 Pass the information from Steps 3 and 4 in the *restoreLocations* attribute.
-*Note:* If the VM backup is a partial backup, set the `restartVM` parameter to "false".
-*Note:* You cannot restore a VM that is a template.
+
+[NOTE]
+If the VM backup is a partial backup, set the `restartVM` parameter to "false".
+
+[NOTE]
+You cannot restore a VM that is a template.
 |===
