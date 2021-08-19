@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_rest_api_workflows__attach_and_detach_vmdks.html
 keywords:
-summary:
+summary: 'To perform attach and detach operations for VMDKs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.'
 ---
 
 = REST API workflows to attach and detach VMDKs
@@ -45,10 +45,12 @@ Pass the *backupId* from Step 2 and the *moref* from Step 1.
 Note the *vmdkLocationsList* information.
 |4
 |`/4.1/vm/{moref}/attachvmdks`
-|`Attach VMDKs` attaches the specified VMDK to the original VM.
+a|`Attach VMDKs` attaches the specified VMDK to the original VM.
 Pass the *backupId* from Step 2 and the *moref* from Step 1.
 Pass the *vmdkLocationsList* from Step 3 to the *vmdkLocations* attribute.
-*Note:* To attach a VMDK to a different VM, pass the moref of the target VM in the alternateVmMoref attribute.
+
+[NOTE] 
+To attach a VMDK to a different VM, pass the moref of the target VM in the alternateVmMoref attribute.
 |===
 
 To detach VMDKs, follow this workflow:

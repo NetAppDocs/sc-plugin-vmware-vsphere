@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_correct_bad_gateway_errors_during_migration.html
 keywords:
-summary:
+summary: 'You might encounter a “Bad Gateway” error when you manually add files or other content to the SnapCenter Plug-in for VMware vSphere and then migrate.'
 ---
 
 = Correct “Bad Gateway” errors during migration

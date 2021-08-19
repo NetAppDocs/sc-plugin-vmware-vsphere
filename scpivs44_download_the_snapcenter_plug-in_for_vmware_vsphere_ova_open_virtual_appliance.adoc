@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html
 keywords:
-summary:
+summary: 'You can download the .ova file for SnapCenter Plug-in for VMware vSphere from the NetApp Support Site.'
 ---
 
 = Download the SnapCenter Plug-in for VMware vSphere OVA (Open Virtual Appliance)

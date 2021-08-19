@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_restore_guest_files_and_folders_from_vmdks.html
 keywords:
-summary:
+summary: 'You can restore one or more files or folders from a VMDK on a Windows guest OS.'
 ---
 
 = Restore guest files and folders from VMDKs
@@ -50,12 +50,16 @@ The guest restore feature allows you to view and restore system and hidden files
 |Select this option… |If…
 
 |Use Guest VM
-|You want to attach the virtual disk to the VM that you right-clicked before you started the wizard, and then select the credential for the VM that you right-clicked.
+a|You want to attach the virtual disk to the VM that you right-clicked before you started the wizard, and then select the credential for the VM that you right-clicked.
 // BURT 1378132 observation 39, March 2021 Ronya
-*Note:* Credentials must already be created for the VM.
+
+[NOTE]
+Credentials must already be created for the VM.
+
 |Use Guest File Restore proxy VM
-|You want to attach the virtual disk to a proxy VM, and then select the proxy VM.
-*Note:* The proxy VM must be configured before the attach and restore operation begins.
+a|You want to attach the virtual disk to a proxy VM, and then select the proxy VM.
+[NOTE] 
+The proxy VM must be configured before the attach and restore operation begins.
 |===
 +
 .. Select the *Send email notification* option.
@@ -136,8 +140,10 @@ IPv4 example: `\\10.60.136.65\c$`
 IPv6 example: `\\fd20-8b1e-b255-832e--61.ipv6-literal.net\C\restore`
 |If original file(s)
 exist
-|Select the action to be taken if the file or folder to be restored already exists on the restore destination: Always overwrite or Always skip.
-*Note:* If the folder already exists, then the contents of the folder are merged with the existing folder.
+a|Select the action to be taken if the file or folder to be restored already exists on the restore destination: Always overwrite or Always skip.
+[NOTE]
+If the folder already exists, then the contents of the folder are merged with the existing folder.
+
 |Disconnect Guest
 Session after
 successful restore

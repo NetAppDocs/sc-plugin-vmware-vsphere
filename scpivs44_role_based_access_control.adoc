@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_role_based_access_control.html
 keywords:
-summary:
+summary: 'SnapCenter Plug-in for VMware vSphere provides an additional level of RBAC for managing virtualized resources. The plug-in supports both vCenter Server RBAC and Data ONTAP RBAC.'
 ---
 
 = Role-Based Access Control (RBAC)
@@ -17,8 +17,8 @@ summary:
 //
 // 2020-09-09 12:24:20.235275
 //
-
-SnapCenter Plug-in for VMware  vSphere provides an additional level of RBAC for managing virtualized resources. The plug-in supports both vCenter Server RBAC and Data ONTAP RBAC.
+[.lead]
+SnapCenter Plug-in for VMware vSphere provides an additional level of RBAC for managing virtualized resources. The plug-in supports both vCenter Server RBAC and Data ONTAP RBAC.
 
 SnapCenter and ONTAP RBAC applies only to SnapCenter Server application-consistent (application over VMDK) jobs. If you use the SnapCenter VMware plug-in to support SnapCenter application-consistent jobs, you must assign the SnapCenterAdmin role; you cannot change the permissions of the SnapCenterAdmin role.
 

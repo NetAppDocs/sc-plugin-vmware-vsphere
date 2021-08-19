@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_manage_resource_groups.html
 keywords:
-summary:
+summary: 'You can create, modify, and delete backup resource groups, and perform backup operations on resource groups.'
 ---
 
 = Manage resource groups

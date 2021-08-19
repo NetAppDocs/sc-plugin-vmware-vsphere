@@ -194,7 +194,6 @@ sidebar:
         - title: REST API to mark stuck jobs as failed
           url: /scpivs44_rest_apis_fail_stuck_jobs.html
     - title: Upgrade
-      url: /scpivs44_upgrade.html
       entries:
         - title: Upgrade from an earlier release of SnapCenter Plug-in for VMware vSphere
           url: /scpivs44_upgrade.html
@@ -203,10 +202,9 @@ sidebar:
         - title: Information not displayed after upgrading to a new patch of the same release
           url: /scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html
     - title: Migrate
-      url: /scpivs44_migrate.html
       entries:
-        - title: Migration options
-          url: /scpivs44_migrate.html#migration-options
+        - title: Migration options and supported paths
+          url: /scpivs44_migrate.html
         - title: Migration overview
           url: /scpivs44_migration_overview.html
         - title: Prerequisites for migration

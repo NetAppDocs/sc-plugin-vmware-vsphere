@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_rest_api_workflow__restore_vms.html
 keywords:
-summary:
+summary: 'To perform restore operations for VM backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.'
 ---
 
 = REST API workflow to restore VMs
@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-To perform restore operations for VM backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls shown in the following table.
+To perform restore operations for VM backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
 
 For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 
@@ -49,8 +49,12 @@ Note the *availableEsxHostsList* information.
 |5
 |`/4.1/vm/{moref}/backups/
 {backupId}/restore`
-|`Restore a VM from a backup` restores the specified backup.
+a|`Restore a VM from a backup` restores the specified backup.
 Pass the information from Steps 3 and 4 in the *restoreLocations* attribute.
-*Note:* If the VM backup is a partial backup, set the `restartVM` parameter to "false".
-*Note:* You cannot restore a VM that is a template.
+
+[NOTE]
+If the VM backup is a partial backup, set the `restartVM` parameter to "false".
+
+[NOTE]
+You cannot restore a VM that is a template.
 |===

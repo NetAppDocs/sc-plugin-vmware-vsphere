@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_register_snapcenter_plugin_vmware_vsphere_with_snapcenter_server.html
 keywords:
-summary:
+summary: 'If you want to perform application-over-VMDK workflows in SnapCenter (application-based protection workflows for virtualized databases and file systems), you must register SnapCenter Plug-in for VMware vSphere with the SnapCenter Server.'
 ---
 
 = Register SnapCenter Plug-in for VMware vSphere with SnapCenter Server
@@ -17,7 +17,7 @@ summary:
 //
 // 2020-09-09 12:24:21.465086
 //
-
+[.lead]
 If you want to perform application-over-VMDK workflows in SnapCenter (application-based protection workflows for virtualized databases and file systems), you must register SnapCenter Plug-in for VMware vSphere with the SnapCenter Server.
 
 If you are a SnapCenter user and you upgraded to SnapCenter 4.2 and migrated your application-over-VMDK backups to SnapCenter Plug-in for VMware, the migration command automatically registers the plug-in.

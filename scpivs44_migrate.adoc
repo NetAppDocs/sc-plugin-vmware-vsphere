@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: scpivs44_migrate.html
 keywords:
-summary:
+summary: 'You use the SnapCenter Windows PowerShell cmdlets to migrate SnapCenter Plug-in for VMware vSphere metadata from the Windows-based SnapCenter Server to the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance.'
 ---
 
-= Migration options
+= Migration options and supported paths
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -21,6 +21,7 @@ summary:
 [.lead]
 You use the SnapCenter Windows PowerShell cmdlets to migrate SnapCenter Plug-in for VMware vSphere metadata from the Windows-based SnapCenter Server to the Linux-based SnapCenter Plug-in for VMware vSphere virtual appliance.
 
+== Migration options
 There are two migration options:
 
 * Migrating from SnapCenter
@@ -42,6 +43,6 @@ To migrate, you use the NetApp ToolChest: NetApp Import Utility for SnapCenter a
 +
 You can only migrate metadata for existing backups. For example, if you do not have existing backups, then you cannot migrate policies only.
 
-= Supported migration paths
+== Supported migration paths
 
 See the link:scpivs44_release_notes.html[SnapCenter Plug-in for VMware vSphere Release Notes^] for information on supported upgrade and migration paths.

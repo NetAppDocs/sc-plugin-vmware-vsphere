@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_minimum_ontap_privileges_required.html
 keywords:
-summary:
+summary: 'The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.'
 ---
 
 = Minimum ONTAP privileges required

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_manage_policies.html
 keywords:
-summary:
+summary: 'You can create, modify, view, detach, and delete backup policies for SnapCenter Plug-in for VMware vSphere. Policies are required to perform data protection operations.'
 ---
 
 = Manage policies

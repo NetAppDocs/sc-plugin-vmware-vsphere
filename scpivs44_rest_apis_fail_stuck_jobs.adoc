@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_rest_apis_fail_stuck_jobs.html
 keywords:
-summary:
+summary: 'To find job IDs for VMware vSphere web client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere.'
 ---
 
 = REST API to mark stuck jobs as failed

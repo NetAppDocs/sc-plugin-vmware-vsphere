@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_deployment_workflow_for_new_users.html
 keywords:
-summary:
+summary: 'You can use this workflow if you have not used SnapCenter before and do not have any SnapCenter backups.'
 ---
 
 = Deployment workflow for new users

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_upgrade_from_netapp_data_broker.html
 keywords:
-summary:
+summary: 'If you want to use the new features provided by SnapCenter Plug-in for VMware vSphere, you must upgrade from NetApp Data Broker 1.0.x to SnapCenter Plug-in for VMware vSphere.'
 ---
 
 = Upgrade from NetApp Data Broker
@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-If you want to use the new features provided by SnapCenter Plug-in for VMware vSphere, you must upgrade from NetApp Data Broker 1.0. x to SnapCenter Plug-in for VMware vSphere.
+If you want to use the new features provided by SnapCenter Plug-in for VMware vSphere, you must upgrade from NetApp Data Broker 1.0.x to SnapCenter Plug-in for VMware vSphere.
 
 .Before you begin
 

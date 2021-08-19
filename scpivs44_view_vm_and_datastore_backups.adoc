@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_view_vm_and_datastore_backups.html
 keywords:
-summary:
+summary: 'When you are preparing to back up or restore a VM or datastore, you might want to see all the backups that are available for that resource and view details of those backups.'
 ---
 
 = View VM and datastore backups

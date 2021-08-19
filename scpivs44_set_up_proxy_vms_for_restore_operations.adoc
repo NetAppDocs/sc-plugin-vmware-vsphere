@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_set_up_proxy_vms_for_restore_operations.html
 keywords:
-summary:
+summary: 'If you want to use a proxy VM for attaching a virtual disk for guest file restore operations, you must set up the proxy VM before you begin the restore operation. Although you can set up a proxy VM at any time, it might be more convenient to set it up immediately after the plug-in deployment completes.'
 ---
 
 = Set up proxy VMs for restore operations
@@ -32,10 +32,11 @@ If you want to use a proxy VM for attaching a virtual disk for guest file restor
 |Use existing credentials
 |Select any of the configured credentials.
 |Add new credentials
-|1. Click image:scpivs44_image6.png[Error: Missing Graphic Image] *Add*.
-2. In the *Run As Credentials* dialog box, enter the credentials.
-3. Click *Select VM*, then select a VM in the *Proxy VM* dialog box. Click *Save* to return to the *Run As Credentials* dialog box.
-4. Enter the credentials.
+a|
+. Click image:scpivs44_image6.png[Error: Missing Graphic Image] *Add*.
+. In the *Run As Credentials* dialog box, enter the credentials.
+. Click *Select VM*, then select a VM in the *Proxy VM* dialog box. Click *Save* to return to the *Run As Credentials* dialog box.
+. Enter the credentials.
 For Username, you must enter “Administrator”.
 |===
 +

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_restore_from_backups_overview.html
 keywords:
-summary:
+summary: 'You can restore VMs, VMDKs, files, and folders from primary or secondary backups.'
 ---
 
 = Overview

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_manage_backups.html
 keywords:
-summary:
+summary: 'You can rename and delete backups performed by SnapCenter Plug-in for VMware vSphere. You can also delete multiple backups simultaneously.'
 ---
 
 = Manage backups

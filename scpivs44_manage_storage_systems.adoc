@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_manage_storage_systems.html
 keywords:
-summary:
+summary: 'Before you can back up or restore VMs or datastores using the VMware vSphere web client, you must add the storage.'
 ---
 
 = Manage storage systems

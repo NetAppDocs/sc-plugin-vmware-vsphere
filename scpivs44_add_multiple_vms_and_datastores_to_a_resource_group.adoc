@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html
 keywords:
-summary:
+summary: 'You can add multiple VMs and datastores to any existing resource group by using the SnapCenter VMware vSphere web client Edit Resource Group wizard.'
 ---
 
 = Add multiple VMs and datastores to a resource group
@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-You can add multiple VMs and datastores to any existing resource group by using the SnapCenter  VMware vSphere web client Edit Resource Group wizard.
+You can add multiple VMs and datastores to any existing resource group by using the SnapCenter VMware vSphere web client Edit Resource Group wizard.
 
 .About this task
 

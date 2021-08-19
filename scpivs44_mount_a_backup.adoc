@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_mount_a_backup.html
 keywords:
-summary:
+summary: 'You can mount a datastore from a backup if you want to access files in the backup. You can either mount the backup to the same ESXi host where the backup was created or to an alternate ESXi host that has the same type of VM and host configurations. You can mount a datastore multiple times on a host.'
 ---
 
 = Mount a backup

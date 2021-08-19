@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_unregister_plugin_from_vcenter.html
 keywords:
-summary:
+summary: 'If you stop the SnapCenter VMware plug-in service in a vCenter that is in Linked Mode, resource groups are not available in all the linked vCenters, even when the SnapCenter VMware plug-in service is running in the other linked vCenters. You must unregister the SnapCenter VMware plug-in extensions manually.'
 ---
 
 = Unregister SnapCenter Plug-in for VMware vSphere from vCenter

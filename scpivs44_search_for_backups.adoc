@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_search_for_backups.html
 keywords:
-summary:
+summary: 'You can search for and find a specific backup of a VM or datastore using the Restore wizard. After you locate a backup, you can then restore it.'
 ---
 
 = Search for backups
