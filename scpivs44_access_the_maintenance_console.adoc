@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_access_the_maintenance_console.html
 keywords:
-summary:
+summary: 'You can manage your application, system, and network configurations by using the maintenance console for SnapCenter Plug-in for VMware vSphere. You can change your administrator password, maintenance password, generate support bundles, and start remote diagnostics.'
 ---
 
 = Access the maintenance console
@@ -12,6 +12,7 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
 You can manage your application, system, and network configurations by using the maintenance console for SnapCenter Plug-in for VMware vSphere. You can change your administrator password, maintenance password, generate support bundles, and start remote diagnostics.
 
 .Before you begin

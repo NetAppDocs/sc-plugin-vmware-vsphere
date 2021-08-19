@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_manage_your_configuration.html
 keywords:
-summary:
+summary: 'You need to use the SnapCenter Plug-in for VMware vSphere management GUI to update the virtual appliance configuration, which includes vCenter credentials, virtual appliance credentials, and time zones for backups.'
 ---
 
 = Manage your configuration
@@ -41,7 +41,7 @@ image:scpivs44_image28.jpg[Error: Missing Graphic Image]
 +
 The new time zone will be used for all backups performed by the SnapCenter VMware plug-in.
 
-== Modify the logon credentials for SnapCenter Plug-in for VMware vSphere
+== Modify the logon credentials
 
 You can modify the logon credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
 
@@ -67,7 +67,7 @@ image:scpivs44_image28.jpg[Error: Missing Graphic Image]
 +
 It might take several minutes before all the services come back up.
 
-== Modify the vCenter logon credentials in SnapCenter Plug-in for VMware vSphere
+== Modify the vCenter logon credentials 
 
 You can modify the vCenter logon credentials that are configured in SnapCenter Plug-in for VMware vSphere. These settings are used by the plug-in to access vCenter.
 

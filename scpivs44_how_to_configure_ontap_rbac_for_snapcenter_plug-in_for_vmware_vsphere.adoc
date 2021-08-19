@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_how_to_configure_ontap_rbac_for_snapcenter_plug-in_for_vmware_vsphere.html
 keywords:
-summary:
+summary: 'ONTAP RBAC applies only to SnapCenter Server application-consistent (application over VMDK) jobs.'
 ---
 
 = How to configure ONTAP RBAC for SnapCenter Plug-in for VMware vSphere

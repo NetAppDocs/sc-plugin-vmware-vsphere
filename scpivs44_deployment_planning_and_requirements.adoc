@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_deployment_planning_and_requirements.html
 keywords:
-summary:
+summary: 'You should be aware of the deployment requirements before you deploy the virtual appliance.'
 ---
 
 = Deployment planning and requirements
@@ -18,7 +18,8 @@ summary:
 // 2020-09-09 12:24:20.763592
 //
 
-You should be aware of the deployment requirements before you deploy the virtual appliance.  The deployment requirements are listed in the following four tables.
+[.lead]
+You should be aware of the deployment requirements before you deploy the virtual appliance. The deployment requirements are listed in the following four tables.
 
 == Host requirements
 
@@ -166,7 +167,8 @@ The vCenter administrator account must have the required vCenter privileges, as 
 |Deploy and register the SnapCenter Plug-in for VMware vSphere in vCenter
 |Extension: Register extension
 |Upgrade or remove the SnapCenter Plug-in for VMware vSphere
-|Extension
+a| Extension
+
 * Update extension
 * Unregister extension
 |Allow the vCenter Credential user account registered in SnapCenter to validate user access to the SnapCenter Plug-in for VMware vSphere

@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: scpivs44_upgrade.html
 keywords:
-summary:
+summary: 'If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.'
 ---
 
-= Upgrade
+= Upgrade from an earlier release of SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -15,11 +15,7 @@ summary:
 [.lead]
 If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.
 
-== Supported upgrade paths
-
-See the link:scpivs44_release_notes.html[SnapCenter Plug-in for VMware vSphere Release Notes] for information on supported upgrade and migration paths.
-
-== Upgrade from an earlier release of SnapCenter Plug-in for VMware vSphere
+See the link:scpivs44_release_notes.html[SnapCenter Plug-in for VMware vSphere Release Notes] for information on supported upgrade paths.
 
 TIP: Backup the SnapCenter Plug-in for VMware vSphere OVA before starting an upgrade.
 

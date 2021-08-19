@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_guest_file_restore_scenarios_you_might_encounter.html
 keywords:
-summary:
+summary: 'When attempting to restore a guest file, you might encounter scenarios where guest file restore session is blank, guest file restore attach disk operation fails, or backups are not detached after guest file restore session is discontinued. '
 ---
 
 = Guest file restore scenarios you might encounter

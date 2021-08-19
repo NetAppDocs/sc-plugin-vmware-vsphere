@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html
 keywords:
-summary:
+summary: 'You use the SnapCenter Windows PowerShell cmdlets to migrate SnapCenter VM-consistent backup metadata and SnapCenter application-consistent for virtualized data backup metadata to the SnapCenter Plug-in for VMware vSphere virtual appliance.'
 ---
 
 = Migrate Windows-based SnapCenter VMware backup metadata

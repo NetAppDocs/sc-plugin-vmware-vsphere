@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_get_started_overview.html
 keywords:
-summary:
+summary: 'To use SnapCenter features to protect VMs, datastores, and application-consistent databases on virtualized machines, you must deploy SnapCenter Plug-in for VMware vSphere.'
 ---
 
 = Deployment Overview

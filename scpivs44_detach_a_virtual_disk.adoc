@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_detach_a_virtual_disk.html
 keywords:
-summary:
+summary: 'After you have attached a virtual disk to restore individual files, you can detach the virtual disk from the parent VM.'
 ---
 
 = Detach a virtual disk

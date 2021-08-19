@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_download_the_ova_open_virtual_appliance.html
 keywords:
-summary:
+summary: 'The .ova file includes a set of microservices for VM and datastore data protection, which are performed by SnapCenter Plug-in for VMware vSphere.'
 ---
 
 = Download the OVA (Open Virtual Appliance)

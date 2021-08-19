@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_disable_and_enable_plugin.html
 keywords:
-summary:
+summary: 'If you no longer need the SnapCenter data protection features, you must change the configuration of the SnapCenter VMware plug-in. For example, if you deployed the plug-in in a test environment, you might need to disable the SnapCenter features in that environment and enable them in a production environment.'
 ---
 
 = Disable and enable SnapCenter Plug-in for VMware vSphere

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_modify_storage_timeout.html
 keywords:
-summary:
+summary: 'Even though backups have run successfully in the past, they might start failing when the time that the SnapCenter Plug-in for VMware vSphere must wait for the storage system exceeds the configured timeout period. If this condition occurs, you can increase the configured timeout.'
 ---
 
 = Modify the configured storage timeout

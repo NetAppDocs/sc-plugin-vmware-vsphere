@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_restore_vms_from_backups.html
 keywords:
-summary:
+summary: 'When you restore a VM, you can overwrite the existing content with the backup copy that you select or you can make a copy of the VM.'
 ---
 
 = Restore VMs from backups

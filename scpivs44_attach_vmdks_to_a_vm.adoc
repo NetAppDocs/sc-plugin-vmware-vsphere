@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_attach_vmdks_to_a_vm.html
 keywords:
-summary:
+summary: 'You can attach one or more VMDKs from a backup to the parent VM, or to an alternate VM on the same ESXi host, or to an alternate VM on an alternate ESXi host managed by the same vCenter or a different vCenter in linked mode.'
 ---
 
 = Attach VMDKs to a VM

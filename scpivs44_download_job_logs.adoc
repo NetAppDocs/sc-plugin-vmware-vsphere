@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_download_job_logs.html
 keywords:
-summary:
+summary: 'You can download the job logs from the Job Monitor tab on the Dashboard of the SnapCenter VMware vSphere web client.'
 ---
 
 = Download job logs

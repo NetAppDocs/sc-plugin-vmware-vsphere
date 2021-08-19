@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_protect_data_overview.html
 keywords:
-summary:
+summary: 'All backup operations are performed on resource groups, which can contain any combination of one or more VMs and datastores. You can back up on demand or according to a defined protection schedule.'
 ---
 
 = Data protection workflow
@@ -18,7 +18,7 @@ summary:
 // 2020-09-09 12:24:22.670306
 //
 
-
+[.lead]
 Use the SnapCenter vSphere web client to perform data protection operations for VMs, VMDKs, and datastores. All backup operations are performed on resource groups, which can contain any combination of one or more VMs and datastores. You can back up on demand or according to a defined protection schedule.
 
 When you back up a datastore, you are backing up all the VMs in that datastore.

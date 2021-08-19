@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_restore_guest_files_and_folders_overview.html
 keywords:
-summary:
+summary: 'You can restore files or folders from a virtual machine disk (VMDK) on a Windows guest OS.'
 ---
 
 = Workflow, prerequisites, and limitations

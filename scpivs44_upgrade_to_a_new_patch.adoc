@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_upgrade_to_a_new_patch.html
 keywords:
-summary:
+summary: 'If you are upgrading to a new patch of the same release, you must clear the SnapCenter Plug-in for VMware vSphere cache on the vCenter Web Server and restart the server before the upgrade or registration.'
 ---
 
 = Upgrade to a new patch of the same release of SnapCenter Plug-in for VMware vSphere

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html
 keywords:
-summary:
+summary: 'After upgrading SnapCenter Plug-in for VMware vSphere to a new patch of the same release, recent jobs or other information might not be displayed in the Dashboard and job monitor.'
 ---
 
 = Information not displayed after upgrading to a new patch of the same release

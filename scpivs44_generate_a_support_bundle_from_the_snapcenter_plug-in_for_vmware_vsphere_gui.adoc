@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html
 keywords:
-summary:
+summary: 'You can generate a support bundle from the SnapCenter Plug-in for VMware vSphere GUI.'
 ---
 
 = Generate a support bundle from the SnapCenter Plug-in for VMware vSphere GUI

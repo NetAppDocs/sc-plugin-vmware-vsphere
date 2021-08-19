@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_post-migration.html
 keywords:
-summary:
+summary: 'Issues you might encounter after you migrate backup metadata to the SnapCenter Plug-in for VMware vSphere.'
 ---
 
 = Post migration
@@ -17,6 +17,8 @@ summary:
 //
 // 2020-09-09 12:24:28.981089
 //
+[.lead]
+Issues you might encounter after you migrate backup metadata to the SnapCenter Plug-in for VMware vSphere.
 
 * Migration log bundle
 +

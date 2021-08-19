@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_back_up_resource_groups_on_demand.html
 keywords:
-summary:
+summary: 'Backup operations are performed on all the resources defined in a resource group. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.'
 ---
 
 = Back up resource groups on demand
