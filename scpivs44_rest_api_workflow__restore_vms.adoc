@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_rest_api_workflow__restore_vms.html
 keywords:
-summary:
+summary: 'To perform restore operations for VM backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.'
 ---
 
 = REST API workflow to restore VMs
@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-To perform restore operations for VM backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls shown in the following table.
+To perform restore operations for VM backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
 
 For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 

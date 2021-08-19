@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_monitor_jobs.html
 keywords:
-summary:
+summary: 'After performing any data protection operation using the VMware vSphere web client, you can monitor the job status from the Job Monitor tab in the Dashboard and view job details.'
 ---
 
 = Monitor jobs

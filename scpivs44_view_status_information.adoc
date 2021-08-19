@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_view_status_information.html
 keywords:
-summary:
+summary: 'You can view status information on the vSphere web client Dashboard. Status information is updated once an hour.'
 ---
 
 = View status information
@@ -18,8 +18,7 @@ summary:
 // 2020-09-09 12:24:22.165354
 //
 
-[.lead]
-Status information is updated once an hour.
+You can view status information on the vSphere web client Dashboard. Status information is updated once an hour.
 
 .Steps
 

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_unmount_a_backup.html
 keywords:
-summary:
+summary: 'You can unmount a backup when you no longer need to access the files in the datastore.'
 ---
 
 = Unmount a backup

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_types_of_rbac_for_snapcenter_users.html
 keywords:
-summary:
+summary: 'If you are using the SnapCenter Plug-in for VMware vSphere, the vCenter Server provides an additional level of RBAC. The plug-in supports both vCenter Server RBAC and ONTAP RBAC.'
 ---
 
 = Types of RBAC for SnapCenter Plug-in for VMware vSphere users
@@ -17,7 +17,7 @@ summary:
 //
 // 2020-09-09 12:24:20.235275
 //
-
+[.lead]
 If you are using the SnapCenter Plug-in for VMware vSphere, the vCenter Server provides an additional level of RBAC. The plug-in supports both vCenter Server RBAC and ONTAP RBAC.
 
 == vCenter Server RBAC

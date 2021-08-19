@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_rest_api_workflows__add_and_modify_storage_vms.html
 keywords:
-summary:
+summary: 'To perform add and modify storage VM operations using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.'
 ---
 
 = REST API workflows to add and modify storage VMs

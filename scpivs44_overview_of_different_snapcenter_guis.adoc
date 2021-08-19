@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_overview_of_different_snapcenter_guis.html
 keywords:
-summary:
+summary: 'The SnapCenter Plug-in for VMware vSphere is a standalone plug-in that is different from other SnapCenter plug-ins. You must use the VMware vSphere web client GUI in vCenter for all backup and restore operations for VMs, VMDKs, and datastores.'
 ---
 
 = Overview of the different SnapCenter GUIs
@@ -18,7 +18,8 @@ summary:
 // 2020-09-09 12:24:20.235275
 //
 
-In your SnapCenter environment, you must use the appropriate GUI to perform data protection and management operations, as shown in the following table.
+[.lead]
+In your SnapCenter environment, you must use the appropriate GUI to perform data protection and management operations.
 
 The SnapCenter Plug-in for VMware vSphere is a standalone plug-in that is different from other SnapCenter plug-ins. You must use the VMware vSphere web client GUI in vCenter for all backup and restore operations for VMs, VMDKs, and datastores. You also use the web client GUI Dashboard to monitor the list of protected and unprotected VMs. For all other SnapCenter plug-ins (application-based plug-ins), you use the SnapCenter GUI for backup and restore operations and job monitoring.
 
