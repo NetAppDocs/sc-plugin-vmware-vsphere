@@ -80,19 +80,27 @@ The policy specifies the backup frequency only. The specific protection schedule
 
 |Update SnapMirror after backup
 
-|Select this option to create mirror copies of backup sets on another volume that has a SnapMirror relationship to the primary backup volume.
+a|Select this option to create mirror copies of backup sets on another volume that has a SnapMirror relationship to the primary backup volume.
 If a volume is configured with a mirror-vault relationship, you must select only the *Update SnapVault after backup* option if you want backups copied to the mirror-vault destinations.
 // BURT 1378132 observation 3, March 2021 Ronya
-*Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.
+[NOTE]
+This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.
+
 |Update SnapVault after backup
 
-|Select this option to perform disk-to-disk backup replication on another volume that has a SnapVault relationship to the primary backup volume.
-*Important:* If a volume is configured with a mirror-vault relationship, you must select only this option if you want backups copied to the mirror-vault destinations.
-*Note:* This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.
+a|Select this option to perform disk-to-disk backup replication on another volume that has a SnapVault relationship to the primary backup volume.
+[IMPORTANT]
+If a volume is configured with a mirror-vault relationship, you must select only this option if you want backups copied to the mirror-vault destinations.
+
+[NOTE]
+This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.
+
 |Snapshot label
-|Enter an optional, custom label to be added to SnapVault and SnapMirror Snapshot copies created with this policy.
+a|Enter an optional, custom label to be added to SnapVault and SnapMirror Snapshot copies created with this policy.
 The Snapshot label helps to distinguish Snapshots created with this policy from other Snapshots on the secondary storage system.
-*Note:* A maximum of 31 characters is allowed for Snapshot copy labels.
+
+[NOTE]
+A maximum of 31 characters is allowed for Snapshot copy labels.
 |===
 
 . Optional: In the *Advanced* fields, select the fields that are needed. The Advanced field details are listed in the following table.
