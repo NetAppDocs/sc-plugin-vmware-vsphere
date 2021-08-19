@@ -101,12 +101,12 @@ The Snapshot label helps to distinguish Snapshots created with this policy from 
 |For this field… |Do this…
 
 |VM consistency
-|Check this box to quiesce the VMs and create a VMware snapshot each time the backup job runs.
+a|Check this box to quiesce the VMs and create a VMware snapshot each time the backup job runs.
 
-IMPORTANT:
+[IMPORTANT]
 You must have VMware Tools running on the VM to perform VM consistent backups. If VMware Tools is not running, a crash-consistent backup is performed instead.
 
-NOTE:
+[NOTE]
 When you check the VM consistency box, backup operations might take longer and require more storage space. In this scenario, the VMs are first quiesced, then VMware performs a VM consistent snapshot, then SnapCenter performs its backup operation, and then VM operations are resumed.
 VM guest memory is not included in VM consistency Snapshots.
 
@@ -116,9 +116,10 @@ VM guest memory is not included in VM consistency Snapshots.
 independent disks
 |Check this box to include in the backup any datastores with independent disks that contain temporary data.
 |Scripts
-|Enter the fully qualified path of the prescript or postscript that you want the SnapCenter VMware plug-in to run before or after backup operations. For example, you can run a script to update SNMP traps, automate alerts, and send logs. The script path is validated at the time the script is executed.
+a|Enter the fully qualified path of the prescript or postscript that you want the SnapCenter VMware plug-in to run before or after backup operations. For example, you can run a script to update SNMP traps, automate alerts, and send logs. The script path is validated at the time the script is executed.
 
-NOTE: Prescripts and postscripts must be located on the virtual appliance VM.
+[NOTE]
+Prescripts and postscripts must be located on the virtual appliance VM.
 To enter multiple scripts, press *Enter* after each script path to list
 each script on a separate line. The character ";" is not allowed.
 |===
