@@ -58,5 +58,5 @@ a|The total number of Snapshot copies, SnapVault, and SnapMirror Snapshot copies
 Storage Savings is the ratio of logical capacity (Snapshot copy savings plus storage consumed) to the physical capacity of primary storage. The bar chart illustrates the storage savings.
 
 Hover the cursor over a line on the chart to see detailed day-by-day results.
-//Updated for BURT 1378132 observation 8, March 2021 Madhulika
+//Updated for BURT 1378132 observation 8, March 2021 Madhu
 |===
