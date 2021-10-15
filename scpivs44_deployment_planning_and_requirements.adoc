@@ -95,7 +95,7 @@ FlexClone: used for mount and attach operations
 |Item |Supported versions
 
 |vCenter vSphere
-|HTML5 client: 6.5U2/U3, 6.7x, 7.0, 7.0U1, 7.0U2
+|HTML5 client: 6.5U2/U3, 6.7x, 7.0, 7.0U1, 7.0U2, #7.0U3#
 Flex client is not supported.
 |ESXi
 |6.5U2

@@ -18,7 +18,7 @@ summary: 'A resource group is the container for one or more VMs or datastores th
 [.lead]
 A resource group is the container for one or more VMs or datastores that you want to protect.
 
-Resource groups can contain any combination of VMs and datastores. Beginning with SnapCenter Plug-in for VMware vSphere 4.4, a resource group can also contain one FlexGroup volume or one or more FlexVol volumes, but not both.
+Resource groups can contain any combination of VMs and datastores. A resource group can also contain one FlexGroup volume or one or more FlexVol volumes, but not both.
 
 [NOTE]
 For spanning VMs, using FlexGroup and FlexVol together is not supported.

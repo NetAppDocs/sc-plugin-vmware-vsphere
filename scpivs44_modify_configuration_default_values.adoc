@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: scpivs44_modify_configuration_default_values.html
+keywords:
+summary: 'To improve operational efficiency, you can modify the `scbr.override` configuration file to change default values.'
+---
+
+= Modify configuration default values
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+To improve operational efficiency, you can modify the `scbr.override` configuration file to change default values. These values control settings such as the number of VMware snapshots that are created or deleted during a backup or the amount of time before a backup script stops running.
+
+The `scbr.override` configuration file is used by the SnapCenter Plug-in for VMware vSphere in environments that support SnapCenter application-based data protection operations. If this file does not exist, then you must create it from the template file.

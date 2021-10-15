@@ -84,7 +84,7 @@ a|Select this option to create mirror copies of backup sets on another volume th
 If a volume is configured with a mirror-vault relationship, you must select only the *Update SnapVault after backup* option if you want backups copied to the mirror-vault destinations.
 // BURT 1378132 observation 3, March 2021 Ronya
 [NOTE]
-This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.
+This option is supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.5 and later.
 
 |Update SnapVault after backup
 
@@ -93,7 +93,7 @@ a|Select this option to perform disk-to-disk backup replication on another volum
 If a volume is configured with a mirror-vault relationship, you must select only this option if you want backups copied to the mirror-vault destinations.
 
 [NOTE]
-This option is supported for datastores in FlexGroup volumes beginning in SnapCenter Plug-in for VMware vSphere 4.5. This option is not supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.4 and earlier.
+This option is supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.5 and later.
 
 |Snapshot label
 a|Enter an optional, custom label to be added to SnapVault and SnapMirror Snapshot copies created with this policy.

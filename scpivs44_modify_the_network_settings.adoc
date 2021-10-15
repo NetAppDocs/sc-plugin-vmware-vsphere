@@ -1,0 +1,44 @@
+---
+sidebar: sidebar
+permalink: scpivs44_modify_the_network_settings.html
+keywords:
+summary: 'You can modify the network settings that are configured in SnapCenter Plug-in for VMware vSphere. These settings are used by the plug-in to access vCenter.'
+---
+
+= Modify the network settings
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+You can modify the network settings that are configured in SnapCenter Plug-in for VMware vSphere. These settings are used by the plug-in to access vCenter.
+
+.Before you begin
+
+You must know the IP address and the log on credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
+
+* The IP address was displayed when the SnapCenter VMware plug-in was deployed.
+* Use the log in credentials provided during the deployment of the SnapCenter VMware plug-in or as later modified.
+
+.Steps
+
+. Log in to the SnapCenter VMware plug-in management GUI.
++
+Use the format `https://<appliance-IP-address>:8080`
+
+. Click the Settings icon in the top toolbar.
++
+image:scpivs44_image31.png[Error: Missing Graphic Image]
+
+. On the *Settings* page, in the *Network Settings* section, click *IPv4* or *IPv6*, and then click *Edit*.
++
+Enter the new information and click *Save*.
+
+. If you are removing a network setting, do the following:
++
+** IPv4: In the *IP Address* field, enter `0.0.0.0` and then click *Save*.
+** IPv6: In the *IP Address* field: enter `: :0`  and then click *Save*.
+
+[NOTE]
+If you are using both IPv4 and IPv6, you cannot remove both network settings. The remaining network must specify the DNS Servers and Search Domains fields.
