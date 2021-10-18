@@ -165,7 +165,23 @@ sidebar:
         - title: Remove SnapCenter Plug-in for VMware vSphere
           url: /scpivs44_remove_plugin.html
     - title: Manage your configuration
-      url: /scpivs44_manage_your_configuration.html
+      entries:
+        - title: Modify time zones
+          url: /scpivs44_modify_the_time_zones.html
+        - title: Modify logon credentials
+          url: /scpivs44_modify_the_logon_credentials.html
+        - title: Modify vCenter logon credentials
+          url: /scpivs44_modify_the_vcenter_logon_credentials.html
+        - title: Modify network settings
+          url: /scpivs44_modify_the_network_settings.html
+        - title: Modify configuration default values
+          url: /scpivs44_modify_configuration_default_values.html
+        - title: Create the scbr.override file
+          url: /scpivs44_create_the_scbr_override_file.html
+        - title: Configuration properties you can override
+          url: /scpivs44_create_the_scbr_override_file.html
+        - title: Enable SSH
+          url: /scpivs44_enable_ssh.html
     - title: REST APIs
       entries:
         - title: Overview
