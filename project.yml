@@ -202,26 +202,6 @@ sidebar:
           url: /scpivs44_upgrade_to_a_new_patch.html
         - title: Information not displayed after upgrading to a new patch of the same release
           url: /scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html
-    - title: Migrate
-      entries:
-        - title: Migration options and supported paths
-          url: /scpivs44_migrate.html
-        - title: Migration overview
-          url: /scpivs44_migration_overview.html
-        - title: Prerequisites for migration
-          url: /scpivs44_prerequisites_for_migration.html
-        - title: Migrate from Windows-based SnapCenter Plug-in for VMware vSphere
-          url: /scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html
-        - title: Migrate Windows-based SnapCenter VMware backup metadata
-          url: /scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html
-        - title: Post-migration
-          url: /scpivs44_post-migration.html
-        - title: Correct bad gateway errors during migration
-          url: /scpivs44_correct_bad_gateway_errors_during_migration.html
-        - title: Manage authentication errors
-          url: /scpivs44_manage_authentication_errors.html
-    - title: Legal notices
-      url: /netapp_legal_notices.html
 
 homepage:
   tiles:
