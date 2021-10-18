@@ -109,7 +109,7 @@ Make a note of the username and password that you specify. You need to use these
 Select the IPv4 or IPv6 fields, or both, if appropriate. If you are using both IPv4 and IPv6, then you need to specify the Primary DNS for only one of them.
 +
 [NOTE]
-#If you want DHCP network configuration, leave the entries blank in *Setup Network Properties*, *Setup IPv4 Network Properties*, and  *Setup IPv6 Network Properties* sections.#
+#Avoid setting up the network properties, if you want to proceed with DHCP as your network configuration.#
 
 .. In *Setup Date and Time*, select the time zone where the vCenter is located.
 
