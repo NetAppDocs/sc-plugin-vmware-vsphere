@@ -202,6 +202,8 @@ sidebar:
           url: /scpivs44_upgrade_to_a_new_patch.html
         - title: Information not displayed after upgrading to a new patch of the same release
           url: /scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html
+    - title: Legal notices
+      url: /netapp_legal_notices.html
 
 homepage:
   tiles:
