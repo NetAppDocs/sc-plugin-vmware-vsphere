@@ -179,7 +179,7 @@ sidebar:
         - title: Create the scbr.override file
           url: /scpivs44_create_the_scbr_override_file.html
         - title: Configuration properties you can override
-          url: /scpivs44_create_the_scbr_override_file.html
+          url: /scpivs44_properties_you_can_override.html
         - title: Enable SSH
           url: /scpivs44_enable_ssh.html
     - title: REST APIs
