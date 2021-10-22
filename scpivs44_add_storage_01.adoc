@@ -12,12 +12,6 @@ summary: 'Adding storage enables the SnapCenter Plug-in for VMware vSphere to re
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:22.556795
-//
-
 [.lead]
 Before you can backup or restore VMs, you must add storage clusters or storage VMs. Adding storage enables the SnapCenter Plug-in for VMware vSphere to recognize and manage backup and restore operations in vCenter.
 
@@ -28,6 +22,12 @@ Use the VMware vSphere web client to add storage.
 * Large LUNs
 +
 SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter only supports thick provisioned LUNs to avoid latency.
+
+* #VMware virtual volumes (vVols)#
++
+#You must first add the vVols storage system to ONTAP Tools for VMware vSphere and then add the vVols storage system to SnapCenter Plug-in for VMware vSphere.#
++
+#For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP Tools for VMware vSphere^]#
 
 .Before you begin
 

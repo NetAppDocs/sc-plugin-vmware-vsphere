@@ -12,21 +12,9 @@ summary: 'After deploying the SnapCenter Plug-in for VMware vSphere, you must co
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:21.465086
-//
-
 == Required operations after deployment
 
-* New SnapCenter user
-+
 If you are a new SnapCenter user, you must add storage VMs to SnapCenter before you can perform any data protection operations. When adding storage VMs, specify the management LIF. You can also add a cluster and specify the cluster management LIF. For information about adding storage, see link:scpivs44_add_storage_01.html[Add storage^].
-
-* Existing SnapCenter user
-+
-If you are an existing SnapCenter user, you must migrate your existing SnapCenter VM and datastore backups and metadata. For information about migrating, see link:scpivs44_migrate.html#migration-options.html[Migration options^].
 
 == Deployment issues you might encounter
 
@@ -39,13 +27,8 @@ If you are an existing SnapCenter user, you must migrate your existing SnapCente
 
 ** You have two NICs.
 * After deploying the SnapCenter VMware plug-in, the MOB entry in vCenter for SnapCenter Plug-in for VMware vSphere might still show the old version number. This can occur when other jobs are running in the vCenter. vCenter will eventually update the entry.
-* After a deployment, or after an upgrade on a VM where Virtual Storage Console for VMware vSphere (VSC) was previously installed, the following might occur:
-** Right-click menus that are documented for mount, unmount, attach, and detach operations do not appear.
-** The VMware vSphere web client GUI does not match the documentation.
-** The Dashboard is not displayed correctly.
-** During normal use, a page display (for example, the Resource Groups page) might stall or get stuck loading.
 
-To correct any of these issues, do the following:
+To correct either of these issues, do the following:
 
 . Clear the browser cache and then check if the GUI is operating properly.
 +
@@ -63,34 +46,6 @@ If you do not use the Admin credentials, you might receive an authentication err
 
 . Log on to the SnapCenter VMware plug-in management GUI using the format `https://<appliance-IP-address>:8080`.
 . Restart the service.
-
-== Create credentials for migrating backups
-
-If you are a SnapCenter customer and have VM consistent or VM crash-consistent backups, or application-consistent backups of virtualized data, you must migrate those backups to SnapCenter Plug-in for VMware vSphere. Before migrating, you must add the SnapCenter VMware plug-in credentials to SnapCenter Server.
-
-.Before you begin
-
-* You must be running SnapCenter Server 4.2 or later.
-* You must have deployed and enabled SnapCenter Plug-in for VMware vSphere.
-
-.Steps
-
-. In the left navigation pane of the SnapCenter GUI, click *Settings*.
-. In the Settings page, click *Credentials*, and then click *New* to start the wizard.
-. Enter the credential information as listed in the following table:
-
-|===
-|For this field… |Do this…
-
-|Credential name
-|Enter a name for the credentials.
-|Username
-|Enter the username specified when SnapCenter Plug-in for VMware vSphere was deployed.
-|Password
-|Enter the password specified when SnapCenter Plug-in for VMware vSphere was deployed.
-|Authentication
-|Select *Linux*.
-|===
 
 == Register SnapCenter Plug-in for VMware vSphere with SnapCenter Server
 
