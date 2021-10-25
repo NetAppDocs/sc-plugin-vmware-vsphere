@@ -12,12 +12,6 @@ summary: 'You should be aware of the deployment requirements before you deploy t
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:20.763592
-//
-
 [.lead]
 You should be aware of the deployment requirements before you deploy the virtual appliance. The deployment requirements are listed in the following four tables.
 
@@ -42,6 +36,10 @@ The folder name should not contain the following special characters: $!@#%^&()_+
 ** Each instance of the SnapCenter VMware plug-in must be deployed as a separate Linux VM.
 +
 For example, if you want to perform backups from six different instances of the vCenter Server, then you must deploy the SnapCenter VMware plug-in on six hosts and each vCenter Server must be paired with a unique instance of the SnapCenter VMware plug-in.
+
+* #To protect vVols VMs (VMware virtual volumes), you must first deploy ONTAP Tools for VMware (OTV) to provision and configure storage for vVols on ONTAP and on the VMware web client before you can use SnapCenter Plug-in for VMware vSphere to protect the data.#
++
+#For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP Tools for VMware vSphere^]#
 
 * The SnapCenter VMware plug-in provides limited support of shared PCI or PCIe devices (for example, NVIDIA Grid GPU) due to a limitation of the virtual machines in supporting Storage vMotion. For more information, see the vendor's document Deployment Guide for VMware.
 ** What is supported:
@@ -77,16 +75,12 @@ Restoring a complete VM when one or more VMDKs are on a VMFS datastore.
 |vSphere Standard, Enterprise, or Enterprise Plus
 A vSphere license is required to perform restore operations, which use Storage vMotion. vSphere Essentials or Essentials Plus licenses do not include Storage vMotion.
 |Primary destinations
-|To perform application-based protection over VMware
-SnapCenter Standard
-To perform protection of VMware VMs and datastores only
-SnapRestore: used for restore operations
-FlexClone: used for mount and attach operations
+|#SnapCenter Standard: required to perform application-based protection over VMware#
+#SnapRestore: required to perform restore operations for VMware VMs and datastores only#
+#FlexClone: used for mount and attach operations on VMware VMs and datastores only#
 |Secondary destinations
-|To perform application-based protection over VMware
-SnapCenter Standard: used for failover operations
-To perform protection of VMware VMs and datastores only
-FlexClone: used for mount and attach operations
+|#SnapCenter Standard: used for failover operations for application-based protection over VMware#
+#FlexClone: used for mount and attach operations on VMware VMs and datastores only#
 |===
 
 == Software support
@@ -116,6 +110,9 @@ The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-i
 |VMware application vStorage API for Array Integration (VAAI)
 |SnapCenter Plug-in for VMware vSphere uses this to improve performance for restore operations. It also improves performance in NFS environments.
 // Vrishali review comments  April2021 Ronya
+|#ONTAP Tools for VMware (OTV)#
+|#9.8#
+#SnapCenter Plug-in for VMware vSphere uses this to manage vVols datastores (VMware virtual volumes).#
 |===
 
 For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
