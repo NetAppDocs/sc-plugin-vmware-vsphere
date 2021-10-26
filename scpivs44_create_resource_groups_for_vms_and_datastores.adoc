@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_create_resource_groups_for_vms_and_datastores.html
 keywords:
-summary: 'A resource group is the container for one or more VMs, datastores, or vVols VMs that you want to protect.'
+summary: 'A resource group is the container for VMs, datastores, or vVols VMs that you want to protect.'
 ---
 
 = Create resource groups
@@ -14,21 +14,44 @@ summary: 'A resource group is the container for one or more VMs, datastores, or 
 
 
 [.lead]
-A resource group is the container for one or more VMs, datastores, #or vVols VMs# that you want to protect.
+A resource group is the container for VMs, datastores, #or vVols VMs# that you want to protect.
 
 A resource group can contain one of the following:
 
-* #Any combination of traditional VMs and SAN and NAS datastores (VSAN and vVol datastores not supported).#
-* #One FlexGroup datastore (spanning VMs are not supported).#
-* #One or more FlexVol datastores (spanning VMs are supported).#
-* #One or more vVol VMs.#
-* #All vVol VMs with a specified VMware tag.#
-* #One vVol VM folder.#
+* #Traditional VMs and datastores#
++
+#Any combination of traditional VMs, traditional SAN datastores, and traditional NAS datastores. VSAN and vVol datastores not supported.#
+
+* #Flexgroup datastores#
++
+#One FlexGroup datastore. Spanning VMs are not supported.#
+
+* #FlexVol datastores#
++
+#One or more FlexVol datastores. Spanning VMs are supported.#
+
+* #vVol VMs#
++
+#One or more vVol VMs.#
+
+* #vVol VMs with a tag#
++
+#All vVol VMs with a single, specified VMware tag.#
+
+* #vVol VMs in a folder#
++
+#All vVols in a single, specified vVol folder.#
 
 SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter uses only thick provisioned LUNs to avoid latency.
 
 [IMPORTANT]
-Do not add VMs that are in an inaccessible state. Although you can create a resource group that contains inaccessible VMs, backups for that resource group will fail.
+Do not add VMs that are in an inaccessible state. Although it is possible to create a resource group that contains inaccessible VMs, backups for that resource group will fail.
+
+.Before you begin
+
+#ONTAP Tools for VMware (OTV) must be deployed before you create a resource group that contains vVol VMs.#
+
+#For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP Tools for VMware vSphere^]#
 
 .About this task
 
@@ -127,10 +150,10 @@ For special characters in names, follow the same guidelines given for the Name f
 
 |#Scope#
 |#Select the type of resource you want to protect:#
-* #Datastores#
-* #Virtual Machines (individual traditional or vVol VMs)#
-* #Tags (all vVol VMs with a specified VMware tag)#
-* #Folder (all vVol VMs in a specified folder)#
+* #Datastores (all traditional VMs in one or more specified datastores)#
+* #Virtual Machines (individual traditional or vVol VMs; in the popup field you must navigate to the datastore that contains the VMs or vVol VMs)#
+* #Tags (all vVol VMs with a single, specified VMware tag; in the popup field you must enter the tag)#
+* #VM Folder (all vVol VMs in a specified folder; in the popup field you must navigate to the datacenter in which the folder is located)#
 |#Datacenter#
 |#Navigate to the VMs or datastores or folder that you want to add.#
 |Available entities

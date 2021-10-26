@@ -37,7 +37,7 @@ The folder name should not contain the following special characters: $!@#%^&()_+
 +
 For example, if you want to perform backups from six different instances of the vCenter Server, then you must deploy the SnapCenter VMware plug-in on six hosts and each vCenter Server must be paired with a unique instance of the SnapCenter VMware plug-in.
 
-* #To protect vVols VMs (VMware virtual volumes), you must first deploy ONTAP Tools for VMware (OTV) to provision and configure storage for vVols on ONTAP and on the VMware web client before you can use SnapCenter Plug-in for VMware vSphere to protect the data.#
+* #To protect vVols VMs (VMs on VMware virtual volumes), you must first deploy ONTAP Tools for VMware (OTV) to provision and configure storage for vVols on ONTAP and on the VMware web client before you can use SnapCenter Plug-in for VMware vSphere to protect the data.#
 +
 #For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP Tools for VMware vSphere^]#
 

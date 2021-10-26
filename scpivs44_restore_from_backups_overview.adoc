@@ -23,11 +23,15 @@ You can restore VMs, VMDKs, files, and folders from primary or secondary backups
 
 * VM restore destinations
 +
-You can restore VMs to the original host, or to an alternate host in the same vCenter Server, or to an alternate ESXi host managed by the same vCenter or any vCenter in linked mode.
+You can restore #traditional# VMs to the original host, or to an alternate host in the same vCenter Server, or to an alternate ESXi host managed by the same vCenter or any vCenter in linked mode.
++
+#You can restore vVol VMs to the original host.#
 
 * VMDK restore destinations
 +
-You can restore VMDKs to either the original or to an alternate datastore.
+You can restore VMDKs #in traditional VMs# to either the original or to an alternate datastore.
++
+#You can restore VMDKs in vVol VMs to the original datastore.#
 
 You can also restore individual files and folders in a guest file restore session, which attaches a backup copy of a virtual disk and then restores the selected files or folders.
 

@@ -102,3 +102,5 @@ When you try to restore from NTFS-format to FAT-format, the NTFS security descri
 * You cannot restore the directory structure for a file.
 +
 If a file in a nested directory is selected to be restored, the file is not restored with the same directory structure. The directory tree is not restored, only the file. If you want to restore a directory tree, you can copy the directory itself at the top of the structure.
+
+* #You cannot restore guest files from a vVol VM.#

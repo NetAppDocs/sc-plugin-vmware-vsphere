@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_how_restore_operations_are_performed.html
 keywords:
-summary: 'For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations.'
+summary: 'For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. For vVol VMs, the plug-in uses ONTAP Single File Snapshot Restore and SnapMirror Restore for restore operations.'
 ---
 
 = How restore operations are performed
@@ -18,35 +18,43 @@ summary: 'For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses 
 // 2020-09-09 12:24:24.060765
 //
 
-For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. The following table lists how restore operations are performed.
+For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. #For vVol VMs, the plug-in uses ONTAP Single File Snapshot Restore (ONTAP SFSR) and SnapMirror Restore for restore operations.# The following table lists how restore operations are performed.
 
 |===
-|Restore operations |Performed using ONTAP SFSR in NFS environments |Performed using clone and mount with Storage VMotion in NFS environments |Performed using clone and mount with Storage VMotion in VMFS environments
+|Restore operations |Performed using ONTAP SFSR in NFS environments |Performed using clone and mount with Storage VMotion |#Performed using SnapMirror Restore#
 
 |Restoring VMs and VMDKs from primary backups
 |Yes
+|Yes in VMFS environments
 |
-|Yes
 |Restoring VMs and VMDKs from secondary backups
 |Yes
+|Yes in VMFS environments
 |
-|Yes
 |Restoring deleted VMs and VMDKs from primary backups
 |Yes
+|Yes in VMFS environments
 |
-|Yes
 |Restoring deleted VMs and VMDKs from secondary backups
 |
-|Yes
-|Yes
+|Yes in NFS and VMFS environments
+|
 |Restoring VMs and VMDKs from VM-consistent primary backups
 |Yes
+|Yes in VMFS environments
 |
-|Yes
 |Restoring VMs and VMDKs from VM-consistent secondary backups
 |
-|Yes
-|Yes
+|Yes in NFS and VMFS environments
+|
+|#Restoring vVol VMs from primary crash-consistent backups#
+|#Yes#
+|
+|
+|#Restoring vVol VMs from secondary crash-consistent backups#
+|
+|
+|#Yes#
 |===
 
 Guest file restore operations are performed using clone and mount operations (not Storage VMotion) in both NFS and VMFS environments.
@@ -56,3 +64,5 @@ During a restore operation, you might encounter the error `Host unresolved volum
 
 :link-with-underscores: https://kb.netapp.com/@api/deki/files/83736/1086826_-_SCV_clone_or_restores_fail_with_error_%27Host_Unresolved_volumes_is_null%27.pdf
 For more information about the error, see {link-with-underscores}[KB article: SCV clone or restores fail with error 'Host Unresolved volumes is null^].
+
+#After a vVol VM restore operation, the SnapCenter Plug-in for VMware vSphere restores the metadata in ONTAP Tools for VMware (OTV).#

@@ -23,6 +23,8 @@ You can attach one or more VMDKs from a backup to the parent VM, or to an altern
 
 This makes it easier to restore one or more individual files from a drive instead of restoring the entire drive. You can detach the VMDK after you have restored or accessed the files you need.
 
+#You cannot attach a VMDK to a vVol VM.#
+
 .About this task
 
 You have the following attach options:
