@@ -21,48 +21,48 @@ summary: 'For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses 
 For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. #For vVol VMs, the plug-in uses ONTAP Single File Snapshot Restore (ONTAP SFSR) and SnapMirror Restore for restore operations.# The following table lists how restore operations are performed.
 
 |===
-|Restore operations |Performed in NFS environments |Performed using clone and mount with Storage VMotion |#Performed using SnapMirror Restore#
+|Restore operations |From |Performed using
 
-|Restoring VMs and VMDKs from primary backups
-|Yes, using ONTAP SFSR
-|Yes in VMFS environments
-|
-|Restoring VMs and VMDKs from secondary backups
-|Yes, using ONTAP SFSR
-|Yes in VMFS environments
-|
-|Restoring deleted VMs and VMDKs from primary backups
-|Yes, using ONTAP SFSR
-|Yes in VMFS environments
-|
-|Restoring deleted VMs and VMDKs from secondary backups
-|
-|Yes in NFS and VMFS environments
-|
-|Restoring VMs and VMDKs from VM-consistent primary backups
-|Yes, using ONTAP SFSR
-|Yes in VMFS environments
-|
-|Restoring VMs and VMDKs from VM-consistent secondary backups
-|
-|Yes in NFS and VMFS environments
-|
-|#Restoring vVol VMs from primary crash-consistent backups#
-|#Yes, using ONTAP SFSR#
-|
-|
-|#Restoring vVol VMs from secondary crash-consistent backups#
-|
-|
-|#Yes#
-|#Restoring FlexGroup VMs from primary backups#
-|#Yes, using ONTAP SFSR#
-|
-|
-|#Restoring FlexGroup VMs from secondary backups#
-|#Yes, using ONTAP SFR#
-|
-|
+|VMs and VMDKs
+|Primary backups
+|NFS environments: ONTAP Single File SnapRestore
+VMFS environments: Clone and mount with Storage VMotion
+|VMs and VMDKs
+|Secondary backups
+|NFS environments: ONTAP Single File SnapRestore
+VMFS environments: Clone and mount with Storage VMotion
+|Deleted VMs and VMDKs
+|Primary backups
+|YNFS environments: ONTAP Single File SnapRestore
+VMFS environments: Clone and mount with Storage VMotion
+|Deleted VMs and VMDKs
+|Secondary backups
+|NFS environments: Clone and mount with Storage VMotion
+VMFS environments: Clone and mount with Storage VMotion
+|VMs and VMDKs
+|VM-consistent primary backups
+|NFS environments: ONTAP Single File SnapRestore
+VMFS environments: Clone and mount with Storage VMotion
+|VMs and VMDKs
+|VM-consistent secondary backups
+|NFS environments: Clone and mount with Storage VMotion
+VMFS environments: Clone and mount with Storage VMotion
+|#vVol VMs#
+|#Crash-consistent primary backups#
+|#NFS environments: ONTAP Single File SnapRestore#
+#VMFS environments: Not supported#
+|#vVol VMs#
+|#Crash-consistent secondary backups#
+|#NFS environments: Not supported#
+#VMFS environments: SnapMirror Restore#
+|#FlexGroup VMs#
+|#Primary backups#
+|#NFS environments: ONTAP Single File SnapRestore#
+#VMFS environments: Not supported#
+|#FlexGroup VMs#
+|#Secondary backups#
+|#NFS environments: ONTAP Single File Restore#
+#VMFS environments: Not supported#
 |===
 
 Guest file restore operations are performed using clone and mount operations (not Storage VMotion) in both NFS and VMFS environments.
