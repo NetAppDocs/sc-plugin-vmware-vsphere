@@ -146,7 +146,10 @@ This port is used to manage the virtual appliance.
 Note: You cannot modify the port configuration.
 |VMware vSphere vCenter Server port
 |443 (HTTPS), bidirectional
-The port is used for communication between the SnapCenter Plug-in for VMware vSphere and vCenter.
+The port is used for communication between the #storage VM host for SnapCenter Plug-in for VMware vSphere and vCenter when performing VM and datastore backup and restore operations.#
+// Updated for Burt 1435536 3Nov2021 Ronya
+#You must use the default port 443 if you plan to protect vVol VMs.#
+//Updated for Burt 1433718 3Nov2021 Ronya
 |===
 
 == Configurations supported

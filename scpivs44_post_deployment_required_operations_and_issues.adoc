@@ -51,8 +51,6 @@ If you do not use the Admin credentials, you might receive an authentication err
 
 If you want to perform application-over-VMDK workflows in SnapCenter (application-based protection workflows for virtualized databases and file systems), you must register SnapCenter Plug-in for VMware vSphere with the SnapCenter Server.
 
-If you are a SnapCenter user and you upgraded to SnapCenter 4.2 and migrated your application-over-VMDK backups to SnapCenter Plug-in for VMware, the migration command automatically registers the plug-in.
-
 .Before you begin
 
 * You must be running SnapCenter Server 4.2 or later.
@@ -64,7 +62,7 @@ If you are a SnapCenter user and you upgraded to SnapCenter 4.2 and migrated you
 +
 Port 8144 is predefined for communication within the SnapCenter VMware plug-in.
 +
-You can register multiple instances of SnapCenter Plug-in for VMware vSphere on the same SnapCenter Server 4.2 to support application-based data protection operations on VMs. You cannot register the same SnapCenter Plug-in for VMware vSphere on multiple SnapCenter Servers.
+You can register multiple instances of SnapCenter Plug-in for VMware vSphere on the same SnapCenter Server to support application-based data protection operations on VMs. You cannot register the same SnapCenter Plug-in for VMware vSphere on multiple SnapCenter Servers.
 
 * For vCenters in Linked Mode, you must register the SnapCenter Plug-in for VMware vSphere for each vCenter.
 

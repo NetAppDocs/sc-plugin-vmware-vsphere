@@ -42,6 +42,10 @@ A resource group can contain one of the following:
 +
 #All vVols in a single, specified vVol folder.#
 
+[NOTE]
+#If a resource group contains vVol VMs and traditional VMs, SnapCenter Plug-in for VMware vSphere backs up the vVol VMs and skips the traditional VMs.#
+// Burt 1434168 3Nov2021 Ronya
+
 SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter uses only thick provisioned LUNs to avoid latency.
 
 [IMPORTANT]
