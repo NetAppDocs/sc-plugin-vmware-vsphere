@@ -49,12 +49,10 @@ VMFS environments: Clone and mount with Storage VMotion
 VMFS environments: Clone and mount with Storage VMotion
 |#vVol VMs#
 |#Crash-consistent primary backups#
-|#NFS environments: ONTAP Single File SnapRestore#
-#VMFS environments: Not supported#
+|#ONTAP Single File SnapRestore for all protocols#
 |#vVol VMs#
 |#Crash-consistent secondary backups#
-|#NFS environments: Not supported#
-#VMFS environments: SnapMirror Restore#
+|#ONTAP SnapMirror Restore for all protocols#
 |#FlexGroup VMs#
 |#Primary backups#
 a|#NFS environments:#
