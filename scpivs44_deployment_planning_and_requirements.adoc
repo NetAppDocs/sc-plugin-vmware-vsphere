@@ -92,7 +92,7 @@ A vSphere license is required to perform restore operations, which use Storage v
 |HTML5 client: 6.5U2/U3, 6.7x, 7.0, 7.0U1, 7.0U2, #7.0U3#
 Flex client is not supported.
 |ESXi
-|6.5U2
+|6.5U2 #and later#
 // AUGUST 2021 BURT 1419874
 |IP addresses
 |IPv4, IPv6
@@ -111,7 +111,7 @@ The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-i
 |SnapCenter Plug-in for VMware vSphere uses this to improve performance for restore operations. It also improves performance in NFS environments.
 // Vrishali review comments  April2021 Ronya
 |#ONTAP Tools for VMware (OTV)#
-|#9.8#
+|#9.10 and later#
 #SnapCenter Plug-in for VMware vSphere uses this to manage vVols datastores (VMware virtual volumes).#
 |===
 
@@ -145,11 +145,13 @@ The port is used for communications from the VMware vSphere web client and from 
 This port is used to manage the virtual appliance.
 Note: You cannot modify the port configuration.
 |VMware vSphere vCenter Server port
-|443 (HTTPS), bidirectional
-The port is used for communication between the #storage VM host for SnapCenter Plug-in for VMware vSphere and vCenter when performing VM and datastore backup and restore operations.#
-// Updated for Burt 1435536 3Nov2021 Ronya
-#You must use the default port 443 if you plan to protect vVol VMs.#
+|#You must use port 443 if you plan to protect vVol VMs.#
 //Updated for Burt 1433718 3Nov2021 Ronya
+|#Storage cluster or storage VM port#
+|443 (HTTPS), bidirectional
+#80 (HTTP), bidirectional#
+The port is used for communication between the #virtual appliance and the storage VM or the cluster that contains the storage VM.#
+// Updated for Burt 1435536 3Nov2021 Ronya
 |===
 
 == Configurations supported
