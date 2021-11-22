@@ -142,14 +142,20 @@ Recommended: 16 GB
 |Type of port |Preconfigured port
 
 |SnapCenter Plug-in for VMware vSphere port
-|8144 (HTTPS), bidirectional
+a|8144 (HTTPS), bidirectional
 The port is used for communications from the VMware vSphere web client and from the SnapCenter Server.
 8080 bidirectional
 This port is used to manage the virtual appliance.
-Note: You cannot modify the port configuration.
+[NOTE]
+You cannot modify the port configuration.
+
 |VMware vSphere vCenter Server port
+|You must use port 443 if you plan to protect vVol VMs.
+| Storage cluster or storage VM port
 |443 (HTTPS), bidirectional
-The port is used for communication between the SnapCenter Plug-in for VMware vSphere and vCenter.
+80 (HTTP), bidirectional
+The port is used for communication between the virtual appliance and the storage VM or the cluster that contains the storage VM.
+
 |===
 
 == Configurations supported
