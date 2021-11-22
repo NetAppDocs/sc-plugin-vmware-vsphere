@@ -149,8 +149,6 @@ This port is used to manage the virtual appliance.
 [NOTE]
 You cannot modify the port configuration.
 
-|VMware vSphere vCenter Server port
-|You must use port 443 if you plan to protect vVol VMs.
 | Storage cluster or storage VM port
 |443 (HTTPS), bidirectional
 80 (HTTP), bidirectional
