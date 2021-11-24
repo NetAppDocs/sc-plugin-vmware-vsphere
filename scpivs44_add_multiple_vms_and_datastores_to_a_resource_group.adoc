@@ -28,7 +28,7 @@ A resource group can contain one of the following:
 * #One or more FlexVol datastores (spanning VMs are supported).#
 * #One or more vVol VMs.#
 * #All vVol VMs with a specified tag.#
-* #One vVol VM folder.#
+* #All vVol VMs in a specified folder.#
 
 .Steps
 

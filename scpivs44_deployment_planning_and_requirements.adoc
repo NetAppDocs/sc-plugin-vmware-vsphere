@@ -101,7 +101,7 @@ Flex client is not supported.
 |.Net Core
 |2.1
 |SnapCenter Plug-in for VMware vSphere MySQL database
-| MySQL 8.0.23
+| #MySQL 8.0.27 and later#
 |VMware TLS
 |1.2
 |TLS on the SnapCenter Server
@@ -112,7 +112,9 @@ The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-i
 // Vrishali review comments  April2021 Ronya
 |#ONTAP Tools for VMware (OTV)#
 |#9.10 and later#
-#SnapCenter Plug-in for VMware vSphere uses this to manage vVols datastores (VMware virtual volumes).#
+#SnapCenter Plug-in for VMware vSphere uses this to manage vVol datastores (VMware virtual volumes) and to support the Federal Information Processing Standard (FIPS).#
+#NOTE: Although OTV 9.8P1 is supported, it does not support FIPS.#
+// Burt 1441847 24Nov2021 Ronya
 |===
 
 For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].

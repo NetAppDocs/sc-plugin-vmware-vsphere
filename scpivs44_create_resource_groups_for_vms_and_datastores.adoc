@@ -24,11 +24,11 @@ A resource group can contain one of the following:
 
 * #Flexgroup datastores#
 +
-#One FlexGroup datastore. Spanning VMs are not supported.#
+#One FlexGroup datastore. Spanning datastores are not supported.#
 
 * #FlexVol datastores#
 +
-#One or more FlexVol datastores. Spanning VMs are supported.#
+#One or more FlexVol datastores. Spanning datastores are supported.#
 
 * #vVol VMs#
 +
@@ -36,15 +36,21 @@ A resource group can contain one of the following:
 
 * #vVol VMs with a tag#
 +
-#All vVol VMs with a single, specified VMware tag.#
+#All vVol VMs with a single, specified VMware tag in a single vCenter. Other entities with tags, such as Vapps, or VMs with the same tag in a different vCenter, are not supported.#
+// Burt 1422442 23Nov2021 Ronya
+// Burt 1428392 24Nov2021 Ronya
 
 * #vVol VMs in a folder#
 +
 #All vVols in a single, specified vVol folder.#
 
-[NOTE]
-#If a resource group contains vVol VMs and traditional VMs, SnapCenter Plug-in for VMware vSphere backs up the vVol VMs and skips the traditional VMs.#
-// Burt 1434168 3Nov2021 Ronya
+[IMPORTANT]
+#If a resource group contains a mix of vVol VMs and traditional VMs, SnapCenter Plug-in for VMware vSphere backs up the vVol VMs and skips the traditional VMs.#
+// Burt 1434168 3Nov2021, burt 1428684 24Nov2021 Ronya
+
+[IMPORTANT]
+#If you are using VMware vSphere Cluster Service (vCLS), you should not include VMs managed by vCLS in SnapCenter VMware plug-in resource groups.#
+// Burt 1413651 24Nov2021 Ronya
 
 SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter uses only thick provisioned LUNs to avoid latency.
 
@@ -155,7 +161,7 @@ For special characters in names, follow the same guidelines given for the Name f
 |#Scope#
 |#Select the type of resource you want to protect:#
 * #Datastores (all traditional VMs in one or more specified datastores)#
-* #Virtual Machines (individual traditional or vVol VMs; in the popup field you must navigate to the datastore that contains the VMs or vVol VMs)#
+* #Virtual Machines (individual traditional or vVol VMs; in the field you must navigate to the datastore that contains the VMs or vVol VMs)#
 * #Tags (all vVol VMs with a single, specified VMware tag; in the popup field you must enter the tag)#
 * #VM Folder (all vVol VMs in a specified folder; in the popup field you must navigate to the datacenter in which the folder is located)#
 |#Datacenter#

@@ -33,9 +33,11 @@ You can restore VMs to the following locations:
 
 [NOTE]
 When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the linked vCenter that is the destination for the restore operation. The destination datastore must have sufficient space.
-//
-//Burt 1382316 March 2021 Ronya
-//
+// Burt 1382316 March 2021 Ronya
+
+[NOTE]
+#When restoring a deleted VM, any tags that were originally assigned to the VM are not restored.#
+// Burt 1427781 23Nov2021 Ronya
 
 .Before you begin
 

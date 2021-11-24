@@ -57,18 +57,18 @@ VMFS environments: Clone and mount with Storage VMotion
 |#Primary backups#
 a|#NFS environments:#
 
-* #ONTAP Single File SnapRestore if you are using ONTAP Version 9.10.1 and later.#
+* #ONTAP Single File SnapRestore if you are using ONTAP Version 9.10.1 and later#
 * #Clone and mount with Storage VMotion on ONTAP previous versions#
 
-#VMFS environments: Clone and mount with Storage VMotion#
+#VMFS environments: Not supported for FlexGroups#
 |#FlexGroup VMs#
 |#Secondary backups#
 a|#NFS environments:#
 
-* #ONTAP SnapMirror Restore  if you are using ONTAP Version 9.10.1 and later.#
+* #ONTAP SnapMirror Restore  if you are using ONTAP Version 9.10 and later#
 * #Clone and mount with Storage VMotion for ONTAP previous versions#
 
-#VMFS environments: Clone and mount with Storage VMotion#
+#VMFS environments: Not supported for FlexGroups#
 |===
 
 Guest file restore operations are performed using clone and mount operations (not Storage VMotion) in both NFS and VMFS environments.

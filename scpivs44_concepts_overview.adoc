@@ -47,6 +47,7 @@ Most restore operations in NFS environments use native ONTAP functionality (for 
 * #ONTAP Tools for VMware (OTV) is required for protecting VMware vVols VMs.#
 +
 #You use OTV to provision and configure storage for vVols in ONTAP and in the VMware web client.#
+#NOTE: OTV is not supported in NFS 4.x environments.#
 
 * The SnapCenter VMware plug-in is deployed as a virtual appliance in a Linux VM
 +
