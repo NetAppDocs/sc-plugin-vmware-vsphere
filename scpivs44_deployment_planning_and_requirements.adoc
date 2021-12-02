@@ -118,7 +118,8 @@ The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-i
 // Vrishali review comments  April2021 Ronya
 |===
 
-For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+// updated the IMT link for 4.5
 
 == Space and sizing requirements
 
