@@ -119,6 +119,7 @@ The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-i
 |===
 
 For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+// updated the IMT link for 4.5
 
 == Space and sizing requirements
 
