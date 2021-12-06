@@ -37,9 +37,11 @@ The folder name should not contain the following special characters: $!@#%^&()_+
 +
 For example, if you want to perform backups from six different instances of the vCenter Server, then you must deploy the SnapCenter VMware plug-in on six hosts and each vCenter Server must be paired with a unique instance of the SnapCenter VMware plug-in.
 
-* #To protect vVols VMs (VMs on VMware virtual volumes), you must first deploy ONTAP Tools for VMware (OTV) to provision and configure storage for vVols on ONTAP and on the VMware web client before you can use SnapCenter Plug-in for VMware vSphere to protect the data.#
+* #To protect vVol VMs (VMs on VMware vVol datastores), you must first deploy ONTAP Tools for VMware vSphere (OTV). OTV provisions and configures storage for vVols on ONTAP and on the VMware web client.#
 +
-#For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP Tools for VMware vSphere^]#
+#For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP Tools for VMware vSphere^]#
++
+#For the latest information about supported versions of OTV, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].#
 
 * The SnapCenter VMware plug-in provides limited support of shared PCI or PCIe devices (for example, NVIDIA Grid GPU) due to a limitation of the virtual machines in supporting Storage vMotion. For more information, see the vendor's document Deployment Guide for VMware.
 ** What is supported:
@@ -147,7 +149,7 @@ The port is used for communications from the VMware vSphere web client and from 
 This port is used to manage the virtual appliance.
 Note: You cannot modify the port configuration.
 |VMware vSphere vCenter Server port
-|#You must use port 443 if you plan to protect vVol VMs.#
+|#You must use port 443 if you are protecting vVol VMs.#
 //Updated for Burt 1433718 3Nov2021 Ronya
 |#Storage cluster or storage VM port#
 |443 (HTTPS), bidirectional

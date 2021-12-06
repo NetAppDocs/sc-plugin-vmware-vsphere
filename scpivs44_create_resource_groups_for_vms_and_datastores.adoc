@@ -20,11 +20,11 @@ A resource group can contain one of the following:
 
 * #Traditional VMs and datastores#
 +
-#Any combination of traditional VMs, traditional SAN datastores, and traditional NAS datastores. VSAN and vVol datastores not supported.#
+#Any combination of traditional VMs, traditional SAN datastores, and traditional NAS datastores. vVol VMs are not supported in combination with traditional VMs.#
 
 * #Flexgroup datastores#
 +
-#One FlexGroup datastore. Spanning datastores are not supported.#
+#One FlexGroup datastore. Spanning datastores are not supported. FlexGroup datastores cannot be combined with traditional VMs or datastores.#
 
 * #FlexVol datastores#
 +
@@ -32,7 +32,7 @@ A resource group can contain one of the following:
 
 * #vVol VMs#
 +
-#One or more vVol VMs.#
+#One or more vVol VMs. vVol VMs are not supported in combination with traditional VMs or datastores.#
 
 * #vVol VMs with a tag#
 +
@@ -43,6 +43,8 @@ A resource group can contain one of the following:
 * #vVol VMs in a folder#
 +
 #All vVols in a single, specified vVol folder.#
+
+For all resource groups:
 
 [IMPORTANT]
 #If a resource group contains a mix of vVol VMs and traditional VMs, SnapCenter Plug-in for VMware vSphere backs up the vVol VMs and skips the traditional VMs.#
@@ -162,7 +164,7 @@ For special characters in names, follow the same guidelines given for the Name f
 |#Select the type of resource you want to protect:#
 * #Datastores (all traditional VMs in one or more specified datastores)#
 * #Virtual Machines (individual traditional or vVol VMs; in the field you must navigate to the datastore that contains the VMs or vVol VMs)#
-* #Tags (all vVol VMs with a single, specified VMware tag; in the popup field you must enter the tag)#
+* #Tags (all vVol VMs with a single, specified VMware tag; in the list box you must enter the tag)#
 * #VM Folder (all vVol VMs in a specified folder; in the popup field you must navigate to the datacenter in which the folder is located)#
 |#Datacenter#
 |#Navigate to the VMs or datastores or folder that you want to add.#
@@ -180,7 +182,7 @@ If the message `Selected <resource-name> is not SnapCenter compatible` is displa
 * Always include all spanning datastores [This is the default for VMs.]
 * Manually select the spanning datastores to be included
 +
-#Spanning VMs are not supported for FlexGroup datastores.#
+#Spanning VMs and vVOLs are not supported for FlexGroup datastores.#
 
 . On the *Policies* page, select or create one or more backup policies, as shown in the following table:
 +

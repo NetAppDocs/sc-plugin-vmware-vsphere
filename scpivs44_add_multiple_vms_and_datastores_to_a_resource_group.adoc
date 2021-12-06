@@ -23,7 +23,7 @@ You can add multiple resources to an existing resource group by using the SnapCe
 
 A resource group can contain one of the following:
 
-* #Any combination of traditional VMs and SAN and NAS datastores (VSAN and vVol datastores not supported).#
+* #Any combination of traditional VMs and SAN and NAS datastores (vVol datastores not supported).#
 * #One FlexGroup datastore (spanning VMs are not supported).#
 * #One or more FlexVol datastores (spanning VMs are supported).#
 * #One or more vVol VMs.#
