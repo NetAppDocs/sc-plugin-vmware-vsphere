@@ -37,11 +37,11 @@ The folder name should not contain the following special characters: $!@#%^&()_+
 +
 For example, if you want to perform backups from six different instances of the vCenter Server, then you must deploy the SnapCenter VMware plug-in on six hosts and each vCenter Server must be paired with a unique instance of the SnapCenter VMware plug-in.
 
-* #To protect vVol VMs (VMs on VMware vVol datastores), you must first deploy ONTAP Tools for VMware vSphere (OTV). OTV provisions and configures storage for vVols on ONTAP and on the VMware web client.#
+* To protect vVol VMs (VMs on VMware vVol datastores), you must first deploy ONTAP Tools for VMware vSphere. ONTAP Tools provisions and configures storage for vVols on ONTAP and on the VMware web client.
 +
-#For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP Tools for VMware vSphere^]#
+For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP Tools for VMware vSphere^]
 +
-#For the latest information about supported versions of OTV, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].#
+For the latest information about supported versions of ONTAP Tools, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 * The SnapCenter VMware plug-in provides limited support of shared PCI or PCIe devices (for example, NVIDIA Grid GPU) due to a limitation of the virtual machines in supporting Storage vMotion. For more information, see the vendor's document Deployment Guide for VMware.
 ** What is supported:
@@ -77,12 +77,12 @@ Restoring a complete VM when one or more VMDKs are on a VMFS datastore.
 |vSphere Standard, Enterprise, or Enterprise Plus
 A vSphere license is required to perform restore operations, which use Storage vMotion. vSphere Essentials or Essentials Plus licenses do not include Storage vMotion.
 |Primary destinations
-|#SnapCenter Standard: required to perform application-based protection over VMware#
-#SnapRestore: required to perform restore operations for VMware VMs and datastores only#
-#FlexClone: used for mount and attach operations on VMware VMs and datastores only#
+|SnapCenter Standard: required to perform application-based protection over VMware
+SnapRestore: required to perform restore operations for VMware VMs and datastores only
+FlexClone: used for mount and attach operations on VMware VMs and datastores only
 |Secondary destinations
-|#SnapCenter Standard: used for failover operations for application-based protection over VMware#
-#FlexClone: used for mount and attach operations on VMware VMs and datastores only#
+|SnapCenter Standard: used for failover operations for application-based protection over VMware
+FlexClone: used for mount and attach operations on VMware VMs and datastores only
 |===
 
 == Software support
@@ -91,10 +91,10 @@ A vSphere license is required to perform restore operations, which use Storage v
 |Item |Supported versions
 
 |vCenter vSphere
-|HTML5 client: 6.5U2/U3, 6.7x, 7.0, 7.0U1, 7.0U2, #7.0U3#
+|HTML5 client: 6.5U2/U3, 6.7x, 7.0, 7.0U1, 7.0U2, 7.0U3
 Flex client is not supported.
 |ESXi
-|6.5U2 #and later#
+|6.5U2 and later
 // AUGUST 2021 BURT 1419874
 |IP addresses
 |IPv4, IPv6
@@ -103,7 +103,7 @@ Flex client is not supported.
 |.Net Core
 |2.1
 |SnapCenter Plug-in for VMware vSphere MySQL database
-| #MySQL 8.0.27 and later#
+| MySQL 8.0.27 and later
 |VMware TLS
 |1.2
 |TLS on the SnapCenter Server
@@ -112,10 +112,11 @@ The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-i
 |VMware application vStorage API for Array Integration (VAAI)
 |SnapCenter Plug-in for VMware vSphere uses this to improve performance for restore operations. It also improves performance in NFS environments.
 // Vrishali review comments  April2021 Ronya
-|#ONTAP Tools for VMware (OTV)#
-|#9.10 and later#
-#SnapCenter Plug-in for VMware vSphere uses this to manage vVol datastores (VMware virtual volumes) and to support the Federal Information Processing Standard (FIPS).#
-#NOTE: Although OTV 9.8P1 is supported, it does not support FIPS.#
+|ONTAP Tools for VMware
+|9.8P1 and later
+SnapCenter Plug-in for VMware vSphere uses this to manage vVol datastores (VMware virtual volumes).
+
+9.10 and later also supports the Federal Information Processing Standard (FIPS).
 // Burt 1441847 24Nov2021 Ronya
 |===
 
@@ -149,12 +150,12 @@ The port is used for communications from the VMware vSphere web client and from 
 This port is used to manage the virtual appliance.
 Note: You cannot modify the port configuration.
 |VMware vSphere vCenter Server port
-|#You must use port 443 if you are protecting vVol VMs.#
+|You must use port 443 if you are protecting vVol VMs.
 //Updated for Burt 1433718 3Nov2021 Ronya
-|#Storage cluster or storage VM port#
+|Storage cluster or storage VM port
 |443 (HTTPS), bidirectional
-#80 (HTTP), bidirectional#
-The port is used for communication between the #virtual appliance and the storage VM or the cluster that contains the storage VM.#
+80 (HTTP), bidirectional
+The port is used for communication between the virtual appliance and the storage VM or the cluster that contains the storage VM.
 // Updated for Burt 1435536 3Nov2021 Ronya
 |===
 

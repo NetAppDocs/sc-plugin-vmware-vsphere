@@ -14,44 +14,44 @@ summary: 'A resource group is the container for VMs, datastores, or vVols VMs th
 
 
 [.lead]
-A resource group is the container for VMs, datastores, #or vVols VMs# that you want to protect.
+A resource group is the container for VMs, datastores, or vVols VMs that you want to protect.
 
 A resource group can contain one of the following:
 
-* #Traditional VMs and datastores#
+* Traditional VMs and datastores
 +
-#Any combination of traditional VMs, traditional SAN datastores, and traditional NAS datastores. vVol VMs are not supported in combination with traditional VMs.#
+Any combination of traditional VMs, traditional SAN datastores, and traditional NAS datastores. Traditional VMs cannot be combined with vVol VMs.
 
-* #Flexgroup datastores#
+* Flexgroup datastores
 +
-#One FlexGroup datastore. Spanning datastores are not supported. FlexGroup datastores cannot be combined with traditional VMs or datastores.#
+One FlexGroup datastore. Spanning datastores are not supported. FlexGroup datastores cannot be combined with traditional VMs or datastores.
 
-* #FlexVol datastores#
+* FlexVol datastores
 +
-#One or more FlexVol datastores. Spanning datastores are supported.#
+One or more FlexVol datastores. Spanning datastores are supported.
 
-* #vVol VMs#
+* vVol VMs
 +
-#One or more vVol VMs. vVol VMs are not supported in combination with traditional VMs or datastores.#
+One or more vVol VMs. vVol VMs cannot be combined with traditional VMs or datastores.#
 
-* #vVol VMs with a tag#
+* vVol VMs with a tag
 +
-#All vVol VMs with a single, specified VMware tag in a single vCenter. Other entities with tags, such as Vapps, or VMs with the same tag in a different vCenter, are not supported.#
+All vVol VMs with a single, specified VMware tag in a single vCenter. Other entities with tags, such as Vapps, or VMs with the same tag in a different vCenter, are not supported.
 // Burt 1422442 23Nov2021 Ronya
 // Burt 1428392 24Nov2021 Ronya
 
-* #vVol VMs in a folder#
+* vVol VMs in a folder
 +
-#All vVols in a single, specified vVol folder.#
+All vVols in a single, specified vVol folder.
 
 For all resource groups:
 
 [IMPORTANT]
-#If a resource group contains a mix of vVol VMs and traditional VMs, SnapCenter Plug-in for VMware vSphere backs up the vVol VMs and skips the traditional VMs.#
+If a resource group contains a mix of vVol VMs and traditional VMs, SnapCenter Plug-in for VMware vSphere backs up the vVol VMs and skips the traditional VMs.
 // Burt 1434168 3Nov2021, burt 1428684 24Nov2021 Ronya
 
 [IMPORTANT]
-#If you are using VMware vSphere Cluster Service (vCLS), you should not include VMs managed by vCLS in SnapCenter VMware plug-in resource groups.#
+If you are using VMware vSphere Cluster Service (vCLS), do not include VMs managed by vCLS in SnapCenter VMware plug-in resource groups.
 // Burt 1413651 24Nov2021 Ronya
 
 SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter uses only thick provisioned LUNs to avoid latency.
@@ -61,9 +61,9 @@ Do not add VMs that are in an inaccessible state. Although it is possible to cre
 
 .Before you begin
 
-#ONTAP Tools for VMware (OTV) must be deployed before you create a resource group that contains vVol VMs.#
+ONTAP Tools for VMware must be deployed before you create a resource group that contains vVol VMs.
 
-#For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP Tools for VMware vSphere^]#
+For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP Tools for VMware vSphere^].
 
 .About this task
 
@@ -160,14 +160,14 @@ For special characters in names, follow the same guidelines given for the Name f
 |===
 |For this field… |Do this…
 
-|#Scope#
-|#Select the type of resource you want to protect:#
-* #Datastores (all traditional VMs in one or more specified datastores)#
-* #Virtual Machines (individual traditional or vVol VMs; in the field you must navigate to the datastore that contains the VMs or vVol VMs)#
-* #Tags (all vVol VMs with a single, specified VMware tag; in the list box you must enter the tag)#
-* #VM Folder (all vVol VMs in a specified folder; in the popup field you must navigate to the datacenter in which the folder is located)#
-|#Datacenter#
-|#Navigate to the VMs or datastores or folder that you want to add.#
+|Scope
+|Select the type of resource you want to protect:
+* Datastores (all traditional VMs in one or more specified datastores)
+* Virtual Machines (individual traditional or vVol VMs; in the field you must navigate to the datastore that contains the VMs or vVol VMs)
+* Tags (all vVol VMs with a single, specified VMware tag; in the list box you must enter the tag)
+* VM Folder (all vVol VMs in a specified folder; in the popup field you must navigate to the datacenter in which the folder is located)
+|Datacenter
+|Navigate to the VMs or datastores or folder that you want to add.
 |Available entities
 |Select the resources you want to protect, then click *>* to move your selections to the Selected entities list.
 |===
@@ -182,7 +182,7 @@ If the message `Selected <resource-name> is not SnapCenter compatible` is displa
 * Always include all spanning datastores [This is the default for VMs.]
 * Manually select the spanning datastores to be included
 +
-#Spanning VMs and vVOLs are not supported for FlexGroup datastores.#
+Spanning VMs and vVOLs are not supported for FlexGroup datastores.
 
 . On the *Policies* page, select or create one or more backup policies, as shown in the following table:
 +
