@@ -12,31 +12,26 @@ summary: 'You can add multiple VMs and datastores to any existing resource group
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:23.526498
-//
 
 [.lead]
 You can add multiple resources to an existing resource group by using the SnapCenter VMware vSphere web client Edit Resource Group wizard.
 
 A resource group can contain one of the following:
 
-* #Any combination of traditional VMs and SAN and NAS datastores (vVol datastores not supported).#
-* #One FlexGroup datastore (spanning VMs are not supported).#
-* #One or more FlexVol datastores (spanning VMs are supported).#
-* #One or more vVol VMs.#
-* #All vVol VMs with a specified tag.#
-* #All vVol VMs in a specified folder.#
+* Any combination of traditional VMs and SAN and NAS datastores (vVol datastores not supported).
+* One FlexGroup datastore (spanning VMs are not supported).
+* One or more FlexVol datastores (spanning VMs are supported).
+* One or more vVol VMs.
+* All vVol VMs with a specified vCenter tag.
+* All vVol VMs in a specified folder.
 
 .Steps
 
 . In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then select a resource group, and then click image:scpivs44_image39.png[Error: Missing Graphic Image] *Edit Resource Group* to start the wizard.
 
-. #On the *Resource* page, do the following:#
-.. #In the Datastores field, navigate to the VMs or datastores that you want to add.#
-.. #In the Available entities list, select one or more VMs or datastores you want to add to the resource group,# then click *>* to move your selection to the Selected entities list. You can move all the available entities by clicking *>>*.
+. On the *Resource* page, do the following:
+.. In the Datastores field, navigate to the VMs or datastores that you want to add.
+.. In the Available entities list, select one or more VMs or datastores you want to add to the resource group, then click *>* to move your selection to the Selected entities list. You can move all the available entities by clicking *>>*.
 +
 By default, the Available entities list displays the Datacenter object. You can click a datastore to view the VMs within the datastore and add them to the resource group.
 +

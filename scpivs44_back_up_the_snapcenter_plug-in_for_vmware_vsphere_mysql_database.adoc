@@ -47,5 +47,5 @@ image:scpivs44_image21.png[Error: Missing Graphic Image]
 All inputs are saved when you enter them. When the backup retention number is reached, older backups are deleted when new backups are performed.
 +
 [TIP]
-#Repository backups are named "backup-<date>". Because the repository restore function looks for the "backup" prefix, you should not change it.#
+Repository backups are named "backup-<date>". Because the repository restore function looks for the "backup" prefix, you should not change it.
 // Burt 1433480 Nov 2021 Ronya

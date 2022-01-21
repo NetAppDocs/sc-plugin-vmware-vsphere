@@ -12,11 +12,6 @@ summary: 'You can restore files or folders from a virtual machine disk (VMDK) on
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:25.427663
-//
 
 [.lead]
 You can restore files or folders from a virtual machine disk (VMDK) on a Windows guest OS.
@@ -55,7 +50,7 @@ SnapCenter uses information from VMware Tools to establish a connection to the V
 
 * The Windows Guest OS must be running Windows Server 2008 R2 or later.
 +
-For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
 
 * Credentials for the target VM must specify the built-in domain administrator account or the built-in local administrator account. The username must be "Administrator." Before starting the restore operation, the credentials must be configured for the VM to which you want to attach the virtual disk. The credentials are required for both the attach operation and the subsequent restore operation. Workgroup users can use the built-in local administrator account.
 +
@@ -80,7 +75,7 @@ You can restore files with non-alphabetic names, such as Japanese Kanji, by rest
 
 * Restoring from a Linux guest OS is not supported
 +
-You cannot restore files and folders from a VM that is running Linux guest OS. However, you can attach a VMDK and then manually restore the files and folders. For the latest information on supported guest OS, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
+You cannot restore files and folders from a VM that is running Linux guest OS. However, you can attach a VMDK and then manually restore the files and folders. For the latest information on supported guest OS, see the https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
 
 == Guest file restore limitations
 
@@ -91,7 +86,7 @@ Before you restore a file or folder from a guest OS, you should be aware of what
 * The Guest File Browse page displays the hidden files and folder, which you cannot filter.
 * You cannot restore from a Linux guest OS.
 +
-You cannot restore files and folders from a VM that is running Linux guest OS. However, you can attach a VMDK and then manually restore the files and folders. For the latest information on supported guest OS, see the https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
+You cannot restore files and folders from a VM that is running Linux guest OS. However, you can attach a VMDK and then manually restore the files and folders. For the latest information on supported guest OS, see the https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
 
 * You cannot restore from a NTFS file system to a FAT file system.
 +
@@ -103,7 +98,7 @@ When you try to restore from NTFS-format to FAT-format, the NTFS security descri
 +
 If a file in a nested directory is selected to be restored, the file is not restored with the same directory structure. The directory tree is not restored, only the file. If you want to restore a directory tree, you can copy the directory itself at the top of the structure.
 
-* #You cannot restore guest files from a vVol VM.#
+* You cannot restore guest files from a vVol VM.
 
-* #You cannot restore encrypted guest files.#
+* You cannot restore encrypted guest files.
 //Burt 1416895  23Nov2021 Ronya

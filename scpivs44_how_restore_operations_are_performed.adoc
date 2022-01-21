@@ -64,7 +64,7 @@ VMFS environments: Not supported for FlexGroups
 |Secondary backups
 a|NFS environments:
 
-* ONTAP SnapMirror Restore  if you are using ONTAP Version 9.10 and later
+* ONTAP SnapMirror Restore  if you are using ONTAP Version 9.10.1 and later
 * Clone and mount with Storage VMotion for ONTAP previous versions
 
 VMFS environments: Not supported for FlexGroups

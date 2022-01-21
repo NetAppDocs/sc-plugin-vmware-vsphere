@@ -23,11 +23,11 @@ Use the VMware vSphere web client to add storage.
 +
 SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter only supports thick provisioned LUNs to avoid latency.
 
-* #VMware virtual volumes (vVols)#
+* VMware virtual volumes (vVols)
 +
-#You must first add the vVols storage system to ONTAP Tools for VMware vSphere and then add the vVols storage system to SnapCenter Plug-in for VMware vSphere.#
+You must first add the vVols storage system to ONTAP Tools for VMware vSphere and then add the vVols storage system to SnapCenter Plug-in for VMware vSphere.
 +
-#For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP Tools for VMware vSphere^]#
+For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP Tools for VMware vSphere^]
 
 .Before you begin
 
@@ -75,9 +75,9 @@ The SnapCenter VMware plug-in does not support multiple storage systems with the
 |Select storage protocol.
 |Port
 |Select port 443 (the default) or port 80 to communicate with vCenter.
-#Port 443 is used for communication between the storage VM host for SnapCenter Plug-in for VMware vSphere and vCenter when performing VM and datastore backup and restore operations.#
+Port 443 is used for communication between the storage VM host for SnapCenter Plug-in for VMware vSphere and vCenter when performing VM and datastore backup and restore operations.
 //Updated for Burt 1435536 3Nov2021  Ronya
-#You must select the default port 443 if you plan to protect vVol VMs.#
+You must select the default port 443 if you plan to protect vVol VMs.
 //Updated for Burt 1433718 3Nov2021 Ronya
 |Timeout
 |Enter the number of seconds vCenter should wait before timing out the operation. The default is 60 seconds.

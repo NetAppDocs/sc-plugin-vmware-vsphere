@@ -12,26 +12,21 @@ summary: 'You can restore VMs, VMDKs, files, and folders from primary or seconda
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:24.060765
-//
 
 [.lead]
 You can restore VMs, VMDKs, files, and folders from primary or secondary backups.
 
 * VM restore destinations
 +
-You can restore #traditional# VMs to the original host, or to an alternate host in the same vCenter Server, or to an alternate ESXi host managed by the same vCenter or any vCenter in linked mode.
+You can restore traditional VMs to the original host, or to an alternate host in the same vCenter Server, or to an alternate ESXi host managed by the same vCenter or any vCenter in linked mode.
 +
-#You can restore vVol VMs to the original host.#
+You can restore vVol VMs to the original host.
 
 * VMDK restore destinations
 +
-You can restore VMDKs #in traditional VMs# to either the original or to an alternate datastore.
+You can restore VMDKs in traditional VMs to either the original or to an alternate datastore.
 +
-#You can restore VMDKs in vVol VMs to the original datastore.#
+You can restore VMDKs in vVol VMs to the original datastore.
 
 You can also restore individual files and folders in a guest file restore session, which attaches a backup copy of a virtual disk and then restores the selected files or folders.
 

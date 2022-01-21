@@ -86,11 +86,11 @@ sidebar:
       entries:
         - title: Data protection workflow
           url: /scpivs44_protect_data_overview.html
-        - title: View VM and datastore backups
+        - title: View backups
           url: /scpivs44_view_vm_and_datastore_backups.html
-        - title: Create backup policies for VMs and datastores
+        - title: Create backup policies
           url: /scpivs44_create_backup_policies_for_vms_and_datastores.html
-        - title: Create resource groups for VMs and datastores
+        - title: Create resource groups
           url: /scpivs44_create_resource_groups_for_vms_and_datastores.html
         - title: Prescripts and postscripts
           url: /scpivs44_prescripts_and_postscripts.html
@@ -100,7 +100,7 @@ sidebar:
           url: /scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html
         - title: Back up resource groups on demand
           url: /scpivs44_back_up_resource_groups_on_demand.html
-        - title: Back up the SnapCenter Plug-in for VMware vSphere MySQL database
+        - title: Back up the MySQL database
           url: /scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html
         - title: Manage resource groups - suspend, resume, modify, delete
           url: /scpivs44_manage_resource_groups.html

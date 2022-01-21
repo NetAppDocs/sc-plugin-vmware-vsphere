@@ -12,18 +12,13 @@ summary: 'To perform mount and unmount operations for datastore backups using th
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:28.764362
-//
 
 [.lead]
 To perform mount and unmount operations for datastore backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
 
 For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 
-To mount datastores, follow this workflow:
+== To mount datastores, follow this workflow:
 
 |===
 |Step |REST API |Comments
@@ -59,7 +54,7 @@ In the *datastore* and *location* attributes, pass the information from `snapsho
 In the *esxHostName* attribute, pass the information from *availableEsxHostsList* in Step 4.
 |===
 
-To unmount datastores, follow this workflow:
+== To unmount datastores, follow this workflow:
 
 |===
 |Step |REST API |Comments
