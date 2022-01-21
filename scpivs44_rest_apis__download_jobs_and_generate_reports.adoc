@@ -12,18 +12,13 @@ summary: 'To generate reports and download logs for VMware vSphere web client jo
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:28.778899
-//
 
 [.lead]
-To generate reports and download logs for VMware vSphere web client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere. These REST APIs were added in SnapCenter Plug-in for VMware vSphere 4.4.
+To generate reports and download logs for VMware vSphere web client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere.
 
 For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 
-Beginning with SnapCenter Plug-in for VMware vSphere 4.4, use the following REST APIs in the Jobs section to get detailed information on jobs:
+=== Use the following REST APIs in the Jobs section to get detailed information on jobs:
 
 |===
 |REST API |Comments
@@ -34,7 +29,7 @@ Beginning with SnapCenter Plug-in for VMware vSphere 4.4, use the following REST
 |`Get job details` gets detailed information for the specified job.
 |===
 
-Use the following REST API in the Jobs section to download job logs:
+=== Use the following REST API in the Jobs section to download job logs:
 
 |===
 |REST API |Comments
@@ -43,7 +38,7 @@ Use the following REST API in the Jobs section to download job logs:
 |`getJobLogsById` downloads the logs for the specified job.
 |===
 
-Use the following REST APIs in the Reports section to generate reports:
+=== Use the following REST APIs in the Reports section to generate reports:
 
 |===
 |REST API |Comments

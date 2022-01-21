@@ -36,6 +36,7 @@ The deployment wizard does not verify the space requirement. If you do not have 
 * You must have enabled Transport Layer Security (TLS) in vCenter. Refer to the VMware documentation.
 * You can deploy the SnapCenter VMware plug-in in the same vCenter as the virtual appliance for VSC 7.x and later.
 * If you plan to perform backups in vCenters other than the one in which the SnapCenter VMware plug-in is deployed, then the ESXi server, the SnapCenter VMware plug-in, and each vCenter must be synchronized to the same time.
+* To protect VMs on vVol datastores, you must first deploy ONTAP Tools for VMware vSphere. ONTAP Tools provisions and configures storage on ONTAP and on the VMware web client.
 
 Deploy the SnapCenter VMware plug-in in the same time zone as the vCenter. Backup schedules are executed in the time zone in which the SnapCenter VMware plug-in is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter VMware plug-in and vCenter are in different time zones, data in the SnapCenter VMware plug-in Dashboard might not be the same as the data in the reports.
 
@@ -80,15 +81,17 @@ The configuration file and virtual disk files are stored on the datastore.
 +
 Select a datastore large enough to accommodate the virtual machine or vApp and all associated virtual disk files.
 
-. On the *Select networks* page, select a source network,  and map it to a destination network, and then click *Next*.
+. On the *Select networks* page, do the following:
+.. Select a source network and map it to a destination network,
 +
 The Source Network column lists all networks that are defined in the OVA template.
+.. In the *IP Allocation Settings* section, select the required IP protocol and then click *Next*.
 +
 SnapCenter Plug-in for VMware vSphere supports one network interface. If you need multiple network adapters, you must set that up manually. See the https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3[KB article: How to create additional network adapters^].
 +
 . On the *Customize template* page, do the following:
 
-.. In the *Register to existing vCenter* section, enter the vCenter virtual appliance credentials.
+.. In the *Register to existing vCenter* section, enter the vCenter name and the vCenter credentials of the virtual appliance.
 +
 In the *vCenter username* field, enter the username in the format `domain\username`.
 
@@ -98,11 +101,17 @@ In the *Username* field, enter the local username; do not include the domain det
 +
 [IMPORTANT]
 Make a note of the username and password that you specify. You need to use these credentials if you want to modify the SnapCenter VMware plug-in configuration later.
+
 +
-.. In *Setup Network Properties*, enter the network information.
+.. In *Setup Network Properties*, enter the host name.
+... In *Setup IPv4 Network Properties* section, enter the network information such as IPv4 address, IPv4 Netmask, IPv4 Gateway, IPv4 Primary DNS, IPv4 Secondary DNS, and IPv4 Search Domains.
+... In *Setup IPv6 Network Properties* section, enter the network information such as the IPv6 address, IPv6 Netmask, IPv6 Gateway, IPv6 Primary DNS, IPv6 Secondary DNS, and IPv6 Search Domains.
 +
 Select the IPv4 or IPv6 fields, or both, if appropriate. If you are using both IPv4 and IPv6, then you need to specify the Primary DNS for only one of them.
 +
+[IMPORTANT]
+You can skip these steps and leave the entries blank in the *Setup Network Properties* section, if you want to proceed with DHCP as your network configuration.
+
 .. In *Setup Date and Time*, select the time zone where the vCenter is located.
 
 . On the *Ready to complete* page, review the page and click *Finish*.
@@ -119,7 +128,8 @@ When the SnapCenter VMware plug-in is successfully deployed, it is deployed as a
 +
 The VMware Tools is installed on the VM where the SnapCenter VMware plug-in is deployed. For more information on installing VMware Tools, see the VMware documentation.
 +
-The deployment might take a few minutes to complete. A successful deployment is indicated when the SnapCenter VMware plug-in is powered on, the VMware tools are installed, and the screen prompts you to log in to the SnapCenter VMware plug-in.
+The deployment might take a few minutes to complete. A successful deployment is indicated when the SnapCenter VMware plug-in is powered on, the VMware tools are installed, and the screen prompts you to log in to the SnapCenter VMware plug-in. You can switch your network configuration from DHCP to static during the first reboot. However, switching from static to DHCP is not supported.
+// Burt 1416511 24Nov2021 Ronya
 +
 The screen displays the IP address where the SnapCenter VMware plug-in is deployed. Make a note of the IP address. You need to log in to the SnapCenter VMware plug-in management GUI if you want to make changes to the SnapCenter VMware plug-in configuration.
 // BURT 1378132 observation 2, March 2021 Ronya

@@ -19,6 +19,8 @@ See the link:scpivs44_release_notes.html[SnapCenter Plug-in for VMware vSphere R
 
 TIP: Backup the SnapCenter Plug-in for VMware vSphere OVA before starting an upgrade.
 
+NOTE: Switching your network configuration from static to DHCP is not supported.  
+
 .Steps
 
 . Prepare for the upgrade by disabling SnapCenter Plug-in for VMware vSphere.

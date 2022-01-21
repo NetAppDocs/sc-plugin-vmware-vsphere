@@ -34,6 +34,6 @@ In MetroCluster configurations:
 
 * If backups fail with the error `Unable to discover resources on SCV: <xxx>…` for NFS and VMFS VMs after switchover/switch back, restart the SnapCenter VMware services from the maintenance console.
 
-The workflow in the following figure shows the sequence in which you must perform the backup operations:
+The following workflow figure shows the sequence in which you must perform backup operations:
 
 image:scpivs44_image13.png[Error: Missing Graphic Image]

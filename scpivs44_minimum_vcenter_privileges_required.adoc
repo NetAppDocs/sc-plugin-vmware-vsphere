@@ -1,0 +1,82 @@
+---
+sidebar: sidebar
+permalink: scpivs44_minimum_vcenter_privileges_required.html
+keywords:
+summary: 'Before you begin deployment of SnapCenter Plug-in for VMware vSphere, you should make sure you have the minimum required vCenter privileges.'
+---
+
+= Minimum vCenter privileges required
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//This file was created for Burt 1444097 Jan 2022
+
+[.lead]
+Before you begin deployment of SnapCenter Plug-in for VMware vSphere, you should make sure you have the minimum required vCenter privileges.
+
+== Required privileges for vCenter Admin role
+System.Anonymous
+System.View
+System.Read
+Datastore.Rename
+Datastore.Move
+Datastore.Delete
+Datastore.Browse
+Datastore.FileManagement
+Datastore.AllocateSpace
+Network.Assign
+Host.Config.Storage
+Host.Config.AdvancedConfig
+Host.Config.Resources
+Host.Config.Settings
+Host.Local.CreateVM
+Host.Local.ReconfigVM
+Host.Local.DeleteVM
+VirtualMachine.Inventory.Create
+VirtualMachine.Inventory.CreateFromExisting
+VirtualMachine.Inventory.Register
+VirtualMachine.Inventory.Delete
+VirtualMachine.Inventory.Unregister
+VirtualMachine.Inventory.Move
+VirtualMachine.Interact.PowerOn
+VirtualMachine.Interact.PowerOff
+VirtualMachine.GuestOperations.Query
+VirtualMachine.GuestOperations.Modify
+VirtualMachine.GuestOperations.Execute
+VirtualMachine.Config.AddExistingDisk
+VirtualMachine.Config.AddNewDisk
+VirtualMachine.Config.RemoveDisk
+VirtualMachine.Config.Resource
+VirtualMachine.Config.AdvancedConfig
+VirtualMachine.Config.ReloadFromPath
+VirtualMachine.State.CreateSnapshot
+VirtualMachine.State.RevertToSnapshot
+VirtualMachine.State.RemoveSnapshot
+Resource.AssignVMToPool
+Resource.ApplyRecommendation
+Resource.HotMigrate
+Resource.ColdMigrate
+Resource.QueryVMotion
+Task.Create
+Task.Update
+Extension.Register
+Extension.Update
+Extension.Unregister
+
+
+== Required privileges specific to SnapCenter Plug-in for VMware vCenter
+
+netappSCV.Guest.RestoreFile
+netappSCV.Recovery.MountUnMount
+netappSCV.Backup.DeleteBackupJob
+netappSCV.Configure.ConfigureStorageSystems.Delete
+netappSCV.View
+netappSCV.Recovery.RecoverVM
+netappSCV.Configure.ConfigureStorageSystems.AddUpdate
+netappSCV.Backup.BackupNow
+netappSCV.Guest.Configure
+netappSCV.Configure.ConfigureSnapCenterServer
+netappSCV.Backup.BackupScheduled

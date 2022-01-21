@@ -12,16 +12,13 @@ summary: 'You can attach one or more VMDKs from a backup to the parent VM, or to
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:24.818671
-//
 
 [.lead]
 You can attach one or more VMDKs from a backup to the parent VM, or to an alternate VM on the same ESXi host, or to an alternate VM on an alternate ESXi host managed by the same vCenter or a different vCenter in linked mode.
 
 This makes it easier to restore one or more individual files from a drive instead of restoring the entire drive. You can detach the VMDK after you have restored or accessed the files you need.
+
+You cannot attach VMDKs from vVol backups.
 
 .About this task
 

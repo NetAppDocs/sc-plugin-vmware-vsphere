@@ -12,18 +12,11 @@ summary: 'You can restore a deleted VM from a datastore primary or secondary bac
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:24.349823
-//
 
 [.lead]
 You can restore a deleted VM from a datastore primary or secondary backup to an ESXi host that you select.
 
-In SnapCenter Plug-in for VMware vSphere 4.4 and earlier, you can  restore VMs only to the original host and datastore.
-
-Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore VMs to the following locations:
+You can restore VMs to the following locations:
 
 * Restore to original location
 ** To the original datastore mounted on the original ESXi host (this makes a copy of the VM)
@@ -35,13 +28,18 @@ Beginning in SnapCenter Plug-in for VMware vSphere 4.5, you can restore VMs to t
 
 [NOTE]
 When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the linked vCenter that is the destination for the restore operation. The destination datastore must have sufficient space.
-//
-//Burt 1382316 March 2021 Ronya
-//
+// Burt 1382316 March 2021 Ronya
+
+[NOTE]
+When restoring a deleted VM, any tags that were originally assigned to the VM are not restored.
+// Burt 1427781 23Nov2021 Ronya
 
 .Before you begin
 
 * The user account for the storage system, on the Storage Systems page in the VMware vSphere web client, must have the link:scpivs44_minimum_ontap_privileges_required.html[Minimum ONTAP privileges required for ONTAP].
+
+* The user account in vCenter must have the link:scpivs44_minimum_vcenter_privileges_required.html[Minimum vCenter privileges required for SnapCenter Plug-in for VMware vSphere].
+
 * A backup must exist.
 +
 You must have created a backup of the VM using the SnapCenter Plug-in for VMware vSphere before you can restore the VMDKs on that VM.

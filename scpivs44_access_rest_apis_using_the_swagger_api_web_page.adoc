@@ -12,11 +12,6 @@ summary: 'REST APIs are exposed through the Swagger web page. You can access the
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:28.668084
-//
 
 [.lead]
 REST APIs are exposed through the Swagger web page. You can access the Swagger web page to display the SnapCenter Server or SnapCenter Plug-in for VMware vSphere REST APIs, as well as to manually issue an API call. You can use SnapCenter Plug-in for VMware vSphere REST APIs to perform protection operations on VMs and datastores.
@@ -34,7 +29,7 @@ The plug-in only supports REST APIs for the purpose of integrating with third pa
 
 . From a browser, enter the URL to access the plug-in Swagger web page:
 +
-`https://<appliance_IP_address_or_host_name>:8144/api/swagger-ui.html#`
+`https://<appliance_IP_address_or_host_name>:8144/api/swagger-ui.html`
 +
 [IMPORTANT]
 Do not use the following characters in the REST API URL: +, . , %, and &.
