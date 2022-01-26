@@ -12,12 +12,6 @@ summary: 'SnapCenter Plug-in for VMware vSphere is a standalone virtual applianc
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:20.235275
-//
-
 SnapCenter Plug-in for VMware vSphere is a standalone virtual appliance (Open Virtual Appliance format) that provides data protection services for VMs and datastores, and supports data protection services for SnapCenter application-based plug-ins. This document describes how to deploy and use SnapCenter Plug-in for VMware vSphere and includes quick start information.
 
 SnapCenter Plug-in for VMware vSphere is deployed as a Linux-based virtual appliance.
@@ -26,7 +20,7 @@ The SnapCenter VMware plug-in adds the following functionality to your environme
 
 * Support for VM-consistent and crash-consistent data protection operations.
 +
-You can use the VMware vSphere web client GUI in vCenter for all backup and restore operations of VMware virtual machines (VMs), VMDKs, and datastores. You can also restore VMs and VMDKs and restore files and folders that reside on a guest OS.
+You can use the VMware vSphere web client GUI in vCenter for all backup and restore operations of VMware virtual machines (traditional VMs and vVol VMs), VMDKs, and datastores. For vVol VMs (VMs in vVol datastores), only crash-consistent backups are supported. You can also restore VMs and VMDKs and restore files and folders that reside on a guest OS.
 +
 When backing up VMs, VMDKs, and datastores, the plug-in does not support RDMs. Backup jobs for VMs ignore RDMs. If you need to back up RDMs, you must use a SnapCenter application-based plug-in.
 +
@@ -50,14 +44,19 @@ The restore workflow for VMware file system (VMFS) utilizes the VMware Storage v
 +
 Most restore operations in NFS environments use native ONTAP functionality (for example, Single File SnapRestore) and do not require VMware Storage vMotion.
 
+* ONTAP Tools for VMware vSphere is required for protecting VMware vVol VMs.
++
+You use ONTAP Tools to provision and configure storage for vVols in ONTAP and in the VMware web client.
++
+For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP Tools for VMware vSphere^]
+
 * The SnapCenter VMware plug-in is deployed as a virtual appliance in a Linux VM
 +
 Although the virtual appliance must be installed as a Linux VM, the SnapCenter VMware plug-in supports both Windows-based and Linux-based vCenters. SnapCenter natively uses this plug-in without user intervention to communicate with your vCenter to support SnapCenter application-based plug-ins that perform data protection operations on Windows and Linux virtualized applications.
 
 In addition to these major features, the SnapCenter Plug-in for VMware vSphere also provides support for iSCSI, Fibre Channel, FCoE, VMDK over NFS 3.0 and 4.1, and VMDK over VMFS 5.0 and 6.0.
 
-For the latest information about supported versions, see the https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] (IMT).
-// Updated the IMT link for 4.5
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] (IMT).
 
 For information about NFS protocols and ESXi, see the vSphere Storage documentation that is provided by VMware.
 

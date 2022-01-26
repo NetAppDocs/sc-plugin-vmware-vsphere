@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_how_restore_operations_are_performed.html
 keywords:
-summary: 'For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations.'
+summary: 'For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. For vVol VMs, the plug-in uses ONTAP Single File Snapshot Restore and SnapMirror Restore for restore operations.'
 ---
 
 = How restore operations are performed
@@ -18,36 +18,60 @@ summary: 'For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses 
 // 2020-09-09 12:24:24.060765
 //
 
-For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. The following table lists how restore operations are performed.
+For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. For vVol VMs, the plug-in uses ONTAP Single File Snapshot Restore (ONTAP SFSR) and SnapMirror Restore for restore operations. The following table lists how restore operations are performed.
 
 |===
-|Restore operations |Performed using ONTAP SFSR in NFS environments |Performed using clone and mount with Storage VMotion in NFS environments |Performed using clone and mount with Storage VMotion in VMFS environments
+|Restore operations |From |Performed using
 
-|Restoring VMs and VMDKs from primary backups
-|Yes
-|
-|Yes
-|Restoring VMs and VMDKs from secondary backups
-|Yes
-|
-|Yes
-|Restoring deleted VMs and VMDKs from primary backups
-|Yes
-|
-|Yes
-|Restoring deleted VMs and VMDKs from secondary backups
-|
-|Yes
-|Yes
-|Restoring VMs and VMDKs from VM-consistent primary backups
-|Yes
-|
-|Yes
-|Restoring VMs and VMDKs from VM-consistent secondary backups
-|
-|Yes
-|Yes
+|VMs and VMDKs
+|Primary backups
+|NFS environments: ONTAP Single File SnapRestore
+VMFS environments: Clone and mount with Storage VMotion
+|VMs and VMDKs
+|Secondary backups
+|NFS environments: ONTAP Single File SnapRestore
+VMFS environments: Clone and mount with Storage VMotion
+|Deleted VMs and VMDKs
+|Primary backups
+|NFS environments: ONTAP Single File SnapRestore
+VMFS environments: Clone and mount with Storage VMotion
+|Deleted VMs and VMDKs
+|Secondary backups
+|NFS environments: Clone and mount with Storage VMotion
+VMFS environments: Clone and mount with Storage VMotion
+|VMs and VMDKs
+|VM-consistent primary backups
+|NFS environments: ONTAP Single File SnapRestore
+VMFS environments: Clone and mount with Storage VMotion
+|VMs and VMDKs
+|VM-consistent secondary backups
+|NFS environments: Clone and mount with Storage VMotion
+VMFS environments: Clone and mount with Storage VMotion
+|vVol VMs
+|Crash-consistent primary backups
+|ONTAP Single File SnapRestore for all protocols
+|vVol VMs
+|Crash-consistent secondary backups
+|ONTAP SnapMirror Restore for all protocols
+|FlexGroup VMs
+|Primary backups
+a|NFS environments:
+* ONTAP Single File SnapRestore if you are using ONTAP Version 9.10.1 and later
+* Clone and mount with Storage VMotion on ONTAP previous versions
+
+VMFS environments: Not supported for FlexGroups
+|FlexGroup VMs
+|Secondary backups
+a|NFS environments:
+
+* ONTAP SnapMirror Restore  if you are using ONTAP Version 9.10.1 and later
+* Clone and mount with Storage VMotion for ONTAP previous versions
+
+VMFS environments: Not supported for FlexGroups
 |===
+
+[NOTE]
+You cannot restore a vVOL VM after a vVOL container rebalance.
 
 Guest file restore operations are performed using clone and mount operations (not Storage VMotion) in both NFS and VMFS environments.
 

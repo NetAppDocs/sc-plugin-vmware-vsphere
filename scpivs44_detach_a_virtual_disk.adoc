@@ -12,11 +12,6 @@ summary: 'After you have attached a virtual disk to restore individual files, yo
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:25.202536
-//
 
 [.lead]
 After you have attached a virtual disk to restore individual files, you can detach the virtual disk from the parent VM.
