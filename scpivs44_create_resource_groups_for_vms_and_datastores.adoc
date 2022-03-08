@@ -201,8 +201,8 @@ In Linked Mode, the list includes policies in all the linked vCenters. You must 
 +
 image:scpivs44_image18.png[Error: Missing Graphic Image]
 +
-In the starting hour field, enter a time other than zero.
-// BURT 1280281 June 2021 Ronya
+In the starting hour field, enter a date and time other than zero. The date must be in the format `day/month/year`.
+// BURT 1280281 June 2021  and Burt 1457923 March 2022 Ronya
 +
 You must fill in each field. The SnapCenter VMware plug-in creates schedules in the time zone in which the SnapCenter VMware plug-in is deployed. You can modify the time zone by using the SnapCenter Plug-in for VMware vSphere GUI.
 +
