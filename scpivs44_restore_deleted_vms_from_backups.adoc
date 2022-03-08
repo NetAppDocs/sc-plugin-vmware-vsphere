@@ -31,7 +31,7 @@ When restoring to a different location, SnapCenter Plug-in for VMware vSphere mu
 // Burt 1382316 March 2021 Ronya
 
 [NOTE]
-When restoring a deleted VM, any tags that were originally assigned to the VM are not restored.
+When restoring a deleted VM, any tags or folders that were originally assigned to the VM are not restored.
 // Burt 1427781 23Nov2021 Ronya
 
 .Before you begin
