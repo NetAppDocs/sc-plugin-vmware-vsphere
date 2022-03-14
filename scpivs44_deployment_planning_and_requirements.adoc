@@ -138,6 +138,7 @@ a|8144 (HTTPS), bidirectional
 The port is used for communications from the VMware vSphere web client and from the SnapCenter Server.
 8080 bidirectional
 This port is used to manage the virtual appliance.
+
 Note: You cannot modify the port configuration.
 |VMware vSphere vCenter Server port
 |You must use port 443 if you are protecting vVol VMs.
