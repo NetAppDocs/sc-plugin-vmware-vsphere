@@ -204,7 +204,7 @@ image:scpivs44_image18.png[Error: Missing Graphic Image]
 In the starting hour field, enter a date and time other than zero. The date must be in the format `day/month/year`.
 // BURT 1280281 June 2021  and Burt 1457923 March 2022 Ronya
 +
-When you select a number of days in the *Every* field, then backups are performed on day 1 of the month, and thereafter at every interval that is specified. For example, if you select the option *Every 2 days*, then backups are performed on day 1, 3, 5, 7, and so on throughout the month, regardless of whether the starting data is even or odd.
+When you select a number of days in the *Every* field, then backups are performed on day 1 of the month, and thereafter at every interval that is specified. For example, if you select the option *Every 2 days*, then backups are performed on day 1, 3, 5, 7, and so on throughout the month, regardless of whether the starting date is even or odd.
 // BURT 1463517 April 2022 Ronya
 +
 You must fill in each field. The SnapCenter VMware plug-in creates schedules in the time zone in which the SnapCenter VMware plug-in is deployed. You can modify the time zone by using the SnapCenter Plug-in for VMware vSphere GUI.
