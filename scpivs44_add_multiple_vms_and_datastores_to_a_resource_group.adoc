@@ -25,6 +25,9 @@ A resource group can contain one of the following:
 * All vVol VMs with a specified vCenter tag.
 * All vVol VMs in a specified folder.
 
+[NOTE]
+#vVol datastores that span VMs are not supported. Because attached VMDKs in a VM-spanning vVol datastore are not backed up, the restored VMs will contain only partial VMDKs.#
+
 .Steps
 
 . In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then select a resource group, and then click image:scpivs44_image39.png[Error: Missing Graphic Image] *Edit Resource Group* to start the wizard.
