@@ -34,7 +34,7 @@ You can restore VMs to the following locations:
 ** To a different datastore mounted on a different ESXi host that is managed by a different vCenter in linked mode
 
 [NOTE]
-When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the linked vCenter that is the destination for the restore operation. The destination datastore must have sufficient space.
+You cannot restore vVol VMs to an alternate host.
 
 [NOTE]
 The following restore workflow is not supported: Add a storage VM, then perform a backup of that VM, then delete the storage VM and add a cluster that includes that same storage VM, and then attempt to restore the original backup.
@@ -74,6 +74,11 @@ The restore operation for VMs unregisters the original VM, restores the VM from 
 * Restoring datastores
 +
 You cannot restore a datastore, but you can restore any VM in the datastore.
+
+* Restoring vVol VMs
+** vVol datastores that span VMs are not supported. Because attached VMDKs in a VM-spanning vVol datastore are not backed up, the restored VMs will contain only partial VMDKs.
+** You cannot restore a vVol to an alternate host.
+** vVol automatic rebalance is not supported.
 
 * VMware consistency snapshot failures for a VM
 +
