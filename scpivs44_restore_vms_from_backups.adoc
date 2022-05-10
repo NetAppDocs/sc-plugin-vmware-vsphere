@@ -104,14 +104,11 @@ In the *VM name* field, if the same VM name exists, then the new VM name format 
 // Review comments from QA  Arpil2021  Ronya
 +
 When restoring partial backups, the restore operation skips the *Select Scope* page.
-//
 //Burt 1371420 March 2021  Ronya
-//
 
 . On the *Select Location* page, select the location for the restored datastore.
 +
 In SnapCenter Plug-in for VMware vSphere 4.5 and later, you can select secondary storage for FlexGroup volumes.
-
 
 . Review the Summary page and then click *Finish*.
 . Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the screen.
