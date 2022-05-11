@@ -24,6 +24,15 @@ Specifies the number of days for which the dashboard displays VM protection stat
 +
 The default value is "7".
 
+<<<<<<< HEAD
+* *global.ds.exclusion.pattern*
++
+Specifies one or more traditional or vVol datastores to be excluded from backup operations. You can specify the datastores using any valid Java regular expression.
+=======
+* #*global.ds.exclusion.pattern*#
++
+#Specifies one or more traditional or vVol datastores to be excluded from backup operations. You can specify the datastores using any valid Java regular expression.#
+
 * *guestFileRestore.guest.operation.interval=5*
 +
 Specifies the time interval, in seconds, that SnapCenter Plug-in for VMware vSphere monitors for completion of guest operations on the guest (Online Disk and Restore Files). The total wait time is set by `guestFileRestore.online.disk.timeout` and `guestFileRestore.restore.files.timeout`.
