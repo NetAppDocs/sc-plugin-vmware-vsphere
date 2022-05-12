@@ -29,9 +29,9 @@ The default value is "7".
 +
 Specifies one or more traditional or vVol datastores to be excluded from backup operations. You can specify the datastores using any valid Java regular expression.
 =======
-* #*global.ds.exclusion.pattern*#
+* *global.ds.exclusion.pattern*
 +
-#Specifies one or more traditional or vVol datastores to be excluded from backup operations. You can specify the datastores using any valid Java regular expression.#
+Specifies one or more traditional or vVol datastores to be excluded from backup operations. You can specify the datastores using any valid Java regular expression.
 
 * *guestFileRestore.guest.operation.interval=5*
 +
