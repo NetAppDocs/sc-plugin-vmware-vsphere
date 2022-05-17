@@ -71,7 +71,7 @@ VMFS environments: Not supported for FlexGroups
 |===
 
 [NOTE]
-You cannot restore a vVOL VM after a vVOL container rebalance.
+You cannot restore a vVol VM after a vVol container rebalance.
 
 Guest file restore operations are performed using clone and mount operations (not Storage VMotion) in both NFS and VMFS environments.
 

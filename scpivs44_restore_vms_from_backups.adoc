@@ -14,9 +14,7 @@ summary: 'When you restore a VM, you can overwrite the existing content with the
 
 //
 // This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:24.166876
-//
+
 
 [.lead]
 When you restore a VM, you can overwrite the existing content with the backup copy that you select or you can make a copy of the VM.
@@ -51,6 +49,12 @@ You must have created a backup of the VM using the SnapCenter VMware plug-in bef
 +
 [NOTE]
 Restore operations cannot finish successfully if there are Snapshot copies of the VM that were performed by software other than the SnapCenter Plug-in for VMware vSphere.
+
+* The destination datastore must be ready.
++
+** The destination datastore for the restore operation must have enough space to accommodate a copy of all the VM files (for example: vmdk, vmx, vmsd).
++
+** The destination datastore must not contain stale VM files from previous restore operation failures. Stale files have the name format `restore_xxx_xxxxxx_<filename>`.
 
 * The VM must not be in transit.
 +

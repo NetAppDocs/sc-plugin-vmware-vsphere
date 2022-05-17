@@ -49,8 +49,9 @@ Display a summary of SnapCenter VMware plug-in
 Start or stop SnapCenter VMware plug-in service
 Change login username or password for SnapCenter VMware plug-in
 Change MySQL password
-Backup and restore MySQL
+Backup and restore MySQL, configure and list MySQL backups
 // BURT 1378132 observation 54, March 2021 Ronya
+// Burt 1454993 May 2020 Ronya
 +
 * Option 2: System Configuration
 +
