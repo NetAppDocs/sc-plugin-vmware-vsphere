@@ -140,7 +140,7 @@ sidebar:
           url: /scpivs44_restore_the_most_recent_backup_of_the_mysql_database.html
         - title: Restore a specific backup of the MySQL database
           url: /scpivs44_restore_a_specific_backup_of_the_mysql_database.html
-        - title: Attach VMDKs to a VM
+        - title: Attach VMDKs to a VM or vVol VM
           url: /scpivs44_attach_vmdks_to_a_vm.html
         - title: Detach a virtual disk
           url: /scpivs44_detach_a_virtual_disk.html
