@@ -63,6 +63,7 @@ You should set the retention count to 2 backups or higher if you plan to enable 
 +
 [NOTE]
 The maximum retention value is 1018 backups for resources on ONTAP 9.4 or later, and 254 backups for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports. This is also true for spanning datastores. If a spanning datastore includes resources on both ONTAP 9.3 and earlier and on ONTAP 9.4 and later, make sure you set the retention value below 254.
+// Burt 1363510 May 2022
 
 . Specify the frequency settings.
 +

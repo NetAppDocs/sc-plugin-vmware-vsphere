@@ -99,9 +99,11 @@ Flex client is not supported.
 |IP addresses
 |IPv4, IPv6
 |VMware TLS
-|1.2
+|1.2, 1.3
+//Burt 1474884 May 2022
 |TLS on the SnapCenter Server
-|TLSv1.1 and later
+|1.2, 1.3
+//Burt 1474884 May 2022
 The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-in for application over VMDK data protection operations.
 |VMware application vStorage API for Array Integration (VAAI)
 |SnapCenter Plug-in for VMware vSphere uses this to improve performance for restore operations. It also improves performance in NFS environments.
