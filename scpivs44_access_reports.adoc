@@ -39,7 +39,7 @@ Double-click any job to generate a detailed report for that job.
 +
 You can also click the image:scpivs44_image37.png[Error: Missing Graphic Image] download icon to download plug-in logs.
 
-=== Types of reports from the VMware vSphere Web Client
+== Types of reports from the VMware vSphere Web Client
 
 The VMware vSphere web client for SnapCenter provides customizable report options that provide you with details about your data protection jobs and plug-in resource status. You can generate reports for primary protection only.
 

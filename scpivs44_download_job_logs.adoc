@@ -24,7 +24,7 @@ You can download the job logs from the Job Monitor tab on the Dashboard of the S
 If you encounter unexpected behavior while using the VMware vSphere web client, you can use the log files to identify the cause and resolve the problem.
 
 [NOTE]
-The default value for retaining job logs is 30 days; the default value for retaining jobs is 90 days. Job logs and jobs that are older than the configured retention are purged every six hours. You can use the Configuration REST APIs to modify how long jobs and job logs are retained. You cannot modify the purge schedule.
+The default value for retaining job logs is 30 days; the default value for retaining jobs is 90 days. Job logs and jobs that are older than the configured retention are purged every six hours. You can use the Configuration `jobs/cleanup` REST APIs to modify how long jobs and job logs are retained. You cannot modify the purge schedule.
 // Burt 1381872  March 2021 Ronya
 // GitHub comment and info from Sachin. Oct 2021 Ronya
 

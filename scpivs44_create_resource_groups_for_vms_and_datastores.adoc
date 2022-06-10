@@ -14,9 +14,9 @@ summary: 'A resource group is the container for VMs, datastores, or vVols VMs th
 
 
 [.lead]
-A resource group is the container for VMs, datastores, or vVols VMs that you want to protect.
+A resource group is the container for VMs, datastores, and vVol VMs that you want to protect.
 
-A resource group can contain one of the following:
+A resource group can contain the following:
 
 * Traditional VMs and datastores
 +
@@ -24,7 +24,7 @@ Any combination of traditional VMs, traditional SAN datastores, and traditional 
 
 * Flexgroup datastores
 +
-One FlexGroup datastore. Spanning Flexgroup datastores are not supported. FlexGroup datastores cannot be combined with traditional VMs or datastores.
+A single FlexGroup datastore. Spanning Flexgroup datastores are not supported. A FlexGroup datastore cannot be combined with traditional VMs or datastores.
 
 * FlexVol datastores
 +
@@ -52,7 +52,8 @@ For all resource groups:
 If you are using VMware vSphere Cluster Service (vCLS), do not include VMs managed by vCLS in SnapCenter VMware plug-in resource groups.
 // Burt 1413651 24Nov2021 Ronya
 
-SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 128 TB on ASA aggregates. For large LUNs, SnapCenter uses only thick provisioned LUNs to avoid latency.
+[TIP]
+SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUN sizes up to 128 TB on ASA aggregates. If you are protecting large LUNs, use only thick provisioned LUNs to avoid latency.
 
 [IMPORTANT]
 Do not add VMs that are in an inaccessible state. Although it is possible to create a resource group that contains inaccessible VMs, backups for that resource group will fail.
@@ -138,7 +139,7 @@ Never: Do not send notification
 a| If you want the suffix “_recent” added to the latest Snapshot copy, then check this box. The “_recent” suffix replaces the date and timestamp.
 
 [NOTE]
-A `-recent` backup is created for each policy that is attached to a resource group. Therefore, a resource group with multiple policies will have multiple `-recent` backups. Do not manually rename `-recent` backups.
+A `_recent` backup is created for each policy that is attached to a resource group. Therefore, a resource group with multiple policies will have multiple `_recent` backups. Do not manually rename `_recent` backups.
 //Burt 1471636 May2020 Ronya
 
 |Custom Snapshot format
@@ -161,8 +162,9 @@ For special characters in names, follow the same guidelines given for the Name f
 
 |Scope
 |Select the type of resource you want to protect:
-* Datastores (all traditional VMs in one or more specified datastores)
-* Virtual Machines (individual traditional or vVol VMs; in the field you must navigate to the datastore that contains the VMs or vVol VMs)
+* Datastores (all traditional VMs in one or more specified datastores). You cannot select a vVol datastore.
+* Virtual Machines (individual traditional or vVol VMs; in the field you must navigate to the datastore that contains the VMs or vVol VMs).
+You cannot select individual VMs in a FlexGroup datastore.
 * Tags (all vVol VMs with a single, specified VMware tag; in the list box you must enter the tag)
 * VM Folder (all vVol VMs in a specified folder; in the popup field you must navigate to the datacenter in which the folder is located)
 |Datacenter
@@ -223,7 +225,7 @@ After you click *Finish*, the new resource group is added to the resource groups
 [NOTE]
 If the quiesce operation fails for any of the VMs in the backup, then the backup is marked as not VM- consistent even if the policy selected has VM consistency selected. In this case, it is possible that some of the VMs were successfully quiesced.
 
-=== Manage compatibility check failures
+== Manage compatibility check failures
 
 SnapCenter performs compatibility checks when you attempt to create a resource group.
 
