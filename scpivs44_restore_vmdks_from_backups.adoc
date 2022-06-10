@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_restore_vmdks_from_backups.html
 keywords:
-summary: 'You can restore existing VMDKs, or deleted or detached VMDKs, from either a primary or secondary backup.'
+summary: 'You can restore existing VMDKs, or deleted or detached VMDKs, from either a primary or secondary backup of traditional VMs or vVol VMs.'
 ---
 
 = Restore VMDKs from backups
@@ -19,7 +19,7 @@ summary: 'You can restore existing VMDKs, or deleted or detached VMDKs, from eit
 //
 
 [.lead]
-You can restore existing VMDKs, or deleted or detached VMDKs, from either a primary or secondary backup.
+You can restore existing VMDKs, or deleted or detached VMDKs, from either a primary or secondary backup of traditional VMs or vVol VMs.
 
 You can restore one or more virtual machine disks (VMDKs) on a VM to the same datastore.
 

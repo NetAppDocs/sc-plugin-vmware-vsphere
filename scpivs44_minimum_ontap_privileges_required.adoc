@@ -5,7 +5,7 @@ keywords:
 summary: 'The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.'
 ---
 
-= Minimum ONTAP privileges required
+= ONTAP privileges required
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -20,6 +20,8 @@ summary: 'The minimum ONTAP privileges that are required vary according to the S
 
 [.lead]
 The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.
+
+== Minimum ONTAP privileges required
 
 All SnapCenter plug-ins require the following minimum privileges.
 
@@ -113,7 +115,7 @@ network interface show
 vserver
 |===
 
-=== Additional ONTAP information
+== Additional ONTAP information
 
 * If you are running ONTAP 8.2.x:
 +

@@ -24,9 +24,17 @@ Specifies the number of days for which the dashboard displays VM protection stat
 +
 The default value is "7".
 
+* *disable.weakCiphers=true*
++
+Specifies to disable all weakCiphers, except those listed in  `include.weakCiphers`, for the communication channel between SnapCenter Plug-in for VMware vSphere and SnapCenter.
+
 * *global.ds.exclusion.pattern*
 +
 Specifies one or more traditional or vVol datastores to be excluded from backup operations. You can specify the datastores using any valid Java regular expression.
++
+Example 1: The expression `global.ds.exclusion.pattern=.*21` excludes datastores that have a common pattern; for example `datastore21` and `dstest21` would be excluded.
++
+Example 2: The expression `global.ds.exclusion.pattern=ds-.*|^vol123` excludes all datastores that contain `ds-` (for example `scvds-test`) or begin with `vol123`.
 
 * *guestFileRestore.guest.operation.interval=5*
 +
@@ -89,6 +97,12 @@ The default value is "false".
 Specifies that the SnapCenter VMware plug-in should include iSCSI and FCP initiator IDs from all the ESXi hosts in the cluster in the application over VMDK workflows.
 +
 The default value is "false".
+
+* *include.weakCiphers*
++
+When `disable.weakCiphers` is set to `true`, specifies the weak ciphers that you do not want to be disabled. The following weak ciphers are usually excluded from the disable operation:
++
+`include.weakCiphers=`TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_GCM_SHA384`
 
 * *max.concurrent.ds.storage.query.count=15*
 +
