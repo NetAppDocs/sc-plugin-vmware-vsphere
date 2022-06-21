@@ -26,7 +26,12 @@ The default value is "7".
 
 * *disable.weakCiphers=true*
 +
-Specifies to disable all weakCiphers, except those listed in  `include.weakCiphers`, for the communication channel between SnapCenter Plug-in for VMware vSphere and SnapCenter.
+Disables the following weakCiphers for the communication channel between SnapCenter Plug-in for VMware vSphere and SnapCenter, and any additional weakCiphers that are listed in `include.weakCiphers`:
+TLS_RSA_WITH_AES_256_CBC_SHA256 TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_AES_128_CBC_SHA256 TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_256_GCM_SHA384
 
 * *global.ds.exclusion.pattern*
 +
@@ -100,9 +105,7 @@ The default value is "false".
 
 * *include.weakCiphers*
 +
-When `disable.weakCiphers` is set to `true`, specifies the weak ciphers that you do not want to be disabled. The following weak ciphers are usually excluded from the disable operation:
-+
-`include.weakCiphers=`TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_GCM_SHA384`
+When `disable.weakCiphers` is set to `true`, specifies the weak ciphers that you want to be disabled in addition to the weak ciphers that `disable.weakCiphers` disables by default.
 
 * *max.concurrent.ds.storage.query.count=15*
 +
