@@ -66,8 +66,11 @@ Ensure there are no HA configuration errors displayed on the vCenter ESXi Host S
 
 * Restoring to a different locations
 +
-When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the vCenter that is the destination for the restore operation. The destination datastore must have sufficient space.
+** When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the vCenter that is the destination for the restore operation. The destination datastore must have sufficient space.
 //Burt 1382316 March 2021 Ronya
++
+** The destination vCenter in the Restore To alternate Location field must be DNS resolvable.
+//Burt 14881870 June 2022 Ronya
 
 .About this task
 

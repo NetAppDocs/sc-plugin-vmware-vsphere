@@ -55,7 +55,7 @@ The IP is displayed when you deploy the SnapCenter VMware plug-in.
 +
 The SnapCenter VMware plug-in service is disabled, and the extension is unregistered in vCenter.
 
-. Locate the `vsphere-client-serenity` folder, then locate the `com.netapp.scvm.webclient-4.2.0` folder and delete it.
+. Locate the `vsphere-client-serenity` folder, then locate the `com.netapp.scvm.webclient-<release-number>` folder and delete it.
 +
 The folder name changes for each release.
 
