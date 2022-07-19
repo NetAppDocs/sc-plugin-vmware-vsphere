@@ -21,7 +21,7 @@ summary: 'You can rename and delete backups performed by SnapCenter Plug-in for 
 [.lead]
 You can rename and delete backups performed by SnapCenter Plug-in for VMware vSphere. You can also delete multiple backups simultaneously.
 
-=== Rename backups
+== Rename backups
 
 You can rename SnapCenter Plug-in for VMware vSphere backups if you want to provide a better name to improve searchability.
 
@@ -36,7 +36,7 @@ image:scpivs44_image14.png[Error: Missing Graphic Image]
 +
 Do not use the following special characters in VM, datastore, policy, backup, or resource group names:  & * $ # @ ! \ / : * ? " < > - | ; ' , . An underscore character (_) is allowed.
 
-=== Delete backups
+== Delete backups
 
 You can delete SnapCenter Plug-in for VMware vSphere backups if you no longer require the backup for other data protection operations. You can delete one backup or delete multiple backups simultaneously.
 
