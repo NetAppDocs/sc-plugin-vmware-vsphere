@@ -113,7 +113,7 @@ network interface show
 vserver
 |===
 
-=== Additional ONTAP information
+== Additional ONTAP information
 
 * If you are running ONTAP 8.2.x:
 +
