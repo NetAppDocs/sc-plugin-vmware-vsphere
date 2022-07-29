@@ -21,7 +21,7 @@ summary: 'If the SnapCenter VMware vSphere web client starts to behave incorrect
 [.lead]
 If the SnapCenter VMware vSphere web client starts to behave incorrectly, you might need to clear the browser cache. If the problem persists, then restart the VMware vSphere web client service.
 
-=== Restart the web client service in a Linux vCenter
+== Restart the web client service in a Linux vCenter
 
 If your vCenter is on a Linux appliance, then you must use Linux commands to restart the SnapCenter VMware vSphere web client service.
 
@@ -51,7 +51,7 @@ Do not remove the VASA or VSC7.x and later packages.
 +
 `service-control --start vsphere-ui`
 
-=== Restart the web client service in a Windows vCenter
+== Restart the web client service in a Windows vCenter
 
 If your vCenter is on a Windows host, then you must use Windows commands to restart the SnapCenter web client service.
 

@@ -220,7 +220,7 @@ After you click *Finish*, the new resource group is added to the resource groups
 [NOTE]
 If the quiesce operation fails for any of the VMs in the backup, then the backup is marked as not VM- consistent even if the policy selected has VM consistency selected. In this case, it is possible that some of the VMs were successfully quiesced.
 
-=== Manage compatibility check failures
+== Manage compatibility check failures
 
 SnapCenter performs compatibility checks when you attempt to create a resource group.
 
