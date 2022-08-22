@@ -1,14 +1,25 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere
+  name: SnapCenter Plug-in for VMware vSphere 4.7
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: true
+  versions:
+    - name: SnapCenter Plug-in for VMware vSphere
+      url: /sc-plugin-vmware-vsphere
+      version-number: "4.7"
+    - name: SnapCenter Plug-in for VMware vSphere
+      url: /sc-plugin-vmware-vsphere-46
+      version-number: "4.6"
+    - name: SnapCenter Plug-in for VMware vSphere
+      url: /sc-plugin-vmware-vsphere-45
+      version-number: "4.5"
+
 sidebar:
   entries:
-    - title: SnapCenter Plug-in for VMware vSphere
+    - title: SnapCenter Plug-in for VMware vSphere 4.7 docs
       url: /index.html
     - title: Release notes
       url: /scpivs44_release_notes.html
