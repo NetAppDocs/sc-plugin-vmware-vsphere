@@ -77,7 +77,7 @@ For each job, the report lists the job ID, job status, job name, and job start a
 You can download the Report table in HTML or CSV format. You can also download the Job Monitor job logs for all the jobs (not just the jobs in the report).
 |Last Protection Status of
 VMs or Datastores Report
-|Displays overview information about the protection status, during the configured number of days, for VMs and datastores managed by the SnapCenter VMware plug-in. The default is 7 days. To modify the value in the properties file, see link:scpivs44_manage_your_configuration.html#modify-configuration-default-values[Modify configuration default values].
+|Displays overview information about the protection status, during the configured number of days, for VMs and datastores managed by the SnapCenter VMware plug-in. The default is 7 days. To modify the value in the properties file, see link:scpivs44_modify_configuration_default_values[Modify configuration default values].
 
 Click a section/status on the primary protection chart to see a list of VMs or datastores with that status on the *Reports* tab.
 //Updated for BURT 1378132 observation 13 and 14, March 2021 Madhulika

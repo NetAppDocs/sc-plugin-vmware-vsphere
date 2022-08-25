@@ -12,12 +12,6 @@ summary: 'You can view status information on the vSphere web client Dashboard. S
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:22.165354
-//
-
 You can view status information on the vSphere web client Dashboard. Status information is updated once an hour.
 
 .Steps
@@ -54,8 +48,9 @@ a|Configuration
 a|The total number of each type of object managed by the SnapCenter Plug-in for VMware vSphere.
 //Updated for BURT 1378132 observation 7, March 2021 Madhulika
 a|Storage
-a|The total number of Snapshot copies, SnapVault, and SnapMirror Snapshot copies, generated and the amount of storage used for primary and secondary Snapshot copies. The line graph separately plots primary and secondary storage consumption on a day-by-day basis over a rolling 90-day period. Storage information is updated once every 24 hours at 12:00 A.M.
+a|The total number of Snapshot copies, SnapVault, and SnapMirror Snapshot copies, generated and the amount of storage used for primary and secondary Snapshot copies. The line graph separately plots primary and secondary storage consumption on a day-by-day basis over a rolling 90-day period. Storage information is updated once every 24 hours at 1:08 A.M.
 Storage Savings is the ratio of logical capacity (Snapshot copy savings plus storage consumed) to the physical capacity of primary storage. The bar chart illustrates the storage savings.
+// Burt 1465062 June 2022 Ronya
 
 Hover the cursor over a line on the chart to see detailed day-by-day results.
 //Updated for BURT 1378132 observation 8, March 2021 Madhu

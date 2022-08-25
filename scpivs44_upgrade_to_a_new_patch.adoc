@@ -23,7 +23,7 @@ If the plug-in cache is not cleared, then recent jobs are not displayed in the D
 
 == Steps for clearing the cache
 
-. Locate the `vsphere-client-serenity` folder, then locate the `com.netapp.scvm.webclient-4.6.0` folder and delete it.
+. Locate the `vsphere-client-serenity` folder, then locate the `com.netapp.scvm.webclient-<release-number>` folder and delete it.
 +
 The folder name changes for each release.
 +
