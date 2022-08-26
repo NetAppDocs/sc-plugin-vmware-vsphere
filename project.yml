@@ -1,14 +1,25 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere
+  name: SnapCenter Plug-in for VMware vSphere 4.7
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: true
+  versions:
+    - name: SnapCenter Plug-in for VMware vSphere
+      url: /sc-plugin-vmware-vsphere
+      version-number: "4.7"
+    - name: SnapCenter Plug-in for VMware vSphere
+      url: /sc-plugin-vmware-vsphere-46
+      version-number: "4.6"
+    - name: SnapCenter Plug-in for VMware vSphere
+      url: /sc-plugin-vmware-vsphere-45
+      version-number: "4.5"
+
 sidebar:
   entries:
-    - title: SnapCenter Plug-in for VMware vSphere
+    - title: SnapCenter Plug-in for VMware vSphere 4.7 docs
       url: /index.html
     - title: Release notes
       url: /scpivs44_release_notes.html
@@ -140,7 +151,7 @@ sidebar:
           url: /scpivs44_restore_the_most_recent_backup_of_the_mysql_database.html
         - title: Restore a specific backup of the MySQL database
           url: /scpivs44_restore_a_specific_backup_of_the_mysql_database.html
-        - title: Attach VMDKs to a VM
+        - title: Attach VMDKs to a VM or vVol VM
           url: /scpivs44_attach_vmdks_to_a_vm.html
         - title: Detach a virtual disk
           url: /scpivs44_detach_a_virtual_disk.html

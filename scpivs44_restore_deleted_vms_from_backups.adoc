@@ -20,6 +20,7 @@ You can restore VMs to the following locations:
 
 * Restore to original location
 ** To the original datastore mounted on the original ESXi host (this makes a copy of the VM)
+
 * Restore to alternate location
 ** To a different datastore mounted on the original ESXi host
 ** To the original datastore mounted on a different ESXi host that is managed by the same vCenter
@@ -29,6 +30,9 @@ You can restore VMs to the following locations:
 [NOTE]
 When restoring to a different location, SnapCenter Plug-in for VMware vSphere must be running in the linked vCenter that is the destination for the restore operation. The destination datastore must have sufficient space.
 // Burt 1382316 March 2021 Ronya
+
+[NOTE]
+You cannot restore vVol VMs to an alternate location.
 
 [NOTE]
 When restoring a deleted VM, any tags or folders that were originally assigned to the VM are not restored.
