@@ -150,6 +150,11 @@ Note: You cannot modify the port configuration.
 80 (HTTP), bidirectional
 The port is used for communication between the virtual appliance and the storage VM or the cluster that contains the storage VM.
 // Updated for Burt 1435536 3Nov2021 Ronya
+
+|VMware ESXi Server port
+a|443 (HTTPS), bidirectional
+The Guest File Restore feature uses this port.
+//updated for Burt 1502846 (Jani)
 |===
 
 == Configurations supported
