@@ -135,6 +135,11 @@ Recommended: 16 GB
 |===
 |Type of port |Preconfigured port
 
+|VMware ESXi Server port
+|443 (HTTPS), bidirectional
+The Guest File Restore feature uses this port.
+//updated for Burt 1502846 (Jani)
+
 |SnapCenter Plug-in for VMware vSphere port
 a|8144 (HTTPS), bidirectional
 The port is used for communications from the VMware vSphere web client and from the SnapCenter Server.
@@ -151,10 +156,6 @@ Note: You cannot modify the port configuration.
 The port is used for communication between the virtual appliance and the storage VM or the cluster that contains the storage VM.
 // Updated for Burt 1435536 3Nov2021 Ronya
 
-|VMware ESXi Server port
-a|443 (HTTPS), bidirectional
-The Guest File Restore feature uses this port.
-//updated for Burt 1502846 (Jani)
 |===
 
 == Configurations supported
