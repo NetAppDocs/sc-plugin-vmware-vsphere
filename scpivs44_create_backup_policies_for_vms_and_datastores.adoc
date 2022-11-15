@@ -39,9 +39,6 @@ Most of the fields on these wizard pages are self-explanatory. The following inf
 
 . In the left Navigator pane of the VMware vSphere web client, click *Policies*.
 . On the *Policies* page, click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create* to start the wizard.
-+
-image:scpivs44_image15.png[Error: Missing Graphic Image]
-
 . On the *New Backup Policy* page, select the vCenter Server that will use the policy, and then enter the policy name and a description.
 +
 * Linked mode

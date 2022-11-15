@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+permalink: scv48_add_certificates_to_certificate_store.html
+keywords:
+summary: 'The Certificate Authority's (CA’s) Root and Intermediate certificates must be added to the VMware vCenter in order to trust the certificate and the artifacts that are signed with it. '
+---
+
+= Add certificates to the certificate store
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created for 4.8 release
+
+[.lead]
+Before installing the OVA add the certificate to the vCenter and then begin the installation. The SCV OVA is packaged as a TAR that contains the OVA file, certificates combined into a single PEM file, and instructions on how to add the certificate to the vCenter.
+
+[IMPORTANT]
+In VMware vCenter (7.0.3) versions and higher, the OVA signed by the Entrust certificate is no longer trusted. 
+// is this required?
+
+.Steps
+. Specify the user name and password for administrator@vsphere.local or another member of the vCenter Single Sign-On Administrators group.
+. Navigate to the Certificate Management UI.
+From the Home menu, select Administration.
+Under Certificates, click Certificate Management.
+. Enter the credentials of your vCenter Server.
+. Enter the credentials of your vCenter Server.
+. Click Browse and select the location of the Entrust Root and Intermediate certificates. 
+. Click Add
+The certificate is added to the store.
+. Ensure that the Entrust Root and Intermediate certificates are all added.
+Once the certificates are installed, OVA can be verified & deployed.
+NOTE:
+If the downloaded OVA is not tampered, then the 'Publisher' column displays "Trusted certificate"
+
+
+

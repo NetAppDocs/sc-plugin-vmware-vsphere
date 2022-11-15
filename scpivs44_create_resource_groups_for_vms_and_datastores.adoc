@@ -100,9 +100,7 @@ SnapCenter performs compatibility checks when you create a resource group.
 .Steps
 
 . In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create* to start the wizard.
-+
-image:scpivs44_image16.png[Error: Missing Graphic Image]
-+
+
 This is the easiest way to create a resource group. However, you can also create a resource group with one resource by performing one of the following:
 +
 ** To create a resource group for one VM, click *Menu* > *Hosts and Clusters*, then right-click a VM, then select NetApp SnapCenter, and then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create Resource Group*.

@@ -1,6 +1,6 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere 4.7
+  name: SnapCenter Plug-in for VMware vSphere 4.8
   internal:
     pdf_enabled: true
   prod:
@@ -69,7 +69,7 @@ sidebar:
       entries:
         - title: Overview
           url: /scpivs44_quick_start_overview.html
-        - title: Download the OVA (Open Virtual Appliance)
+        - title: Download the Open Virtual Appliance(OVA)
           url: /scpivs44_download_the_ova_open_virtual_appliance.html
         - title: Deploy SnapCenter Plug-in for VMware vSphere
           url: /scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html
