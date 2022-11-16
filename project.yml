@@ -58,7 +58,7 @@ sidebar:
             - title: Minimum vCenter privileges required
               url: /scpivs44_minimum_vcenter_privileges_required.html
         - title: Add certificates to the certificate store
-        url: /scv48_add_certificates_to_certificate_store.html
+          url: /scv48_add_certificates_to_certificate_store.html
         - title: Download the SnapCenter Plug-in for VMware vSphere OVA (Open Virtual Appliance)
           url: /scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html
         - title: Deploy SnapCenter Plug-in for VMware vSphere
