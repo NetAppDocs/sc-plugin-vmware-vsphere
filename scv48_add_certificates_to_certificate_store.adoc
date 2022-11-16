@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: scv48_add_certificates_to_certificate_store.html
-keywords: AddCertificate
-summary: 'The Certificate Authority's (CA's) Root and Intermediate certificates must be added to the VMware vCenter in order to trust the certificate and the artifacts that are signed with it.'
+keywords: 
+summary: 'Add the Root and Intermediate certificates of Certificate Authority to the VMware vCenter in order to trust the certificate and the artifacts that are signed with it.'
 ---
 
 = Add certificates to the certificate store
