@@ -25,7 +25,7 @@ Before installing the OVA, you need to add certificate to the VMware Certificate
 In VMware vCenter 7.0.3 versions and higher, the OVA signed by the Entrust certificate is no longer trusted. 
 // is this required?
 
-Steps
+.Steps
 . Log in with the vSphere Client to the vCenter Server.
 . Navigate to *Administration > Certificates > Certificate Management*.
 . Next to *Trusted Root Store*, click *Add*

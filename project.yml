@@ -58,7 +58,7 @@ sidebar:
             - title: Minimum vCenter privileges required
               url: /scpivs44_minimum_vcenter_privileges_required.html
         - title: Download the SnapCenter Plug-in for VMware vSphere OVA (Open Virtual Appliance)
-          url: /scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html
+          url: /scpivs44_download_the_ova_open_virtual_appliance.html
         - title: Deploy SnapCenter Plug-in for VMware vSphere
           url: /scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html
         - title: Post deployment required operations and issues
