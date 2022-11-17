@@ -37,11 +37,11 @@ The folder name should not contain the following special characters: $!@#%^&()_+
 +
 For example, if you want to perform backups from six different instances of the vCenter Server, then you must deploy the SnapCenter VMware plug-in on six hosts and each vCenter Server must be paired with a unique instance of the SnapCenter VMware plug-in.
 
-* To protect vVol VMs (VMs on VMware vVol datastores), you must first deploy ONTAP Tools for VMware vSphere. ONTAP Tools provisions and configures storage for vVols on ONTAP and on the VMware web client.
+* To protect vVol VMs (VMs on VMware vVol datastores), you must first deploy ONTAP tools for VMware vSphere. ONTAP tools provisions and configures storage for vVols on ONTAP and on the VMware web client.
 +
-For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP Tools for VMware vSphere^]
+For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP tools for VMware vSphere^]
 +
-For the latest information about supported versions of ONTAP Tools, see the https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions of ONTAP tools, see the https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 * The SnapCenter VMware plug-in provides limited support of shared PCI or PCIe devices (for example, NVIDIA Grid GPU) due to a limitation of the virtual machines in supporting Storage vMotion. For more information, see the vendor's document Deployment Guide for VMware.
 ** What is supported:
@@ -108,7 +108,7 @@ The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-i
 |VMware application vStorage API for Array Integration (VAAI)
 |SnapCenter Plug-in for VMware vSphere uses this to improve performance for restore operations. It also improves performance in NFS environments.
 // Vrishali review comments  April2021 Ronya
-|ONTAP Tools for VMware
+|ONTAP tools for VMware
 |SnapCenter Plug-in for VMware vSphere uses this to manage vVol datastores (VMware virtual volumes). For supported versions, see the NetApp Interoperability Matrix Tool.
 |===
 

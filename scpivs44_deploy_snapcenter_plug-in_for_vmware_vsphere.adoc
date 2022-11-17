@@ -32,11 +32,12 @@ The deployment wizard does not verify the space requirement. If you do not have 
 * You must have set up an ESXi host for the SnapCenter VMware plug-in VM.
 * You must have downloaded the SnapCenter Plug-in for VMware vSphere .ova file.
 * You must have the login credentials for your vCenter Server instance.
+* You must have a certificate with valid Public and Private Key files.
 * You must have logged out of and closed all browser sessions of vSphere Web Client and deleted the browser cache to avoid any browser cache issue during the deployment of the SnapCenter VMware plug-in.
 * You must have enabled Transport Layer Security (TLS) in vCenter. Refer to the VMware documentation.
 * You can deploy the SnapCenter VMware plug-in in the same vCenter as the virtual appliance for VSC 7.x and later.
 * If you plan to perform backups in vCenters other than the one in which the SnapCenter VMware plug-in is deployed, then the ESXi server, the SnapCenter VMware plug-in, and each vCenter must be synchronized to the same time.
-* To protect VMs on vVol datastores, you must first deploy ONTAP Tools for VMware vSphere. ONTAP Tools provisions and configures storage on ONTAP and on the VMware web client.
+* To protect VMs on vVol datastores, you must first deploy ONTAP tools for VMware vSphere. ONTAP tools provisions and configures storage on ONTAP and on the VMware web client.
 
 Deploy the SnapCenter VMware plug-in in the same time zone as the vCenter. Backup schedules are executed in the time zone in which the SnapCenter VMware plug-in is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter VMware plug-in and vCenter are in different time zones, data in the SnapCenter VMware plug-in Dashboard might not be the same as the data in the reports.
 
