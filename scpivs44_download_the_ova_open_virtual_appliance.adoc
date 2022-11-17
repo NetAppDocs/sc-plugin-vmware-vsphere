@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_download_the_ova_open_virtual_appliance.html
 keywords:
-summary: 'The .tar file includes OVA, which is a set of microservices for VM and datastore data protection and the certificate file.
+summary: 'The .tar file includes OVA, which is a set of microservices for VM and datastore data protection and the certificate file.'
 ---
 
 = Download the Open Virtual Appliance(OVA)
