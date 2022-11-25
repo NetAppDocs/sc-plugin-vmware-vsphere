@@ -65,7 +65,7 @@ The SnapCenter VMware plug-in does not support multiple storage systems with the
 |Platform
 |Select the platform.
 |Authentication Method
-|Credentials and Certificate
+|Select either Credentials or Certificate
 |Username
 |Enter the ONTAP username that is used to log on to the storage VM.
 |Password
