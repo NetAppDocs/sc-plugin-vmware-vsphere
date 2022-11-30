@@ -23,10 +23,7 @@ After performing any data protection operation using the VMware vSphere web clie
 
 .Steps
 
-. In the left Navigator pane of the vSphere web client, click *Dashboard*, select a vCenter Server, and then click the *Job Monitor* tab.
-+
-image:scpivs44_image8.png[Error: Missing Graphic Image]
-+
+. In the left Navigator pane of the vSphere web client, click *Dashboard*, select a vCenter Server, and then click the *Job Monitor* tab in the Dashboard pane.
 The Job Monitor tab lists each job and its status, start time, and end time. If the job names are long, you might need to scroll to the right to view the start and end times. The display is refreshed every 30 seconds.
 +
 * Click the image:scpivs44_image36.png[Error: Missing Graphic Image] refresh icon in the toolbar to refresh the display on-demand.

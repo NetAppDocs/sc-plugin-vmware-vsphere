@@ -29,7 +29,7 @@ To correct this issue, configure the SnapMirror retention policy for the seconda
 +
 For information about how administrators assign resources to users, see the https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html[SnapCenter information on using role-based access control^].
 
-* If you want VM-consistent backups, you must have VMware Tools installed and running. VMware Tools is needed to quiesce VMs. VM-consistent backups are not supported for vVol VMs.
+* If you want VM-consistent backups, you must have VMware tools installed and running. VMware tools is needed to quiesce VMs. VM-consistent backups are not supported for vVol VMs.
 
 .About this task
 
@@ -107,7 +107,7 @@ a|Check this box to quiesce the VMs and create a VMware snapshot each time the b
 This option is not supported for vVols. For vVol VMs, only crash-consistent backups are performed.
 
 [IMPORTANT]
-You must have VMware Tools running on the VM to perform VM consistent backups. If VMware Tools is not running, a crash-consistent backup is performed instead.
+You must have VMware tools running on the VM to perform VM consistent backups. If VMware Tools is not running, a crash-consistent backup is performed instead.
 
 [NOTE]
 When you check the VM consistency box, backup operations might take longer and require more storage space. In this scenario, the VMs are first quiesced, then VMware performs a VM consistent snapshot, then SnapCenter performs its backup operation, and then VM operations are resumed.

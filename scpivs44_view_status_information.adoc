@@ -16,9 +16,7 @@ You can view status information on the vSphere web client Dashboard. Status info
 
 .Steps
 
-. In the left Navigator pane of the vSphere web client, click *Dashboard*, select a vCenter Server, and then click the *Status* tab.
-+
-image:scpivs44_image7.png[Error: Missing Graphic Image]
+. In the left Navigator pane of the vSphere web client, click *Dashboard*, select a vCenter Server, and then click the *Status* tab in the dashboard pane.
 
 . View overview status information or click a link for more details, as listed in the following table.
 +

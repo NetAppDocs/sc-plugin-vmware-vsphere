@@ -44,9 +44,9 @@ Restore the selected files or folders to a specified location.
 
 Before you restore one or more files or folders from a VMDK on a Windows guest OS, you must be aware of all the requirements.
 
-* VMware Tools must be installed and running.
+* VMware tools must be installed and running.
 +
-SnapCenter uses information from VMware Tools to establish a connection to the VMware Guest OS.
+SnapCenter uses information from VMware tools to establish a connection to the VMware Guest OS.
 
 * The Windows Guest OS must be running Windows Server 2008 R2 or later.
 +

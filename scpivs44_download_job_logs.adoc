@@ -30,9 +30,7 @@ The default value for retaining job logs is 30 days; the default value for retai
 
 .Steps
 
-. In the left Navigator pane of the vSphere web client, click *Dashboard*, select a vCenter Server, and then click the *Job Monitor* tab.
-+
-image:scpivs44_image9.png[Error: Missing Graphic Image]
+. In the left Navigator pane of the vSphere web client, click *Dashboard*, select a vCenter Server, and then click the *Job Monitor* tab in the Dashboard pane.
 
 . Click the image:scpivs44_image37.png[Error: Missing Graphic Image] download icon in the Job Monitor title bar.
 +
