@@ -19,7 +19,7 @@ summary: 'The .tar file includes OVA, which is a set of microservices for VM and
 //
 
 [.lead]
-Before installing the OVA, you need to add certificate to the VMware Certificate Store. The SCV OVA is packaged as a TAR that contains the OVA file, certificates combined into a single PEM file, and instructions on how to add the certificate to the vCenter. The OVA deployment is supported in VMware vCenter 7u1 and above.
+Before installing the OVA, add the certificate to the vCenter. The archive file contains the OVA and Entrust Root and Intermediate certificates, the certificates can be found within the certificates folder. The OVA deployment is supported in VMware vCenter 7u1 and above.
 
 [IMPORTANT]
 In VMware vCenter 7.0.3 versions and higher, the OVA signed by the Entrust certificate is no longer trusted. 
@@ -30,7 +30,8 @@ In VMware vCenter 7.0.3 versions and higher, the OVA signed by the Entrust certi
 . Navigate to *Administration > Certificates > Certificate Management*.
 . Next to *Trusted Root Store*, click *Add*
 . Browse for the AD FS root certificate and click *Add*
-The certificate is added in a panel under *Trusted Root Certificates*.
+.. Browse and select the location of the Entrust Root and Intermediate certificates.
+.. The certificate is added in a panel under *Trusted Root Certificates*.
 Once the certificates are installed, OVA can be verified and deployed.
 . To download the SnapCenter Plug-in for VMware:
 
