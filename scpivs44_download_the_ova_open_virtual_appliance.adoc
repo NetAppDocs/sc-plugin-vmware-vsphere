@@ -29,9 +29,8 @@ In VMware vCenter 7.0.3 versions and higher, the OVA signed by the Entrust certi
 . Log in with the vSphere Client to the vCenter Server.
 . Navigate to *Administration > Certificates > Certificate Management*.
 . Next to *Trusted Root Store*, click *Add*
-. Browse for the AD FS root certificate and click *Add*
-.. Browse and select the location of the Entrust Root and Intermediate certificates.
-.. The certificate is added in a panel under *Trusted Root Certificates*.
+. Browse and select the location of the Entrust Root and Intermediate certificates.
+The certificate is added in a panel under *Trusted Root Certificates*.
 Once the certificates are installed, OVA can be verified and deployed.
 . To download the SnapCenter Plug-in for VMware:
 
