@@ -233,6 +233,8 @@ sidebar:
           url: /scpivs44_rest_api_workflows__modify_built-in_schedules.html
         - title: REST API to mark stuck jobs as failed
           url: /scpivs44_rest_apis_fail_stuck_jobs.html
+        - title: REST APIs to generate audit logs
+          url: /scpivs48_rest_apis_audit_logs.html
     - title: Upgrade
       entries:
         - title: Upgrade from an earlier release of SnapCenter Plug-in for VMware vSphere
