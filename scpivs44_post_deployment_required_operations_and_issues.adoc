@@ -33,8 +33,6 @@ To correct either of these issues, do the following:
 . Clear the browser cache and then check if the GUI is operating properly.
 +
 If the problem persists, then restart the VMware vSphere web client service
-+
-image:scpivs44_image5.png[Error: Missing Graphic Image]
 
 . Log in to vCenter, then click *Menu* in the toolbar, and then select *SnapCenter Plug-in for VMware vSphere*.
 

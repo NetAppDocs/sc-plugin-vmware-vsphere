@@ -69,6 +69,5 @@ The screen displays the IP address where the SnapCenter VMware plug-in is deploy
 +
 Use the format `https://<appliance-IP-address>:8080` to access the management GUI.
 +
-By default, the maintenance console user name is set to “maint” and the password is set to “admin123”.
 
 . Log in to vCenter HTML5 client, then click *Menu* in the toolbar, and then select *SnapCenter Plug-in for VMware vSphere*

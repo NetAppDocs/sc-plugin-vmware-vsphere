@@ -1,0 +1,94 @@
+---
+sidebar: sidebar
+permalink: scv48_audit_logs.html
+keywords:
+summary: 'Audit log provides traceability of who did what and when. Audit log is a collection of events in a chronological order, and it is written to a file within the appliance.'
+---
+
+= Audit logs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+Audit log is a collection of events in a chronological order, which written to a file within the appliance. An event is an operation triggered by an user that occurs in a point of time which affects one or more resources. SCV provides REST API to view logs and verify integrity. 
+Events are categorize into three major categories as follows:
+
+* Data Protection Events
+* Maintenance Console Events
+* Admin Console Events
+
+== Data Protection Events
+The resources in SCV are:
+
+* Storage System
+* Resource Group
+* Policy
+* Backup
+* Subscription
+* Account
+
+The following table lists the operations that can be performed on each resource:
+|===
+|Resources |Operations |Details 
+|Storage System
+|Created, Modified, Deleted
+|Storage System Name
+|Subscription
+|Created, Modified, Deleted
+|Subscription Name
+|Account
+|Created, Modified, Deleted
+|Account Name
+|Resource Group	
+|Created, Modified, Deleted, Suspended, Resumed
+|Resource Group Name
+|Policy
+|Created, Modified, Deleted
+|Policy Name
+|Backup
+|Created, Renamed, Deleted, Mounted, Unmounted, Restored VMDK, Restored VM, Attach VMDK, Detach VMDK, Guest File Restore
+|*Created*: Resource Group Name and Policy Name
+*Renamed, Deleted, Mounted and Unmounted*: Backup Name
+*Restored VMDK, Attach VMDK, and Detach VMDK*: Backup Name and VMDK's Name
+*Restored VM*: Backup Name and VM Name
+*Guest File Restore* Backup Name and Files
+
+|===
+
+== Maintenance Console Events
+The administrative operations in the maintenance console is audited. 
+Available maintenance console options are:
+
+1. Start / Stop services
+2. Change username & password
+3. Change MySQL password
+4. Configure MySQL Backup
+5. Restore MySQL Backup
+6. Change 'maint' user password
+7. Change time zone
+8. Change NTP Server
+9. Disable SSH access
+10. Increase jail disk size
+11. Upgrade
+12. Install VMware Tools (We are working on  replace this with open-vm tools)
+13. Change IP address settings
+14. Change domain name search settings
+15. Change static routes
+16. Access diagnostic shell
+17. Enable remote diagnostic access
+
+== Admin Console Events
+The following operations in Admin Console UI is audited:
+
+* Settings
+** Change admin credentials
+** Change timezone
+** Change NTP Server
+** Change IPv4 / IPv6 settings
+* Configuration
+** Change vCenter Credentials
+** Plug-in Enable / Disable

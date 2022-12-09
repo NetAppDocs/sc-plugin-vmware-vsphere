@@ -30,8 +30,8 @@ The deployment wizard does not verify the space requirement. If you do not have 
 * You must be running a supported version of vCenter Server.
 * You must have configured and set up your vCenter Server environment.
 * You must have set up an ESXi host for the SnapCenter VMware plug-in VM.
-* You must have downloaded the SnapCenter Plug-in for VMware vSphere .ova file.
-* You must have the login credentials for your vCenter Server instance.
+* You must have downloaded the SnapCenter Plug-in for VMware vSphere .tar file.
+* You must have the login authentication details for your vCenter Server instance.
 * You must have a certificate with valid Public and Private Key files.
 * You must have logged out of and closed all browser sessions of vSphere Web Client and deleted the browser cache to avoid any browser cache issue during the deployment of the SnapCenter VMware plug-in.
 * You must have enabled Transport Layer Security (TLS) in vCenter. Refer to the VMware documentation.
@@ -50,25 +50,25 @@ For IPv6 HTML web clients, you must use either Chrome or Firefox.
 . On the VMware screen, click *vSphere Web Client (HTML5)*.
 . Log in to the *VMware vCenter Single Sign-On* page.
 . On the Navigator pane, right-click any inventory object that is a valid parent object of a virtual machine, such as a datacenter, cluster, or host, and select *Deploy OVF Template* to start the VMware deploy wizard.
-. On the *Select an OVF template* page, specify the location of the `.ova` file (as shown in the following table) and click *Next*.
+. On the *Select an OVF template* page, specify the location of the `.tar` file (as shown in the following table) and click *Next*.
 +
 |===
-|If you downloaded the `.ova` file to… |Do this…
+|If you downloaded the `.tar` file to… |Do this…
 
 |An internet location
 |Enter the URL. Supported URL sources are HTTP and HTTPS.
 |A local file
-|Click *Choose Files* and navigate to the .ova file.
+|Click *Choose Files* and navigate to the .tar file.
 |===
 
 . On the *Select a name and folder* page, enter a unique name for the VM or vApp, and select a deployment location, and then click *Next*.
 +
-This step specifies where to import the `.ova` file into vCenter. The default name for the VM is the same as the name of the selected `.ova` file. If you change the default name, choose a name that is unique within each vCenter Server VM folder.
+This step specifies where to import the `.tar` file into vCenter. The default name for the VM is the same as the name of the selected `.tar` file. If you change the default name, choose a name that is unique within each vCenter Server VM folder.
 +
 The default deployment location for the VM is the inventory object where you started the wizard.
 +
 . On the *Select a resource* page, select the resource where you want to run the deployed VM template, and click *Next*.
-. On the *Review details* page, verify the `.ova` template details and click *Next*.
+. On the *Review details* page, verify the `.tar` template details and click *Next*.
 . On the *License agreements* page, select the checkbox for *I accept all license agreements*.
 . On the *Select storage* page, define where and how to store the files for the deployed OVF template.
 .. Select the disk format for the VMDKs.
@@ -138,7 +138,7 @@ The screen displays the IP address where the SnapCenter VMware plug-in is deploy
 +
 Use the format `https://<appliance-IP-address>:8080` to access the management GUI.
 +
-By default, the maintenance console username is set to “maint” and the password is set to “admin123”.
+Log in using the default maintenance console username and password provided to you.
 +
 If the SnapCenter VMware plug-in is not enabled, then see link:scpivs44_restart_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere web client service].
 // BURT 1378132 observation 10, March 2021 Ronya

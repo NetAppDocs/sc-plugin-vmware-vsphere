@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html
 keywords:
-summary: 'You can download the .ova file for SnapCenter Plug-in for VMware vSphere from the NetApp Support Site.'
+summary: 'You can download the .tar file for SnapCenter Plug-in for VMware vSphere from the NetApp Support Site.'
 ---
 
 = Download the SnapCenter Plug-in for VMware vSphere OVA (Open Virtual Appliance)
@@ -19,12 +19,12 @@ summary: 'You can download the .ova file for SnapCenter Plug-in for VMware vSphe
 //
 
 [.lead]
-You can download the `.ova` file for SnapCenter Plug-in for VMware vSphere from the NetApp Support Site.
+You can download the `.tar` file for SnapCenter Plug-in for VMware vSphere from the NetApp Support Site.
 
-The `.ova` file includes a set of microservices for VM and datastore data protection, which are performed by the SnapCenter VMware plug-in. When the deployment is complete, all components are installed on a Linux VM in your environment.
+The `.tar` file includes a set of microservices for VM and datastore data protection, which are performed by the SnapCenter VMware plug-in. When the deployment is complete, all components are installed on a Linux VM in your environment.
 
 .Steps
 
 . Log in to the NetApp Support Site ( https://mysupport.netapp.com/products/index.html[https://mysupport.netapp.com/products/index.html^]).
 . From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *Download Latest Release* button.
-. Download the SnapCenter Plug-in for VMware vSphere `.ova` file to any location.
+. Download the SnapCenter Plug-in for VMware vSphere `.tar` file to any location.
