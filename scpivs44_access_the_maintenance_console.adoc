@@ -21,9 +21,7 @@ Before stopping and restarting the SnapCenter Plug-in for VMware vSphere service
 
 .About this task
 
-* For SnapCenter Plug-in for VMware vSphere 4.6 and earlier, Use the default username and password provided to you to log in to the maintenance console for SnapCenter Plug-in for VMware vSphere.
-+
-Beginning in SnapCenter Plug-in for VMware vSphere 4.6P1, you must specify a password when you first install SnapCenter Plug-in for VMware vSphere. If you upgrade from release 4.6 or earlier to release 4.6P1 or later, the earlier default password is accepted.
+* In SnapCenter Plug-in for VMware vSphere 4.6P1, you must specify a password when you first install SnapCenter Plug-in for VMware vSphere. If you upgrade from release 4.6 or earlier to release 4.6P1 or later, the earlier default password is accepted.
 //Comment from CSAR May 2022
 
 * You must set a password for the “diag” user while enabling remote diagnostics.
