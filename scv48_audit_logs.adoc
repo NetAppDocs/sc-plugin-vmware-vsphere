@@ -14,8 +14,8 @@ summary: 'Audit log provides traceability of who did what and when. Audit log is
 
 
 [.lead]
-Audit log is a collection of events in a chronological order, which written to a file within the appliance. An event is an operation triggered by an user that occurs in a point of time which affects one or more resources. SCV provides REST API to view logs and verify integrity. 
-Events are categorize into three major categories as follows:
+Audit log is a collection of events in a chronological order, which is written to a file within the appliance. An event is an operation triggered by an user that occurs at a point of time which affects one or more resources. SCV provides REST API to view logs and verify their integrity. 
+Events are categorize into three major categories:
 
 * Data Protection Events
 * Maintenance Console Events
