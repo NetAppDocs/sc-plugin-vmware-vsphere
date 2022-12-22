@@ -27,7 +27,7 @@ You might want to extend a guest file restore session if you want to restore add
 
 .Steps
 
-. In the VMware vSphere web client, click *Guest File Restore*.
+. In the VMware vSphere client, click *Guest File Restore*.
 . Select a guest file restore session and then click the Extend Selected Guest Session icon in the Guest Session Monitor title bar.
 +
 The session is extended for another 24 hours.

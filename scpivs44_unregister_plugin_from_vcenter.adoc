@@ -21,4 +21,4 @@ You must unregister the SnapCenter VMware plug-in extensions manually.
 
 . On the linked vCenter that has the SnapCenter VMware plug-in service stopped, navigate to the Managed Object Reference (MOB) manager.
 . In the Properties option, select *content* in the Value column, then in the next screen select *ExtensionManager* in the Value column to display a list of the registered extensions.
-. Unregister the extensions `com.netapp.scvm.webclient` and `com.netapp.aegis`.
+. Unregister the extensions `com.netapp.scv.client` and `com.netapp.aegis`.

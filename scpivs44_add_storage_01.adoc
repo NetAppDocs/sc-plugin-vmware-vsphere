@@ -17,7 +17,7 @@ Before you can backup or restore VMs, you must add storage clusters or storage V
 
 * Which GUI to use
 +
-Use the VMware vSphere web client to add storage.
+Use the VMware vSphere client to add storage.
 
 * Large LUNs
 +
@@ -51,7 +51,7 @@ If you add a storage VM with a name that cannot resolve to the management LIF, t
 
 .Steps
 
-. In the left Navigator pane of the vSphere web client, click *Storage Systems*.
+. In the left Navigator pane of the vSphere client, click *Storage Systems*.
 . On the Storage Systems page, click image:scpivs44_image6.png[Error: Missing Graphic Image] *Add*.
 . In the *Add Storage System* wizard, enter the basic storage VM or cluster information as listed in the following table:
 +
@@ -93,7 +93,7 @@ You must select the default port 443 if you plan to protect vVol VMs.
 |Event Management System(EMS) & AutoSupport Setting
 |If you want to send EMS messages to the storage system syslog or if you want to have AutoSupport messages sent to the storage system for applied protection, completed restore operations, or failed operations, select the appropriate checkbox.
 
-When you select the *Send AutoSupport Notification for failed operations to storage system* checkbox, the *Log SnapCenter Server events to syslog* checkbox is also selected because EMS messaging is required to enable AutoSupport notifications.
+Select the *Send AutoSupport Notification for failed operations to storage system* checkbox and the *Log SnapCenter Server events to syslog* checkbox to enable AutoSupport notifications.
 |Log SnapCenter Server events
 to syslog
 |Check the box to log events for the SnapCenter Vmware plug-in.

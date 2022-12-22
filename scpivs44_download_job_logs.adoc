@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_download_job_logs.html
 keywords:
-summary: 'You can download the job logs from the Job Monitor tab on the Dashboard of the SnapCenter VMware vSphere web client.'
+summary: 'You can download the job logs from the Job Monitor tab on the Dashboard of the SnapCenter VMware vSphere client.'
 ---
 
 = Download job logs
@@ -19,9 +19,9 @@ summary: 'You can download the job logs from the Job Monitor tab on the Dashboar
 //
 
 [.lead]
-You can download the job logs from the Job Monitor tab on the Dashboard of the SnapCenter VMware vSphere web client.
+You can download the job logs from the Job Monitor tab on the Dashboard of the SnapCenter VMware vSphere client.
 
-If you encounter unexpected behavior while using the VMware vSphere web client, you can use the log files to identify the cause and resolve the problem.
+If you encounter unexpected behavior while using the VMware vSphere client, you can use the log files to identify the cause and resolve the problem.
 
 [NOTE]
 The default value for retaining job logs is 30 days; the default value for retaining jobs is 90 days. Job logs and jobs that are older than the configured retention are purged every six hours. You can use the Configuration `jobs/cleanup` REST APIs to modify how long jobs and job logs are retained. You cannot modify the purge schedule.
@@ -30,7 +30,7 @@ The default value for retaining job logs is 30 days; the default value for retai
 
 .Steps
 
-. In the left Navigator pane of the vSphere web client, click *Dashboard*, select a vCenter Server, and then click the *Job Monitor* tab in the Dashboard pane.
+. In the left Navigator pane of the vSphere client, click *Dashboard*, select a vCenter Server, and then click the *Job Monitor* tab in the Dashboard pane.
 
 . Click the image:scpivs44_image37.png[Error: Missing Graphic Image] download icon in the Job Monitor title bar.
 +

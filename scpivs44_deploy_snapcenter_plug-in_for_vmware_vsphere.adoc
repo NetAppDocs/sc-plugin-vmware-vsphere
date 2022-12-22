@@ -33,9 +33,9 @@ The deployment wizard does not verify the space requirement. If you do not have 
 * You must have downloaded the SnapCenter Plug-in for VMware vSphere .tar file.
 * You must have the login authentication details for your vCenter Server instance.
 * You must have a certificate with valid Public and Private Key files.
-* You must have logged out of and closed all browser sessions of vSphere Web Client and deleted the browser cache to avoid any browser cache issue during the deployment of the SnapCenter VMware plug-in.
+* You must have logged out of and closed all browser sessions of vSphere client and deleted the browser cache to avoid any browser cache issue during the deployment of the SnapCenter VMware plug-in.
 * You must have enabled Transport Layer Security (TLS) in vCenter. Refer to the VMware documentation.
-* You can deploy the SnapCenter VMware plug-in in the same vCenter as the virtual appliance for VSC 7.x and later.
+* You can deploy the SnapCenter VMware plug-in in the same vCenter as the virtual appliance for VSC 7.0U1 and later.
 * If you plan to perform backups in vCenters other than the one in which the SnapCenter VMware plug-in is deployed, then the ESXi server, the SnapCenter VMware plug-in, and each vCenter must be synchronized to the same time.
 * To protect VMs on vVol datastores, you must first deploy ONTAP tools for VMware vSphere. ONTAP tools provisions and configures storage on ONTAP and on the VMware web client.
 
@@ -47,10 +47,9 @@ Deploy the SnapCenter VMware plug-in in the same time zone as the vCenter. Backu
 +
 [NOTE]
 For IPv6 HTML web clients, you must use either Chrome or Firefox.
-. On the VMware screen, click *vSphere Web Client (HTML5)*.
 . Log in to the *VMware vCenter Single Sign-On* page.
 . On the Navigator pane, right-click any inventory object that is a valid parent object of a virtual machine, such as a datacenter, cluster, or host, and select *Deploy OVF Template* to start the VMware deploy wizard.
-. On the *Select an OVF template* page, specify the location of the `.tar` file (as shown in the following table) and click *Next*.
+. On the *Select an OVF template* page, specify the location of the `.ova` file inside the tar archive file (as shown in the following table) and click *Next*.
 +
 |===
 |If you downloaded the `.tar` file to… |Do this…
@@ -58,12 +57,12 @@ For IPv6 HTML web clients, you must use either Chrome or Firefox.
 |An internet location
 |Enter the URL. Supported URL sources are HTTP and HTTPS.
 |A local file
-|Click *Choose Files* and navigate to the .tar file.
+|Click *Choose Files* and navigate to the .ova file.
 |===
 
 . On the *Select a name and folder* page, enter a unique name for the VM or vApp, and select a deployment location, and then click *Next*.
 +
-This step specifies where to import the `.tar` file into vCenter. The default name for the VM is the same as the name of the selected `.tar` file. If you change the default name, choose a name that is unique within each vCenter Server VM folder.
+This step specifies where to import the `.tar` file into vCenter. The default name for the VM is the same as the name of the selected `.ova` file. If you change the default name, choose a name that is unique within each vCenter Server VM folder.
 +
 The default deployment location for the VM is the inventory object where you started the wizard.
 +
@@ -121,7 +120,7 @@ All hosts must be configured with IP addresses (FQDN hostnames are not supported
 +
 You can view the progress of the deployment from the Recent Tasks window while you wait for the OVF import and deployment tasks to finish.
 +
-When the SnapCenter VMware plug-in is successfully deployed, it is deployed as a Linux VM, registered with vCenter, and a VMware vSphere web client is installed.
+When the SnapCenter VMware plug-in is successfully deployed, it is deployed as a Linux VM, registered with vCenter, and a VMware vSphere client is installed.
 
 . Navigate to the VM where the SnapCenter VMware plug-in was deployed, then click the *Summary* tab, and then click the *Power On* box to start the virtual appliance.
 . While the SnapCenter VMware plug-in is powering on, right-click the deployed SnapCenter VMware plug-in, select *Guest OS*, and then click *Install VMware tools*.
@@ -140,7 +139,7 @@ Use the format `https://<appliance-IP-address>:8080` to access the management GU
 +
 Log in using the default maintenance console username `maint` and password that you have set at the time of installation.
 +
-If the SnapCenter VMware plug-in is not enabled, then see link:scpivs44_restart_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere web client service].
+If the SnapCenter VMware plug-in is not enabled, then see link:scpivs44_restart_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere client service].
 // BURT 1378132 observation 10, March 2021 Ronya
 +
 If the host name is 'UnifiedVSC/SCV, then restart the appliance. If restarting the appliance does not change the host name to the specified host name, then you must reinstall the appliance.

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html
 keywords:
-summary: 'You can add multiple resources to an existing resource group by using the SnapCenter VMware vSphere web client Edit Resource Group wizard.'
+summary: 'You can add multiple resources to an existing resource group by using the SnapCenter VMware vSphere client Edit Resource Group wizard.'
 ---
 
 = Add multiple VMs and datastores to a resource group
@@ -14,7 +14,7 @@ summary: 'You can add multiple resources to an existing resource group by using 
 
 
 [.lead]
-You can add multiple resources to an existing resource group by using the SnapCenter VMware vSphere web client Edit Resource Group wizard.
+You can add multiple resources to an existing resource group by using the SnapCenter VMware vSphere client Edit Resource Group wizard.
 
 A resource group can contain one of the following:
 
@@ -30,7 +30,7 @@ vVol VMs that span multiple vVol datastores are not supported because SnapCenter
 
 .Steps
 
-. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then select a resource group, and then click image:scpivs44_image39.png[Error: Missing Graphic Image] *Edit Resource Group* to start the wizard.
+. In the left Navigator pane of the SCV plug-in, click *Resource Groups*, then select a resource group, and then click image:scpivs44_image39.png[Error: Missing Graphic Image] *Edit Resource Group* to start the wizard.
 
 . On the *Resource* page, do the following:
 .. In the Datastores field, navigate to the VMs or datastores that you want to add.

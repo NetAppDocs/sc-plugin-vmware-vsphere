@@ -37,7 +37,7 @@ Most of the fields on these wizard pages are self-explanatory. The following inf
 
 .Steps
 
-. In the left Navigator pane of the VMware vSphere web client, click *Policies*.
+. In the left Navigator pane of the SCV plug-in, click *Policies*.
 . On the *Policies* page, click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create* to start the wizard.
 . On the *New Backup Policy* page, select the vCenter Server that will use the policy, and then enter the policy name and a description.
 +

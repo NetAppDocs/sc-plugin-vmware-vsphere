@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_view_status_information.html
 keywords:
-summary: 'You can view status information on the vSphere web client Dashboard. Status information is updated once an hour.'
+summary: 'You can view status information on the vSphere client Dashboard. Status information is updated once an hour.'
 ---
 
 = View status information
@@ -12,11 +12,11 @@ summary: 'You can view status information on the vSphere web client Dashboard. S
 :linkattrs:
 :imagesdir: ./media/
 
-You can view status information on the vSphere web client Dashboard. Status information is updated once an hour.
+You can view status information on the vSphere client Dashboard. Status information is updated once an hour.
 
 .Steps
 
-. In the left Navigator pane of the vSphere web client, click *Dashboard*, select a vCenter Server, and then click the *Status* tab in the dashboard pane.
+. In the left Navigator pane of the vSphere client, click *Dashboard*, select a vCenter Server, and then click the *Status* tab in the dashboard pane.
 
 . View overview status information or click a link for more details, as listed in the following table.
 +

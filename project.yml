@@ -63,7 +63,7 @@ sidebar:
           url: /scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html
         - title: Post deployment required operations and issues
           url: /scpivs44_post_deployment_required_operations_and_issues.html
-        - title: Log in to the SnapCenter VMware vSphere web client
+        - title: Log in to the SnapCenter VMware vSphere client
           url: /scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html
     - title: Quick start
       entries:
@@ -173,7 +173,7 @@ sidebar:
           url: /scpivs44_guest_file_restore_scenarios_you_might_encounter.html
     - title: Manage SnapCenter Plug-in for VMware vSphere appliance
       entries:
-        - title: Restart the VMware vSphere web client service
+        - title: Restart the VMware vSphere client service
           url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html
         - title: Access the maintenance console
           url: /scpivs44_access_the_maintenance_console.html

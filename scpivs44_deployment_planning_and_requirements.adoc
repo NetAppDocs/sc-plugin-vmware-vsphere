@@ -19,9 +19,7 @@ You should be aware of the deployment requirements before you deploy the virtual
 
 Before you begin deployment of SnapCenter Plug-in for VMware vSphere, you should be familiar with the host requirements.
 
-* You must deploy the SnapCenter VMware plug-in as a Linux VM.
-+
-The SnapCenter VMware plug-in is deployed as a Linux VM regardless of whether you use the plug-in to protect data on Windows systems or Linux systems.
+* The SnapCenter VMware plug-in is deployed as a Linux VM regardless of whether you use the plug-in to protect data on Windows systems or Linux systems.
 
 * You should deploy the SnapCenter VMware plug-in on the vCenter Server.
 +
@@ -91,10 +89,9 @@ FlexClone: used for mount and attach operations on VMware VMs and datastores onl
 |Item |Supported versions
 
 |vCenter vSphere
-|HTML5 client: 6.5U2/U3, 6.7x, 7.0, 7.0U1, 7.0U2, 7.0U3
-Flex client is not supported.
+|7.0U1 and above
 |ESXi
-|6.5U2 and later
+|7.0U1 and above
 // AUGUST 2021 BURT 1419874
 |IP addresses
 |IPv4, IPv6
@@ -137,7 +134,7 @@ Recommended: 16 GB
 
 |SnapCenter Plug-in for VMware vSphere port
 a|8144 (HTTPS), bidirectional
-The port is used for communications from the VMware vSphere web client and from the SnapCenter Server.
+The port is used for communications from the VMware vSphere client and from the SnapCenter Server.
 8080 bidirectional
 This port is used to manage the virtual appliance.
 

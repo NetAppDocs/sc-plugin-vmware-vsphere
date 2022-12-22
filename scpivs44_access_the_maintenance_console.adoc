@@ -30,7 +30,7 @@ To obtain the root user permission to execute the command, use the sudo <command
 
 .Steps
 
-. From the VMware vSphere web client, select the VM where the SnapCenter VMware plug-in is located.
+. From the VMware vSphere client, select the VM where the SnapCenter VMware plug-in is located.
 . Right-click the VM, then on the *Summary* tab of the virtual appliance click *Launch Remote Console* to open a maintenance console window.
 +
 Log in using the default maintenance console username `maint` and password that you have set at the time of installation.

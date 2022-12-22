@@ -14,7 +14,7 @@ summary: 'REST APIs to generate audit logs'
 
 
 [.lead]
-To generate audit logs for VMware vSphere web client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere.
+To generate audit logs for VMware vSphere client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere.
 
 For each REST API, add `https://<server>:<port>/api` at the front of the REST API to form a complete endpoint.
 
@@ -24,9 +24,9 @@ For each REST API, add `https://<server>:<port>/api` at the front of the REST AP
 |REST API |Comments
 
 |`4.1/audit/logs`
-|gets all the audit logs
-|`4.1/audit/logs/audit.log`
-|gets  specific audit log
+|returns integrity data
+|`4.1/audit/logs/{filename}`
+|gets specific audit log
 |`4.1/audit/verify`
 |triggers audit verification
 |===

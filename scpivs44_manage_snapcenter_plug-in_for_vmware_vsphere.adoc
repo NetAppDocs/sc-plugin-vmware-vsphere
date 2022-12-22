@@ -41,7 +41,7 @@ To obtain the root user permission to execute the command, use the sudo <command
 
 .Steps
 
-. From the VMware vSphere web client, select the VM where the SnapCenter VMware plug-in is located.
+. From the VMware vSphere client, select the VM where the SnapCenter VMware plug-in is located.
 . Right-click the VM, then on the *Summary* tab of the virtual appliance click *Launch Remote Console* to open a maintenance console window.
 +
 Log in using the default maintenance console username and password provided to you.
@@ -99,7 +99,7 @@ Use the default username password to log in to the maintenance console of the Sn
 
 .Steps
 
-. From the VMware vSphere web client, select the VM where the SnapCenter VMware plug-in is located.
+. From the VMware vSphere client, select the VM where the SnapCenter VMware plug-in is located.
 . Right-click the VM, then on the *Summary* tab of the virtual appliance click *Launch Remote Console* to open a maintenance console window.
 +
 Log in using the default maintenance console username and password provided to you.
@@ -127,7 +127,7 @@ You must unregister the SnapCenter VMware plug-in extensions manually.
 
 . On the linked vCenter that has the SnapCenter VMware plug-in service stopped, navigate to the Managed Object Reference (MOB) manager.
 . In the Properties option, select Extension Manager to display a list of the registered extensions.
-. Unregister the extensions `com.netapp.scvm.webclient` and `com.netapp.aegis`.
+. Unregister the extensions `com.netapp.scv.client` and `com.netapp.aegis`.
 
 == Disable and enable SnapCenter Plug-in for VMware vSphere
 
