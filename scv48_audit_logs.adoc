@@ -14,16 +14,45 @@ summary: 'Audit log provides traceability of who did what and when. Audit log is
 
 
 [.lead]
-Audit log is a collection of events in a chronological order, which is written to a file within the appliance. An event is an operation triggered by an user that occurs at a point of time which affects one or more resources. SCV provides REST API to view logs and verify their integrity. 
-Events are categorize into three major categories:
+Audit log is a collection of events in a chronological order, which is written to a file within the appliance. The audit log files are generated at `/var/log/netapp/audit` location and the file names follow one of the below naming conventions:
+1. audit.log: Active audit log file that is in use.
+2. audit-%d{yyyy-MM-dd-HH-mm-ss}.log.gz: Rolled over audit log file. The date and time in the file name indicates when the file was created, for example: audit-2022-12-15-16-28-01.log.gz.
 
-* Data Protection Events
+The default configurations of the audit files are:
+1. Audit log file in use can grow to a maximum of 10 MB
+2.	A maximum of 10 audit log files are retained
+3.	Time delay between the end of audit verification and start of next audit verification is 1800000 ms (30 mins)
+
+To modify the default configurations add a key value pair in the /opt/netapp/scvservice/standalone_aegis/etc/scbr/scbr.properties and restart the scvservice.
+
+The configurations for audit log files are:
+1.	auditMaxROFiles=<xx>, where xx is the max number of rolled over audit log files, for example: auditMaxROFiles=15.
+2.	auditLogSize=<XX>MB, where xx is the size of the file in MB, for example: auditLogSize=15MB.
+3.	audit.check.fixed.delay.in.ms=<xxxxxxx>, where xxxxxxx is the value in milliseconds which represents the time delay between the end of audit verification and the start of the next audit verification, for example: audit.check.fixed.delay.in.ms=600000, which translates to 10 mins.
+Both rolled over and closed audit logs are periodically verified for integrity. SCV provides REST APIs to view logs and verify their integrity. A built-in schedule triggers and assigns one of the following integrity statuses.
+|===
+|Status |Description
+|TAMPERED
+|Audit log file content is modified
+|NORMAL
+|Audit log file is unmodified
+|ROLLOVER DELETE
+|* Audit log file is deleted based on retention
+* By default, only 10 files are retained
+|UNEXPECTED DELETE
+|Audit log file is deleted
+|ACTIVE
+|* Audit log file is in use
+* Only applicable to audit.log
+|===
+
+Events are categorize into three major categories:
+* Data Protection Events: 
 * Maintenance Console Events
 * Admin Console Events
 
 == Data Protection Events
 The resources in SCV are:
-
 * Storage System
 * Resource Group
 * Policy
@@ -60,9 +89,8 @@ The following table lists the operations that can be performed on each resource:
 |===
 
 == Maintenance Console Events
-The administrative operations in the maintenance console is audited. 
+The administrative operations in the maintenance console are audited. 
 Available maintenance console options are:
-
 1. Start / Stop services
 2. Change username & password
 3. Change MySQL password
@@ -82,8 +110,7 @@ Available maintenance console options are:
 17. Enable remote diagnostic access
 
 == Admin Console Events
-The following operations in Admin Console UI is audited:
-
+The following operations in the Admin Console UI are audited:
 * Settings
 ** Change admin credentials
 ** Change timezone
