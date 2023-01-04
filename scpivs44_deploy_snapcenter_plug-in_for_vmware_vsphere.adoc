@@ -57,7 +57,7 @@ For IPv6 HTML web clients, you must use either Chrome or Firefox.
 |An internet location
 |Enter the URL. Supported URL sources are HTTP and HTTPS.
 |A local file
-|Click *Choose Files* and navigate to the .ova file.
+|Extract the .tar file, which contains the .ova file onto your local system. Click *Choose Files* and navigate to the .ova file.
 |===
 
 . On the *Select a name and folder* page, enter a unique name for the VM or vApp, and select a deployment location, and then click *Next*.
@@ -102,6 +102,8 @@ In the *Username* field, enter the local username; do not include the domain det
 [IMPORTANT]
 Make a note of the username and password that you specify. You need to use these credentials if you want to modify the SnapCenter VMware plug-in configuration later.
 
++
+.. Enter credentials for the maint user.
 +
 .. In *Setup Network Properties*, enter the host name.
 ... In *Setup IPv4 Network Properties* section, enter the network information such as IPv4 address, IPv4 Netmask, IPv4 Gateway, IPv4 Primary DNS, IPv4 Secondary DNS, and IPv4 Search Domains.

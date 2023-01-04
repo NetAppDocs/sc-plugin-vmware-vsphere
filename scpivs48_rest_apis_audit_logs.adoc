@@ -17,6 +17,7 @@ summary: 'REST APIs to generate audit logs'
 You can collect the audit log details from swagger rest APIs as well as the SCV plugin user interface.
 
 Given below are the swagger rest APIs:
+
 1.	GET 4.1/audit/logs: Get audit data for all logs
 2.	GET 4.1/audit/logs/{filename}: Get audit data for a specific log file
 3.	POST 4.1/audit/verify: Trigger audit log verification.
