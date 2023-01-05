@@ -22,11 +22,6 @@ Given below are the swagger rest APIs:
 2.	GET 4.1/audit/logs/{filename}: Get audit data for a specific log file
 3.	POST 4.1/audit/verify: Trigger audit log verification.
 
-In the SCV plug-in user interface, you can view and export the audit log details from 
-*Dashboard* > *Settings* > *Audit Logs* Tab
-
-If Email settings are configured, SCV sends an Email notification in the event of an Audit Log Integrity Verification failure. An Audit Log Integrity Verification failure can happen when one of the files is tampered or deleted.
-
 To generate audit logs for VMware vSphere client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere.
 
 For each REST API, add `https://<server>:<port>/api` at the front of the REST API to form a complete endpoint.
@@ -37,9 +32,9 @@ Use the following REST APIs in the Jobs section to get detailed information on j
 |REST API |Comments
 
 |`4.1/audit/logs`
-|returns integrity data
+|returns audit log files with integrity data
 |`4.1/audit/logs/{filename}`
-|gets specific audit log
+|get specific audit log file with integrity data
 |`4.1/audit/verify`
 |triggers audit verification
 |===

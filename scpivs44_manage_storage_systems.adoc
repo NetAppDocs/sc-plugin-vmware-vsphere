@@ -39,16 +39,6 @@ If you added storage VMs for application-based data protection operations using 
 +
 image:scpivs44_image43.png[Error: Missing Graphic Image]
 
-== Rename storage VMs
-
-If you rename a VM after you added it to a resource group, the new name might not be displayed on the Resources page because the SnapCenter Plug-in for VMware vSphere acts on the VM UUID, not the name.
-
-To make sure new VM names are displayed on the Resources page, do the following.
-
-. Edit the resource group and remove the VM.
-. Rename the VM.
-. Re-add the VM to the resource group.
-
 == Remove storage VMs
 
 You can use the VMware vSphere client to remove storage VMs from the inventory in vCenter.

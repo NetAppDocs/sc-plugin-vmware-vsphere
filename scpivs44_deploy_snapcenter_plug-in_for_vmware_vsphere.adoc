@@ -23,6 +23,9 @@ To use SnapCenter features to protect VMs, datastores, and application-consisten
 
 .Before you begin
 
+ [Note]
+ You can deploy the SnapCenter VMware plug-in in the same vCenter as the virtual appliance for vCenter 7.0U1 and later.
+
 * You must have read the deployment requirements.
 +
 The deployment wizard does not verify the space requirement. If you do not have enough space on the datastore, the deployment might look successful, but the virtual appliance will not boot up.
@@ -35,9 +38,8 @@ The deployment wizard does not verify the space requirement. If you do not have 
 * You must have a certificate with valid Public and Private Key files.
 * You must have logged out of and closed all browser sessions of vSphere client and deleted the browser cache to avoid any browser cache issue during the deployment of the SnapCenter VMware plug-in.
 * You must have enabled Transport Layer Security (TLS) in vCenter. Refer to the VMware documentation.
-* You can deploy the SnapCenter VMware plug-in in the same vCenter as the virtual appliance for VSC 7.0U1 and later.
 * If you plan to perform backups in vCenters other than the one in which the SnapCenter VMware plug-in is deployed, then the ESXi server, the SnapCenter VMware plug-in, and each vCenter must be synchronized to the same time.
-* To protect VMs on vVol datastores, you must first deploy ONTAP tools for VMware vSphere. ONTAP tools provisions and configures storage on ONTAP and on the VMware web client.
+* To protect VMs on vVol datastores, you must first deploy ONTAP tools for VMware vSphere. VMware vSphere versions 9.10 and above are supported. ONTAP tools provisions and configures storage on ONTAP and on the VMware web client.
 
 Deploy the SnapCenter VMware plug-in in the same time zone as the vCenter. Backup schedules are executed in the time zone in which the SnapCenter VMware plug-in is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter VMware plug-in and vCenter are in different time zones, data in the SnapCenter VMware plug-in Dashboard might not be the same as the data in the reports.
 
@@ -49,17 +51,9 @@ Deploy the SnapCenter VMware plug-in in the same time zone as the vCenter. Backu
 For IPv6 HTML web clients, you must use either Chrome or Firefox.
 . Log in to the *VMware vCenter Single Sign-On* page.
 . On the Navigator pane, right-click any inventory object that is a valid parent object of a virtual machine, such as a datacenter, cluster, or host, and select *Deploy OVF Template* to start the VMware deploy wizard.
-. On the *Select an OVF template* page, specify the location of the `.ova` file inside the tar archive file (as shown in the following table) and click *Next*.
+. Extract the .tar file, which contains the .ova file onto your local system. On the *Select an OVF template* page, specify the location of the `.ova` file inside the .tar extracted folder. 
+. Click *Next*.
 +
-|===
-|If you downloaded the `.tar` file to… |Do this…
-
-|An internet location
-|Enter the URL. Supported URL sources are HTTP and HTTPS.
-|A local file
-|Extract the .tar file, which contains the .ova file onto your local system. Click *Choose Files* and navigate to the .ova file.
-|===
-
 . On the *Select a name and folder* page, enter a unique name for the VM or vApp, and select a deployment location, and then click *Next*.
 +
 This step specifies where to import the `.tar` file into vCenter. The default name for the VM is the same as the name of the selected `.ova` file. If you change the default name, choose a name that is unique within each vCenter Server VM folder.

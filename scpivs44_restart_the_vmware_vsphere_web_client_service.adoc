@@ -45,7 +45,7 @@ You must be running vCenter 7.0U1 or later.
 `rm -rf com.netapp.scv.client-<version_number>`
 +
 [IMPORTANT]
-Do not remove the VASA or VSC7.x and later packages.
+Do not remove the VASA or vCenter 7.x and later packages.
 
 . Start the web client service by using the following HTML5 command:
 +

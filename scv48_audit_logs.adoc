@@ -20,14 +20,16 @@ Audit log is a collection of events in a chronological order, which is written t
 
 * audit-%d{yyyy-MM-dd-HH-mm-ss}.log.gz: Rolled over audit log file. The date and time in the file name indicates when the file was created, for example: audit-2022-12-15-16-28-01.log.gz.
 
+In the SCV plug-in user interface, you can view and export the audit log details from 
+*Dashboard* > *Settings* > *Audit Logs* Tab
+
+If Email settings are configured, SCV sends an Email notification in the event of an Audit Log Integrity Verification failure. An Audit Log Integrity Verification failure can happen when one of the files is tampered or deleted.
+
 The default configurations of the audit files are:
 
 * Audit log file in use can grow to a maximum of 10 MB
 
 * A maximum of 10 audit log files are retained
-
-* Time delay between the end of audit verification and start of next audit verification is 1800000 ms (30 mins)
-
 
 To modify the default configurations add a key value pair in the /opt/netapp/scvservice/standalone_aegis/etc/scbr/scbr.properties and restart the scvservice.
 
@@ -36,8 +38,6 @@ The configurations for audit log files are:
 * auditMaxROFiles=<xx>, where xx is the max number of rolled over audit log files, for example: auditMaxROFiles=15.
 
 * auditLogSize=<XX>MB, where xx is the size of the file in MB, for example: auditLogSize=15MB.
-
-* audit.check.fixed.delay.in.ms=<xxxxxxx>, where xxxxxxx is the value in milliseconds which represents the time delay between the end of audit verification and the start of the next audit verification, for example: audit.check.fixed.delay.in.ms=600000, which translates to 10 mins.
 
 Both rolled over and closed audit logs are periodically verified for integrity. SCV provides REST APIs to view logs and verify their integrity. A built-in schedule triggers and assigns one of the following integrity statuses.
 |===
@@ -70,35 +70,18 @@ The resources in SCV are:
 * Resource Group
 * Policy
 * Backup
-* Subscription
-* Account
 
 The following table lists the operations that can be performed on each resource:
 |===
-|Resources |Operations |Details 
+|Resources |Operations  
 |Storage System
 |Created, Modified, Deleted
-|Storage System Name
-|Subscription
-|Created, Modified, Deleted
-|Subscription Name
-|Account
-|Created, Modified, Deleted
-|Account Name
 |Resource Group	
 |Created, Modified, Deleted, Suspended, Resumed
-|Resource Group Name
 |Policy
 |Created, Modified, Deleted
-|Policy Name
 |Backup
 |Created, Renamed, Deleted, Mounted, Unmounted, Restored VMDK, Restored VM, Attach VMDK, Detach VMDK, Guest File Restore
-|*Created*: Resource Group Name and Policy Name
-*Renamed, Deleted, Mounted and Unmounted*: Backup Name
-*Restored VMDK, Attach VMDK, and Detach VMDK*: Backup Name and VMDK's Name
-*Restored VM*: Backup Name and VM Name
-*Guest File Restore* Backup Name and Files
-
 |===
 
 == Maintenance Console Events
