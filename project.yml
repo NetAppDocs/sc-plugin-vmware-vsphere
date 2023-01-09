@@ -19,7 +19,7 @@ settings:
 
 sidebar:
   entries:
-    - title: SnapCenter Plug-in for VMware vSphere 4.7 docs
+    - title: SnapCenter Plug-in for VMware vSphere 4.8 docs
       url: /index.html
     - title: Release notes
       url: /scpivs44_release_notes.html
