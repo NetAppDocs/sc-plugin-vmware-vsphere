@@ -22,7 +22,7 @@ Audit log is a collection of events in a chronological order, which is written t
 
 In the SCV plug-in user interface, you can view and export the audit log details from 
 *Dashboard* > *Settings* > *Audit Logs* Tab
-You can view operation audit in the audit logs. Audit logs are downloaded with the Support bundle.
+You can view operation audit in the audit logs. The audit logs are downloaded with the Support bundle.
 
 If Email settings are configured, SCV sends an Email notification in the event of an Audit Log Integrity Verification failure. An Audit Log Integrity Verification failure can happen when one of the files is tampered or deleted.
 
