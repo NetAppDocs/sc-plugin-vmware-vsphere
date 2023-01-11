@@ -66,8 +66,8 @@ The SnapCenter VMware plug-in does not support multiple storage systems with the
 |Select the platform.
 |Authentication Method
 |Select either Credentials or Certificate. Two types of certificates are supported:
-- CA signed certificate
-- Self signed certificate
+- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV[CA signed certificate^]
+- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV[Self signed certificate^]
 |Username
 |This field is visible when you select Credentials as your authentication method. Enter the ONTAP username that is used to log on to the storage VM.
 |Password
@@ -75,7 +75,7 @@ The SnapCenter VMware plug-in does not support multiple storage systems with the
 |Certificate
 |This field is visible when you select Certificate as your authentication method. Browse to select the certificate file.
 |Private Key
-|This field is visible when you select Certificate as your authentication method. Browse to select the private file.
+|This field is visible when you select Certificate as your authentication method. Browse to select the private Key file.
 |Protocol
 |Select storage protocol.
 |Port
