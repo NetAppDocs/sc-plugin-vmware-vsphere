@@ -116,6 +116,9 @@ vserver
 vserver peer
 |===
 
+[NOTE]
+You can ignore the warnings about  unsupported vserver commands.
+
 == Additional ONTAP information
 
 * If you are running ONTAP 8.2.x:
