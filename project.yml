@@ -56,7 +56,7 @@ sidebar:
           entries:
             - title: Deployment planning and requirements
               url: /scpivs44_deployment_planning_and_requirements.html
-            - title: Minimum ONTAP privileges required
+            - title: ONTAP privileges required
               url: /scpivs44_minimum_ontap_privileges_required.html
             - title: Minimum vCenter privileges required
               url: /scpivs44_minimum_vcenter_privileges_required.html
