@@ -19,4 +19,4 @@ summary: 'Release notes provide important information about this release of Snap
 //
 
 Release notes provide important information about this release of SnapCenter Plug-in for VMware vSphere, including licensing requirements, known issues, cautions, limitations, and any documentation updates or corrections.
-For more information, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2883356[SnapCenter Plug-in for VMware vSphere 4.8 Release Notes^]
+For more information, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2885659[SnapCenter Plug-in for VMware vSphere 4.8 Release Notes^]
