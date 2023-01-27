@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html
 keywords:
-summary: 'When SnapCenter Plug-in for VMware vSphere is deployed, it installs a VMware vSphere web client on vCenter, which is displayed on the vCenter screen with other vSphere web clients.'
+summary: 'When SnapCenter Plug-in for VMware vSphere is deployed, it installs a VMware vSphere client on vCenter, which is displayed on the vCenter screen with other vSphere clients.'
 ---
 
-= Log in to the SnapCenter VMware vSphere Web Client
+= Log in to the SnapCenter VMware vSphere client
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,7 +19,7 @@ summary: 'When SnapCenter Plug-in for VMware vSphere is deployed, it installs a 
 //
 
 [.lead]
-When SnapCenter Plug-in for VMware vSphere is deployed, it installs a VMware vSphere web client on vCenter, which is displayed on the vCenter screen with other vSphere web clients.
+When SnapCenter Plug-in for VMware vSphere is deployed, it installs a VMware vSphere client on vCenter, which is displayed on the vCenter screen with other vSphere clients.
 
 .Before you begin
 
@@ -28,10 +28,9 @@ Transport Layer Security (TLS) must be enabled in vCenter. Refer to the VMware d
 .Steps
 
 . In your browser, navigate to VMware vSphere vCenter.
-. On the VMware screen, *click vSphere Client (HTML5)*.
 . Log in to the *VMware vCenter Single Sign-On* page.
 +
 [IMPORTANT]
 Click the *Login* button. Due to a known VMware issue, do not use the ENTER key to log in. For details, see the VMware documentation on ESXi Embedded Host Client issues.
 
-. On the *VMware vSphere Web Client* page, click Menu in the toolbar, and then select *SnapCenter Plug-in for VMware vSphere*.
+. On the *VMware vSphere client* page, click Menu in the toolbar, and then select *SnapCenter Plug-in for VMware vSphere*.

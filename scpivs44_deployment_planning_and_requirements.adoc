@@ -19,9 +19,7 @@ You should be aware of the deployment requirements before you deploy the virtual
 
 Before you begin deployment of SnapCenter Plug-in for VMware vSphere, you should be familiar with the host requirements.
 
-* You must deploy the SnapCenter VMware plug-in as a Linux VM.
-+
-The SnapCenter VMware plug-in is deployed as a Linux VM regardless of whether you use the plug-in to protect data on Windows systems or Linux systems.
+* The SnapCenter VMware plug-in is deployed as a Linux VM regardless of whether you use the plug-in to protect data on Windows systems or Linux systems.
 
 * You should deploy the SnapCenter VMware plug-in on the vCenter Server.
 +
@@ -37,11 +35,11 @@ The folder name should not contain the following special characters: $!@#%^&()_+
 +
 For example, if you want to perform backups from six different instances of the vCenter Server, then you must deploy the SnapCenter VMware plug-in on six hosts and each vCenter Server must be paired with a unique instance of the SnapCenter VMware plug-in.
 
-* To protect vVol VMs (VMs on VMware vVol datastores), you must first deploy ONTAP Tools for VMware vSphere. ONTAP Tools provisions and configures storage for vVols on ONTAP and on the VMware web client.
+* To protect vVol VMs (VMs on VMware vVol datastores), you must first deploy ONTAP tools for VMware vSphere. ONTAP tools provisions and configures storage for vVols on ONTAP and on the VMware web client.
 +
-For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP Tools for VMware vSphere^]
+For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP tools for VMware vSphere^]
 +
-For the latest information about supported versions of ONTAP Tools, see the https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions of ONTAP tools, see the https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 * The SnapCenter VMware plug-in provides limited support of shared PCI or PCIe devices (for example, NVIDIA Grid GPU) due to a limitation of the virtual machines in supporting Storage vMotion. For more information, see the vendor's document Deployment Guide for VMware.
 ** What is supported:
@@ -91,10 +89,9 @@ FlexClone: used for mount and attach operations on VMware VMs and datastores onl
 |Item |Supported versions
 
 |vCenter vSphere
-|HTML5 client: 6.5U2/U3, 6.7x, 7.0, 7.0U1, 7.0U2, 7.0U3
-Flex client is not supported.
+|7.0U1 and above
 |ESXi
-|6.5U2 and later
+|7.0U1 and above
 // AUGUST 2021 BURT 1419874
 |IP addresses
 |IPv4, IPv6
@@ -108,7 +105,7 @@ The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-i
 |VMware application vStorage API for Array Integration (VAAI)
 |SnapCenter Plug-in for VMware vSphere uses this to improve performance for restore operations. It also improves performance in NFS environments.
 // Vrishali review comments  April2021 Ronya
-|ONTAP Tools for VMware
+|ONTAP tools for VMware
 |SnapCenter Plug-in for VMware vSphere uses this to manage vVol datastores (VMware virtual volumes). For supported versions, see the NetApp Interoperability Matrix Tool.
 |===
 
@@ -142,7 +139,7 @@ The Guest File Restore feature uses this port.
 
 |SnapCenter Plug-in for VMware vSphere port
 a|8144 (HTTPS), bidirectional
-The port is used for communications from the VMware vSphere web client and from the SnapCenter Server.
+The port is used for communications from the VMware vSphere client and from the SnapCenter Server.
 8080 bidirectional
 This port is used to manage the virtual appliance.
 

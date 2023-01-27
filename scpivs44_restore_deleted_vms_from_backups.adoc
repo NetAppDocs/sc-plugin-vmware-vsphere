@@ -40,7 +40,7 @@ When restoring a deleted VM, any tags or folders that were originally assigned t
 
 .Before you begin
 
-* The user account for the storage system, on the Storage Systems page in the VMware vSphere web client, must have the link:scpivs44_minimum_ontap_privileges_required.html[Minimum ONTAP privileges required for ONTAP].
+* The user account for the storage system, on the Storage Systems page in the VMware vSphere client, must have the link:scpivs44_minimum_ontap_privileges_required.html[Minimum ONTAP privileges required for ONTAP].
 
 * The user account in vCenter must have the link:scpivs44_minimum_vcenter_privileges_required.html[Minimum vCenter privileges required for SnapCenter Plug-in for VMware vSphere].
 

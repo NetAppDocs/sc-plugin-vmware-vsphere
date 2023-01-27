@@ -45,7 +45,7 @@ The VM that you want to restore must not be in a state of vMotion or Storage vMo
 
 .Steps
 
-. In the VMware vSphere web client GUI, click *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
+. In the VMware vSphere client GUI, click *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
 . In the left Navigator pane, right-click a VM, then select *NetApp SnapCenter* in the drop-down list, and then select *Restore* in the secondary drop-down list.
 . In the *Restore* wizard, on the Select Backup page, select the backup copy that you want to restore from.
 +

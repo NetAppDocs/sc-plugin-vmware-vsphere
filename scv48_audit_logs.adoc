@@ -1,0 +1,120 @@
+---
+sidebar: sidebar
+permalink: scv48_audit_logs.html
+keywords:
+summary: 'Audit log provides traceability of who did what and when. Audit log is a collection of events in a chronological order, and it is written to a file within the appliance.'
+---
+
+= Audit logs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+Audit log is a collection of events in a chronological order, which is written to a file within the appliance. The audit log files are generated at `/var/log/netapp/audit` location and the file names follow one of the below naming conventions:
+
+* audit.log: Active audit log file that is in use.
+
+* audit-%d{yyyy-MM-dd-HH-mm-ss}.log.gz: Rolled over audit log file. The date and time in the file name indicates when the file was created, for example: audit-2022-12-15-16-28-01.log.gz.
+
+In the SCV plug-in user interface, you can view and export the audit log details from 
+*Dashboard* > *Settings* > *Audit Logs* Tab
+You can view operation audit in the audit logs. The audit logs are downloaded with the Support bundle.
+
+If Email settings are configured, SCV sends an Email notification in the event of an Audit Log Integrity Verification failure. An Audit Log Integrity Verification failure can happen when one of the files is tampered or deleted.
+
+The default configurations of the audit files are:
+
+* Audit log file in use can grow to a maximum of 10 MB
+
+* A maximum of 10 audit log files are retained
+
+To modify the default configurations add a key value pair in the /opt/netapp/scvservice/standalone_aegis/etc/scbr/scbr.properties and restart the scvservice.
+
+The configurations for audit log files are:
+
+* auditMaxROFiles=<xx>, where xx is the max number of rolled over audit log files, for example: auditMaxROFiles=15.
+
+* auditLogSize=<XX>MB, where xx is the size of the file in MB, for example: auditLogSize=15MB.
+
+Rolled over audit logs are periodically verified for integrity. SCV provides REST APIs to view logs and verify their integrity. A built-in schedule triggers and assigns one of the following integrity statuses.
+|===
+|Status |Description
+|TAMPERED
+|Audit log file content is modified
+|NORMAL
+|Audit log file is unmodified
+|ROLLOVER DELETE
+|* Audit log file is deleted based on retention
+* By default, only 10 files are retained
+|UNEXPECTED DELETE
+|Audit log file is deleted
+|ACTIVE
+|
+* Audit log file is in use
+* Only applicable to audit.log
+|===
+
+Events are categorize into three major categories:
+
+* Data Protection Events
+* Maintenance Console Events
+* Admin Console Events
+
+== Data Protection Events
+The resources in SCV are:
+
+* Storage System
+* Resource Group
+* Policy
+* Backup
+
+The following table lists the operations that can be performed on each resource:
+|===
+|Resources |Operations  
+|Storage System
+|Created, Modified, Deleted
+|Resource Group	
+|Created, Modified, Deleted, Suspended, Resumed
+|Policy
+|Created, Modified, Deleted
+|Backup
+|Created, Renamed, Deleted, Mounted, Unmounted, Restored VMDK, Restored VM, Attach VMDK, Detach VMDK, Guest File Restore
+|===
+
+== Maintenance Console Events
+The administrative operations in the maintenance console are audited. 
+Available maintenance console options are:
+
+1. Start / Stop services
+2. Change username & password
+3. Change MySQL password
+4. Configure MySQL Backup
+5. Restore MySQL Backup
+6. Change 'maint' user password
+7. Change time zone
+8. Change NTP Server
+9. Disable SSH access
+10. Increase jail disk size
+11. Upgrade
+12. Install VMware Tools (We are working on  replace this with open-vm tools)
+13. Change IP address settings
+14. Change domain name search settings
+15. Change static routes
+16. Access diagnostic shell
+17. Enable remote diagnostic access
+
+== Admin Console Events
+The following operations in the Admin Console UI are audited:
+
+* Settings
+** Change admin credentials
+** Change timezone
+** Change NTP Server
+** Change IPv4 / IPv6 settings
+* Configuration
+** Change vCenter Credentials
+** Plug-in Enable / Disable

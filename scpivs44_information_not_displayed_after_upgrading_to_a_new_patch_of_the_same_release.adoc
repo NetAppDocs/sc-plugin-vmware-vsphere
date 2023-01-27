@@ -30,17 +30,13 @@ If the plug-in cache is not cleared, then recent jobs are not displayed in the D
 
 The cache is in the following locations, based on the type of server operating system:
 
-* vCenter Server for Windows
-+
-`C:\ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity\`
-
 * vCenter Server Linux Appliance
 +
 `/etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity/`
 
 * Windows OS
 +
-`%PROGRAMFILES%/VMware/vSphere Web Client/vc-packages/vsphere-client-serenity/`
+`%PROGRAMFILES%/VMware/vSphere client/vc-packages/vsphere-client-serenity/`
 // BURT 1378132 observation 75, March 2021 Ronya
 // Removed Mac OS bullet
 
@@ -55,13 +51,13 @@ The IP is displayed when you deploy the SnapCenter VMware plug-in.
 +
 The SnapCenter VMware plug-in service is disabled, and the extension is unregistered in vCenter.
 
-. Locate the `vsphere-client-serenity` folder, then locate the `com.netapp.scvm.webclient-<release-number>` folder and delete it.
+. Locate the `vsphere-client-serenity` folder, then locate the `com.netapp.scv.client-<release-number>` folder and delete it.
 +
 The folder name changes for each release.
 
 . Restart the vCenter Server.
 
-. Log in to VMware vSphere web client.
+. Log in to VMware vSphere client.
 . Click *Configuration* in the left navigation pane, and then click the Service option in the *Plug-in Details* section to enable the plug-in.
 +
 The SnapCenter VMware plug-in service is enabled, and the extension is registered in vCenter.

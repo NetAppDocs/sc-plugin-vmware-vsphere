@@ -13,7 +13,11 @@ summary: 'If you are using the SnapCenter Plug-in for VMware vSphere virtual app
 :imagesdir: ./media/
 
 [.lead]
+[NOTE]
+Upgrade to SCV 4.8 is supported only on VMware vCenter server 7 update 1 and later versions, for VMware vCenter server prior to version 7 update 1, you should continue to use SCV 4.7. The upgrade is disruptive on unsupported versions of VMware vCenter server.
+
 If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.
+The upgrade process unregisters the existing plug-in and deploys a plug-in that is compatible only with vSphere 7.0U1 and later versions.
 
 See the link:scpivs44_release_notes.html[SnapCenter Plug-in for VMware vSphere Release Notes] for information on supported upgrade paths.
 
@@ -37,7 +41,7 @@ The IP is displayed when you deploy the SnapCenter VMware plug-in.
 . Install the upgrade.
 
 .. In your browser, navigate to the VMware vSphere vCenter.
-.. On the vCenter GUI, click *vSphere Web Client (HTML)*.
+.. On the vCenter GUI, click *vSphere client (HTML)*.
 .. Log in to the *VMware vCenter Single Sign-On* page.
 .. On the Navigator pane, click the VM that you want to upgrade and then click the *Summary* tab.
 .. On the *Related Objects* pane, click on any datastore in the list and then click the *Summary* tab.

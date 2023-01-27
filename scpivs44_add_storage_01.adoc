@@ -17,7 +17,7 @@ Before you can backup or restore VMs, you must add storage clusters or storage V
 
 * Which GUI to use
 +
-Use the VMware vSphere web client to add storage.
+Use the VMware vSphere client to add storage.
 
 * Large LUNs
 +
@@ -25,9 +25,9 @@ SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large
 
 * VMware virtual volumes (vVols)
 +
-You must first add the vVols storage system to ONTAP Tools for VMware vSphere and then add the vVols storage system to SnapCenter Plug-in for VMware vSphere.
+You must first add the vVols storage system to ONTAP tools for VMware vSphere and then add the vVols storage system to SnapCenter Plug-in for VMware vSphere.
 +
-For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP Tools for VMware vSphere^]
+For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP tools for VMware vSphere^]
 
 .Before you begin
 
@@ -38,7 +38,7 @@ The ESXi server, the SnapCenter VMware plug-in, and each vCenter must be synchro
 The SnapCenter VMware plug-in performs backup and restore operations on directly connected storage VMs and on storage VMs in a storage cluster.
 
 [NOTE]
-If you are using the SnapCenter VMware plug-in to support application-based backups on VMDKs, then you must use the SnapCenter GUI to enter storage credentials and register storage systems.
+If you are using the SnapCenter VMware plug-in to support application-based backups on VMDKs, then you must use the SnapCenter GUI to enter storage authentication details and register storage systems.
 
 * For vCenters in linked mode, you must separately add storage systems to each vCenter.
 * Names for storage VMs must resolve to management LIFs.
@@ -47,15 +47,12 @@ If you added etc host entries for storage VM names in SnapCenter, you must verif
 +
 If you add a storage VM with a name that cannot resolve to the management LIF, then scheduled backup jobs fail because the plug-in is unable to discover any datastores or volumes on that storage VM. If this occurs, either add the storage VM to SnapCenter and specify the management LIF or add a cluster that contains the storage VM and specify the cluster management LIF.
 
-* Storage credentials are not shared between multiple instances of the SnapCenter VMware plug-in or between Windows SnapCenter Server and the SnapCenter plug-in on vCenter.
+* Storage authentication details are not shared between multiple instances of the SnapCenter VMware plug-in or between Windows SnapCenter Server and the SnapCenter plug-in on vCenter.
 
 .Steps
 
-. In the left Navigator pane of the vSphere web client, click *Storage Systems*.
+. In the left Navigator pane of the vSphere client, click *Storage Systems*.
 . On the Storage Systems page, click image:scpivs44_image6.png[Error: Missing Graphic Image] *Add*.
-+
-image:scpivs44_image12.png[Error: Missing Graphic Image]
-
 . In the *Add Storage System* wizard, enter the basic storage VM or cluster information as listed in the following table:
 +
 |===
@@ -67,10 +64,18 @@ image:scpivs44_image12.png[Error: Missing Graphic Image]
 The SnapCenter VMware plug-in does not support multiple storage systems with the same name on different clusters. Each storage system that is supported by SnapCenter must have a unique data LIF IP address.
 |Platform
 |Select the platform.
+|Authentication Method
+|Select either Credentials or Certificate. Two types of certificates are supported:
+- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV[CA signed certificate^]
+- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV[Self signed certificate^]
 |Username
-|Enter the ONTAP username that is used to log on to the storage VM.
+|This field is visible when you select Credentials as your authentication method. Enter the ONTAP username that is used to log on to the storage VM.
 |Password
-|Enter the storage VM logon password.
+|This field is visible when you select Credentials as your authentication method. Enter the storage VM logon password.
+|Certificate
+|This field is visible when you select Certificate as your authentication method. Browse to select the certificate file.
+|Private Key
+|This field is visible when you select Certificate as your authentication method. Browse to select the private Key file.
 |Protocol
 |Select storage protocol.
 |Port
@@ -85,6 +90,10 @@ You must select the default port 443 if you plan to protect vVol VMs.
 |If the storage VM has more than one management IP address, check this box and enter the IP address that you want SnapCenter to use.
 //Updated for BURT 1378132 observation 20, March 2021 Madhulika
 *Note:* Do not use square brackets ([]) when entering the IP address.
+|Event Management System(EMS) & AutoSupport Setting
+|If you want to send EMS messages to the storage system syslog or if you want to have AutoSupport messages sent to the storage system for applied protection, completed restore operations, or failed operations, select the appropriate checkbox.
+
+Select the *Send AutoSupport Notification for failed operations to storage system* checkbox and the *Log SnapCenter Server events to syslog* checkbox to enable AutoSupport notifications.
 |Log SnapCenter Server events
 to syslog
 |Check the box to log events for the SnapCenter Vmware plug-in.

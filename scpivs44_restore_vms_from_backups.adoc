@@ -95,7 +95,7 @@ Even if a VMware consistency snapshot for a VM fails, the VM is nevertheless bac
 
 .Steps
 
-. In the VMware vSphere web client GUI, click *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
+. In the VMware vSphere client GUI, click *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
 +
 [NOTE]
 If you are restoring a deleted VM, the storage VM credentials that were added to the SnapCenter VMware plug-in must be `vsadmin` or a user account that has all the same privileges as `vsadmin`. The host must be on a storage system that is running ONTAP 8.2.2 or later.

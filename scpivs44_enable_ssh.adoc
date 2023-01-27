@@ -17,7 +17,7 @@ When the SnapCenter VMware plug-in is deployed, SSH is disabled by default.
 
 .Steps
 
-. From the VMware vSphere web client, select the VM where the SnapCenter VMware plug-in is located.
+. From the VMware vSphere client, select the VM where the SnapCenter VMware plug-in is located.
 . Right-click the VM, then on the *Summary* tab of the virtual appliance click *Launch Remote Console* to open a maintenance console window, and then log on.
 +
 For information on accessing and logging on to the maintenance console, see link:scpivs44_access_the_maintenance_console.html[Access the Maintenance Console^].

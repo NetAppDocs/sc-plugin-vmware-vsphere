@@ -28,7 +28,7 @@ For each REST API, add `https://<server>:<port>` at the front of the REST API to
 
 |1
 |`/4.1/resource-groups`
-|`Get List of Resource Groups` gets the list of VMware vSphere web client resource groups.
+|`Get List of Resource Groups` gets the list of VMware vSphere client resource groups.
 Note the *resourceGroupId* and the *policyId* for the resource group you want to back up.
 |2
 |`/4.1/resource-groups/backupnow`
