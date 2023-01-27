@@ -19,7 +19,7 @@ You might encounter the error `Unable to discover resources on SCV: Unable to ge
 
 .Steps
 
-. In the VMware vSphere web client, click *Storage Systems*.
+. In the VMware vSphere client, click *Storage Systems*.
 . On the Storage Systems page, select the storage system to be modified and click *Edit*.
 . In the Timeout field, increase the number of seconds.
 +

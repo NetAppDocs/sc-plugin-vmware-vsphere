@@ -22,7 +22,7 @@ summary:
 +
 [NOTE]
 For IPv6 HTML web clients, you must use either Chrome or Firefox.
-. On the VMware screen, click *vSphere Web Client (HTML5)* and then log in to the *VMware vCenter Single Sign-On page*.
+. Log in to the *VMware vCenter Single Sign-On page*.
 . Right-click any inventory object that is a valid parent object of a virtual machine, such as a datacenter, folder, cluster, or host, and select *Deploy OVF Template* to start the wizard.
 . On the *Select an OVF template* page, specify the location of the `.ova` file (as listed in the following table) and click *Next*.
 +
@@ -69,6 +69,6 @@ The screen displays the IP address where the SnapCenter VMware plug-in is deploy
 +
 Use the format `https://<appliance-IP-address>:8080` to access the management GUI.
 +
-By default, the maintenance console user name is set to “maint” and the password is set to “admin123”.
+The maintenance console user user name is set to `maint` by default and you can set a password at the time of installation.
 
 . Log in to vCenter HTML5 client, then click *Menu* in the toolbar, and then select *SnapCenter Plug-in for VMware vSphere*

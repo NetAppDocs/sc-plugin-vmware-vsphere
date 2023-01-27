@@ -27,11 +27,11 @@ You can detach policies from a SnapCenter VMware plug-in resource group when you
 
 .About this task
 
-The guidelines for detaching policies from the SnapCenter VMware plug-in resource groups differ from the guidelines for SnapCenter resource groups. For a VMware vSphere web client resource group, it is possible to detach all policies, which leaves the resource group with no policy. However, to perform any data protection operations on that resource group, you must attach at least one policy.
+The guidelines for detaching policies from the SnapCenter VMware plug-in resource groups differ from the guidelines for SnapCenter resource groups. For a VMware vSphere client resource group, it is possible to detach all policies, which leaves the resource group with no policy. However, to perform any data protection operations on that resource group, you must attach at least one policy.
 
 .Steps
 
-. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then select a resource group and click *Edit*.
+. In the left Navigator pane of the SCV plug-in, click *Resource Groups*, then select a resource group and click *Edit*.
 . On the *Policies* page of the *Edit Resource Group* wizard, clear the check mark next to the policies you want to detach.
 +
 You can also add a policy to the resource group by checking the policy.
@@ -61,7 +61,7 @@ To modify a SnapCenter VMware plug-in policy schedule, you must modify the sched
 
 .Steps
 
-. In the left Navigator pane of the VMware vSphere web client, click *Policies*, then select a policy and click *Edit*.
+. In the left Navigator pane of the SCV plug-in, click *Policies*, then select a policy and click *Edit*.
 . Modify the policy fields.
 . When you are finished, click *Update*.
 
@@ -77,6 +77,6 @@ You must have detached the policy from all resource groups in the virtual applia
 
 .Steps
 
-. In the left Navigator pane of the VMware vSphere web client, click *Policies*, then select a policy and click *Remove*.
+. In the left Navigator pane of the SCV plug-in, click *Policies*, then select a policy and click *Remove*.
 . In the confirmation dialog box click *OK*.
 // BURT 1378132 observation 47, March 2021 Ronya

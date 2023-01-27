@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: scpivs44_download_the_ova_open_virtual_appliance.html
-keywords:
-summary: 'The .tar file includes OVA, which is a set of microservices for VM and datastore data protection and the certificate file.'
+permalink: scv48_add_certificates_to_certificate_store.html
+keywords: 
+summary: 'Add the Root and Intermediate certificates of Certificate Authority to the VMware vCenter in order to trust the certificate and the artifacts that are signed with it.'
 ---
 
-= Download the Open Virtual Appliance (OVA)
+= Add certificates to the VMware Certificate Store
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,10 +13,7 @@ summary: 'The .tar file includes OVA, which is a set of microservices for VM and
 :imagesdir: ./media/
 
 //
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:21.861206
-//
+// This file was created for 4.8 release
 
 [.lead]
 Before installing the Open Virtual Appliance (OVA), add the certificate to the vCenter. The .tar file contains the OVA and Entrust Root and Intermediate certificates, the certificates can be found within the certificates folder. The OVA deployment is supported in VMware vCenter 7u1 and above.
@@ -24,11 +21,6 @@ Before installing the Open Virtual Appliance (OVA), add the certificate to the v
 In VMware vCenter 7.0.3 versions and higher, the OVA signed by the Entrust certificate is no longer trusted. You need to perform the following procedure to resolve the issue.
 
 .Steps
-. To download the SnapCenter Plug-in for VMware:
-
-* Log in to the NetApp Support Site ( https://mysupport.netapp.com/products/index.html[https://mysupport.netapp.com/products/index.html^]).
-* From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *Download Latest Release* button.
-* Download the SnapCenter Plug-in for VMware vSphere `.tar` file to any location.
 . Log in with the vSphere Client to the vCenter Server.
 . Navigate to *Administration > Certificates > Certificate Management*.
 . Next to *Trusted Root Store*, click *Add*
@@ -39,3 +31,6 @@ Once the certificates are installed, OVA can be verified and deployed.
 [NOTE]
 If the downloaded OVA is not tampered, then the *Publisher* column displays 
 *Trusted certificate*.
+
+
+

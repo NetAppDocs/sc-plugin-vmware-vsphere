@@ -38,7 +38,7 @@ The guest restore feature allows you to view and restore system and hidden files
 .Steps
 
 . Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select *NetApp SnapCenter*, and then click *Guest File Restore*.
-. In the VMware vSphere web client, click *Guest File Restore* from the secondary drop-down list to start the wizard.
+. In the VMware vSphere client, click *Guest File Restore* from the secondary drop-down list to start the wizard.
 . On the *Restore Scope* page, specify the backup that contains the virtual disk you want to attach by doing the following:
 .. In the *Backup Name* table, select the backup that contains the virtual disk that you want attach.
 .. In the *VMDK* table, select the virtual disk that contains the files or folders you want to restore.
@@ -69,7 +69,7 @@ This option is required if you want to be notified when the attach operation fin
 [TIP]
 Enable this option because a guest file restore is an asynchronous operation and there might be a time latency to establish a guest session for you.
 +
-This option uses the email settings that are configured when you set up the VMware vSphere web client in vCenter.
+This option uses the email settings that are configured when you set up the VMware vSphere client in vCenter.
 
 . Review the summary, and then click *Finish*.
 +

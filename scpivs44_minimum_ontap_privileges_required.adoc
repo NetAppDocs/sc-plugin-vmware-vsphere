@@ -113,7 +113,11 @@ network interface show
 
 |
 vserver
+vserver peer
 |===
+
+[NOTE]
+You can ignore the warning messages about the unsupported vserver commands.
 
 == Additional ONTAP information
 

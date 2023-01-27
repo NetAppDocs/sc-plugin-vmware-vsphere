@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: scpivs44_restart_the_vmware_vsphere_web_client_service.html
 keywords:
-summary: 'If the SnapCenter VMware vSphere web client starts to behave incorrectly, you might need to clear the browser cache. If the problem persists, then restart the web client service.'
+summary: 'If the SnapCenter VMware vSphere client starts to behave incorrectly, you might need to clear the browser cache. If the problem persists, then restart the web client service.'
 ---
 
-= Restart the VMware vSphere web client service
+= Restart the VMware vSphere client service
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,15 +19,13 @@ summary: 'If the SnapCenter VMware vSphere web client starts to behave incorrect
 //
 
 [.lead]
-If the SnapCenter VMware vSphere web client starts to behave incorrectly, you might need to clear the browser cache. If the problem persists, then restart the web client service.
+If the SnapCenter VMware vSphere client starts to behave incorrectly, you might need to clear the browser cache. If the problem persists, then restart the web client service.
 
-== Restart the VMware vSphere web client service in a Linux vCenter
-
-If your vCenter is on a Linux appliance, then you must use Linux commands to restart the VMware vSphere web client service.
+== Restart the VMware vSphere client service in a Linux vCenter
 
 .Before you begin
 
-You must be running vCenter 6.5 or later.
+You must be running vCenter 7.0U1 or later.
 
 .Steps
 
@@ -44,45 +42,12 @@ You must be running vCenter 6.5 or later.
 +
 `etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/`
 +
-`rm -rf com.netapp.scvm.webclient-<version_number>`
+`rm -rf com.netapp.scv.client-<version_number>`
 +
 [IMPORTANT]
-Do not remove the VASA or VSC7.x and later packages.
+Do not remove the VASA or vCenter 7.x and later packages.
 
 . Start the web client service by using the following HTML5 command:
 +
 `service-control --start vsphere-ui`
 
-== Restart the VMware vSphere web client service in a Windows vCenter
-
-If your vCenter is on a Windows host, then you must use Windows commands to restart the SnapCenter web client service.
-
-.Before you begin
-
-You must be running vCenter 6.5 or later.
-
-.Steps
-
-. Navigate to `C:\Program Files\VMware\vCenter Server\bin` then run the following command to stop the web client service:
-// BURT 1378132 observation 43, March 2021 Ronya
-+
-`service-control --stop vsphere-ui`
-+
-Wait for the message `Completed Stop service request`.
-
-. Delete all stale HTML5 scvm packages on vCenter by performing the following:
-.. Navigate to the vCenter vsphere-client-serenity/ folder:
-+
-`C:\ProgramData\VMware\vCenterServer\cfg\vsphere-ui\`
-+
-`vc-packages\vsphere-client-serenity\`
-
-.. Delete all plug-in folders with the following name:
-+
-`com.netapp.scvm.webclient-<version_number>`
-
-. Restart the web client service by using the following HTML5 command:
-+
-`service-control --start vsphere-ui`
-+
-Wait for the message `Completed Start service request.`

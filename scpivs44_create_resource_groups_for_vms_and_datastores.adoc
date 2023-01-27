@@ -60,9 +60,9 @@ Do not add VMs that are in an inaccessible state. Although it is possible to cre
 
 .Before you begin
 
-ONTAP Tools for VMware must be deployed before you create a resource group that contains vVol VMs.
+ONTAP tools for VMware must be deployed before you create a resource group that contains vVol VMs.
 
-For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP Tools for VMware vSphere^].
+For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP tools for VMware vSphere^].
 
 .About this task
 
@@ -99,10 +99,8 @@ SnapCenter performs compatibility checks when you create a resource group.
 
 .Steps
 
-. In the left Navigator pane of the VMware vSphere web client, click *Resource Groups*, then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create* to start the wizard.
-+
-image:scpivs44_image16.png[Error: Missing Graphic Image]
-+
+. In the left Navigator pane of the SCV plug-in, click *Resource Groups*, then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create* to start the wizard.
+
 This is the easiest way to create a resource group. However, you can also create a resource group with one resource by performing one of the following:
 +
 ** To create a resource group for one VM, click *Menu* > *Hosts and Clusters*, then right-click a VM, then select NetApp SnapCenter, and then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create Resource Group*.
@@ -248,5 +246,5 @@ To correct a compatibility error, perform the following:
 
 . Make sure the storage VM is running.
 . Make sure that the storage system on which the VMs are located have been added to the SnapCenter Plug-in for VMware vSphere inventory.
-. Make sure the storage VM is added to SnapCenter. Use the Add storage system option on the VMware vSphere web client GUI.
+. Make sure the storage VM is added to SnapCenter. Use the Add storage system option on the VMware vSphere client GUI.
 . If there are spanning VMs that have VMDKs on both NetApp and non-NetApp datastores, then move the VMDKs to NetApp datastores.

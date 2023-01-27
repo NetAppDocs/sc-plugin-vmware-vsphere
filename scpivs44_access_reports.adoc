@@ -25,7 +25,7 @@ The Reports tab contains information on the jobs that are selected on the Jobs p
 
 .Steps
 
-. In the left Navigator pane of the vSphere web client, click *Dashboard*, select a vCenter Server, and then click the *Reports* tab.
+. In the left Navigator pane of the vSphere client, click *Dashboard*, select a vCenter Server, and then click the *Reports* tab.
 . For Backup Reports, you can do the following:
 .. Modify the report
 +
@@ -39,12 +39,12 @@ Double-click any job to generate a detailed report for that job.
 +
 You can also click the image:scpivs44_image37.png[Error: Missing Graphic Image] download icon to download plug-in logs.
 
-== Types of reports from the VMware vSphere Web Client
+== Types of reports from the VMware vSphere client
 
-The VMware vSphere web client for SnapCenter provides customizable report options that provide you with details about your data protection jobs and plug-in resource status. You can generate reports for primary protection only.
+The VMware vSphere client for SnapCenter provides customizable report options that provide you with details about your data protection jobs and plug-in resource status. You can generate reports for primary protection only.
 
 [NOTE]
-Backup schedules are executed in the time zone in which the SnapCenter VMware plug-in is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter VMware plug-in and the vCenter are in different time zones, data in the VMware vSphere web client Dashboard might not be the same as the data in the reports.
+Backup schedules are executed in the time zone in which the SnapCenter VMware plug-in is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter VMware plug-in and the vCenter are in different time zones, data in the VMware vSphere client Dashboard might not be the same as the data in the reports.
 
 The Dashboard displays information on migrated backups only after backups post-migration are performed.
 

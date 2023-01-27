@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html
 keywords:
-summary: 'To modify built-in schedules for VMware vSphere web client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.'
+summary: 'To modify built-in schedules for VMware vSphere client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.'
 ---
 
 = REST API workflow to modify built-in schedules
@@ -13,7 +13,7 @@ summary: 'To modify built-in schedules for VMware vSphere web client jobs using 
 :imagesdir: ./media/
 
 [.lead]
-To modify built-in schedules for VMware vSphere web client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
+To modify built-in schedules for VMware vSphere client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
 
 Built-in schedules are the schedules that are provided as part of the product; for example, the MySQL database dump schedule. You can modify the following schedules:
 `Schedule-DatabaseDump`

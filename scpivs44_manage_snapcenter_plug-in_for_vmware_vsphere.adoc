@@ -31,7 +31,7 @@ Before stopping and restarting the SnapCenter Plug-in for VMware vSphere service
 
 .About this task
 
-* The defaults are “maint” as the username and “admin123” as the password to log in to the maintenance console for SnapCenter Plug-in for VMware vSphere.
+* The defaults username and password will be provided to you.
 +
 TIP: After deployment, modify the default login credentials.
 
@@ -41,13 +41,10 @@ To obtain the root user permission to execute the command, use the sudo <command
 
 .Steps
 
-. From the VMware vSphere web client, select the VM where the SnapCenter VMware plug-in is located.
+. From the VMware vSphere client, select the VM where the SnapCenter VMware plug-in is located.
 . Right-click the VM, then on the *Summary* tab of the virtual appliance click *Launch Remote Console* to open a maintenance console window.
 +
-The logon defaults for the SnapCenter VMware plug-in maintenance console are as follows:
-+
-Username: `maint`
-Password: `admin123`
+Log in using the default maintenance console username and password provided to you.
 +
 image:scpivs44_image11.png[Error: Missing Graphic Image]
 
@@ -98,17 +95,14 @@ Before stopping and restarting the SnapCenter Plug-in for VMware vSphere service
 
 .About this task
 
-You must use the default `“maint”` as the username and `“admin123”` as the password to log in to the maintenance console of the SnapCenter VMware plug-in.
+Use the default username password to log in to the maintenance console of the SnapCenter VMware plug-in.
 
 .Steps
 
-. From the VMware vSphere web client, select the VM where the SnapCenter VMware plug-in is located.
+. From the VMware vSphere client, select the VM where the SnapCenter VMware plug-in is located.
 . Right-click the VM, then on the *Summary* tab of the virtual appliance click *Launch Remote Console* to open a maintenance console window.
 +
-The logon defaults for the SnapCenter VMware plug-in maintenance console are as follows:
-+
-Username: `maint`
-Password: `admin123`
+Log in using the default maintenance console username and password provided to you.
 +
 image:scpivs44_image29.jpg[Error: Missing Graphic Image]
 
@@ -133,7 +127,7 @@ You must unregister the SnapCenter VMware plug-in extensions manually.
 
 . On the linked vCenter that has the SnapCenter VMware plug-in service stopped, navigate to the Managed Object Reference (MOB) manager.
 . In the Properties option, select Extension Manager to display a list of the registered extensions.
-. Unregister the extensions `com.netapp.scvm.webclient` and `com.netapp.aegis`.
+. Unregister the extensions `com.netapp.scv.client` and `com.netapp.aegis`.
 
 == Disable and enable SnapCenter Plug-in for VMware vSphere
 
@@ -193,7 +187,7 @@ The IP of the SnapCenter VMware plug-in is displayed when you deploy the plug-in
 
 . Click *Configuration* in the left navigation pane, and then unselect the Service option in the *Plug-in Details* section to disable the plug-in.
 . Log in to VMware vSphere.
-. In the left navigator screen, right-click the instance of the SnapCenter VMware plug-in (the name of the `.ova` file that was used when the virtual appliance was deployed) and select *Delete from Disk*.
+. In the left navigator screen, right-click the instance of the SnapCenter VMware plug-in (the name of the `.tar` file that was used when the virtual appliance was deployed) and select *Delete from Disk*.
 . Manually delete the following files in `/etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/com.netapp.scvm.webclient-4.5.0.5942045/plugins` folder of the vCenter server:
 // Updated for BURT 1378132
 +

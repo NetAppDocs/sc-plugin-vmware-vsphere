@@ -30,7 +30,7 @@ To create resource groups, follow this workflow:
 
 |1
 |`/4.1/policies`
-|`Get Policies` gets the list of VMware vSphere web client policies.
+|`Get Policies` gets the list of VMware vSphere client policies.
 Note the *policyId* that you want to use when creating the resource group and the policy *frequency*.
 If no policies are listed, then use the `Create Policy` REST API to create a new policy.
 |2
@@ -46,11 +46,11 @@ To modify resource groups, follow this workflow:
 
 |1
 |`/4.1/resource-groups`
-|`Get List of Resource Groups` gets the list of VMware vSphere web client resource groups.
+|`Get List of Resource Groups` gets the list of VMware vSphere client resource groups.
 Note the *resourceGroupId* that you want to modify.
 |2
 |`/4.1/policies`
-|If you want to modify the assigned policies, `Get Policies` gets the list of VMware vSphere web client policies.
+|If you want to modify the assigned policies, `Get Policies` gets the list of VMware vSphere client policies.
 Note the *policyId* that you want to use when modifying the resource group and the policy *frequency*.
 |3
 |`/4.1/resource-groups/

@@ -19,7 +19,7 @@ summary: 'All backup operations are performed on resource groups, which can cont
 //
 
 [.lead]
-Use the SnapCenter vSphere web client to perform data protection operations for VMs, VMDKs, and datastores. All backup operations are performed on resource groups, which can contain any combination of one or more VMs and datastores. You can back up on demand or according to a defined protection schedule.
+Use the SnapCenter vSphere client to perform data protection operations for VMs, VMDKs, and datastores. All backup operations are performed on resource groups, which can contain any combination of one or more VMs and datastores. You can back up on demand or according to a defined protection schedule.
 
 When you back up a datastore, you are backing up all the VMs in that datastore.
 
