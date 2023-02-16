@@ -69,6 +69,7 @@ Extension.Unregister
 
 == Required privileges specific to SnapCenter Plug-in for VMware vCenter
 |===
+
 |*Privileges* | *Label*
 |netappSCV.Guest.RestoreFile
 |Guest File Restore
@@ -92,3 +93,5 @@ Extension.Unregister
 |Configure SnapCenter Server
 |netappSCV.Backup.BackupScheduled
 |Create Resource Group
+
+|===
