@@ -28,7 +28,7 @@ You can use the maintenance console to restore the most recent backup of the MyS
 link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maintenance-console[Access the maintenance console].
 . From the Main Menu, enter option *1) Application Configuration*.
 . From the Application Configuration Menu, enter option *6) MySQL backup and restore*.
-. From the MySQL Backup and Restore Configuration Menu, enter option *3) Restore MySQL backup*.
+. From the MySQL Backup and Restore Configuration Menu, enter option *4) Restore MySQL backup*.
 . At the prompt “Restore using the most recent backup,” enter *y*, and then press *Enter*.
 +
 The backup MySQL database is restored to its original location.
