@@ -12,6 +12,7 @@ summary: 'If you no longer need the SnapCenter data protection features, you mus
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
 If you no longer need the SnapCenter data protection features, you must change the configuration of the SnapCenter VMware plug-in. For example, if you deployed the plug-in in a test environment, you might need to disable the SnapCenter features in that environment and enable them in a production environment.
 
 .Before you begin

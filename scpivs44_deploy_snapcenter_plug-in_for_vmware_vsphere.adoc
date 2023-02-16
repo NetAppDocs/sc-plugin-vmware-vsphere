@@ -49,7 +49,7 @@ Deploy the SnapCenter VMware plug-in in the same time zone as the vCenter. Backu
 [NOTE]
 For IPv6 HTML web clients, you must use either Chrome or Firefox.
 . Log in to the *VMware vCenter Single Sign-On* page.
-. For VMware vCenter 7.0.3 and later versions, follow the steps in link:../scpivs44_download_the_ova_open_virtual_appliance.html[Download the Open Virtual Appliance (OVA)] to import the certificates to vCenter.
+. For VMware vCenter 7.0.3 and later versions, follow the steps in link:scpivs44_download_the_ova_open_virtual_appliance.html[Download the Open Virtual Appliance (OVA)^] to import the certificates to vCenter.
 . On the Navigator pane, right-click any inventory object that is a valid parent object of a virtual machine, such as a datacenter, cluster, or host, and select *Deploy OVF Template* to start the VMware deploy wizard.
 . Extract the .tar file, which contains the .ova file onto your local system. On the *Select an OVF template* page, specify the location of the `.ova` file inside the .tar extracted folder. 
 . Click *Next*.
