@@ -12,7 +12,7 @@ summary: 'When the SnapCenter VMware plug-in is deployed, SSH is disabled by def
 :linkattrs:
 :imagesdir: ./media/
 
-
+[.lead]
 When the SnapCenter VMware plug-in is deployed, SSH is disabled by default.
 
 .Steps

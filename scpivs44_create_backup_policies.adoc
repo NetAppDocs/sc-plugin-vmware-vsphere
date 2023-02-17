@@ -17,6 +17,8 @@ summary:
 //
 // 2020-09-09 12:24:22.064213
 //
+[.lead]
+Follow the instructions given below to create backup policies
 
 . In the left Navigator pane of the SCV plug-in, click *Policies*, and then click image:scpivs44_image6.png[Error: Missing Graphic Image] *New Policy*.
 . On the *New Backup Policy* page, enter the policy configuration information, and then click *Add*.

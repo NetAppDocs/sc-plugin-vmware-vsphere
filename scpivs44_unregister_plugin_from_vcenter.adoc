@@ -13,6 +13,8 @@ summary: 'If you stop the SnapCenter VMware plug-in service in a vCenter that is
 :imagesdir: ./media/
 
 // BURT 1378132 observation 58, March 2021 Ronya
+
+[.lead]
 If you stop the SnapCenter VMware plug-in service in a vCenter that is in Linked Mode, resource groups are not available in all the linked vCenters, even when the SnapCenter VMware plug-in service is running in the other linked vCenters.
 
 You must unregister the SnapCenter VMware plug-in extensions manually.
