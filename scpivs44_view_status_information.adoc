@@ -12,6 +12,7 @@ summary: 'You can view status information on the vSphere client Dashboard. Statu
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
 You can view status information on the vSphere client Dashboard. Status information is updated once an hour.
 
 .Steps

@@ -16,7 +16,7 @@ summary: 'This section provides licensing information for SnapCenter Plug-in for
 // This file was created with NDAC Version 2.0 (August 17, 2020)
 //
 // 2020-09-09 12:24:20.235275
-
+[.lead]
 SnapCenter Plug-in for VMware vSphere is a free product if you are using the following storage systems:
 
 * FAS

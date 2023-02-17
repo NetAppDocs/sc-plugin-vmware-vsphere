@@ -17,7 +17,7 @@ summary: 'You can use this workflow if you are a SnapCenter user and have SnapCe
 //
 // 2020-09-09 12:24:20.763592
 //
-
+[.lead]
 If you are a SnapCenter user and have SnapCenter backups, then use the following workflow to get started.
 
 image:scpivs44_image3.png[Error: Missing Graphic Image]

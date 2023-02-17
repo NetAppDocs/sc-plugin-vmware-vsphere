@@ -68,15 +68,30 @@ Extension.Unregister
 
 
 == Required privileges specific to SnapCenter Plug-in for VMware vCenter
+|===
 
-netappSCV.Guest.RestoreFile
-netappSCV.Recovery.MountUnMount
-netappSCV.Backup.DeleteBackupJob
-netappSCV.Configure.ConfigureStorageSystems.Delete
-netappSCV.View
-netappSCV.Recovery.RecoverVM
-netappSCV.Configure.ConfigureStorageSystems.AddUpdate
-netappSCV.Backup.BackupNow
-netappSCV.Guest.Configure
-netappSCV.Configure.ConfigureSnapCenterServer
-netappSCV.Backup.BackupScheduled
+|*Privileges* | *Label*
+|netappSCV.Guest.RestoreFile
+|Guest File Restore
+|netappSCV.Recovery.MountUnMount
+|Mount/Unmount
+|netappSCV.Backup.DeleteBackupJob
+|Delete Resource Group/Backup
+|netappSCV.Configure.ConfigureStorageSystems.Delete
+|Remove Storage Systems
+|netappSCV.View
+|View
+|netappSCV.Recovery.RecoverVM
+|Recover VM
+|netappSCV.Configure.ConfigureStorageSystems.AddUpdate
+|Add/Modify Storage Systems
+|netappSCV.Backup.BackupNow
+|Backup Now
+|netappSCV.Guest.Configure
+|Guest Configuration
+|netappSCV.Configure.ConfigureSnapCenterServer
+|Configure SnapCenter Server
+|netappSCV.Backup.BackupScheduled
+|Create Resource Group
+
+|===

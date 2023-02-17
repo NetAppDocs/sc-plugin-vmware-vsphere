@@ -12,7 +12,8 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-
+[.lead]
+Follow the steps in this section to add storage.
 // This file is used only for the Quick Start section
 
 
