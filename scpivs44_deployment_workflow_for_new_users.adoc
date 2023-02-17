@@ -17,7 +17,7 @@ summary: 'You can use this workflow if you have not used SnapCenter before and d
 //
 // 2020-09-09 12:24:20.763592
 //
-
+[.lead]
 If you have not used SnapCenter before and do not have any SnapCenter backups, then use the following workflow to get started.
 
 image:scpivs44_image2.png[Error: Missing Graphic Image]

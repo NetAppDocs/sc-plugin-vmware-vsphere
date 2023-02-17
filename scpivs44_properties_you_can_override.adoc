@@ -12,6 +12,8 @@ summary: 'You can use properties that are listed in the `scbr.override` configur
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+You can use properties that are listed in the `scbr.override` configuration file to change default values.
 
 * By default, the template uses hash symbol to comment the configuration properties. To use a property to modify a configuration value, you must remove the `#` characters.
 * You must restart the service on the SnapCenter Plug-in for VMware vSphere host for the changes to take effect.

@@ -52,38 +52,42 @@ image:scpivs44_image11.png[Error: Missing Graphic Image]
 +
 * Option 1: Application Configuration
 +
-Start or stop SnapCenter VMware plug-in service
-Change login username or password
-Change MySQL password
-Configure MySQL backup
-List MySQL backups
-Restore MySQL backup
+1) Display SnapCenter Plug-in for VMware vSphere summary
+2) Start SnapCenter Plug-in for VMware vSphere services
+3) Stop SnapCenter Plug-in for VMware vSphere services
+4) Change username and password to login SnapCenter Plug-in for VMware vSphere UI
+5) Change MySQL password
+6) MySQL backup and restore
 +
 * Option 2: System Configuration
 +
-Reboot or shutdown virtual machine
-Change 'maint' user password
-Change time zone
-Change NTP server
-Enable/Disable SSH Access
-Increase jail disk size (/jail)
-Upgrade
-Install VMware Tools
+1) Reboot virtual machine
+2) Shut down virtual machine
+3) Change 'maint' user password
+4) Change time zone
+5) Change NTP server
+6) Disable SSH access
+7) Increase jail disk size (/jail)
+8) Upgrade
+9) Install VMware Tools
 +
 * Option 3: Network Configuration
 +
-Display or change IP address settings
-Display or change domain name search settings
-Display or change static routes
-Commit changes
-Ping a host
+1) Display IP address settings
+2) Change IP address settings
+3) Display domain name search settings
+4) Change domain name search settings
+5) Display static routes
+6) Change static routes
+7) Commit changes
+8) Ping a host
 +
 * Option 4: Support and Diagnostics
 +
-Generate support bundle
-Access diagnostic shell
-Enable remote diagnostic access
-Generate core dump bundle
+1) Generate support bundle
+2) Access diagnostic shell
+3) Enable remote diagnostic access
+4) Generate core dump bundle
 
 == Modify the SnapCenter VMware Plug-in password from the maintenance console
 
