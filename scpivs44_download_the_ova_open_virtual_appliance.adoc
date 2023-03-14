@@ -29,11 +29,14 @@ In VMware vCenter 7.0.3 versions and higher, the OVA signed by the Entrust certi
 * Log in to the NetApp Support Site ( https://mysupport.netapp.com/products/index.html[https://mysupport.netapp.com/products/index.html^]).
 * From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then click the *Download Latest Release* button.
 * Download the SnapCenter Plug-in for VMware vSphere `.tar` file to any location.
+. Extract the contents of the tar file. The tar file contains the OVA and certs folder. The certs folder contains the Entrust Root and Intermediate certificates.
 . Log in with the vSphere Client to the vCenter Server.
 . Navigate to *Administration > Certificates > Certificate Management*.
-. Next to *Trusted Root Store*, click *Add*
-. Browse and select the location of the Entrust Root and Intermediate certificates.
-The certificate is added in a panel under *Trusted Root Certificates*.
+. Next to *Trusted Root certificates*, click *Add*
+* Go to the _certs_ folder.
+* Select the Entrust Root and Intermediate certificates.
+* Install each certificate one at a time.
+. The certificates are added to a panel under *Trusted Root Certificates*. 
 Once the certificates are installed, OVA can be verified and deployed.
 
 [NOTE]

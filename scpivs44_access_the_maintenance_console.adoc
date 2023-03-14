@@ -13,7 +13,7 @@ summary: 'You can manage your application, system, and network configurations by
 :imagesdir: ./media/
 
 [.lead]
-You can manage your application, system, and network configurations by using the maintenance console for SnapCenter Plug-in for VMware vSphere. You can change your administrator password, maintenance password, generate support bundles, and start remote diagnostics.
+You can manage your application, system, and network configurations using the maintenance console for SnapCenter Plug-in for VMware vSphere. You can change your administrator password, maintenance password, generate support bundles, and start remote diagnostics.
 
 .Before you begin
 
