@@ -21,6 +21,8 @@ Given below are the swagger rest APIs:
 1.	GET 4.1/audit/logs: Get audit data for all logs
 2.	GET 4.1/audit/logs/{filename}: Get audit data for a specific log file
 3.	POST 4.1/audit/verify: Trigger audit log verification.
+4.  GET /4.1/audit/config: Get the audit and syslog server config
+5.  PUT /4.1/audit/config: Update the audit and syslog server config
 
 To generate audit logs for VMware vSphere client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere.
 

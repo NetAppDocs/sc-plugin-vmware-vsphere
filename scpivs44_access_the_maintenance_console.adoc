@@ -51,14 +51,17 @@ Backup and restore MySQL, configure and list MySQL backups
 +
 * Option 2: System Configuration
 +
-Reboot or shutdown virtual machine
+Reboot virtual machine
+Shut down virtual machine
 Change 'maint' user password
 Change time zone
-Change NTP server
-Enable/Disable SSH Access
+Change NTP server 
+Enable SSH access
 Increase jail disk size (/jail)
-Upgrade
+Upgrade 
 Install VMware Tools
+Disable MFA
+Generate MFA Token
 +
 * Option 3: Network Configuration
 +
