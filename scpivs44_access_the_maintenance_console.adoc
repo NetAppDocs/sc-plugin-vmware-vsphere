@@ -62,6 +62,7 @@ Upgrade
 Install VMware Tools
 Disable MFA
 Generate MFA Token
+// updated for 4.9 release
 +
 * Option 3: Network Configuration
 +
