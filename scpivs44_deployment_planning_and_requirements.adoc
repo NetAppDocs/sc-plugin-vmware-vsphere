@@ -159,7 +159,7 @@ The port is used for communication between the virtual appliance and the storage
 
 Each plug-in instance supports only one vCenter Server. vCenters in linked mode are supported. Multiple plug-in instances can support the same SnapCenter Server as shown in the following figure.
 
-image:scpivs44_image4.png[Error: Missing Graphic Image]
+image:scpivs44_image4.png["Supported configuration graphical representation"]
 
 == RBAC privileges required
 

@@ -31,7 +31,7 @@ Use the format `https://<appliance-IP-address>:8080`
 
 . Click the Settings icon in the top toolbar.
 +
-image:scpivs44_image31.png[Error: Missing Graphic Image]
+image:scpivs44_image31.png["SnapCenter VMware plug-in management GUI"]
 
 . On the *Settings* page, in the *Network Settings* section, click *IPv4* or *IPv6*, and then click *Edit*.
 +

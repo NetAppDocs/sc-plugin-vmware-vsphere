@@ -56,4 +56,4 @@ Use the following workflow to set up ONTAP and SnapCenter RBAC:
 
 The following figure provides an overview of the validation workflow for RBAC privileges (both vCenter and ONTAP):
 
-image:scpivs44_image1.png[Error: Missing Graphic Image]
+image:scpivs44_image1.png["Validation workflow for RBAC privileges"]

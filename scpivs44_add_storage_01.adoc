@@ -52,7 +52,7 @@ If you add a storage VM with a name that cannot resolve to the management LIF, t
 .Steps
 
 . In the left Navigator pane of the vSphere client, click *Storage Systems*.
-. On the Storage Systems page, click image:scpivs44_image6.png[Error: Missing Graphic Image] *Add*.
+. On the Storage Systems page, select *Add* option.
 . In the *Add Storage System* wizard, enter the basic storage VM or cluster information as listed in the following table:
 +
 |===

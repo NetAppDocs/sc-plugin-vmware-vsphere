@@ -36,4 +36,4 @@ In MetroCluster configurations:
 
 The following workflow figure shows the sequence in which you must perform backup operations:
 
-image:scpivs44_image13.png[Error: Missing Graphic Image]
+image:scpivs44_image13.png["Backup operations workflow"]

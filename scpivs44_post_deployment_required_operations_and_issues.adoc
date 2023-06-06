@@ -88,7 +88,7 @@ You can register multiple instances of SnapCenter Plug-in for VMware vSphere on 
 +
 When the VM host is successfully added, it is displayed on the Managed Hosts tab.
 
-. In the left navigation pane, click *Settings*, then click the *Credential* tab, and then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Add* to add credentials for the virtual appliance.
+. In the left navigation pane, click *Settings*, then click the *Credential* tab, and then select *Add* to add credentials for the virtual appliance.
 . Provide the credential information that was specified during the deployment of SnapCenter Plug-in for VMware vSphere.
 +
 [NOTE]

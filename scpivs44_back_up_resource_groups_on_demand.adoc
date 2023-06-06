@@ -35,7 +35,7 @@ In earlier releases of Virtual Storage Console (VSC), you could perform an on-de
 
 .Steps
 
-. In the left Navigator pane of the SCV plug-in, click *Resource Groups*, then select a resource group, and then click image:scpivs44_image38.png[Error: Missing Graphic Image] *Run Now* to start the backup.
+. In the left Navigator pane of the SCV plug-in, click *Resource Groups*, then select a resource group, and then select image:scpivs44_image38.png["Play icon"] *Run Now* to start the backup.
 . If the resource group has multiple policies configured, then in the *Backup Now* dialog box, select the policy you want to use for this backup operation.
 //Updated for BURT 1378132 observation 27, March 2021 Madhulika
 . Click *OK* to start the backup.

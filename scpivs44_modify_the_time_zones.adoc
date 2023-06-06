@@ -29,7 +29,7 @@ Use the format `https://<appliance-IP-address>:8080`
 
 . Click the Settings icon in the top toolbar.
 +
-image:scpivs44_image28.jpg[Error: Missing Graphic Image]
+image:scpivs44_image28.jpg["SnapCenter Plug-in for VMware vSphere"]
 
 . On the *Settings* page, in the *Date and Time* section, click *Edit*.
 . Select the new time zone and click *Save*.

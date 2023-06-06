@@ -99,12 +99,12 @@ SnapCenter performs compatibility checks when you create a resource group.
 
 .Steps
 
-. In the left Navigator pane of the SCV plug-in, click *Resource Groups*, then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create* to start the wizard.
+. In the left Navigator pane of the SCV plug-in, click *Resource Groups*, then select *Create* to start the wizard.
 
 This is the easiest way to create a resource group. However, you can also create a resource group with one resource by performing one of the following:
-+
-** To create a resource group for one VM, click *Menu* > *Hosts and Clusters*, then right-click a VM, then select NetApp SnapCenter, and then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create Resource Group*.
-** To create a resource group for one datastore, click *Menu* > *Hosts and Clusters*, then right-click a datastore, then select *NetApp SnapCenter*, and then click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create Resource Group*.
+
+** To create a resource group for one VM, click *Menu* > *Hosts and Clusters*, then right-click a VM, then select NetApp SnapCenter, and then select *Create Resource Group*.
+** To create a resource group for one datastore, click *Menu* > *Hosts and Clusters*, then right-click a datastore, then select *NetApp SnapCenter*, and then select *Create Resource Group*.
 
 . On the *General Info & Notification* page in the wizard, do the following:
 +
@@ -194,7 +194,7 @@ Spanning VMs are not supported for FlexGroup and vVol datastores.
 |Select one or more policies from the list.
 |A new policy
 a|
-. Click image:scpivs44_image6.png[Error: Missing Graphic Image] *Create*.
+. Select *Create*.
 . Complete the New Backup Policy wizard to return to the Create Resource Group wizard.
 |===
 +
@@ -202,7 +202,7 @@ In Linked Mode, the list includes policies in all the linked vCenters. You must 
 
 . On the *Schedules* page, configure the backup schedule for each selected policy.
 +
-image:scpivs44_image18.png[Error: Missing Graphic Image]
+image:scpivs44_image18.png["Create resource group window"]
 +
 In the starting hour field, enter a date and time other than zero. The date must be in the format `day/month/year`.
 // BURT 1280281 June 2021  and Burt 1457923 March 2022 Ronya

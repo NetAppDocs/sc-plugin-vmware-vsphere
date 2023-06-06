@@ -35,7 +35,7 @@ To obtain the root user permission to execute the command, use the sudo <command
 +
 Log in using the default maintenance console username `maint` and password that you have set at the time of installation.
 +
-image:scpivs44_image11.png[Error: Missing Graphic Image]
+image:scpivs44_image11.png["Maintenance console window"]
 
 . You can perform the following operations:
 +
