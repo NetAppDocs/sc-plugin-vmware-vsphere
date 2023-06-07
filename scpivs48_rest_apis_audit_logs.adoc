@@ -39,4 +39,6 @@ Use the following REST APIs in the Jobs section to get detailed information on j
 |get specific audit log file with integrity data
 |`4.1/audit/verify`
 |triggers audit verification
+|`4.1/audit/syslogcert`
+|updates the syslog server certificate 
 |===
