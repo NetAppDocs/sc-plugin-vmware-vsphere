@@ -33,6 +33,7 @@ The default configurations of the audit files are:
 * A maximum of 10 audit log files are retained
 
 To modify the default configurations add a key value pair in the /opt/netapp/scvservice/standalone_aegis/etc/scbr/scbr.properties and restart the scvservice.
+To modify the default configurations using the user interface, go to *Audit logs settings* under *Dashboard* > *Settings* > *Audit Logs* >*Settings*
 
 The configurations for audit log files are:
 
