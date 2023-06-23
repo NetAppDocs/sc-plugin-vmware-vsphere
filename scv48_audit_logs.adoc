@@ -48,14 +48,15 @@ Rolled over audit logs are periodically verified for integrity. SCV provides RES
 |NORMAL
 |Audit log file is unmodified
 |ROLLOVER DELETE
-|* Audit log file is deleted based on retention
-* By default, only 10 files are retained
+|- Audit log file is deleted based on retention
+-  By default, only 10 files are retained
+
 |UNEXPECTED DELETE
 |Audit log file is deleted
 |ACTIVE
 |
-* Audit log file is in use
-* Only applicable to audit.log
+- Audit log file is in use
+- Only applicable to audit.log
 |===
 
 Events are categorize into three major categories:
@@ -121,8 +122,7 @@ The following operations in the Admin Console UI are audited:
 
 == Configure syslog servers
 
-Audit logs are stored within the appliance and are periodically verified for integrity. Event forwarding allows the you to obtain events from the source or forwarding computer and store it in a centralized computer, which is the Syslog Server. Data is encrypted in transit between the source and the
-destination. 
+Audit logs are stored within the appliance and are periodically verified for integrity. Event forwarding allows the you to obtain events from the source or forwarding computer and store it in a centralized computer, which is the Syslog Server. Data is encrypted in transit between the source and the destination. 
 
 .Before you begin
 
@@ -130,11 +130,11 @@ You must have administrator privileges.
 
 .About this task
 
-Log in to the SnapCenter Plug-in for VMware vSphere to perform this operation.
+Log in to the SnapCenter Plug-in for VMware vSphere to configure syslog server.
 
 .Steps
 
-. Login to the SnapCenter Plug-in for VMware vSphere.
+. Login to the SnapCenter Plug-in for VMware vSphere UI.
 . From the Dashboard select *Settings* > *Audit Logs* > *Audit Settings*.
 . In the *Audit settings* pane, enter the following details:
 +
@@ -158,7 +158,6 @@ This task helps you to change the default audit log settings.
 
 .Steps
 
-. Login to the SnapCenter Plug-in for VMware vSphere.
+. Login to the SnapCenter Plug-in for VMware vSphere UI.
 . From the Dashboard select *Settings* > *Audit Logs* > *Settings*.
 . In the *Audit settings* pane, you can set new values for maximum rollover files and audit log size.
-
