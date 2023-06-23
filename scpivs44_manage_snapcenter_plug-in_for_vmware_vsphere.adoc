@@ -70,6 +70,7 @@ image:scpivs44_image11.png["Maintenance Console window"]
 7) Increase jail disk size (/jail)
 8) Upgrade
 9) Install VMware Tools
+10)Generate MFA Token
 +
 * Option 3: Network Configuration
 +

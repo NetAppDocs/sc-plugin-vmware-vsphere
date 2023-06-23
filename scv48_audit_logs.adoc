@@ -33,7 +33,6 @@ The default configurations of the audit files are:
 * A maximum of 10 audit log files are retained
 
 To modify the default configurations add a key value pair in the /opt/netapp/scvservice/standalone_aegis/etc/scbr/scbr.properties and restart the scvservice.
-To modify the default configurations using the user interface, go to *Audit logs settings* under *Dashboard* > *Settings* > *Audit Logs* > *Settings*
 
 The configurations for audit log files are:
 
@@ -119,3 +118,47 @@ The following operations in the Admin Console UI are audited:
 * Configuration
 ** Change vCenter Credentials
 ** Plug-in Enable / Disable
+
+== Configure syslog servers
+
+Audit logs are stored within the appliance and are periodically verified for integrity. Event forwarding allows the you to obtain events from the source or forwarding computer and store it in a centralized computer, which is the Syslog Server. Data is encrypted in transit between the source and the
+destination. 
+
+.Before you begin
+
+You must have administrator privileges.
+
+.About this task
+
+Log in to the SnapCenter Plug-in for VMware vSphere to perform this operation.
+
+.Steps
+
+. Login to the SnapCenter Plug-in for VMware vSphere.
+. From the Dashboard select *Settings* > *Audit Logs* > *Audit Settings*.
+. In the *Audit settings* pane, enter the following details:
++
+* Syslog Server Host 
+* Syslog Server Port 
+* RFC format
+* Syslog Server Certificate
+. Click *SAVE* to save your settings.
+
+== Change audit log settings
+
+You can change the default configurations of the log settings.
+
+.Before you begin
+
+You must have administrator privileges.
+
+.About this task
+
+This task helps you to change the default audit log settings.
+
+.Steps
+
+. Login to the SnapCenter Plug-in for VMware vSphere.
+. From the Dashboard select *Settings* > *Audit Logs* > *Settings*.
+. In the *Audit settings* pane, you can set new values for maximum rollover files and audit log size.
+
