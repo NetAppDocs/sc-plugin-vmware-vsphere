@@ -71,7 +71,7 @@ The SnapCenter VMware plug-in does not support multiple storage systems with the
 |Username
 |This field is visible when you select Credentials as your authentication method. Enter the ONTAP username that is used to log on to the storage VM or the cluster.
 |Password
-|This field is visible when you select Credentials as your authentication method. Enter the storage VM or cluster logon password.
+|This field is visible when you select Credentials as your authentication method. Enter the storage VM or cluster login password.
 |Certificate
 |This field is visible when you select Certificate as your authentication method. Browse to select the certificate file.
 |Private Key
