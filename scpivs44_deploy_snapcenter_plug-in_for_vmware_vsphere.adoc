@@ -23,7 +23,7 @@ To use SnapCenter features to protect VMs, datastores, and application-consisten
 
 .Before you begin
 
- [Note]
+[NOTE]
  The OVA deployment is supported in VMware vCenter 7u1 and above.
 
 * You must have read the deployment requirements.
@@ -133,7 +133,7 @@ The screen displays the IP address where the SnapCenter VMware plug-in is deploy
 +
 Use the format `https://<appliance-IP-address>:8080` to access the management GUI.
 +
-Log in using the default maintenance console username `maint` and password that you have set at the time of installation.
+Login with the admin username and password set at the time of deployment and the MFA token generated using the maintenance console.
 +
 If the SnapCenter VMware plug-in is not enabled, then see link:scpivs44_restart_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere client service].
 // BURT 1378132 observation 10, March 2021 Ronya
