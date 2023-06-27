@@ -134,8 +134,8 @@ This task helps you to configure the syslog server.
 
 .Steps
 
-. Log in to the SnapCenter Plug-in for VMware vSphere management GUI.
-. Select *Settings* > *Audit Logs* > *Settings*.
+. Log in to the SnapCenter Plug-in for VMware vSphere.
+. In the left navigation pane, select *Settings* > *Audit Logs* > *Settings*.
 . In the *Audit Log Settings* pane, select *Send audit logs to Syslog server* 
 . Enter the following details:
 +
@@ -159,6 +159,6 @@ This task helps you to change the default audit log settings.
 
 .Steps
 
-. Log in to the SnapCenter Plug-in for VMware vSphere management GUI.
-. Select *Settings* > *Audit Logs* > *Settings*.
+. Log in to the SnapCenter Plug-in for VMware vSphere.
+. In the left navigation pane, select *Settings* > *Audit Logs* > *Settings*.
 . In the *Audit Log Settings* pane, enter the *Number of audit entries* and *Audit log size limit* according to your requirements. 
