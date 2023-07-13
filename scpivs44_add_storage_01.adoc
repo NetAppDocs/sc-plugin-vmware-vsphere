@@ -41,7 +41,7 @@ The SnapCenter VMware plug-in performs backup and restore operations on directly
 If you are using the SnapCenter VMware plug-in to support application-based backups on VMDKs, then you must use the SnapCenter GUI to enter storage authentication details and register storage systems.
 
 * For vCenters in linked mode, you must separately add storage systems to each vCenter.
-* Names for storage VMs must resolve to management LIFs.
+* If you are adding SVM, names for storage VMs must resolve to management LIFs.
 +
 If you added etc host entries for storage VM names in SnapCenter, you must verify that they are also resolvable from the virtual appliance.
 +
@@ -52,7 +52,7 @@ If you add a storage VM with a name that cannot resolve to the management LIF, t
 .Steps
 
 . In the left Navigator pane of the vSphere client, click *Storage Systems*.
-. On the Storage Systems page, click image:scpivs44_image6.png[Error: Missing Graphic Image] *Add*.
+. On the Storage Systems page, select *Add* option.
 . In the *Add Storage System* wizard, enter the basic storage VM or cluster information as listed in the following table:
 +
 |===
@@ -69,9 +69,9 @@ The SnapCenter VMware plug-in does not support multiple storage systems with the
 - https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV[CA signed certificate^]
 - https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV[Self signed certificate^]
 |Username
-|This field is visible when you select Credentials as your authentication method. Enter the ONTAP username that is used to log on to the storage VM.
+|This field is visible when you select Credentials as your authentication method. Enter the ONTAP username that is used to log on to the storage VM or the cluster.
 |Password
-|This field is visible when you select Credentials as your authentication method. Enter the storage VM logon password.
+|This field is visible when you select Credentials as your authentication method. Enter the storage VM or cluster login password.
 |Certificate
 |This field is visible when you select Certificate as your authentication method. Browse to select the certificate file.
 |Private Key

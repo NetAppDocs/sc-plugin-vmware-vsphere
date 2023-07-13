@@ -16,10 +16,11 @@ When you configure a backup schedule for a SnapCenter Plug-in for VMware vSphere
 
 .Before you begin
 
-You must know the IP address and the log in credentials for the SnapCenter Plug-in for VMware vSphere management GUI.
+You must know the IP address and the log in credentials for the SnapCenter Plug-in for VMware vSphere management GUI. You must also note down the MFA token generated from the maintenance console.
 
 * The IP address was displayed when the SnapCenter VMware plug-in was deployed.
 * Use the log in credentials provided during the deployment of the SnapCenter VMware plug-in or as later modified.
+* Generate a 6-digit MFA token using the maintenance console System Configuration options.
 
 .Steps
 
@@ -29,7 +30,7 @@ Use the format `https://<appliance-IP-address>:8080`
 
 . Click the Settings icon in the top toolbar.
 +
-image:scpivs44_image28.jpg[Error: Missing Graphic Image]
+image:scpivs44_image28.jpg["SnapCenter Plug-in for VMware vSphere"]
 
 . On the *Settings* page, in the *Date and Time* section, click *Edit*.
 . Select the new time zone and click *Save*.

@@ -48,14 +48,15 @@ Rolled over audit logs are periodically verified for integrity. SCV provides RES
 |NORMAL
 |Audit log file is unmodified
 |ROLLOVER DELETE
-|* Audit log file is deleted based on retention
-* By default, only 10 files are retained
+|- Audit log file is deleted based on retention
+-  By default, only 10 files are retained
+
 |UNEXPECTED DELETE
 |Audit log file is deleted
 |ACTIVE
 |
-* Audit log file is in use
-* Only applicable to audit.log
+- Audit log file is in use
+- Only applicable to audit.log
 |===
 
 Events are categorize into three major categories:
@@ -118,3 +119,46 @@ The following operations in the Admin Console UI are audited:
 * Configuration
 ** Change vCenter Credentials
 ** Plug-in Enable / Disable
+
+== Configure syslog servers
+
+Audit logs are stored within the appliance and are periodically verified for integrity. Event forwarding allows the you to obtain events from the source or forwarding computer and store it in a centralized computer, which is the Syslog Server. Data is encrypted in transit between the source and the destination. 
+
+.Before you begin
+
+You must have administrator privileges.
+
+.About this task
+
+This task helps you to configure the syslog server.
+
+.Steps
+
+. Log in to the SnapCenter Plug-in for VMware vSphere.
+. In the left navigation pane, select *Settings* > *Audit Logs* > *Settings*.
+. In the *Audit Log Settings* pane, select *Send audit logs to Syslog server* 
+. Enter the following details:
++
+* Syslog Server IP 
+* Syslog Server Port 
+* RFC format
+* Syslog Server Certificate
+. Click *SAVE* to save the Syslog server settings.
+
+== Change audit log settings
+
+You can change the default configurations of the log settings.
+
+.Before you begin
+
+You must have administrator privileges.
+
+.About this task
+
+This task helps you to change the default audit log settings.
+
+.Steps
+
+. Log in to the SnapCenter Plug-in for VMware vSphere.
+. In the left navigation pane, select *Settings* > *Audit Logs* > *Settings*.
+. In the *Audit Log Settings* pane, enter the *Number of audit entries* and *Audit log size limit* according to your requirements. 

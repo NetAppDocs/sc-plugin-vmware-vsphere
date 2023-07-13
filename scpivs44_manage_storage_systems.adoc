@@ -34,10 +34,10 @@ If you added storage VMs for application-based data protection operations using 
 .Steps
 
 . In the left Navigator pane of the SCV plug-in, click *Storage Systems*.
-. On the *Storage Systems* page, select the storage VM to be modified and then click image:scpivs44_image25.png[Error: Missing Graphic Image] *Edit*.
+. On the *Storage Systems* page, select the storage VM to be modified and then select *Edit*.
 . On the *Edit Storage System* window, enter the new values, and then click *Update* to apply the changes.
 +
-image:scpivs44_image43.png[Error: Missing Graphic Image]
+image:scpivs44_image43.png["Edit storage systems window"]
 
 == Remove storage VMs
 
