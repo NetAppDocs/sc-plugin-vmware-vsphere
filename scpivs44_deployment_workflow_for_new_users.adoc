@@ -20,4 +20,4 @@ summary: 'You can use this workflow if you have not used SnapCenter before and d
 [.lead]
 If you have not used SnapCenter before and do not have any SnapCenter backups, then use the following workflow to get started.
 
-image:scpivs44_image2.png[Error: Missing Graphic Image]
+image:scpivs44_image2.png["Deployment workflow for new users"]

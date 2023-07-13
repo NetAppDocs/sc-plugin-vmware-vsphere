@@ -35,7 +35,7 @@ To obtain the root user permission to execute the command, use the sudo <command
 +
 Log in using the default maintenance console username `maint` and password that you have set at the time of installation.
 +
-image:scpivs44_image11.png[Error: Missing Graphic Image]
+image:scpivs44_image11.png["Maintenance console window"]
 
 . You can perform the following operations:
 +
@@ -51,14 +51,19 @@ Backup and restore MySQL, configure and list MySQL backups
 +
 * Option 2: System Configuration
 +
-Reboot or shutdown virtual machine
+Reboot virtual machine
+Shut down virtual machine
 Change 'maint' user password
 Change time zone
-Change NTP server
-Enable/Disable SSH Access
+Change NTP server 
+Enable SSH access
 Increase jail disk size (/jail)
-Upgrade
+Upgrade 
 Install VMware Tools
+Generate MFA Token
+[NOTE]
+MFA is always enabled, you cannot disable MFA.
+// updated for 4.9 release
 +
 * Option 3: Network Configuration
 +

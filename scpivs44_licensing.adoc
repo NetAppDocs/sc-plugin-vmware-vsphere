@@ -23,5 +23,6 @@ SnapCenter Plug-in for VMware vSphere is a free product if you are using the fol
 * AFF
 * Cloud Volumes ONTAP
 * ONTAP Select
+* ASA
 
 It is recommended, but not required, that you add SnapCenter Standard licenses to secondary destinations. If SnapCenter Standard licenses are not enabled on secondary systems, you cannot use SnapCenter after performing a failover operation. However, a FlexClone license on secondary storage is required to perform mount and attach operations. A SnapRestore license is required to perform restore operations.

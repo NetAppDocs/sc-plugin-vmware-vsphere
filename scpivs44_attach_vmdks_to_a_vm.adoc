@@ -40,11 +40,11 @@ In this case, add the SCSi controllers manually and try the attach operation aga
 . In the VMware vSphere client GUI, click *Menu* in the toolbar, and then select *Hosts and clusters* from the drop-down list.
 . In the left navigation pane, right-click a VM, then select *NetApp SnapCenter* in the drop-down list, and then select *Attach virtual disk* in the secondary drop-down list.
 +
-image:scpivs44_image22.png[Error: Missing Graphic Image]
+image:scpivs44_image22.png["Attach Virtual disk window"]
 
 . On the *Attach Virtual Disk* window, in the *Backup* section, select a backup.
 +
-You can filter the backup list by clicking the image:scpivs44_image41.png[Error: Missing Graphic Image] filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshot copies, whether you want mounted backups, and the location. Click *OK*.
+You can filter the backup list by selecting the filter icon and choosing a date and time range, selecting whether you want backups that contain VMware Snapshot copies, whether you want mounted backups, and the location. Click *OK*.
 
 . In the *Select Disks* section, select one or more disks you want to attach and the location you want to attach from (primary or secondary).
 +
@@ -61,7 +61,7 @@ Refresh the screen to display updated information.
 .. In the left Navigator pane, right-click a VM, then select *Edit settings* in the drop-down list.
 .. In the *Edit Settings* window,  expand the list for each hard disk to see the list of disk files.
 +
-image:scpivs44_image23.png[Error: Missing Graphic Image]
+image:scpivs44_image23.png["Edit settings window"]
 +
 The Edit Settings page lists the disks on the VM. You can expand the details for each hard disk to see the list of attached virtual disks.
 

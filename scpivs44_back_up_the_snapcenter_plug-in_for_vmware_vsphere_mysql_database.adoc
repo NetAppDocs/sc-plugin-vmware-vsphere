@@ -32,7 +32,7 @@ Do not start a job to back up the MySQL database when an on-demand backup job is
 . From the VMware vSphere client, select the VM where the SnapCenter VMware plug-in is located.
 . Right-click the VM, then on the *Summary* tab of the virtual appliance click *Launch Remote Console* *or Launch Web Console* to open a maintenance console window.
 +
-image:scpivs44_image21.png[Error: Missing Graphic Image]
+image:scpivs44_image21.png["maintenance console window"]
 
 . From the Main Menu, enter option *1) Application Configuration.*
 . From the Application Configuration Menu, enter option *6) MySQL backup and restore.*

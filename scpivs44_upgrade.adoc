@@ -14,7 +14,7 @@ summary: 'If you are using the SnapCenter Plug-in for VMware vSphere virtual app
 
 [.lead]
 [NOTE]
-Upgrade to SCV 4.8 is supported only on VMware vCenter server 7 update 1 and later versions, for VMware vCenter server prior to version 7 update 1, you should continue to use SCV 4.7. The upgrade is disruptive on unsupported versions of VMware vCenter server.
+Upgrade to SCV 4.9 is supported only on VMware vCenter server 7 update 1 and later versions, for VMware vCenter server prior to version 7 update 1, you should continue to use SCV 4.7. The upgrade is disruptive on unsupported versions of VMware vCenter server.
 
 If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.
 The upgrade process unregisters the existing plug-in and deploys a plug-in that is compatible only with vSphere 7.0U1 and later versions.
@@ -52,7 +52,7 @@ The file is uploaded to the datastore.
 In the *VM Hardware* pane, in the CD/DVD field, the value should be “Disconnected”.
 .. Click the connection icon in the CD/DVD field and select *Connect to CD/DVD image on a datastore*.
 +
-image:scpivs44_image42.png[Error: Missing Graphic Image]
+image:scpivs44_image42.png["vCenter UI"]
 .. In the wizard, do the following:
 ... In the Datastores column, select the datastore where you uploaded the `.iso` file.
 ... In the Contents column, navigate to the `.iso` file you uploaded, make sure “ISO image” is selected in the File Type field, and then click *OK*.

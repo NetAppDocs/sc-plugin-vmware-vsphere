@@ -1,6 +1,6 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere 4.8
+  name: SnapCenter Plug-in for VMware vSphere 4.9
   internal:
     pdf_enabled: true
   prod:
@@ -9,6 +9,9 @@ settings:
   versions:
     - name: SnapCenter Plug-in for VMware vSphere
       url: /sc-plugin-vmware-vsphere
+      version-number: "4.9"
+    - name: SnapCenter Plug-in for VMware vSphere
+      url: /sc-plugin-vmware-vsphere-48
       version-number: "4.8"
     - name: SnapCenter Plug-in for VMware vSphere
       url: /sc-plugin-vmware-vsphere-47
@@ -22,7 +25,7 @@ settings:
 
 sidebar:
   entries:
-    - title: SnapCenter Plug-in for VMware vSphere 4.8 docs
+    - title: SnapCenter Plug-in for VMware vSphere 4.9 docs
       url: /index.html
     - title: Release notes
       url: /scpivs44_release_notes.html
@@ -256,7 +259,7 @@ homepage:
     - title: Get started
       links:
         - title: Release Notes
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885659
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886207
         - title: Learn about SCV
           url: /scpivs44_concepts_overview.html
         - title: Deployment requirements
