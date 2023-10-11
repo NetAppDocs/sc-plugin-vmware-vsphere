@@ -63,6 +63,7 @@ Install VMware Tools
 Generate MFA Token
 [NOTE]
 MFA is always enabled, you cannot disable MFA.
+
 // updated for 4.9 release
 +
 * Option 3: Network Configuration

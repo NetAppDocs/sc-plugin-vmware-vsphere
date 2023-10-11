@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+permalink: rename_storage.html
+keywords:
+summary: 'ou can rename the storage using REST API.'
+---
+
+= Rename storage
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can rename the storage using REST API. There is no user interface for this feature.
+
+You will require a token from REST API. 
+
+

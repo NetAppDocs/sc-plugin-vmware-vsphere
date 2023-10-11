@@ -72,11 +72,17 @@ The resources in SCV are:
 * Resource Group
 * Policy
 * Backup
+* Subscription
+* Account
 
 The following table lists the operations that can be performed on each resource:
 |===
-|Resources |Operations  
+|*Resources* |*Operations*  
 |Storage System
+|Created, Modified, Deleted
+|Subscription
+|Created, Modified, Deleted
+|Account
 |Created, Modified, Deleted
 |Resource Group	
 |Created, Modified, Deleted, Suspended, Resumed
@@ -86,6 +92,7 @@ The following table lists the operations that can be performed on each resource:
 |Created, Renamed, Deleted, Mounted, Unmounted, Restored VMDK, Restored VM, Attach VMDK, Detach VMDK, Guest File Restore
 |===
 
+// Updated for 5.0
 == Maintenance Console Events
 The administrative operations in the maintenance console are audited. 
 Available maintenance console options are:

@@ -90,7 +90,10 @@ To optimize Snapshot copies, you should group the VMs and datastores that are as
 * Backup policies
 +
 Although it is possible to create a resource group without a backup policy, you can only perform scheduled data protection operations when at least one policy is attached to the resource group. You can use an existing policy, or you can create a new policy while creating a resource group.
+[NOTE]
+If you are selecting a backup policy with Snapshot locking period, you need to select ONTAP 9.12.1 or later version.  
 
+// updated for 5.0
 * Compatibility checks
 +
 SnapCenter performs compatibility checks when you create a resource group.
@@ -163,7 +166,9 @@ For special characters in names, follow the same guidelines given for the Name f
 * Datastores (all traditional VMs in one or more specified datastores). You cannot select a vVol datastore.
 * Virtual Machines (individual traditional or vVol VMs; in the field you must navigate to the datastore that contains the VMs or vVol VMs).
 You cannot select individual VMs in a FlexGroup datastore.
-* Tags (all vVol VMs with a single, specified VMware tag; in the list box you must enter the tag)
+* Tags - Tag based VM protection is supported for Vvol, NFS, and VMFS Datastores.
+Tag based datastore protection is supported only for NFS and VMFS datastores. In the list box you must enter the tag.
+// updated for 5.0
 * VM Folder (all vVol VMs in a specified folder; in the popup field you must navigate to the datacenter in which the folder is located)
 |Datacenter
 |Navigate to the VMs or datastores or folder that you want to add.
@@ -179,8 +184,12 @@ To globally exclude one or more datastores from backups, you must specify the da
 
 . On the *Spanning disks* page, select an option for VMs with multiple VMDKs across multiple datastores:
 +
-* Always exclude all spanning datastores [This is the default for datastores.]
-* Always include all spanning datastores [This is the default for VMs.]
+* Always exclude all spanning datastores (This is the default for datastores.)
+* Always include all spanning datastores (This is the default for VMs.)
+[NOTE]
+Spanning datastores are supported for VMFS and NFS tag based protection.
+
+// Updated to 5.0
 * Manually select the spanning datastores to be included
 +
 Spanning VMs are not supported for FlexGroup and vVol datastores.
