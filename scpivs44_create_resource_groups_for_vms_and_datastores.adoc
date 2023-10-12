@@ -188,7 +188,6 @@ To globally exclude one or more datastores from backups, you must specify the da
 * Always include all spanning datastores (This is the default for VMs.)
 [NOTE]
 Spanning datastores are supported for VMFS and NFS tag based protection.
-
 // Updated to 5.0
 * Manually select the spanning datastores to be included
 +

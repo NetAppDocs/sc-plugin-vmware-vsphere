@@ -57,19 +57,16 @@ An underscore character (_) is allowed.
 The policy specifies the backup frequency only. The specific protection schedule for backing up is defined in the resource group. Therefore, two or more resource groups can share the same policy and backup frequency but have different backup schedules.
 
 . Select *Locking Period* checkbox to enable Snapshot locking. You can select the Snapshot locking period as Days/Months/Years.
-
 // updated for 5.0
 . Specify the retention settings.
 +
 [IMPORTANT]
 You should set the retention count to 2 backups or higher if you plan to enable SnapVault replication. If you set the retention count to 1 backup to keep, the retention operation can fail. This is because the first Snapshot copy is the reference Snapshot copy for the SnapVault relationship until the newer Snapshot copy is replicated to the target.
-
 //Updated for BURT 1378132 observation 23, March 2021 Madhulika
 +
 [NOTE]
 The maximum retention value is 1018 backups for resources on ONTAP 9.4 or later, and 254 backups for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports. This is also true for spanning datastores. If a spanning datastore includes resources on both ONTAP 9.3 and earlier and on ONTAP 9.4 and later, make sure you set the retention value below 254.
 // Burt 1363510 May 2022
-
 . In the *Replication* fields, specify the type of replication to secondary storage,  as shown in the following table:
 +
 |===
