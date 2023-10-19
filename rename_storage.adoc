@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: rename_storage.html
 keywords:
-summary: 'ou can rename the storage using REST API.'
+summary: 'You can rename the storage using REST API.'
 ---
 
-= Rename storage
+= Restore backup of renamed storage
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,8 +13,49 @@ summary: 'ou can rename the storage using REST API.'
 :imagesdir: ./media/
 
 [.lead]
-You can rename the storage using REST API. There is no user interface for this feature.
+When the storage is renamed, restoring the storage from the backup taken before the rename fails. You need to take a backup after renaming the storage for the restore operation to work. With the introduction of the rename backup feature, you can use the backup that was taken prior to storage renaming. You need to use REST API operation shown below to enable successful backup restoration.
 
-You will require a token from REST API. 
+.Steps
+
+. If you have added the storage connection when a new cluster or SVM is added or updated the storage connection when an SVM is renamed, restart the service to refresh the cache.
++
+See KB article: https://kb.netapp.com/mgmt/SnapCenter/SCV_backups_fail_after_SVM_rename
+. Create a new backup.
+. Use the backup details to find the old and new storage names.
+. In the *Backups* screen of the vSphere client, select the backup to see its details.
+. Access Swagger from the URL: https://<SCV-IP>:8144/api/swagger-ui/index.html
++
+Use the following API to rename the storage:
+----
+PATCH
+​/4.1​/storage-system
+
+Example:
+{
+  "existingSVM": {
+    "name": "string"
+  },
+  "newSVM": {
+    "name": "string"
+  }
+}
+----
+
+Response:
+----
+{
+  "response": {},
+  "responseMessage": [
+    "string"
+  ],
+  "statusCode": 0,
+  "statusMessage": "string"
+}
+----
++
+The API Validates if the new storage connection exists, creates a job for tracking and audit, and renames storage in the metadata
+. Restore from the old backup.  
+
+//. Take a prim/sec backup of a storage . Through ONTAP system manager rename the storage After renaming access SCV plugin , access storage,  edit existing storage cluster  and do an update.. through plugin maint console do stop and start service . take up backup again In the latest backup, renamed SVM name will get reflected . right now we will have two backups. old backup with location referring old SVM name and latest backup reflects new SVM name as location reference. . try restore vm operation using old backup Pre restore step will fail , Unable to mount datastore . execute rest api performRename to rename SVM_NAME to SVM_NAME_1 operately if both are renamed earlier through ONTAP system manager this will rename location of old backup, corresponding to DS name with renamed SVM name 8.try restore from old backup now it should be successful. You will require a token from REST API. 
 
 

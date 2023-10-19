@@ -10,7 +10,7 @@ settings:
     - version-number: "5.0"
       url: /sc-plugin-vmware-vsphere 
     - version-number: "4.9"
-      url: /sc-plugin-vmware-vsphere 
+      url: /sc-plugin-vmware-vsphere-49
     - version-number: "4.8"
       url: /sc-plugin-vmware-vsphere-48
     - version-number: "4.7"
@@ -102,8 +102,6 @@ sidebar:
       entries:
         - title: Add storage
           url: /scpivs44_add_storage_01.html
-        - title: Rename storage
-          url: /rename_storage.html
         - title: Manage storage VMs - modify, rename, remove
           url: /scpivs44_manage_storage_systems.html
         - title: Modify the configured storage timeout
@@ -124,6 +122,8 @@ sidebar:
           url: /scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html
         - title: Add multiple VMs and datastores to a resource group
           url: /scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html
+        - title: Rename storage
+          url: /rename_storage.html
         - title: Back up resource groups on demand
           url: /scpivs44_back_up_resource_groups_on_demand.html
         - title: Back up the MySQL database
