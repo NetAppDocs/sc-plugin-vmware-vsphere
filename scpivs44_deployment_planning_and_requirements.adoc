@@ -13,7 +13,7 @@ summary: 'You should be aware of the deployment requirements before you deploy t
 :imagesdir: ./media/
 
 [.lead]
-You should be aware of the deployment requirements before you deploy the virtual appliance. The deployment requirements are listed in the following five tables.
+You should be aware of the deployment requirements before you deploy the virtual appliance. The deployment requirements are listed in the following tables.
 
 == Host requirements
 
