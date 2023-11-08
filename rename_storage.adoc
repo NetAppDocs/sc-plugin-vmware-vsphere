@@ -13,13 +13,14 @@ summary: 'You can rename the storage using REST API.'
 :imagesdir: ./media/
 
 [.lead]
-When the storage is renamed, restoring the storage and other workflows with the backup taken before the rename fails. You need to take a backup after renaming the storage for the restore operation to work. With the introduction of the rename backup feature, you can use the backup that was taken prior to storage renaming. You need to use REST API operation shown below to enable successful backup restoration.
+
+When the storage is renamed, workflows using backups taken before the rename used to fail. With the introduction of the rename backup feature, which is exclusively accessible through REST API, it is now possible to use the backups that were taken prior to the storage renaming. The workflow and usage of the REST API are described below.
 
 .Steps
 
-. If you have added the storage connection when a new cluster or SVM is added or updated the storage connection when an SVM is renamed, restart the service to refresh the cache.
+. You should add or update the new storage connection, ensuring that the new Cluster or SVM name is reflected in SCV.
 +
-See KB article: <tbd>
+See KB article: https://kb.netapp.com/mgmt/SnapCenter/SCV_backups_fail_after_SVM_rename[SCV backups fail after SVM rename]
 . Create a new backup.
 . Use the backup details to find the old and new storage names.
 . In the *Backups* screen of the vSphere client, select the backup to see its details.

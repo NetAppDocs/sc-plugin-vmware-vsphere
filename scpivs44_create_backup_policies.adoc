@@ -22,7 +22,5 @@ Follow the instructions given below to create backup policies
 
 . In the left Navigator pane of the SCV plug-in, click *Policies*, and then select *New Policy*.
 . On the *New Backup Policy* page, enter the policy configuration information, and then click *Add*.
-+
-The backup workflow looks for SnapMirror Business Continuity (SMBC) configuration during replication to secondary. If, the SMBC is configured, the backup workflow skips the SnapMirror update call to ONTAP and tracks replication of secondary. 
-If the policy will be used for mirror-vault relationships, then in the Replication field, you must select only the *Update SnapVault after backup* option if you want backups copied to the mirror-vault destinations.
+
 //Updated for BURT 1378132 observation 3, March 2021 Madhulika

@@ -34,9 +34,7 @@ One or more FlexVol datastores. Spanning datastores are supported.
 +
 One or more vVol VMs. vVol VMs cannot be combined with traditional VMs or datastores.
 
-* vVol VMs with a tag
-+
-All vVol VMs with a specified vCenter tag. Other entities with tags, such as datastores or traditional VMs, with the same tag in the same vCenter or in a different vCenter, are not supported. If the list of VMs with the specified tag contains a mix of vVol VMs and traditional VMs, SnapCenter Plug-in for VMware vSphere backs up the vVol VMs and skips the traditional VMs.
+* All VMs and Datastores, excluding vVol Datastores, that have the specified vCenter tag. 
 // Burt 1422442 23Nov2021 Ronya
 // Burt 1428392 24Nov2021 Ronya
 // Burt 1434168 3Nov2021, burt 1428684 24Nov2021 Ronya

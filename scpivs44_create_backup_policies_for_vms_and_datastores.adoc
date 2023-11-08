@@ -79,6 +79,16 @@ If a volume is configured with a mirror-vault relationship, you must select only
 // BURT 1378132 observation 3, March 2021 Ronya
 [NOTE]
 This option is supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.5 and later.
+[NOTE]
+As storage admin, you need to:
+- Configure clusters and mediator as described in technical report: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf[TR-4878: SnapMirror Business Continuity].
+- Create a data protection relationship using 'AutomatedFailOver' protection policy between two ONTAP storage systems
+- Add volume associated with the VMFS datastore to the consistency group.
+
+On enabling *Update SnapMirror after backup* SCV creates backup on a SM-BC deployment.
+For more information see KB article, https://kb.vmware.com/s/article/83370[83370]
+
+
 
 |Update SnapVault after backup
 
