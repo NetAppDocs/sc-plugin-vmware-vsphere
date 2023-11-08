@@ -85,7 +85,7 @@ As storage admin, you need to:
 - Create a data protection relationship using 'AutomatedFailOver' protection policy between two ONTAP storage systems
 - Add volume associated with the VMFS datastore to the consistency group.
 
-On enabling *Update SnapMirror after backup* SCV creates backup on a SM-BC deployment.
+On enabling *Update SnapMirror after backup* SCV creates backup on a SMBC deployment.
 For more information see KB article, https://kb.vmware.com/s/article/83370[83370]
 
 
