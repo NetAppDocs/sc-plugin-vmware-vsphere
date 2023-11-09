@@ -18,9 +18,8 @@ When the storage is renamed, workflows using backups taken before the rename use
 
 .Steps
 
-. You should add or update the new storage connection, ensuring that the new Cluster or SVM name is reflected in SCV.
-+
-See KB article: https://kb.netapp.com/mgmt/SnapCenter/SCV_backups_fail_after_SVM_rename[SCV backups fail after SVM rename]
+. Add or update the new storage connection, ensuring that the new Cluster or SVM name is reflected in SCV.
+. Restart the service to refresh the caches as described in the KB article: https://kb.netapp.com/mgmt/SnapCenter/SCV_backups_fail_after_SVM_rename[SCV backups fail after SVM rename]
 . Create a new backup.
 . Use the backup details to find the old and new storage names.
 . In the *Backups* screen of the vSphere client, select the backup to see its details.
@@ -54,6 +53,4 @@ Response:
 }
 
 +
-The API validates if the new storage connection exists, creates a job for tracking and audit, and renames storage in the metadata
-
 After running this API you will be able to run all the workflows including the restore operation from the old backup.

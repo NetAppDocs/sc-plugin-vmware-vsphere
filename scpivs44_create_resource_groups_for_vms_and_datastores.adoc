@@ -34,7 +34,10 @@ One or more FlexVol datastores. Spanning datastores are supported.
 +
 One or more vVol VMs. vVol VMs cannot be combined with traditional VMs or datastores.
 
-* All VMs and Datastores, excluding vVol Datastores, that have the specified vCenter tag. 
+* vCenter tag
++
+All VMs and Datastores, excluding vVol Datastores, that have the specified vCenter tag. 
+// updated for 5.0
 // Burt 1422442 23Nov2021 Ronya
 // Burt 1428392 24Nov2021 Ronya
 // Burt 1434168 3Nov2021, burt 1428684 24Nov2021 Ronya
