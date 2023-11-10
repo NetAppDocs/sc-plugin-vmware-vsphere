@@ -129,7 +129,7 @@ You must login as `vsadmin` on the storage VM to have the appropriate privileges
 +
 You must login as `vsadmin` or with a role that has the minimum privileges listed in the tables above.
 * You need to be the cluster admin to create and manage user roles. You can associate the users either with Cluster storage VM or with storage VM.
-* You need ONTAP 9.14.1 RC build to use SnapMirror Business Continuity (SMBC) feature.
+* You need ONTAP 9.14.1 RC build to use SnapMirror Business Continuity (SM-BC) feature.
 * To use TamperProof Snapshot (TPS) feature:
 ** You need ONTAP 9.13.1 and above for SAN
 ** You need ONTAP 9.12.1 and above for NFS
