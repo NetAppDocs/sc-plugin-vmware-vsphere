@@ -30,6 +30,9 @@ To correct this issue, configure the SnapMirror retention policy for the seconda
 For information about how administrators assign resources to users, see the https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html[SnapCenter information on using role-based access control^].
 
 * If you want VM-consistent backups, you must have VMware tools installed and running. VMware tools is needed to quiesce VMs. VM-consistent backups are not supported for vVol VMs.
+* SnapMirror Business Continuity (SM-BC) also known as SnapMirror active sync, enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Neither manual intervention nor additional scripting is required to trigger a failover with SM-BC. To protect a VMFS datastore on a SM-BC deployment, as storage admin you need to:
+**  Configure clusters and mediator as described in the technical report: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf[TR-4878: SnapMirror Business Continuity].
+** Add the volume associated with the VMFS datastore to the consistency group and create a data protection relationship using 'AutomatedFailOver' protection policy between two ONTAP storage systems. 
 
 .About this task
 
@@ -80,15 +83,7 @@ If a volume is configured with a mirror-vault relationship, you must select only
 [NOTE]
 This option is supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.5 and later.
 [NOTE]
-As storage admin, you need to:
-- Configure clusters and mediator as described in technical report: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf[TR-4878: SnapMirror Business Continuity].
-- Create a data protection relationship using 'AutomatedFailOver' protection policy between two ONTAP storage systems
-- Add volume associated with the VMFS datastore to the consistency group.
-
-On enabling *Update SnapMirror after backup* SCV creates backup on a SMBC deployment.
-For more information see KB article, https://kb.vmware.com/s/article/83370[83370]
-
-
+On enabling *Update SnapMirror after backup*, SCV creates backup on a SM-BC deployment.
 
 |Update SnapVault after backup
 
