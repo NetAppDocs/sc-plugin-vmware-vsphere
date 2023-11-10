@@ -35,7 +35,7 @@ For information about how administrators assign resources to users, see the http
 [NOTE]
 SM-BC is supported only for VMFS Datastores.
 +
-To protect a VMFS datastore on a SM-BC deployment, as storage admin you need to:
+To protect a VMFS datastore on a SM-BC deployment, as SnapCenter administrator you need to:
 
 **  Configure clusters and mediator as described in the technical report: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf[TR-4878: SnapMirror Business Continuity].
 ** Add the volume associated with the VMFS datastore to the consistency group and create a data protection relationship using _AutomatedFailOver_ protection policy between two ONTAP storage systems. 
