@@ -61,9 +61,7 @@ If you add a storage VM with a name that cannot resolve to the management LIF, t
 |Storage system
 |Enter the FQDN or IP address of a storage cluster or storage VM.
 //Updated for BURT 1378132 observation 19, March 2021 Madhulika
-The SnapCenter VMware plug-in does not support multiple storage systems with the same name on different clusters. Each storage system that is supported by SnapCenter must have a unique data LIF IP address.
-|Platform
-|Select the platform.
+The SnapCenter VMware plug-in does not support multiple storage systems with the same name on different clusters. Each storage system that is supported by SnapCenter must have a unique IP address.
 |Authentication Method
 |Select either Credentials or Certificate. Two types of certificates are supported:
 - https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV[CA signed certificate^]
