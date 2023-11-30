@@ -25,7 +25,7 @@ SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large
 
 * VMware virtual volumes (vVols)
 +
-You must first add the vVols storage system to ONTAP tools for VMware vSphere and then add the vVols storage system to SnapCenter Plug-in for VMware vSphere.
+You must first add the vVols storage system to ONTAP tools for VMware vSphere and then add it to SnapCenter Plug-in for VMware vSphere.
 +
 For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP tools for VMware vSphere^]
 
@@ -43,7 +43,7 @@ If you are using the SnapCenter VMware plug-in to support application-based back
 * For vCenters in linked mode, you must separately add storage systems to each vCenter.
 * If you are adding SVM, names for storage VMs must resolve to management LIFs.
 +
-If you added etc host entries for storage VM names in SnapCenter, you must verify that they are also resolvable from the virtual appliance.
+If you have added entries to the _etc\hosts_ file for storage VM names in SnapCenter, you must ensure that these are also resolvable from the virtual appliance. If they are not, you should add similar entries to the _etc/hosts_ file within the appliance.
 +
 If you add a storage VM with a name that cannot resolve to the management LIF, then scheduled backup jobs fail because the plug-in is unable to discover any datastores or volumes on that storage VM. If this occurs, either add the storage VM to SnapCenter and specify the management LIF or add a cluster that contains the storage VM and specify the cluster management LIF.
 
@@ -59,9 +59,8 @@ If you add a storage VM with a name that cannot resolve to the management LIF, t
 |For this field… |Do this…
 
 |Storage system
-|Enter the FQDN or IP address of a storage cluster or storage VM.
-//Updated for BURT 1378132 observation 19, March 2021 Madhulika
-The SnapCenter VMware plug-in does not support multiple storage systems with the same name on different clusters. Each storage system that is supported by SnapCenter must have a unique IP address.
+|Enter the FQDN or Management LIF’s IP address of a storage cluster or a storage VM.
+The SnapCenter VMware plug-in does not support multiple storage VM’s with the same name on different clusters. 
 |Authentication Method
 |Select either Credentials or Certificate. Two types of certificates are supported:
 - https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV[CA signed certificate^]
@@ -77,15 +76,13 @@ The SnapCenter VMware plug-in does not support multiple storage systems with the
 |Protocol
 |Select storage protocol.
 |Port
-|Select port 443 (the default) or port 80 to communicate with vCenter.
-Port 443 is used for communication between the storage VM host for SnapCenter Plug-in for VMware vSphere and vCenter when performing VM and datastore backup and restore operations.
-//Updated for Burt 1435536 3Nov2021  Ronya
-You must select the default port 443 if you plan to protect vVol VMs.
-//Updated for Burt 1433718 3Nov2021 Ronya
+|Port that the storage system accepts.
+- 443 for HTTPS connection
+- 80 for HTTP connection
 |Timeout
-|Enter the number of seconds vCenter should wait before timing out the operation. The default is 60 seconds.
+|Enter the number of seconds SnapCenter VMware plug-in should wait before timing out the operation. The default is 60 seconds.
 |Preferred IP
-|If the storage VM has more than one management IP address, check this box and enter the IP address that you want SnapCenter to use.
+|If the storage VM has more than one management IP address, check this box and enter the IP address that you want SnapCenter VMware plug-in to use.
 //Updated for BURT 1378132 observation 20, March 2021 Madhulika
 *Note:* Do not use square brackets ([]) when entering the IP address.
 |Event Management System(EMS) & AutoSupport Setting
