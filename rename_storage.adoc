@@ -44,13 +44,13 @@ Response:
 +
 
 {
-  "response": {},
+  "statusMessage": "OK",
+  "statusCode": 200,
   "responseMessage": [
-    "string"
-  ],
-  "statusCode": 0,
-  "statusMessage": "string"
+    "Storage system renamed successfully."
+  ]
 }
+
 
 +
 After running this API you will be able to run all the workflows including the restore operation from the old backup.
