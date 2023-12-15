@@ -32,14 +32,6 @@ The default configurations of the audit files are:
 
 * A maximum of 10 audit log files are retained
 
-To modify the default configurations add a key value pair in the /opt/netapp/scvservice/standalone_aegis/etc/scbr/scbr.properties and restart the scvservice.
-
-The configurations for audit log files are:
-
-* auditMaxROFiles=<xx>, where xx is the max number of rolled over audit log files, for example: auditMaxROFiles=15.
-
-* auditLogSize=<XX>MB, where xx is the size of the file in MB, for example: auditLogSize=15MB.
-
 Rolled over audit logs are periodically verified for integrity. SCV provides REST APIs to view logs and verify their integrity. A built-in schedule triggers and assigns one of the following integrity statuses.
 |===
 |Status |Description
@@ -168,4 +160,4 @@ This task helps you to change the default audit log settings.
 
 . Log in to the SnapCenter Plug-in for VMware vSphere.
 . In the left navigation pane, select *Settings* > *Audit Logs* > *Settings*.
-. In the *Audit Log Settings* pane, enter the *Number of audit entries* and *Audit log size limit* according to your requirements. 
+. In the *Audit Log Settings* pane, enter the *Number of audit entries*, which is the maximum number of audit log files and *Audit log size limit*, which is the audit log file size limit. 
