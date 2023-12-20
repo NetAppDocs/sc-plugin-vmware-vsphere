@@ -46,3 +46,8 @@ The Run As credentials must be the default domain administrator that is provided
 
 . In the *Proxy Credentials* section, click *Add* to add a VM to use as a proxy.
 . In the *Proxy VM* dialog box, complete the information, and then click *Save*.
+
+[NOTE]
+You need to delete the proxy VM from the SnapCenter Plug-in for VMware vSphere UI before you can delete it from ESXi.
+// added as part of VMDP-4208
+
