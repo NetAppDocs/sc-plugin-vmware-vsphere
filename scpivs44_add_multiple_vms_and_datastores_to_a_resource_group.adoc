@@ -22,7 +22,7 @@ A resource group can contain one of the following:
 * One FlexGroup datastore (spanning VMs are not supported).
 * One or more FlexVol datastores (spanning VMs are supported).
 * One or more vVol VMs.
-* All vVol VMs with a specified vCenter tag.
+* All vVol VMs with a specified vSphere tag.
 * All vVol VMs in a specified folder.
 
 [NOTE]

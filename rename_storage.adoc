@@ -1,0 +1,56 @@
+---
+sidebar: sidebar
+permalink: rename_storage.html
+keywords:
+summary: 'You can rename the storage using REST API.'
+---
+
+= Restore backup of renamed storage
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+When the storage is renamed, workflows using backups taken before the rename used to fail. With the introduction of the rename backup feature, which is exclusively accessible through REST API, it is now possible to use the backups that were taken prior to the storage renaming. The workflow and usage of the REST API are described below.
+
+.Steps
+
+. Add or update the new storage connection, ensuring that the new Cluster or SVM name is reflected in SCV.
+. Restart the service to refresh the caches as described in the KB article: https://kb.netapp.com/mgmt/SnapCenter/SCV_backups_fail_after_SVM_rename[SCV backups fail after SVM rename]
+. Create a new backup.
+. Use the backup details to find the old and new storage names.
+. In the *Backups* screen of the vSphere client, select the backup to see its details.
+. Access Swagger from the URL: https://<SCV-IP>:8144/api/swagger-ui/index.html
++
+Use the following API to rename the storage:
++
+PATCH
+/4.1/storage-system
++
+Example:
+{
+  "existingSVM": {
+    "name": "string"
+  },
+  "newSVM": {
+    "name": "string"
+  }
+}
++
+Response:
++
+
+{
+  "statusMessage": "OK",
+  "statusCode": 200,
+  "responseMessage": [
+    "Storage system renamed successfully."
+  ]
+}
+
+
++
+After running this API you will be able to run all the workflows including the restore operation from the old backup.

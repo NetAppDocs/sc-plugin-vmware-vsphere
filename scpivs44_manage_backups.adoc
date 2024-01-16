@@ -29,7 +29,7 @@ You can rename SnapCenter Plug-in for VMware vSphere backups if you want to prov
 
 . Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
 +
-image:scpivs44_image14.png["vSphere client screen"]
+image:scv50_image1.png["vSphere client screen"]
 
 . On the Configure tab, select a backup,  and click *Rename*.
 . On the *Rename Backup* dialog box, enter the new name, and click *OK*.
@@ -51,7 +51,7 @@ Snapshot copies on secondary storage are managed by your ONTAP retention setting
 
 . Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
 +
-image:scpivs44_image14.png["vSphere client window"]
+image:scv50_image1.png["vSphere client window"]
 
 . Select one or more backups and click *Delete*.
 +

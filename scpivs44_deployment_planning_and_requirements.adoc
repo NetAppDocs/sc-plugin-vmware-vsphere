@@ -13,7 +13,7 @@ summary: 'You should be aware of the deployment requirements before you deploy t
 :imagesdir: ./media/
 
 [.lead]
-You should be aware of the deployment requirements before you deploy the virtual appliance. The deployment requirements are listed in the following five tables.
+You should be aware of the deployment requirements before you deploy the virtual appliance. The deployment requirements are listed in the following tables.
 
 == Host requirements
 
@@ -143,7 +143,7 @@ The port is used for communications from the VMware vSphere client and from the 
 8080 bidirectional
 This port is used to manage the virtual appliance.
 
-Note: You cannot modify the port configuration.
+Note: Custom port for addition of SCV host to SnapCenter is supported.
 |VMware vSphere vCenter Server port
 |You must use port 443 if you are protecting vVol VMs.
 //Updated for Burt 1433718 3Nov2021 Ronya
