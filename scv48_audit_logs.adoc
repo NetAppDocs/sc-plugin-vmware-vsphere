@@ -32,14 +32,6 @@ The default configurations of the audit files are:
 
 * A maximum of 10 audit log files are retained
 
-To modify the default configurations add a key value pair in the /opt/netapp/scvservice/standalone_aegis/etc/scbr/scbr.properties and restart the scvservice.
-
-The configurations for audit log files are:
-
-* auditMaxROFiles=<xx>, where xx is the max number of rolled over audit log files, for example: auditMaxROFiles=15.
-
-* auditLogSize=<XX>MB, where xx is the size of the file in MB, for example: auditLogSize=15MB.
-
 Rolled over audit logs are periodically verified for integrity. SCV provides REST APIs to view logs and verify their integrity. A built-in schedule triggers and assigns one of the following integrity statuses.
 |===
 |Status |Description
@@ -72,11 +64,17 @@ The resources in SCV are:
 * Resource Group
 * Policy
 * Backup
+* Subscription
+* Account
 
 The following table lists the operations that can be performed on each resource:
 |===
-|Resources |Operations  
+|*Resources* |*Operations*  
 |Storage System
+|Created, Modified, Deleted
+|Subscription
+|Created, Modified, Deleted
+|Account
 |Created, Modified, Deleted
 |Resource Group	
 |Created, Modified, Deleted, Suspended, Resumed
@@ -86,6 +84,7 @@ The following table lists the operations that can be performed on each resource:
 |Created, Renamed, Deleted, Mounted, Unmounted, Restored VMDK, Restored VM, Attach VMDK, Detach VMDK, Guest File Restore
 |===
 
+// Updated for 5.0
 == Maintenance Console Events
 The administrative operations in the maintenance console are audited. 
 Available maintenance console options are:
@@ -161,4 +160,4 @@ This task helps you to change the default audit log settings.
 
 . Log in to the SnapCenter Plug-in for VMware vSphere.
 . In the left navigation pane, select *Settings* > *Audit Logs* > *Settings*.
-. In the *Audit Log Settings* pane, enter the *Number of audit entries* and *Audit log size limit* according to your requirements. 
+. In the *Audit Log Settings* pane, enter the Maximum number of audit log files and Audit log file size limit. 

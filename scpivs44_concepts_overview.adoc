@@ -44,7 +44,7 @@ The restore workflow for VMware file system (VMFS) utilizes the VMware Storage v
 +
 Most restore operations in NFS environments use native ONTAP functionality (for example, Single File SnapRestore) and do not require VMware Storage vMotion.
 
-* ONTAP tools for VMware vSphere is required for configure VMware vVol VMs.
+* ONTAP tools for VMware vSphere is required to configure VMware vVol VMs.
 +
 You use ONTAP tools to provision and configure storage for vVols in ONTAP and in the VMware web client.
 +

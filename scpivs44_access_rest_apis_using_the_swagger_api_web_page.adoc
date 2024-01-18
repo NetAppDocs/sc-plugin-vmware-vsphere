@@ -42,6 +42,7 @@ Access the SnapCenter VMware plug-in REST APIs:
 `https://<SCV_IP>:8144/api/swagger-ui/index.html`
 `https://OVAhost:8144/api/swagger-ui/index.html` 
 +
+
 // updated for 4.9 release
 Log in use the vCenter authentication mechanism to generate the token.
 

@@ -29,6 +29,6 @@ Browsing large file folders, for example 10k file folders, might take one or mor
 
 . Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere section*.
 +
-image:scpivs44_image14.png["vSphere Client UI"]
+image:scv50_image1.png["vSphere Client UI"]
 
 . Click the backup that you want to view.
