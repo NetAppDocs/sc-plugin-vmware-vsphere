@@ -175,8 +175,7 @@ Tag-based datastore protection is supported only for NFS and VMFS datastores, as
 * VM Folder (all vVol VMs in a specified folder; in the popup field you must navigate to the datacenter in which the folder is located)
 |Datacenter
 |Navigate to the VMs or datastores or folder that you want to add.
-[NOTE]
-VM and Datastore names in a resource group must be unique
+VM and Datastore names in a resource group must be unique.
 |Available entities
 |Select the resources you want to protect, then click *>* to move your selections to the Selected entities list.
 |===
