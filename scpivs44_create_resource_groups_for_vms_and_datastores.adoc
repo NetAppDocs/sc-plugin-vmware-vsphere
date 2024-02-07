@@ -54,7 +54,7 @@ If you are using VMware vSphere Cluster Service (vCLS), do not include VMs manag
 // Burt 1413651 24Nov2021 Ronya
 
 [TIP]
-SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUNs and files up to 128TB with volumes up to 300 TB. If you are protecting large LUNs, use only thick provisioned LUNs to avoid latency.
+SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUNs and files up to 128 TB with volumes up to 300 TB. If you are protecting large LUNs, use only thick provisioned LUNs to avoid latency.
 
 [IMPORTANT]
 Do not add VMs that are in an inaccessible state. Although it is possible to create a resource group that contains inaccessible VMs, backups for that resource group will fail.
