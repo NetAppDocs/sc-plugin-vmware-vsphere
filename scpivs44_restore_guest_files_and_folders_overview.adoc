@@ -50,7 +50,7 @@ SnapCenter uses information from VMware tools to establish a connection to the V
 
 * The Windows Guest OS must be running Windows Server 2008 R2 or later.
 +
-For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
+For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
 
 * Credentials for the target VM must specify the built-in domain administrator account or the built-in local administrator account. The username must be "Administrator." Before starting the restore operation, the credentials must be configured for the VM to which you want to attach the virtual disk. The credentials are required for both the attach operation and the subsequent restore operation. Workgroup users can use the built-in local administrator account.
 +
@@ -75,7 +75,7 @@ You can restore files with non-alphabetic names, such as Japanese Kanji, by rest
 
 * Restoring from a Linux guest OS is not supported
 +
-You cannot restore files and folders from a VM that is running Linux guest OS. However, you can attach a VMDK and then manually restore the files and folders. For the latest information on supported guest OS, see the https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
+You cannot restore files and folders from a VM that is running Linux guest OS. However, you can attach a VMDK and then manually restore the files and folders. For the latest information on supported guest OS, see the https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
 
 == Guest file restore limitations
 
@@ -86,7 +86,7 @@ Before you restore a file or folder from a guest OS, you should be aware of what
 * The Guest File Browse page displays the hidden files and folder, which you cannot filter.
 * You cannot restore from a Linux guest OS.
 +
-You cannot restore files and folders from a VM that is running Linux guest OS. However, you can attach a VMDK and then manually restore the files and folders. For the latest information on supported guest OS, see the https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
+You cannot restore files and folders from a VM that is running Linux guest OS. However, you can attach a VMDK and then manually restore the files and folders. For the latest information on supported guest OS, see the https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
 
 * You cannot restore from a NTFS file system to a FAT file system.
 +
