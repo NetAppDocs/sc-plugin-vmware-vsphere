@@ -54,7 +54,7 @@ If you are using VMware vSphere Cluster Service (vCLS), do not include VMs manag
 // Burt 1413651 24Nov2021 Ronya
 
 [TIP]
-SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUNs and files up to 128TB with volumes up to 300 TB. If you are protecting large LUNs, use only thick provisioned LUNs to avoid latency.
+SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUNs and files up to 128 TB with volumes up to 300 TB. If you are protecting large LUNs, use only thick provisioned LUNs to avoid latency.
 
 [IMPORTANT]
 Do not add VMs that are in an inaccessible state. Although it is possible to create a resource group that contains inaccessible VMs, backups for that resource group will fail.
@@ -244,7 +244,7 @@ Reasons for incompatibility might be:
 +
 SnapCenter version 4.x supports ONTAP 8.3.1 and later.
 +
-The SnapCenter Plug-in for VMware vSphere does not perform compatibility checks for all ONTAP versions; only for ONTAP versions 8.2.1 and earlier. Therefore, always see the https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^] for the latest information about SnapCenter support.
+The SnapCenter Plug-in for VMware vSphere does not perform compatibility checks for all ONTAP versions; only for ONTAP versions 8.2.1 and earlier. Therefore, always see the https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^] for the latest information about SnapCenter support.
 
 * A shared PCI device is attached to a VM.
 * A preferred IP is not configured in SnapCenter.
