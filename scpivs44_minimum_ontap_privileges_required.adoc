@@ -30,10 +30,11 @@ All SnapCenter plug-ins require the following minimum privileges.
 
 |===
 |All-access commands: Minimum privileges required for ONTAP 8.3 and later
-
+|cluster identity show
 |event generate-autosupport-log
 |job history show
 job stop
+job show
 |lun
 lun create
 lun delete
@@ -71,6 +72,7 @@ volume clone show
 volume clone split start
 volume clone split stop
 volume create
+volume delete
 volume destroy
 volume file clone create
 volume file show-disk-usage
