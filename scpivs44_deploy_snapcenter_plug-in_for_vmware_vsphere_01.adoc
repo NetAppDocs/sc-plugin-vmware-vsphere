@@ -19,6 +19,8 @@ summary:
 //
 [.lead]
 To use SnapCenter features to protect VMs, datastores, and application-consistent databases on virtualized machines, you must deploy SnapCenter Plug-in for VMware vSphere.
+Follow instructions in link:scpivs44_download_the_ova_open_virtual_appliance.html[Download the Open Virtual Appliance (OVA)^] page to download the OVA files.
+
 
 . For VMware vCenter 7.0.3 and later versions, follow the steps in link:scpivs44_download_the_ova_open_virtual_appliance.html[Download the Open Virtual Appliance (OVA)^] to import the certificates to vCenter.
 . In your browser, navigate to VMware vSphere vCenter.

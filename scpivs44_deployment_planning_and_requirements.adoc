@@ -17,7 +17,7 @@ You should be aware of the deployment requirements before you deploy the virtual
 
 == Host requirements
 
-Before you begin deployment of SnapCenter Plug-in for VMware vSphere, you should be familiar with the host requirements.
+Before you begin deployment of SnapCenter Plug-in for VMware vSphere (SCV), you should be familiar with the host requirements.
 
 * The SnapCenter VMware plug-in is deployed as a Linux VM regardless of whether you use the plug-in to protect data on Windows systems or Linux systems.
 
