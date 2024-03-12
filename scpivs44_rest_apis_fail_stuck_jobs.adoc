@@ -15,7 +15,7 @@ summary: 'To find job IDs for VMware vSphere client jobs using the SnapCenter Pl
 [.lead]
 To find job IDs for VMware vSphere client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere. These REST APIs were added in SnapCenter Plug-in for VMware vSphere 4.4.
 
-For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
+For each REST API, add \https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 
 Use the following REST API in the Jobs section to change jobs that are stuck in a running state to a failed state:
 

@@ -16,7 +16,7 @@ summary: 'To perform mount and unmount operations for datastore backups using th
 [.lead]
 To perform mount and unmount operations for datastore backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
 
-For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
+For each REST API, add `\https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 
 == To mount datastores, follow this workflow:
 
@@ -24,7 +24,7 @@ For each REST API, add `https://<server>:<port>` at the front of the REST API to
 |Step |REST API |Comments
 
 |1
-|Go to `http://<vCenter-IP>/mob`
+|Go to `\http://<vCenter-IP>/mob`
 |Find the datastore moref from the VMware Managed Objects URL.
 Note the *moref* for the datastore that you want to mount.
 |2

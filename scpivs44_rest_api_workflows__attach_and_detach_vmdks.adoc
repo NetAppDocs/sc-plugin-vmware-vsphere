@@ -16,7 +16,7 @@ summary: 'To perform attach and detach operations for VMDKs using the SnapCenter
 [.lead]
 To perform attach and detach operations for VMDKs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
 
-For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
+For each REST API, add `\https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 
 == To attach VMDKs, follow this workflow:
 
@@ -24,7 +24,7 @@ For each REST API, add `https://<server>:<port>` at the front of the REST API to
 |Step |REST API |Comments
 
 |1
-|Go to `http://<vCenter-IP>/mob`
+|Go to `\http://<vCenter-IP>/mob`
 |Find the VM moref from the VMware Managed Objects URL.
 Note the *moref* for the VM to which you want to attach a VMDK.
 |2
@@ -54,7 +54,7 @@ To attach a VMDK to a different VM, pass the moref of the target VM in the alter
 |Step |REST API |Comments
 
 |1
-|Go to `http://<vCenter-IP>/mob`
+|Go to `\http://<vCenter-IP>/mob`
 |Find the VM moref from the VMware Managed Objects URL.
 Note the *moref* for the VM on which you want to detach a VMDK.
 |2

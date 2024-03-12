@@ -23,7 +23,7 @@ Built-in schedules are the schedules that are provided as part of the product; f
 `Schedule-PurgeJobs`
 // BURT 1337715, April 2021 Ronya
 
-For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
+For each REST API, add `\https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 
 |===
 |Step |REST API |Comments

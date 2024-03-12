@@ -21,7 +21,7 @@ summary: 'To perform add and modify storage VM operations using the SnapCenter P
 [.lead]
 To perform add and modify storage VM operations using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
 
-For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
+For each REST API, add `\https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 
 To add storage VM operations, follow this workflow:
 
