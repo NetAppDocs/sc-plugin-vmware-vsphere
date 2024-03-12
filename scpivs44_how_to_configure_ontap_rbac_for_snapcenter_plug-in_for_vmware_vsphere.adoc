@@ -22,7 +22,7 @@ summary: 'ONTAP RBAC applies only to SnapCenter Server application-consistent (a
 ONTAP RBAC applies only to SnapCenter Server application-consistent (application over VMDK) jobs.
 
 [NOTE]
-Starting from SnapCenter Plug-in for VMware vSphere (SCV) 5.0 release, it is mandatory to add applications of type HTTP and ONTAPI as user login methods for ONTAP users that are added in SCV. For information on creating or modifying login accounts, see https://docs.netapp.com/us-en/ontap/authentication/config-worksheets-reference.html[Worksheets for administrator authentication and RBAC configuration].
+Beginning with SnapCenter Plug-in for VMware (SCV) 5.0, you need to add applications of type HTTP and ONTAPI as user login methods for any ONTAP users with customized role-based access to the SCV. Without access to these applications, backups will fail. You need to restart the SCV service to recognize changes to ONTAP user login methods. For information on creating or modifying login accounts, see https://docs.netapp.com/us-en/ontap/authentication/config-worksheets-reference.html[Worksheets for administrator authentication and RBAC configuration].
 
 You must configure ONTAP RBAC on the storage system if you want to use it with the SnapCenter VMware plug-in. From within ONTAP, you must perform the following tasks:
 
