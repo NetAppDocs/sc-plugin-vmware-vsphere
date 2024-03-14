@@ -60,7 +60,7 @@ sidebar:
               url: /scpivs44_minimum_ontap_privileges_required.html
             - title: Minimum vCenter privileges required
               url: /scpivs44_minimum_vcenter_privileges_required.html
-        - title: Download the Open Virtual Appliance(OVA)
+        - title: Download the Open Virtual Appliance (OVA)
           url: /scpivs44_download_the_ova_open_virtual_appliance.html
         - title: Deploy SnapCenter Plug-in for VMware vSphere
           url: /scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html
@@ -72,8 +72,6 @@ sidebar:
       entries:
         - title: Overview
           url: /scpivs44_quick_start_overview.html
-        - title: Download the Open Virtual Appliance(OVA)
-          url: /scpivs44_download_the_ova_open_virtual_appliance.html
         - title: Deploy SnapCenter Plug-in for VMware vSphere
           url: /scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html
         - title: Add storage
@@ -264,7 +262,7 @@ homepage:
         - title: Deployment requirements
           url: /scpivs44_deployment_planning_and_requirements.html
         - title: Quick start
-          url: /scpivs44_download_the_ova_open_virtual_appliance.html
+          url: /scpivs44_quick_start_overview.html
     - title: Protect VMs, VMDKs, and datastores
       links:
         - title: Protect your data

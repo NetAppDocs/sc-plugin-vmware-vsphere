@@ -28,7 +28,7 @@ You must know the IP address and the log on credentials for the SnapCenter Plug-
 
 . Log in to the SnapCenter VMware plug-in management GUI.
 +
-Use the format `https://<appliance-IP-address>:8080`
+Use the format `\https://<appliance-IP-address>:8080`
 
 . Click the Settings icon in the top toolbar.
 +

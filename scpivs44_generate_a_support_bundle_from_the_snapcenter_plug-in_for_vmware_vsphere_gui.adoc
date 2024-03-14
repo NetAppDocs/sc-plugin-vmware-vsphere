@@ -32,7 +32,7 @@ To log on to the SnapCenter Plug-in for VMware vSphere management GUI, you must 
 
 . Log in to the SnapCenter Plug-in for VMware vSphere GUI.
 +
-Use the format `https://<OVA-IP-address>:8080`.
+Use the format `\https://<OVA-IP-address>:8080`.
 
 . Click the Settings icon in the top toolbar.
 +

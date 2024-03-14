@@ -21,15 +21,19 @@ summary: 'The minimum ONTAP privileges that are required vary according to the S
 [.lead]
 The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.
 
+[NOTE]
+Beginning with SnapCenter Plug-in for VMware (SCV) 5.0, you need to add applications of type HTTP and ONTAPI as user login methods for any ONTAP users with customized role-based access to the SCV. Without access to these applications, backups will fail. You need to restart the SCV service to recognize changes to ONTAP user login methods.
+
 == Minimum ONTAP privileges required
 
 All SnapCenter plug-ins require the following minimum privileges.
 
 |===
 |All-access commands: Minimum privileges required for ONTAP 8.3 and later
-
+|cluster identity show
 |event generate-autosupport-log
 |job history show
+job show
 job stop
 |lun
 lun create
@@ -68,6 +72,7 @@ volume clone show
 volume clone split start
 volume clone split stop
 volume create
+volume delete
 volume destroy
 volume file clone create
 volume file show-disk-usage
