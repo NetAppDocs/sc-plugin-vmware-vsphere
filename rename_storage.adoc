@@ -23,7 +23,7 @@ When the storage is renamed, workflows using backups taken before the rename use
 . Create a new backup.
 . Use the backup details to find the old and new storage names.
 . In the *Backups* screen of the vSphere client, select the backup to see its details.
-. Access Swagger from the URL: https://<SCV-IP>:8144/api/swagger-ui/index.html
+. Access Swagger from the URL: `\https://<SCV-IP>:8144/api/swagger-ui/index.html`
 +
 Use the following API to rename the storage:
 +

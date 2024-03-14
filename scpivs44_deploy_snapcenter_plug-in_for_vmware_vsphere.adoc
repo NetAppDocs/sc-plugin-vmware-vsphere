@@ -130,7 +130,7 @@ The screen displays the IP address where the SnapCenter VMware plug-in is deploy
 // BURT 1378132 observation 2, March 2021 Ronya
 . Log in to the SnapCenter VMware plug-in management GUI using the IP address displayed on the deployment screen and using the credentials that you provided in the deployment wizard, then verify on the Dashboard that the SnapCenter VMware plug-in is successfully connected to vCenter and is enabled.
 +
-Use the format `https://<appliance-IP-address>:8080` to access the management GUI.
+Use the format `\https://<appliance-IP-address>:8080` to access the management GUI.
 +
 Login with the admin username and password set at the time of deployment and the MFA token generated using the maintenance console.
 +

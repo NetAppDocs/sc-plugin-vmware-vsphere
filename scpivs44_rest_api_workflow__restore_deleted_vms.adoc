@@ -21,14 +21,14 @@ summary: 'To perform restore operations for VM backups using the SnapCenter Plug
 [.lead]
 To perform restore operations for VM backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
 
-For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
+For each REST API, add `\https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 
 |===
 |Step |REST API |Comments
 
 |1
 |Go to
-`http://<vCenter-IP>/mob`
+`\http://<vCenter-IP>/mob`
 |Find the VM UUID from the VMware Managed Objects URL.
 Note the *uuid* for the VM that you want to restore.
 |2

@@ -16,7 +16,7 @@ summary: 'To generate reports and download logs for VMware vSphere client jobs u
 [.lead]
 To generate reports and download logs for VMware vSphere client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere.
 
-For each REST API, add `https://<server>:<port>` at the front of the REST API to form a complete endpoint.
+For each REST API, add `\https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 
 == Use the following REST APIs in the Jobs section to get detailed information on jobs:
 
