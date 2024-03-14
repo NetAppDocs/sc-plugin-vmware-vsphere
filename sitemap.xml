@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/</loc>
+        
+      
+      <lastmod>2023-11-30T10:59:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/legal-notices.html</loc>
+        
+      
+      <lastmod>2023-12-20T11:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/rename_storage.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_access_reports.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_access_rest_apis_using_the_swagger_api_web_page.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_access_the_maintenance_console.html</loc>
+        
+      
+      <lastmod>2023-10-11T12:33:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html</loc>
+        
+      
+      <lastmod>2023-12-15T12:27:09+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_add_storage.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_add_storage_01.html</loc>
+        
+      
+      <lastmod>2024-02-07T07:54:35+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_attach_vmdks_to_a_vm.html</loc>
+        
+      
+      <lastmod>2023-10-11T12:33:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_back_up_resource_groups_on_demand.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html</loc>
+        
+      
+      <lastmod>2024-02-15T06:56:48+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_configure_credentials_for_vm_guest_file_restores.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_and_import_certificates.html</loc>
+        
+      
+      <lastmod>2021-08-11T10:03:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies.html</loc>
+        
+      
+      <lastmod>2023-11-08T07:03:01+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies_for_vms_and_datastores.html</loc>
+        
+      
+      <lastmod>2024-01-09T09:44:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html</loc>
+        
+      
+      <lastmod>2024-02-15T06:56:48+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_the_scbr_override_file.html</loc>
+        
+      
+      <lastmod>2023-02-16T12:55:42+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_customize_your_configuration.html</loc>
+        
+      
+      <lastmod>2022-07-19T14:35:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html</loc>
+        
+      
+      <lastmod>2024-03-14T08:08:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deployment_planning_and_requirements.html</loc>
+        
+      
+      <lastmod>2024-03-12T11:56:52+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deployment_workflow_for_existing_users.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deployment_workflow_for_new_users.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_detach_a_virtual_disk.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_disable_and_enable_plugin.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_download_job_logs.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_download_the_ova_open_virtual_appliance.html</loc>
+        
+      
+      <lastmod>2023-03-07T07:53:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html</loc>
+        
+      
+      <lastmod>2023-01-05T06:33:13+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_enable_ssh.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_extend_the_time_of_a_guest_file_restore_session.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_generate_a_support_bundle_from_the_maintenance_console.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html</loc>
+        
+      
+      <lastmod>2023-02-16T07:42:57+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_guest_file_restore_scenarios_you_might_encounter.html</loc>
+        
+      
+      <lastmod>2021-08-11T10:03:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_how_restore_operations_are_performed.html</loc>
+        
+      
+      <lastmod>2023-05-02T12:33:38+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_how_to_configure_ontap_rbac_for_snapcenter_plug-in_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2024-03-12T07:39:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_licensing.html</loc>
+        
+      
+      <lastmod>2023-06-09T11:02:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_backups.html</loc>
+        
+      
+      <lastmod>2023-10-11T12:33:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_policies.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_resource_groups.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_storage_systems.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_the_vmware_vsphere_web_client_service.html</loc>
+        
+      
+      <lastmod>2023-01-05T06:33:13+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_migration_overview.html</loc>
+        
+      
+      <lastmod>2022-11-09T07:49:19+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_minimum_ontap_privileges_required.html</loc>
+        
+      
+      <lastmod>2024-03-12T07:39:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_minimum_vcenter_privileges_required.html</loc>
+        
+      
+      <lastmod>2023-05-02T11:20:24+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_modify_configuration_default_values.html</loc>
+        
+      
+      <lastmod>2023-02-16T12:55:42+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_modify_plugin_password.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_modify_storage_timeout.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_modify_the_logon_credentials.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_modify_the_network_settings.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_modify_the_time_zones.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_modify_the_vcenter_logon_credentials.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_monitor_jobs.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_mount_a_backup.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_ontap_rbac_features_in_snapcenter.html</loc>
+        
+      
+      <lastmod>2021-08-18T05:37:19+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_overview_of_different_snapcenter_guis.html</loc>
+        
+      
+      <lastmod>2023-10-31T13:11:55+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_post_deployment_required_operations_and_issues.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_predefined_roles_packaged_with_snapcenter.html</loc>
+        
+      
+      <lastmod>2021-08-18T05:37:19+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_prescripts_and_postscripts.html</loc>
+        
+      
+      <lastmod>2021-08-18T05:37:19+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_properties_you_can_override.html</loc>
+        
+      
+      <lastmod>2023-02-17T05:56:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_quick_start_overview.html</loc>
+        
+      
+      <lastmod>2021-08-18T05:37:19+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_register_snapcenter_plugin_vmware_vsphere_with_snapcenter_server.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_release_notes.html</loc>
+        
+      
+      <lastmod>2023-12-20T11:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_remove_plugin.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflow__back_up_on_demand.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflow__restore_deleted_vms.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflow__restore_vmdks.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflow__restore_vms.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflows__add_and_modify_storage_vms.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflows__attach_and_detach_vmdks.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflows__create_and_modify_resource_groups.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflows__modify_built-in_schedules.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflows__mount_and_unmount_datastores.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_apis__download_jobs_and_generate_reports.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_apis_fail_stuck_jobs.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html</loc>
+        
+      
+      <lastmod>2021-08-18T05:37:19+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_restart_the_vmware_vsphere_web_client_service.html</loc>
+        
+      
+      <lastmod>2023-01-05T06:33:13+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_restore_a_specific_backup_of_the_mysql_database.html</loc>
+        
+      
+      <lastmod>2023-06-26T10:28:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_restore_deleted_vms_from_backups.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_restore_from_backups_overview.html</loc>
+        
+      
+      <lastmod>2022-01-21T13:45:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_restore_guest_files_and_folders_from_vmdks.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_restore_guest_files_and_folders_overview.html</loc>
+        
+      
+      <lastmod>2024-02-15T06:56:48+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_restore_the_most_recent_backup_of_the_mysql_database.html</loc>
+        
+      
+      <lastmod>2023-06-26T10:28:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_restore_vmdks_from_backups.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_restore_vms_from_backups.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_role_based_access_control.html</loc>
+        
+      
+      <lastmod>2021-08-18T05:37:19+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_search_for_backups.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_set_up_proxy_vms_for_restore_operations.html</loc>
+        
+      
+      <lastmod>2024-01-16T11:31:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_types_of_rbac_for_snapcenter_users.html</loc>
+        
+      
+      <lastmod>2023-06-06T12:53:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_unmount_a_backup.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_unregister_plugin_from_vcenter.html</loc>
+        
+      
+      <lastmod>2023-02-16T07:42:57+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html</loc>
+        
+      
+      <lastmod>2024-02-15T08:20:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade_to_a_new_patch.html</loc>
+        
+      
+      <lastmod>2022-12-22T12:17:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_view_status_information.html</loc>
+        
+      
+      <lastmod>2023-02-16T07:42:57+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_view_vm_and_datastore_backups.html</loc>
+        
+      
+      <lastmod>2023-10-11T12:33:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs48_rest_apis_audit_logs.html</loc>
+        
+      
+      <lastmod>2024-03-12T08:18:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scv48_add_certificates_to_certificate_store.html</loc>
+        
+      
+      <lastmod>2023-01-11T06:39:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scv48_audit_logs.html</loc>
+        
+      
+      <lastmod>2023-12-20T11:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere//search.html</loc>
+        
+      
+      <lastmod>2024-03-14T08:23:47+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>
