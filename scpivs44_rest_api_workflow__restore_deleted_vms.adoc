@@ -39,7 +39,7 @@ Note the *backupId* of the backup you want to restore.
 |3
 |`/4.1/vm/backups/{backupId}/
 snapshotlocations`
-|`Get snapshot locations` gets the location of the Snapshot copy for the specified backup.
+|`Get snapshot locations` gets the location of the Snapshot for the specified backup.
 Pass the *backupId* from Step 2.
 Note the *snapshotLocationsList* information.
 |4

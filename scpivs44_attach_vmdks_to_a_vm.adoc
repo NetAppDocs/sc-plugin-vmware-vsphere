@@ -42,7 +42,7 @@ In this case, add the SCSi controllers manually and try the attach operation aga
 
 . On the *Attach Virtual Disk* window, in the *Backup* section, select a backup.
 +
-You can filter the backup list by selecting the filter icon and choosing a date and time range, selecting whether you want backups that contain VMware Snapshot copies, whether you want mounted backups, and the location. Click *OK*.
+You can filter the backup list by selecting the filter icon and choosing a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and the location. Click *OK*.
 
 . In the *Select Disks* section, select one or more disks you want to attach and the location you want to attach from (primary or secondary).
 +
