@@ -69,7 +69,7 @@ You can search for a specific backup name or a partial backup name, or you can f
 
 . On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field, then select the restore location, and then enter the Destination ESXi information where the backup should be mounted.
 +
-The restore destination can be any ESXi host that has been added to SnapCenter. This option restores the contents of the selected backup in which the VM resided from a Snapshot copy with the specified time and date. The *Restart VM* check box is checked if you select this option and the VM will be powered on.
+The restore destination can be any ESXi host that has been added to SnapCenter. This option restores the contents of the selected backup in which the VM resided from a Snapshot with the specified time and date. The *Restart VM* check box is checked if you select this option and the VM will be powered on.
 // BURT 1378132 observation 31, March 2021 Ronya
 +
 If you are restoring a VM in an NFS datastore onto an alternate ESXi host that is in an ESXi cluster, then after the VM is restored, it is registered on the alternate host.
