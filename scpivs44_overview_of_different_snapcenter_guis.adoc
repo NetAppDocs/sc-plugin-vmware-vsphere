@@ -23,7 +23,7 @@ In your SnapCenter environment, you must use the appropriate GUI to perform data
 
 The SnapCenter Plug-in for VMware vSphere is a standalone plug-in that is different from other SnapCenter plug-ins. You must use the VMware vSphere client GUI in vCenter for all backup and restore operations for VMs, VMDKs, and datastores. You also use the web client GUI Dashboard to monitor the list of protected and unprotected VMs. For all other SnapCenter plug-in (application-based plug-ins) operations like backup and restore and job monitoring, you use the SnapCenter GUI. 
 
-To protect VMs and datastores, you use the VMware vSphere client interface. The web client GUI integrates with NetApp Snapshot copy technology on the storage system. This enables you to back up VMs and datastores in seconds and restore VMs without taking an ESXi host offline.
+To protect VMs and datastores, you use the VMware vSphere client interface. The web client GUI integrates with NetApp Snapshot technology on the storage system. This enables you to back up VMs and datastores in seconds and restore VMs without taking an ESXi host offline.
 
 There is also a management GUI to perform administrative operations on the SnapCenter VMware plug-in.
 
@@ -58,4 +58,4 @@ Add resource access to users or groups
 
 For VM-consistent backup and restore operations, you must use the VMware vSphere client GUI. Although it is possible to perform some operations using VMware tools, for example, mounting or renaming a datastore, those operations will not be registered in the SnapCenter repository and are not recognized.
 
-SnapCenter does not support single Snapshot copies of databases and VMs together. Backups for VMs and databases must be scheduled and run independently, which creates separate Snapshot copies even if the databases and VMs are hosted in the same volume. Application-based backups must be scheduled by using the SnapCenter GUI; VM-consistent backups must be scheduled by using the VMware vSphere client GUI.
+SnapCenter does not support single Snapshots of databases and VMs together. Backups for VMs and databases must be scheduled and run independently, which creates separate Snapshots even if the databases and VMs are hosted in the same volume. Application-based backups must be scheduled by using the SnapCenter GUI; VM-consistent backups must be scheduled by using the VMware vSphere client GUI.

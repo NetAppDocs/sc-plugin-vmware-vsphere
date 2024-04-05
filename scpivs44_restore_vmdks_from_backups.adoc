@@ -66,7 +66,7 @@ In the Datastore selection table, you can select or unselect any VMDKs.
 |===
 // BURT 1378132 observation 36, March 2021 Ronya
 
-. On the *Select Location* page, select the Snapshot copy that you want to restore (primary or secondary).
+. On the *Select Location* page, select the Snapshot that you want to restore (primary or secondary).
 . Review the Summary page and then click *Finish*.
 . Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the screen.
 . Refresh the screen to display updated information.

@@ -83,9 +83,9 @@ If you are running on ONTAP 9.8 or ONTAP 9.9, then after a switchover or switchb
 +
 In ONTAP 9.8, the backups hang after the switchback. This issue is fixed in ONTAP 9.9.
 
-* Optimizing Snapshot copies
+* Optimizing Snapshots
 +
-To optimize Snapshot copies, you should group the VMs and datastores that are associated with the same volume into one resource group.
+To optimize Snapshots, you should group the VMs and datastores that are associated with the same volume into one resource group.
 // BURT 1378132 observation 25, March 2021 Ronya
 
 * Backup policies
@@ -138,17 +138,17 @@ Never: Do not send notification
 |Email subject
 |Enter the subject you want for the notification emails.
 |Latest Snapshot name
-a| If you want the suffix “_recent” added to the latest Snapshot copy, then check this box. The “_recent” suffix replaces the date and timestamp.
+a| If you want the suffix “_recent” added to the latest Snapshot, then check this box. The “_recent” suffix replaces the date and timestamp.
 
 [NOTE]
 A `_recent` backup is created for each policy that is attached to a resource group. Therefore, a resource group with multiple policies will have multiple `_recent` backups. Do not manually rename `_recent` backups.
 //Burt 1471636 May2020 Ronya
 
 |Custom Snapshot format
-a| If you want to use a custom format for the Snapshot copy names, then check this box and enter the name format.
+a| If you want to use a custom format for the Snapshot names, then check this box and enter the name format.
 
 * By default, this feature is disabled.
-* The default Snapshot copy names use the format `<ResourceGroup>_<Date-TimeStamp>`
+* The default Snapshot names use the format `<ResourceGroup>_<Date-TimeStamp>`
 However, you can specify a custom format using the variables $ResourceGroup, $Policy, $HostName, $ScheduleType, and $CustomText. Use the drop-down list in the custom name field to select which variables you want to use and the order in which they are used.
 If you select $CustomText, the name format is `<CustomName>_<Date-TimeStamp>`. Enter the custom text in the additional box that is provided.
 [NOTE]:

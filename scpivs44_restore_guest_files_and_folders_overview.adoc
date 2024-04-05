@@ -57,9 +57,9 @@ For the latest information about supported versions, see the https://imt.netapp.
 [IMPORTANT]
 If you must use an account that is not the built-in administrator account, but has administrative privileges within the VM, you must disable UAC on the guest VM.
 
-* You must know the backup Snapshot copy and VMDK to restore from.
+* You must know the backup Snapshot and VMDK to restore from.
 +
-SnapCenter Plug-in for VMware vSphere does not support searching of files or folders to restore. Therefore, before you begin you must know the location of the files or folders with respect to the Snapshot copy and the corresponding VMDK.
+SnapCenter Plug-in for VMware vSphere does not support searching of files or folders to restore. Therefore, before you begin you must know the location of the files or folders with respect to the Snapshot and the corresponding VMDK.
 
 * Virtual disk to be attached must be in a SnapCenter backup.
 +
