@@ -134,11 +134,12 @@ You must login as `vsadmin` on the storage VM to have the appropriate privileges
 +
 You must login as `vsadmin` or with a role that has the minimum privileges listed in the tables above.
 * You need to be the cluster admin to create and manage user roles. You can associate the users either with Cluster storage VM or with storage VM.
-* You need ONTAP 9.12.1 or later versions to use SnapMirror Business Continuity (SM-BC) feature.
+* You need ONTAP 9.12.1 or later versions to use SnapMirror active sync feature.
+//updated for SCV6.0
 * To use TamperProof Snapshot (TPS) feature:
 ** You need ONTAP 9.13.1 and later versions for SAN
 ** You need ONTAP 9.12.1 and later versions for NFS
 
 [NOTE]
-For ONTAP version 9.11.1 and later, the communication to ONTAP cluster is through REST APIs. The ONTAP user should have http application enabled. However, if there are issues found with ONTAP REST APIs, the configuration key 'FORCE_ZAPI' helps the switchover to traditional ZAPI workflow. You may need to add or update this key using the config APIS and set it to true. See KB article, https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV[How to use RestAPI to edit configuration parameters in SCV]. 
+Beginning with ONTAP version 9.11.1, the communication to ONTAP cluster is through REST APIs. The ONTAP user should have http application enabled. However, if there are issues found with ONTAP REST APIs, the configuration key 'FORCE_ZAPI' helps the switchover to traditional ZAPI workflow. You may need to add or update this key using the config APIS and set it to true. See KB article, https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV[How to use RestAPI to edit configuration parameters in SCV]. 
 

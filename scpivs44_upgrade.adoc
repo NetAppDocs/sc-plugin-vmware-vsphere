@@ -23,8 +23,10 @@ The upgrade process unregisters the existing plug-in and deploys a plug-in that 
 
 |===
 |If you are on SnapCenter Plugin for VMware vSphere (SCV) version...|You can directly upgrade SnapCenter Plugin for VMware vSphere to...
+|SCV 5.0
+|Upgrade to SCV 6.0
 |SCV 4.9
-|Upgrade to SCV 5.0
+|Upgrade to SCV 5.0 and SCV 6.0
 |SCV 4.8
 |Upgrade to SCV 4.9 and SCV 5.0
 |SCV 4.7
