@@ -24,7 +24,7 @@ settings:
 
 sidebar:
   entries:
-    - title: SnapCenter Plug-in for VMware vSphere 6.0 docs
+    - title: SnapCenter Plug-in for VMware vSphere 6.0
       url: /index.html
     - title: Release notes
       url: /scpivs44_release_notes.html

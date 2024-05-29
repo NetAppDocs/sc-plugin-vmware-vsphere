@@ -39,7 +39,9 @@ Do not use the following characters in the REST API URL: +, . , %, and &.
 +
 Access the SnapCenter VMware plug-in REST APIs:
 +
-`\https://<SCV_IP>:8144/api/swagger-ui/index.html`
+`\https://<SCV_IP>:8144/api/swagger-ui/index.html` 
++
+
 `\https://OVAhost:8144/api/swagger-ui/index.html` 
 +
 
