@@ -93,6 +93,8 @@ FlexClone: used for mount and attach operations on VMware VMs and datastores onl
 |ESXi
 |7.0U1 and above. 7.0U3 and above for NVMe over TCP.
 // AUGUST 2021 BURT 1419874
+|ONTAP
+|ONTAP 9.11.1 and above for NVMe over TCP.
 |IP addresses
 |IPv4, IPv6
 |VMware TLS
