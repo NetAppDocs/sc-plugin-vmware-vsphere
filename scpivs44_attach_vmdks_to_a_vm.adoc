@@ -38,7 +38,8 @@ In this case, add the SCSi controllers manually and try the attach operation aga
 .Before you begin
 // added for scv 6.0
 
-Add NVMe Controller to the VM before attaching a disk using the following steps:
+If you are using VMFS datastore with NVMe over TCP protocol, then it is mandatory to add NVMe Controller to the VM before attaching a disk. Follow the steps below to add NVMe controller to the VM.
+
 . Log in to the vCenter client
 . Select the VMFS datastore
 . Right-click on the datastore and go to *Edit settings*
