@@ -27,9 +27,9 @@ Beginning with SnapCenter Plug-in for VMware (SCV) 5.0, you need to add applicat
 == Minimum ONTAP privileges required
 
 All SnapCenter plug-ins require the following minimum privileges.
-
+// updated for scv 6.0
 |===
-|All-access commands: Minimum privileges required for ONTAP 8.3 and later
+|All-access commands: Minimum privileges required for ONTAP 8.3 and later.
 |cluster identity show
 |event generate-autosupport-log
 |job history show
@@ -107,6 +107,19 @@ vserver export-policy rule show
 vserver export-policy show
 vserver iscsi
 vserver iscsi connection show
+vserver nvme subsystem controller
+vserver nvme subsystem controller show
+vserver nvme subsystem map
+vserver nvme subsystem map show
+vserver nvme subsystem map add
+vserver nvme subsystem map remove
+vserver nvme subsystem host show
+vserver nvme subsystem host add
+vserver nvme subsystem host remove
+vserver nvme subsystem show
+vserver nvme subsystem delete
+vserver nvme namespace show
+NOTE: For NVMe over TCP protocol commands you need ONTAP 9.11.1 and later.
 vserver show
 network interface
 network interface failover-groups

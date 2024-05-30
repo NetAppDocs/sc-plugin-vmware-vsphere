@@ -108,7 +108,7 @@ SnapCenter performs compatibility checks when you create a resource group.
 This is the easiest way to create a resource group. However, you can also create a resource group with one resource by performing one of the following:
 
 ** To create a resource group for one VM, click *Menu* > *Hosts and Clusters*, then right-click a VM, then select NetApp SnapCenter, and then select *Create Resource Group*.
-** To create a resource group for one datastore, click *Menu* > *Hosts and Clusters*, then right-click a datastore, then select *NetApp SnapCenter*, and then select *Create Resource Group*.
+** To create a resource group for one datastore, click *Menu* > *Hosts and Clusters*, then right-click a datastore, then select *SnapCenter Plug-in for VMware vSphere*, and then select *Create Resource Group*.
 
 . On the *General Info & Notification* page in the wizard, do the following:
 +

@@ -35,10 +35,16 @@ In this case, add the SCSi controllers manually and try the attach operation aga
 * You cannot manually attach a virtual disk that was attached or mounted as part of a guest file restore operation.
 * Attach and restore operations connect VMDKs using the default SCSi controller. VMDKs that are attached to a VM with a NVME controller are backed up, but for attach and restore operations they are connected back using a SCSi controller.
 
+.Before you begin
+// added for scv 6.0
+
+You need to add NVMe Controller to the VM before attaching a disk.
+
+
 .Steps
 
 . In the VMware vSphere client GUI, click *Menu* in the toolbar, and then select *Hosts and clusters* from the drop-down list.
-. In the left navigation pane, right-click a VM, then select *NetApp SnapCenter* in the drop-down list, and then select *Attach virtual disk* in the secondary drop-down list.
+. In the left navigation pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Attach virtual disk* in the secondary drop-down list.
 
 . On the *Attach Virtual Disk* window, in the *Backup* section, select a backup.
 +

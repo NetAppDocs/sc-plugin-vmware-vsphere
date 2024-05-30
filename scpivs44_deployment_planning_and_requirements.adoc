@@ -84,14 +84,14 @@ FlexClone: used for mount and attach operations on VMware VMs and datastores onl
 |===
 
 == Software support
-
+// updated for scv 6.0
 |===
 |Item |Supported versions
 
 |vCenter vSphere
-|7.0U1 and above
+|7.0U1 and above. 7.0U3 and above for NVMe over TCP.
 |ESXi
-|7.0U1 and above
+|7.0U1 and above. 7.0U3 and above for NVMe over TCP.
 // AUGUST 2021 BURT 1419874
 |IP addresses
 |IPv4, IPv6

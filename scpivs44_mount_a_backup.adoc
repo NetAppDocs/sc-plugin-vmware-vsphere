@@ -25,6 +25,7 @@ You cannot mount a vVol datastore.
 * Ensure alternate ESXi host can connect to the storage
 +
 If you want to mount to an alternate ESXi host, you must ensure that the alternate ESXi host can connect to the storage and has the following:
+
 ** Same UID and GID as that of the original host
 ** Same virtual appliance for SnapCenter Plug-in for VMware vSphere version as that of original host
 
@@ -43,7 +44,7 @@ A mount operation might fail if the storage tier of the FabricPool where the dat
 .Steps
 
 . In the VMware vSphere client, click *Menu* in the toolbar, and then select *Storage* from the drop-down list.
-. Right-click a datastore and select *NetApp SnapCenter* in the drop-down list, and then select *Mount Backup* in the secondary drop-down list.
+. Right-click a datastore and select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Mount Backup* in the secondary drop-down list.
 . On the *Mount Datastore* page, select a backup and a backup location (primary or secondary), and then click *Finish*.
 //Updated for BURT 1378132 observation 29, March 2021 Madhulika
 . Optional: To verify that the datastore is mounted, perform the following:

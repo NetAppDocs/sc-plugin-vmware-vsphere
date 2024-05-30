@@ -54,7 +54,7 @@ For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphe
 +
 Although the virtual appliance must be installed as a Linux VM, the SnapCenter VMware plug-in supports both Windows-based and Linux-based vCenters. SnapCenter natively uses this plug-in without user intervention to communicate with your vCenter to support SnapCenter application-based plug-ins that perform data protection operations on Windows and Linux virtualized applications.
 
-In addition to these major features, the SnapCenter Plug-in for VMware vSphere also provides support for iSCSI, Fibre Channel, FCoE, VMDK over NFS 3.0 and 4.1, and VMDK over VMFS 5.0 and 6.0.
+In addition to these major features, the SnapCenter Plug-in for VMware vSphere also provides support for iSCSI, Fibre Channel, FCoE, VMDK over NFS 3.0 and 4.1, VMDK over VMFS 5.0 and 6.0, and NVMe over TCP.
 
 For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT
 [NetApp Interoperability Matrix Tool^] (IMT).
