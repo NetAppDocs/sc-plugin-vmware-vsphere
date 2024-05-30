@@ -38,13 +38,18 @@ In this case, add the SCSi controllers manually and try the attach operation aga
 .Before you begin
 // added for scv 6.0
 
-You need to add NVMe Controller to the VM before attaching a disk.
-
+Add NVMe Controller to the VM before attaching a disk using the following steps:
+. Log in to the vCenter client
+. Select the VMFS datastore
+. Right-click on the datastore and go to *Edit settings*
+. In the edit settings window, select *Add new device* > *NVMe Controller*
+. Select *Add new device* > *Hard disk*
+. In the *Virtual Device Node* field, select *New NVMe controller* and click *OK*.
 
 .Steps
 
 . In the VMware vSphere client GUI, click *Menu* in the toolbar, and then select *Hosts and clusters* from the drop-down list.
-. In the left navigation pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Attach virtual disk* in the secondary drop-down list.
+. In the left navigation pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* > *Attach virtual disk(s)*.
 
 . On the *Attach Virtual Disk* window, in the *Backup* section, select a backup.
 +

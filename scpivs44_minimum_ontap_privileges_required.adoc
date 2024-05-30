@@ -119,7 +119,7 @@ vserver nvme subsystem host remove
 vserver nvme subsystem show
 vserver nvme subsystem delete
 vserver nvme namespace show
-NOTE: For NVMe over TCP protocol commands you need ONTAP 9.11.1 and later.
+NOTE: For NVMe over TCP protocol commands, you need ONTAP 9.11.1 and later.
 vserver show
 network interface
 network interface failover-groups
