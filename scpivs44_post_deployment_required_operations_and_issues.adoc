@@ -41,7 +41,7 @@ If the problem persists, then restart the VMware vSphere client service
 
 == Manage authentication errors
 
-If you do not use the Admin credentials, you might receive an authentication error after deploying SnapCenter Plug-in for VMware vSphere or after migrating. If you encounter an authentication error, you must restart the service.
+If you do not use the admin credentials, you might receive an authentication error after deploying SnapCenter Plug-in for VMware vSphere or after migrating. If you encounter an authentication error, you must restart the service.
 
 .Steps
 

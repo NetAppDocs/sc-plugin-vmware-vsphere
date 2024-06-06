@@ -18,7 +18,7 @@ indexpage:
       links:
         - title: Protect your data
           url: /scpivs44_protect_data_overview.html
-        - title: Restore from backups
+        - title: Restore backups
           url: /scpivs44_restore_from_backups_overview.html
         - title: Use REST APIs
           url: /scpivs44_rest_apis_overview.html

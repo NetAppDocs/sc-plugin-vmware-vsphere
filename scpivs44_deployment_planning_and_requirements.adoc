@@ -149,7 +149,7 @@ The Guest File Restore feature uses this port.
 a|8144 (HTTPS), bidirectional
 The port is used for communications from the VMware vSphere client and from the SnapCenter Server.
 8080 bidirectional
-This port is used to manage the virtual appliance.
+This port is used to manage virtual appliances.
 
 Note: Custom port for addition of SCV host to SnapCenter is supported.
 |VMware vSphere vCenter Server port

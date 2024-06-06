@@ -58,7 +58,7 @@ You can filter the backup list by selecting the filter icon and choosing a date 
 +
 You can change the filter to display primary and secondary locations.
 
-. By default, the selected virtual disks are attached to the parent VM. To attach the selected virtual disks to an alternate VM in the same ESXi host, click *Click here to attach to alternate VM* and specify the alternate VM.
+. By default, the selected virtual disks are attached to the parent VM. To attach the selected virtual disks to an alternate VM in the same ESXi host, select *Click here to attach to alternate VM* and specify the alternate VM.
 . Click *Attach*.
 . Optional: Monitor the operation progress in the *Recent Tasks* section.
 +

@@ -140,7 +140,7 @@ sidebar:
           url: /scpivs44_mount_a_backup.html
         - title: Unmount a backup
           url: /scpivs44_unmount_a_backup.html
-    - title: Restore from backups
+    - title: Restore backups
       entries:
         - title: Overview
           url: /scpivs44_restore_from_backups_overview.html

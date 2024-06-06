@@ -29,7 +29,7 @@ To correct the issue, manually put the VMDKs back online in the guest OS. When t
 
 == Guest file restore attach disk operation fails
 
-This issue occurs when you start a guest file restore operation,  but the attach disk operation fails even though VMware Tools is running and the Guest OS credentials are correct. If this occurs, the following error is returned:
+This issue occurs when you start a guest file restore operation,  but the attach disk operation fails even though VMware tools is running and the Guest OS credentials are correct. If this occurs, the following error is returned:
 
 `Error while validating guest credentials, failed to access guest system using specified credentials: Verify VMWare tools is running properly on system and account used is Administrator account, Error is SystemError vix error codes = (3016, 0).`
 

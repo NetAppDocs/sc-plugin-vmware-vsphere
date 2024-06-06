@@ -216,7 +216,7 @@ image:scpivs44_image18.png["Create resource group window"]
 In the starting hour field, enter a date and time other than zero. The date must be in the format `day/month/year`.
 // BURT 1280281 June 2021  and Burt 1457923 March 2022 Ronya
 +
-When you select a number of days in the *Every* field, then backups are performed on day 1 of the month, and thereafter at every interval that is specified. For example, if you select the option *Every 2 days*, then backups are performed on day 1, 3, 5, 7, and so on throughout the month, regardless of whether the starting date is even or odd.
+When you select a number of days in Every field, then backups are performed on day 1 of the month, and thereafter at every interval that is specified. For example, if you select the option *Every 2 days*, then backups are performed on day 1, 3, 5, 7, and so on throughout the month, regardless of whether the starting date is even or odd.
 // BURT 1463517 April 2022 Ronya
 +
 You must fill in each field. The SnapCenter VMware plug-in creates schedules in the time zone in which the SnapCenter VMware plug-in is deployed. You can modify the time zone by using the SnapCenter Plug-in for VMware vSphere GUI.
@@ -247,13 +247,13 @@ SnapCenter version 4.x supports ONTAP 8.3.1 and later.
 The SnapCenter Plug-in for VMware vSphere does not perform compatibility checks for all ONTAP versions; only for ONTAP versions 8.2.1 and earlier. Therefore, always see the https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^] for the latest information about SnapCenter support.
 
 * A shared PCI device is attached to a VM.
-* A preferred IP is not configured in SnapCenter.
+* The preferred IP is not configured in SnapCenter.
 * You have not added the storage VM (SVM) management IP to SnapCenter.
 * The storage VM is down.
 
 To correct a compatibility error, perform the following:
 
 . Make sure the storage VM is running.
-. Make sure that the storage system on which the VMs are located have been added to the SnapCenter Plug-in for VMware vSphere inventory.
+. Make sure that the storage system on which the VMs are located has been added to the SnapCenter Plug-in for VMware vSphere inventory.
 . Make sure the storage VM is added to SnapCenter. Use the Add storage system option on the VMware vSphere client GUI.
 . If there are spanning VMs that have VMDKs on both NetApp and non-NetApp datastores, then move the VMDKs to NetApp datastores.
