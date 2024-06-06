@@ -89,12 +89,10 @@ FlexClone: used for mount and attach operations on VMware VMs and datastores onl
 |Item |Supported versions
 
 |vCenter vSphere
-|7.0U1 and above. 7.0U3 and above for NVMe over TCP.
+|7.0U1 and above.
 |ESXi
-|7.0U1 and above. 7.0U3 and above for NVMe over TCP.
+|7.0U1 and above. 
 // AUGUST 2021 BURT 1419874
-|ONTAP
-|ONTAP 9.11.1 and above for NVMe over TCP.
 |IP addresses
 |IPv4, IPv6
 |VMware TLS
@@ -112,6 +110,14 @@ The SnapCenter Server uses this to communicate with the SnapCenter VMware plug-i
 |===
 
 For the latest information about supported versions, see the https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+
+==== Requirements for NVMe over TCP protocol
+
+The minimum software requirements for NVMe over TCP protocol support are:
+
+* vCenter vSphere 7.0U3
+* ESXi 7.0U3
+* ONTAP 9.10.1
 
 == Space and sizing requirements
 

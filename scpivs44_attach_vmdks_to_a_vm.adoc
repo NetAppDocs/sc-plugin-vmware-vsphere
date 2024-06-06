@@ -33,7 +33,7 @@ The following limitations apply to attaching virtual disks:
 In this case, add the SCSi controllers manually and try the attach operation again.
 
 * You cannot manually attach a virtual disk that was attached or mounted as part of a guest file restore operation.
-* Attach and restore operations connect VMDKs using the default SCSi controller. VMDKs that are attached to a VM with a NVME controller are backed up, but for attach and restore operations they are connected back using a SCSi controller.
+* Attach and restore operations connect VMDKs using the default SCSi controller. When VMDKs that are attached to a VM with a NVMe controller are backed up, the attach and restore operations use NVMe controller.
 
 .Before you begin
 // added for scv 6.0
@@ -44,8 +44,6 @@ If you are using VMFS datastore with NVMe over TCP protocol, then it is mandator
 . Select the VM from the VMFS datastore
 . Right-click on the VM and go to *Edit settings*
 . In the edit settings window, select *Add new device* > *NVMe Controller*
-. Select *Add new device* > *Hard disk*
-. In the New Hard disk section, in the *Virtual Device Node* field, select *New NVMe controller* and click *OK*.
 
 .Steps
 

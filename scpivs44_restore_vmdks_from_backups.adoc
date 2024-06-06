@@ -41,7 +41,8 @@ The VM that you want to restore must not be in a state of vMotion or Storage vMo
 
 * If the VMDK is deleted or detached from the VM, then the restore operation attaches the VMDK to the VM.
 * A restore operation might fail if the storage tier of the FabricPool where the VM is located is unavailable.
-* Attach and restore operations connect VMDKs using the default SCSi controller. VMDKs that are attached to a VM with a NVME controller are backed up, but for attach and restore operations they are connected back using a SCSi controller.
+* Attach and restore operations connect VMDKs using the default SCSi controller. 
+When VMDKs that are attached to a VM with a NVMe controller are backed up, the attach and restore operations use NVMe controller.
 
 .Steps
 
