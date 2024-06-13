@@ -76,6 +76,6 @@ You cannot restore a vVol VM after a vVol container rebalance.
 Guest file restore operations are performed using clone and mount operations (not Storage VMotion) in both NFS and VMFS environments.
 
 [IMPORTANT]
-During a restore operation, you might encounter the error `Host unresolved volumes is null` or `Exception while calling pre-restore on SCV….Error mounting cloned LUN as datastore…` This occurs when the SnapCenter VMware plug-in attempts to resignature the clone. Due to VMware restrictions, the SnapCenter VMware plug-in cannot control the automatic resignature value in advanced ESXi configurations.
+During a restore operation, you might encounter the error `Host unresolved volumes is null` or `Exception while calling pre-restore on SCV….Error mounting cloned LUN as datastore…` This occurs when the SnapCenter Plug-in for VMware vSphere attempts to resignature the clone. Due to VMware restrictions, the SnapCenter Plug-in for VMware vSphere cannot control the automatic resignature value in advanced ESXi configurations.
 
 See https://kb.netapp.com/mgmt/SnapCenter/SCV_clone_or_restores_fail_with_error_'Host_Unresolved_volumes_is_null'#[KB article: SCV clone or restores fail with error 'Host Unresolved volumes is null^] for more information about the error.

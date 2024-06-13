@@ -33,9 +33,9 @@ If you want to mount to an alternate ESXi host, you must ensure that the alterna
 +
 Ensure that the initiators for the storage system are mapped to the ESXi.
 
-* Clean up stale LUNs
+* Clean up stale LUN/Namespace
 +
-Because the ESXi can only discover one unique LUN per datastore, the operation will fail if it finds more than one. This can occur if you start a mount operation before a previous mount operation has finished, or if you manually clone LUNs, or if clones are not deleted from storage during an unmount operation. To avoid discovery of multiple clones, you should clean up all stale LUNs on the storage.
+Because the ESXi can only discover one unique LUN/Namespace per datastore, the operation will fail if it finds more than one. This can occur if you start a mount operation before a previous mount operation has finished, or if you manually clone LUN/Namespace, or if clones are not deleted from storage during an unmount operation. To avoid discovery of multiple clones, you should clean up all stale LUN/Namespace on the storage.
 
 .About this task
 
@@ -49,7 +49,7 @@ A mount operation might fail if the storage tier of the FabricPool where the dat
 //Updated for BURT 1378132 observation 29, March 2021 Madhulika
 . Optional: To verify that the datastore is mounted, perform the following:
 .. Click *Menu* in the toolbar, and then select *Storage* from the drop-down list.
-.. The left Navigator pane displays the datastore you mounted at the top of the list.
+.. The left navigator pane displays the datastore you mounted at the top of the list.
 +
 If you perform an attach or mount operation on a SnapVault destination volume that is protected by SnapVault schedules and is running ONTAP 8.3, you might see an extra Snapshot listed in the attach or mount dialog screen. This occurs because the attach or mount operation clones the SnapVault destination volume and ONTAP updates the volume by creating a new Snapshot.
 +

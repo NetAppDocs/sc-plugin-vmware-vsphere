@@ -42,12 +42,12 @@ The VM that you want to restore must not be in a state of vMotion or Storage vMo
 * If the VMDK is deleted or detached from the VM, then the restore operation attaches the VMDK to the VM.
 * A restore operation might fail if the storage tier of the FabricPool where the VM is located is unavailable.
 * Attach and restore operations connect VMDKs using the default SCSi controller. 
-When VMDKs that are attached to a VM with a NVMe controller are backed up, the attach and restore operations use NVMe controller.
+However, when VMDKs that are attached to a VM with a NVMe disk are backed up, the attach and restore operations use NVMe controller if available.
 
 .Steps
 
 . In the VMware vSphere client GUI, click *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
-. In the left Navigator pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Restore* in the secondary drop-down list.
+. In the left navigator pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Restore* in the secondary drop-down list.
 . In the *Restore* wizard, on the Select Backup page, select the backup copy that you want to restore from.
 +
 You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and primary or secondary location. Click *OK* to return to the wizard.

@@ -50,7 +50,7 @@ All vVols in a single, specified vVol folder. If the folder contains a mix of vV
 For all resource groups:
 
 [IMPORTANT]
-If you are using VMware vSphere Cluster Service (vCLS), do not include VMs managed by vCLS in SnapCenter VMware plug-in resource groups.
+If you are using VMware vSphere Cluster Service (vCLS), do not include VMs managed by vCLS in SnapCenter Plug-in for VMware vSphere resource groups.
 // Burt 1413651 24Nov2021 Ronya
 
 [TIP]
@@ -79,7 +79,7 @@ To back up multiple resources, you must create a resource group that contains mu
 
 * Resource groups that contain FlexGroup volumes in MetroCluster environments
 +
-If you are running on ONTAP 9.8 or ONTAP 9.9, then after a switchover or switchback, you must restart the SnapCenter VMware plug-in service and resynchronize the SnapMirror relationships before you back up resource groups in MetroCluster environments.
+If you are running on ONTAP 9.8 or ONTAP 9.9, then after a switchover or switchback, you must restart the SnapCenter Plug-in for VMware vSphere service and resynchronize the SnapMirror relationships before you back up resource groups in MetroCluster environments.
 +
 In ONTAP 9.8, the backups hang after the switchback. This issue is fixed in ONTAP 9.9.
 
@@ -103,7 +103,7 @@ SnapCenter performs compatibility checks when you create a resource group.
 
 .Steps
 
-. In the left Navigator pane of the SCV plug-in, click *Resource Groups*, then select *Create* to start the wizard.
+. In the left navigator pane of the SCV plug-in, click *Resource Groups*, then select *Create* to start the wizard.
 
 This is the easiest way to create a resource group. However, you can also create a resource group with one resource by performing one of the following:
 
@@ -122,7 +122,7 @@ This is the easiest way to create a resource group. However, you can also create
 Do not use the following special characters in VM, datastore, policy,
 backup, or resource group names:
 % & * $ # @ ! \ / : * ? " < > - [vertical bar] ; ' , . An underscore character (_) is allowed. VM or datastore names with special characters are truncated, which makes it difficult to search for a specific backup.
-In linked mode, each vCenter has a separate SnapCenter VMware plug-in repository. Therefore, you can use duplicate names across vCenters.
+In linked mode, each vCenter has a separate SnapCenter Plug-in for VMware vSphere repository. Therefore, you can use duplicate names across vCenters.
 |Description
 |Enter a description of the resource group.
 |Notification
@@ -219,7 +219,7 @@ In the starting hour field, enter a date and time other than zero. The date must
 When you select a number of days in Every field, then backups are performed on day 1 of the month, and thereafter at every interval that is specified. For example, if you select the option *Every 2 days*, then backups are performed on day 1, 3, 5, 7, and so on throughout the month, regardless of whether the starting date is even or odd.
 // BURT 1463517 April 2022 Ronya
 +
-You must fill in each field. The SnapCenter VMware plug-in creates schedules in the time zone in which the SnapCenter VMware plug-in is deployed. You can modify the time zone by using the SnapCenter Plug-in for VMware vSphere GUI.
+You must fill in each field. The SnapCenter Plug-in for VMware vSphere creates schedules in the time zone in which the SnapCenter Plug-in for VMware vSphere is deployed. You can modify the time zone by using the SnapCenter Plug-in for VMware vSphere GUI.
 +
 link:scpivs44_modify_the_time_zones.html[Modify the time zones for backups].
 

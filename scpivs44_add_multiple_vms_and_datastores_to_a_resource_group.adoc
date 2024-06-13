@@ -30,7 +30,7 @@ vVol VMs that span multiple vVol datastores are not supported because SnapCenter
 
 .Steps
 
-. In the left Navigator pane of the SCV plug-in, click *Resource Groups*, then select a resource group, and then click image:scpivs44_image39.png["edit icon"] *Edit Resource Group* to start the wizard.
+. In the left navigator pane of the SCV plug-in, click *Resource Groups*, then select a resource group, and then click image:scpivs44_image39.png["edit icon"] *Edit Resource Group* to start the wizard.
 
 . On the *Resource* page, do the following:
 .. In the Datastores field, navigate to the VMs or datastores that you want to add.

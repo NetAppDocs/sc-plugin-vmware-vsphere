@@ -49,7 +49,7 @@ Most of the fields on these wizard pages are self-explanatory. The following inf
 
 .Steps
 
-. In the left Navigator pane of the SCV plug-in, click *Policies*.
+. In the left navigator pane of the SCV plug-in, click *Policies*.
 . On the *Policies* page, select *Create* to start the wizard.
 . On the *New Backup Policy* page, select the vCenter Server that will use the policy, and then enter the policy name and a description.
 +
@@ -134,7 +134,7 @@ VM guest memory is not included in VM consistency Snapshots.
 independent disks
 |Check this box to include in the backup any datastores with independent disks that contain temporary data.
 |Scripts
-a|Enter the fully qualified path of the prescript or postscript that you want the SnapCenter VMware plug-in to run before or after backup operations. For example, you can run a script to update SNMP traps, automate alerts, and send logs. The script path is validated at the time the script is executed.
+a|Enter the fully qualified path of the prescript or postscript that you want the SnapCenter Plug-in for VMware vSphere to run before or after backup operations. For example, you can run a script to update SNMP traps, automate alerts, and send logs. The script path is validated at the time the script is executed.
 
 [NOTE]
 Prescripts and postscripts must be located on the virtual appliance VM.

@@ -45,7 +45,7 @@ For improved performance of restore operations in NFS environments, enable the V
 
 * A backup must exist.
 +
-You must have created a backup of the VM using the SnapCenter VMware plug-in before you can restore the VM.
+You must have created a backup of the VM using the SnapCenter Plug-in for VMware vSphere before you can restore the VM.
 +
 [NOTE]
 Restore operations cannot finish successfully if there are Snapshots of the VM that were performed by software other than the SnapCenter Plug-in for VMware vSphere.
@@ -98,9 +98,9 @@ Even if a VMware consistency snapshot for a VM fails, the VM is nevertheless bac
 . In the VMware vSphere client GUI, click *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
 +
 [NOTE]
-If you are restoring a deleted VM, the storage VM credentials that were added to the SnapCenter VMware plug-in must be `vsadmin` or a user account that has all the same privileges as `vsadmin`. The host must be on a storage system that is running ONTAP 8.2.2 or later.
+If you are restoring a deleted VM, the storage VM credentials that were added to the SnapCenter Plug-in for VMware vSphere must be `vsadmin` or a user account that has all the same privileges as `vsadmin`. The host must be on a storage system that is running ONTAP 8.2.2 or later.
 
-. In the left Navigator pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Restore* in the secondary drop-down list to start the wizard.
+. In the left navigator pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Restore* in the secondary drop-down list to start the wizard.
 . In the *Restore* wizard, on the *Select Backup* page, select the backup Snapshot that you want to restore.
 +
 You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and the location.  Click *OK* to return to the wizard.

@@ -40,7 +40,7 @@ a|
 For Username, you must enter “Administrator”.
 |===
 +
-The SnapCenter VMware plug-in uses the selected credentials to log into the selected proxy VM.
+The SnapCenter Plug-in for VMware vSphere uses the selected credentials to log into the selected proxy VM.
 +
 The Run As credentials must be the default domain administrator that is provided by Windows or the built-in local administrator. Workgroup users can use the built-in local administrator account.
 

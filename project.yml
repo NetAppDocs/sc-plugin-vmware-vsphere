@@ -184,7 +184,7 @@ sidebar:
           url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html
         - title: Access the maintenance console
           url: /scpivs44_access_the_maintenance_console.html
-        - title: Modify the SnapCenter VMware Plug-in password from the maintenance console
+        - title: Modify the SnapCenter Plug-in for VMware vSphere password from the maintenance console
           url: /scpivs44_modify_plugin_password.html
         - title: Create and import certificates
           url: /scpivs44_create_and_import_certificates.html

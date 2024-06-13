@@ -28,7 +28,7 @@ If you attempt to mount a backup copy of an NFS datastore on a storage VM (SVM) 
 .Steps
 
 . In the VMware vSphere client, click *Menu* in the toolbar, and then select *Storage* from the drop-down list.
-. In the left Navigator pane, right-click a datastore, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select Unmount in the secondary drop-down list.
+. In the left navigator pane, right-click a datastore, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select Unmount in the secondary drop-down list.
 +
 [IMPORTANT]
 Make sure that you select the correct datastore to unmount. Otherwise, you might cause an impact on production work.

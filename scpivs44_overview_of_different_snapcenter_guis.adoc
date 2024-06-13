@@ -25,7 +25,7 @@ The SnapCenter Plug-in for VMware vSphere is a standalone plug-in that is differ
 
 To protect VMs and datastores, you use the VMware vSphere client interface. The web client GUI integrates with NetApp Snapshot technology on the storage system. This enables you to back up VMs and datastores in seconds and restore VMs without taking an ESXi host offline.
 
-There is also a management GUI to perform administrative operations on the SnapCenter VMware plug-in.
+There is also a management GUI to perform administrative operations on the SnapCenter Plug-in for VMware vSphere.
 
 The following table shows the operations that the SnapCenter GUI performs.
 

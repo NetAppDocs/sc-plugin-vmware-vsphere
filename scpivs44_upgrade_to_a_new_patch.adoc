@@ -19,7 +19,7 @@ If the plug-in cache is not cleared, then recent jobs are not displayed in the D
 
 * SnapCenter Plug-in for VMware vSphere was deployed using vCenter, and then later upgraded to a patch in the same release.
 
-* The SnapCenter VMware virtual appliance was deployed in vCenter 1. Later, this SnapCenter VMware plug-in was registered to a new vCenter2. A new instance of the SnapCenter VMware plug-in is created with a patch and registered to vCenter1. However, because vCenter1 still has the cached plug-in from the first SnapCenter VMware plug-in without the patch, the cache needs to be cleared.
+* The SnapCenter VMware virtual appliance was deployed in vCenter 1. Later, this SnapCenter Plug-in for VMware vSphere was registered to a new vCenter2. A new instance of the SnapCenter Plug-in for VMware vSphere is created with a patch and registered to vCenter1. However, because vCenter1 still has the cached plug-in from the first SnapCenter Plug-in for VMware vSphere without the patch, the cache needs to be cleared.
 
 == Steps for clearing the cache
 
@@ -31,4 +31,4 @@ See the VMware documentation for the location of the `vsphere-client-serenity` f
 
 . Restart the vCenter Server.
 +
-You can then upgrade the SnapCenter VMware plug-in.
+You can then upgrade the SnapCenter Plug-in for VMware vSphere.

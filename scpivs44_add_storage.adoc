@@ -17,5 +17,5 @@ Follow the steps in this section to add storage.
 // This file is used only for the Quick Start section
 
 
-. In the left Navigator pane of the SCV plug-in, click *Storage Systems* and then select *Add* option.
+. In the left navigator pane of the SCV plug-in, click *Storage Systems* and then select *Add* option.
 . On the Add Storage System dialog box, enter the basic SVM or cluster information, and select *Add*.
