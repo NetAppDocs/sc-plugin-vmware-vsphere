@@ -23,7 +23,8 @@ If you want to use a proxy VM for attaching a virtual disk for guest file restor
 
 .Steps
 
-. In the VMware vSphere client, click *Guest File Restore*.
+. From the vSphere client shortcuts window, select *SnapCenter Plug-in for VMware vSphere* under plug-ins.
+. In the left navigation select *Guest File Restore*.
 . In the *Run As Credentials* section, do one of the following:
 +
 |===

@@ -23,7 +23,7 @@ summary: 'You can generate a support bundle from the maintenance console.'
 .Steps
 
 . From the VMware vSphere client, select the VM where the SnapCenter Plug-in for VMware vSphere is located.
-. Right-click the VM, then on the *Summary* tab of the virtual appliance click *Launch Remote Console or Launch Web Console* to open a maintenance console window, and then log on.
+. In the *Summary* tab of the virtual appliance click *Launch Remote Console or Launch Web Console* to open a maintenance console window, and then log on.
 +
 For information on accessing and logging on to the maintenance console, see link:scpivs44_access_the_maintenance_console.html[Access the Maintenance Console^].
 +
