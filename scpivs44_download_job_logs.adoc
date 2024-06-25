@@ -30,8 +30,8 @@ The default value for retaining job logs is 30 days; the default value for retai
 
 .Steps
 
-. In the left navigator pane of the vSphere client, click *Dashboard*, select a vCenter Server, and then click the *Job Monitor* tab in the Dashboard pane.
-
+. From the vCenter client shortcut page, select SnapCenter Plug-in for VMware vSphere (SCV). 
+. In the left navigation pane of SCV,  select *Dashboard* > *Job Monitor*.
 . Select the download icon in the Job Monitor title bar.
 +
 You might need to scroll to the right to see the icon.

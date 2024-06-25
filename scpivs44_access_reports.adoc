@@ -25,7 +25,8 @@ The Reports tab contains information on the jobs that are selected on the Jobs p
 
 .Steps
 
-. In the left navigator pane of the vSphere client, click *Dashboard*, select a vCenter Server, and then click the *Reports* tab.
+. From the vCenter client shortcut page, select SnapCenter Plug-in for VMware vSphere (SCV). 
+. In the left navigation pane of SCV,  select *Dashboard* > *Reports* tab.
 . For Backup Reports, you can do the following:
 .. Modify the report
 +

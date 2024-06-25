@@ -51,7 +51,8 @@ If you add a storage VM with a name that cannot resolve to the management LIF, t
 
 .Steps
 
-. In the left navigator pane of the vSphere client, click *Storage Systems*.
+. From the vCenter client shortcut page, select SnapCenter Plug-in for VMware vSphere (SCV). 
+. In the left navigation pane of SCV,  select *Dashboard* > *Storage Systems*.
 . On the Storage Systems page, select *Add* option.
 . In the *Add Storage System* wizard, enter the basic storage VM or cluster information as listed in the following table:
 +

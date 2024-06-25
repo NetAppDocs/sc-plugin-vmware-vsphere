@@ -17,8 +17,8 @@ You can view status information on the vSphere client Dashboard. Status informat
 
 .Steps
 
-. In the left navigator pane of the vSphere client, click *Dashboard*, select a vCenter Server, and then click the *Status* tab in the dashboard pane.
-
+. From the vCenter client shortcut page, select SnapCenter Plug-in for VMware vSphere (SCV). 
+. In the left navigation pane of SCV,  select *Dashboard* > *Status*.
 . View overview status information or click a link for more details, as listed in the following table.
 +
 |===

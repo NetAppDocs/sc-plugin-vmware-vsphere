@@ -161,3 +161,5 @@ This task helps you to change the default audit log settings.
 . Log in to the SnapCenter Plug-in for VMware vSphere.
 . In the left navigation pane, select *Settings* > *Audit Logs* > *Settings*.
 . In the *Audit Log Settings* pane, enter the Maximum number of audit log files and Audit log file size limit. 
+. Select *Send audit logs to Syslog server* option if you choose to send the logs to syslog server. Enter the details of the server.
+. Save the settings.
