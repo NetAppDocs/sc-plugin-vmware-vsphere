@@ -45,11 +45,11 @@ The cache is in the following locations, based on the type of server operating s
 
 . Log in to the SnapCenter Plug-in for VMware vSphere management GUI.
 +
-The IP is displayed when you deploy the SnapCenter Plug-in for VMware vSphere.
+The IP address is displayed when you deploy the SnapCenter Plug-in for VMware vSphere.
 
 . Click *Configuration* in the left navigation pane, and then click the Service option in the *Plug-in Details* section to disable the plug-in.
 +
-The SnapCenter Plug-in for VMware vSphere service is disabled, and the extension is unregistered in vCenter.
+SnapCenter Plug-in for VMware vSphere service is disabled, and the extension is unregistered in vCenter.
 
 . Locate the `vsphere-client-serenity` folder, then locate the `com.netapp.scv.client-<release-number>` folder and delete it.
 +
@@ -60,4 +60,4 @@ The folder name changes for each release.
 . Log in to VMware vSphere client.
 . Click *Configuration* in the left navigation pane, and then click the Service option in the *Plug-in Details* section to enable the plug-in.
 +
-The SnapCenter Plug-in for VMware vSphere service is enabled, and the extension is registered in vCenter.
+SnapCenter Plug-in for VMware vSphere service is enabled, and the extension is registered in vCenter.

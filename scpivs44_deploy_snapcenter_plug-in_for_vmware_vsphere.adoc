@@ -78,7 +78,7 @@ Select a datastore large enough to accommodate the virtual machine or vApp and a
 .. Select a source network and map it to a destination network,
 +
 The Source Network column lists all networks that are defined in the OVA template.
-.. In the *IP Allocation Settings* section, select the required IP protocol and then click *Next*.
+.. In the *IP Allocation Settings* section, select the required IP address protocol and then click *Next*.
 +
 SnapCenter Plug-in for VMware vSphere supports one network interface. If you need multiple network adapters, you must set that up manually. See the https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3[KB article: How to create additional network adapters^].
 +

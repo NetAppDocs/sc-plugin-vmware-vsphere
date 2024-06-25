@@ -19,7 +19,7 @@ You should be aware of the deployment requirements before you deploy the virtual
 
 Before you begin deployment of SnapCenter Plug-in for VMware vSphere (SCV), you should be familiar with the host requirements.
 
-* The SnapCenter Plug-in for VMware vSphere is deployed as a Linux VM regardless of whether you use the plug-in to protect data on Windows systems or Linux systems.
+* SnapCenter Plug-in for VMware vSphere is deployed as a Linux VM regardless of whether you use the plug-in to protect data on Windows systems or Linux systems.
 
 * You should deploy the SnapCenter Plug-in for VMware vSphere on the vCenter Server.
 +
@@ -41,7 +41,7 @@ For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphe
 +
 For the latest information about supported versions of ONTAP tools, see the https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
-* The SnapCenter Plug-in for VMware vSphere provides limited support of shared PCI or PCIe devices (for example, NVIDIA Grid GPU) due to a limitation of the virtual machines in supporting Storage vMotion. For more information, see the vendor's document Deployment Guide for VMware.
+* SnapCenter Plug-in for VMware vSphere provides limited support of shared PCI or PCIe devices (for example, NVIDIA Grid GPU) due to a limitation of the virtual machines in supporting Storage vMotion. For more information, see the vendor's document Deployment Guide for VMware.
 ** What is supported:
 +
 Creating resource groups
@@ -196,4 +196,4 @@ The privilege must be assigned at the vCenter root.
 
 == AutoSupport
 
-The SnapCenter Plug-in for VMware vSphere provides a minimum of information for tracking its usage, including the plug-in URL. AutoSupport includes a table of installed plug-ins that is displayed by the AutoSupport viewer.
+SnapCenter Plug-in for VMware vSphere provides a minimum of information for tracking its usage, including the plug-in URL. AutoSupport includes a table of installed plug-ins that is displayed by the AutoSupport viewer.

@@ -16,7 +16,7 @@ SnapCenter Plug-in for VMware vSphere is a standalone virtual appliance (Open Vi
 
 SnapCenter Plug-in for VMware vSphere is deployed as a Linux-based virtual appliance.
 
-The SnapCenter Plug-in for VMware vSphere adds the following functionality to your environment:
+SnapCenter Plug-in for VMware vSphere adds the following functionality to your environment:
 
 * Support for VM-consistent and crash-consistent data protection operations.
 +
@@ -24,13 +24,13 @@ You can use the VMware vSphere client GUI in vCenter for all backup and restore 
 +
 When backing up VMs, VMDKs, and datastores, the plug-in does not support RDMs. Backup jobs for VMs ignore RDMs. If you need to back up RDMs, you must use a SnapCenter application-based plug-in.
 +
-The SnapCenter Plug-in for VMware vSphere includes a MySQL database that contains the SnapCenter Plug-in for VMware vSphere metadata. For VM-consistent and crash-consistent data protection, you do not need to install SnapCenter Server.
+SnapCenter Plug-in for VMware vSphere includes a MySQL database that contains the SnapCenter Plug-in for VMware vSphere metadata. For VM-consistent and crash-consistent data protection, you do not need to install SnapCenter Server.
 
 * Support for application-consistent (application over VMDK/RDM) data protection operations.
 +
 You can use the SnapCenter GUI and the appropriate SnapCenter application plug-ins for all backup and restore operations of databases and filesystems on primary and secondary storage on VMs.
 +
-SnapCenter natively leverages the SnapCenter Plug-in for VMware vSphere for all data protection operations on VMDKs, raw device mappings (RDMs), and NFS datastores. After the virtual appliance is deployed, the plug-in handles all interactions with vCenter. The SnapCenter Plug-in for VMware vSphere supports all SnapCenter application-based plug-ins.
+SnapCenter natively leverages the SnapCenter Plug-in for VMware vSphere for all data protection operations on VMDKs, raw device mappings (RDMs), and NFS datastores. After the virtual appliance is deployed, the plug-in handles all interactions with vCenter. SnapCenter Plug-in for VMware vSphere supports all SnapCenter application-based plug-ins.
 +
 SnapCenter does not support single Snapshots of databases and VMs together. Backups for VMs and databases must be scheduled and run independently, which creates separate Snapshots, even if the databases and VMs are hosted in the same volume. Schedule the database application backups using the SnapCenter GUI; schedule the VM and datastore backups using the VMware vSphere client GUI.
 
@@ -50,7 +50,7 @@ You use ONTAP tools to provision and configure storage for vVols in ONTAP and in
 +
 For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP tools for VMware vSphere^]
 
-* The SnapCenter Plug-in for VMware vSphere is deployed as a virtual appliance in a Linux VM
+* SnapCenter Plug-in for VMware vSphere is deployed as a virtual appliance in a Linux VM
 +
 Although the virtual appliance must be installed as a Linux VM, the SnapCenter Plug-in for VMware vSphere supports both Windows-based and Linux-based vCenters. SnapCenter natively uses this plug-in without user intervention to communicate with your vCenter to support SnapCenter application-based plug-ins that perform data protection operations on Windows and Linux virtualized applications.
 

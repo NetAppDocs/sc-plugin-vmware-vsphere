@@ -92,7 +92,7 @@ sidebar:
           url: /scpivs44_download_job_logs.html
         - title: Access reports
           url: /scpivs44_access_reports.html
-        - title: Generate a support bundle from the SnapCenter Plug-in for VMware vSphere GUI
+        - title: Generate a support bundle from SnapCenter Plug-in for VMware vSphere GUI
           url: /scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html
         - title: Generate a support bundle from the maintenance console
           url: /scpivs44_generate_a_support_bundle_from_the_maintenance_console.html

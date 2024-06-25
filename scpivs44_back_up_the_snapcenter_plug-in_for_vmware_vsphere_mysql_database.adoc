@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html
 keywords:
-summary: 'The SnapCenter Plug-in for VMware vSphere includes a MySQL database (also called an NSM database) that contains the metadata for all jobs performed by the plug-in. You should back up this repository regularly.'
+summary: 'SnapCenter Plug-in for VMware vSphere includes a MySQL database (also called an NSM database) that contains the metadata for all jobs performed by the plug-in. You should back up this repository regularly.'
 ---
 
 = Back up the SnapCenter Plug-in for VMware vSphere MySQL database
@@ -19,7 +19,7 @@ summary: 'The SnapCenter Plug-in for VMware vSphere includes a MySQL database (a
 //
 
 [.lead]
-The SnapCenter Plug-in for VMware vSphere includes a MySQL database (also called an NSM database) that contains the metadata for all jobs performed by the plug-in. You should back up this repository regularly.
+SnapCenter Plug-in for VMware vSphere includes a MySQL database (also called an NSM database) that contains the metadata for all jobs performed by the plug-in. You should back up this repository regularly.
 
 You should also back up the repository before performing migrations or upgrades.
 

@@ -44,7 +44,7 @@ You can also click the download icon to download plug-in logs.
 The VMware vSphere client for SnapCenter provides customizable report options that provide you with details about your data protection jobs and plug-in resource status. You can generate reports for primary protection only.
 
 [NOTE]
-Backup schedules are executed in the time zone in which the SnapCenter Plug-in for VMware vSphere is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter Plug-in for VMware vSphere and the vCenter are in different time zones, data in the VMware vSphere client Dashboard might not be the same as the data in the reports.
+Backup schedules are executed in the time zone in which SnapCenter Plug-in for VMware vSphere is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter Plug-in for VMware vSphere and the vCenter are in different time zones, data in the VMware vSphere client Dashboard might not be the same as the data in the reports.
 
 The Dashboard displays information on migrated backups only after backups post-migration are performed.
 

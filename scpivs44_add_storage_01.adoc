@@ -35,7 +35,7 @@ The ESXi server, the SnapCenter Plug-in for VMware vSphere, and each vCenter mus
 
 .About this task
 
-The SnapCenter Plug-in for VMware vSphere performs backup and restore operations on directly connected storage VMs and on storage VMs in a storage cluster.
+SnapCenter Plug-in for VMware vSphere performs backup and restore operations on directly connected storage VMs and on storage VMs in a storage cluster.
 
 [NOTE]
 If you are using the SnapCenter Plug-in for VMware vSphere to support application-based backups on VMDKs, then you must use the SnapCenter GUI to enter storage authentication details and register storage systems.
@@ -60,7 +60,7 @@ If you add a storage VM with a name that cannot resolve to the management LIF, t
 
 |Storage system
 |Enter the FQDN or Management LIF’s IP address of a storage cluster or a storage VM.
-The SnapCenter Plug-in for VMware vSphere does not support multiple storage VM’s with the same name on different clusters. 
+SnapCenter Plug-in for VMware vSphere does not support multiple storage VM’s with the same name on different clusters. 
 |Authentication Method
 |Select either Credentials or Certificate. https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV[Self signed certificate^] is supported.
 When you try to add storage through CA certificate authentication method, the operation fails and prompts you to check the username and password.
@@ -81,7 +81,7 @@ When you try to add storage through CA certificate authentication method, the op
 - 80 for HTTP connection
 |Timeout
 |Enter the number of seconds SnapCenter Plug-in for VMware vSphere should wait before timing out the operation. The default is 60 seconds.
-|Preferred IP
+|Preferred IP address
 |If the storage VM has more than one management IP address, check this box and enter the IP address that you want SnapCenter Plug-in for VMware vSphere to use.
 //Updated for BURT 1378132 observation 20, March 2021 Madhulika
 *Note:* Do not use square brackets ([]) when entering the IP address.
