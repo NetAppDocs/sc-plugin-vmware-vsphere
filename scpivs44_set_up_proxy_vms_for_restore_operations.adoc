@@ -48,4 +48,4 @@ The Run As credentials must be the default domain administrator that is provided
 . In the *Proxy VM* dialog box, complete the information, and then click *Save*.
 
 [NOTE]
-You need to delete the proxy VM from the SnapCenter Plug-in for VMware vSphere UI before you can delete it from ESXi.
+You need to delete the proxy VM from the SnapCenter Plug-in for VMware vSphere UI before you can delete it from ESXi host.

@@ -29,13 +29,11 @@ If you want to mount to an alternate ESXi host, you must ensure that the alterna
 ** Same UID and GID as that of the original host
 ** Same virtual appliance for SnapCenter Plug-in for VMware vSphere version as that of original host
 
-* Map storage initiators to ESXi
-+
-Ensure that the initiators for the storage system are mapped to the ESXi.
+* When using the iSCSI protocol, ensure that the initiators for the storage system are mapped to the ESXi host. When using the NVMe protocol, add controllers to map the required subsystem to the ESXi host.
 
 * Clean up stale LUN/Namespace
 +
-Because the ESXi can only discover one unique LUN/Namespace per datastore, the operation will fail if it finds more than one. This can occur if you start a mount operation before a previous mount operation has finished, or if you manually clone LUN/Namespace, or if clones are not deleted from storage during an unmount operation. To avoid discovery of multiple clones, you should clean up all stale LUN/Namespace on the storage.
+Because the ESXi host can only discover one unique LUN/Namespace per datastore, the operation will fail if it finds more than one. This can occur if you start a mount operation before a previous mount operation has finished, or if you manually clone LUN/Namespace, or if clones are not deleted from storage during an unmount operation. To avoid discovery of multiple clones, you should clean up all stale LUN/Namespace on the storage.
 
 .About this task
 

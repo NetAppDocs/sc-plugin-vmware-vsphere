@@ -90,7 +90,7 @@ FlexClone: used for mount and attach operations on VMware VMs and datastores onl
 
 |vCenter vSphere
 |7.0U1 and above.
-|ESXi
+|ESXi Server
 |7.0U1 and above. 
 // AUGUST 2021 BURT 1419874
 |IP addresses

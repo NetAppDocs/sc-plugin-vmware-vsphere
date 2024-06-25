@@ -153,7 +153,7 @@ The default value is "600000" (10 minutes).
 
 * *vmware.esx.ip.kernel.ip.map*
 +
-There is no default value. You use this value to map the ESXi IP address to the VMkernel IP address. By default, the SnapCenter Plug-in for VMware vSphere uses the management VMkernel adapter IP address of the ESXi host. If you want the SnapCenter Plug-in for VMware vSphere to use a different VMkernel adapter IP address, you must provide an override value.
+There is no default value. You use this value to map the ESXi host IP address to the VMkernel IP address. By default, the SnapCenter Plug-in for VMware vSphere uses the management VMkernel adapter IP address of the ESXi host. If you want the SnapCenter Plug-in for VMware vSphere to use a different VMkernel adapter IP address, you must provide an override value.
 +
 In the following example, the management VMkernel adapter IP address is 10.225.10.56;  however, the SnapCenter Plug-in for VMware vSphere uses the specified address of 10.225.11.57 and 10.225.11.58. And if the management VMkernel adapter IP address is 10.225.10.60, the plug-in uses the address 10.225.11.61.
 +
