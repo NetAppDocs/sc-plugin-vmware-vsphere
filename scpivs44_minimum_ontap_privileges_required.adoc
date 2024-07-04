@@ -30,7 +30,6 @@ All SnapCenter plug-ins require the following minimum privileges.
 // updated for scv 6.0
 |===
 |All-access commands: Minimum privileges required for ONTAP 8.3 and later.
-|cluster identity show
 |event generate-autosupport-log
 |job history show
 job show
@@ -119,18 +118,19 @@ vserver nvme subsystem host remove
 vserver nvme subsystem show
 vserver nvme subsystem delete
 vserver nvme namespace show
-vserver show
 network interface
 network interface failover-groups
-network interface show
 |===
 
 |===
 |Read-only Commands: Minimum Privileges Required for ONTAP 8.3 and Later
 
 |
+cluster identity show
+network interface show
 vserver
 vserver peer
+vserver show
 |===
 
 [NOTE]
