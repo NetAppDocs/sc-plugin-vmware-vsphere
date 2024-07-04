@@ -27,7 +27,7 @@ If the plug-in cache is not cleared, then recent jobs are not displayed in the D
 +
 The folder name changes for each release.
 +
-See the VMware documentation for the location of the `vsphere-client-serenity` folder for your operating system.
+Refer to VMware documentation for the location of the `vsphere-client-serenity` folder for your operating system.
 
 . Restart the vCenter Server.
 +

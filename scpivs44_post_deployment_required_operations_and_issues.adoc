@@ -17,7 +17,7 @@ After deploying the SnapCenter Plug-in for VMware vSphere, you must complete the
 
 == Required operations after deployment
 
-If you are a new SnapCenter user, you must add storage VMs to SnapCenter before you can perform any data protection operations. When adding storage VMs, specify the management LIF. You can also add a cluster and specify the cluster management LIF. For information about adding storage, see link:scpivs44_add_storage_01.html[Add storage^].
+If you are a new SnapCenter user, you must add storage VMs to SnapCenter before you can perform any data protection operations. When adding storage VMs, specify the management LIF. You can also add a cluster and specify the cluster management LIF. For information about adding storage, refer to link:scpivs44_add_storage_01.html[Add storage^].
 
 == Deployment issues you might encounter
 

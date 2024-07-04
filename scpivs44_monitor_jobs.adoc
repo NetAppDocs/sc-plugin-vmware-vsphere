@@ -33,4 +33,4 @@ The Job Monitor tab lists each job and its status, start time, and end time. If 
 // 25Feb2022  Burt 1454986  Ronya
 * Select the refresh icon in the Job Details window to refresh the display while the job is running.
 
-If the Dashboard does not display job information, see the https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs[KB article: SnapCenter vSphere client dashboard does not display jobs^].
+If the Dashboard does not display job information, refer to https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs[KB article: SnapCenter vSphere client dashboard does not display jobs^].

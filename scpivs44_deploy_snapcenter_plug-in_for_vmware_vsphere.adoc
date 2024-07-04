@@ -33,7 +33,7 @@ This section lists all the necessary actions you should do before you begin the 
 * You must have set up an ESXi host for the SnapCenter Plug-in for VMware vSphere VM.
 * You must have downloaded the SnapCenter Plug-in for VMware vSphere .tar file.
 * You must have the login authentication details for your vCenter Server instance.
-* You must have a certificate with valid Public and Private Key files. For more information, see articles under https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_Certificate_Resolution_Guide[Storage Certificate Management] section.
+* You must have a certificate with valid Public and Private Key files. For more information, refer to articles under https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_Certificate_Resolution_Guide[Storage Certificate Management] section.
 * You must have logged out of and closed all browser sessions of vSphere client and deleted the browser cache to avoid any browser cache issue during the deployment of the SnapCenter Plug-in for VMware vSphere.
 * You must have enabled Transport Layer Security (TLS) in vCenter. Refer to the VMware documentation.
 * If you plan to perform backups in vCenters other than the one in which the SnapCenter Plug-in for VMware vSphere is deployed, then the ESXi server, the SnapCenter Plug-in for VMware vSphere, and each vCenter must be synchronized to the same time.
@@ -80,7 +80,7 @@ Select a datastore large enough to accommodate the virtual machine or vApp and a
 The Source Network column lists all networks that are defined in the OVA template.
 .. In the *IP Allocation Settings* section, select the required IP address protocol and then click *Next*.
 +
-SnapCenter Plug-in for VMware vSphere supports one network interface. If you need multiple network adapters, you must set that up manually. See the https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3[KB article: How to create additional network adapters^].
+SnapCenter Plug-in for VMware vSphere supports one network interface. If you need multiple network adapters, you must set that up manually. Refer to https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3[KB article: How to create additional network adapters^].
 +
 . On the *Customize template* page, do the following:
 
@@ -134,7 +134,7 @@ Use the format `\https://<appliance-IP-address>:8080` to access the management G
 +
 Login with the admin username and password set at the time of deployment and the MFA token generated using the maintenance console.
 +
-If the SnapCenter Plug-in for VMware vSphere is not enabled, then see link:scpivs44_restart_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere client service].
+If the SnapCenter Plug-in for VMware vSphere is not enabled, then refer to link:scpivs44_restart_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere client service].
 // BURT 1378132 observation 10, March 2021 Ronya
 +
 If the host name is 'UnifiedVSC/SCV, then restart the appliance. If restarting the appliance does not change the host name to the specified host name, then you must reinstall the appliance.

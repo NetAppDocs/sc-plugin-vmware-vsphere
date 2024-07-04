@@ -27,7 +27,7 @@ You must create backup policies before you use the SnapCenter Plug-in for VMware
 +
 To correct this issue, configure the SnapMirror retention policy for secondary storage to avoid reaching the maximum limit of Snapshots.
 +
-For information about how administrators assign resources to users, see the https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html[SnapCenter information on using role-based access control^].
+For information about how administrators assign resources to users, refer to https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html[SnapCenter information on using role-based access control^].
 
 * If you want VM-consistent backups, you must have VMware tools installed and running. VMware tools is needed to quiesce VMs. VM-consistent backups are not supported for vVol VMs.
 * SnapMirror active sync enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. 

@@ -30,7 +30,7 @@ link:scpivs44_deployment_planning_and_requirements.html[Deployment planning and 
 
 In MetroCluster configurations:
 
-* SnapCenter Plug-in for VMware vSphere might not be able to detect a protection relationship after a failover. See https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover[KB article: Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover^].
+* SnapCenter Plug-in for VMware vSphere might not be able to detect a protection relationship after a failover. Refer to https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover[KB article: Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover^] for more information.
 
 * If backups fail with the error `Unable to discover resources on SCV: <xxx>…` for NFS and VMFS VMs after switchover/switch back, restart the SnapCenter VMware services from the maintenance console.
 
