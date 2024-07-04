@@ -27,7 +27,7 @@ SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large
 +
 You must add Storage Clusters to SnapCenter Plug-in for VMware vSphere and ONTAP tools for VMware vSphere for vVol DataProtection to work.
 +
-For more information, see https://docs.netapp.com/vapp-98/index.jsp[ONTAP tools for VMware vSphere^]
+For more information, see https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP tools for VMware vSphere^]
 
 .Before you begin
 
@@ -63,9 +63,11 @@ If you add a storage VM with a name that cannot resolve to the management LIF, t
 |Enter the FQDN or Management LIF’s IP address of a storage cluster or a storage VM.
 SnapCenter Plug-in for VMware vSphere does not support multiple storage VM’s with the same name on different clusters. 
 |Authentication Method
-|Select either Credentials or Certificate. https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV[Self signed certificate^] is supported.
-When you try to add storage through CA certificate authentication method, the operation fails and prompts you to check the username and password.
-//VMDP-4511
+|Select either Credentials or Certificate. Two types of certificates are supported:
+- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV[Self signed certificate^]
+- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV[CA signed certificate].
+//When you try to add storage through CA certificate authentication method, the operation fails and prompts you to check the username and password.
+//VMDP-4511 - remove this
 |Username
 |This field is visible when you select Credentials as your authentication method. Enter the ONTAP username that is used to log on to the storage VM or the cluster.
 |Password
