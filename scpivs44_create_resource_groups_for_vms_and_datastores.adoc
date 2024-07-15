@@ -184,8 +184,7 @@ When you click *Next*, the system first checks that SnapCenter manages and is co
 +
 If the message `Selected <resource-name> is not SnapCenter compatible` is displayed, then a selected resource is not compatible with SnapCenter.
 +
-To globally exclude one or more datastores from backups, you must specify the datastore name(s) in the `global.ds.exclusion.pattern` property in the `scbr.override` configuration file. Refer to <<scpivs44_properties_you_can_override.adoc#Properties you can override, Properties you can override>>.
-
+To globally exclude one or more datastores from backups, you must specify the datastore name(s) in the `global.ds.exclusion.pattern` property in the `scbr.override` configuration file. Refer to link:scpivs44_properties_you_can_override.html[Properties you can override].
 . On the *Spanning disks* page, select an option for VMs with multiple VMDKs across multiple datastores:
 +
 * Always exclude all spanning datastores (This is the default for datastores.)
