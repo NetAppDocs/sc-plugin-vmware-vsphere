@@ -17,8 +17,8 @@ You can view status information on the vSphere client Dashboard. Status informat
 
 .Steps
 
-. In the left Navigator pane of the vSphere client, click *Dashboard*, select a vCenter Server, and then click the *Status* tab in the dashboard pane.
-
+. From the vCenter client shortcut page, select SnapCenter Plug-in for VMware vSphere (SCV). 
+. In the left navigation pane of SCV,  select *Dashboard* > *Status*.
 . View overview status information or click a link for more details, as listed in the following table.
 +
 |===
@@ -39,7 +39,7 @@ a|Summaries of the data protection status of primary and secondary VMs or datast
 * For secondary storage, select *SnapVault* or *SnapMirror*.
 * Hover the cursor over a section of a chart to see the count of VMs or Datastores in that category. In the Successful category, the most recent backup is listed for each resource.
 //Updated for BURT 1378132 observation 4, March 2021 Madhulika
-* You can change the time window by editing the configuration file. The default is 7 days. For more information, see link:scpivs44_customize_your_configuration.html[Customize your configuration].
+* You can change the time window by editing the configuration file. The default is 7 days. For more information, refer to link:scpivs44_customize_your_configuration.html[Customize your configuration].
 //Updated for BURT 1378132 observation 5, March 2021 Madhulika
 * Internal counters are updated after each primary or secondary backup. The dashboard tile is refreshed every six hours. The refresh time cannot be changed.
 Note: If you use a mirror-vault protection policy, then the counters for the protection summary are displayed in the SnapVault summary chart, not in the SnapMirror chart.

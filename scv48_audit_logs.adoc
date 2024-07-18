@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scv48_audit_logs.html
 keywords:
-summary: 'Audit log provides traceability of who did what and when. Audit log is a collection of events in a chronological order, and it is written to a file within the appliance.'
+summary: 'Audit log provides traceability of who did what and when. An audit log is a collection of events in a chronological order, and it is written to a file within the appliance.'
 ---
 
 = Audit logs
@@ -14,7 +14,7 @@ summary: 'Audit log provides traceability of who did what and when. Audit log is
 
 
 [.lead]
-Audit log is a collection of events in a chronological order, which is written to a file within the appliance. The audit log files are generated at `/var/log/netapp/audit` location and the file names follow one of the below naming conventions:
+An audit log is a collection of events in chronological order, which is written to a file within the appliance. The audit log files are generated at `/var/log/netapp/audit` location, and the file names follow one of the below naming conventions:
 
 * audit.log: Active audit log file that is in use.
 
@@ -24,7 +24,7 @@ In the SCV plug-in user interface, you can view and export the audit log details
 *Dashboard* > *Settings* > *Audit Logs* Tab
 You can view operation audit in the audit logs. The audit logs are downloaded with the Support bundle.
 
-If Email settings are configured, SCV sends an Email notification in the event of an Audit Log Integrity Verification failure. An Audit Log Integrity Verification failure can happen when one of the files is tampered or deleted.
+If Email settings are configured, SCV sends an Email notification in the event of an Audit Log Integrity Verification failure. An Audit Log Integrity Verification failure can happen when one of the files is tampered with or deleted.
 
 The default configurations of the audit files are:
 
@@ -161,3 +161,5 @@ This task helps you to change the default audit log settings.
 . Log in to the SnapCenter Plug-in for VMware vSphere.
 . In the left navigation pane, select *Settings* > *Audit Logs* > *Settings*.
 . In the *Audit Log Settings* pane, enter the Maximum number of audit log files and Audit log file size limit. 
+. Select *Send audit logs to Syslog server* option if you choose to send the logs to syslog server. Enter the details of the server.
+. Save the settings.

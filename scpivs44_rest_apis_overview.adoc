@@ -34,7 +34,7 @@ You can use the SnapCenter Plug-in for VMware vSphere REST APIs to perform commo
 ** Modify built-in schedules
 * Operations that are not supported by the REST APIs for VMware vSphere
 ** Guest file restore
-** Installation and configuration of the SnapCenter VMware plug-in
+** Installation and configuration of the SnapCenter Plug-in for VMware vSphere
 ** Assign RBAC roles or access to users
 * `uri` parameter
 +

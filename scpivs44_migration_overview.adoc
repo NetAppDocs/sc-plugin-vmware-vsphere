@@ -43,7 +43,7 @@ If you begin migration when a guest file restore session is active, the session 
 To ensure migration success, the migration command suspends all hosts that are registered with SnapCenter. After the migration process finishes successfully, SnapCenter hosts are resumed.
 * Migration cmdlet process
 +
-You must use the Windows Powershell cmdlet `invoke-SCVOVAMigration` for each instance of the SnapCenter VMware plug-in that is registered with SnapCenter.
+You must use the Windows Powershell cmdlet `invoke-SCVOVAMigration` for each instance of the SnapCenter Plug-in for VMware vSphere that is registered with SnapCenter.
 +
 The cmdlet does the following:
 +
@@ -52,11 +52,11 @@ The cmdlet does the following:
 ** Creates backup schedules for post-migration backups.
 ** Uninstalls the existing SnapCenter Plug-in for VMware vSphere from the Windows host.
 +
-If the SnapCenter VMware plug-in is installed on the SnapCenter Server host and protection is configured for the SnapCenter repository, then the migration process also uninstalls the Windows-based plug-in package that contains the SnapCenter Plug-in for VMware vSphere and the SnapCenter Plug-in for Windows, and then reinstalls the latest version of SnapCenter Plug-in for Windows to support the repository protection. The host type in the SnapCenter GUI changes from “vsphere” to “Windows”.
+If the SnapCenter Plug-in for VMware vSphere is installed on the SnapCenter Server host and protection is configured for the SnapCenter repository, then the migration process also uninstalls the Windows-based plug-in package that contains the SnapCenter Plug-in for VMware vSphere and the SnapCenter Plug-in for Windows, and then reinstalls the latest version of SnapCenter Plug-in for Windows to support the repository protection. The host type in the SnapCenter GUI changes from “vsphere” to “Windows”.
 
 ** Removes the vSphere host and resource groups from the Windows SnapCenter Server.
-** Activates the backup jobs on the Linux-based SnapCenter VMware plug-in.
-** Registers the vSphere host for the SnapCenter VMware plug-in `with SnapCenter to support application-based backups of virtualized databases and file systems (application over VMDK backups).
+** Activates the backup jobs on the Linux-based SnapCenter Plug-in for VMware vSphere.
+** Registers the vSphere host for the SnapCenter Plug-in for VMware vSphere `with SnapCenter to support application-based backups of virtualized databases and file systems (application over VMDK backups).
 * Where metadata is stored
 +
-Metadata for application-based VMDK backups is stored in the SnapCenter Server repository. Metadata for VM and datastore backups is stored in the SnapCenter VMware plug-in MySQL repository.
+Metadata for application-based VMDK backups is stored in the SnapCenter Server repository. Metadata for VM and datastore backups is stored in the SnapCenter Plug-in for VMware vSphere MySQL repository.

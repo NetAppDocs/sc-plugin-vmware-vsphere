@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_predefined_roles_packaged_with_snapcenter.html
 keywords:
-summary: 'To simplify working with vCenter Server RBAC, the SnapCenter VMware plug-in provides a set of predefined roles that enable users to perform SnapCenter tasks. There is also a read-only role that allows users to view SnapCenter information, but not perform any tasks.'
+summary: 'To simplify working with vCenter Server RBAC, the SnapCenter Plug-in for VMware vSphere provides a set of predefined roles that enable users to perform SnapCenter tasks. There is also a read-only role that allows users to view SnapCenter information, but not perform any tasks.'
 ---
 
 = Predefined roles packaged with SnapCenter Plug-in for VMware vSphere
@@ -19,13 +19,13 @@ summary: 'To simplify working with vCenter Server RBAC, the SnapCenter VMware pl
 //
 
 [.lead]
-To simplify working with vCenter Server RBAC, the SnapCenter VMware plug-in provides a set of predefined roles that enable users to perform SnapCenter tasks. There is also a read-only role that allows users to view SnapCenter information, but not perform any tasks.
+To simplify working with vCenter Server RBAC, the SnapCenter Plug-in for VMware vSphere provides a set of predefined roles that enable users to perform SnapCenter tasks. There is also a read-only role that allows users to view SnapCenter information, but not perform any tasks.
 
-The predefined roles have both the required SnapCenter-specific privileges and the native vCenter Server privileges to ensure that tasks complete correctly. In addition, the roles are set up to have the necessary privileges across all supported versions of vCenter Server.
+The predefined roles have both the required SnapCenter-specific privileges and the native vCenter Server privileges to ensure that tasks are completed correctly. In addition, the roles are set up to have the necessary privileges across all supported versions of vCenter Server.
 
 As an administrator, you can assign these roles to the appropriate users.
 
-The SnapCenter VMware plug-in returns these roles to their default values (initial set of privileges) each time you restart the vCenter web client service or modify your installation. If you upgrade the SnapCenter VMware plug-in, the predefined roles are automatically upgraded to work with that version of the plug-in.
+SnapCenter Plug-in for VMware vSphere returns these roles to their default values (initial set of privileges) each time you restart the vCenter web client service or modify your installation. If you upgrade the SnapCenter Plug-in for VMware vSphere, the predefined roles are automatically upgraded to work with that version of the plug-in.
 
 You can see the predefined roles in the vCenter GUI by clicking *Menu > Administration > Roles* as shown in the following table.
 
@@ -37,13 +37,13 @@ You can see the predefined roles in the vCenter GUI by clicking *Menu > Administ
 |SCV Backup
 |Provides all native vCenter Server and SnapCenter-specific privileges necessary to back up vSphere objects (virtual machines and datastores).
 The user also has access to the configure privilege.
-The user cannot restore from backups.
+The user cannot restore backups.
 |SCV Guest File Restore
 |Provides all native vCenter Server and SnapCenter-specific privileges necessary to restore guest files and folders. The user cannot restore VMs or VMDKs.
 |SCV Restore
-|Provides all native vCenter Server and SnapCenter-specific privileges necessary to restore vSphere objects that have been backed up using the SnapCenter VMware plug-in and to restore guest files and folders.
+|Provides all native vCenter Server and SnapCenter-specific privileges necessary to restore vSphere objects that have been backed up using the SnapCenter Plug-in for VMware vSphere and to restore guest files and folders.
 The user also has access to the configure privilege.
 The user cannot back up vSphere objects.
 |SCV View
-|Provides read-only access to all the SnapCenter VMware plug-in backups, resource groups, and policies.
+|Provides read-only access to all the SnapCenter Plug-in for VMware vSphere backups, resource groups, and policies.
 |===

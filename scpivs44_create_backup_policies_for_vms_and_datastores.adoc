@@ -25,21 +25,23 @@ You must create backup policies before you use the SnapCenter Plug-in for VMware
 //Updated for BURT 1378132 observation 21, March 2021 Madhulika
 ** When the number of Snapshots on the secondary storage (mirror-vault) reaches the maximum limit, the activity to register backup and apply retention in the backup operation fails with the following error: `This Snapshot is currently used as a reference Snapshot by one or more SnapMirror relationships. Deleting the Snapshot can cause future SnapMirror operations to fail.`
 +
-To correct this issue, configure the SnapMirror retention policy for the secondary storage to avoid reaching the maximum limit of Snapshots.
+To correct this issue, configure the SnapMirror retention policy for secondary storage to avoid reaching the maximum limit of Snapshots.
 +
-For information about how administrators assign resources to users, see the https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html[SnapCenter information on using role-based access control^].
+For information about how administrators assign resources to users, refer to https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html[SnapCenter information on using role-based access control^].
 
 * If you want VM-consistent backups, you must have VMware tools installed and running. VMware tools is needed to quiesce VMs. VM-consistent backups are not supported for vVol VMs.
-* SnapMirror Business Continuity (SM-BC) enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. 
-//also known as SnapMirror active sync removed
+* SnapMirror active sync enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. 
+//also known as SnapMirror active sync removed in 5.0 but was added back in SCV6.0
 +
 [NOTE]
-SM-BC is supported only for VMFS Datastores.
+SnapMirror active sync is supported only for VMFS Datastores.
 +
-To protect a VMFS datastore on a SM-BC deployment, as SnapCenter administrator you need to:
+To protect a VMFS datastore on a SnapMirror active sync deployment, as SnapCenter administrator you need to:
 
-**  Configure clusters and mediator as described in the technical report: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf[TR-4878: SnapMirror Business Continuity].
-** Add the volume associated with the VMFS datastore to the consistency group and create a data protection relationship using _AutomatedFailOver_ protection policy between two ONTAP storage systems. 
+**  Configure clusters and mediator as described in the technical report: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf[TR-4878: SnapMirror active sync (formerly SMBC)].
+//updated for SCV6.0
+** Add the volume associated with the VMFS datastore to the consistency group and create a data protection relationship using _AutomatedFailOver_ or _AutomatedFailOverDuplex_ protection policy between two ONTAP storage systems. _AutomatedFailOverDuplex_ policy is supported from ONTAP 9.15.1 release onwards.
+//updated for SCV6.0 
 
 .About this task
 
@@ -47,7 +49,7 @@ Most of the fields on these wizard pages are self-explanatory. The following inf
 
 .Steps
 
-. In the left Navigator pane of the SCV plug-in, click *Policies*.
+. In the left navigator pane of the SCV plug-in, click *Policies*.
 . On the *Policies* page, select *Create* to start the wizard.
 . On the *New Backup Policy* page, select the vCenter Server that will use the policy, and then enter the policy name and a description.
 +
@@ -90,7 +92,7 @@ If a volume is configured with a mirror-vault relationship, you must select only
 [NOTE]
 This option is supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.5 and later.
 [NOTE]
-To protect VMFS datastore on SM-BC deployment, you need to complete the prerequisites mentioned in the _Before you begin_ section and enable *Update SnapMirror after backup*.
+To protect VMFS datastore on SnapMirror active sync deployment, you need to complete the prerequisites mentioned in the _Before you begin_ section and enable *Update SnapMirror after backup*.
 
 |Update SnapVault after backup
 
@@ -120,7 +122,7 @@ a|Check this box to quiesce the VMs and create a VMware snapshot each time the b
 This option is not supported for vVols. For vVol VMs, only crash-consistent backups are performed.
 
 [IMPORTANT]
-You must have VMware tools running on the VM to perform VM consistent backups. If VMware Tools is not running, a crash-consistent backup is performed instead.
+You must have VMware tools running on the VM to perform VM consistent backups. If VMware tools is not running, a crash-consistent backup is performed instead.
 
 [NOTE]
 When you check the VM consistency box, backup operations might take longer and require more storage space. In this scenario, the VMs are first quiesced, then VMware performs a VM consistent snapshot, then SnapCenter performs its backup operation, and then VM operations are resumed.
@@ -132,7 +134,7 @@ VM guest memory is not included in VM consistency Snapshots.
 independent disks
 |Check this box to include in the backup any datastores with independent disks that contain temporary data.
 |Scripts
-a|Enter the fully qualified path of the prescript or postscript that you want the SnapCenter VMware plug-in to run before or after backup operations. For example, you can run a script to update SNMP traps, automate alerts, and send logs. The script path is validated at the time the script is executed.
+a|Enter the fully qualified path of the prescript or postscript that you want the SnapCenter Plug-in for VMware vSphere to run before or after backup operations. For example, you can run a script to update SNMP traps, automate alerts, and send logs. The script path is validated at the time the script is executed.
 
 [NOTE]
 Prescripts and postscripts must be located on the virtual appliance VM.

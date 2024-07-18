@@ -22,9 +22,9 @@ summary: 'ONTAP RBAC applies only to SnapCenter Server application-consistent (a
 ONTAP RBAC applies only to SnapCenter Server application-consistent (application over VMDK) jobs.
 
 [NOTE]
-Beginning with SnapCenter Plug-in for VMware (SCV) 5.0, you need to add applications of type HTTP and ONTAPI as user login methods for any ONTAP users with customized role-based access to the SCV. Without access to these applications, backups will fail. You need to restart the SCV service to recognize changes to ONTAP user login methods. For information on creating or modifying login accounts, see https://docs.netapp.com/us-en/ontap/authentication/config-worksheets-reference.html[Worksheets for administrator authentication and RBAC configuration].
+Beginning with SnapCenter Plug-in for VMware (SCV) 5.0, you need to add applications of type HTTP and ONTAPI as user login methods for any ONTAP users with customized role-based access to the SCV. Without access to these applications, backups will fail. You need to restart the SCV service to recognize changes to ONTAP user login methods. For information on creating or modifying login accounts, refer to https://docs.netapp.com/us-en/ontap/authentication/config-worksheets-reference.html[Worksheets for administrator authentication and RBAC configuration].
 
-You must configure ONTAP RBAC on the storage system if you want to use it with the SnapCenter VMware plug-in. From within ONTAP, you must perform the following tasks:
+You must configure ONTAP RBAC on the storage system if you want to use it with the SnapCenter Plug-in for VMware vSphere. From within ONTAP, you must perform the following tasks:
 
 * Create a single role.
 +
@@ -33,8 +33,8 @@ https://docs.netapp.com/us-en/ontap/concepts/administrator-authentication-rbac-c
 
 *  Create a username and password (storage system credentials) in ONTAP for the role.
 +
-This storage system credential is needed to allow you to configure the storage systems for the SnapCenter VMware plug-in. You do this by entering the credentials in the plug-in. Each time you log in to a storage system using these credentials, you are presented with the set of SnapCenter functions that you set up in ONTAP when you created the credentials.
+This storage system credential is needed to allow you to configure the storage systems for the SnapCenter Plug-in for VMware vSphere. You do this by entering the credentials in the plug-in. Each time you log in to a storage system using these credentials, you are presented with the set of SnapCenter functions that you set up in ONTAP when you created the credentials.
 
 You can use the administrator or root login to access all the SnapCenter tasks; however, it is a good practice to use the RBAC feature provided by ONTAP to create one or more custom accounts with limited access privileges.
 
-For more information, see link:scpivs44_minimum_ontap_privileges_required.html[Minimum ONTAP privileges required^].
+For more information, refer to link:scpivs44_minimum_ontap_privileges_required.html[Minimum ONTAP privileges required^].
