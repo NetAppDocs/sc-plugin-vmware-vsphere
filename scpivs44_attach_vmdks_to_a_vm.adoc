@@ -33,12 +33,22 @@ The following limitations apply to attaching virtual disks:
 In this case, add the SCSi controllers manually and try the attach operation again.
 
 * You cannot manually attach a virtual disk that was attached or mounted as part of a guest file restore operation.
-* Attach and restore operations connect VMDKs using the default SCSi controller. VMDKs that are attached to a VM with a NVME controller are backed up, but for attach and restore operations they are connected back using a SCSi controller.
+* Attach and restore operations connect VMDKs using the default SCSi controller. However, when VMDKs that are attached to a VM with a NVMe disk are backed up, the attach and restore operations use NVMe controller if available.
+
+.Before you begin
+// added for scv 6.0
+
+Follow the steps below to add NVMe controller to the disk.
+
+. Log in to the vCenter client
+. Select the VM from the VMFS datastore
+. Right-click on the VM and go to *Edit settings*
+. In the edit settings window, select *Add new device* > *NVMe Controller*
 
 .Steps
 
 . In the VMware vSphere client GUI, click *Menu* in the toolbar, and then select *Hosts and clusters* from the drop-down list.
-. In the left navigation pane, right-click a VM, then select *NetApp SnapCenter* in the drop-down list, and then select *Attach virtual disk* in the secondary drop-down list.
+. In the left navigation pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* > *Attach virtual disk(s)*.
 
 . On the *Attach Virtual Disk* window, in the *Backup* section, select a backup.
 +
@@ -48,7 +58,7 @@ You can filter the backup list by selecting the filter icon and choosing a date 
 +
 You can change the filter to display primary and secondary locations.
 
-. By default, the selected virtual disks are attached to the parent VM. To attach the selected virtual disks to an alternate VM in the same ESXi host, click *Click here to attach to alternate VM* and specify the alternate VM.
+. By default, the selected virtual disks are attached to the parent VM. To attach the selected virtual disks to an alternate VM in the same ESXi host, select *Click here to attach to alternate VM* and specify the alternate VM.
 . Click *Attach*.
 . Optional: Monitor the operation progress in the *Recent Tasks* section.
 +
@@ -56,7 +66,7 @@ Refresh the screen to display updated information.
 
 . Verify that the virtual disk is attached by performing the following:
 .. Click *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
-.. In the left Navigator pane, right-click a VM, then select *Edit settings* in the drop-down list.
+.. In the left navigator pane, right-click a VM, then select *Edit settings* in the drop-down list.
 .. In the *Edit Settings* window,  expand the list for each hard disk to see the list of disk files.
 +
 image:scpivs44_image23.png["Edit settings window"]

@@ -17,19 +17,19 @@ After deploying the SnapCenter Plug-in for VMware vSphere, you must complete the
 
 == Required operations after deployment
 
-If you are a new SnapCenter user, you must add storage VMs to SnapCenter before you can perform any data protection operations. When adding storage VMs, specify the management LIF. You can also add a cluster and specify the cluster management LIF. For information about adding storage, see link:scpivs44_add_storage_01.html[Add storage^].
+If you are a new SnapCenter user, you must add storage VMs to SnapCenter before you can perform any data protection operations. When adding storage VMs, specify the management LIF. You can also add a cluster and specify the cluster management LIF. For information about adding storage, refer to link:scpivs44_add_storage_01.html[Add storage^].
 
 == Deployment issues you might encounter
 
 * After deploying the virtual appliance, the *Backup Jobs* tab on the Dashboard might not load in the following scenarios:
 ** You are running IPv4 and have two IP addresses for the SnapCenter VMware vSphere host. As a result, the job request is sent to an IP address that is not recognized by the SnapCenter Server. To prevent this issue, add the IP address that you want to use, as follows:
 
-.. Navigate to the location where the SnapCenter VMware plug-in is deployed: `/opt/netapp/scvservice/standalone_aegis/etc`
+.. Navigate to the location where the SnapCenter Plug-in for VMware vSphere is deployed: `/opt/netapp/scvservice/standalone_aegis/etc`
 .. Open the file network- interface.properties.
 .. In the `network.interface=10.10.10.10` field, add the IP address that you want to use.
 
 ** You have two NICs.
-* After deploying the SnapCenter VMware plug-in, the MOB entry in vCenter for SnapCenter Plug-in for VMware vSphere might still show the old version number. This can occur when other jobs are running in the vCenter. vCenter will eventually update the entry.
+* After deploying the SnapCenter Plug-in for VMware vSphere, the MOB entry in vCenter for SnapCenter Plug-in for VMware vSphere might still show the old version number. This can occur when other jobs are running in the vCenter. vCenter will eventually update the entry.
 
 To correct either of these issues, do the following:
 
@@ -41,11 +41,11 @@ If the problem persists, then restart the VMware vSphere client service
 
 == Manage authentication errors
 
-If you do not use the Admin credentials, you might receive an authentication error after deploying SnapCenter Plug-in for VMware vSphere or after migrating. If you encounter an authentication error, you must restart the service.
+If you do not use the admin credentials, you might receive an authentication error after deploying SnapCenter Plug-in for VMware vSphere or after migrating. If you encounter an authentication error, you must restart the service.
 
 .Steps
 
-. Log on to the SnapCenter VMware plug-in management GUI using the format `\https://<appliance-IP-address>:8080`. Use the admin username, password, and the MFA token details to login. MFA token can be generated from the maintenance console.
+. Log on to the SnapCenter Plug-in for VMware vSphere management GUI using the format `\https://<appliance-IP-address>:8080`. Use the admin username, password, and the MFA token details to login. MFA token can be generated from the maintenance console.
 . Restart the service.
 
 == Register SnapCenter Plug-in for VMware vSphere with SnapCenter Server
@@ -61,7 +61,7 @@ If you want to perform application-over-VMDK workflows in SnapCenter (applicatio
 
 * You register SnapCenter Plug-in for VMware vSphere with SnapCenter Server by using the SnapCenter GUI to add a “vsphere” type host.
 +
-Port 8144 is predefined for communication within the SnapCenter VMware plug-in.
+Port 8144 is predefined for communication within the SnapCenter Plug-in for VMware vSphere.
 +
 You can register multiple instances of SnapCenter Plug-in for VMware vSphere on the same SnapCenter Server to support application-based data protection operations on VMs. You cannot register the same SnapCenter Plug-in for VMware vSphere on multiple SnapCenter Servers.
 
@@ -82,7 +82,7 @@ You can register multiple instances of SnapCenter Plug-in for VMware vSphere on 
 |Host name
 |Verify the IP address of the virtual appliance.
 |Credential
-|Enter the username and password for the SnapCenter VMware plug-in that was provided during the deployment.
+|Enter the username and password for the SnapCenter Plug-in for VMware vSphere that was provided during the deployment.
 |===
 
 . Click *Submit*.

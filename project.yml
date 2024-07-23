@@ -1,14 +1,16 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere 5.0
+  name: SnapCenter Plug-in for VMware vSphere 6.0
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: true
   versions:
-    - version-number: "5.0"
+    - version-number: "6.0"
       url: /sc-plugin-vmware-vsphere 
+    - version-number: "5.0"
+      url: /sc-plugin-vmware-vsphere-50 
     - version-number: "4.9"
       url: /sc-plugin-vmware-vsphere-49
     - version-number: "4.8"
@@ -22,7 +24,7 @@ settings:
 
 sidebar:
   entries:
-    - title: SnapCenter Plug-in for VMware vSphere 5.0 docs
+    - title: SnapCenter Plug-in for VMware vSphere 6.0
       url: /index.html
     - title: Release notes
       url: /scpivs44_release_notes.html
@@ -90,7 +92,7 @@ sidebar:
           url: /scpivs44_download_job_logs.html
         - title: Access reports
           url: /scpivs44_access_reports.html
-        - title: Generate a support bundle from the SnapCenter Plug-in for VMware vSphere GUI
+        - title: Generate a support bundle from SnapCenter Plug-in for VMware vSphere GUI
           url: /scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html
         - title: Generate a support bundle from the maintenance console
           url: /scpivs44_generate_a_support_bundle_from_the_maintenance_console.html
@@ -138,7 +140,7 @@ sidebar:
           url: /scpivs44_mount_a_backup.html
         - title: Unmount a backup
           url: /scpivs44_unmount_a_backup.html
-    - title: Restore from backups
+    - title: Restore backups
       entries:
         - title: Overview
           url: /scpivs44_restore_from_backups_overview.html
@@ -182,7 +184,7 @@ sidebar:
           url: /scpivs44_restart_the_vmware_vsphere_web_client_service.html
         - title: Access the maintenance console
           url: /scpivs44_access_the_maintenance_console.html
-        - title: Modify the SnapCenter VMware Plug-in password from the maintenance console
+        - title: Modify the SnapCenter Plug-in for VMware vSphere password from the maintenance console
           url: /scpivs44_modify_plugin_password.html
         - title: Create and import certificates
           url: /scpivs44_create_and_import_certificates.html

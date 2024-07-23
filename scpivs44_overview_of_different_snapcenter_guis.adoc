@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_overview_of_different_snapcenter_guis.html
 keywords:
-summary: 'The SnapCenter Plug-in for VMware vSphere is a standalone plug-in that is different from other SnapCenter plug-ins. You must use the VMware vSphere client GUI in vCenter for all backup and restore operations for VMs, VMDKs, and datastores.'
+summary: 'SnapCenter Plug-in for VMware vSphere is a standalone plug-in that is different from other SnapCenter plug-ins. You must use the VMware vSphere client GUI in vCenter for all backup and restore operations for VMs, VMDKs, and datastores.'
 ---
 
 = Overview of the different SnapCenter GUIs
@@ -21,11 +21,11 @@ summary: 'The SnapCenter Plug-in for VMware vSphere is a standalone plug-in that
 [.lead]
 In your SnapCenter environment, you must use the appropriate GUI to perform data protection and management operations.
 
-The SnapCenter Plug-in for VMware vSphere is a standalone plug-in that is different from other SnapCenter plug-ins. You must use the VMware vSphere client GUI in vCenter for all backup and restore operations for VMs, VMDKs, and datastores. You also use the web client GUI Dashboard to monitor the list of protected and unprotected VMs. For all other SnapCenter plug-in (application-based plug-ins) operations like backup and restore and job monitoring, you use the SnapCenter GUI. 
+SnapCenter Plug-in for VMware vSphere is a standalone plug-in that is different from other SnapCenter plug-ins. You must use the VMware vSphere client GUI in vCenter for all backup and restore operations for VMs, VMDKs, and datastores. You also use the web client GUI Dashboard to monitor the list of protected and unprotected VMs. For all other SnapCenter plug-in (application-based plug-ins) operations like backup and restore and job monitoring, you use the SnapCenter GUI. 
 
 To protect VMs and datastores, you use the VMware vSphere client interface. The web client GUI integrates with NetApp Snapshot technology on the storage system. This enables you to back up VMs and datastores in seconds and restore VMs without taking an ESXi host offline.
 
-There is also a management GUI to perform administrative operations on the SnapCenter VMware plug-in.
+There is also a management GUI to perform administrative operations on the SnapCenter Plug-in for VMware vSphere.
 
 The following table shows the operations that the SnapCenter GUI performs.
 

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html
 keywords:
-summary: 'You can quickly add a single VM or datastore to any existing resource group managed by the SnapCenter Plug-in for VMware vSphere.'
+summary: 'You can quickly add a single VM or datastore to any existing resource group managed by SnapCenter Plug-in for VMware vSphere.'
 ---
 
 = Add a single VM or datastore to a resource group
@@ -19,7 +19,7 @@ summary: 'You can quickly add a single VM or datastore to any existing resource 
 //
 
 [.lead]
-You can quickly add a single VM or datastore to any existing resource group managed by the SnapCenter Plug-in for VMware vSphere.
+You can quickly add a single VM or datastore to any existing resource group managed by SnapCenter Plug-in for VMware vSphere.
 
 .About this task
 
@@ -27,8 +27,8 @@ You can add SAN and NAS datastores but not VSAN or VVOL datastores.
 
 .Steps
 
-. In the VMware vSphere client GUI, click *Menu* in the toolbar, and navigate to the VM or datastore that you want to add.
-. In the left Navigator pane, right-click on the VM or datastore, select *NetApp SnapCenter* from the drop-down list, and then select *Add To Resource Group* from the secondary drop-down list.
+. In the vSphere client GUI, click *Menu* in the toolbar, and navigate to the VM or datastore that you want to add.
+. In the left navigator pane, right-click on the VM or datastore, select *SnapCenter Plug-in for VMware vSphere* > *Add To Resource Group* from the secondary drop-down list.
 +
 The system first checks that SnapCenter manages and is compatible with the storage system on which the selected VM is located and then displays the *Add to Resource Group* page. If the message `SnapCenter Compatibility Error` is displayed, then the selected VM is not compatible with SnapCenter and you must first add the appropriate storage VM to SnapCenter.
 
@@ -36,4 +36,4 @@ The system first checks that SnapCenter manages and is compatible with the stora
 +
 When you click *OK*, the system first checks that SnapCenter manages and is compatible with the storage on which the selected VMs or datastores are located.
 +
-If the message `Selected <resource-name> is not SnapCenter compatible` is displayed, then a selected VM or datastore is not compatible with SnapCenter.  See link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures[Manage compatibility check failures] for more information.
+If the message `Selected <resource-name> is not SnapCenter compatible` is displayed, then a selected VM or datastore is not compatible with SnapCenter. Refer to link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures[Manage compatibility check failures] for more information.

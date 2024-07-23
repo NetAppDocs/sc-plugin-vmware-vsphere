@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_disable_and_enable_plugin.html
 keywords:
-summary: 'If you no longer need the SnapCenter data protection features, you must change the configuration of the SnapCenter VMware plug-in. For example, if you deployed the plug-in in a test environment, you might need to disable the SnapCenter features in that environment and enable them in a production environment.'
+summary: 'If you no longer need the SnapCenter data protection features, you must change the configuration of the SnapCenter Plug-in for VMware vSphere. For example, if you deployed the plug-in in a test environment, you might need to disable the SnapCenter features in that environment and enable them in a production environment.'
 ---
 
 = Disable and enable SnapCenter Plug-in for VMware vSphere
@@ -13,7 +13,7 @@ summary: 'If you no longer need the SnapCenter data protection features, you mus
 :imagesdir: ./media/
 
 [.lead]
-If you no longer need the SnapCenter data protection features, you must change the configuration of the SnapCenter VMware plug-in. For example, if you deployed the plug-in in a test environment, you might need to disable the SnapCenter features in that environment and enable them in a production environment.
+If you no longer need the SnapCenter data protection features, you must change the configuration of the SnapCenter Plug-in for VMware vSphere. For example, if you deployed the plug-in in a test environment, you might need to disable the SnapCenter features in that environment and enable them in a production environment.
 
 .Before you begin
 
@@ -22,27 +22,27 @@ If you no longer need the SnapCenter data protection features, you must change t
 
 .About this task
 
-When you disable the SnapCenter VMware plug-in, all resource groups are suspended and the plug-in is unregistered as an extension in vCenter.
+When you disable the SnapCenter Plug-in for VMware vSphere, all resource groups are suspended and the plug-in is unregistered as an extension in vCenter.
 
-When you enable the SnapCenter VMware plug-in, the plug-in is registered as an extension in vCenter, all resource groups are in production mode, and all schedules are enabled.
+When you enable the SnapCenter Plug-in for VMware vSphere, the plug-in is registered as an extension in vCenter, all resource groups are in production mode, and all schedules are enabled.
 
 .Steps
 
-. Optional: Back up the SnapCenter VMware plug-in MySQL repository in case you want to restore it to a new virtual appliance.
+. Optional: Back up the SnapCenter Plug-in for VMware vSphere MySQL repository in case you want to restore it to a new virtual appliance.
 +
 link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html[Back up the SnapCenter Plug-in for VMware vSphere MySQL database].
-. Log in to the SnapCenter VMware plug-in management GUI using the format `\https://<OVA-IP-address>:8080`. Login with the admin username and password set at the time of deployment and the MFA token generated using the maintenance console.
+. Log in to the SnapCenter Plug-in for VMware vSphere management GUI using the format `\https://<OVA-IP-address>:8080`. Login with the admin username and password set at the time of deployment and the MFA token generated using the maintenance console.
 +
-The IP of the SnapCenter VMware plug-in is displayed when you deploy the plug-in.
+The IP address of the SnapCenter Plug-in for VMware vSphere is displayed when you deploy the plug-in.
 
 . Click *Configuration* in the left navigation pane, and then unselect the Service option in the *Plug-in Details* section to disable the plug-in.
 . Confirm your choice.
 
-** If you only used the SnapCenter VMware plug-in to perform VM consistent backups
+** If you only used the SnapCenter Plug-in for VMware vSphere to perform VM consistent backups
 +
 The plug-in is disabled, and no further action is required.
 
-** If you used the SnapCenter VMware plug-in to perform application-consistent backups
+** If you used the SnapCenter Plug-in for VMware vSphere to perform application-consistent backups
 +
 The plug-in is disabled and further cleanup is required.
 
@@ -50,6 +50,6 @@ The plug-in is disabled and further cleanup is required.
 
 .. Power down the VM.
 
-.. In the left navigator screen, right-click the instance of the SnapCenter VMware plug-in (the name of the `.ova` file that was used when the virtual appliance was deployed) and select *Delete from Disk*.
+.. In the left navigator screen, right-click the instance of the SnapCenter Plug-in for VMware vSphere (the name of the `.ova` file that was used when the virtual appliance was deployed) and select *Delete from Disk*.
 
 .. Log in to SnapCenter and remove the vSphere host.

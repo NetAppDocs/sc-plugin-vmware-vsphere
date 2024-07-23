@@ -30,8 +30,8 @@ The default value for retaining job logs is 30 days; the default value for retai
 
 .Steps
 
-. In the left Navigator pane of the vSphere client, click *Dashboard*, select a vCenter Server, and then click the *Job Monitor* tab in the Dashboard pane.
-
+. From the vCenter client shortcut page, select SnapCenter Plug-in for VMware vSphere (SCV). 
+. In the left navigation pane of SCV,  select *Dashboard* > *Job Monitor*.
 . Select the download icon in the Job Monitor title bar.
 +
 You might need to scroll to the right to see the icon.
@@ -40,6 +40,6 @@ You can also double-click a job to access the Job Details window and then click 
 
 .Result
 
-Job logs are located on the Linux VM host where the SnapCenter VMware plug-in is deployed. The default job log location is `/var/log/netapp`.
+Job logs are located on the Linux VM host where the SnapCenter Plug-in for VMware vSphere is deployed. The default job log location is `/var/log/netapp`.
 
 If you tried to download job logs but the log file named in the error message has been deleted, you might encounter the following error: `HTTP ERROR 500 Problem accessing /export-scv-logs`. To correct this error, check the file access status and permissions for the file named in the error message and correct the access problem.

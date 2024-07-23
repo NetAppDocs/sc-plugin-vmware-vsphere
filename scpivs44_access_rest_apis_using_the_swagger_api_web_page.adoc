@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_access_rest_apis_using_the_swagger_api_web_page.html
 keywords:
-summary: 'REST APIs are exposed through the Swagger web page. You can access the Swagger web page to display the SnapCenter Server or SnapCenter Plug-in for VMware vSphere REST APIs, as well as to manually issue an API call. Use the SnapCenter Plug-in for VMware vSphere REST APIs to perform protection operations on VMs and datastores.'
+summary: 'REST APIs are exposed through the Swagger web page. You can access the Swagger web page to display the SnapCenter Server or SnapCenter Plug-in for VMware vSphere REST APIs, as well as to manually issue an API call. Use SnapCenter Plug-in for VMware vSphere REST APIs to perform protection operations on VMs and datastores.'
 ---
 
 = Access REST APIs using the Swagger API web page
@@ -14,13 +14,13 @@ summary: 'REST APIs are exposed through the Swagger web page. You can access the
 
 
 [.lead]
-REST APIs are exposed through the Swagger web page. You can access the Swagger web page to display either the SnapCenter Server or the SnapCenter Plug-in for VMware vSphere REST APIs, as well as to manually issue an API call. Use the SnapCenter Plug-in for VMware vSphere REST APIs to perform operations on VMs and datastores.
+REST APIs are exposed through the Swagger web page. You can access the Swagger web page to display either the SnapCenter Server or the SnapCenter Plug-in for VMware vSphere REST APIs, as well as to manually issue an API call. Use SnapCenter Plug-in for VMware vSphere REST APIs to perform operations on VMs and datastores.
 
 The plug-in has different Swagger web pages from the SnapCenter Server Swagger web pages.
 
 .Before you begin
 
-For SnapCenter Plug-in for VMware vSphere REST APIs, you must know either the IP address or the host name of the SnapCenter VMware plug-in.
+For SnapCenter Plug-in for VMware vSphere REST APIs, you must know either the IP address or the host name of SnapCenter Plug-in for VMware vSphere.
 
 [NOTE]
 The plug-in only supports REST APIs for the purpose of integrating with third party applications and does not support PowerShell cmdlets or a CLI.
@@ -37,9 +37,11 @@ Do not use the following characters in the REST API URL: +, . , %, and &.
 +
 .Example
 +
-Access the SnapCenter VMware plug-in REST APIs:
+Access SnapCenter Plug-in for VMware vSphere REST APIs:
 +
-`\https://<SCV_IP>:8144/api/swagger-ui/index.html`
+`\https://<SCV_IP>:8144/api/swagger-ui/index.html` 
++
+
 `\https://OVAhost:8144/api/swagger-ui/index.html` 
 +
 

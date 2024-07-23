@@ -21,4 +21,4 @@ summary: 'The quick start documentation provides a condensed set of instructions
 [.lead]
 The quick start documentation provides a condensed set of instructions for deploying the SnapCenter Plug-in for VMware vSphere virtual appliance and enabling the SnapCenter Plug-in for VMware vSphere. These instructions are intended for customers who do not have SnapCenter already installed and who want to protect only VMs and datastores.
 
-Before you begin, see link:scpivs44_deployment_planning_and_requirements.html[Deployment planning and requirements].
+Before you begin, refer to link:scpivs44_deployment_planning_and_requirements.html[Deployment planning and requirements].

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_unregister_plugin_from_vcenter.html
 keywords:
-summary: 'If you stop the SnapCenter VMware plug-in service in a vCenter that is in Linked Mode, resource groups are not available in all the linked vCenters, even when the SnapCenter VMware plug-in service is running in the other linked vCenters. You must unregister the SnapCenter VMware plug-in extensions manually.'
+summary: 'If you stop the SnapCenter Plug-in for VMware vSphere service in a vCenter that is in Linked Mode, resource groups are not available in all the linked vCenters, even when the SnapCenter Plug-in for VMware vSphere service is running in the other linked vCenters. You must unregister the SnapCenter Plug-in for VMware vSphere extensions manually.'
 ---
 
 = Unregister SnapCenter Plug-in for VMware vSphere from vCenter
@@ -15,12 +15,12 @@ summary: 'If you stop the SnapCenter VMware plug-in service in a vCenter that is
 // BURT 1378132 observation 58, March 2021 Ronya
 
 [.lead]
-If you stop the SnapCenter VMware plug-in service in a vCenter that is in Linked Mode, resource groups are not available in all the linked vCenters, even when the SnapCenter VMware plug-in service is running in the other linked vCenters.
+If you stop the SnapCenter Plug-in for VMware vSphere service in a vCenter that is in Linked Mode, resource groups are not available in all the linked vCenters, even when the SnapCenter Plug-in for VMware vSphere service is running in the other linked vCenters.
 
-You must unregister the SnapCenter VMware plug-in extensions manually.
+You must unregister the SnapCenter Plug-in for VMware vSphere extensions manually.
 
 .Steps
 
-. On the linked vCenter that has the SnapCenter VMware plug-in service stopped, navigate to the Managed Object Reference (MOB) manager.
+. On the linked vCenter that has the SnapCenter Plug-in for VMware vSphere service stopped, navigate to the Managed Object Reference (MOB) manager.
 . In the Properties option, select *content* in the Value column, then in the next screen select *ExtensionManager* in the Value column to display a list of the registered extensions.
 . Unregister the extensions `com.netapp.scv.client` and `com.netapp.aegis`.

@@ -20,7 +20,7 @@ summary:
 [.lead]
 Follow the instructions given below to create backup policies
 
-. In the left Navigator pane of the SCV plug-in, click *Policies*, and then select *New Policy*.
+. In the left navigator pane of the SCV plug-in, click *Policies*, and then select *New Policy*.
 . On the *New Backup Policy* page, enter the policy configuration information, and then click *Add*.
 
 //Updated for BURT 1378132 observation 3, March 2021 Madhulika

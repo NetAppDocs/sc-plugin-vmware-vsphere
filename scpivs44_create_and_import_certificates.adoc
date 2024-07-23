@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_create_and_import_certificates.html
 keywords:
-summary: 'The SnapCenter VMware plug-in employs SSL encryption for secure communication with the client browser. While this does enable encrypted data across the wire, creating a new self-signed certificate, or using your own Certificate Authority (CA) infrastructure or a third party CA, ensures that the certificate is unique for your environment.'
+summary: 'SnapCenter Plug-in for VMware vSphere employs SSL encryption for secure communication with the client browser. While this does enable encrypted data across the wire, creating a new self-signed certificate, or using your own Certificate Authority (CA) infrastructure or a third party CA, ensures that the certificate is unique for your environment.'
 ---
 
 = Create and import certificates
@@ -13,6 +13,6 @@ summary: 'The SnapCenter VMware plug-in employs SSL encryption for secure commun
 :imagesdir: ./media/
 
 [.lead]
-The SnapCenter VMware plug-in employs SSL encryption for secure communication with the client browser. While this does enable encrypted data across the wire, creating a new self-signed certificate, or using your own Certificate Authority (CA) infrastructure or a third party CA, ensures that the certificate is unique for your environment.
+SnapCenter Plug-in for VMware vSphere employs SSL encryption for secure communication with the client browser. While this does enable encrypted data across the wire, creating a new self-signed certificate, or using your own Certificate Authority (CA) infrastructure or a third party CA, ensures that the certificate is unique for your environment.
 
-See the https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere_(SCV)[KB article: How to create and/or import an SSL certificate to SnapCenter Plug-in for VMware vSphere].
+Refer to https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere_(SCV)[KB article: How to create and/or import an SSL certificate to SnapCenter Plug-in for VMware vSphere] for more information.
