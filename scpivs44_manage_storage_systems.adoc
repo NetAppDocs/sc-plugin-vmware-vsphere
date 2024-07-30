@@ -59,4 +59,4 @@ If a resource group has backups that reside on a storage VM that you remove, the
 . In the *Remove Storage System* confirmation box, check the box for *Delete storage system(s)* and then click *Yes* to confirm.
 *Note:* Only ESXi host 7.0U1 and later releases are supported.
 +
-link:scpivs44_manage_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere client service].
+link:scpivs44_restart_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere client service].
