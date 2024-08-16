@@ -43,7 +43,7 @@ To protect a VMFS datastore on a SnapMirror active sync deployment, as SnapCente
 ** Add the volume associated with the VMFS datastore to the consistency group and create a data protection relationship using _AutomatedFailOver_ or _AutomatedFailOverDuplex_ protection policy between two ONTAP storage systems. _AutomatedFailOverDuplex_ policy is supported from ONTAP 9.15.1 release onwards.
 //updated for SCV6.0 
 [NOTE]
-SnapMirror active sync does not support consistency group for 3rd site.
+In fan-out configuration, consistency group is not supported for tertiary site.
 // updated for VMDP-4673 - jani
 
 .About this task
