@@ -39,7 +39,7 @@ For example, if you want to perform backups from six different instances of the 
 +
 For more information, refer to https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP tools for VMware vSphere^]
 +
-For the latest information about supported versions of ONTAP tools, refer to https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions of ONTAP tools, refer to https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 * SnapCenter Plug-in for VMware vSphere provides limited support of shared PCI or PCIe devices (for example, NVIDIA Grid GPU) due to a limitation of the virtual machines in supporting Storage vMotion. For more information, see the vendor's document Deployment Guide for VMware.
 ** What is supported:
@@ -106,10 +106,10 @@ The SnapCenter Server uses this to communicate with the SnapCenter Plug-in for V
 |SnapCenter Plug-in for VMware vSphere uses this to improve performance for restore operations. It also improves performance in NFS environments.
 // Vrishali review comments  April2021 Ronya
 |ONTAP tools for VMware
-|SnapCenter Plug-in for VMware vSphere uses this to manage vVol datastores (VMware virtual volumes). For supported versions, refer to https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+|SnapCenter Plug-in for VMware vSphere uses this to manage vVol datastores (VMware virtual volumes). For supported versions, refer to https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 |===
 
-For the latest information about supported versions, refer to https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For the latest information about supported versions, refer to https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 ==== Requirements for NVMe over TCP protocol
 
