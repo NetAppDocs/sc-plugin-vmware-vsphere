@@ -51,7 +51,9 @@ For all resource groups:
 
 [IMPORTANT]
 If you are using VMware vSphere Cluster Service (vCLS), do not include VMs managed by vCLS in SnapCenter Plug-in for VMware vSphere resource groups.
+// Should i add this as part of github issue? For more information, refer to https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/SCV_unable_to_backup_vCLS_VMs_after_updating_vCenter_to_7.0.x[SCV unable to backup vCLS VMs after updating vCenter to 7.0.x]
 // Burt 1413651 24Nov2021 Ronya
+// update for https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/76
 
 [TIP]
 SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large LUNs and files up to 128 TB with volumes up to 300 TB. If you are protecting large LUNs, use only thick provisioned LUNs to avoid latency.
@@ -243,7 +245,7 @@ Reasons for incompatibility might be:
 +
 SnapCenter version 4.x supports ONTAP 8.3.1 and later.
 +
-SnapCenter Plug-in for VMware vSphere does not perform compatibility checks for all ONTAP versions; only for ONTAP versions 8.2.1 and earlier. Therefore, always refer to https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^] for the latest information about SnapCenter support.
+SnapCenter Plug-in for VMware vSphere does not perform compatibility checks for all ONTAP versions; only for ONTAP versions 8.2.1 and earlier. Therefore, always refer to https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^] for the latest information about SnapCenter support.
 
 * A shared PCI device is attached to a VM.
 * The preferred IP address is not configured in SnapCenter.

@@ -34,7 +34,7 @@ For information about how administrators assign resources to users, refer to htt
 //also known as SnapMirror active sync removed in 5.0 but was added back in SCV6.0
 +
 [NOTE]
-SnapMirror active sync is supported only for VMFS Datastores.
+SnapMirror active sync is supported only for VMFS Datastores. 
 +
 To protect a VMFS datastore on a SnapMirror active sync deployment, as SnapCenter administrator you need to:
 
@@ -42,6 +42,9 @@ To protect a VMFS datastore on a SnapMirror active sync deployment, as SnapCente
 //updated for SCV6.0
 ** Add the volume associated with the VMFS datastore to the consistency group and create a data protection relationship using _AutomatedFailOver_ or _AutomatedFailOverDuplex_ protection policy between two ONTAP storage systems. _AutomatedFailOverDuplex_ policy is supported from ONTAP 9.15.1 release onwards.
 //updated for SCV6.0 
+[NOTE]
+In fan-out configuration, consistency group is not supported for tertiary site.
+// updated for VMDP-4673 - jani
 
 .About this task
 
