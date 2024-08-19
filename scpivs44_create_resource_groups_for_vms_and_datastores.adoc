@@ -50,7 +50,8 @@ All vVols in a single, specified vVol folder. If the folder contains a mix of vV
 For all resource groups:
 
 [IMPORTANT]
-If you are using VMware vSphere Cluster Service (vCLS), do not include VMs managed by vCLS in SnapCenter Plug-in for VMware vSphere resource groups. For more information, refer to https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/SCV_unable_to_backup_vCLS_VMs_after_updating_vCenter_to_7.0.x[SCV unable to backup vCLS VMs after updating vCenter to 7.0.x]
+If you are using VMware vSphere Cluster Service (vCLS), do not include VMs managed by vCLS in SnapCenter Plug-in for VMware vSphere resource groups.
+// Should i add this as part of github issue? For more information, refer to https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/SCV_unable_to_backup_vCLS_VMs_after_updating_vCenter_to_7.0.x[SCV unable to backup vCLS VMs after updating vCenter to 7.0.x]
 // Burt 1413651 24Nov2021 Ronya
 // update for https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/76
 
