@@ -67,7 +67,7 @@ Do not add VMs that are in an inaccessible state. Although it is possible to cre
 
 ONTAP tools for VMware must be deployed before you create a resource group that contains vVol VMs.
 
-For more information, refer to https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP tools for VMware vSphere 9^] or https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/index.html[ONTAP tools for VMware vSphere 10.2^] sites based on the deployment. Refer to https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] for latest information about the supported versions on ONTAP tools.
+For more information, refer to the ONTAP tools for VMware vSphere documentation. Additionally, refer to https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] for latest information about the supported versions on ONTAP tools.
 
 .About this task
 
