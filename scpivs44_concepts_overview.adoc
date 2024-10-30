@@ -55,6 +55,8 @@ For more information, refer to the ONTAP tools for VMware vSphere documentation.
 Although the virtual appliance must be installed as a Linux VM, the SnapCenter Plug-in for VMware vSphere supports both Windows-based and Linux-based vCenters. SnapCenter natively uses this plug-in without user intervention to communicate with your vCenter to support SnapCenter application-based plug-ins that perform data protection operations on Windows and Linux virtualized applications.
 
 In addition to these major features, the SnapCenter Plug-in for VMware vSphere also provides support for iSCSI, Fiber Channel, FCoE, NFS 3.0/4.1, VMFS 5.0/6.0, and NVMe over TCP.
+[NOTE]
+iSCSI protocol for vVols datastore is not supported in ONTAP tools for VMware vSphere 10.x versions.
 
 For the latest information about supported versions, refer to https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] (IMT).
 // link to be changed
