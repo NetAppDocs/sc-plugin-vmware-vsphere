@@ -133,6 +133,9 @@ vserver peer
 vserver show
 |===
 
+You can ignore the _cluster identity show_ cluster level command when creating a role to associate with the data vServer.
+
+// updated for https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/75 - Deena
 [NOTE]
 You can ignore the warning messages about the unsupported vServer commands.
 
