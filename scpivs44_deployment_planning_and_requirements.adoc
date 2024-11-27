@@ -109,9 +109,9 @@ The SnapCenter Server uses this to communicate with the SnapCenter Plug-in for V
 
 For the latest information about supported versions, refer to https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
-==== Requirements for NVMe over TCP protocol
+==== Requirements for NVMe over TCP and NVMe over FC protocols
 
-The minimum software requirements for NVMe over TCP protocol support are:
+The minimum software requirements for NVMe over TCP and NVMe over FC protocol support are:
 
 * vCenter vSphere 7.0U3
 * ESXi 7.0U3
