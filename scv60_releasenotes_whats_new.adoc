@@ -20,7 +20,9 @@ SnapCenter Plug-in for VMware vSphere 6.0 release enables support for key ONTAP 
 ====
 For the latest information about supported versions, refer to NetApp Interoperability Matrix Tool (http://mysupport.netapp.com/matrix[IMT^]).
 ====
+
 == SnapCenter Plug-in for VMware vSphere 6.0.1
+
 [cols="30%,70%",options="header"]
 |===
 | Update | Description
@@ -35,6 +37,7 @@ ONTAP tools for VMware vSphere 10.x helps to configure VMware vVol virtual machi
 |===
 
 == SnapCenter Plug-in for VMware vSphere 6.0
+
 [cols="30%,70%",options="header"]
 |===
 | Update | Description
