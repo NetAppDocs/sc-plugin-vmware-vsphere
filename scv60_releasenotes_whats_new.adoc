@@ -48,6 +48,7 @@ NVMe over TCP does not require any special hardware to deploy. Like iSCSI, NVMe/
 VMFS datastores with NVMe over TCP protocol support all operations that iSCSI based VMFS datastores support, like the backup, restore, mount, attach, and detach operations.
 
 The minimum software requirements for NVMe over TCP protocol support are:
+
 * vCenter vSphere 7.0U3
 * ESXi host 7.0U3
 * ONTAP 9.10.1
