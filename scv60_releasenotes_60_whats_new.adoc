@@ -18,7 +18,7 @@ summary: "Learn about the new capabilities available in SnapCenter Plug-in for V
 |===
 | Update | Description
 a|
-xref:../scpivs44_concepts_overview.html[NVMe over TCP protocol support]
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html[NVMe over TCP protocol support]
 a|
 SnapCenter Plug-in for VMware vSphere 6.0 supports NVMe over TCP protocol for VMFS datastores.
 
@@ -32,13 +32,13 @@ The minimum software requirements for NVMe over TCP protocol support are:
 * ESXi host 7.0U3
 * ONTAP 9.10.1
 a|
-xref:../scpivs44_create_backup_policies_for_vms_and_datastores.html[SnapMirror active sync support]
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies_for_vms_and_datastores.html[SnapMirror active sync support]
 a|
 SnapCenter Plug-in for VMware vSphere enables you to leverage the capabilities of SnapMirror active sync like zero Recovery Point Objective (RPO) and Recovery Time Objective (RTO), and Transparent Application Failover. Business continuity for SAN applications enable you to backup and recover applications and virtual machines on SnapMirror active sync using SnapCenter Plug-in for VMware vSphere.
 
 SnapMirror active sync is supported only for VMFS datastores.
 a|
-xref:../scpivs44_deployment_planning_and_requirements.html#connection-and-port-requirements[SnapCenter Plug-in for VMware vSphere with vCenter Server]
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deployment_planning_and_requirements.html#connection-and-port-requirements[SnapCenter Plug-in for VMware vSphere with vCenter Server]
 a|
 The registration of SnapCenter Plug-in for VMware vSphere with vCenter Server using 8144 port is removed. It is recommended that you use APIs (Swagger-UI) for vCenter registration and unregistration actions.
 |===
