@@ -16,6 +16,9 @@ summary: 'Release notes provide important information about this release of Snap
 
 Learn about the new and enhanced features available in SnapCenter Plug-in for VMware vSphere 6.0.1 and 6.0.
 
-For a complete list of new features and enhancements, see xref:scv60_releasenotes_whats_new.adoc[What's new in SnapCenter Plug-in for VMware vSphere 6.0.1 and 6.0]. 
-
 For details about known issues, limitations, and fixed issues, see https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664[SnapCenter Plug-in for VMware vSphere 6.0 and 6.0.1 Release Notes^]. You must sign in with your NetApp account or create an account to access the Release Notes.
+
+[NOTE]
+====
+For the latest information about supported versions, refer to the NetApp Interoperability Matrix Tool (http://mysupport.netapp.com/matrix[IMT^]).
+====
