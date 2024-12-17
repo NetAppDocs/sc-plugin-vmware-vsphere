@@ -16,7 +16,7 @@ summary: "Learn about the new capabilities available in SnapCenter Plug-in for V
 [.lead]
 The version of SnapCenter Plug-in for VMware vSphere (SCV) that you can upgrade to depends on the version that you're currently running. 
 
-[Note:]
+[NOTE]
 ====
 Upgrade to SnapCenter Plug-in for VMware vSphere (SCV) 4.8 and above is supported only on VMware vCenter server 7 update 1 and later versions. For VMware vCenter server prior to version 7 update 1, you should continue to use SCV 4.7. 
 ====
