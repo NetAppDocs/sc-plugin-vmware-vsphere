@@ -14,7 +14,12 @@ summary: "Learn about the new capabilities available in SnapCenter Plug-in for V
 :imagesdir: ./media/
 
 [.lead]
-Upgrade to SnapCenter Plug-in for VMware vSphere (SCV) 4.8 and above is supported only on VMware vCenter server 7 update 1 and later versions. For VMware vCenter server prior to version 7 update 1, you should continue to use SCV 4.7. The upgrade is disruptive on unsupported versions of VMware vCenter servers.
+The version of SnapCenter Plug-in for VMware vSphere (SCV) that you can upgrade to depends on the version that you're currently running. 
+
+[Note:]
+====
+Upgrade to SnapCenter Plug-in for VMware vSphere (SCV) 4.8 and above is supported only on VMware vCenter server 7 update 1 and later versions. For VMware vCenter server prior to version 7 update 1, you should continue to use SCV 4.7. 
+====
 
 [cols="50%,50%",options="header"]
 |===
@@ -37,34 +42,34 @@ a|
 SCV 4.8 and SCV 4.9
 |===
 
-== For virtualized databases and file systems that are integrated with SnapCenter
+For virtualized databases and file systems that are integrated with SnapCenter, this is the upgrade path: 
 [cols="30%,30%,40%",options="header"]
 |===
-| If you are using | If your VMware plug-in is… | You can do the following…
+| If you are using | If your VMware plug-in is… | You can directly upgrade to…
 a|
 SnapCenter 6.0
 a|
 SCV 5.0
 a|
-Upgrade to SCV 6.0
+SCV 6.0
 a|
 SnapCenter 5.0
 a|
 SCV 4.9
 a|
-Upgrade to SCV 5.0
+SCV 5.0
 a|
 SnapCenter 4.9
 a|
 SCV 4.8
 a|
-Upgrade to SCV 4.9
+SCV 4.9
 a|
 SnapCenter 4.8
 a|
 SCV 4.7
 a|
-Upgrade to SCV 4.8
+SCV 4.8
 |===
 
 
