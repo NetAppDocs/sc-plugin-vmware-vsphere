@@ -5,17 +5,20 @@ keywords:
 summary: 'Release notes provide important information about this release of SnapCenter Plug-in for VMware vSphere, including licensing requirements, known issues, cautions, limitations, and any documentation updates or corrections.'
 ---
 
-= Release notes
+= SnapCenter Plug-in for VMware vSphere Release notes
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0
-//
 [.lead]
 
-Release notes provide important information about this release of SnapCenter Plug-in for VMware vSphere, including licensing requirements, known issues, cautions, limitations, and any documentation updates or corrections.
-For more information, refer to https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664[SnapCenter Plug-in for VMware vSphere 6.0 and 6.0.1 Release Notes^]
+Learn about the new and enhanced features available in SnapCenter Plug-in for VMware vSphere 6.0.1 and 6.0.
+
+For details about known issues, limitations, and fixed issues, see https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664[SnapCenter Plug-in for VMware vSphere 6.0 and 6.0.1 Release Notes^]. You must sign in with your NetApp account or create an account to access the Release Notes.
+
+[NOTE]
+====
+For the latest information about supported versions, refer to the NetApp Interoperability Matrix Tool (http://mysupport.netapp.com/matrix[IMT^]).
+====
