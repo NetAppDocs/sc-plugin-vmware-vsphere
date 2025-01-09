@@ -25,5 +25,5 @@ SnapCenter Plug-in for VMware vSphere 6.0.1 now supports NVMe over FC protocol f
 a|
 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html[Integration of ONTAP tools for VMware vSphere 10.x with SCV 6.0.1]
 a|
-ONTAP tools for VMware vSphere 10.x helps to configure VMware vSphere Virtual Volumes. With this Intergration, you can configure, back up, and restore virtual machines residing on NFS-based vVols datastores.
+ONTAP tools for VMware vSphere 10.x helps to configure VMware vSphere Virtual Volumes. With this integration, you can configure, back up, and restore virtual machines residing on NFS-based vVols datastores.
 |===

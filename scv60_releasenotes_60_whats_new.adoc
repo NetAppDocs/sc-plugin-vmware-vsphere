@@ -28,7 +28,7 @@ Like iSCSI, VMFS datastores with NVMe over TCP protocol can use any ethernet NIC
 a|
 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies_for_vms_and_datastores.html[Support for SnapMirror active sync]
 a|
-You can now use SnapCenter Plug-in for VMware vSphere to configure SnapMirror active sync features, such as zero Recovery Point Objective (RPO), Recovery Time Objective (RTO), and Transparent Application Failover.
+You can now use SnapCenter Plug-in for VMware vSphere to configure SnapMirror active sync features, such as zero Recovery Point Objective (RPO), Recovery Time Objective (RTO), and transparent application failover.
 
 SnapMirror active sync is supported for only VMFS datastores. 
 |===
