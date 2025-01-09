@@ -12,22 +12,19 @@ summary: 'The minimum ONTAP privileges that are required vary according to the S
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-09-09 12:24:28.623680
-//
-
 [.lead]
 The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.
 
 [NOTE]
 Beginning with SnapCenter Plug-in for VMware (SCV) 5.0, you need to add applications of type HTTP and ONTAPI as user login methods for any ONTAP users with customized role-based access to the SCV. Without access to these applications, backups will fail. You need to restart the SCV service to recognize changes to ONTAP user login methods.
+[NOTE]
+Vsadmin user is not supported in ASA r2 storage system.
 
+//6.1 update
 == Minimum ONTAP privileges required
 
 All SnapCenter plug-ins require the following minimum privileges.
-// updated for scv 6.0
+
 |===
 |All-access commands: Minimum privileges required for ONTAP 8.3 and later.
 |event generate-autosupport-log
@@ -133,8 +130,16 @@ vserver peer
 vserver show
 |===
 
-You can ignore the _cluster identity show_ cluster level command when creating a role to associate with the data vServer.
+|===
+|All-access commands: Minimum privileges required for ONTAP 9 and later.
 
+|
+consistency-group
+storage-unit show
+|===
+// 6.1 update
+
+You can ignore the _cluster identity show_ cluster level command when creating a role to associate with the data vServer.
 // updated for https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/75 - Deena
 [NOTE]
 You can ignore the warning messages about the unsupported vServer commands.
@@ -150,7 +155,6 @@ You must login as `vsadmin` on the storage VM to have the appropriate privileges
 You must login as `vsadmin` or with a role that has the minimum privileges listed in the tables above.
 * You need to be the cluster admin to create and manage user roles. You can associate the users either with Cluster storage VM or with storage VM.
 * You need ONTAP 9.12.1 or later versions to use SnapMirror active sync feature.
-//updated for SCV6.0
 * To use TamperProof Snapshot (TPS) feature:
 ** You need ONTAP 9.13.1 and later versions for SAN
 ** You need ONTAP 9.12.1 and later versions for NFS

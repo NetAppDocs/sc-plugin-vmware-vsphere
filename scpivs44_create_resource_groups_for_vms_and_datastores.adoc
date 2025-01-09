@@ -98,12 +98,15 @@ While you can create a resource group without a backup policy, data protection o
 [NOTE]
 If you are selecting a backup policy with Snapshot locking period, you need to select ONTAP 9.12.1 or later version.  
 
-// updated for 5.0
 * Compatibility checks
 +
 SnapCenter performs compatibility checks when you create a resource group.
 +
 <<Manage compatibility check failures>>
+
+* Create secondary protection for a resource group
++
+Secondary protection involves creating a consistency group in the primary, including all the storage units protected by the resource group. You need to create a consistency group-based SnapMirror relationship in the preferred Cluster and SVM using a specified policy from the primary. The secondary protection is supported only for ASA r2 based datastore and virtual machines. The cluster peering or SVM peering should be pre-configured. Secondary protection only allows asynchronous SnapMirror policies.
 
 .Steps
 
@@ -147,6 +150,10 @@ a| If you want the suffix “_recent” added to the latest Snapshot, then check
 [NOTE]
 A `_recent` backup is created for each policy that is attached to a resource group. Therefore, a resource group with multiple policies will have multiple `_recent` backups. Do not manually rename `_recent` backups.
 //Burt 1471636 May2020 Ronya
+
+[NOTE]
+ASA r2 storage system does not support renaming of Snapshots and as a result SCV's rename backup and _recent Snapshot naming features are not supported.
+// 6.1 update
 
 |Custom Snapshot format
 a| If you want to use a custom format for the Snapshot names, then check this box and enter the name format.
@@ -203,7 +210,8 @@ Spanning VMs are not supported for FlexGroup and vVol datastores.
 |To use… |Do this…
 
 |An existing policy
-|Select one or more policies from the list.
+|Select one or more policies from the list. Secondary protection is applicable to existing and new policies where you have selected both SnapMirror and SnapVault updates.
+// 6.1 updates
 |A new policy
 a|
 . Select *Create*.
@@ -211,6 +219,9 @@ a|
 |===
 +
 In Linked Mode, the list includes policies in all the linked vCenters. You must select a policy that is on the same vCenter as the resource group.
+
+. On the *Secondary protection*  page, the list of selected resources are displayed with their protection status. To protect the unprotected resources, select the replication policy type and consistency group suffix.
+// 6.1 updates 
 
 . On the *Schedules* page, configure the backup schedule for each selected policy.
 +

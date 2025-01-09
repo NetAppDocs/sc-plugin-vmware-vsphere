@@ -2,7 +2,7 @@
 permalink: scv60_rn_upgrade_paths.html
 sidebar: sidebar
 keywords: upgrade paths, scv, 6.0, 6.0.1
-summary: "Learn about the new capabilities available in SnapCenter Plug-in for VMware vSphere 6.0."
+summary: "Learn about the new capabilities available in SnapCenter Plug-in for VMware vSphere 6.1."
 ---
 
 = Upgrade paths
@@ -25,9 +25,13 @@ Upgrade to SnapCenter Plug-in for VMware vSphere (SCV) 4.8 and above is supporte
 |===
 | If you are on SCV version… | You can directly upgrade SCV to…
 a|
+SCV 6.0
+a|
+SCV 6.1
+a|
 SCV 5.0
 a|
-SCV 6.0
+SCV 6.0 and SCV 6.1
 a|
 SCV 4.9
 a|

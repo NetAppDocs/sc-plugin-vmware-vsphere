@@ -82,7 +82,7 @@ FlexClone: used for mount and attach operations on VMware VMs and datastores onl
 |===
 
 == Software support
-// updated for scv 6.0
+
 |===
 |Item |Supported versions
 
