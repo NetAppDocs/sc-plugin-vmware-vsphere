@@ -17,7 +17,7 @@ summary: 'You can rename the storage using REST API.'
 When the storage is renamed, workflows using backups taken before the rename used to fail. With the introduction of the rename backup feature, which is exclusively accessible through REST API, it is now possible to use the backups that were taken prior to the storage renaming. The workflow and usage of the REST API are described below.
 
 [NOTE]
-ASA r2 storage system does not support backup feature.
+ASA r2 storage system does not support _recent Snapshot naming feature.
 // 6.1 updates
 
 .Steps

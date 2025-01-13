@@ -106,7 +106,7 @@ SnapCenter performs compatibility checks when you create a resource group.
 
 * Create secondary protection for a resource group
 +
-Secondary protection involves creating a consistency group in the primary, including all the storage units protected by the resource group. You need to create a consistency group-based SnapMirror relationship in the preferred Cluster and SVM using a specified policy from the primary. The secondary protection is supported only for ASA r2 based datastore and virtual machines. The cluster peering or SVM peering should be pre-configured. Secondary protection only allows asynchronous SnapMirror policies.
+Secondary protection involves creating a consistency group in the primary, including all the storage units protected by the resource group. You need to create a consistency group-based SnapMirror relationship in the preferred Cluster and SVM using a specified policy from the primary. The secondary protection is supported only for ASA r2 system based datastore and virtual machines. The cluster peering or SVM peering should be pre-configured. Secondary protection only allows asynchronous SnapMirror policies.
 
 .Steps
 
@@ -220,7 +220,7 @@ a|
 +
 In Linked Mode, the list includes policies in all the linked vCenters. You must select a policy that is on the same vCenter as the resource group.
 
-. On the *Secondary protection*  page, the list of selected resources are displayed with their protection status. To protect the unprotected resources, select the replication policy type and consistency group suffix.
+. On the *Secondary protection*  page, the list of selected resources are displayed with their protection status. To protect the unprotected resources, select the replication policy type, consistency group suffix,  destination cluster, and destination SVM from the dropdown.
 // 6.1 updates 
 
 . On the *Schedules* page, configure the backup schedule for each selected policy.
