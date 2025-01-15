@@ -106,7 +106,9 @@ SnapCenter performs compatibility checks when you create a resource group.
 
 * Create secondary protection for a resource group
 +
-Secondary protection involves creating a consistency group in the primary, including all the storage units protected by the resource group. You need to create a consistency group-based SnapMirror relationship in the preferred Cluster and SVM using a specified policy from the primary. The secondary protection is supported only for ASA r2 system based datastore and virtual machines. The cluster peering or SVM peering should be pre-configured. Secondary protection only allows asynchronous SnapMirror policies.
+Secondary protection takes care of creating replication relationship for the resources added in  resource group. You need to create a consistency group-based SnapMirror relationship in the preferred Cluster and SVM using a specified policy from the primary. The secondary protection is supported only for ASA r2 system based datastore and virtual machines. The cluster peering and SVM peering should be pre-configured. Secondary protection only allows asynchronous SnapMirror policies.
+
+Secondary protection takes care of creating replication relationship for the resources added in  resource group. 
 
 .Steps
 
@@ -222,10 +224,9 @@ In Linked Mode, the list includes policies in all the linked vCenters. You must 
 
 . On the *Secondary protection*  page, the list of selected resources are displayed with their protection status. To protect the unprotected resources, select the replication policy type, consistency group suffix,  destination cluster, and destination SVM from the dropdown.
 // 6.1 updates 
+image:secondary_protection.png.png["Create resource group window"]
 
 . On the *Schedules* page, configure the backup schedule for each selected policy.
-+
-image:scpivs44_image18.png["Create resource group window"]
 +
 In the starting hour field, enter a date and time other than zero. The date must be in the format `day/month/year`.
 // BURT 1280281 June 2021  and Burt 1457923 March 2022 Ronya

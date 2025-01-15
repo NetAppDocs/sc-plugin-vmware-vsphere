@@ -32,6 +32,7 @@ You can use the SnapCenter Plug-in for VMware vSphere REST APIs to perform commo
 ** Mount and unmount datastores
 ** Download jobs and generate reports
 ** Modify built-in schedules
+** Configure secondary protection for ASA r2 
 * Operations that are not supported by the REST APIs for VMware vSphere
 ** Guest file restore
 ** Installation and configuration of the SnapCenter Plug-in for VMware vSphere
