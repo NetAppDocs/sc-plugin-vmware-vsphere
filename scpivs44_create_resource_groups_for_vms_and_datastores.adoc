@@ -47,6 +47,10 @@ All VMs and Datastores, excluding vVol Datastores, that have the specified vSphe
 All vVols in a single, specified vVol folder. If the folder contains a mix of vVol VMs and traditional VMs, SnapCenter Plug-in for VMware vSphere backs up the vVol VMs and skips the traditional VMs.
 // Burt 1434168 3Nov2021, burt 1428684 24Nov2021 Ronya
 
+*  VMs and datastores on ASA r2
++
+You cannot combine ASA r2 VMs and datastores with other VMs and datastores.
+
 For all resource groups:
 
 [IMPORTANT]
@@ -224,7 +228,7 @@ In Linked Mode, the list includes policies in all the linked vCenters. You must 
 
 . On the *Secondary protection*  page, the list of selected resources are displayed with their protection status. To protect the unprotected resources, select the replication policy type, consistency group suffix,  destination cluster, and destination SVM from the dropdown.
 // 6.1 updates 
-image:secondary_protection.png.png["Create resource group window"]
+image:secondary_protection.png["Create resource group window"]
 
 . On the *Schedules* page, configure the backup schedule for each selected policy.
 +

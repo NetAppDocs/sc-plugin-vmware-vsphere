@@ -1,0 +1,28 @@
+---
+permalink: scv_releasenotes_whats_new.html
+sidebar: sidebar
+keywords: what's new, release notes, scv, 6.1
+summary: "Learn about the new capabilities available in SnapCenter Plug-in for VMware vSphere 6.1."
+---
+
+= What's new in SnapCenter Plug-in for VMware vSphere 6.1
+
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+*Support for ASA r2 systems*
+
+SnapCenter plug-in for VMware vSphere 6.1 introduces support for ASA r2 systems for virtual machines (VMs) and VMFS datastores. ONTAP software is streamlined on ASA r2 systems to support essential SAN functionality. Some of the supported features for VMs, datastores, and Virtual Machine Disk format (VMDK) include:
+
+* Consistency group provisioning for primary protection
+* Consistency group based backup
+* Clone workflows
+* Restore workflows
+* Secondary protection provisioning when you're creating or modifying the resource group. 
+[NOTE]
+Secondary protection is supported with ONTAP 9.16.1 version.

@@ -1,7 +1,7 @@
 ---
-permalink: scv60_rn_upgrade_paths.html
+permalink: scv_rn_upgrade_paths.html
 sidebar: sidebar
-keywords: upgrade paths, scv, 6.0, 6.0.1
+keywords: upgrade paths, scv, 6.1
 summary: "Learn about the new capabilities available in SnapCenter Plug-in for VMware vSphere 6.1."
 ---
 
@@ -76,8 +76,4 @@ a|
 SCV 4.8
 |===
 
-
-
-
-
-
+For the latest information about supported versions, refer to https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] (IMT).
