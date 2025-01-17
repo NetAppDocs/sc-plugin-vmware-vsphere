@@ -57,7 +57,8 @@ An underscore character (_) is allowed.
 . In the left navigator pane of the SCV plug-in, click *Resource Groups*, then select a resource group and click *Edit*.
 . On the left list in the *Edit Resource Group* wizard, click the category that you want to modify and enter your changes.
 +
-You can make changes in multiple categories.
+You can make changes in multiple categories. You can also edit secondary protected resources in this option.
+// 6.1 update
 
 . Click *Next* until you see the Summary page, and then click *Finish*.
 

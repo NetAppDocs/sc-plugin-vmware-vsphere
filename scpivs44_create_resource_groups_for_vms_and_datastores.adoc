@@ -110,7 +110,7 @@ SnapCenter performs compatibility checks when you create a resource group.
 
 * Create secondary protection for a resource group
 +
-Secondary protection takes care of creating replication relationship for the resources added in  resource group. You need to create a consistency group-based SnapMirror relationship in the preferred Cluster and SVM using a specified policy from the primary. The secondary protection is supported only for ASA r2 system based datastore and virtual machines. The cluster peering and SVM peering should be pre-configured. Secondary protection only allows asynchronous SnapMirror policies.
+Secondary protection takes care of creating replication relationship for the resources added in  resource group. You need to create a consistency group-based SnapMirror relationship in the preferred cluster and SVM using a specified policy from the primary. The secondary protection is supported only for ASA r2 system based datastore and virtual machines. The cluster peering and SVM peering should be pre-configured. Secondary protection only allows asynchronous SnapMirror policies. You need to provide consistency group suffix when creating the secondary protection.
 
 Secondary protection takes care of creating replication relationship for the resources added in  resource group. 
 
@@ -226,7 +226,24 @@ a|
 +
 In Linked Mode, the list includes policies in all the linked vCenters. You must select a policy that is on the same vCenter as the resource group.
 
-. On the *Secondary protection*  page, the list of selected resources are displayed with their protection status. To protect the unprotected resources, select the replication policy type, consistency group suffix,  destination cluster, and destination SVM from the dropdown.
+. On the *Secondary protection*  page, the list of selected resources are displayed with their protection status. To protect the unprotected resources, select the replication policy type, consistency group suffix,  destination cluster, and destination SVM from the dropdown.  On creation of resource group a separate job is created for secondary protection and you can see it it in job monitor window.
+|===
+|Fields |Description
+
+|Replication policy name
+|
+|Consistency group suffix
+|
+
+|Destination cluster
+|
+
+|Destination SVM
+|
+|Secondary protected resources
+|
+
+|===
 // 6.1 updates 
 image:secondary_protection.png["Create resource group window"]
 
@@ -242,7 +259,7 @@ You must fill in each field. SnapCenter Plug-in for VMware vSphere creates sched
 +
 link:scpivs44_modify_the_time_zones.html[Modify the time zones for backups].
 
-. Review the summary, and then click *Finish*.
+. Review the summary and then click *Finish*.
 +
 Before you click *Finish*, you can go back to any page in the wizard and change the information.
 +
