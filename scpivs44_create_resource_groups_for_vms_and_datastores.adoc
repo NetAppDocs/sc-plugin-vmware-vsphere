@@ -231,17 +231,20 @@ In Linked Mode, the list includes policies in all the linked vCenters. You must 
 |Fields |Description
 
 |Replication policy name
-|
+|Name of the SnapMirror policy. Only *Asynchronous* and *Mirror and Vault* secondary policies are supported.
+
 |Consistency group suffix
-|
+|A destination setting used to append to the primary consistency group to form the destination consistency group name. 
+For example: If the primary consistency group name is sccg_2024-11-28_120918 and you enter _dest as suffix then secondary consistency group will be created as sccg_2024-11-28_120918_dest. The suffix is applicable only for unprotected consistency groups.
 
 |Destination cluster
-|
+|For all unprotected storage units, SCV displays peered cluster(s) names in the dropdown. If the storage added to SCV is in SVM scope, then due to ONTAP limitation, the cluster ID is displayed instead of the name.
 
 |Destination SVM
-|
+|For all unprotected storage units, SCV displays Peered SVM(s) names. Cluster and SVM is automatically chosen when one of the storage units that is part of the consistency group is selected. The same is applied to all the other storage units in the same consistency group.
+
 |Secondary protected resources
-|
+|For all the protected storage units of the resources that are added in the resources page, the secondary relationship details including cluster, SVM, and replication type are displayed.
 
 |===
 // 6.1 updates 
@@ -259,8 +262,9 @@ You must fill in each field. SnapCenter Plug-in for VMware vSphere creates sched
 +
 link:scpivs44_modify_the_time_zones.html[Modify the time zones for backups].
 
-. Review the summary and then click *Finish*.
+. Review the summary and then click *Finish*. Beginning with SCV 6.1 secondary protection for ASA r2 systems resources are visible in the summary page.
 +
+// 6.1 update
 Before you click *Finish*, you can go back to any page in the wizard and change the information.
 +
 After you click *Finish*, the new resource group is added to the resource groups list.

@@ -71,7 +71,7 @@ Enable this option because a guest file restore is an asynchronous operation and
 +
 This option uses the email settings that are configured when you set up the VMware vSphere client in vCenter.
 
-. Review the summary, and then click *Finish*.
+. Review the summary and then click *Finish*.
 +
 Before you click *Finish*, you can go back to any page in the wizard and change the information.
 
