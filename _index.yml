@@ -7,7 +7,7 @@ indexpage:
     - title: Get started
       links:
         - title: Release Notes
-          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3337464
         - title: Learn about SCV
           url: /scpivs44_concepts_overview.html
         - title: Deployment requirements
