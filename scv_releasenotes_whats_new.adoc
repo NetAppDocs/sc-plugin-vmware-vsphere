@@ -15,9 +15,9 @@ summary: "Learn about the new capabilities available in SnapCenter Plug-in for V
 
 [.lead]
 
-*Support for ASA r2 systems*
+*Support for VMs and VMFS datastore on ASA r2 systems*
 
-SnapCenter plug-in for VMware vSphere 6.1 introduces support for ASA r2 systems for virtual machines (VMs) and VMFS datastores. ONTAP software is streamlined on ASA r2 systems to support essential SAN functionality. Some of the supported features for VMs, datastores, and Virtual Machine Disk format (VMDK) include:
+The SnapCenter plug-in for VMware vSphere 6.1 release now supports the provisioning of virtual machines (VMs) and VMFS datastore on ASA r2 systems. ASA r2 systems deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers. SnapCenter Plug-in for VMware vSphere 6.1 supported features for VMs, datastores, and Virtual Machine Disk format (VMDK) on ASA r2 systems include:
 
 * Consistency group provisioning for primary protection
 * Consistency group based backup
@@ -25,4 +25,4 @@ SnapCenter plug-in for VMware vSphere 6.1 introduces support for ASA r2 systems 
 * Restore workflows
 * Secondary protection provisioning when you're creating or modifying the resource group. 
 [NOTE]
-Secondary protection is supported with ONTAP 9.16.1 version.
+The secondary protection is supported only on ONTAP 9.16.1 and later versions
