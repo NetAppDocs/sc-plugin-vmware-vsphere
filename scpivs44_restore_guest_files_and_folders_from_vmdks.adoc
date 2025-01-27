@@ -71,7 +71,7 @@ Enable this option because a guest file restore is an asynchronous operation and
 +
 This option uses the email settings that are configured when you set up the VMware vSphere client in vCenter.
 
-. Review the summary, and then click *Finish*.
+. Review the summary and then click *Finish*.
 +
 Before you click *Finish*, you can go back to any page in the wizard and change the information.
 
@@ -137,8 +137,8 @@ The files and folders to be restored are listed in the Selected File(s) table.
 
 |Restore to path
 |Enter the UNC share path to the guest where the selected files will be restored.
-IPv4 example: `\\10.60.136.65\c$`
-IPv6 example: `\\fd20-8b1e-b255-832e--61.ipv6-literal.net\C\restore`
+IPv4 address example: `\\10.60.136.65\c$`
+IPv6 address example: `\\fd20-8b1e-b255-832e--61.ipv6-literal.net\C\restore`
 |If original file(s)
 exist
 a|Select the action to be taken if the file or folder to be restored already exists on the restore destination: Always overwrite or Always skip.

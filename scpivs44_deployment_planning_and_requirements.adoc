@@ -82,7 +82,7 @@ FlexClone: used for mount and attach operations on VMware VMs and datastores onl
 |===
 
 == Software support
-// updated for scv 6.0
+
 |===
 |Item |Supported versions
 
@@ -117,20 +117,21 @@ The minimum software requirements for NVMe over TCP and NVMe over FC protocol su
 * ESXi 7.0U3
 * ONTAP 9.10.1
 
-== Space and sizing requirements
+== Space, sizing, and scaling requirements
 
 |===
 |Item |Requirements
 
 |Operating system
 |Linux
-|Minimum CPU count
-|4 cores
-|Minimum RAM
-|Minimum: 12 GB
-Recommended: 16 GB
+|Recommended CPU count
+|8 cores
+|Recommended RAM
+|24 GB
 |Minimum hard drive space for the SnapCenter Plug-in for VMware vSphere, logs, and MySQL database
 |100 GB
+|Maximum heap size of vmcontrol service in the appliance
+|8 GB
 |===
 
 == Connection and port requirements

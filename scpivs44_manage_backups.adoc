@@ -25,6 +25,9 @@ You can rename and delete backups performed by SnapCenter Plug-in for VMware vSp
 
 You can rename SnapCenter Plug-in for VMware vSphere backups if you want to provide a better name to improve searchability.
 
+[NOTE]
+ASA r2 storage system does not support renaming of backups.
+
 .Steps
 
 . Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.

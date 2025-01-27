@@ -22,7 +22,7 @@ If you are a new SnapCenter user, you must add storage VMs to SnapCenter before 
 == Deployment issues you might encounter
 
 * After deploying the virtual appliance, the *Backup Jobs* tab on the Dashboard might not load in the following scenarios:
-** You are running IPv4 and have two IP addresses for the SnapCenter VMware vSphere host. As a result, the job request is sent to an IP address that is not recognized by the SnapCenter Server. To prevent this issue, add the IP address that you want to use, as follows:
+** You are running IPv4 address and have two IP addresses for the SnapCenter VMware vSphere host. As a result, the job request is sent to an IP address that is not recognized by the SnapCenter Server. To prevent this issue, add the IP address that you want to use, as follows:
 
 .. Navigate to the location where the SnapCenter Plug-in for VMware vSphere is deployed: `/opt/netapp/scvservice/standalone_aegis/etc`
 .. Open the file network- interface.properties.

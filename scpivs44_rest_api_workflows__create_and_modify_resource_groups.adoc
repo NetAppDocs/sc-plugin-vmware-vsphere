@@ -37,6 +37,8 @@ If no policies are listed, then use the `Create Policy` REST API to create a new
 |`/4.1/resource-groups`
 |`Create a Resource Group` creates a resource group with the specified policy.
 Pass the *policyId* from Step 1 and enter the policy *frequency* details in addition to all other required attributes.
+You can enable secondary protection using this REST API.
+// 6.1 update
 |===
 
 To modify resource groups, follow this workflow:
