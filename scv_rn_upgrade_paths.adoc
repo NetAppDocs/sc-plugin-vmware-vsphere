@@ -51,6 +51,12 @@ For virtualized databases and file systems that are integrated with SnapCenter, 
 |===
 | If you are using | If your VMware plug-in is… | You can directly upgrade to…
 a|
+SnapCenter 6.1
+a|
+SCV 6.0
+a|
+SCV 6.1
+a|
 SnapCenter 6.0
 a|
 SCV 5.0
