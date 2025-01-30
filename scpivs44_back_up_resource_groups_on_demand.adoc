@@ -21,6 +21,9 @@ summary: 'Backup operations are performed on all the resources defined in a reso
 [.lead]
 Backup operations are performed on all the resources defined in a resource group. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.
 
+[NOTE]
+ASA r2 backup creates consistency group snapshots and provisions primary consistency group if the given resource does not already have it.
+
 .Before you begin
 
 You must have created a resource group with a policy attached.

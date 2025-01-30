@@ -114,7 +114,7 @@ The following operations in the Admin Console UI are audited:
 ** Change admin credentials
 ** Change timezone
 ** Change NTP Server
-** Change IPv4 / IPv6 settings
+** Change IPv4/IPv6 address settings
 * Configuration
 ** Change vCenter Credentials
 ** Plug-in Enable / Disable

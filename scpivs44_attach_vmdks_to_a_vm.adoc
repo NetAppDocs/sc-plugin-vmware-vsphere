@@ -36,7 +36,6 @@ In this case, add the SCSi controllers manually and try the attach operation aga
 * Attach and restore operations connect VMDKs using the default SCSi controller. However, when VMDKs that are attached to a VM with a NVMe disk are backed up, the attach and restore operations use NVMe controller if available.
 
 .Before you begin
-// added for scv 6.0
 
 Follow the steps below to add NVMe controller to the disk.
 

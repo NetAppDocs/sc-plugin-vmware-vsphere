@@ -31,7 +31,6 @@ For information about how administrators assign resources to users, refer to htt
 
 * If you want VM-consistent backups, you must have VMware tools installed and running. VMware tools is needed to quiesce VMs. VM-consistent backups are not supported for vVol VMs.
 * SnapMirror active sync enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. 
-//also known as SnapMirror active sync removed in 5.0 but was added back in SCV6.0
 +
 [NOTE]
 SnapMirror active sync is supported only for VMFS Datastores. 
@@ -39,9 +38,8 @@ SnapMirror active sync is supported only for VMFS Datastores.
 To protect a VMFS datastore on a SnapMirror active sync deployment, as SnapCenter administrator you need to:
 
 **  Configure clusters and mediator as described in the technical report: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf[TR-4878: SnapMirror active sync (formerly SMBC)].
-//updated for SCV6.0
 ** Add the volume associated with the VMFS datastore to the consistency group and create a data protection relationship using _AutomatedFailOver_ or _AutomatedFailOverDuplex_ protection policy between two ONTAP storage systems. _AutomatedFailOverDuplex_ policy is supported from ONTAP 9.15.1 release onwards.
-//updated for SCV6.0 
+
 [NOTE]
 In fan-out configuration, consistency group is not supported for tertiary site.
 // updated for VMDP-4673 - jani

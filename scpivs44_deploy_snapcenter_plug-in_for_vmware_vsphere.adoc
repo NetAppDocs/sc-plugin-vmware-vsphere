@@ -47,7 +47,7 @@ Deploy the SnapCenter Plug-in for VMware vSphere in the same time zone as the vC
 . In your browser, navigate to VMware vSphere vCenter.
 +
 [NOTE]
-For IPv6 HTML web clients, you must use either Chrome or Firefox.
+For IPv6 address HTML web clients, you must use either Chrome or Firefox.
 . Log in to the *VMware vCenter Single Sign-On* page.
 . On the navigator pane, right-click any inventory object that is a valid parent object of a virtual machine, such as a datacenter, cluster, or host, and select *Deploy OVF Template* to start the VMware deploy wizard.
 . Extract the .tar file, which contains the .ova file onto your local system. On the *Select an OVF template* page, specify the location of the `.ova` file inside the .tar extracted folder. 
@@ -102,7 +102,7 @@ Make a note of the username and password that you specify. You need to use these
 ... In the *Setup IPv4 Network Properties* section, enter the network information such as IPv4 address, IPv4 Netmask, IPv4 Gateway, IPv4 Primary DNS, IPv4 Secondary DNS, and IPv4 Search Domains.
 ... In the *Setup IPv6 Network Properties* section, enter the network information such as the IPv6 address, IPv6 Netmask, IPv6 Gateway, IPv6 Primary DNS, IPv6 Secondary DNS, and IPv6 Search Domains.
 +
-Select the IPv4 or IPv6 fields, or both, if appropriate. If you are using both IPv4 and IPv6, then you need to specify the Primary DNS for only one of them.
+Select the IPv4 or IPv6 address fields, or both, if appropriate. If you are using both IPv4 and IPv6 addresses, then you need to specify the Primary DNS for only one of them.
 +
 [IMPORTANT]
 You can skip these steps and leave the entries blank in the *Setup Network Properties* section, if you want to proceed with DHCP as your network configuration.

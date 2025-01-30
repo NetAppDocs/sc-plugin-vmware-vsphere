@@ -14,7 +14,7 @@ summary: 'If you are using the SnapCenter Plug-in for VMware vSphere virtual app
 
 [.lead]
 [NOTE]
-Upgrade to SCV 6.0 is supported only on VMware vCenter server 7 update 1 and later versions, for VMware vCenter server prior to version 7 update 1, you should continue to use SCV 4.7. The upgrade is disruptive on unsupported versions of VMware vCenter server.
+Upgrade to SCV 6.1 is supported only on VMware vCenter server 7 update 1 and later versions, for VMware vCenter server prior to version 7 update 1, you should continue to use SCV 4.7. The upgrade is disruptive on unsupported versions of VMware vCenter server.
 
 If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.
 The upgrade process unregisters the existing plug-in and deploys a plug-in that is compatible only with vSphere 7.0U1 and later versions.
@@ -23,8 +23,10 @@ The upgrade process unregisters the existing plug-in and deploys a plug-in that 
 
 |===
 |If you are on SnapCenter Plug-in for VMware vSphere (SCV) version...|You can directly upgrade SnapCenter Plug-in for VMware vSphere to...
+|SCV 6.0
+|Upgrade to SCV 6.1
 |SCV 5.0
-|Upgrade to SCV 6.0
+|Upgrade to SCV 6.0 and SCV 6.1
 |SCV 4.9
 |Upgrade to SCV 5.0 and SCV 6.0
 |SCV 4.8
@@ -38,6 +40,9 @@ The upgrade process unregisters the existing plug-in and deploys a plug-in that 
 TIP: Backup the SnapCenter Plug-in for VMware vSphere OVA before starting an upgrade.
 
 NOTE: Switching your network configuration from static to DHCP is not supported.  
+
+For the latest information about supported versions, refer to https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] (IMT).
+
 
 .Steps
 

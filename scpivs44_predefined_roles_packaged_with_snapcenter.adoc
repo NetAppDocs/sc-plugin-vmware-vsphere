@@ -33,11 +33,11 @@ You can see the predefined roles in the vCenter GUI by clicking *Menu > Administ
 |Role |Description
 
 |SCV Administrator
-|Provides all native vCenter Server and SnapCenter-specific privileges necessary to perform all SnapCenter Plug-in for VMware vSphere tasks.
+|Provides all native vCenter Server and SnapCenter-specific privileges necessary to perform all SnapCenter Plug-in for VMware vSphere tasks. Beginning with SCV 6.1 release, a new privilege to create secondary protection is added to this role.
+// 6.1 update
 |SCV Backup
-|Provides all native vCenter Server and SnapCenter-specific privileges necessary to back up vSphere objects (virtual machines and datastores).
-The user also has access to the configure privilege.
-The user cannot restore backups.
+|Provides all native vCenter Server and SnapCenter-specific privileges necessary to back up vSphere objects (virtual machines and datastores). The user also has access to the configure privilege. The user cannot restore backups. Beginning with SCV 6.1 release, a new privilege to create secondary protection is added to this role.
+// 6.1 updates
 |SCV Guest File Restore
 |Provides all native vCenter Server and SnapCenter-specific privileges necessary to restore guest files and folders. The user cannot restore VMs or VMDKs.
 |SCV Restore
