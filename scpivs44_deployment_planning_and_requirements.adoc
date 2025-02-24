@@ -122,8 +122,6 @@ The minimum software requirements for NVMe over TCP and NVMe over FC protocol su
 |===
 |Item |Requirements
 
-|Operating system
-|Linux
 |Recommended CPU count
 |8 cores
 |Recommended RAM
