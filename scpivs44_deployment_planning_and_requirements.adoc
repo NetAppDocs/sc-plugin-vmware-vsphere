@@ -13,27 +13,27 @@ summary: 'You should be aware of the deployment requirements before you deploy t
 :imagesdir: ./media/
 
 [.lead]
-You should be aware of the deployment requirements before you deploy the virtual appliance. The deployment requirements are listed in the following tables.
+You should be familiar with the following requirements before you begin deploying the SnapCenter Plug-in for VMware vSphere (SCV).
 
 == Host requirements
 
 Before you begin deployment of SnapCenter Plug-in for VMware vSphere (SCV), you should be familiar with the host requirements.
 
-* SnapCenter Plug-in for VMware vSphere is deployed as a Linux VM regardless of whether you use the plug-in to protect data on Windows systems or Linux systems.
+* SnapCenter Plug-in for VMware vSphere is deployed as a Linux VM regardless of whether it is used to protect data on Windows or Linux systems.
 
 * You should deploy the SnapCenter Plug-in for VMware vSphere on the vCenter Server.
 +
-Backup schedules are executed in the time zone in which the SnapCenter Plug-in for VMware vSphere is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter Plug-in for VMware vSphere and vCenter are in different time zones, data in the SnapCenter Plug-in for VMware vSphere Dashboard might not be the same as the data in the reports.
+Backup schedules are executed in the time zone in which the SnapCenter Plug-in for VMware vSphere is deployed, and vCenter reports data in the time zone in which it is located. Therefore, if the SnapCenter Plug-in for VMware vSphere and vCenter are in different time zones, data in the SnapCenter Plug-in for VMware vSphere Dashboard might not be the same as the data in the reports.
 
-* You must not deploy the SnapCenter Plug-in for VMware vSphere in a folder that has a name with special characters.
+* You must not deploy the SnapCenter Plug-in for VMware vSphere in a folder with a name that contains special characters.
 +
 The folder name should not contain the following special characters: $!@#%^&()_+{}';.,*?"<>|
 
 * You must deploy and register a separate, unique instance of the SnapCenter Plug-in for VMware vSphere for each vCenter Server.
-** Each vCenter Server, whether or not it is in Linked Mode, must be paired with a separate instance of the SnapCenter Plug-in for VMware vSphere.
+** Each vCenter Server, whether in Linked Mode or not, must be paired with a separate instance of the SnapCenter Plug-in for VMware vSphere.
 ** Each instance of the SnapCenter Plug-in for VMware vSphere must be deployed as a separate Linux VM.
 +
-For example, if you want to perform backups from six different instances of the vCenter Server, then you must deploy the SnapCenter Plug-in for VMware vSphere on six hosts and each vCenter Server must be paired with a unique instance of the SnapCenter Plug-in for VMware vSphere.
+For example, suppose you want to perform backups from six different instances of the vCenter Server. In that case, you must deploy the SnapCenter Plug-in for VMware vSphere on six hosts, and each vCenter Server must be paired with a unique instance of the SnapCenter Plug-in for VMware vSphere.
 
 * To protect vVol VMs (VMs on VMware vVol datastores), you must first deploy ONTAP tools for VMware vSphere. ONTAP tools provisions and configures storage for vVols on ONTAP and on the VMware web client.
 +
@@ -71,7 +71,7 @@ Restoring a complete VM when one or more VMDKs are on a VMFS datastore.
 |One of these: SnapMirror or SnapVault (for secondary data protection regardless of the type of relationship)
 |Additional products
 |vSphere Standard, Enterprise, or Enterprise Plus
-A vSphere license is required to perform restore operations, which use Storage vMotion. vSphere Essentials or Essentials Plus licenses do not include Storage vMotion.
+A vSphere license is required to perform restore operations using Storage vMotion. vSphere Essentials or Essentials Plus licenses do not include Storage vMotion.
 |Primary destinations
 |SnapCenter Standard: required to perform application-based protection over VMware
 SnapRestore: required to perform restore operations for VMware VMs and datastores only
@@ -122,8 +122,6 @@ The minimum software requirements for NVMe over TCP and NVMe over FC protocol su
 |===
 |Item |Requirements
 
-|Operating system
-|Linux
 |Recommended CPU count
 |8 cores
 |Recommended RAM
@@ -137,7 +135,7 @@ The minimum software requirements for NVMe over TCP and NVMe over FC protocol su
 == Connection and port requirements
 
 |===
-|Type of port |Preconfigured port
+|Type of port |Pre-configured port
 
 |VMware ESXi Server port
 |443 (HTTPS), bidirectional
@@ -146,7 +144,7 @@ The Guest File Restore feature uses this port.
 
 |SnapCenter Plug-in for VMware vSphere port
 a|8144 (HTTPS), bidirectional
-The port is used for communications from the VMware vSphere client and from the SnapCenter Server.
+The port is used for communications from the VMware vSphere client and the SnapCenter Server.
 8080 bidirectional
 This port is used to manage virtual appliances.
 
@@ -157,20 +155,20 @@ Note: Custom port for addition of SCV host to SnapCenter is supported.
 |Storage cluster or storage VM port
 |443 (HTTPS), bidirectional
 80 (HTTP), bidirectional
-The port is used for communication between the virtual appliance and the storage VM or the cluster that contains the storage VM.
+The port is used to communicate between the virtual appliance and the storage VM or the cluster containing the storage VM.
 // Updated for Burt 1435536 3Nov2021 Ronya
 
 |===
 
 == Configurations supported
 
-Each plug-in instance supports only one vCenter Server. vCenters in linked mode are supported. Multiple plug-in instances can support the same SnapCenter Server as shown in the following figure.
+Each plug-in instance supports only one vCenter Server, which is in linked mode. However, multiple plug-in instances can support the same SnapCenter Server, as shown in the following figure.
 
 image:scpivs44_image4.png["Supported configuration graphical representation"]
 
 == RBAC privileges required
 
-The vCenter administrator account must have the required vCenter privileges, as listed in the following table.
+The vCenter administrator account must have the required vCenter privileges listed in the following table.
 
 |===
 |To do this operation… |You must have these vCenter privileges…
