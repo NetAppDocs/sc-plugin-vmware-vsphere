@@ -20,12 +20,12 @@ You must create backup policies before you use the SnapCenter Plug-in for VMware
 
 * You must have read the prerequisites.
 * You must have secondary storage relationships configured.
-** If you are replicating Snapshots to a mirror or vault secondary storage, the relationships must be configured and the SnapCenter administrator must have assigned the storage VMs to you for both the source and destination volumes.
-** To successfully transfer Snapshots to secondary storage for Version-FlexibleMirror relationships on a NFS or VMFS datastore, make sure that the SnapMirror policy type is Asynchronous Mirror and that the "all_source_snapshots" option is checked.
+** If you are replicating snapshots to a mirror or vault secondary storage, the relationships must be configured and the SnapCenter administrator must have assigned the storage VMs to you for both the source and destination volumes.
+** To successfully transfer snapshots to secondary storage for Version-FlexibleMirror relationships on a NFS or VMFS datastore, make sure that the SnapMirror policy type is Asynchronous Mirror and that the "all_source_snapshots" option is checked.
 //Updated for BURT 1378132 observation 21, March 2021 Madhulika
-** When the number of Snapshots on the secondary storage (mirror-vault) reaches the maximum limit, the activity to register backup and apply retention in the backup operation fails with the following error: `This Snapshot is currently used as a reference Snapshot by one or more SnapMirror relationships. Deleting the Snapshot can cause future SnapMirror operations to fail.`
+** When the number of snapshots on the secondary storage (mirror-vault) reaches the maximum limit, the activity to register backup and apply retention in the backup operation fails with the following error: `This snapshot is currently used as a reference snapshot by one or more SnapMirror relationships. Deleting the snapshot can cause future SnapMirror operations to fail.`
 +
-To correct this issue, configure the SnapMirror retention policy for secondary storage to avoid reaching the maximum limit of Snapshots.
+To correct this issue, configure the SnapMirror retention policy for secondary storage to avoid reaching the maximum limit of snapshots.
 +
 For information about how administrators assign resources to users, refer to https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html[SnapCenter information on using role-based access control^].
 
@@ -69,12 +69,14 @@ An underscore character (_) is allowed.
 +
 The policy specifies the backup frequency only. The specific protection schedule for backing up is defined in the resource group. Therefore, two or more resource groups can share the same policy and backup frequency but have different backup schedules.
 
-. Select *Locking Period* checkbox to enable Snapshot locking. You can select the Snapshot locking period as Days/Months/Years.
-// updated for 5.0
+. Select *Locking Period* checkbox to enable snapshot locking. You can select the primary and secondary snapshot locking periods as Days/Months/Years.
+[NOTE]
+Irrespective of the retention value set in the ONTAP SnapMirror policy, the secondary snapshot copy is not deleted before the specified secondary snapshot locking period.
+// updated for 5.0 also updated for 6.1 patch release
 . Specify the retention settings.
 +
 [IMPORTANT]
-You should set the retention count to 2 backups or higher if you plan to enable SnapVault replication. If you set the retention count to 1 backup to keep, the retention operation can fail. This is because the first Snapshot is the reference Snapshot for the SnapVault relationship until the newer Snapshot is replicated to the target.
+You should set the retention count to 2 backups or higher if you plan to enable SnapVault replication. If you set the retention count to 1 backup to keep, the retention operation can fail. This is because the first snapshot is the reference snapshot for the SnapVault relationship until the newer snapshot is replicated to the target.
 //Updated for BURT 1378132 observation 23, March 2021 Madhulika
 +
 [NOTE]
@@ -105,11 +107,11 @@ If a volume is configured with a mirror-vault relationship, you must select only
 This option is supported for datastores in FlexGroup volumes in SnapCenter Plug-in for VMware vSphere 4.5 and later.
 
 |Snapshot label
-a|Enter an optional, custom label to be added to SnapVault and SnapMirror Snapshots created with this policy.
-The Snapshot label helps to distinguish Snapshots created with this policy from other Snapshots on the secondary storage system.
+a|Enter an optional, custom label to be added to SnapVault and SnapMirror snapshots created with this policy.
+The snapshot label helps to distinguish snapshots created with this policy from other snapshots on the secondary storage system.
 
 [NOTE]
-A maximum of 31 characters is allowed for Snapshot labels.
+A maximum of 31 characters is allowed for snapshot labels.
 |===
 
 . Optional: In the *Advanced* fields, select the fields that are needed. The Advanced field details are listed in the following table.
@@ -127,7 +129,7 @@ You must have VMware tools running on the VM to perform VM consistent backups. I
 
 [NOTE]
 When you check the VM consistency box, backup operations might take longer and require more storage space. In this scenario, the VMs are first quiesced, then VMware performs a VM consistent snapshot, then SnapCenter performs its backup operation, and then VM operations are resumed.
-VM guest memory is not included in VM consistency Snapshots.
+VM guest memory is not included in VM consistency snapshots.
 
 // Ranjith Kumar email 1April2021  Ronya
 

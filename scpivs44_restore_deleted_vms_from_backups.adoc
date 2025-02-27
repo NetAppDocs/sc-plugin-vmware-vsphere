@@ -65,11 +65,11 @@ A restore operation might fail if the storage tier of the FabricPool where the V
 . Select the deleted VM from the backup list and click *Restore*.
 . In the *Restore* wizard, on the *Select Backup* page, select the backup copy that you want to restore from.
 +
-You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and the location. Click *OK* to return to the wizard.
+You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware snapshots, whether you want mounted backups, and the location. Click *OK* to return to the wizard.
 
 . On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field, then select the restore location, and then enter the Destination ESXi host information where the backup should be mounted.
 +
-The restore destination can be any ESXi host that has been added to SnapCenter. This option restores the contents of the selected backup in which the VM resided from a Snapshot with the specified time and date. The *Restart VM* check box is checked if you select this option and the VM will be powered on.
+The restore destination can be any ESXi host that has been added to SnapCenter. This option restores the contents of the selected backup in which the VM resided from a snapshot with the specified time and date. The *Restart VM* check box is checked if you select this option and the VM will be powered on.
 // BURT 1378132 observation 31, March 2021 Ronya
 +
 If you are restoring a VM in an NFS datastore onto an alternate ESXi host that is in an ESXi cluster, then after the VM is restored, it is registered on the alternate host.

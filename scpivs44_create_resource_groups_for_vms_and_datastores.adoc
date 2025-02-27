@@ -91,16 +91,16 @@ If you are running on ONTAP 9.8 or ONTAP 9.9, then after a switchover or switchb
 +
 In ONTAP 9.8, the backups hang after the switchback. This issue is fixed in ONTAP 9.9.
 
-* Optimizing Snapshots
+* Optimizing snapshots
 +
-To optimize Snapshots, you should group the VMs and datastores that are associated with the same volume into one resource group.
+To optimize snapshots, you should group the VMs and datastores that are associated with the same volume into one resource group.
 // BURT 1378132 observation 25, March 2021 Ronya
 
 * Backup policies
 +
 While you can create a resource group without a backup policy, data protection operations are only possible when at least one policy is attached to the resource group. You have the option to use an existing policy or create a new one during the resource group creation process.
 [NOTE]
-If you are selecting a backup policy with Snapshot locking period, you need to select ONTAP 9.12.1 or later version.  
+If you are selecting a backup policy with snapshot locking period, you need to select ONTAP 9.12.1 or later version.  
 
 * Compatibility checks
 +
@@ -150,26 +150,26 @@ Never: Do not send notification
 |Enter the email address of the person you want to receive the notification. For multiple recipients, use a comma to separate the email addresses.
 |Email subject
 |Enter the subject you want for the notification emails.
-|Latest Snapshot name
-a| If you want the suffix “_recent” added to the latest Snapshot, then check this box. The “_recent” suffix replaces the date and timestamp.
+|Latest snapshot name
+a| If you want the suffix “_recent” added to the latest snapshot, then check this box. The “_recent” suffix replaces the date and timestamp.
 
 [NOTE]
 A `_recent` backup is created for each policy that is attached to a resource group. Therefore, a resource group with multiple policies will have multiple `_recent` backups. Do not manually rename `_recent` backups.
 //Burt 1471636 May2020 Ronya
 
 [NOTE]
-ASA r2 storage system does not support renaming of Snapshots and as a result SCV's rename backup and _recent Snapshot naming features are not supported.
+ASA r2 storage system does not support renaming of snapshots and as a result SCV's rename backup and _recent snapshot naming features are not supported.
 // 6.1 update
 
-|Custom Snapshot format
-a| If you want to use a custom format for the Snapshot names, then check this box and enter the name format.
+|Custom snapshot format
+a| If you want to use a custom format for the snapshot names, then check this box and enter the name format.
 
 * By default, this feature is disabled.
-* The default Snapshot names use the format `<ResourceGroup>_<Date-TimeStamp>`
+* The default snapshot names use the format `<ResourceGroup>_<Date-TimeStamp>`
 However, you can specify a custom format using the variables $ResourceGroup, $Policy, $HostName, $ScheduleType, and $CustomText. Use the drop-down list in the custom name field to select which variables you want to use and the order in which they are used.
 If you select $CustomText, the name format is `<CustomName>_<Date-TimeStamp>`. Enter the custom text in the additional box that is provided.
 [NOTE]:
-If you also select the “_recent” suffix, you must make sure that the custom Snapshot names will be unique in the datastore, therefore, you should add the $ResourceGroup and $Policy variables to the name.
+If you also select the “_recent” suffix, you must make sure that the custom snapshot names will be unique in the datastore, therefore, you should add the $ResourceGroup and $Policy variables to the name.
 // Burt 1371168  June 2021 Ronya
 
 * Special characters

@@ -40,7 +40,7 @@ You can also add a policy to the resource group by checking the policy.
 
 == Modify policies
 
-You can modify policies for a SnapCenter Plug-in for VMware vSphere resource group.  You can modify the frequency, replication options, Snapshot retention settings, or scripts information while a policy is attached to a resource group.
+You can modify policies for a SnapCenter Plug-in for VMware vSphere resource group.  You can modify the frequency, replication options, snapshot retention settings, or scripts information while a policy is attached to a resource group.
 
 .About this task
 
