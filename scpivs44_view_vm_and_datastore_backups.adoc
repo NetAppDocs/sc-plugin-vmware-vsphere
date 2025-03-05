@@ -28,8 +28,7 @@ Browsing large file folders, such as 10k file folders, might take one or more mi
 .Steps
 
 . Log in to the vCenter Server.
-. Select *Inventory* > *Hosts and Clusters*.
-. Select a VM
+. Navigate to *Inventory* > *Hosts and Clusters* and select a VM.
 . In the right pane, select *SnapCenter Plug-in for VMware vSphere* > *Backups* > *Configure* 
 +
 image:backup-view.png["Backups view"]
