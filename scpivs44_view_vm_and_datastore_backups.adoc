@@ -34,5 +34,5 @@ Browsing large file folders, such as 10k file folders, might take one or more mi
 image:backup-view.png["Backups view"]
 // updated for 6.1 patch release
 +
-If no values were assigned to the secondary snapshot locking period during policy creation, it uses the values of the primary snapshot locking period. The underscore in the secondary snapshot locking period indicates that it is the same as the primary snapshot locking period.
+If no values were assigned to the secondary snapshot locking period during policy creation, it uses the values of the primary snapshot locking period. The hyphen in the secondary snapshot locking period indicates that it is the same as the primary snapshot locking period.
 . Click the backup that you want to view.
