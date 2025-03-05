@@ -52,7 +52,7 @@ Most of the fields on these wizard pages are self-explanatory. The following inf
 
 . In the left navigator pane of the SCV plug-in, click *Policies*.
 . On the *Policies* page, select *Create* to start the wizard.
-. On the *New Backup Policy* page, select the vCenter Server that will use the policy, and then enter the policy name and a description.
+. On the *New Backup Policy* page enter the policy name and a description.
 +
 * Linked mode
 +
