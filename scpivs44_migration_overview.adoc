@@ -36,7 +36,7 @@ If you begin migration when a guest file restore session is active, the session 
 +
 `scbr.override` configuration file
 +
-// Snapshots that are deleted from ONTAP BURT 1271910
+// snapshots that are deleted from ONTAP BURT 1271910
 
 * SnapCenter hosts are suspended
 +

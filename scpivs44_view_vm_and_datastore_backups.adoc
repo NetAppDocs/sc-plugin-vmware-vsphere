@@ -19,16 +19,20 @@ summary: 'When you are preparing to back up or restore a VM or datastore, you mi
 //
 
 [.lead]
-When you are preparing to back up or restore a VM or datastore, you might want to see all the backups that are available for that resource and view details of those backups.
+When preparing to back up or restore a VM or datastore, you might want to see all the backups available for that resource and view the details of those backups.
 
 .About this task
 
-Browsing large file folders, for example 10k file folders, might take one or more minutes the first time. Subsequent browsing sessions take less time.
+Browsing large file folders, such as 10k file folders, might take one or more minutes the first time. Subsequent browsing sessions take less time.
 
 .Steps
 
-. Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere section*.
+. Log in to the vCenter Server.
+. Navigate to the *Inventory* page and select a datastore or a VM.
+. In the right pane, select *Configure* > *SnapCenter Plug-in for VMware vSphere* > *Backups*.
 +
-image:scv50_image1.png["vSphere Client UI"]
-
-. Click the backup that you want to view.
+image:backup-view.png["Backups view"]
+// updated for 6.1 patch release
++
+If the *Enable Secondary Snapshot Locking* option is not selected during the policy creation stage, it takes the value set for the *Enable Primary Snapshot Locking* option by default. In the backups list, the hyphen in the *Secondary Snapshot Lock Expiration* field indicates that both primary and secondary locking periods are the same.
+. Select the backup that you want to view.

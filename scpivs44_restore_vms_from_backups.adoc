@@ -48,7 +48,7 @@ For improved performance of restore operations in NFS environments, enable the V
 You must have created a backup of the VM using the SnapCenter Plug-in for VMware vSphere before you can restore the VM.
 +
 [NOTE]
-Restore operations cannot finish successfully if there are Snapshots of the VM that were performed by software other than the SnapCenter Plug-in for VMware vSphere.
+Restore operations cannot finish successfully if there are snapshots of the VM that were performed by software other than the SnapCenter Plug-in for VMware vSphere.
 
 * The destination datastore must be ready.
 +
@@ -76,7 +76,7 @@ Ensure there are no HA configuration errors displayed on the vCenter ESXi Host S
 
 * VM is unregistered and registered again
 +
-The restore operation for VMs unregisters the original VM, restores the VM from a backup Snapshot, and registers the restored VM with the same name and configuration on the same ESXi server. You must manually add the VMs to resource groups after the restore.
+The restore operation for VMs unregisters the original VM, restores the VM from a backup snapshot, and registers the restored VM with the same name and configuration on the same ESXi server. You must manually add the VMs to resource groups after the restore.
 
 * Restoring datastores
 +
@@ -101,9 +101,9 @@ Even if a VMware consistency snapshot for a VM fails, the VM is nevertheless bac
 If you are restoring a deleted VM, the storage VM credentials that were added to the SnapCenter Plug-in for VMware vSphere must be `vsadmin` or a user account that has all the same privileges as `vsadmin`. The host must be on a storage system that is running ONTAP 8.2.2 or later.
 
 . In the left navigator pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Restore* in the secondary drop-down list to start the wizard.
-. In the *Restore* wizard, on the *Select Backup* page, select the backup Snapshot that you want to restore.
+. In the *Restore* wizard, on the *Select Backup* page, select the backup snapshot that you want to restore.
 +
-You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware Snapshots, whether you want mounted backups, and the location.  Click *OK* to return to the wizard.
+You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware snapshots, whether you want mounted backups, and the location.  Click *OK* to return to the wizard.
 
 . On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field, then select the restore location, and then enter the destination information where the backup should be mounted.
 +
