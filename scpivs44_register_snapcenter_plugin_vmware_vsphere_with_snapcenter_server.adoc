@@ -39,9 +39,9 @@ You can register multiple instances of SnapCenter Plug-in for VMware vSphere on 
 
 .Steps
 
-. In the SnapCenter GUI left navigation pane, click *Hosts*.
+. In the SnapCenter GUI left navigation pane, select *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top, then locate the virtual appliance host name and verify that it resolves from the SnapCenter Server.
-. Click *Add* to start the wizard.
+. Select *Add* to start the wizard.
 . On the *Add Hosts* dialog box, specify the host you want to add to the SnapCenter Server as listed in the following table:
 +
 |===
@@ -55,11 +55,11 @@ You can register multiple instances of SnapCenter Plug-in for VMware vSphere on 
 |Enter the username and password for the SnapCenter Plug-in for VMware vSphere that was provided during the deployment.
 |===
 
-. Click *Submit*.
+. Select *Submit*.
 +
 When the VM host is successfully added, it is displayed on the Managed Hosts tab.
 
-. In the left navigation pane, click *Settings*, then click the *Credential* tab, and then select *Add* to add credentials for the virtual appliance.
+. In the left navigation pane, select *Settings*, then select the *Credential* tab, and then select *Add* to add credentials for the virtual appliance.
 . Provide the credential information that was specified during the deployment of SnapCenter Plug-in for VMware vSphere.
 +
 [NOTE]

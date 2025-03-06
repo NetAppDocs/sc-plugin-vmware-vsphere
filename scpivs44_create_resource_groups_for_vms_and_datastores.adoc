@@ -116,7 +116,7 @@ Secondary protection takes care of creating replication relationship for the res
 
 .Steps
 
-. In the left navigator pane of the SCV plug-in, click *Resource Groups*, then select *Create* to start the wizard.
+. In the left navigator pane of the SCV plug-in, select *Resource Groups*, then select *Create* to start the wizard.
 
 This is the easiest way to create a resource group. However, you can also create a resource group with one resource by performing one of the following:
 
@@ -194,10 +194,10 @@ Tag-based datastore protection is supported only for NFS and VMFS datastores, as
 |Navigate to the VMs or datastores or folder that you want to add.
 VM and Datastore names in a resource group must be unique.
 |Available entities
-|Select the resources you want to protect, then click *>* to move your selections to the Selected entities list.
+|Select the resources you want to protect, then select *>* to move your selections to the Selected entities list.
 |===
 +
-When you click *Next*, the system first checks that SnapCenter manages and is compatible with the storage on which the selected resources are located.
+When you select *Next*, the system first checks that SnapCenter manages and is compatible with the storage on which the selected resources are located.
 +
 If the message `Selected <resource-name> is not SnapCenter compatible` is displayed, then a selected resource is not compatible with SnapCenter.
 +
@@ -262,12 +262,12 @@ You must fill in each field. SnapCenter Plug-in for VMware vSphere creates sched
 +
 link:scpivs44_modify_the_time_zones.html[Modify the time zones for backups].
 
-. Review the summary and then click *Finish*. Beginning with SCV 6.1 secondary protection for ASA r2 systems resources are visible in the summary page.
+. Review the summary and then select *Finish*. Beginning with SCV 6.1 secondary protection for ASA r2 systems resources are visible in the summary page.
 +
 // 6.1 update
-Before you click *Finish*, you can go back to any page in the wizard and change the information.
+Before you select *Finish*, you can go back to any page in the wizard and change the information.
 +
-After you click *Finish*, the new resource group is added to the resource groups list.
+After you select *Finish*, the new resource group is added to the resource groups list.
 +
 [NOTE]
 If the quiesce operation fails for any of the VMs in the backup, then the backup is marked as not VM- consistent even if the policy selected has VM consistency selected. In this case, it is possible that some of the VMs were successfully quiesced.

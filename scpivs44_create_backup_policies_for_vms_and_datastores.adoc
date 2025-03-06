@@ -50,7 +50,7 @@ Most of the fields on these wizard pages are self-explanatory. The following inf
 
 .Steps
 
-. In the left navigator pane of the SCV plug-in, click *Policies*.
+. In the left navigator pane of the SCV plug-in, select *Policies*.
 . On the *Policies* page, select *Create* to start the wizard.
 . On the *New Backup Policy* page enter the policy name and a description.
 +
@@ -145,6 +145,6 @@ To enter multiple scripts, press *Enter* after each script path to list
 each script on a separate line. The character ";" is not allowed.
 |===
 
-. Click *Add.*
+. Select *Add.*
 +
 You can verify that the policy is created and review the policy configuration by selecting the policy in the Policies page.

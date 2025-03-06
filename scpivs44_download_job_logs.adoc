@@ -36,7 +36,7 @@ The default value for retaining job logs is 30 days; the default value for retai
 +
 You might need to scroll to the right to see the icon.
 +
-You can also double-click a job to access the Job Details window and then click *Download Job Logs*.
+You can also double-click a job to access the Job Details window and then select *Download Job Logs*.
 
 .Result
 

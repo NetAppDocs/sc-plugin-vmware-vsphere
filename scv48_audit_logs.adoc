@@ -142,7 +142,7 @@ This task helps you to configure the syslog server.
 * Syslog Server Port 
 * RFC format
 * Syslog Server Certificate
-. Click *SAVE* to save the Syslog server settings.
+. Select *SAVE* to save the Syslog server settings.
 
 == Change audit log settings
 

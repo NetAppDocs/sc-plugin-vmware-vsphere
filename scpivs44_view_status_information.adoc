@@ -19,7 +19,7 @@ You can view status information on the vSphere client Dashboard. Status informat
 
 . From the vCenter client shortcut page, select SnapCenter Plug-in for VMware vSphere (SCV). 
 . In the left navigation pane of SCV,  select *Dashboard* > *Status*.
-. View overview status information or click a link for more details, as listed in the following table.
+. View overview status information or select a link for more details, as listed in the following table.
 +
 |===
 |This dashboard tile… |Displays the following information…
@@ -27,15 +27,15 @@ You can view status information on the vSphere client Dashboard. Status informat
 a|Recent job activities
 a|The three to five most recent backup, restore, and mount jobs.
 
-* Click on a job ID to see more details about that job.
-* Click *See all* to go to the Job Monitor tab for more details on all jobs.
+* Select on a job ID to see more details about that job.
+* Select *See all* to go to the Job Monitor tab for more details on all jobs.
 a|Jobs
 a|A count of each job type (backup, restore, and mount) performed within the selected time window.
 Hover the cursor over a section of the chart to see more details for that category.
 a|Latest Protection Summary
 a|Summaries of the data protection status of primary and secondary VMs or datastores within the selected time window.
 
-* Click the drop-down menu to select *VMs* or *Datastores*.
+* Select the drop-down menu to select *VMs* or *Datastores*.
 * For secondary storage, select *SnapVault* or *SnapMirror*.
 * Hover the cursor over a section of a chart to see the count of VMs or Datastores in that category. In the Successful category, the most recent backup is listed for each resource.
 //Updated for BURT 1378132 observation 4, March 2021 Madhulika

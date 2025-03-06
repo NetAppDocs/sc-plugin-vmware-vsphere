@@ -30,7 +30,7 @@ If you want to use a proxy VM for attaching a virtual disk for guest file restor
 a|
 . Select *Add*.
 . In the *Run As Credentials* dialog box, enter the credentials.
-. Click *Select VM*, then select a VM in the *Proxy VM* dialog box. Click *Save* to return to the *Run As Credentials* dialog box.
+. Select *Select VM*, then select a VM in the *Proxy VM* dialog box. Select *Save* to return to the *Run As Credentials* dialog box.
 . Enter the credentials.
 For Username, you must enter “Administrator”.
 |===
@@ -39,8 +39,8 @@ SnapCenter Plug-in for VMware vSphere uses the selected credentials to log into 
 +
 The Run As credentials must be the default domain administrator that is provided by Windows or the built-in local administrator. Workgroup users can use the built-in local administrator account.
 
-. In the *Proxy Credentials* section, click *Add* to add a VM to use as a proxy.
-. In the *Proxy VM* dialog box, complete the information, and then click *Save*.
+. In the *Proxy Credentials* section, select *Add* to add a VM to use as a proxy.
+. In the *Proxy VM* dialog box, complete the information, and then select *Save*.
 
 [NOTE]
 You need to delete the proxy VM from the SnapCenter Plug-in for VMware vSphere UI before you can delete it from ESXi host.

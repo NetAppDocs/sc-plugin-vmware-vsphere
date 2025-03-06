@@ -47,7 +47,7 @@ The cache is in the following locations, based on the type of server operating s
 +
 The IP address is displayed when you deploy the SnapCenter Plug-in for VMware vSphere.
 
-. Click *Configuration* in the left navigation pane, and then click the Service option in the *Plug-in Details* section to disable the plug-in.
+. Select *Configuration* in the left navigation pane, and then select the Service option in the *Plug-in Details* section to disable the plug-in.
 +
 SnapCenter Plug-in for VMware vSphere service is disabled, and the extension is unregistered in vCenter.
 
@@ -58,6 +58,6 @@ The folder name changes for each release.
 . Restart the vCenter Server.
 
 . Log in to VMware vSphere client.
-. Click *Configuration* in the left navigation pane, and then click the Service option in the *Plug-in Details* section to enable the plug-in.
+. Select *Configuration* in the left navigation pane, and then select the Service option in the *Plug-in Details* section to enable the plug-in.
 +
 SnapCenter Plug-in for VMware vSphere service is enabled, and the extension is registered in vCenter.

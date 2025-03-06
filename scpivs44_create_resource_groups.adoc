@@ -20,7 +20,7 @@ summary:
 [.lead]
 Follow the steps below to create resource groups.
 
-. In the left navigator pane of the SCV plug-in, click *Resource Groups*, and then select *Create*.
+. In the left navigator pane of the SCV plug-in, select *Resource Groups*, and then select *Create*.
 . Enter the required information on each page of the Create Resource Group wizard, select VMs and datastores to be included in the resource group, and then select the backup policies to be applied to the resource group. Add the remote secondary protection details and specify the backup schedule. 
 
 //6.1 updates

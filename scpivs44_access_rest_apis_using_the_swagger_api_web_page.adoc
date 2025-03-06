@@ -48,4 +48,4 @@ Access SnapCenter Plug-in for VMware vSphere REST APIs:
 // updated for 4.9 release
 Log in use the vCenter authentication mechanism to generate the token.
 
-. Click an API resource type to display the APIs in that resource type.
+. Select an API resource type to display the APIs in that resource type.

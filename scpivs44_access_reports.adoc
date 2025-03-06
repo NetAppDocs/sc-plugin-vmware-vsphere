@@ -36,9 +36,9 @@ Select the filter icon to modify the time range, job status type, resource group
 +
 Double-click any job to generate a detailed report for that job.
 
-. Optional: On the Reports tab, click *Download* and select the format (HTML or CSV).
+. Optional: On the Reports tab, select *Download* and select the format (HTML or CSV).
 +
-You can also click the download icon to download plug-in logs.
+You can also select the download icon to download plug-in logs.
 
 == Types of reports from the VMware vSphere client
 
@@ -53,7 +53,7 @@ The Dashboard displays information on migrated backups only after backups post-m
 |Report type |Description
 
 |Backup Report
-|Displays overview data about backup jobs. Click a section/status on the graph to see a list of jobs with that status on the *Reports* tab.
+|Displays overview data about backup jobs. Select a section/status on the graph to see a list of jobs with that status on the *Reports* tab.
 //Updated for BURT 1378132 observation 12, March 2021 Madhulika
 
 For each job, the report lists the job ID, corresponding resource group, backup policy, start time and duration, status, and job details which includes the job name (snapshot name) if the job completed, and any warning or error messages.
@@ -61,7 +61,7 @@ For each job, the report lists the job ID, corresponding resource group, backup 
 You can download the Report table in HTML or CSV format. You can also download the Job Monitor job logs for all the jobs (not just the jobs in the report).
 Deleted backups are not included in the report.
 |Mount Report
-|Displays overview data about mount jobs. Click a section/status on the graph to see a list of jobs with that status on the Reports tab.
+|Displays overview data about mount jobs. Select a section/status on the graph to see a list of jobs with that status on the Reports tab.
 //Updated for BURT 1378132 observation 12, March 2021 Madhulika
 
 For each job, the report lists the job ID, job status, job name, and job start and end times. The job name includes the snapshot name.
@@ -72,7 +72,7 @@ You can download the Report table in HTML or CSV format.
 
 You can also download the Job Monitor job logs for all the jobs (not just the jobs in the report).
 |Restore Report
-|Displays overview status information about restore jobs. Click a section/status on the graph to see a list of jobs with that status on the Reports tab.
+|Displays overview status information about restore jobs. Select a section/status on the graph to see a list of jobs with that status on the Reports tab.
 For each job, the report lists the job ID, job status, job name, and job start and end times. The job name includes the snapshot name. For example: `Restore Backup <snapshot-copy-name>`
 
 You can download the Report table in HTML or CSV format. You can also download the Job Monitor job logs for all the jobs (not just the jobs in the report).
@@ -80,7 +80,7 @@ You can download the Report table in HTML or CSV format. You can also download t
 VMs or Datastores Report
 |Displays overview information about the protection status, during the configured number of days, for VMs and datastores managed by the SnapCenter Plug-in for VMware vSphere. The default is 7 days. To modify the value in the properties file, refer to link:scpivs44_modify_configuration_default_values.html[Modify configuration default values].
 
-Click a section/status on the primary protection chart to see a list of VMs or datastores with that status on the *Reports* tab.
+Select a section/status on the primary protection chart to see a list of VMs or datastores with that status on the *Reports* tab.
 //Updated for BURT 1378132 observation 13 and 14, March 2021 Madhulika
 
 The VM or Datastores Protection Status Report for protected VMs and datastores displays the names of VMs or datastores that have been backed up during the configured number of days, the latest snapshot name, and the start and end times for the latest backup run.

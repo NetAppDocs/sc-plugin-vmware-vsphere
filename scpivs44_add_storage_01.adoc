@@ -101,7 +101,7 @@ failed operation to storage system
 You must also enable AutoSupport on the storage VM and configure the AutoSupport email settings.
 |===
 
-. Click *Add*.
+. Select *Add*.
 +
 If you added a storage cluster, all storage VMs in that cluster are automatically added. Automatically added storage VMs (sometimes called “implicit” storage VMs) are displayed on the cluster summary page with a hyphen (-) instead of a username. Usernames are displayed only for explicit storage entities.
 
