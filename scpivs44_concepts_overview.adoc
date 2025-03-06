@@ -32,11 +32,11 @@ You can use the SnapCenter GUI and the appropriate SnapCenter application plug-i
 +
 SnapCenter natively leverages the SnapCenter Plug-in for VMware vSphere for all data protection operations on VMDKs, raw device mappings (RDMs), and NFS datastores. After the virtual appliance is deployed, the plug-in handles all interactions with vCenter. SnapCenter Plug-in for VMware vSphere supports all SnapCenter application-based plug-ins.
 +
-SnapCenter does not support single Snapshots of databases and VMs together. Backups for VMs and databases must be scheduled and run independently, which creates separate Snapshots, even if the databases and VMs are hosted in the same volume. Schedule the database application backups using the SnapCenter GUI; schedule the VM and datastore backups using the VMware vSphere client GUI.
+SnapCenter does not support single snapshots of databases and VMs together. Backups for VMs and databases must be scheduled and run independently, which creates separate snapshots, even if the databases and VMs are hosted in the same volume. Schedule the database application backups using the SnapCenter GUI; schedule the VM and datastore backups using the VMware vSphere client GUI.
 
-* VMware tools is required for VM consistent Snapshots
+* VMware tools is required for VM consistent snapshots
 +
-If VMware tools is not installed and running, the file system is not quiesced and a crash-consistent Snapshot is created.
+If VMware tools is not installed and running, the file system is not quiesced and a crash-consistent snapshot is created.
 
 * VMware Storage vMotion is required for restore operations in SAN (VMFS)  environments
 +

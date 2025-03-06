@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_how_restore_operations_are_performed.html
 keywords:
-summary: 'For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. For vVol VMs, the plug-in uses ONTAP Single File Snapshot Restore and SnapMirror Restore for restore operations.'
+summary: 'For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. For vVol VMs, the plug-in uses ONTAP Single File snapshot Restore and SnapMirror Restore for restore operations.'
 ---
 
 = How restore operations are performed
@@ -18,7 +18,7 @@ summary: 'For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses 
 // 2020-09-09 12:24:24.060765
 //
 [.lead]
-For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. For vVol VMs, the plug-in uses ONTAP Single File Snapshot Restore (ONTAP SFSR) and SnapMirror Restore for restore operations. The following table lists how restore operations are performed.
+For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. For vVol VMs, the plug-in uses ONTAP Single File snapshot Restore (ONTAP SFSR) and SnapMirror Restore for restore operations. The following table lists how restore operations are performed.
 
 |===
 |Restore operations |From |Performed using

@@ -47,8 +47,8 @@ a|Configuration
 a|The total number of each type of object managed by the SnapCenter Plug-in for VMware vSphere.
 //Updated for BURT 1378132 observation 7, March 2021 Madhulika
 a|Storage
-a|The total number of Snapshots, SnapVault, and SnapMirror Snapshots, generated and the amount of storage used for primary and secondary Snapshots. The line graph separately plots primary and secondary storage consumption on a day-by-day basis over a rolling 90-day period. Storage information is updated once every 24 hours at 1:08 A.M.
-Storage Savings is the ratio of logical capacity (Snapshot savings plus storage consumed) to the physical capacity of primary storage. The bar chart illustrates the storage savings.
+a|The total number of snapshots, SnapVault, and SnapMirror snapshots, generated and the amount of storage used for primary and secondary snapshots. The line graph separately plots primary and secondary storage consumption on a day-by-day basis over a rolling 90-day period. Storage information is updated once every 24 hours at 1:08 A.M.
+Storage Savings is the ratio of logical capacity (snapshot savings plus storage consumed) to the physical capacity of primary storage. The bar chart illustrates the storage savings.
 // Burt 1465062 June 2022 Ronya
 
 Hover the cursor over a line on the chart to see detailed day-by-day results.
