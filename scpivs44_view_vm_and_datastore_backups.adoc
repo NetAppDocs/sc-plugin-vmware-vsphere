@@ -28,11 +28,11 @@ Browsing large file folders, such as 10k file folders, might take one or more mi
 .Steps
 
 . Log in to the vCenter Server.
-. Navigate to *Inventory* page and select a datastore or a VM.
+. Navigate to the *Inventory* page and select a datastore or a VM.
 . In the right pane, select *Configure* > *SnapCenter Plug-in for VMware vSphere* > *Backups*.
 +
 image:backup-view.png["Backups view"]
 // updated for 6.1 patch release
 +
-If the *Enable Secondary Snapshot Locking* option is not selected during policy creation, it takes the value set for the *Enable Primary Snapshot Locking* option by default. In the backups list, the hyphen in the *Secondary Snapshot Lock Expiration* field indicates that both primary and secondary locking periods are the same.
+If the *Enable Secondary Snapshot Locking* option is not selected during the policy creation stage, it takes the value set for the *Enable Primary Snapshot Locking* option by default. In the backups list, the hyphen in the *Secondary Snapshot Lock Expiration* field indicates that both primary and secondary locking periods are the same.
 . Select the backup that you want to view.
