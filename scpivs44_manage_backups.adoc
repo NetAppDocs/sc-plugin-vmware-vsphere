@@ -30,12 +30,12 @@ ASA r2 storage system does not support renaming of backups.
 
 .Steps
 
-. Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
+. Select *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select the *Configure* tab, and then select *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
 +
 image:scv50_image1.png["vSphere client screen"]
 
-. On the Configure tab, select a backup,  and click *Rename*.
-. On the *Rename Backup* dialog box, enter the new name, and click *OK*.
+. On the Configure tab, select a backup,  and select *Rename*.
+. On the *Rename Backup* dialog box, enter the new name, and select *OK*.
 +
 Do not use the following special characters in VM, datastore, policy, backup, or resource group names:  & * $ # @ ! \ / : * ? " < > - | ; ' , . An underscore character (_) is allowed.
 
@@ -52,14 +52,14 @@ You cannot delete backups that are mounted. You must unmount a backup before you
 snapshots on secondary storage are managed by your ONTAP retention settings, not by the SnapCenter Plug-in for VMware vSphere. Therefore, when you use the SnapCenter Plug-in for VMware vSphere to delete a backup, snapshots on primary storage are deleted but snapshots on secondary storage are not deleted. If a snapshot still exists on secondary storage, the SnapCenter Plug-in for VMware vSphere retains the metadata associated with the backup to support restore requests. When the ONTAP retention process deletes the secondary snapshot, then the SnapCenter Plug-in for VMware vSphere deletes the metadata using a purge job, which is executed at regular intervals.
 // BURT 1378132 observation 48, March 2021 Ronya
 
-. Click *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
+. Select *Menu* and select the *Hosts and Clusters* menu option, then select a VM, then select the *Configure* tab, and then select *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
 +
 image:scv50_image1.png["vSphere client window"]
 
-. Select one or more backups and click *Delete*.
+. Select one or more backups and select *Delete*.
 +
 You can select a maximum of 40 backups to delete.
 
-. Click *OK* to confirm the delete operation.
+. Select *OK* to confirm the delete operation.
 // BURT 1378132 observation 49, March 2021 Ronya
 . Refresh the backup list by clicking the refresh icon on the left vSphere menu bar.

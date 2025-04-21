@@ -23,19 +23,19 @@ You can search for and find a specific backup of a VM or datastore using the Res
 
 .Steps
 
-. In the VMware vSphere client GUI, click *Menu* in the toolbar, and then do one of the following:
+. In the VMware vSphere client GUI, select *Menu* in the toolbar, and then do one of the following:
 +
 |===
 |To view backups for… |Do the following…
 
 |VMs
-|Click the *Hosts and Clusters* menu option, then select a VM, then click the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere section*.
+|Select the *Hosts and Clusters* menu option, then select a VM, then select the *Configure* tab, and then select *Backups* in the *SnapCenter Plug-in for VMware vSphere section*.
 |Datastores
-|Click the *Storage* menu option, then select a datastore, then click the *Configure* tab, and then click *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
+|Select the *Storage* menu option, then select a datastore, then select the *Configure* tab, and then select *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
 |===
 
 . In the left navigator pane, expand the datacenter that contains the VM or datastore.
 . Optional: Right-click a VM or datastore, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Restore* in the secondary drop-down list.
-. In the *Restore* wizard enter a search name and click *Search*.
+. In the *Restore* wizard enter a search name and select *Search*.
 +
-You can filter the backup list by selecting the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware snapshots, whether you want mounted backups, and the location. Click *OK*.
+You can filter the backup list by selecting the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware snapshots, whether you want mounted backups, and the location. Select *OK*.

@@ -19,8 +19,8 @@ You might encounter the error `Unable to discover resources on SCV: Unable to ge
 
 .Steps
 
-. In the left navigator pane of the SCV plug-in, click *Storage Systems*.
-. On the Storage Systems page, select the storage system to be modified and click *Edit*.
+. In the left navigator pane of the SCV plug-in, select *Storage Systems*.
+. On the Storage Systems page, select the storage system to be modified and select *Edit*.
 . In the Timeout field, increase the number of seconds.
 +
 [TIP]

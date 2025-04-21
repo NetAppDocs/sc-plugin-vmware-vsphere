@@ -71,9 +71,9 @@ Enable this option because a guest file restore is an asynchronous operation and
 +
 This option uses the email settings that are configured when you set up the VMware vSphere client in vCenter.
 
-. Review the summary and then click *Finish*.
+. Review the summary and then select *Finish*.
 +
-Before you click *Finish*, you can go back to any page in the wizard and change the information.
+Before you select *Finish*, you can go back to any page in the wizard and change the information.
 
 . Wait until the attach operation completes.
 +
@@ -89,9 +89,9 @@ In the Guest Session Monitor table, you can display additional information about
 +
 All partitions are assigned a drive letter, including system reserved partitions. If a VMDK has multiple partitions, you can select a specific drive by selecting the drive in the drop-down list in the drive field at the top of the Guest File Browse page.
 
-. Click the *Browse Files* icon to view a list of files and folders on the virtual disk.
+. Select the *Browse Files* icon to view a list of files and folders on the virtual disk.
 +
-When you double click a folder to browse and select individual files, there might be a time latency while fetching the list of files because the fetch operation is performed at run time.
+When you double select a folder to browse and select individual files, there might be a time latency while fetching the list of files because the fetch operation is performed at run time.
 +
 For easier browsing, you can use filters in your search string. The filters are case-sensitive, Perl expressions without spaces. The default search string is `.`*. The following table shows some example Perl search expressions.
 +
@@ -126,7 +126,7 @@ For easier browsing, you can use filters in your search string. The filters are 
 +
 The Guest File Browse page displays all hidden files and folders in addition to all other files and folders.
 
-. Select one or more files or folders that you want to restore, and then click *Select Restore Location*.
+. Select one or more files or folders that you want to restore, and then select *Select Restore Location*.
 +
 The files and folders to be restored are listed in the Selected File(s) table.
 
@@ -151,7 +151,7 @@ successful restore
 |Select this option if you want the guest file restore session to be deleted when the restore operation completes.
 |===
 
-. Click *Restore*.
+. Select *Restore*.
 +
 You can view the progress of the restore operation in the Dashboard job monitor, or you can wait for the email notification. The time it takes for the email notification to be sent depends upon the length of time the restore operation takes to complete.
 // BURT 1378132 observation 51 & 52, March 2021 Ronya

@@ -30,18 +30,18 @@ You must know the IP address and the log on credentials for the SnapCenter Plug-
 +
 Use the format `\https://<appliance-IP-address>:8080`
 
-. Click the Settings icon in the top toolbar.
+. Select the Settings icon in the top toolbar.
 +
 image:scpivs44_image31.png["SnapCenter Plug-in for VMware vSphere management GUI"]
 
-. On the *Settings* page, in the *Network Settings* section, click *IPv4* or *IPv6* address, and then click *Edit*.
+. On the *Settings* page, in the *Network Settings* section, select *IPv4* or *IPv6* address, and then select *Edit*.
 +
-Enter the new information and click *Save*.
+Enter the new information and select *Save*.
 
 . If you are removing a network setting, do the following:
 +
-** IPv4: In the *IP Address* field, enter `0.0.0.0` and then click *Save*.
-** IPv6: In the *IP Address* field: enter `: :0`  and then click *Save*.
+** IPv4: In the *IP Address* field, enter `0.0.0.0` and then select *Save*.
+** IPv6: In the *IP Address* field: enter `: :0`  and then select *Save*.
 
 [NOTE]
 If you are using both IPv4 and IPv6 addresses, you cannot remove both network settings. The remaining network must specify the DNS Servers and Search Domains fields.

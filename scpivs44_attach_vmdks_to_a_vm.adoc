@@ -46,25 +46,25 @@ Follow the steps below to add NVMe controller to the disk.
 
 .Steps
 
-. In the VMware vSphere client GUI, click *Menu* in the toolbar, and then select *Hosts and clusters* from the drop-down list.
+. In the VMware vSphere client GUI, select *Menu* in the toolbar, and then select *Hosts and clusters* from the drop-down list.
 . In the left navigation pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* > *Attach virtual disk(s)*.
 
 . On the *Attach Virtual Disk* window, in the *Backup* section, select a backup.
 +
-You can filter the backup list by selecting the filter icon and choosing a date and time range, selecting whether you want backups that contain VMware snapshots, whether you want mounted backups, and the location. Click *OK*.
+You can filter the backup list by selecting the filter icon and choosing a date and time range, selecting whether you want backups that contain VMware snapshots, whether you want mounted backups, and the location. Select *OK*.
 
 . In the *Select Disks* section, select one or more disks you want to attach and the location you want to attach from (primary or secondary).
 +
 You can change the filter to display primary and secondary locations.
 
 . By default, the selected virtual disks are attached to the parent VM. To attach the selected virtual disks to an alternate VM in the same ESXi host, select *Click here to attach to alternate VM* and specify the alternate VM.
-. Click *Attach*.
+. Select *Attach*.
 . Optional: Monitor the operation progress in the *Recent Tasks* section.
 +
 Refresh the screen to display updated information.
 
 . Verify that the virtual disk is attached by performing the following:
-.. Click *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
+.. Select *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
 .. In the left navigator pane, right-click a VM, then select *Edit settings* in the drop-down list.
 .. In the *Edit Settings* window,  expand the list for each hard disk to see the list of disk files.
 +

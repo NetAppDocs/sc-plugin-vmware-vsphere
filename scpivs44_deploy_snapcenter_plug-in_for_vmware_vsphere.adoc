@@ -37,7 +37,7 @@ This section lists all the necessary actions you should do before you begin the 
 * You must have logged out of and closed all browser sessions of vSphere client and deleted the browser cache to avoid any browser cache issue during the deployment of the SnapCenter Plug-in for VMware vSphere.
 * You must have enabled Transport Layer Security (TLS) in vCenter. Refer to the VMware documentation.
 * If you plan to perform backups in vCenters other than the one in which the SnapCenter Plug-in for VMware vSphere is deployed, then the ESXi server, the SnapCenter Plug-in for VMware vSphere, and each vCenter must be synchronized to the same time.
-* To protect VMs on vVol datastores, you must first deploy ONTAP tools for VMware vSphere. For the latest information about supported versions of ONTAP tools, refer to https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^]. ONTAP tools provisions and configures storage on ONTAP and on the VMware web client.
+* To protect VMs on vVol datastores, you must first deploy ONTAP tools for VMware vSphere. For the latest information about supported versions of ONTAP tools, refer to https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^]. ONTAP tools provisions and configures storage on ONTAP and on the VMware web client.
 
 Deploy the SnapCenter Plug-in for VMware vSphere in the same time zone as the vCenter. Backup schedules are executed in the time zone in which the SnapCenter Plug-in for VMware vSphere is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter Plug-in for VMware vSphere and vCenter are in different time zones, data in the SnapCenter Plug-in for VMware vSphere Dashboard might not be the same as the data in the reports.
 
@@ -51,16 +51,16 @@ For IPv6 address HTML web clients, you must use either Chrome or Firefox.
 . Log in to the *VMware vCenter Single Sign-On* page.
 . On the navigator pane, right-click any inventory object that is a valid parent object of a virtual machine, such as a datacenter, cluster, or host, and select *Deploy OVF Template* to start the VMware deploy wizard.
 . Extract the .tar file, which contains the .ova file onto your local system. On the *Select an OVF template* page, specify the location of the `.ova` file inside the .tar extracted folder. 
-. Click *Next*.
+. Select *Next*.
 +
-. On the *Select a name and folder* page, enter a unique name for the VM or vApp, and select a deployment location, and then click *Next*.
+. On the *Select a name and folder* page, enter a unique name for the VM or vApp, and select a deployment location, and then select *Next*.
 +
 This step specifies where to import the `.tar` file into vCenter. The default name for the VM is the same as the name of the selected `.ova` file. If you change the default name, choose a name that is unique within each vCenter Server VM folder.
 +
 The default deployment location for the VM is the inventory object where you started the wizard.
 +
-. On the *Select a resource* page, select the resource where you want to run the deployed VM template, and click *Next*.
-. On the *Review details* page, verify the `.tar` template details and click *Next*.
+. On the *Select a resource* page, select the resource where you want to run the deployed VM template, and select *Next*.
+. On the *Review details* page, verify the `.tar` template details and select *Next*.
 . On the *License agreements* page, select the checkbox for *I accept all license agreements*.
 . On the *Select storage* page, define where and how to store the files for the deployed OVF template.
 .. Select the disk format for the VMDKs.
@@ -78,7 +78,7 @@ Select a datastore large enough to accommodate the virtual machine or vApp and a
 .. Select a source network and map it to a destination network,
 +
 The Source Network column lists all networks that are defined in the OVA template.
-.. In the *IP Allocation Settings* section, select the required IP address protocol and then click *Next*.
+.. In the *IP Allocation Settings* section, select the required IP address protocol and then select *Next*.
 +
 SnapCenter Plug-in for VMware vSphere supports one network interface. If you need multiple network adapters, you must set that up manually. Refer to https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3[KB article: How to create additional network adapters^].
 +
@@ -109,7 +109,7 @@ You can skip these steps and leave the entries blank in the *Setup Network Prope
 
 .. In *Setup Date and Time*, select the time zone where the vCenter is located.
 
-. On the *Ready to complete* page, review the page and click *Finish*.
+. On the *Ready to complete* page, review the page and select *Finish*.
 +
 All hosts must be configured with IP addresses (FQDN hostnames are not supported). The deploy operation does not validate your input before deploying.
 +
@@ -117,8 +117,8 @@ You can view the progress of the deployment from the Recent Tasks window while y
 +
 When the SnapCenter Plug-in for VMware vSphere is successfully deployed, it is deployed as a Linux VM, registered with vCenter, and a VMware vSphere client is installed.
 
-. Navigate to the VM where the SnapCenter Plug-in for VMware vSphere was deployed, then click the *Summary* tab, and then click the *Power On* box to start the virtual appliance.
-. While the SnapCenter Plug-in for VMware vSphere is powering on, right-click the deployed SnapCenter Plug-in for VMware vSphere, select *Guest OS*, and then click *Install VMware tools*.
+. Navigate to the VM where the SnapCenter Plug-in for VMware vSphere was deployed, then select the *Summary* tab, and then select the *Power On* box to start the virtual appliance.
+. While the SnapCenter Plug-in for VMware vSphere is powering on, right-click the deployed SnapCenter Plug-in for VMware vSphere, select *Guest OS*, and then select *Install VMware tools*.
 // BURT 1378132 observation 1, March 2021 Ronya
 +
 The VMware tools is installed on the VM where the SnapCenter Plug-in for VMware vSphere is deployed. For more information on installing VMware tools, see the VMware documentation.

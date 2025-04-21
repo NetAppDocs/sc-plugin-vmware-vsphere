@@ -33,9 +33,9 @@ If you added storage VMs for application-based data protection operations using 
 
 .Steps
 
-. In the left navigator pane of the SCV plug-in, click *Storage Systems*.
+. In the left navigator pane of the SCV plug-in, select *Storage Systems*.
 . On the *Storage Systems* page, select the storage VM to be modified and then select *Edit*.
-. On the *Edit Storage System* window, enter the new values, and then click *Update* to apply the changes.
+. On the *Edit Storage System* window, enter the new values, and then select *Update* to apply the changes.
 
 == Remove storage VMs
 
@@ -54,9 +54,9 @@ If a resource group has backups that reside on a storage VM that you remove, the
 
 .Steps
 
-. In the left navigator pane of the SCV plug-in, click *Storage Systems*.
-. On the *Storage Systems* page, select the storage VM to be removed and then click *Delete*.
-. In the *Remove Storage System* confirmation box, check the box for *Delete storage system(s)* and then click *Yes* to confirm.
+. In the left navigator pane of the SCV plug-in, select *Storage Systems*.
+. On the *Storage Systems* page, select the storage VM to be removed and then select *Delete*.
+. In the *Remove Storage System* confirmation box, check the box for *Delete storage system(s)* and then select *Yes* to confirm.
 *Note:* Only ESXi host 7.0U1 and later releases are supported.
 +
 link:scpivs44_restart_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere client service].
