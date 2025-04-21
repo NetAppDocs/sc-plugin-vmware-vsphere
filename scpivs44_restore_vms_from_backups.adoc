@@ -103,7 +103,7 @@ If you are restoring a deleted VM, the storage VM credentials that were added to
 . In the left navigator pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Restore* in the secondary drop-down list to start the wizard.
 . In the *Restore* wizard, on the *Select Backup* page, select the backup snapshot that you want to restore.
 +
-You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware snapshots, whether you want mounted backups, and the location.  Select *OK* to return to the wizard.
+You can search for a specific backup name or a partial backup name, or you can filter the backup list by selecting the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware snapshots, whether you want mounted backups, and the location.  Select *OK* to return to the wizard.
 
 . On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field, then select the restore location, and then enter the destination information where the backup should be mounted.
 +
@@ -118,7 +118,7 @@ When restoring partial backups, the restore operation skips the *Select Scope* p
 In SnapCenter Plug-in for VMware vSphere 4.5 and later, you can select secondary storage for FlexGroup volumes.
 
 . Review the Summary page and then select *Finish*.
-. Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the screen.
+. Optional: Monitor the operation progress by selecting *Recent Tasks* at the bottom of the screen.
 +
 Refresh the screen to display updated information.
 

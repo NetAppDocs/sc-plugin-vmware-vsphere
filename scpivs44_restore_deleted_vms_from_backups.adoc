@@ -60,12 +60,14 @@ A restore operation might fail if the storage tier of the FabricPool where the V
 
 .Steps
 
-. Select *Menu* and select the *Storage* menu option, then select a datastore, then select the *Configure* tab, and then select *Backups* in the *SnapCenter Plug-in for VMware vSphere* section.
+. In the vCenter Server, navigate to *Inventory* > *Datastores* and select a datastore.
+. Select the *Configure* > *Backups* in the SnapCenter Plug-in for VMware vSphere section.
+// https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/90 updates
 . Double-click on a backup to see a list of all VMs that are included in the backup.
 . Select the deleted VM from the backup list and select *Restore*.
 . In the *Restore* wizard, on the *Select Backup* page, select the backup copy that you want to restore from.
 +
-You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware snapshots, whether you want mounted backups, and the location. Select *OK* to return to the wizard.
+You can search for a specific backup name or a partial backup name, or you can filter the backup list by selecting the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware snapshots, whether you want mounted backups, and the location. Select *OK* to return to the wizard.
 
 . On the *Select Scope* page, select *Entire virtual machine* in the *Restore scope* field, then select the restore location, and then enter the Destination ESXi host information where the backup should be mounted.
 +
