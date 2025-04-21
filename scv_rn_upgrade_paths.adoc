@@ -82,4 +82,4 @@ a|
 SCV 4.8
 |===
 
-For the latest information about supported versions, refer to https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] (IMT).
+For the latest information about supported versions, refer to https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] (IMT).

@@ -33,4 +33,4 @@ If you attempt to mount a backup copy of an NFS datastore on a storage VM (SVM) 
 [IMPORTANT]
 Make sure that you select the correct datastore to unmount. Otherwise, you might cause an impact on production work.
 
-. In the *Unmount Cloned Datastore* dialog box, select a datastore, select the *Unmount the cloned datastore* checkbox, and then click *Unmount*.
+. In the *Unmount Cloned Datastore* dialog box, select a datastore, select the *Unmount the cloned datastore* checkbox, and then select *Unmount*.

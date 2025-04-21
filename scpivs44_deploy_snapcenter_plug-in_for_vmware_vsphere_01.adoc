@@ -29,7 +29,7 @@ The link:scpivs44_download_the_ova_open_virtual_appliance.html[Download the Open
 For IPv6 address HTML web clients, you must use either Chrome or Firefox.
 . Log in to the *VMware vCenter Single Sign-On page*.
 . On the Navigation pane, right-click any inventory object that is a valid parent object of a virtual machine, such as a datacenter, folder, cluster, or host, and select *Deploy OVF Template* to start the VMware deploy wizard.
-. On the *Select an OVF template* page, specify the location of the `.ova` file (as listed in the following table) and click *Next*.
+. On the *Select an OVF template* page, specify the location of the `.ova` file (as listed in the following table) and select *Next*.
 +
 |===
 |On this wizard page… |Do this…
@@ -56,14 +56,14 @@ Make a note of the username and password that you specify. You need to use these
 In the *Setup Network Properties* section, enter the network information.
 In the *Setup Date and Time* section, select the time zone where the vCenter is located.
 |Ready to complete
-|Review the page and click *Finish*.
+|Review the page and select *Finish*.
 |===
 +
 [NOTE]
 All hosts must be configured with IP addresses (FQDN hostnames are not supported). The deploy operation does not validate your input before deploying.
 
-. Navigate to the VM where SnapCenter Plug-in for VMware vSphere was deployed, then click the *Summary* tab, and then click the *Power On* box to start the SnapCenter Plug-in for VMware vSphere.
-. While the SnapCenter Plug-in for VMware vSphere is powering on, right-click the deployed SnapCenter Plug-in for VMware vSphere, select *Guest OS*, and then click *Install VMware tools*.
+. Navigate to the VM where SnapCenter Plug-in for VMware vSphere was deployed, then select the *Summary* tab, and then select the *Power On* box to start the SnapCenter Plug-in for VMware vSphere.
+. While the SnapCenter Plug-in for VMware vSphere is powering on, right-click the deployed SnapCenter Plug-in for VMware vSphere, select *Guest OS*, and then select *Install VMware tools*.
 //Updated for BURT 1378132 observation 1, March 2021 Madhulika
 +
 The deployment might take a few minutes to complete. Successful deployment is indicated when the SnapCenter Plug-in for VMware vSphere is powered on, the VMware tools is installed, and the screen prompts you to log in to the SnapCenter Plug-in for VMware vSphere.
@@ -76,4 +76,4 @@ Use the format `\https://<appliance-IP-address>:8080` to access the management G
 +
 Login with the admin username and password set at the time of deployment and the MFA token generated using the maintenance console.
 
-. Log in to vCenter HTML5 client, then click *Menu* in the toolbar, and then select *SnapCenter Plug-in for VMware vSphere*
+. Log in to vCenter HTML5 client, then select *Menu* in the toolbar, and then select *SnapCenter Plug-in for VMware vSphere*

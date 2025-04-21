@@ -31,12 +31,12 @@ The guidelines for detaching policies from the SnapCenter Plug-in for VMware vSp
 
 .Steps
 
-. In the left navigator pane of the SCV plug-in, click *Resource Groups*, then select a resource group and click *Edit*.
+. In the left navigator pane of the SCV plug-in, select *Resource Groups*, then select a resource group and select *Edit*.
 . On the *Policies* page of the *Edit Resource Group* wizard, clear the check mark next to the policies you want to detach.
 +
 You can also add a policy to the resource group by checking the policy.
 
-. Make any additional modifications to the resource group in the rest of the wizard, and then click *Finish*.
+. Make any additional modifications to the resource group in the rest of the wizard, and then select *Finish*.
 
 == Modify policies
 
@@ -61,9 +61,9 @@ To modify a SnapCenter Plug-in for VMware vSphere policy schedule, you must modi
 
 .Steps
 
-. In the left navigator pane of the SCV plug-in, click *Policies*, then select a policy and click *Edit*.
+. In the left navigator pane of the SCV plug-in, select *Policies*, then select a policy and select *Edit*.
 . Modify the policy fields.
-. When you are finished, click *Update*.
+. When you are finished, select *Update*.
 
 The changes take effect when the next scheduled backup is performed.
 
@@ -77,6 +77,6 @@ You must have detached the policy from all resource groups in the virtual applia
 
 .Steps
 
-. In the left navigator pane of the SCV plug-in, click *Policies*, then select a policy and click *Remove*.
-. In the confirmation dialog box click *OK*.
+. In the left navigator pane of the SCV plug-in, select *Policies*, then select a policy and select *Remove*.
+. In the confirmation dialog box select *OK*.
 // BURT 1378132 observation 47, March 2021 Ronya

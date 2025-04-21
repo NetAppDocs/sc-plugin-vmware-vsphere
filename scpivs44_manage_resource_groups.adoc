@@ -30,8 +30,8 @@ You can temporarily disable scheduled operations from starting on a resource gro
 
 .Steps
 
-. In the left navigator pane of the SCV plug-in, click *Resource Groups*, select a resource group and click *Suspend* (or click *Resume*).
-. In the confirmation box, click *OK* to confirm.
+. In the left navigator pane of the SCV plug-in, select *Resource Groups*, select a resource group and select *Suspend* (or select *Resume*).
+. In the confirmation box, select *OK* to confirm.
 // BURT 1378132 observation 44, March 2021 Ronya
 
 .After you finish
@@ -54,13 +54,13 @@ An underscore character (_) is allowed.
 
 .Steps
 
-. In the left navigator pane of the SCV plug-in, click *Resource Groups*, then select a resource group and click *Edit*.
-. On the left list in the *Edit Resource Group* wizard, click the category that you want to modify and enter your changes.
+. In the left navigator pane of the SCV plug-in, select *Resource Groups*, then select a resource group and select *Edit*.
+. On the left list in the *Edit Resource Group* wizard, select the category that you want to modify and enter your changes.
 +
 You can make changes in multiple categories. You can also edit secondary protected resources in this option.
 // 6.1 update
 
-. Click *Next* until you see the Summary page, and then click *Finish*.
+. Select *Next* until you see the Summary page, and then select *Finish*.
 
 == Delete resource groups
 
@@ -75,6 +75,6 @@ In a SnapVault relationship, the last snapshot cannot be deleted; therefore, the
 
 .Steps
 
-. In the left navigator pane of the SCV plug-in, click *Resource Groups*, then select a resource group and click *Delete*.
-. In the *Delete resource group* confirmation box, click *OK* to confirm.
+. In the left navigator pane of the SCV plug-in, select *Resource Groups*, then select a resource group and select *Delete*.
+. In the *Delete resource group* confirmation box, select *OK* to confirm.
 // BURT 1378132 observation 46, March 2021 Ronya

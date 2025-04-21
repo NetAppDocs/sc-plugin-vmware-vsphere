@@ -43,10 +43,10 @@ A mount operation might fail if the storage tier of the FabricPool where the dat
 
 . In the VMware vSphere client shortcuts page select *Storage*.
 . Right-click a datastore and select *SnapCenter Plug-in for VMware vSphere* > *Mount Backup*.
-. On the *Mount Datastore* page, select a backup and a backup location (primary or secondary), and then click *Finish*.
+. On the *Mount Datastore* page, select a backup and a backup location (primary or secondary), and then select *Finish*.
 //Updated for BURT 1378132 observation 29, March 2021 Madhulika
 . Optional: To verify that the datastore is mounted, perform the following:
-.. Click *Menu* in the toolbar, and then select *Storage* from the drop-down list.
+.. Select *Menu* in the toolbar, and then select *Storage* from the drop-down list.
 .. The left navigator pane displays the datastore you mounted at the top of the list.
 +
 If you perform an attach or mount operation on a SnapVault destination volume that is protected by SnapVault schedules and is running ONTAP 8.3, you might see an extra snapshot listed in the attach or mount dialog screen. This occurs because the attach or mount operation clones the SnapVault destination volume and ONTAP updates the volume by creating a new snapshot.
