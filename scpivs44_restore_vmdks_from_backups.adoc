@@ -50,7 +50,7 @@ However, when VMDKs that are attached to a VM with a NVMe disk are backed up, th
 . In the left navigator pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Restore* in the secondary drop-down list.
 . In the *Restore* wizard, on the Select Backup page, select the backup copy that you want to restore from.
 +
-You can search for a specific backup name or a partial backup name, or you can filter the backup list by clicking the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware snapshots, whether you want mounted backups, and primary or secondary location. Select *OK* to return to the wizard.
+You can search for a specific backup name or a partial backup name, or you can filter the backup list by selecting the filter icon and selecting a date and time range, selecting whether you want backups that contain VMware snapshots, whether you want mounted backups, and primary or secondary location. Select *OK* to return to the wizard.
 
 . On the *Select Scope* page, select the restore destination.
 +
@@ -69,5 +69,5 @@ In the Datastore selection table, you can select or unselect any VMDKs.
 
 . On the *Select Location* page, select the snapshot that you want to restore (primary or secondary).
 . Review the Summary page and then select *Finish*.
-. Optional: Monitor the operation progress by clicking *Recent Tasks* at the bottom of the screen.
+. Optional: Monitor the operation progress by selecting *Recent Tasks* at the bottom of the screen.
 . Refresh the screen to display updated information.
