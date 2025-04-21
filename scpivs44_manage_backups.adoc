@@ -62,4 +62,4 @@ You can select a maximum of 40 backups to delete.
 
 . Select *OK* to confirm the delete operation.
 // BURT 1378132 observation 49, March 2021 Ronya
-. Refresh the backup list by clicking the refresh icon on the left vSphere menu bar.
+. Refresh the backup list by selecting the refresh icon on the left vSphere menu bar.

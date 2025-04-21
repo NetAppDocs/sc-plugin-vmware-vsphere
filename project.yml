@@ -1,6 +1,6 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere 6.1
+  name: SnapCenter Plug-in for VMware vSphere
   internal:
     pdf_enabled: true
   prod:
