@@ -24,7 +24,7 @@ Beginning with SnapCenter Plug-in for VMware (SCV) 5.0, you need to add applicat
 All SnapCenter plug-ins require the following minimum privileges.
 
 |===
-|All-access commands: Minimum privileges required for ONTAP 8.3 and later.
+|All-access commands: Minimum ONTAP privileges.
 |event generate-autosupport-log
 |job history show
 job show
@@ -128,7 +128,7 @@ network interface failover-groups
 |===
 
 |===
-|Read-only Commands: Minimum Privileges Required for ONTAP 8.3 and Later
+|Read-only Commands: Minimum ONTAP Privileges
 
 |
 cluster identity show
@@ -139,7 +139,7 @@ vserver show
 |===
 
 |===
-|All-access commands: Minimum privileges required for ONTAP 9 and later.
+|All-access commands: Minimum ONTAP privileges
 
 |
 consistency-group
@@ -154,14 +154,7 @@ You can ignore the warning messages about the unsupported vServer commands.
 
 == Additional ONTAP information
 
-* If you are running ONTAP 8.2.x:
-+
-You must login as `vsadmin` on the storage VM to have the appropriate privileges for SnapCenter Plug-in for VMware vSphere operations.
-
-* If you are running ONTAP 8.3 and later:
-+
-You must login as `vsadmin` or with a role that has the minimum privileges listed in the tables above.
-* You need to be the cluster admin to create and manage user roles. You can associate the users either with Cluster storage VM or with storage VM.
+// https://jira.ngage.netapp.com/browse/SNAPCDOC-322 April 2025
 * You need ONTAP 9.12.1 or later versions to use SnapMirror active sync feature.
 * To use TamperProof Snapshot (TPS) feature:
 ** You need ONTAP 9.13.1 and later versions for SAN

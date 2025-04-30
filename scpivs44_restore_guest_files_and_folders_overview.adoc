@@ -93,7 +93,7 @@ You cannot restore files and folders from a VM that is running Linux guest OS. H
 When you try to restore from NTFS-format to FAT-format, the NTFS security descriptor is not copied because the FAT file system does not support Windows security attributes.
 
 * You cannot restore guest files from a cloned VMDK or an uninitialized VMDK.
-* You cannot restore from secondary backups if the backup was performed on a system running ONTAP 9.2 or later and if the VMware consistency option was on.
+// https://jira.ngage.netapp.com/browse/SNAPCDOC-322 updates
 * You cannot restore the directory structure for a file.
 +
 If a file in a nested directory is selected to be restored, the file is not restored with the same directory structure. The directory tree is not restored, only the file. If you want to restore a directory tree, you can copy the directory itself at the top of the structure.

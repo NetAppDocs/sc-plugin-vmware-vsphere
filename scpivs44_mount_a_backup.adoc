@@ -49,6 +49,4 @@ A mount operation might fail if the storage tier of the FabricPool where the dat
 .. Select *Menu* in the toolbar, and then select *Storage* from the drop-down list.
 .. The left navigator pane displays the datastore you mounted at the top of the list.
 +
-If you perform an attach or mount operation on a SnapVault destination volume that is protected by SnapVault schedules and is running ONTAP 8.3, you might see an extra snapshot listed in the attach or mount dialog screen. This occurs because the attach or mount operation clones the SnapVault destination volume and ONTAP updates the volume by creating a new snapshot.
-+
 To prevent new snapshots from being created when you clone the volume, turn off the ONTAP schedule for the SnapVault volume. Previously existing snapshots are not deleted.
