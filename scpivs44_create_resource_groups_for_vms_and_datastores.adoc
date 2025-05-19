@@ -275,16 +275,9 @@ If the quiesce operation fails for any of the VMs in the backup, then the backup
 == Manage compatibility check failures
 
 SnapCenter performs compatibility checks when you attempt to create a resource group.
-
+Always refer to https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^] for the latest information about SnapCenter support.
+// https://jira.ngage.netapp.com/browse/SNAPCDOC-322 updates April 2025
 Reasons for incompatibility might be:
-
-* VMDKs are on unsupported storage; for example, on an ONTAP system running in 7-Mode or on a non-ONTAP device.
-
-* A datastore is on NetApp storage running Clustered Data ONTAP 8.2.1 or earlier.
-+
-SnapCenter version 4.x supports ONTAP 8.3.1 and later.
-+
-SnapCenter Plug-in for VMware vSphere does not perform compatibility checks for all ONTAP versions; only for ONTAP versions 8.2.1 and earlier. Therefore, always refer to https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^] for the latest information about SnapCenter support.
 
 * A shared PCI device is attached to a VM.
 * The preferred IP address is not configured in SnapCenter.

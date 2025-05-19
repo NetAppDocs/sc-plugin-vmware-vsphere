@@ -37,7 +37,7 @@ SnapMirror active sync is supported only for VMFS Datastores.
 +
 To protect a VMFS datastore on a SnapMirror active sync deployment, as SnapCenter administrator you need to:
 
-**  Configure clusters and mediator as described in the technical report: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf[TR-4878: SnapMirror active sync (formerly SMBC)].
+**  Configure clusters and mediator as described in the technical report: https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html[Configure the ONTAP Mediator and clusters for SnapMirror active sync].
 ** Add the volume associated with the VMFS datastore to the consistency group and create a data protection relationship using _AutomatedFailOver_ or _AutomatedFailOverDuplex_ protection policy between two ONTAP storage systems. _AutomatedFailOverDuplex_ policy is supported from ONTAP 9.15.1 release onwards.
 
 [NOTE]
@@ -80,7 +80,9 @@ You should set the retention count to 2 backups or higher if you plan to enable 
 //Updated for BURT 1378132 observation 23, March 2021 Madhulika
 +
 [NOTE]
-The maximum retention value is 1018 backups for resources on ONTAP 9.4 or later, and 254 backups for resources on ONTAP 9.3 or earlier. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports. This is also true for spanning datastores. If a spanning datastore includes resources on both ONTAP 9.3 and earlier and on ONTAP 9.4 and later, make sure you set the retention value below 254.
+The maximum retention value is 1018 backups. Backups will fail if retention is set to a value higher than what the underlying ONTAP version supports. This is also true for spanning datastores.
+
+// https://jira.ngage.netapp.com/browse/SNAPCDOC-322 updates April 2025
 // Burt 1363510 May 2022
 . In the *Replication* fields, specify the type of replication to secondary storage,  as shown in the following table:
 +
