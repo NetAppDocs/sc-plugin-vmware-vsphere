@@ -37,7 +37,8 @@ image:scv50_image1.png["vSphere client screen"]
 . On the Configure tab, select a backup,  and select *Rename*.
 . On the *Rename Backup* dialog box, enter the new name, and select *OK*.
 +
-Do not use the following special characters in VM, datastore, policy, backup, or resource group names:  & * $ # @ ! \ / : * ? " < > - | ; ' , . An underscore character (_) is allowed.
+Do not use the following special characters in VM, datastore, policy, backup, or resource group names:  & * $ # @ ! \ / : * ? " < > - | ; ' , and space. An underscore character (_) is allowed.
+// SNAPDOC-359 updates
 
 == Delete backups
 
