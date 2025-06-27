@@ -48,8 +48,8 @@ You can remove or add resources in resource groups in vCenter, detach or attach 
 
 If you want to modify the name of a resource group, do not use the following special characters in VM, datastore, policy, backup, or resource group names:
 
-% & * $ # @ ! \ / : * ? " < > - | ; ' , .
-
+% & * $ # @ ! \ / : * ? " < > - | ; ' , and space.
+// SNAPDOC-359 updates
 An underscore character (_) is allowed.
 
 .Steps

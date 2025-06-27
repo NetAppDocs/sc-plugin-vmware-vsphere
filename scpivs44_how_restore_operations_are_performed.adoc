@@ -45,7 +45,8 @@ VMFS environments: Clone and mount with Storage VMotion
 VMFS environments: Clone and mount with Storage VMotion
 |VMs and VMDKs
 |VM-consistent secondary backups
-|NFS environments: Clone and mount with Storage VMotion
+|NFS environments: ONTAP SnapMirror Restore
+// updated for SNAPCDOC-360
 VMFS environments: Clone and mount with Storage VMotion
 |vVol VMs
 |Crash-consistent primary backups
