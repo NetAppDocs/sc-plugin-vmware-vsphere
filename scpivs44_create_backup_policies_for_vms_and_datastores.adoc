@@ -62,7 +62,7 @@ In linked mode, each vCenter has a separate virtual appliance. Therefore, you ca
 //Updated for BURT 1378132 observation 22, March 2021 Madhulika
 +
 Do not use the following special characters in VM, datastore, cluster, policy, backup, or resource group names: % & * $ # @ ! \ / : * ? " < > - | ; ' , and space.
-// SNAPCDOC-359 updates
+// SNAPCDOC-359 updates.
 +
 An underscore character (_) is allowed.
 
