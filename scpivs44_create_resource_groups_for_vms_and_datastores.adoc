@@ -18,43 +18,21 @@ A resource group is the container for VMs, datastores, vSphere Tags, and vSphere
 
 A resource group can contain the following:
 
-* Traditional VMs and datastores
-+
-Any combination of traditional VMs, traditional SAN datastores, and traditional NAS datastores. Traditional VMs cannot be combined with vVol VMs.
-
-* Flexgroup datastores
-+
-A single FlexGroup datastore. Spanning Flexgroup datastores are not supported. A FlexGroup datastore cannot be combined with traditional VMs or datastores.
-
-* FlexVol datastores
-+
-One or more FlexVol datastores. Spanning datastores are supported.
-
-* vVol VMs
-+
-One or more vVol VMs. vVol VMs cannot be combined with traditional VMs or datastores.
-
-* vSphere tag
-+
-All VMs and Datastores, excluding vVol Datastores, that have the specified vSphere tag. 
+* Any combination of traditional VMs, traditional SAN datastores, and traditional NAS datastores. Traditional VMs cannot be combined with vVol VMs.
+* A single FlexGroup datastore. Spanning Flexgroup datastores are not supported. A FlexGroup datastore cannot be combined with traditional VMs or datastores.
+* One or more FlexVol datastores. Spanning datastores are supported.
+* One or more vVol VMs. vVol VMs cannot be combined with traditional VMs or datastores.
+* All VMs and Datastores, excluding vVol Datastores, that have the specified vSphere tag. 
 // updated for 5.0
 // Burt 1422442 23Nov2021 Ronya
 // Burt 1428392 24Nov2021 Ronya
 // Burt 1434168 3Nov2021, burt 1428684 24Nov2021 Ronya
-
-* vVol VMs in a folder
-+
-All vVols in a single, specified vVol folder. If the folder contains a mix of vVol VMs and traditional VMs, SnapCenter Plug-in for VMware vSphere backs up the vVol VMs and skips the traditional VMs.
+* All vVols in a single, specified vVol folder. If the folder contains a mix of vVol VMs and traditional VMs, SnapCenter Plug-in for VMware vSphere backs up the vVol VMs and skips the traditional VMs.
 // Burt 1434168 3Nov2021, burt 1428684 24Nov2021 Ronya
-
-*  VMs and datastores on ASA r2
-+
-You cannot combine ASA r2 VMs and datastores with other VMs and datastores.
-
-For all resource groups:
+* VMs and datastores on ASA r2 storage systems. You cannot combine ASA r2 VMs and datastores with other VMs and datastores.
 
 [IMPORTANT]
-If you are using VMware vSphere Cluster Service (vCLS), do not include VMs managed by vCLS in SnapCenter Plug-in for VMware vSphere resource groups.
+If you are using VMware vSphere Cluster Service (vCLS), do not add vCLS-managed VMs to SnapCenter Plug-in for VMware vSphere resource groups.
 
 // Burt 1413651 24Nov2021 Ronya
 For more information, refer to https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/SCV_unable_to_backup_vCLS_VMs_after_updating_vCenter_to_7.0.x[SCV unable to backup vCLS VMs after updating vCenter to 7.0.x]
@@ -110,9 +88,10 @@ SnapCenter performs compatibility checks when you create a resource group.
 
 * Create secondary protection for a resource group
 +
-Secondary protection takes care of creating replication relationship for the resources added in  resource group. You need to create a consistency group-based SnapMirror relationship in the preferred cluster and SVM using a specified policy from the primary. The secondary protection is supported only for ASA r2 system based datastore and virtual machines. The cluster peering and SVM peering should be pre-configured. Secondary protection only allows asynchronous SnapMirror policies. You need to provide consistency group suffix when creating the secondary protection.
+Secondary protection takes care of creating replication relationship for the resources added in  resource group. You need to create a consistency group-based SnapMirror relationship in the preferred cluster and SVM using a specified policy from the primary. The secondary protection is supported only for ASA r2 system based datastore and virtual machines. The cluster peering and SVM peering should be pre-configured. Secondary protection only allows asynchronous SnapMirror policies. You need to provide consistency group suffix when creating the secondary protection. 
 
-Secondary protection takes care of creating replication relationship for the resources added in  resource group. 
+SCV supports both synchronous and asynchronous SnapMirror relationships. It automatically detects consistency group snapshots at parent and child levels and replicates them. To enable replication and set a snapshot label, select a policy with SnapMirror or SnapVault enabled.
+// SCV 6.2 updates
 
 .Steps
 
@@ -250,7 +229,7 @@ For example: If the primary consistency group name is sccg_2024-11-28_120918 and
 |===
 // 6.1 updates 
 image:secondary_protection.png["Create resource group window"]
-
++
 . On the *Schedules* page, configure the backup schedule for each selected policy.
 +
 In the starting hour field, enter a date and time other than zero. The date must be in the format `day/month/year`.
