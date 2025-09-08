@@ -14,3 +14,4 @@ summary: "Learn about the new capabilities available in SnapCenter Plug-in for V
 :imagesdir: ./media/
 
 [.lead]
+Learn about the new capabilities available in SnapCenter Plug-in for VMware vSphere 6.2.
