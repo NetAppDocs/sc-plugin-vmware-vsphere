@@ -53,42 +53,23 @@ For more information, refer to the ONTAP tools for VMware vSphere documentation.
 
 .About this task
 
-You can add or remove resources from a resource group at any time.
-
-* Backing up a single resource
-+
-To back up a single resource (for example, a single VM), you must create a resource group that contains that single resource.
-
-* Backing up multiple resources
-+
-To back up multiple resources, you must create a resource group that contains multiple resources.
-
-* Resource groups that contain FlexGroup volumes in MetroCluster environments
-+
-If you are running on ONTAP 9.8 or ONTAP 9.9, then after a switchover or switchback, you must restart the SnapCenter Plug-in for VMware vSphere service and resynchronize the SnapMirror relationships before you back up resource groups in MetroCluster environments.
-+
-In ONTAP 9.8, the backups hang after the switchback. This issue is fixed in ONTAP 9.9.
-
-* Optimizing snapshots
-+
-To optimize snapshots, you should group the VMs and datastores that are associated with the same volume into one resource group.
+* You can add or remove resources from a resource group anytime.
+* To back up a single resource, such as a VM, create a resource group that contains only that resource.
+* To back up multiple resources, create a resource group that includes all the resources you want to protect.
+* For FlexGroup volumes in MetroCluster environments, if you are using ONTAP 9.8 or 9.9, restart the SnapCenter Plug-in for VMware vSphere service and resynchronize SnapMirror relationships after a switchover or switchback before backing up resource groups. In ONTAP 9.8, backups may hang after a switchback; this is resolved in ONTAP 9.9.
+* For optimal snapshot performance, group VMs and datastores on the same volume into a single resource group.
 // BURT 1378132 observation 25, March 2021 Ronya
-
-* Backup policies
-+
-While you can create a resource group without a backup policy, data protection operations are only possible when at least one policy is attached to the resource group. You have the option to use an existing policy or create a new one during the resource group creation process.
+* You can create a resource group without attaching a backup policy; however, data protection operations require at least one policy to be associated with the resource group. You can either select an existing policy or create a new one during the resource group creation.
 [NOTE]
 If you are selecting a backup policy with snapshot locking period, you need to select ONTAP 9.12.1 or later version.  
 
-* Compatibility checks
-+
-SnapCenter performs compatibility checks when you create a resource group.
+* SnapCenter performs compatibility checks when you create a resource group.
 +
 <<Manage compatibility check failures>>
 
 * Create secondary protection for a resource group
 +
-Secondary protection takes care of creating replication relationship for the resources added in  resource group. You need to create a consistency group-based SnapMirror relationship in the preferred cluster and SVM using a specified policy from the primary. The secondary protection is supported only for ASA r2 system based datastore and virtual machines. The cluster peering and SVM peering should be pre-configured. Secondary protection only allows asynchronous SnapMirror policies. You need to provide consistency group suffix when creating the secondary protection. 
+Secondary protection takes care of creating replication relationship for the resources added in  resource group. You need to create a consistency group-based SnapMirror relationship in the preferred cluster and SVM using a specified policy from the primary. The secondary protection is supported only for ASA r2 system based datastore and virtual machines. The cluster peering and SVM peering should be pre-configured. Secondary protection only allows asynchronous SnapMirror policies. You need to provide consistency group suffix when creating the secondary protection.
 
 SCV supports both synchronous and asynchronous SnapMirror relationships. It automatically detects consistency group snapshots at parent and child levels and replicates them. To enable replication and set a snapshot label, select a policy with SnapMirror or SnapVault enabled.
 // SCV 6.2 updates
@@ -96,8 +77,7 @@ SCV supports both synchronous and asynchronous SnapMirror relationships. It auto
 .Steps
 
 . In the left navigator pane of the SCV plug-in, select *Resource Groups*, then select *Create* to start the wizard.
-
-This is the easiest way to create a resource group. However, you can also create a resource group with one resource by performing one of the following:
+Alternatively, you can create a resource group for a single resource by doing one of the following:
 
 ** To create a resource group for one VM, on the shortcuts page, select *Hosts and Clusters*, then right-click a VM, select *SnapCenter Plug-in for VMware vSphere* > *Create Resource Group*.
 ** To create a resource group for one datastore, on the shortcuts page, select *Hosts and Clusters*, then right-click a datastore, select *SnapCenter Plug-in for VMware vSphere* > *Create Resource Group*.
@@ -111,10 +91,9 @@ This is the easiest way to create a resource group. However, you can also create
 |Select a vCenter server.
 |Name
 |Enter a name for the resource group.
-Do not use the following special characters in VM, datastore, policy,
-backup, or resource group names:
+Do not use the following special characters in VM, datastore, policy, backup, or resource group names:
 % & * $ # @ ! \ / : * ? " < > - [vertical bar] ; ' , and space. An underscore character (_) is allowed. VM or datastore names with special characters are truncated, which makes it difficult to search for a specific backup.
-In linked mode, each vCenter has a separate SnapCenter Plug-in for VMware vSphere repository. Therefore, you can use duplicate names across vCenters.
+In Linked Mode, each vCenter maintains its own SnapCenter Plug-in for VMware vSphere repository. As a result, you can use the same resource group names in different vCenters.
 // SNAPCDOC-359 updates
 |Description
 |Enter a description of the resource group.
@@ -145,11 +124,11 @@ ASA r2 storage system does not support renaming of snapshots and as a result SCV
 a| If you want to use a custom format for the snapshot names, then check this box and enter the name format.
 
 * By default, this feature is disabled.
-* The default snapshot names use the format `<ResourceGroup>_<Date-TimeStamp>`
-However, you can specify a custom format using the variables $ResourceGroup, $Policy, $HostName, $ScheduleType, and $CustomText. Use the drop-down list in the custom name field to select which variables you want to use and the order in which they are used.
-If you select $CustomText, the name format is `<CustomName>_<Date-TimeStamp>`. Enter the custom text in the additional box that is provided.
+* By default, snapshot names follow the format `<ResourceGroup>_<Date-TimeStamp>`.
+You can customize the snapshot name by using variables such as $ResourceGroup, $Policy, $HostName, $ScheduleType, and $CustomText. Select the desired variables and their order from the drop-down list in the custom name field.
+If you include $CustomText, the format becomes `<CustomName>_<Date-TimeStamp>`. Enter your custom text in the provided field.
 [NOTE]:
-If you also select the “_recent” suffix, you must make sure that the custom snapshot names will be unique in the datastore, therefore, you should add the $ResourceGroup and $Policy variables to the name.
+If you select the “_recent” suffix, ensure that your custom snapshot names are unique within the datastore by including the $ResourceGroup and $Policy variables in the name.
 // Burt 1371168  June 2021 Ronya
 
 * Special characters
@@ -206,7 +185,8 @@ a|
 +
 In Linked Mode, the list includes policies in all the linked vCenters. You must select a policy that is on the same vCenter as the resource group.
 
-. On the *Secondary protection*  page, the list of selected resources are displayed with their protection status. To protect the unprotected resources, select the replication policy type, consistency group suffix,  destination cluster, and destination SVM from the dropdown.  On creation of resource group a separate job is created for secondary protection and you can see it it in job monitor window.
+. On the *Secondary protection* page, you see the selected resources along with their current protection status. To enable protection for any unprotected resources, choose the replication policy type, enter a consistency group suffix, and select the destination cluster and destination SVM from the dropdown menus. When the resource group is created, a separate job is initiated for secondary protection, which you can monitor in the job monitor window.
++
 |===
 |Fields |Description
 
@@ -214,22 +194,20 @@ In Linked Mode, the list includes policies in all the linked vCenters. You must 
 |Name of the SnapMirror policy. Only *Asynchronous* and *Mirror and Vault* secondary policies are supported.
 
 |Consistency group suffix
-|A destination setting used to append to the primary consistency group to form the destination consistency group name. 
-For example: If the primary consistency group name is sccg_2024-11-28_120918 and you enter _dest as suffix then secondary consistency group will be created as sccg_2024-11-28_120918_dest. The suffix is applicable only for unprotected consistency groups.
+|Enter a suffix to append to the primary consistency group name when creating the destination consistency group. 
+For example, if the primary consistency group name is `sccg_2024-11-28_120918` and you enter `_dest` as the suffix, the secondary consistency group will be named `sccg_2024-11-28_120918_dest`. This suffix is used only for unprotected consistency groups.
 
 |Destination cluster
-|For all unprotected storage units, SCV displays peered cluster(s) names in the dropdown. If the storage added to SCV is in SVM scope, then due to ONTAP limitation, the cluster ID is displayed instead of the name.
+|For all unprotected storage units, SCV displays the names of peered clusters in the dropdown menu. If the storage is added to SCV with SVM scope, the cluster ID is shown instead of the cluster name due to ONTAP limitations.
 
 |Destination SVM
-|For all unprotected storage units, SCV displays Peered SVM(s) names. Cluster and SVM is automatically chosen when one of the storage units that is part of the consistency group is selected. The same is applied to all the other storage units in the same consistency group.
+|For all unprotected storage units, SCV displays the names of peered SVMs. When you select a storage unit that is part of a consistency group, the corresponding cluster and SVM are automatically selected for all other storage units in that consistency group.
 
 |Secondary protected resources
 |For all the protected storage units of the resources that are added in the resources page, the secondary relationship details including cluster, SVM, and replication type are displayed.
-
 |===
-// 6.1 updates 
 image:secondary_protection.png["Create resource group window"]
-+
+
 . On the *Schedules* page, configure the backup schedule for each selected policy.
 +
 In the starting hour field, enter a date and time other than zero. The date must be in the format `day/month/year`.
