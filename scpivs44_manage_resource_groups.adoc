@@ -26,7 +26,7 @@ Resource groups are called backup jobs in Virtual Storage Console (VSC).
 
 == Suspend and resume operations on resource groups
 
-You can temporarily disable scheduled operations from starting on a resource group. Later when you want, you can enable those operations.
+Pause scheduled operations on a resource group. Enable them again when needed.
 
 .Steps
 
@@ -64,18 +64,18 @@ You can make changes in multiple categories. You can also edit secondary protect
 
 == Delete resource groups
 
-You can delete a resource group in vCenter if you no longer need to protect the resources in the resource group. You must ensure that all resource groups are deleted before you remove SnapCenter Plug-in for VMware vSphere from vCenter.
+Delete a resource group in vCenter if you do not need to protect the resources. Delete all resource groups before removing SnapCenter Plug-in for VMware vSphere.
 
 .About this task
 
-All resource group delete operations are performed as force deletes. The delete operation detaches all policies from the vCenter resource group, removes the resource group from SnapCenter Plug-in for VMware vSphere, and deletes all backups and snapshots of the resource group.
+All resource group delete operations are performed as force deletes. When you delete a resource group, the system detaches all policies from the vCenter resource group, removes the resource group from SnapCenter Plug-in for VMware vSphere, and deletes all backups and snapshots of the resource group.
 
 [NOTE]
-In a SnapVault relationship, the last snapshot cannot be deleted; therefore, the resource group cannot be deleted. Before deleting a resource group that is part of a SnapVault relationship,  you must use either System Manager or use the ONTAP CLI to remove the SnapVault relationship, and then you must delete the last snapshot.
+In a SnapVault relationship, you cannot delete the last snapshot, therefore you cannot delete the resource group. Before deleting a resource group in a SnapVault relationship, use System Manager or ONTAP CLI to remove the relationship, then delete the last snapshot.
 
 .Steps
 
 . In the left navigator pane of the SCV plug-in, select *Resource Groups*, then select a resource group and select *Delete*.
-. In the *Delete resource group* confirmation box, select *OK* to confirm. When you delete a resource group, secondary protection is not removed automatically. Use system manager to delete secondary protection if needed.
+. In the *Delete resource group* confirmation box, select *OK* to confirm. When you delete a resource group, the system does not remove secondary protection. Use System Manager to delete secondary protection if needed.
 //SCV 6.2 updates
 // BURT 1378132 observation 46, March 2021 Ronya

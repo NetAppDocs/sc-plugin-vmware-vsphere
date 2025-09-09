@@ -38,7 +38,7 @@ Double-click any job to generate a detailed report for that job.
 
 . Optional: On the Reports tab, select *Download* and select the format (HTML or CSV).
 +
-You can also select the download icon to download plug-in logs.
+You can select the download icon to download plug-in logs.
 
 == Types of reports from the VMware vSphere client
 
