@@ -46,7 +46,7 @@ However, when VMDKs that are attached to a VM with a NVMe disk are backed up, th
 
 .Steps
 
-. In the VMware vSphere client GUI, select *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
+. In the VMware vSphere client user interface, select *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
 . In the left navigator pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Restore* in the secondary drop-down list.
 . In the *Restore* wizard, on the Select Backup page, select the backup copy that you want to restore from.
 +

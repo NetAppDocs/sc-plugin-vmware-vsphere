@@ -19,7 +19,7 @@ A resource group is the container for VMs, datastores, vSphere Tags, and vSphere
 A resource group can contain the following:
 
 * Any combination of traditional VMs, traditional SAN datastores, and traditional NAS datastores. Traditional VMs cannot be combined with vVol VMs.
-* A single FlexGroup datastore. Spanning Flexgroup datastores are not supported. A FlexGroup datastore cannot be combined with traditional VMs or datastores.
+* A single FlexGroup datastore. SCV does not support spanning FlexGroup datastores. A FlexGroup datastore cannot be combined with traditional VMs or datastores.
 * One or more FlexVol datastores. Spanning datastores are supported.
 * One or more vVol VMs. vVol VMs cannot be combined with traditional VMs or datastores.
 * All VMs and Datastores, excluding vVol Datastores, that have the specified vSphere tag. 
@@ -49,17 +49,17 @@ Do not add VMs that are in an inaccessible state. Although it is possible to cre
 
 ONTAP tools for VMware must be deployed before you create a resource group that contains vVol VMs.
 
-For more information, refer to the ONTAP tools for VMware vSphere documentation. Additionally, refer to https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] for latest information about the supported versions on ONTAP tools.
+For more information, refer to the ONTAP tools for VMware vSphere documentation. For supported versions, visit  https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 .About this task
 
 * You can add or remove resources from a resource group anytime.
 * To back up a single resource, such as a VM, create a resource group that contains only that resource.
 * To back up multiple resources, create a resource group that includes all the resources you want to protect.
-* For FlexGroup volumes in MetroCluster environments, if you are using ONTAP 9.8 or 9.9, restart the SnapCenter Plug-in for VMware vSphere service and resynchronize SnapMirror relationships after a switchover or switchback before backing up resource groups. In ONTAP 9.8, backups may hang after a switchback; this is resolved in ONTAP 9.9.
+* For FlexGroup volumes in MetroCluster environments, if you are using ONTAP 9.8 or 9.9, restart the SnapCenter Plug-in for VMware vSphere service and resynchronize SnapMirror relationships after a switchover or switchback before backing up resource groups. In ONTAP 9.8, backups might hang after a switchback; this is resolved in ONTAP 9.9.
 * For optimal snapshot performance, group VMs and datastores on the same volume into a single resource group.
 // BURT 1378132 observation 25, March 2021 Ronya
-* You can create a resource group without attaching a backup policy; however, data protection operations require at least one policy to be associated with the resource group. You can either select an existing policy or create a new one during the resource group creation.
+* You can create a resource group without a backup policy, but data protection requires at least one policy. Select an existing policy or create a new one during resource group creation.
 [NOTE]
 If you are selecting a backup policy with snapshot locking period, you need to select ONTAP 9.12.1 or later version.  
 
@@ -69,10 +69,8 @@ If you are selecting a backup policy with snapshot locking period, you need to s
 
 * Create secondary protection for a resource group
 +
-Secondary protection takes care of creating replication relationship for the resources added in  resource group. You need to create a consistency group-based SnapMirror relationship in the preferred cluster and SVM using a specified policy from the primary. The secondary protection is supported only for ASA r2 system based datastore and virtual machines. The cluster peering and SVM peering should be pre-configured. Secondary protection only allows asynchronous SnapMirror policies. You need to provide consistency group suffix when creating the secondary protection.
-
-SCV supports both synchronous and asynchronous SnapMirror relationships. It automatically detects consistency group snapshots at parent and child levels and replicates them. To enable replication and set a snapshot label, select a policy with SnapMirror or SnapVault enabled.
-// SCV 6.2 updates
+Secondary protection enables replication for the resources in the resource group. To use secondary protection, create a consistency group-based SnapMirror relationship from the primary to the preferred cluster and SVM using a specified policy. This feature is supported only for ASA r2 system-based datastores and virtual machines. Ensure that cluster and SVM peering are configured in advance. Only asynchronous SnapMirror policies are supported. When configuring secondary protection, you must specify a consistency group suffix.
+//SCV 6.2 updates removed as it was not required
 
 .Steps
 
@@ -185,7 +183,7 @@ a|
 +
 In Linked Mode, the list includes policies in all the linked vCenters. You must select a policy that is on the same vCenter as the resource group.
 
-. On the *Secondary protection* page, you see the selected resources along with their current protection status. To enable protection for any unprotected resources, choose the replication policy type, enter a consistency group suffix, and select the destination cluster and destination SVM from the dropdown menus. When the resource group is created, a separate job is initiated for secondary protection, which you can monitor in the job monitor window.
+. On the *Secondary protection* page, you see the selected resources along with their current protection status. To enable protection for any unprotected resources, choose the replication policy type, enter a consistency group suffix, and select the destination cluster and destination SVM from the dropdown menus. When the resource group is created, SCV starts a separate job for secondary protection. You can monitor this job in the job monitor window.
 +
 |===
 |Fields |Description
@@ -208,15 +206,15 @@ For example, if the primary consistency group name is `sccg_2024-11-28_120918` a
 |===
 image:secondary_protection.png["Create resource group window"]
 
-. On the *Schedules* page, configure the backup schedule for each selected policy.
+. On the *Schedules* page, set up the backup schedule for each selected policy.
 +
 In the starting hour field, enter a date and time other than zero. The date must be in the format `day/month/year`.
 // BURT 1280281 June 2021  and Burt 1457923 March 2022 Ronya
 +
-When you select a number of days in Every field, then backups are performed on day 1 of the month, and thereafter at every interval that is specified. For example, if you select the option *Every 2 days*, then backups are performed on day 1, 3, 5, 7, and so on throughout the month, regardless of whether the starting date is even or odd.
+If you select a value in the *Every* field (for example, *Every 2 days*), backups will run on the first day of the month and then repeat at the specified interval (day 1, 3, 5, 7, so on.) for the rest of the month, regardless of whether the starting date is even or odd.
 // BURT 1463517 April 2022 Ronya
 +
-You must fill in each field. SnapCenter Plug-in for VMware vSphere creates schedules in the time zone in which the SnapCenter Plug-in for VMware vSphere is deployed. You can modify the time zone by using the SnapCenter Plug-in for VMware vSphere GUI.
+All fields are required. SnapCenter Plug-in for VMware vSphere creates backup schedules based on the time zone where it is deployed. To change the time zone, use the SnapCenter Plug-in for VMware vSphere user interface.
 +
 link:scpivs44_modify_the_time_zones.html[Modify the time zones for backups].
 
@@ -228,7 +226,7 @@ Before you select *Finish*, you can go back to any page in the wizard and change
 After you select *Finish*, the new resource group is added to the resource groups list.
 +
 [NOTE]
-If the quiesce operation fails for any of the VMs in the backup, then the backup is marked as not VM- consistent even if the policy selected has VM consistency selected. In this case, it is possible that some of the VMs were successfully quiesced.
+If the quiesce operation fails for any of the VMs in the backup, then SCV marks the backup as not VM-consistent even if you selected a policy with VM consistency. In this case, it is possible that some of the VMs were successfully quiesced.
 
 == Manage compatibility check failures
 
@@ -242,9 +240,9 @@ Reasons for incompatibility might be:
 * You have not added the storage VM (SVM) management IP address to SnapCenter.
 * The storage VM is down.
 
-To correct a compatibility error, perform the following:
+To fix a compatibility error, do the following:
 
 . Make sure the storage VM is running.
 . Make sure that the storage system on which the VMs are located has been added to the SnapCenter Plug-in for VMware vSphere inventory.
-. Make sure the storage VM is added to SnapCenter. Use the Add storage system option on the VMware vSphere client GUI.
+. Make sure the storage VM is added to SnapCenter. Use the Add storage system option on the VMware vSphere client user interface.
 . If there are spanning VMs that have VMDKs on both NetApp and non-NetApp datastores, then move the VMDKs to NetApp datastores.

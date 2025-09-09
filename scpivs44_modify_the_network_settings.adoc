@@ -18,7 +18,7 @@ You can modify the network settings that are configured in SnapCenter Plug-in fo
 
 .Before you begin
 
-You must know the IP address and the log on credentials for the SnapCenter Plug-in for VMware vSphere management GUI. You must also note down the MFA token generated from the maintenance console.
+You must know the IP address and the log on credentials for the SnapCenter Plug-in for VMware vSphere management user interface. You must also note down the MFA token generated from the maintenance console.
 
 * The IP address was displayed when the SnapCenter Plug-in for VMware vSphere was deployed.
 * Use the log in credentials provided during the deployment of the SnapCenter Plug-in for VMware vSphere or as later modified.
@@ -26,13 +26,13 @@ You must know the IP address and the log on credentials for the SnapCenter Plug-
 
 .Steps
 
-. Log in to the SnapCenter Plug-in for VMware vSphere management GUI.
+. Log in to the SnapCenter Plug-in for VMware vSphere management user interface.
 +
 Use the format `\https://<appliance-IP-address>:8080`
 
 . Select the Settings icon in the top toolbar.
 +
-image:scpivs44_image31.png["SnapCenter Plug-in for VMware vSphere management GUI"]
+image:scpivs44_image31.png["SnapCenter Plug-in for VMware vSphere management user interface"]
 
 . On the *Settings* page, in the *Network Settings* section, select *IPv4* or *IPv6* address, and then select *Edit*.
 +

@@ -46,7 +46,7 @@ Follow the steps below to add NVMe controller to the disk.
 
 .Steps
 
-. In the VMware vSphere client GUI, select *Menu* in the toolbar, and then select *Hosts and clusters* from the drop-down list.
+. In the VMware vSphere client user interface, select *Menu* in the toolbar, and then select *Hosts and clusters* from the drop-down list.
 . In the left navigation pane, right-click a VM, then select *SnapCenter Plug-in for VMware vSphere* > *Attach virtual disk(s)*.
 
 . On the *Attach Virtual Disk* window, in the *Backup* section, select a backup.

@@ -49,7 +49,7 @@ For the latest information about supported versions, refer to https://imt.netapp
 .Steps
 
 . Prepare for the upgrade by disabling SnapCenter Plug-in for VMware vSphere.
-.. Log in to the SnapCenter Plug-in for VMware vSphere management GUI.
+.. Log in to the SnapCenter Plug-in for VMware vSphere management user interface.
 The IP address is displayed when you deploy the SnapCenter Plug-in for VMware vSphere.
 .. Select *Configuration* in the left navigation pane, and then select the *Service* option in the Plug-in Details section to disable the plug-in.
 
@@ -62,7 +62,7 @@ The IP address is displayed when you deploy the SnapCenter Plug-in for VMware vS
 . Install the upgrade.
 
 .. In your browser, navigate to the VMware vSphere vCenter.
-.. On the vCenter GUI, select *vSphere client (HTML)*.
+.. On the vCenter user interface, select *vSphere client (HTML)*.
 .. Log in to the *VMware vCenter Single Sign-On* page.
 .. On the navigator pane, select the VM that you want to upgrade and then select the *Summary* tab.
 .. On the *Related Objects* pane, select on any datastore in the list and then select the *Summary* tab.

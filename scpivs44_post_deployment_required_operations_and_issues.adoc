@@ -33,7 +33,7 @@ If you are a new SnapCenter user, you must add storage VMs to SnapCenter before 
 
 To correct either of these issues, do the following:
 
-. Clear the browser cache and then check if the GUI is operating properly.
+. Clear the browser cache and then check if the user interface is operating properly.
 +
 If the problem persists, then restart the VMware vSphere client service
 
@@ -45,7 +45,7 @@ If you do not use the admin credentials, you might receive an authentication err
 
 .Steps
 
-. Log on to the SnapCenter Plug-in for VMware vSphere management GUI using the format `\https://<appliance-IP-address>:8080`. Use the admin username, password, and the MFA token details to login. MFA token can be generated from the maintenance console.
+. Log on to the SnapCenter Plug-in for VMware vSphere management user interface using the format `\https://<appliance-IP-address>:8080`. Use the admin username, password, and the MFA token details to login. MFA token can be generated from the maintenance console.
 . Restart the service.
 
 == Register SnapCenter Plug-in for VMware vSphere with SnapCenter Server
@@ -59,7 +59,7 @@ If you want to perform application-over-VMDK workflows in SnapCenter (applicatio
 
 .About this task
 
-* You register SnapCenter Plug-in for VMware vSphere with SnapCenter Server by using the SnapCenter GUI to add a “vsphere” type host.
+* You register SnapCenter Plug-in for VMware vSphere with SnapCenter Server by using the SnapCenter user interface to add a “vsphere” type host.
 +
 Port 8144 is predefined for communication within the SnapCenter Plug-in for VMware vSphere.
 +
@@ -69,7 +69,7 @@ You can register multiple instances of SnapCenter Plug-in for VMware vSphere on 
 
 .Steps
 
-. In the SnapCenter GUI left navigation pane, select *Hosts*.
+. In the SnapCenter user interface left navigation pane, select *Hosts*.
 . Verify that the *Managed Hosts* tab is selected at the top, then locate the virtual appliance host name and verify that it resolves from the SnapCenter Server.
 . Select *Add* to start the wizard.
 . On the *Add Hosts* dialog box, specify the host you want to add to the SnapCenter Server as listed in the following table:
