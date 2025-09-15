@@ -76,6 +76,6 @@ In a SnapVault relationship, you cannot delete the last snapshot, therefore you 
 .Steps
 
 . In the left navigator pane of the SCV plug-in, select *Resource Groups*, then select a resource group and select *Delete*.
-. In the *Delete resource group* confirmation box, select *OK* to confirm. When you delete a resource group, the system does not remove secondary protection. Use System Manager to delete secondary protection if needed.
+. In the *Delete resource group* confirmation dialog, select *OK* to confirm. Deleting a resource group does not remove secondary protection. If needed, use System Manager to delete secondary protection. Consistency groups created for the resource group are not automatically removed; you must manually delete them from ONTAP using System Manager or another supported interface.
 //SCV 6.2 updates
 // BURT 1378132 observation 46, March 2021 Ronya
