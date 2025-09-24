@@ -16,7 +16,7 @@ summary: "Learn about the new capabilities available in SnapCenter Plug-in for V
 [.lead]
 Learn about the new capabilities available in SnapCenter Plug-in for VMware vSphere 6.2.
 
-The SnapCenter Plug-in for VMware vSphere 6.2 release adds support for backup and recovery of virtual machines (VMs) on VMFS datastores using ONTAP 9.17.1 for ASA r2 systems.
+The SnapCenter Plug-in for VMware vSphere 6.2 release adds support for backup and recovery of virtual machines (VMs) on VMFS datastores for ASA r2 systems running ONTAP 9.17.1 or later.
 With this release, you can perform the following operations for VMs, datastores, and Virtual Machine Disk (VMDK) format on ASA r2 systems:
 
 * Provision consistency groups for primary protection
