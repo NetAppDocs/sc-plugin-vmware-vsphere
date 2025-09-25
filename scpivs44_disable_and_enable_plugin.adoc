@@ -31,7 +31,7 @@ When you enable the SnapCenter Plug-in for VMware vSphere, the plug-in is regist
 . Optional: Back up the SnapCenter Plug-in for VMware vSphere MySQL repository in case you want to restore it to a new virtual appliance.
 +
 link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html[Back up the SnapCenter Plug-in for VMware vSphere MySQL database].
-. Log in to the SnapCenter Plug-in for VMware vSphere management GUI using the format `\https://<OVA-IP-address>:8080`. Login with the admin username and password set at the time of deployment and the MFA token generated using the maintenance console.
+. Log in to the SnapCenter Plug-in for VMware vSphere management user interface using the format `\https://<OVA-IP-address>:8080`. Login with the admin username and password set at the time of deployment and the MFA token generated using the maintenance console.
 +
 The IP address of the SnapCenter Plug-in for VMware vSphere is displayed when you deploy the plug-in.
 

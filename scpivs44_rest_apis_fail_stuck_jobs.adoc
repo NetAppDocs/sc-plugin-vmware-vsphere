@@ -23,5 +23,5 @@ Use the following REST API in the Jobs section to change jobs that are stuck in 
 |REST API |Comments
 
 |`/4.1/jobs/{id}/failJobs`
-|When you pass the IDs of jobs that are stuck in a running state, `failJobs` marks those jobs as failed. To identify jobs that are stuck in a running state, use the job monitor GUI to see the state of every job and the job ID.
+|When you pass the IDs of jobs that are stuck in a running state, `failJobs` marks those jobs as failed. To identify jobs that are stuck in a running state, use the job monitor user interface to see the state of every job and the job ID.
 |===

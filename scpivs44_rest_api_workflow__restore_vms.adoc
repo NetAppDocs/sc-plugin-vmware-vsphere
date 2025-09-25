@@ -19,7 +19,7 @@ summary: 'To perform restore operations for VM backups using the SnapCenter Plug
 //
 
 [.lead]
-To perform restore operations for VM backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.
+To restore VM backups with the SnapCenter Plug-in for VMware vSphere REST APIs, follow the required sequence of REST API calls as outlined below.
 
 For each REST API, add `\https://<server>:<port>` at the front of the REST API to form a complete endpoint.
 

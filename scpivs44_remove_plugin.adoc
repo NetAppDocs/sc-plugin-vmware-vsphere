@@ -22,7 +22,7 @@ If you no longer need to use the SnapCenter data protection features, you must d
 
 .Steps
 
-. Log in to the SnapCenter Plug-in for VMware vSphere management GUI using the format `\https://<OVA-IP-address>:8080`.
+. Log in to the SnapCenter Plug-in for VMware vSphere management user interface using the format `\https://<OVA-IP-address>:8080`.
 +
 The IP address of the SnapCenter Plug-in for VMware vSphere is displayed when you deploy the plug-in.
 

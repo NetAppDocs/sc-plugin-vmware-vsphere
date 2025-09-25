@@ -29,7 +29,7 @@ If you modify a storage VM that was automatically added as part of a cluster (so
 // BURT 1378132 observation 50, March 2021 Ronya
 
 [IMPORTANT]
-If you added storage VMs for application-based data protection operations using the SnapCenter GUI, you must use the same GUI to modify those storage VMs.
+If you added storage VMs for application-based data protection operations using the SnapCenter user interface, you must use the same user interface to modify those storage VMs.
 
 .Steps
 
@@ -42,7 +42,7 @@ If you added storage VMs for application-based data protection operations using 
 You can use the VMware vSphere client to remove storage VMs from the inventory in vCenter.
 
 [NOTE]
-If you added storage VMs for application-based data protection operations using the SnapCenter GUI, you must use the same GUI to modify those storage VMs.
+If you added storage VMs for application-based data protection operations using the SnapCenter user interface, you must use the same user interface to modify those storage VMs.
 
 .Before you begin
 

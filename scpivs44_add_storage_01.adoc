@@ -15,7 +15,7 @@ summary: 'Adding storage enables the SnapCenter Plug-in for VMware vSphere to re
 [.lead]
 Before you can backup or restore VMs, you must add storage clusters or storage VMs. Adding storage enables the SnapCenter Plug-in for VMware vSphere to recognize and manage backup and restore operations in vCenter.
 
-* Which GUI to use
+* Which user interface to use
 +
 Use the VMware vSphere client to add storage.
 
@@ -38,7 +38,7 @@ The ESXi server, the SnapCenter Plug-in for VMware vSphere, and each vCenter mus
 SnapCenter Plug-in for VMware vSphere performs backup and restore operations on directly connected storage VMs and on storage VMs in a storage cluster.
 
 [NOTE]
-If you are using the SnapCenter Plug-in for VMware vSphere to support application-based backups on VMDKs, then you must use the SnapCenter GUI to enter storage authentication details and register storage systems.
+If you are using the SnapCenter Plug-in for VMware vSphere to support application-based backups on VMDKs, then you must use the SnapCenter user interface to enter storage authentication details and register storage systems.
 
 * For vCenters in linked mode, you must separately add storage systems to each vCenter.
 * If you are adding SVM, names for storage VMs must resolve to management LIFs.

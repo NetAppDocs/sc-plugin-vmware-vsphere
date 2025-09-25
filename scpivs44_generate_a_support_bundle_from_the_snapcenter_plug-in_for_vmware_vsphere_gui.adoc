@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html
 keywords:
-summary: 'You can generate a support bundle from the SnapCenter Plug-in for VMware vSphere GUI.'
+summary: 'You can generate a support bundle from the SnapCenter Plug-in for VMware vSphere user interface.'
 ---
 
-= Generate a support bundle from the SnapCenter Plug-in for VMware vSphere GUI
+= Generate a support bundle from the SnapCenter Plug-in for VMware vSphere user interface
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -22,7 +22,7 @@ summary: 'You can generate a support bundle from the SnapCenter Plug-in for VMwa
 
 .Before you begin
 
-To log on to the SnapCenter Plug-in for VMware vSphere management GUI, you must know the IP address and the log in credentials. You must also note down the MFA token generated from the maintenance console.
+To log on to the SnapCenter Plug-in for VMware vSphere management user interface, you must know the IP address and the log in credentials. You must also note down the MFA token generated from the maintenance console.
 
 * The IP address was displayed when the SnapCenter Plug-in for VMware vSphere was deployed.
 * Use the log in credentials provided during the deployment of the SnapCenter Plug-in for VMware vSphere or as later modified.
@@ -30,7 +30,7 @@ To log on to the SnapCenter Plug-in for VMware vSphere management GUI, you must 
 
 .Steps
 
-. Log in to the SnapCenter Plug-in for VMware vSphere GUI.
+. Log in to the SnapCenter Plug-in for VMware vSphere user interface.
 +
 Use the format `\https://<OVA-IP-address>:8080`.
 

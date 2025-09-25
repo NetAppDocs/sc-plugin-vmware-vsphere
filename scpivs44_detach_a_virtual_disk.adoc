@@ -18,7 +18,7 @@ After you have attached a virtual disk to restore individual files, you can deta
 
 .Steps
 
-. In the VMware vSphere client GUI, select *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
+. In the VMware vSphere client user interface, select *Menu* in the toolbar, and then select *VMs and Templates* from the drop-down list.
 . In the left navigator pane, select a VM.
 //Updated for BURT 1378132 observation 37, March 2021 Madhulika
 . In the left navigation pane, right-click the VM, then select *SnapCenter Plug-in for VMware vSphere* in the drop-down list, and then select *Detach virtual disk* in the secondary drop-down list.
