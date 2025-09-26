@@ -43,7 +43,7 @@ The cache is in the following locations, based on the type of server operating s
 
 == Workaround if you already upgraded before clearing the cache
 
-. Log in to the SnapCenter Plug-in for VMware vSphere management GUI.
+. Log in to the SnapCenter Plug-in for VMware vSphere management user interface.
 +
 The IP address is displayed when you deploy the SnapCenter Plug-in for VMware vSphere.
 

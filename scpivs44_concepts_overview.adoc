@@ -20,7 +20,7 @@ SnapCenter Plug-in for VMware vSphere adds the following functionality to your e
 
 * Support for VM-consistent and crash-consistent data protection operations.
 +
-You can use the VMware vSphere client GUI in vCenter for all backup and restore operations of VMware virtual machines (traditional VMs and vVol VMs), VMDKs, and datastores. For vVol VMs (VMs in vVol datastores), only crash-consistent backups are supported. You can also restore VMs and VMDKs and restore files and folders that reside on a guest OS.
+You can use the VMware vSphere client user interface in vCenter for all backup and restore operations of VMware virtual machines (traditional VMs and vVol VMs), VMDKs, and datastores. For vVol VMs (VMs in vVol datastores), only crash-consistent backups are supported. You can also restore VMs and VMDKs and restore files and folders that reside on a guest OS.
 +
 When backing up VMs, VMDKs, and datastores, the plug-in does not support RDMs. Backup jobs for VMs ignore RDMs. If you need to back up RDMs, you must use a SnapCenter application-based plug-in.
 +
@@ -28,11 +28,11 @@ SnapCenter Plug-in for VMware vSphere includes a MySQL database that contains th
 
 * Support for application-consistent (application over VMDK/RDM) data protection operations.
 +
-You can use the SnapCenter GUI and the appropriate SnapCenter application plug-ins for all backup and restore operations of databases and filesystems on primary and secondary storage on VMs.
+You can use the SnapCenter user interface and the appropriate SnapCenter application plug-ins for all backup and restore operations of databases and filesystems on primary and secondary storage on VMs.
 +
 SnapCenter natively leverages the SnapCenter Plug-in for VMware vSphere for all data protection operations on VMDKs, raw device mappings (RDMs), and NFS datastores. After the virtual appliance is deployed, the plug-in handles all interactions with vCenter. SnapCenter Plug-in for VMware vSphere supports all SnapCenter application-based plug-ins.
 +
-SnapCenter does not support single snapshots of databases and VMs together. Backups for VMs and databases must be scheduled and run independently, which creates separate snapshots, even if the databases and VMs are hosted in the same volume. Schedule the database application backups using the SnapCenter GUI; schedule the VM and datastore backups using the VMware vSphere client GUI.
+SnapCenter does not support single snapshots of databases and VMs together. Backups for VMs and databases must be scheduled and run independently, which creates separate snapshots, even if the databases and VMs are hosted in the same volume. Schedule the database application backups using the SnapCenter user interface; schedule the VM and datastore backups using the VMware vSphere client user interface.
 
 * VMware tools is required for VM consistent snapshots
 +

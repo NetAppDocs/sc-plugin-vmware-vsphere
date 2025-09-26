@@ -33,6 +33,7 @@ Prescripts and postscripts are run by the SnapCenter Plug-in for VMware vSphere.
 // BURT 1378132 observation 80, March 2021 Ronya
 
 For example:
+
 * A PERL script path might be `/support/support/script.pl`
 * A shell script path might be `/support/support/script.sh`
 
@@ -64,6 +65,7 @@ Postscripts are executed in the POST_BACKUP phase of the operation after the bac
 If a postscript fails, the backup completes successfully, and a warning message is sent.
 
 Check the following to verify that the script values are populated:
+
 * For PERL scripts: `/support/support/log_env.log`
 * For shell scripts: `/support/support/log_file.log`
 

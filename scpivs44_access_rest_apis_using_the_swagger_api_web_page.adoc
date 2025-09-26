@@ -20,7 +20,7 @@ The plug-in has different Swagger web pages from the SnapCenter Server Swagger w
 
 .Before you begin
 
-For SnapCenter Plug-in for VMware vSphere REST APIs, you must know either the IP address or the host name of SnapCenter Plug-in for VMware vSphere.
+To access the SnapCenter Plug-in for VMware vSphere REST APIs, ensure you have the IP address or host name of the SnapCenter Plug-in for VMware vSphere.
 
 [NOTE]
 The plug-in only supports REST APIs for the purpose of integrating with third party applications and does not support PowerShell cmdlets or a CLI.

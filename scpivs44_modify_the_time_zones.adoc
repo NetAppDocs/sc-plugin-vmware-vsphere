@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: scpivs44_modify_the_time_zones.html
 keywords:
-summary: 'When you configure a backup schedule for a SnapCenter Plug-in for VMware vSphere resource group, the schedule is automatically set for the time zone in which SnapCenter Plug-in for VMware vSphere is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management GUI or maintenance console.'
+summary: 'When you configure a backup schedule for a SnapCenter Plug-in for VMware vSphere resource group, the schedule is automatically set for the time zone in which SnapCenter Plug-in for VMware vSphere is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management user interface or maintenance console.'
 ---
 
 = Modify the time zones for backups
@@ -12,11 +12,11 @@ summary: 'When you configure a backup schedule for a SnapCenter Plug-in for VMwa
 :linkattrs:
 :imagesdir: ./media/
 [.lead]
-When you configure a backup schedule for a SnapCenter Plug-in for VMware vSphere resource group, the schedule is automatically set for the time zone in which SnapCenter Plug-in for VMware vSphere is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management GUI or maintenance console.
+When you configure a backup schedule for a SnapCenter Plug-in for VMware vSphere resource group, the schedule is automatically set for the time zone in which SnapCenter Plug-in for VMware vSphere is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management user interface or maintenance console.
 
 .Before you begin
 
-You must know the IP address and the log in credentials for the SnapCenter Plug-in for VMware vSphere management GUI. You must also note down the MFA token generated from the maintenance console.
+You must know the IP address and the log in credentials for the SnapCenter Plug-in for VMware vSphere management user interface. You must also note down the MFA token generated from the maintenance console.
 
 * The IP address was displayed when the SnapCenter Plug-in for VMware vSphere was deployed.
 * Use the log in credentials provided during the deployment of the SnapCenter Plug-in for VMware vSphere or as later modified.
@@ -24,7 +24,7 @@ You must know the IP address and the log in credentials for the SnapCenter Plug-
 
 .Steps
 
-. Log in to the SnapCenter Plug-in for VMware vSphere management GUI.
+. Log in to the SnapCenter Plug-in for VMware vSphere management user interface.
 +
 Use the format `\https://<appliance-IP-address>:8080`
 
