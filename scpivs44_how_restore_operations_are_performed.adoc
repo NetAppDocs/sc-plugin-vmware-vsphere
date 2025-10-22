@@ -81,3 +81,31 @@ During a restore operation, you might encounter the error `Host unresolved volum
 For NVMe over TCP and NVMe over FC storage, SCV cannot add controllers dynamically when a new subsystem is added. You should make the necessary mapping before the mount operation. 
 
 Refer to https://kb.netapp.com/mgmt/SnapCenter/SCV_clone_or_restores_fail_with_error_'Host_Unresolved_volumes_is_null'#[KB article: SCV clone or restores fail with error 'Host Unresolved volumes is null^] for more information about the error.
+
+== Enable Amazon FSx for NetApp ONTAP storage systems
+To perform restore operations using Amazon FSx for NetApp ONTAP storage systems as secondary storage with the SnapCenter Plug-in for VMware vSphere, you must enable support for these storage systems. 
+By default, support for Amazon FSx for NetApp ONTAP is disabled. Follow the steps below to enable it:
+
+.Steps
+. Navigate to the Swagger: https://SCV-IP:8144/api/swagger-ui/index.html
+. Acquire the Authentication token
+. Enable FSX support:
++
+|===
+|Step |REST API |Comments
+
+|1
+|`/4.1/configurations`
+|`Update configurations`
+{
+  "configurationName": "ENABLE_FSX",
+  "configurationValue": "true",
+  "objectType": "ConfigKey"
+}
+
+|2
+|`/4.1/configurations`
+|`get configuration by Key` 
+|===
+. Restart the services from maintenance console
+// VMDP-6249 - jani
