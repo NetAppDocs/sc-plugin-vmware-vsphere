@@ -49,7 +49,7 @@ Do not add VMs that are in an inaccessible state. Although it is possible to cre
 
 ONTAP tools for VMware must be deployed before you create a resource group that contains vVol VMs.
 
-For more information, refer to the ONTAP tools for VMware vSphere documentation. For supported versions, visit  https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+For more information, refer to the ONTAP tools for VMware vSphere documentation. For supported versions, visit  https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
 
 .About this task
 
@@ -231,7 +231,7 @@ If the quiesce operation fails for any of the VMs in the backup, then SCV marks 
 == Manage compatibility check failures
 
 SnapCenter performs compatibility checks when you attempt to create a resource group.
-Always refer to https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^] for the latest information about SnapCenter support.
+Always refer to https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^] for the latest information about SnapCenter support.
 // https://jira.ngage.netapp.com/browse/SNAPCDOC-322 updates April 2025
 Reasons for incompatibility might be:
 
