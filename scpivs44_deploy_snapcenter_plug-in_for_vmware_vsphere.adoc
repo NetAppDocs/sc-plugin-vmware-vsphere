@@ -37,7 +37,7 @@ This section lists all the necessary actions you should do before you begin the 
 * Log out of and close all vSphere client browser sessions, and clear the browser cache to prevent issues during deployment.
 * Enable Transport Layer Security (TLS) in vCenter. Refer to VMware documentation.
 * If you plan to perform backups in vCenters other than the one where the SnapCenter Plug-in for VMware vSphere is deployed, ensure the ESXi server, the SnapCenter Plug-in for VMware vSphere, and each vCenter are synchronized to the same time.
-* To protect VMs on vVol datastores, deploy ONTAP tools for VMware vSphere first. For supported ONTAP tools versions, see the https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^]. ONTAP tools provision and configure storage on ONTAP and the VMware web client.
+* To protect VMs on vVol datastores, deploy ONTAP tools for VMware vSphere first. For supported ONTAP tools versions, see the https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^]. ONTAP tools provision and configure storage on ONTAP and the VMware web client.
 
 Deploy the SnapCenter Plug-in for VMware vSphere in the same time zone as the vCenter. Backup schedules are executed in the time zone in which the SnapCenter Plug-in for VMware vSphere is deployed. vCenter reports data in the time zone in which the vCenter is located. Therefore, if the SnapCenter Plug-in for VMware vSphere and vCenter are in different time zones, data in the SnapCenter Plug-in for VMware vSphere Dashboard might not be the same as the data in the reports.
 

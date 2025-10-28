@@ -27,7 +27,7 @@ SnapCenter Plug-in for VMware vSphere 4.5 and later supports datastores on large
 +
 You must add Storage Clusters to SnapCenter Plug-in for VMware vSphere and ONTAP tools for VMware vSphere for vVol DataProtection to work.
 +
-For more information, refer to the ONTAP tools for VMware vSphere documentation. Additionally, refer to https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] for latest information about the supported versions on ONTAP tools.
+For more information, refer to the ONTAP tools for VMware vSphere documentation. Additionally, refer to https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] for latest information about the supported versions on ONTAP tools.
 
 .Before you begin
 

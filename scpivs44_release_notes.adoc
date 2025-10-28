@@ -20,5 +20,5 @@ For details about known issues, limitations, and fixed issues, see https://libra
 
 [NOTE]
 ====
-For the latest information about supported versions, refer to the NetApp Interoperability Matrix Tool (http://mysupport.netapp.com/matrix[IMT^]).
+For the latest information about supported versions, refer to https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
 ====
