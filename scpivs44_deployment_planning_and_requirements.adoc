@@ -105,6 +105,9 @@ The SnapCenter Server uses this to communicate with the SnapCenter Plug-in for V
 // Vrishali review comments  April2021 Ronya
 |ONTAP tools for VMware
 |SnapCenter Plug-in for VMware vSphere uses this to manage vVol datastores (VMware virtual volumes). For supported versions, refer to https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
+|Amazon FSxN for NetApp ONTAP storage
+|9.10 and above
+// patch update for SCV 6.2 P1
 |===
 
 For the latest information about supported versions, refer to https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^].
@@ -128,9 +131,8 @@ The minimum software requirements for NVMe over TCP and NVMe over FC protocol su
 |24 GB
 |Minimum hard drive space for the SnapCenter Plug-in for VMware vSphere, logs, and MySQL database
 |100 GB
-|Maximum heap size of vmcontrol service in the appliance
-|8 GB
 |===
+// SNAPCDOC-387 updates
 
 == Connection and port requirements
 
