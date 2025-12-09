@@ -131,9 +131,8 @@ The minimum software requirements for NVMe over TCP and NVMe over FC protocol su
 |24 GB
 |Minimum hard drive space for the SnapCenter Plug-in for VMware vSphere, logs, and MySQL database
 |100 GB
-|Maximum heap size of vmcontrol service in the appliance
-|8 GB
 |===
+// SNAPCDOC-387 updates
 
 == Connection and port requirements
 
