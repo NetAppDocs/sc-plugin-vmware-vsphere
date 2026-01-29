@@ -5,7 +5,7 @@ keywords:
 summary: 'You can restore one or more files or folders from a VMDK on a Windows guest OS.'
 ---
 
-= Restore guest files and folders from VMDKs
+= Restore guest files and folders from VMDKs using the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

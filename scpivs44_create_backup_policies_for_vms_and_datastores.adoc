@@ -5,7 +5,7 @@ keywords:
 summary: 'You must create backup policies before you use the SnapCenter Plug-in for VMware vSphere to back up VMs and datastores.'
 ---
 
-= Create backup policies for VMs and datastores
+= Create backup policies for VMs and datastores in the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

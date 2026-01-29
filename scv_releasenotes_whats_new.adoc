@@ -5,7 +5,7 @@ keywords: what's new, release notes, scv, 6.2
 summary: "Learn about the new capabilities available in SnapCenter Plug-in for VMware vSphere 6.2."
 ---
 
-= What's new in SnapCenter Plug-in for VMware vSphere 6.2
+= What's new in the SnapCenter Plug-in for VMware vSphere 6.2
 
 :hardbreaks:
 :nofooter:

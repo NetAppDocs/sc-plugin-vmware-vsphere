@@ -5,7 +5,7 @@ keywords:
 summary: 'You can restore VMs, VMDKs, files, and folders from primary or secondary backups.'
 ---
 
-= Restore overview
+= Restore options for the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

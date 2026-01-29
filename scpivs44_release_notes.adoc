@@ -5,7 +5,7 @@ keywords:
 summary: 'Release notes provide important information about this release of SnapCenter Plug-in for VMware vSphere, including licensing requirements, known issues, cautions, limitations, and any documentation updates or corrections.'
 ---
 
-= SnapCenter Plug-in for VMware vSphere Release notes
+= Release notes for the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

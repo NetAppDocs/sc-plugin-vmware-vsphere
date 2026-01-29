@@ -5,7 +5,7 @@ keywords:
 summary: 'Add the Root and Intermediate certificates of Certificate Authority to the VMware vCenter in order to trust the certificate and the artifacts that are signed with it.'
 ---
 
-= Add certificates to the VMware Certificate Store
+= Add certificates to the VMware certificate store for the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

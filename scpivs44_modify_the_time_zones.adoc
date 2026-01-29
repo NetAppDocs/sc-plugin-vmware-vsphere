@@ -5,7 +5,7 @@ keywords:
 summary: 'When you configure a backup schedule for a SnapCenter Plug-in for VMware vSphere resource group, the schedule is automatically set for the time zone in which SnapCenter Plug-in for VMware vSphere is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management user interface or maintenance console.'
 ---
 
-= Modify the time zones for backups
+= Modify the time zones for backups in the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

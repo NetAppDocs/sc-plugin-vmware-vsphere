@@ -5,7 +5,7 @@ keywords:
 summary: 'All backup operations are performed on resource groups, which can contain any combination of one or more VMs and datastores. You can back up on demand or according to a defined protection schedule.'
 ---
 
-= Data protection workflow
+= Data protection workflow for the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

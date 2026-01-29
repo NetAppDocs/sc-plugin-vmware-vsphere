@@ -5,7 +5,7 @@ keywords:
 summary: 'Even though backups have run successfully in the past, they might start failing during the time that the SnapCenter Plug-in for VMware vSphere must wait for the storage system to exceed the configured timeout period. If this condition occurs, you can increase the configured timeout.'
 ---
 
-= Modify the configured storage timeout
+= Modify the storage timeout in the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

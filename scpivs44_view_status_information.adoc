@@ -5,7 +5,7 @@ keywords:
 summary: 'You can view status information on the vSphere client Dashboard. Status information is updated once an hour.'
 ---
 
-= View status information
+= View status information in the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

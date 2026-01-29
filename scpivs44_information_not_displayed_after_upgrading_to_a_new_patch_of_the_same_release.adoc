@@ -5,7 +5,7 @@ keywords:
 summary: 'After upgrading SnapCenter Plug-in for VMware vSphere to a new patch of the same release, recent jobs or other information might not be displayed in the Dashboard and job monitor.'
 ---
 
-= Information not displayed after upgrading to a new patch of the same release
+= Information not displayed after upgrading to a new patch of the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

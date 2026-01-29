@@ -5,7 +5,7 @@ keywords:
 summary: 'REST APIs are exposed through the Swagger web page. You can access the Swagger web page to display the SnapCenter Server or SnapCenter Plug-in for VMware vSphere REST APIs, as well as to manually issue an API call. Use SnapCenter Plug-in for VMware vSphere REST APIs to perform protection operations on VMs and datastores.'
 ---
 
-= Access REST APIs using the Swagger API web page
+= Access REST APIs using the Swagger API web page for the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

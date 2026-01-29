@@ -5,7 +5,7 @@ keywords:
 summary: 'You can download the job logs from the Job Monitor tab on the Dashboard of the SnapCenter VMware vSphere client.'
 ---
 
-= Download job logs
+= Download job logs from the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords:
 summary: 'To simplify working with vCenter Server RBAC, the SnapCenter Plug-in for VMware vSphere provides a set of predefined roles that enable users to perform SnapCenter tasks. There is also a read-only role that allows users to view SnapCenter information, but not perform any tasks.'
 ---
 
-= Predefined roles packaged with SnapCenter Plug-in for VMware vSphere
+= Predefined roles packaged with the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font
