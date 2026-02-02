@@ -5,7 +5,7 @@ keywords:
 summary: 'To find job IDs for VMware vSphere client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere.'
 ---
 
-= REST API to mark stuck jobs as failed in the SnapCenter Plug-in for VMware vSphere
+= REST API to mark stuck jobs as failed in the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

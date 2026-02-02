@@ -5,7 +5,7 @@ keywords:
 summary: 'For VMFS environments, the SnapCenter Plug-in for VMware vSphere uses clone and mount operations with Storage VMotion to perform restore operations. For NFS environments, the plug-in uses native ONTAP Single File SnapRestore (SFSR) to provide greater efficiency for most restore operations. For vVol VMs, the plug-in uses ONTAP Single File snapshot Restore and SnapMirror Restore for restore operations.'
 ---
 
-= How the SnapCenter Plug-in for VMware vSphere performs restore operations
+= How the SCV performs restore operations
 :hardbreaks:
 :nofooter:
 :icons: font

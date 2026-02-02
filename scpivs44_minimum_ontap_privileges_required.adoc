@@ -5,7 +5,7 @@ keywords:
 summary: 'The minimum ONTAP privileges that are required vary according to the SnapCenter plug-ins you are using for data protection.'
 ---
 
-= Minimum ONTAP privileges required for the SnapCenter Plug-in for VMware vSphere
+= Minimum ONTAP privileges required for the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

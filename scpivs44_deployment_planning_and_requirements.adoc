@@ -5,7 +5,7 @@ keywords:
 summary: 'You should be aware of the deployment requirements before you deploy the virtual appliance.'
 ---
 
-= Deployment planning and requirements for the SnapCenter Plug-in for VMware vSphere
+= Deployment planning and requirements for the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

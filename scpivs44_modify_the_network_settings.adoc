@@ -5,7 +5,7 @@ keywords:
 summary: 'You can modify the network settings that are configured in SnapCenter Plug-in for VMware vSphere. These settings are used by the plug-in to access vCenter.'
 ---
 
-= Modify the network settings for the SnapCenter Plug-in for VMware vSphere
+= Modify the network settings for the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords:
 summary: 'To perform mount and unmount operations for datastore backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.'
 ---
 
-= REST API workflows to mount and unmount datastores in the SnapCenter Plug-in for VMware vSphere
+= REST API workflows to mount and unmount datastores in the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

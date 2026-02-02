@@ -5,7 +5,7 @@ keywords:
 summary: 'Before you begin deployment of SnapCenter Plug-in for VMware vSphere, you should make sure you have the minimum required vCenter privileges.'
 ---
 
-= Minimum vCenter privileges required for the SnapCenter Plug-in for VMware vSphere
+= Minimum vCenter privileges required for the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

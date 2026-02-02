@@ -5,7 +5,7 @@ keywords:
 summary: 'To generate reports and download logs for VMware vSphere client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must use the REST API calls for VMware vSphere.'
 ---
 
-= REST APIs to download jobs and generate reports in the SnapCenter Plug-in for VMware vSphere
+= REST APIs to download jobs and generate reports in the SCV
 :hardbreaks:
 :nofooter:
 :icons: font
