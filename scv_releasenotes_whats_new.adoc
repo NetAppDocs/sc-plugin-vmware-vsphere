@@ -26,5 +26,16 @@ With this release, you can perform the following operations for VMs, datastores,
 * Perform restore workflows
 * Provision secondary protection when creating or modifying resource groups (available with ONTAP 9.16.1 and later versions)
 
+SnapCenter Plug-in for VMware vSphere 6.2 introduces integration with NetApp Backup and Recovery (NBR), delivering enhanced data protection and management capabilities:
+
+* Support for the 3-2-1 backup and archival strategy
+* Ransomware protection with SnapLock and logical air-gapped backups using object locking
+* Automated remediation during ransomware scans
+* Disaster recovery enablement with alternate location restore
+* Automated SnapMirror relationship creation for secondary and object storage targets, streamlined backup retention management, and simplified application and VM backup workflows
+* Improved scalability and performance to accommodate growing data volumes
+* Reduced overhead and total cost of ownership with a fully managed backup service
+* Centralized management of multiple vCenter instances from a single interface
+
 Beginning with this release, SnapCenter Plug-in for VMware vSphere supports Amazon FSxN for NetApp ONTAP storage systems running version 9.10 or later.
 // patch update for SCV 6.2 P1
