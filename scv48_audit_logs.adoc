@@ -5,7 +5,7 @@ keywords:
 summary: 'Audit log provides traceability of who did what and when. An audit log is a collection of events in a chronological order, and it is written to a file within the appliance.'
 ---
 
-= Audit logs
+= Audit logs for the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

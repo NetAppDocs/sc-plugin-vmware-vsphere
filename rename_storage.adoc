@@ -5,7 +5,7 @@ keywords:
 summary: 'You can rename the storage using REST API.'
 ---
 
-= Restore backup of renamed storage
+= Restore backups from renamed storage using the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

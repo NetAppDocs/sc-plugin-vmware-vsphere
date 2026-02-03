@@ -5,7 +5,7 @@ keywords:
 summary: 'You can restore files or folders from a virtual machine disk (VMDK) on a Windows guest OS.'
 ---
 
-= Workflow, prerequisites, and limitations
+= Guest file restore workflow, prerequisites, and limitations in SCV
 :hardbreaks:
 :nofooter:
 :icons: font

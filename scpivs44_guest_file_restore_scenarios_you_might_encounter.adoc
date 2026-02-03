@@ -5,7 +5,7 @@ keywords:
 summary: 'When attempting to restore a guest file, you might encounter scenarios where guest file restore session is blank, guest file restore attach disk operation fails, or backups are not detached after guest file restore session is discontinued. '
 ---
 
-= Guest file restore scenarios you might encounter
+= Guest file restore scenarios in the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

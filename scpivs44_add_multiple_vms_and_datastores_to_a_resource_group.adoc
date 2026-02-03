@@ -5,7 +5,7 @@ keywords:
 summary: 'You can add multiple resources to an existing resource group by using the SnapCenter VMware vSphere client Edit Resource Group wizard.'
 ---
 
-= Add multiple VMs and datastores to a resource group
+= Add multiple VMs and datastores to a resource group in the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

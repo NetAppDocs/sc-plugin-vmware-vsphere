@@ -5,7 +5,7 @@ keywords:
 summary: 'SnapCenter Plug-in for VMware vSphere employs SSL encryption for secure communication with the client browser. While this does enable encrypted data across the wire, creating a new self-signed certificate, or using your own Certificate Authority (CA) infrastructure or a third party CA, ensures that the certificate is unique for your environment.'
 ---
 
-= Create and import certificates
+= Create and import certificates for the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

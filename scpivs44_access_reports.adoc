@@ -5,7 +5,7 @@ keywords:
 summary: 'You can request reports for one or more jobs from the dashboard.'
 ---
 
-= Access reports
+= Access reports in the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

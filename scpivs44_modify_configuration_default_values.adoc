@@ -5,7 +5,7 @@ keywords:
 summary: 'To improve operational efficiency, you can modify the `scbr.override` configuration file to change default values.'
 ---
 
-= Modify configuration default values
+= Modify configuration default values for the SCV
 :hardbreaks:
 :nofooter:
 :icons: font
