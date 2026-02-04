@@ -28,7 +28,7 @@ With this release, you can perform the following operations for VMs, datastores,
 
 Beginning with this release, SnapCenter Plug-in for VMware vSphere supports Amazon FSxN for NetApp ONTAP storage systems running version 9.10 or later.
 
-##[NOTE]
+[NOTE]
 ====
 You can now perform seamless, one click, non-disruptive migration from SnapCenter Plug-in for VMware to NetApp Backup and Recovery. NetApp Backup and Recovery provides enhanced data protection and management capabilities, including:
 
@@ -45,5 +45,5 @@ Refer to the following links for more information:
 * https://docs.netapp.com/us-en/data-services-backup-recovery/[NetApp Backup and Recovery documentation].
 * https://docs.netapp.com/us-en/data-services-backup-recovery/prev-vmware-register-snapcenter.html[Register SnapCenter Plug-in for VMware vSphere host to use with NetApp Backup and Recovery]  
 * https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-login.html[Log in to NetApp Backup and Recovery]
-* https://console.netapp.com/unified-backup-restore[Access NetApp Backup and Recovery service]##
+* https://console.netapp.com/unified-backup-restore[Access NetApp Backup and Recovery service]
 // patch update for SCV 6.2 P1
