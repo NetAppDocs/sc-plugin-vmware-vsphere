@@ -5,7 +5,7 @@ keywords:
 summary: 'You can restore existing VMDKs, or deleted or detached VMDKs, from either a primary or secondary backup of traditional VMs or vVol VMs.'
 ---
 
-= Restore VMDKs from backups
+= Restore VMDKs from backups using the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

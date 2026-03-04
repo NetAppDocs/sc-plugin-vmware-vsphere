@@ -5,7 +5,7 @@ keywords:
 summary: 'When you restore a VM, you can overwrite the existing content with the backup copy that you select or you can make a copy of the VM.'
 ---
 
-= Restore VMs from backups
+= Restore VMs from backups using the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords:
 summary: 'After you have attached a virtual disk to restore individual files, you can detach the virtual disk from the parent VM.'
 ---
 
-= Detach a virtual disk
+= Detach a virtual disk in the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords:
 summary: 'Backup operations are performed on all the resources defined in a resource group. If a resource group has a policy attached and a schedule configured, then backups occur automatically according to the schedule.'
 ---
 
-= Back up resource groups on demand
+= Back up resource groups on demand in the SCV
 :hardbreaks:
 :nofooter:
 :icons: font

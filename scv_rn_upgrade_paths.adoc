@@ -5,7 +5,7 @@ keywords: upgrade paths, scv, 6.1
 summary: "Learn about the new capabilities available in SnapCenter Plug-in for VMware vSphere 6.1."
 ---
 
-= Upgrade paths
+= Upgrade paths for the SnapCenter Plug-in for VMware vSphere
 
 :hardbreaks:
 :nofooter:

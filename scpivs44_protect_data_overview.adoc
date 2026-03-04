@@ -5,7 +5,7 @@ keywords:
 summary: 'All backup operations are performed on resource groups, which can contain any combination of one or more VMs and datastores. You can back up on demand or according to a defined protection schedule.'
 ---
 
-= Data protection workflow
+= Data protection workflow for the SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -37,3 +37,6 @@ In MetroCluster configurations:
 The following workflow figure shows the sequence in which you must perform backup operations:
 
 image:scpivs44_image13.png["Backup operations workflow"]
+
+// [NOTE]
+// You can now migrate from SnapCenter Plug-in for VMware to NetApp Backup and Recovery for enhanced data protection, including 3-2-1 backup, ransomware protection, disaster recovery, automated backup management, improved scalability, reduced costs, and centralized management of multiple vCenter instances.

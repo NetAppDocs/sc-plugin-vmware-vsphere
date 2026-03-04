@@ -5,7 +5,7 @@ keywords:
 summary: 'You can use this workflow if you have not used SnapCenter before and do not have any SnapCenter backups.'
 ---
 
-= Deployment workflow for new users
+= Deployment workflow for new SnapCenter users
 :hardbreaks:
 :nofooter:
 :icons: font

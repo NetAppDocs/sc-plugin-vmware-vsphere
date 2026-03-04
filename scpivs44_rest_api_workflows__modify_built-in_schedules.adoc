@@ -5,7 +5,7 @@ keywords:
 summary: 'To modify built-in schedules for VMware vSphere client jobs using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.'
 ---
 
-= REST API workflow to modify built-in schedules
+= REST API workflow to modify built-in schedules in the SCV
 :hardbreaks:
 :nofooter:
 :icons: font
