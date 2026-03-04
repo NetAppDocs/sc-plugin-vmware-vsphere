@@ -38,5 +38,5 @@ The following workflow figure shows the sequence in which you must perform backu
 
 image:scpivs44_image13.png["Backup operations workflow"]
 
-[NOTE]
-You can now migrate from SnapCenter Plug-in for VMware to NetApp Backup and Recovery for enhanced data protection, including 3-2-1 backup, ransomware protection, disaster recovery, automated backup management, improved scalability, reduced costs, and centralized management of multiple vCenter instances.
+// [NOTE]
+// You can now migrate from SnapCenter Plug-in for VMware to NetApp Backup and Recovery for enhanced data protection, including 3-2-1 backup, ransomware protection, disaster recovery, automated backup management, improved scalability, reduced costs, and centralized management of multiple vCenter instances.

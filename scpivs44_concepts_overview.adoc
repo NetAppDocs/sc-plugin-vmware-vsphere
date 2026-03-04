@@ -65,6 +65,6 @@ For information about SnapCenter data protection, refer to data protection infor
 
 For information about supported upgrade and migration paths, refer to link:scpivs44_release_notes.html[SnapCenter Plug-in for VMware vSphere Release Notes^].
 
-[NOTE]
-You can now migrate from SnapCenter Plug-in for VMware to NetApp Backup and Recovery for enhanced data protection, including 3-2-1 backup, ransomware protection, disaster recovery, automated backup management, improved scalability, reduced costs, and centralized management of multiple vCenter instances. Refer to https://docs.netapp.com/us-en/data-services-backup-recovery/[NetApp Backup and Recovery documentation] for more information.
+// [NOTE]
+// You can now migrate from SnapCenter Plug-in for VMware to NetApp Backup and Recovery for enhanced data protection, including 3-2-1 backup, ransomware protection, disaster recovery, automated backup management, improved scalability, reduced costs, and centralized management of multiple vCenter instances. Refer to https://docs.netapp.com/us-en/data-services-backup-recovery/[NetApp Backup and Recovery documentation] for more information.
 
