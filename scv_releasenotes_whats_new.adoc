@@ -48,8 +48,13 @@ Refer to the following links for more information:
 * https://docs.netapp.com/us-en/data-services-backup-recovery/prev-vmware-register-snapcenter.html[Register SnapCenter Plug-in for VMware vSphere host to use with NetApp Backup and Recovery]  
 * https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-login.html[Log in to NetApp Backup and Recovery]
 * https://console.netapp.com/unified-backup-restore[Access NetApp Backup and Recovery service]
+* https://www.netapp.com/video/uet9yfsstug/protect-your-vmware-estate-using-netapp-backup-and-recovery/[Video: Protect your vmware estate using netapp backup and recovery]
 
-video::protect-your-vmware-estate-using-netapp-backup-and-recovery[uet9yfsstug, title=Protect your vmware estate using netapp backup and recovery]
+//video::protect-your-vmware-estate-using-netapp-backup-and-recovery[uet9yfsstug, title="Protect your vmware estate using netapp backup and recovery"]
 
+
+// video::096e1740-d115-44cf-8c27-b051011611eb[panopto, title="Subscribe to the Console from the AWS marketplace"]
+// video::-lTF3oWZB1M[youtube, width=848, height=480]
+// You cannot embed a NetApp video directly in AsciiDoc using the video:: macro, because it only supports local video files or certain platforms (like YouTube, Vimeo, Panopto). The NetApp video portal is not supported.
 
 // patch update for SCV 6.2 P1
