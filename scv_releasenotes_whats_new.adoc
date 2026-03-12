@@ -50,7 +50,7 @@ Refer to the following links for more information:
 * https://console.netapp.com/unified-backup-restore[Access NetApp Backup and Recovery service]
 * https://www.netapp.com/video/uet9yfsstug/protect-your-vmware-estate-using-netapp-backup-and-recovery/[Video: Protect your vmware estate using netapp backup and recovery]
 
-video::UeT9yFssTug[youtube, width=848, height=480, title="Protect your vmware estate using netapp backup and recovery"]
+video::UeT9yFssTug[youtube, width=848, height=480]
 
 // video::protect-your-vmware-estate-using-netapp-backup-and-recovery[uet9yfsstug, title="Protect your vmware estate using netapp backup and recovery"]
 
