@@ -48,7 +48,8 @@ Refer to the following links for more information:
 * https://docs.netapp.com/us-en/data-services-backup-recovery/prev-vmware-register-snapcenter.html[Register SnapCenter Plug-in for VMware vSphere host to use with NetApp Backup and Recovery]  
 * https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-login.html[Log in to NetApp Backup and Recovery]
 * https://console.netapp.com/unified-backup-restore[Access NetApp Backup and Recovery service]
-* https://www.netapp.com/video/uet9yfsstug/protect-your-vmware-estate-using-netapp-backup-and-recovery/[Video: Protect your vmware estate using netapp backup and recovery]
+
+== Protect your vmware estate using netapp backup and recovery
 
 video::UeT9yFssTug[youtube, width=848, height=480]
 
