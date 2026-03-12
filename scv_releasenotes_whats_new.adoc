@@ -49,11 +49,11 @@ Refer to the following links for more information:
 * https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-login.html[Log in to NetApp Backup and Recovery]
 * https://console.netapp.com/unified-backup-restore[Access NetApp Backup and Recovery service]
 
-== Protect your vmware estate using netapp backup and recovery
+== Protect your VMware estate using NetApp Backup and Recovery
 
 video::UeT9yFssTug[youtube, width=848, height=480]
 
-// video::protect-your-vmware-estate-using-netapp-backup-and-recovery[uet9yfsstug, title="Protect your vmware estate using netapp backup and recovery"]
+// video::protect-your-vmware-estate-using-netapp-backup-and-recovery[uet9yfsstug, title="Protect your VMware estate using NetApp Backup and Recovery"]
 
 
 // video::096e1740-d115-44cf-8c27-b051011611eb[panopto, title="Subscribe to the Console from the AWS marketplace"]
