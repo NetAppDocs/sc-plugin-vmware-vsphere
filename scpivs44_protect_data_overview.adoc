@@ -21,7 +21,7 @@ summary: 'All backup operations are performed on resource groups, which can cont
 [.lead]
 ====
 [NOTE]
-You can now migrate from SnapCenter Plug-in for VMware to NetApp Backup and Recovery for enhanced data protection, including 3-2-1 backup, ransomware protection, disaster recovery, automated backup management, improved scalability, reduced costs, and centralized management of multiple vCenter instances. Refer to https://docs.netapp.com/us-en/data-services-backup-recovery/[NetApp Backup and Recovery documentation] for more information.
+Enhance VMware protection using NetApp Backup and Recovery, which provides 3-2-1 backup, ransomware protection, disaster recovery, automated backup management, improved scalability, reduced costs, and centralized management of multiple vCenter instances. You can migrate SCV policies, snapshots, and schedules to NetApp Backup and Recovery and manage all VM protection from a single console. For more information, refer to link:https://docs.netapp.com/us-en/data-services-backup-recovery/[NetApp Backup and Recovery documentation].
 
 ==== 
 
