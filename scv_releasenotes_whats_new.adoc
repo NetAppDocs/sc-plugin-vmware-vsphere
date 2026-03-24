@@ -35,7 +35,7 @@ You can now perform seamless, one click, non-disruptive migration from SnapCente
 * Support for the 3-2-1 backup and archival strategy
 * Ransomware protection with SnapLock and logical air-gapped backups using object locking
 * Automated remediation during ransomware scans
-* Disaster recovery enablement with alternate location restore
+// * Disaster recovery enablement with alternate location restore
 * Automated SnapMirror relationship creation for secondary and object storage targets, streamlined backup retention management, and simplified application and VM backup workflows
 * Improved scalability and performance to accommodate growing data volumes
 * Reduced overhead and total cost of ownership with a fully managed backup service
