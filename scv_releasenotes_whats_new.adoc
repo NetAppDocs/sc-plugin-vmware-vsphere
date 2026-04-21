@@ -38,7 +38,8 @@ You can now perform seamless, one click, non-disruptive migration from SnapCente
 * Automated SnapMirror relationship creation for secondary and object storage targets, streamlined backup retention management, and simplified application and VM backup workflows
 * Improved scalability and performance to accommodate growing data volumes
 * Reduced overhead and total cost of ownership with a fully managed backup service
-* Centralized management of multiple vCenter instances from a single interface
+* Centralized backup management of datastore and VMs across multiple vCenter instances from a single interface
+* Quick restore of file and folder from Windows and Linux guest OS
 ====
 // * Disaster recovery enablement with alternate location restore
 Refer to the following links for more information:
