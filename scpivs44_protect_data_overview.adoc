@@ -19,6 +19,12 @@ summary: 'All backup operations are performed on resource groups, which can cont
 //
 
 [.lead]
+====
+[NOTE]
+Enhance VMware protection using NetApp Backup and Recovery, which provides 3-2-1 backup, ransomware protection, automated backup management, improved scalability, reduced costs, and centralized management of multiple vCenter instances. You can migrate SCV policies, snapshots, and schedules to NetApp Backup and Recovery and manage all VM protection from a single console. For more information, refer to link:https://docs.netapp.com/us-en/data-services-backup-recovery/[NetApp Backup and Recovery documentation].
+
+==== 
+
 Use the SnapCenter vSphere client to perform data protection operations for VMs, VMDKs, and datastores. All backup operations are performed on resource groups, which can contain any combination of one or more VMs and datastores. You can back up on demand or according to a defined protection schedule.
 
 When you back up a datastore, you are backing up all the VMs in that datastore.
@@ -37,6 +43,3 @@ In MetroCluster configurations:
 The following workflow figure shows the sequence in which you must perform backup operations:
 
 image:scpivs44_image13.png["Backup operations workflow"]
-
-// [NOTE]
-// You can now migrate from SnapCenter Plug-in for VMware to NetApp Backup and Recovery for enhanced data protection, including 3-2-1 backup, ransomware protection, disaster recovery, automated backup management, improved scalability, reduced costs, and centralized management of multiple vCenter instances.
