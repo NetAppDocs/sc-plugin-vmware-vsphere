@@ -34,7 +34,7 @@ Backup and restore operations cannot be performed simultaneously on the same res
 You should review the information on what the SnapCenter Plug-in for VMware vSphere does and does not support.
 link:scpivs44_deployment_planning_and_requirements.html[Deployment planning and requirements]
 
-In NetApp MetroCluster configurations:
+In MetroCluster configurations:
 
 * SnapCenter Plug-in for VMware vSphere might not be able to detect a protection relationship after a failover. Refer to https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover[KB article: Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover^] for more information.
 
