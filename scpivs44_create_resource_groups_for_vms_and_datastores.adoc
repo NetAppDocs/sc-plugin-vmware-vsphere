@@ -56,7 +56,7 @@ For more information, refer to the ONTAP tools for VMware vSphere documentation.
 * You can add or remove resources from a resource group anytime.
 * To back up a single resource, such as a VM, create a resource group that contains only that resource.
 * To back up multiple resources, create a resource group that includes all the resources you want to protect.
-* For FlexGroup volumes in NetApp MetroCluster environments, if you are using ONTAP 9.8 or 9.9, restart the SnapCenter Plug-in for VMware vSphere service and resynchronize SnapMirror relationships after a switchover or switchback before backing up resource groups. In ONTAP 9.8, backups might hang after a switchback; this is resolved in ONTAP 9.9.
+* For FlexGroup volumes in MetroCluster environments, if you are using ONTAP 9.8 or 9.9, restart the SnapCenter Plug-in for VMware vSphere service and resynchronize SnapMirror relationships after a switchover or switchback before backing up resource groups. In ONTAP 9.8, backups might hang after a switchback; this is resolved in ONTAP 9.9.
 * For optimal snapshot performance, group VMs and datastores on the same volume into a single resource group.
 // BURT 1378132 observation 25, March 2021 Ronya
 * You can create a resource group without a backup policy, but data protection requires at least one policy. Select an existing policy or create a new one during resource group creation.
