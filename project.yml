@@ -211,8 +211,6 @@ sidebar:
           url: /scpivs44_modify_the_time_zones.html
         - title: Modify logon credentials
           url: /scpivs44_modify_the_logon_credentials.html
-        - title: Register SCV with vCenter
-          url: /scpivs44_modify_the_vcenter_logon_credentials.html
         - title: Update the vCenter credentials configured in SCV
           url: /scpivs44_modify_the_vcenter_logon_credentials.html  
         - title: Recover SCV connection and registration with vCenter
