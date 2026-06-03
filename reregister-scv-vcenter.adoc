@@ -16,8 +16,7 @@ summary: 'Use this task to recover SCV registration with vCenter after credentia
 SnapCenter Plug-in for VMware vSphere (SCV) registers with vCenter automatically when you deploy the appliance.
 If registration is broken, for example after a vCenter password change, an SCV IP address or hostname change, a connectivity outage, or a partially failed deployment, use this task to recover the connection and registration and confirm that it is healthy.
 
-SCV does not automatically retry a failed registration on a timer.
-Registration is re-attempted only when one of the following occurs:
+If registration does not complete successfully, retry it by using one of the following actions:
 
 * The VMware vSphere client service (`scvservice`) is restarted.
 * The SCV appliance IP address or hostname changes.
@@ -40,21 +39,28 @@ For more information, see link:scpivs44_restart_the_vmware_vsphere_web_client_se
 
 . Re-save the vCenter credentials.
 +
-If a restart does not fix the issue, log in to the SnapCenter Plug-in for VMware vSphere management user interface using the format `\https://<appliance-IP-address>:8080`.
+If a restart does not fix the issue, complete the following steps:
 +
-Select *Configuration* > *vCenter* > *Edit*, enter the current password, and then select *Save*.
+.. Log in to the SnapCenter Plug-in for VMware vSphere management user interface using the format `\https://<appliance-IP-address>:8080`.
+.. Select *Configuration* > *vCenter* > *Edit*.
+.. Enter the current password, and then select *Save*.
 
 For more information, see link:scpivs44_modify_the_vcenter_logon_credentials.html[Update the vCenter credentials configured in SCV].
 
 . Unregister and re-register the plug-in.
 +
-If the plug-in is still not connected (for example, the registered extension points to an old SCV IP address), unregister SCV from vCenter and then re-register by re-saving credentials or restarting the service.
+If the plug-in is still not connected, complete the following steps:
++
+.. Unregister SCV from vCenter.
+.. Re-register SCV by re-saving the vCenter credentials or restarting the VMware vSphere client service.
+
+If the registered extension points to an old SCV IP address, unregistering and re-registering the plug-in updates the registration information.
 +
 For more information, see link:scpivs44_unregister_plugin_from_vcenter.html[Unregister the SnapCenter Plug-in for VMware vSphere from vCenter].
 
-. Verify the registration.
-
-Use the success checks in <<verify-registration-succeeded>>.
+. Verify that the registration succeeded.
++
+Use the checks in <<verify-registration-succeeded>>.
 
 [[verify-registration-succeeded]]
 == Verify that the registration succeeded
@@ -70,11 +76,11 @@ Credential changes are also recorded in `/var/log/netapp/audit/audit.log`.
 ====
 Advanced troubleshooting reference:
 
-* SCV registers the vCenter extensions `com.netapp.aegis` (backend) and `com.netapp.scv.client` (vSphere Client remote plug-in).
-* `com.netapp.scvm.webclient` is the legacy HTML client extension.
-* You can view these extensions in vCenter Extension Manager.
-* The REST endpoint `POST /api/4.1/vcenter` (port 8144) returns `Successfully registered extension with vCenter Server.` on success.
-* `POST /api/4.1/vcenter/validate` checks connectivity and credentials.
+Use the following references only for advanced troubleshooting. Availability and exact values can vary by release and environment.
+
+* In vCenter Extension Manager, you might see the SCV-related extensions `com.netapp.aegis` and `com.netapp.scv.client`.
+* In some environments, you might also see the legacy HTML client extension `com.netapp.scvm.webclient`.
+* If appliance log access is available, you can also review the registration-related entries and API activity referenced earlier in this topic.
 ====
 
 == Common registration errors and remediations
@@ -96,4 +102,3 @@ Restart the service.
 * link:scpivs44_restart_the_vmware_vsphere_web_client_service.html[Restart the VMware vSphere client service for the SCV]
 * link:scpivs44_unregister_plugin_from_vcenter.html[Unregister the SnapCenter Plug-in for VMware vSphere from vCenter]
 * link:scpivs44_minimum_vcenter_privileges_required.html[Minimum vCenter privileges required for the SCV]
-+
