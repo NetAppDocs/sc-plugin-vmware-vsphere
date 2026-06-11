@@ -92,11 +92,6 @@ volume snapshot show
 volume snapshot show-delta
 volume unmount
 |vserver cifs
-vserver cifs share create
-vserver cifs share delete
-vserver cifs shadowcopy show
-vserver cifs share show
-vserver cifs show
 vserver export-policy
 vserver export-policy create
 vserver export-policy delete
@@ -104,7 +99,6 @@ vserver export-policy rule create
 vserver export-policy rule show
 vserver export-policy show
 vserver iscsi
-vserver iscsi connection show
 vserver nvme subsystem controller
 vserver nvme subsystem controller show
 vserver nvme subsystem create
@@ -124,7 +118,6 @@ vserver nvme namespace delete
 vserver nvme namespace modify
 vserver nvme namespace show
 network interface
-network interface failover-groups
 |===
 
 |===
@@ -134,16 +127,13 @@ network interface failover-groups
 cluster identity show
 network interface show
 vserver
-vserver peer
-vserver show
 |===
 
 |===
 |All-access commands: Minimum ONTAP privileges
 
 |
-consistency-group
-storage-unit show
+vserver consistency-group
 |===
 // 6.1 update
 

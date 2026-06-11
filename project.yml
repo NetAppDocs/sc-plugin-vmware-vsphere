@@ -212,7 +212,9 @@ sidebar:
         - title: Modify logon credentials
           url: /scpivs44_modify_the_logon_credentials.html
         - title: Update the vCenter credentials configured in SCV
-          url: /scpivs44_modify_the_vcenter_logon_credentials.html
+          url: /scpivs44_modify_the_vcenter_logon_credentials.html  
+        - title: Recover SCV connection and registration with vCenter
+          url: /reregister-scv-vcenter.html
         - title: Modify network settings
           url: /scpivs44_modify_the_network_settings.html
         - title: Modify configuration default values
