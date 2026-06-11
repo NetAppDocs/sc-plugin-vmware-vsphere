@@ -86,7 +86,7 @@ Alternatively, you can create a resource group for a single resource by doing on
 |For this field… |Do this…
 
 |vCenter Server
-|Select a vCenter server.
+|Select a vCenter Server.
 |Name
 |Enter a name for the resource group.
 Do not use the following special characters in VM, datastore, policy, backup, or resource group names:
