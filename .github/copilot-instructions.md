@@ -6,7 +6,6 @@ Product: SnapCenter Plug-in for VMware vSphere (SCV)
 *SCV* is a Linux-based virtual appliance, deployed from an OVA, that protects VMware *VMs*, *datastores*, and *VMDKs* with backup, restore, mount/unmount, and guest file restore operations. It also works with *SnapCenter Server* to support application-consistent data protection for applications running in VMware environments.
 
 ### Repository structure
-- `./` – Main AsciiDoc topics and site config files for SCV concepts, deployment, quick start, monitoring, storage management, data protection, restore, guest file restore, REST APIs, upgrade, and legal notices.
 - `media/` – Shared screenshots, diagrams, and workflow images referenced by the root-level AsciiDoc topics.
 
 ### Product-specific context
