@@ -4,7 +4,6 @@ permalink: scpivs44_upgrade.html
 keywords:
 summary: 'If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.'
 ---
-
 = Upgrade from an earlier release of the SCV
 :hardbreaks:
 :nofooter:
@@ -18,6 +17,8 @@ Upgrade to SCV 6.2 is supported only on VMware vCenter Server 7 update 1 and lat
 
 If you are using the SnapCenter Plug-in for VMware vSphere virtual appliance, you can upgrade to a newer release.
 The upgrade process unregisters the existing plug-in and deploys a plug-in that is compatible only with vSphere 7.0U1 and later versions.
+
+CAUTION: Before upgrading, verify that your environment meets the system requirements. Refer to link:scpivs44_deployment_planning_and_requirements.html[SnapCenter Plug-in for VMware vSphere Deployment Planning and Requirements] for details.
 
 == Upgrade paths
 
@@ -43,7 +44,7 @@ TIP: Backup the SnapCenter Plug-in for VMware vSphere OVA before starting an upg
 
 NOTE: Switching your network configuration from static to DHCP is not supported.  
 
-For the latest information about supported versions, refer to https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool^] (IMT).
+For the latest information about supported versions, refer to link:https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
 
 
 .Steps
@@ -55,7 +56,7 @@ The IP address is displayed when you deploy the SnapCenter Plug-in for VMware vS
 
 . Download the upgrade `.iso` file.
 
-.. Log in to the NetApp Support Site (https://mysupport.netapp.com/products/index.html).
+.. Log in to the link:https://mysupport.netapp.com/products/index.html[NetApp Support site^].
 .. From the list of products, select *SnapCenter Plug-in for VMware vSphere*, then select the *DOWNLOAD LATEST RELEASE* button.
 .. Download the SnapCenter Plug-in for VMware vSphere upgrade `.iso` file to any location.
 
@@ -81,3 +82,6 @@ Wait until the field shows the “Connected” status.
 .. Log onto the Maintenance console by accessing the *Summary* tab of the virtual appliance and then select the green run arrow to start the maintenance console.
 .. Enter *2* for System Configuration, then enter *8* for Upgrade.
 .. Enter *y* to continue and start the upgrade.
+
+
+// GH issue #5, 2026-AUG-08
