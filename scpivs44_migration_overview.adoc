@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Migrate metadata from Windows-based SnapCenter for VMware vSphere
+= Metadata migration from Windows-based SnapCenter for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font
