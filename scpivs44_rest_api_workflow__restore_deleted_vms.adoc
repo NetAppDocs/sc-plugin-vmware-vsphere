@@ -60,6 +60,7 @@ Note the *availableEsxHostsList* information.
 Pass the *UUID* from Step 3.
 Pass the *backupId* from Step 2.
 In the *restoreLocations* attribute, pass the information from *snapshotLocationsList* in Step 4; in the *esxHost* attribute, pass the information from *availableEsxHostsList* in Step 5.
+If the VM backup is a partial backup, set the `restartVM` parameter to *false*.
 
 *Note:* You cannot restore a VM that is a template.
 |===
