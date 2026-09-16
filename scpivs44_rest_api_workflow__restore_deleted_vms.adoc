@@ -4,7 +4,6 @@ permalink: scpivs44_rest_api_workflow__restore_deleted_vms.html
 keywords:
 summary: 'To perform restore operations for VM backups using the SnapCenter Plug-in for VMware vSphere REST APIs, you must follow the prescribed sequence of REST API calls.'
 ---
-
 = REST API workflow to restore deleted VMs using the SCV
 :hardbreaks:
 :nofooter:
@@ -27,33 +26,42 @@ For each REST API, add `\https://<server>:<port>` at the front of the REST API t
 |Step |REST API |Comments
 
 |1
-|Go to
-`\http://<vCenter-IP>/mob`
-|Find the VM UUID from the VMware Managed Objects URL.
-Note the *uuid* for the VM that you want to restore.
+|Go to `\http://<vCenter-IP>/mob` 
+|Find the datastore *moref* from the VMware Managed Objects URL.
+Note the moref for the datastore on which the deleted VM resided.
+
 |2
-|`/4.1/vm/{uuid}/backups`
-|`Get VM Backups` gets a list of backups for the specified VM.
-Pass the *uuid* from Step 1.
+|`/4.1/datastores/{moref}/backups`
+|`Get Datastore Backups` retrieves a list of backups for the specified datastore.
+Pass the *moref* from Step 1.
 Note the *backupId* of the backup you want to restore.
+
 |3
-|`/4.1/vm/backups/{backupId}/
-snapshotlocations`
-|`Get snapshot locations` gets the location of the snapshot for the specified backup.
+|`/4.1/backups/{backupId}`
+|`Get Backup Details` retrieves the details of the specified backup.
+Pass the *backupId* from Step 2.
+In the entities list, find the *entityName* that matches the deleted VM and note the *UUID*.
+    
+|4
+|`/4.1/vm/backups/{backupId}/snapshotlocations`
+|`Get snapshot locations` retrieves the location of the snapshot for the specified backup.
 Pass the *backupId* from Step 2.
 Note the *snapshotLocationsList* information.
-|4
-|`/4.1/vm/{moref}/backups/
-availableesxhosts`
-|`Get available ESX Hosts` gets the information for the host on which the backup is stored.
-Note the *availableEsxHostsList* information.
+
 |5
-|`/4.1/vm/{uuid}/backups/
-{backupId}/restore`
-|`Restore VM from a backup using uuid or restore a deleted VM` restores the specified backup.
-Pass the *uuid* from Step 1.
+|`/4.1/datastores/{moref}/availableEsxHosts`
+|`Get available ESX Hosts` retrieves the information for the host on which the backup is stored.
+Pass the *moref* from Step 1.
+Note the *availableEsxHostsList* information.
+
+|6
+|`/4.1/vm/{uuid}/backups/{backupId}/restoreVm` 
+|`Restore a VM from a backup` restores the specified backup.
+Pass the *UUID* from Step 3.
 Pass the *backupId* from Step 2.
-Pass the information from Steps 3 and 4 in the *restoreLocations* attribute.
-If the VM backup is a partial backup, set the `restartVM` parameter to "false".
+In the *restoreLocations* attribute, pass the information from *snapshotLocationsList* in Step 4; in the *esxHost* attribute, pass the information from *availableEsxHostsList* in Step 5.
+
 *Note:* You cannot restore a VM that is a template.
 |===
+
+// GH issue #3, 2026-SEPT-15
