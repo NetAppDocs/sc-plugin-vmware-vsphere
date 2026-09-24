@@ -27,7 +27,7 @@ indexpage:
         - title: NetApp blog – SCV
           url: https://blog.netapp.com/tag/snapcenter/
         - title: NetApp community – SCV
-          url: https://community.netapp.com/t5/forums/filteredbylabelpage/board-id/backup-and-restore-discussions/label-name/snapcenter
+          url: https://community.netapp.com/community/categories/solutions
     - title: More resources
       links:
         - title: SnapCenter Software documentation
