@@ -34,6 +34,8 @@ sidebar:
       entries:
         - title: SnapCenter Plug-in for VMware vSphere Release notes
           url: /scpivs44_release_notes.html
+        - title: What's new in SnapCenter Plug-in for VMware vSphere 6.2.1
+          url: /scv_releasenotes_621_whats_new.html
         - title: What's new in SnapCenter Plug-in for VMware vSphere 6.2
           url: /scv_releasenotes_whats_new.html
         - title: Upgrade paths 
