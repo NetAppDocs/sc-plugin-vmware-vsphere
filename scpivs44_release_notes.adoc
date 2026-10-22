@@ -4,8 +4,7 @@ permalink: scpivs44_release_notes.html
 keywords:
 summary: 'Release notes provide important information about this release of SnapCenter Plug-in for VMware vSphere, including licensing requirements, known issues, cautions, limitations, and any documentation updates or corrections.'
 ---
-
-= Release notes for SnapCenter Plug-in for VMware vSphere 6.2
+= Release notes for SnapCenter Plug-in for VMware vSphere 6.2.1 and 6.2
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,11 +13,13 @@ summary: 'Release notes provide important information about this release of Snap
 
 [.lead]
 
-Learn about the new and enhanced features available in SnapCenter Plug-in for VMware vSphere 6.2.
+Learn about the new and enhanced features available in SnapCenter Plug-in for VMware vSphere 6.2.1 and 6.2.
 
-For details about known issues, limitations, and fixed issues, see https://library.netapp.com/ecm/ecm_download_file/ECMLP3359464[SnapCenter Plug-in for VMware vSphere 6.2 Release Notes^]. You must sign in with your NetApp account or create an account to access the Release Notes.
+For details about known issues, limitations, and fixed issues, see https://library.netapp.com/ecm/ecm_download_file/ECMLP3359464[SnapCenter Plug-in for VMware vSphere 6.2.1 and 6.2 Release Notes^]. You must sign in with your NetApp account or create an account to access the Release Notes.
 
 [NOTE]
 ====
 For the latest information about supported versions, refer to https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT[NetApp Interoperability Matrix Tool (IMT)^].
 ====
+
+// OTHERDOC-266, 2026-OCT-19, SnapCenter Plug-in for VMware vSphere 6.2.1 and 6.2 release notes
